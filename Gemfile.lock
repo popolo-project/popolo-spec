@@ -1,0 +1,48 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    classifier (1.3.3)
+      fast-stemmer (>= 1.0.0)
+    directory_watcher (1.4.1)
+    fast-stemmer (1.0.1)
+    haml (3.1.7)
+    hike (1.2.1)
+    jekyll (0.12.0)
+      classifier (~> 1.3)
+      directory_watcher (~> 1.1)
+      kramdown (~> 0.13.4)
+      liquid (~> 2.3)
+      maruku (~> 0.5)
+      pygments.rb (~> 0.3.2)
+    kramdown (0.13.8)
+    liquid (2.4.1)
+    maruku (0.6.1)
+      syntax (>= 1.0.0)
+    multi_json (1.5.0)
+    posix-spawn (0.3.6)
+    pygments.rb (0.3.7)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.1.0)
+    rack (1.4.4)
+    rake (10.0.3)
+    redcarpet (2.2.2)
+    sass (3.2.5)
+    sprockets (2.8.2)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    syntax (1.0.0)
+    tilt (1.3.3)
+    yajl-ruby (1.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  haml
+  jekyll
+  rake
+  redcarpet
+  sass
+  sprockets
