@@ -171,7 +171,7 @@ Now let John Doe be a member of the XYZ Party. It only makes sense to use the Me
 
 Given that a Membership and a Post behave differently in the same situation, like a person leaving office, and given that only one or the other behavior is appropriate in some cases, like party membership, a single class cannot express both Membership- and Post-style behaviors.
 
-Some use cases may therefore require both Post and Membership classes to satisfy their requirements. It may be a best practice in implementations to use a Membership class until a strong use case emerges for a Post class.
+Some use cases may therefore require both Post and Membership classes to satisfy their requirements.
 
 The Post class should have properties for:
 
@@ -246,8 +246,7 @@ Briefly, the survey concludes that, with respect to the Person class:
 
 * No vocabulary has a property for former names, except for `person:birthName`.
 * No vocabulary describes biographies without importing the BIO vocabulary, except for `facebook:bio`.
-* Only `person:Person` fits [this project's definition](#scope) of a person.
-* vCard is the only vocabulary to meet all other [requirements](#Person).
+* Only `person:Person` fits [the data standard's definition of a person](#scope).
 
 For the Organization class:
 
@@ -516,11 +515,11 @@ Example:
 
 ```js
 {
-  "id": "",
+  "id": "47cc67093475061e3d95369d",
   "name": "Mr. John Q. Public, Esq.",
   "family_name": "Public",
   "given_name": "John",
-  "additional_name": "Q.",
+  "additional_name": "Quinlan",
   "honorific_prefix": "Mr.",
   "honorific_suffix": "Esq.",
   "other_names": [
