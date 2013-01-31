@@ -1,0 +1,7 @@
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+<http://example.com/posts/37cc67093475061e3d95369d.ttl>
+  a org:Post;
+  org:heldBy <http://example.com/people/47cc67093475061e3d95369d.ttl>;
+  org:postIn <http://example.com/organizations/27cc67093475061e3d95369d.ttl>;
+  org:role [a skos:Concept; skos:prefLabel "Treasurer"] .

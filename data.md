@@ -3,7 +3,7 @@ layout: data
 title: Data Standard
 id: data
 ---
-**<abbrev title="too long, didn't read">tl;dr</abbrev> Read [this part of the requirements](#relations) then skip to the [serialization](#serialization) and [conformance](#conformance) sections**
+**<abbr title="too long, didn't read">tl;dr</abbr> Read [this part of the requirements](#relations) then skip to the [serialization](#serialization) and [conformance](#conformance) sections**
 
 <h1 id="scope">1. Scope</h1>
 
@@ -24,7 +24,7 @@ The data standard's initial scope is to describe the entities below and the rela
   <dd>A bounded area, like an administrative boundary</dd-->
 </dl>
 
-The data standard will initially define two serializations: a <abbr title="JavaScript Object Notation">JSON</abbr> and a MongoDB schema.
+The data standard will initially define <abbr title="JavaScript Object Notation">JSON</abbr>, <abbr title="Resource Description Framework">RDF</abbr> and MongoDB serializations.
 
 <h1 id="use-cases-and-requirements">2. Use Cases &amp; Requirements</h1>
 
@@ -260,11 +260,11 @@ For the Address class, vCard is the only vocabulary to meet all [requirements](#
 
 <h1 id="classes-and-properties">4. Classes and properties</h1>
 
-Given that the [standards reused](#standard-reuse) are defined in <abbrev title="Resource Description Framework">RDF</abbrev>, the data standard's classes and properties will map to RDF terms. Serialization is not limited to RDF; JSON and MongoDB schema are defined in [the next section](#serialization).
+Given that the [standards reused](#standard-reuse) are defined in RDF, the data standard's classes and properties will map to RDF terms. Serialization is not limited to RDF; JSON and MongoDB schema are defined in [the next section](#serialization).
 
 Given that the vCard 4.0 RDF encoding is still [in progress](http://www.w3.org/wiki/RepresentingVCardinRDFOWL), the data standard will map to properties from [FOAF](http://xmlns.com/foaf/spec/) and [Schema.org](http://schema.org/) instead.
 
-Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alternate names, it usually represents abbreviations, including <abbrev title="Internet Relay Chat">IRC</abbrev> nicknames. vCard 4.0 can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred. No standard has a property for former names, however. This data standard may therefore propose a new term for both alternate and former names. The RDF definition is not yet available, however.
+Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alternate names, it usually represents abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames. vCard 4.0 can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred. No standard has a property for former names, however. This data standard may therefore propose a new term for both alternate and former names. The RDF definition is not yet available, however.
 
 In RDF, the permanent, unique identifier is the resource's URL.
 
@@ -386,7 +386,7 @@ In RDF, the permanent, unique identifier is the resource's URL.
     <tr id="org:identifier">
       <td>identifier</td>
       <td><code><a href="http://www.w3.org/ns/org#identifier">org:identifier</a></code></td>
-      <td>An issued identifier, e.g. a <abbrev title="Data Universal Numbering System">DUNS</abbrev> number, <abbrev title="Global Location Number">GLN</abbrev>, <abbrev title="Taxpayer Identification Number">TIN</abbrev>, etc.</td>
+      <td>An issued identifier, e.g. a <abbr title="Data Universal Numbering System">DUNS</abbr> number, <abbr title="Global Location Number">GLN</abbr>, <abbr title="Taxpayer Identification Number">TIN</abbr>, etc.</td>
     </tr>
     <tr id="org:classification">
       <td>classification</td>
@@ -488,9 +488,11 @@ In RDF, the permanent, unique identifier is the resource's URL.
 
 The schemas are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) and apply to both the JSON and MongoDB serializations.
 
-[Snake case](http://en.wikipedia.org/wiki/Snake_case) is used instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbrev title="object-relational mapper">ORM</abbrev>s and <abbrev title="object-document mapper">ODM</abbrev>s.
+[Snake case](http://en.wikipedia.org/wiki/Snake_case) is used instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s and <abbr title="object-document mapper">ODM</abbr>s.
 
 ## 5.1. Person
+
+[RDF example in Turtle](/examples/person.ttl)
 
 [todo both former and alternate put into one; iso dates used; whereas RDF literals can have language tags, JSON/MongoDB require different approach]
 
@@ -543,6 +545,9 @@ Example:
 
 ## 5.2. Organization
 
+[RDF example in Turtle](/examples/organization.ttl)
+
+
 ```js
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
@@ -558,6 +563,8 @@ Example:
 
 ## 5.3. Address
 
+[RDF example in Turtle](/examples/address.ttl)
+
 ```js
 
 ```
@@ -565,6 +572,8 @@ Example:
 <!-- todo http://tools.ietf.org/html/rfc3966 -->
 
 ## 5.4. Post
+
+[RDF example in Turtle](/examples/post.ttl)
 
 ```js
 

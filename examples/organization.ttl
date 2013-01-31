@@ -6,7 +6,10 @@
   a org:Organization;
   skos:prefLabel "ABC, Inc.";
   skos:altLabel "Joe's Diner";
+  skos:altLabel "Famous Joe's";
   org:identifier <urn:duns:123456789>;
-  org:classification [a skos:Concept; skos:prefLabel "Company"];
+  org:identifier <urn:isin:US0123456789>;
+  org:classification [a skos:Concept; skos:prefLabel "Corporation"];
+  org:classification [a skos:Concept; skos:prefLabel "Fast-food chain"];
   org:subOrganizationOf <http://example.com/organizations/17cc67093475061e3d95369d.ttl>;
   schema:foundingDate "1950-01-01"^^xsd:date .
