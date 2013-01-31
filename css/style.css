@@ -31,6 +31,20 @@ blockquote p {
 table {
   margin-bottom: 1em;
 }
+caption {
+  font-style: italic;
+  text-align: left;
+}
+th {
+  text-align: left;
+}
+th,
+td {
+  padding-right: 10px;
+}
+td {
+  vertical-align: top;
+}
 
 footer {
   text-align: center;

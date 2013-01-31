@@ -116,7 +116,7 @@ Deliverables of past working groups of interest are the [Simple Knowledge Organi
 
 # European Commission <span class="label">Person</span> <span class="label">Address</span>
 
-The European Commission's [Interoperability Solutions for European Public Administrations (ISA)](http://ec.europa.eu/isa/) programme completed three vocabularies. Its Business Core Vocabulary evolved into the W3C [Registered Organization Vocabulary](https://dvcs.w3.org/hg/gld/raw-file/default/legal/index.html). The Person Core Vocabulary and Location Core Vocabulary are moving into W3C namespaces.
+The European Commission's [Interoperability Solutions for European Public Administrations (ISA)](http://ec.europa.eu/isa/) programme completed three vocabularies. Its Business Core Vocabulary evolved into the W3C [Registered Organization Vocabulary](https://dvcs.w3.org/hg/gld/raw-file/default/legal/index.html). The [Person Core Vocabulary](http://philarcher.org/isa/person-v1.00.html) and [Location Core Vocabulary](http://philarcher.org/isa/locn-v1.00.html) are moving into W3C namespaces.
 
 ## Review
 
@@ -128,7 +128,7 @@ The European Commission's [Interoperability Solutions for European Public Admini
 ## Links
 
 * The Person Core Vocabulary reuses `adms`, `dcterms`, `foaf`, `schema` and `skos` mentioned here, including `foaf:Person`, `foaf:name`, `foaf:givenName`, `foaf:familyName`, `schema:Place`, `schema:Person`, `schema:gender`, `schema:birthDate` and `schema:deathDate`.
-* The Person Core Vocabulary may reuse other properties, notably `schema:additionalName`, `schema:honorificSuffix`, `foaf:nick`, `foaf:mbox`, `schema:image` and `foaf:img`.
+* The Person Core Vocabulary inherits other properties, notably `schema:additionalName`, `schema:honorificSuffix`, `foaf:nick`, `foaf:mbox`, `schema:image`, `foaf:img` and `foaf:page`.
 * The Location Core Vocabulary reuses `dcterms`.
 
 ***
@@ -147,7 +147,7 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 
 * CIQ has no properties for head shots or external links.
 * xNL can [handle](http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533217) special [cases](http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Ref174170633) where `givenName` and `familyName` are insufficient.
-* `xPIL.xsd` defines `ElectronicAddressIdentifiers` for emails, `PersonInfo/Gender` for genders, `BirthInfo/BirthDateTime` for birth dates, `Events/Event` for death dates and `FreeTextLines` for extended descriptions.
+* `xPIL.xsd` defines `ElectronicAddressIdentifiers` for emails, `PersonInfo/Gender` for genders, `BirthInfo/BirthDateTime` for birth dates, `Events/Event` for death dates and `FreeTextLines` for biographies.
 * `xPIL.xsd` defines `Identifiers` for identifiers, `OrganisationInfo/Type`, `OrganisationInfo/CategoryType` and `OrganisationInfo/Nature` for classifications, `Relationships` for parent organizations, and `Events/Event` for founding dates and dissolution dates.
 * xPIL `ContactNumbers` belong to a party, not to an address.
 * xPIL defines `Memberships`, but no class for posts. xPRL defines `Relationship/RelationshipRole`.
