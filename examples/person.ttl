@@ -15,7 +15,7 @@
   schema:email <mailto:jqpublic@xyz.example.com>;
   foaf:gender "male";
   schema:birthDate "1920-01"^^xsd:gYearMonth;
-  schema:deathDate "1999-08-16"^^xsd:date;
+  schema:deathDate "2010-01-01"^^xsd:date;
   schema:image <http://www.example.com/pub/photos/jqpublic.gif>;
   bio:olb "A hypothetical member of society deemed a 'common man'";
   bio:biography "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...";
