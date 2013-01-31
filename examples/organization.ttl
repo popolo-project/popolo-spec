@@ -1,7 +1,7 @@
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 <http://example.com/organizations/27cc67093475061e3d95369d.ttl>
   a org:Organization;
   skos:prefLabel "ABC, Inc.";

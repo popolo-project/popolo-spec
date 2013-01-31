@@ -1,7 +1,7 @@
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix person: <http://www.w3.org/ns/person#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix bio: <http://purl.org/vocab/bio/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 <http://example.com/people/47cc67093475061e3d95369d.ttl>

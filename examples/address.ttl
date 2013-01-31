@@ -1,0 +1,16 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ex: <http://example.org/> .
+<http://example.com/addresses/57cc67093475061e3d95369d.ttl>
+  vcard:adr [
+    a ex:ConstituencyAddress;
+    vcard:label "10-123 1/2 Main St\n1/2 Main St SE\nMontreal QC  H3Z 2Y7"
+  ];
+  vcard:tel [
+    a vcard:Voice;
+    rdf:value <tel:+1-800-555-0100;ext=555>
+  ];
+  vcard:tel [
+    a vcard:Fax;
+    rdf:value <tel:+1-800-555-0199>
+  ] .
