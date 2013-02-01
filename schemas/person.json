@@ -5,7 +5,7 @@
   "description": "A real person, alive or dead",
   "type": "object",
   "properties": {
-    "_id": {
+    "id": {
       "description": "The person's unique identifier",
       "type": "string",
       "required": true

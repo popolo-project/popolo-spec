@@ -5,7 +5,7 @@
   "description": "A group with a common purpose or reason for existence that goes beyond the set of people belonging to it",
   "type": "object",
   "properties": {
-    "_id": {
+    "id": {
       "description": "The organization's unique identifier",
       "type": "string",
       "required": true

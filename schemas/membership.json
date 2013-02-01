@@ -5,7 +5,7 @@
   "description": "A relationship between a person and an organization",
   "type": "object",
   "properties": {
-    "_id": {
+    "id": {
       "description": "The membership's unique identifier",
       "type": "string",
       "required": true
