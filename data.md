@@ -593,6 +593,8 @@ In MongoDB, addresses <em class="rfc2119">must</em> be embedded documents.
 
 The MongoDB collection <em class="rfc2119">should</em> be named `popolo_posts`.
 
+**Differences from RDF:** MongoDB's `_id` field is added. The terms `person_id` and `organization_id` are used instead of `heldBy` and `postIn` to conform to popular ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
+
 <ul class="nav nav-tabs">
   <li class="active"><a href="#post-schema">JSON Schema</a></li>
   <li><a href="#post-json">JSON and MongoDB</a></li>
