@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://popoloproject.com/schemas/address.json#",
+  "title": "Address",
+  "description": "A physical location or a mail delivery point",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The address' unique identifier",
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "description": "A type of address, e.g. 'capitol'",
+      "type": "string"
+    },
+    "address": {
+      "description": "A postal address",
+      "type": "string"
+    },
+    "voice": {
+      "description": "A voice telephone number",
+      "type": "string"
+    },
+    "fax": {
+      "description": "A facsimile telephone number",
+      "type": "string"
+    }
+  }
+}
