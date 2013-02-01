@@ -12,7 +12,8 @@
     },
     "person_id": {
       "description": "The ID of the person who is a party to the relationship",
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "organization_id": {
       "description": "The ID of the organization that is a party to the relationship",
