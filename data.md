@@ -5,6 +5,8 @@ id: data
 ---
 **<abbr title="too long, didn't read">tl;dr</abbr> Read [this part of the requirements](#relations) then skip to the [serialization](#serialization) and [conformance](#conformance) sections**
 
+The key words <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>, <em class="rfc2119">required</em>, <em class="rfc2119">should</em>, <em class="rfc2119">should not</em>, <em class="rfc2119">recommended</em>, <em class="rfc2119">may</em>, and <em class="rfc2119">optional</em> are to be interpreted as described in [RFC 2119](http://tools.ietf.org/html/rfc2119).
+
 <h1 id="scope">1. Scope</h1>
 
 The data standard's initial scope is to describe the entities below and the relations between them:
@@ -34,7 +36,7 @@ The data standard is designed primarily for open government use cases, though ot
 
     >Shakespeare was born in April 1564.
 
-1. Have a permanent, unique identifier for each instance of each class [*[6]*](https://github.com/opennorth/popolo-standard/issues/6).
+1. Have a permanent, unique identifier for each instance of each class.
 
     >e.g. a URL, an integer or a hex string.
 
@@ -178,6 +180,7 @@ The Post class should have properties for:
 * the person who holds the post
 * the organization in which the post is held
 * the role that the holder of the post fulfills
+* the address at which the post is based
 
 The Membership class should have properties for:
 
@@ -225,14 +228,24 @@ This project should adopt suitable existing standards wherever possible. Followi
       <td><code>skos</code></td>
     </tr>
     <tr>
-      <td><abbr title="World Wide Web Consortium">W3C</abbr></td> 
+      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
       <td><a href="http://www.w3.org/TR/rdf-schema/">RDF Schema</a></td>
       <td><code>rdfs</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
+      <td><a href="http://schema.org/">Schema.org</a></td>
+      <td><code>schema</code></td>
     </tr>
     <tr>
       <td><abbr title="Interoperability Solutions for European Public Administrations">ISA</abbr></td>
       <td><a href="http://philarcher.org/isa/person-v1.00.html">Person Core Vocabulary</a></td>
       <td><code>person</code></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="http://vocab.org/bio/0.1/.html">Friend of a Friend (FOAF)</a></td>
+      <td><code>foaf</code></td>
     </tr>
     <tr>
       <td></td>
@@ -258,11 +271,25 @@ For the Address class, vCard is the only vocabulary to meet all [requirements](#
 
 <p class="note">Note: <a href="http://schema.org/">Schema.org</a> can nonetheless be used for HTML serialization, but HTML serialization is out of scope.</p>
 
+<h2 id="restrictions">3.1 Restrictions</h1>
+
+This data standard imposes cardinality and range restrictions on some properties of other standards.
+
+In [vCard](http://tools.ietf.org/html/rfc6350), each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data standard requires that each component of a name can include one text value only.
+
+According to the [W3C organization ontology](http://www.w3.org/TR/vocab-org/), multiple people can hold a post, and either a person or an organization can hold a post. In Popolo, only a single *person* can hold a post.
+
+**TODO: OWL file describing the restrictions.**
+
+<h2 id="org-profile">3.2 Organization ontology profile</h1>
+
+This data standard is a [profile of the W3C organization ontology](http://www.w3.org/TR/vocab-org/#conformance).
+
+[todo other things relating to ORG profile]
+
 <h1 id="classes-and-properties">4. Classes and properties</h1>
 
 Given that the [standards reused](#standard-reuse) are defined in RDF, the data standard's classes and properties will map to RDF terms. Serialization is not limited to RDF; JSON and MongoDB schema are defined in [the next section](#serialization).
-
-Given that the vCard 4.0 RDF encoding is still [in progress](http://www.w3.org/wiki/RepresentingVCardinRDFOWL), the data standard will map to properties from [FOAF](http://xmlns.com/foaf/spec/) and [Schema.org](http://schema.org/) instead.
 
 Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alternate names, it usually represents abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames. vCard 4.0 can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred. No standard has a property for former names, however. This data standard may therefore propose a new term for both alternate and former names. The RDF definition is not yet available, however.
 
@@ -408,9 +435,9 @@ In RDF, the permanent, unique identifier is the resource's URL.
       <td></td>
       <td>A date of dissolution, termination, withdrawal, expiry, etc.</td>
     </tr>
-    <tr id="vcard:Address">
+    <tr id="vcard:VCard">
       <td><strong>Address</strong></td>
-      <td><code><a href="http://www.w3.org/2006/vcard/ns#Address">vcard:Address</a></code></td>
+      <td><code><a href="http://www.w3.org/2006/vcard/ns#VCard">vcard:VCard</a></code></td>
       <td>A physical location or a mail delivery point</td>
     </tr>
     <tr id="rdf:type">
@@ -448,6 +475,11 @@ In RDF, the permanent, unique identifier is the resource's URL.
       <td><code><a href="http://www.w3.org/ns/org#role">org:role</a></code></td>
       <td>The role that the holder of the post fulfills</td>
     </tr>
+    <tr>
+      <td>address</td>
+      <td></td>
+      <td>The address at which the post is based</td>
+    </tr>
     <tr id="org:Membership">
       <td><strong>Membership</strong></td>
       <td><code><a href="http://www.w3.org/ns/org#Membership">org:Membership</a></code></td>
@@ -476,114 +508,119 @@ In RDF, the permanent, unique identifier is the resource's URL.
   </tbody>
 </table>
 
-<p class="note" id="note2">2. <code>vcard:deathDate</code> can be used for date of dissolution, but <code>deathDate</code> is an unusual term for an organization.</p>
+<p class="note" id="note2">2. <code>vcard:deathDate</code> could have been used for date of dissolution, but <code>deathDate</code> is an unusual term for an organization.</p>
 <p class="note" id="note3">3. <code>schema:honorificPrefix</code> is used instead of <code>foaf:title</code>, because <code>foaf:title</code> is a <a href="http://xmlns.com/foaf/spec/#term_title">candidate for deprecation</a>.</p>
 <p class="note" id="note4">4. <code>schema:email</code> is used instead of <code>foaf:mbox</code>, because <code>email</code> is a more familiar term than <code>mbox</code>.</p>
-<p class="note" id="note5">5. <code>schema:birthDate</code> is used instead of <code>foaf:birthday</code>, to match <code>schema:deathDate</code>, for which FOAF has no property.</p>
-<p class="note" id="note6">6. <code>schema:image</code> is used instead of <code>foaf:img</code>, because abbreviations are avoided.</p>
+<p class="note" id="note5">5. <code>schema:birthDate</code> is used instead of <code>foaf:birthday</code> to match <code>schema:deathDate</code>, for which FOAF has no property.</p>
+<p class="note" id="note6">6. <code>schema:image</code> is used instead of <code>foaf:img</code>, because abbreviations like <code>img</code> are avoided.</p>
 <p class="note" id="note7">7. ORG defines the inverse properties <code>org:hasSubOrganization</code>, <code>org:holds</code>, <code>org:hasPost</code> and <code>org:hasMembership</code>.</p>
 <p class="note" id="note8">8. vCard <a href="http://www.w3.org/TR/vcard-rdf/#Param">uses</a> <code>rdf:type</code> to indicate the type of address or telephone number.</p>
 
 <h1 id="serialization">5. Serialization</h1>
 
-The schemas are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) and apply to both the JSON and MongoDB serializations.
+Schemas are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) and apply to the JSON and MongoDB serializations. The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s and <abbr title="object-document mapper">ODM</abbr>s. The RDF serialization follows the [classes and properties](#classes-and-properties) section; example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
 
-[Snake case](http://en.wikipedia.org/wiki/Snake_case) is used instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s and <abbr title="object-document mapper">ODM</abbr>s.
+Reusable software components implementing the data standard should isolate themselves from their host applications. For the MongoDB serialization, it is therefore <em class="rfc2119">recommended</em> to namespace the collections by prepending a `popolo_` prefix to the names of the collections.
+
+Many MongoDB ODMs, including [Mongoid](http://mongoid.org/), use a `_type` field on a document to indicate that the document maps to a subclass of the class that is otherwise associated with the collection. MongoDB serializations <em class="rfc2119">should</em> leave the management of the `_type` field to the ODM.
+
+In order to satisfy the [requirement](#use-cases-and-requirements) to allow the use of imprecise dates, the use [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates is <em class="rfc2119">recommended</em>. [XML Schema](http://www.w3.org/XML/Schema.html) supports [reduced dates](http://www.w3.org/TR/xmlschema-2/#truncatedformats) such as [`YYYY`](http://www.w3.org/TR/xmlschema-2/#gYear) and [`YYYY-MM`](http://www.w3.org/TR/xmlschema-2/#gYearMonth). MongoDB does not; it stores a [date](http://docs.mongodb.org/manual/core/document/#date) as a 64-bit integer that represents the number of milliseconds since the [Unix epoch](http://en.wikipedia.org/wiki/Unix_time). Unless a use case emerges requiring fast date operations, dates <em class="rfc2119">should</em> be serialized as strings in MongoDB.
 
 ## 5.1. Person
 
-[RDF example in Turtle](/examples/person.ttl)
+The MongoDB collection <em class="rfc2119">should</em> be named `popolo_people`.
 
-[todo both former and alternate put into one; iso dates used; whereas RDF literals can have language tags, JSON/MongoDB require different approach]
+The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of name objects. If a name object sets an `end_date`[<sup>9</sup>](#note9) property, it represents a former name.
 
-```js
-{
-  "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/person.json#",
-  "title": "Person",
-  "description": "A real person, alive or dead",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The person's unique identifier",
-      "type": "string"
-    }
-  },
-  "required": []
-}
-```
+**Differences from RDF:** MongoDB's `_id` field is added. The term `summary`[<sup>10</sup>](#note10) is used instead of `olb`, because abbreviations are avoided. The term `links` is used instead of `seeAlso`.
 
-Example:
+<p class="note" id="note9">9. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
+<p class="note" id="note10">10. With respect to reuse, <a href="http://drupal.org/">Drupal</a> uses the term <code>summary</code> to describe a brief version of a long text.</p>
 
-```js
-{
-  "id": "47cc67093475061e3d95369d",
-  "name": "Mr. John Q. Public, Esq.",
-  "family_name": "Public",
-  "given_name": "John",
-  "additional_name": "Quinlan",
-  "honorific_prefix": "Mr.",
-  "honorific_suffix": "Esq.",
-  "other_names": [
-    {
-      name: "Mr. Ziggy Q. Public, Esq.",
-      start_date: "1920-01",
-      end_date: "19491231"
-    },
-    {
-      name: "Dragonsbane"
-    }
-  ],
-  "email": "john@example.com",
-  "gender": "male",
-  "birth_date": "1920-01",
-  "death_date": "20100101",
-  "photo_url": "http://example.com/john.jpg",
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#person-schema">JSON Schema</a></li>
+  <li><a href="#person-json">JSON example</a></li>
+  <li><a href="#person-rdf">RDF example</a></li>
+</ul>
 
-}
-```
+<div class="tab-content">
+  <div class="tab-pane active" id="person-schema" data-url="/schemas/person.json"></div>
+  <div class="tab-pane" id="person-json" data-url="/examples/person.json"></div>
+  <div class="tab-pane" id="person-rdf" data-url="/examples/person.ttl"></div>
+</div>
 
 ## 5.2. Organization
 
-[RDF example in Turtle](/examples/organization.ttl)
+The MongoDB collection <em class="rfc2119">should</em> be named `popolo_organizations`.
 
+**Differences from RDF:** MongoDB's `_id` field is added. The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with the Person class. Since JSON and MongoDB values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF, a new `scheme`[<sup>11</sup>](#11) property indicates an identifier's scheme. The term `parent_id` is used instead of `subOrganizationOf`, because popular ODMs use it.
 
-```js
-{
-  "$schema": "http://json-schema.org/draft-03/schema#",
-  "title": "",
-  "description": "",
-  "type": "object",
-  "properties": {
+<p class="note" id="note11">11. With respect to reuse, both ORG and SKOS use the word <code>scheme</code> to refer to this value.</p>
 
-  },
-  "required": []
-}
-```
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#organization-schema">JSON Schema</a></li>
+  <li><a href="#organization-json">JSON example</a></li>
+  <li><a href="#organization-rdf">RDF example</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="organization-schema" data-url="/schemas/organization.json"></div>
+  <div class="tab-pane" id="organization-json" data-url="/examples/organization.json"></div>
+  <div class="tab-pane" id="organization-rdf" data-url="/examples/organization.ttl"></div>
+</div>
 
 ## 5.3. Address
 
-[RDF example in Turtle](/examples/address.ttl)
+In MongoDB, addresses <em class="rfc2119">must</em> be embedded documents.
 
-```js
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#address-schema">JSON Schema</a></li>
+  <li><a href="#address-json">JSON example</a></li>
+  <li><a href="#address-rdf">RDF example</a></li>
+</ul>
 
-```
+<div class="tab-content">
+  <div class="tab-pane active" id="address-schema" data-url="/schemas/address.json"></div>
+  <div class="tab-pane" id="address-json" data-url="/examples/address.json"></div>
+  <div class="tab-pane" id="address-rdf" data-url="/examples/address.ttl"></div>
+</div>
+
 
 <!-- todo http://tools.ietf.org/html/rfc3966 -->
 
 ## 5.4. Post
 
-[RDF example in Turtle](/examples/post.ttl)
+The MongoDB collection <em class="rfc2119">should</em> be named `popolo_posts`.
 
-```js
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#post-schema">JSON Schema</a></li>
+  <li><a href="#post-json">JSON example</a></li>
+  <li><a href="#post-rdf">RDF example</a></li>
+</ul>
 
-```
+<div class="tab-content">
+  <div class="tab-pane active" id="post-schema" data-url="/schemas/post.json"></div>
+  <div class="tab-pane" id="post-json" data-url="/examples/post.json"></div>
+  <div class="tab-pane" id="post-rdf" data-url="/examples/post.ttl"></div>
+</div>
+
 
 ## 5.5. Membership
 
-```js
+The MongoDB collection <em class="rfc2119">should</em> be named `popolo_memberships`.
 
-```
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#membership-schema">JSON Schema</a></li>
+  <li><a href="#membership-json">JSON example</a></li>
+  <li><a href="#membership-rdf">RDF example</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="membership-schema" data-url="/schemas/membership.json"></div>
+  <div class="tab-pane" id="membership-json" data-url="/examples/membership.json"></div>
+  <div class="tab-pane" id="membership-rdf" data-url="/examples/membership.ttl"></div>
+</div>
+
 
 <!-- todo: document differences from inspired vocabs as we go -->
 
@@ -647,8 +684,6 @@ The following is a superset of [vCard 4.0](http://tools.ietf.org/html/rfc6350#se
 </table>
 
 <h1 id="conformance">7. Conformance</h1>
-
-The key words <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>, <em class="rfc2119">required</em>, <em class="rfc2119">should</em>, <em class="rfc2119">should not</em>, <em class="rfc2119">recommended</em>, <em class="rfc2119">may</em>, and <em class="rfc2119">optional</em> are to be interpreted as described in [RFC 2119](http://tools.ietf.org/html/rfc2119).
 
 **TODO: Similar section to the [Organization ontology](http://www.w3.org/TR/vocab-org/#conformance)**
 

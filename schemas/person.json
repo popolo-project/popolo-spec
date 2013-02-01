@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://popoloproject.com/schemas/person.json#",
+  "title": "Person",
+  "description": "A real person, alive or dead",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "description": "The person's unique identifier",
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "description": "A person's preferred full name",
+      "type": "string",
+      "required": true
+    },
+    "other_names": {
+      "description": "Alternate or former names",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "An alternate or former name",
+            "type": "string",
+            "required": true
+          },
+          "start_date": {
+            "description": "The date on which the name was adopted",
+            "type": "string",
+            "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+          },
+          "end_date": {
+            "description": "The date on which the name was abandoned",
+            "type": "string",
+            "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+          }
+        }
+      }
+    },
+    "family_name": {
+      "description": "One or more family names",
+      "type": "string"
+    },
+    "given_name": {
+      "description": "One or more primary given names",
+      "type": "string"
+    },
+    "additional_name": {
+      "description": "One or more secondary given names",
+      "type": "string"
+    },
+    "honorific_prefix": {
+      "description": "One or more honorifics preceding a person's name",
+      "type": "string"
+    },
+    "honorific_suffix": {
+      "description": "One or more honorifics following a person's name",
+      "type": "string"
+    },
+    "email": {
+      "description": "An email address",
+      "type": "string",
+      "format": "email"
+    },
+    "gender": {
+      "description": "A gender",
+      "type": "string"
+    },
+    "birth_date": {
+      "description": "A date of birth",
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+    },
+    "death_date": {
+      "description": "A date of death",
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+    },
+    "image": {
+      "description": "A URL of a head shot",
+      "type": "string",
+      "format": "uri"
+    },
+    "summary": {
+      "description": "A one-line account of a person's life",
+      "type": "string"
+    },
+    "biography": {
+      "description": "An extended account of a person's life",
+      "type": "string"
+    },
+    "links": {
+      "description": "URLs for documents about the person",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "description": "A URL for a document about the person",
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/> .
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 <http://example.com/organizations/27cc67093475061e3d95369d.ttl>
@@ -7,8 +8,8 @@
   skos:prefLabel "ABC, Inc.";
   skos:altLabel "Joe's Diner";
   skos:altLabel "Famous Joe's";
-  org:identifier <urn:duns:123456789>;
-  org:identifier <urn:isin:US0123456789>;
+  org:identifier "123456789"^^ex:duns;
+  org:identifier "US0123456789"^^ex:isin;
   org:classification [a skos:Concept; skos:prefLabel "Corporation"];
   org:classification [a skos:Concept; skos:prefLabel "Fast-food chain"];
   org:subOrganizationOf <http://example.com/organizations/17cc67093475061e3d95369d.ttl>;

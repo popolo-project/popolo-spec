@@ -191,7 +191,7 @@ The following vocabularies have not seen widepread adoption beyond their authors
 * [Freebase](http://schemas.freebaseapps.com/) <span class="label">non-RDF</span> and [DBPedia](http://wiki.dbpedia.org/Ontology) have large, wiki-based, potentially unstable ontologies.
 * The [Facebook](https://developers.facebook.com/docs/reference/api/) <span class="label">non-RDF</span> [`User`](https://developers.facebook.com/docs/reference/api/user/) has no properties for honorific prefixes, honorific suffixes, alternate names, death dates or external links.
 * [OpenCalais](http://www.opencalais.com/documentation/calais-web-service-api/api-metadata/entity-index-and-definitions) defines classes relevant to its extraction service, which are too narrow for this project. 
-* The [participation ontology](http://vocab.org/participation/schema) [`participation:Role`](http://vocab.org/participation/schema#term-Role) class is a cross between [`org:Membership`](http://www.w3.org/TR/vocab-org/#class--membership) and [`org:Role`](http://www.w3.org/TR/vocab-org/#class--role).
+* The [Participation ontology](http://vocab.org/participation/schema) [`participation:Role`](http://vocab.org/participation/schema#term-Role) class is a cross between [`org:Membership`](http://www.w3.org/TR/vocab-org/#class--membership) and [`org:Role`](http://www.w3.org/TR/vocab-org/#class--role).
 * [oeGOV](http://oegov.org/) uses a large set of classes instead of properties like [`org:classification`](http://www.w3.org/TR/vocab-org/#org:classification) or [`org:identifier`](http://www.w3.org/TR/vocab-org/#org:identifier).
 * The [PIMO Ontology](http://www.semanticdesktop.org/ontologies/pimo/) has no properties for names, emails, genders, birth dates, death dates or external links.
 

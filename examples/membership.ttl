@@ -1,0 +1,18 @@
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+<http://example.com/memberships/47cc67093475061e3d95369d.ttl>
+  a org:Membership;
+  org:member <http://example.com/people/57cc67093475061e3d95369d.ttl>;
+  org:organizations <http://example.com/organizations/27cc67093475061e3d95369d.ttl>;
+  org:role [a skos:Concept; skos:prefLabel "Member"];
+  org:memberDuring [
+    a time:Interval;
+    time:hasBeginning [
+      time:inXSDDateTime "1970-01-01T00:00:00Z"^^xsd:dateTime
+    ];
+    time:hasEnd [
+      time:inXSDDateTime "1972-01-01T00:00:00Z"^^xsd:dateTime
+    ]
+  ] .

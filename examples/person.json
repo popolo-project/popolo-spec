@@ -1,0 +1,34 @@
+{
+  "_id": "47cc67093475061e3d95369d",
+  "name": "Mr. John Q. Public, Esq.",
+  "family_name": "Public",
+  "given_name": "John",
+  "additional_name": "Quinlan",
+  "honorific_prefix": "Mr.",
+  "honorific_suffix": "Esq.",
+  "other_names": [
+    {
+      "name": "Mr. Ziggy Q. Public, Esq.",
+      "start_date": "1920-01",
+      "end_date": "1949-12-31"
+    },
+    {
+      "name": "Dragonsbane"
+    }
+  ],
+  "email": "jqpublic@xyz.example.com",
+  "gender": "male",
+  "birth_date": "1920-01",
+  "death_date": "2010-01-01",
+  "image": "http://example.com/john.jpg",
+  "summary": "A hypothetical member of society deemed a 'common man'",
+  "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+  "links": [
+    {
+      "url": "http://twitter.com/ev"
+    },
+    {
+      "url": "http://en.wikipedia.org/wiki/John_Q._Public"
+    }
+  ]
+}
