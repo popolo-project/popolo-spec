@@ -279,13 +279,13 @@ In [vCard](http://tools.ietf.org/html/rfc6350), each component of a name – fa
 
 According to the [W3C organization ontology](http://www.w3.org/TR/vocab-org/), multiple people can hold a post, and either a person or an organization can hold a post. In Popolo, only a single *person* can hold a post.
 
-**TODO: OWL file describing the restrictions.**
+**TODO: OWL file describing the restrictions**
 
 <h2 id="org-profile">3.2 Organization ontology profile</h1>
 
 This data standard is a [profile of the W3C organization ontology](http://www.w3.org/TR/vocab-org/#conformance).
 
-[todo other things relating to ORG profile]
+**TODO: Define the ORG profile**
 
 <h1 id="classes-and-properties">4. Classes and properties</h1>
 
@@ -524,7 +524,7 @@ Reusable software components implementing the data standard should isolate thems
 
 Many MongoDB ODMs, including [Mongoid](http://mongoid.org/), use a `_type` field on a document to indicate that the document maps to a subclass of the class that is otherwise associated with the collection. MongoDB serializations <em class="rfc2119">should</em> leave the management of the `_type` field to the ODM.
 
-In order to satisfy the [requirement](#use-cases-and-requirements) to allow the use of imprecise dates, the use [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates is <em class="rfc2119">recommended</em>. [XML Schema](http://www.w3.org/XML/Schema.html) supports [reduced dates](http://www.w3.org/TR/xmlschema-2/#truncatedformats) such as [`YYYY`](http://www.w3.org/TR/xmlschema-2/#gYear) and [`YYYY-MM`](http://www.w3.org/TR/xmlschema-2/#gYearMonth). MongoDB does not; it stores a [date](http://docs.mongodb.org/manual/core/document/#date) as a 64-bit integer that represents the number of milliseconds since the [Unix epoch](http://en.wikipedia.org/wiki/Unix_time). Unless a use case emerges requiring fast date operations, dates <em class="rfc2119">should</em> be serialized as strings in MongoDB.
+In order to satisfy the [requirement](#use-cases-and-requirements) to allow the use of imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates is <em class="rfc2119">recommended</em>. [XML Schema](http://www.w3.org/XML/Schema.html) supports [reduced dates](http://www.w3.org/TR/xmlschema-2/#truncatedformats) such as [`YYYY`](http://www.w3.org/TR/xmlschema-2/#gYear) and [`YYYY-MM`](http://www.w3.org/TR/xmlschema-2/#gYearMonth). MongoDB does not; it stores a [date](http://docs.mongodb.org/manual/core/document/#date) as a 64-bit integer that represents the number of milliseconds since the [Unix epoch](http://en.wikipedia.org/wiki/Unix_time). Unless a use case emerges requiring fast date operations, dates <em class="rfc2119">should</em> be serialized as strings in MongoDB.
 
 ## 5.1. Person
 
@@ -532,15 +532,16 @@ The MongoDB collection <em class="rfc2119">should</em> be named `popolo_people`.
 
 The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of name objects. If a name object sets an `end_date`[<sup>9</sup>](#note9) property, it represents a former name.
 
-**Differences from RDF:** MongoDB's `_id` field is added. The term `summary`[<sup>10</sup>](#note10) is used instead of `olb`, because abbreviations are avoided. The term `links` is used instead of `seeAlso`.
+**Differences from RDF:** MongoDB's `_id` field is added. The term `summary`[<sup>10</sup>](#note10) is used instead of `olb`, because abbreviations are avoided. The term `links` is used instead of `seeAlso`. A new `note`[<sup>11</sup>](#11) property adds a note to an external link.
 
 <p class="note" id="note9">9. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
 <p class="note" id="note10">10. With respect to reuse, <a href="http://drupal.org/">Drupal</a> uses the term <code>summary</code> to describe a brief version of a long text.</p>
+<p class="note" id="note13">13. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#person-schema">JSON Schema</a></li>
-  <li><a href="#person-json">JSON example</a></li>
-  <li><a href="#person-rdf">RDF example</a></li>
+  <li><a href="#person-json">JSON and MongoDB</a></li>
+  <li><a href="#person-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content">
@@ -553,14 +554,15 @@ The former name and alternate name properties are serialized as a single `other_
 
 The MongoDB collection <em class="rfc2119">should</em> be named `popolo_organizations`.
 
-**Differences from RDF:** MongoDB's `_id` field is added. The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with the Person class. Since JSON and MongoDB values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF, a new `scheme`[<sup>11</sup>](#11) property indicates an identifier's scheme. The term `parent_id` is used instead of `subOrganizationOf`, because popular ODMs use it.
+**Differences from RDF:** MongoDB's `_id` field is added. The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with Person. A new `scheme`[<sup>12</sup>](#12) property indicates an identifier's scheme, because JSON and MongoDB values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF. The term `parent_id` is used instead of `subOrganizationOf`[<sup>13</sup>](#13). A new `note`[<sup>11</sup>](#11) property adds a note to an external link.
 
-<p class="note" id="note11">11. With respect to reuse, both ORG and SKOS use the word <code>scheme</code> to refer to this value.</p>
+<p class="note" id="note12">12. With respect to reuse, both ORG and SKOS use the word <code>scheme</code> to refer to this value.</p>
+<p class="note" id="note13">13. With respect to reuse, <a href="https://github.com/benedikt/mongoid-tree">mongoid-tree</a>, <a href="https://github.com/collectiveidea/awesome_nested_set/tree/master/lib/awesome_nested_set">awesome_nested_set</a> and <a href="https://github.com/amerine/acts_as_tree">acts_as_tree</a> use <code>parent_id</code>.</p>
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#organization-schema">JSON Schema</a></li>
-  <li><a href="#organization-json">JSON example</a></li>
-  <li><a href="#organization-rdf">RDF example</a></li>
+  <li><a href="#organization-json">JSON and MongoDB</a></li>
+  <li><a href="#organization-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content">
@@ -573,10 +575,12 @@ The MongoDB collection <em class="rfc2119">should</em> be named `popolo_organiza
 
 In MongoDB, addresses <em class="rfc2119">must</em> be embedded documents.
 
+<!-- todo http://tools.ietf.org/html/rfc3966 -->
+
 <ul class="nav nav-tabs">
   <li class="active"><a href="#address-schema">JSON Schema</a></li>
-  <li><a href="#address-json">JSON example</a></li>
-  <li><a href="#address-rdf">RDF example</a></li>
+  <li><a href="#address-json">JSON and MongoDB</a></li>
+  <li><a href="#address-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content">
@@ -585,17 +589,14 @@ In MongoDB, addresses <em class="rfc2119">must</em> be embedded documents.
   <div class="tab-pane" id="address-rdf" data-url="/examples/address.ttl"></div>
 </div>
 
-
-<!-- todo http://tools.ietf.org/html/rfc3966 -->
-
 ## 5.4. Post
 
 The MongoDB collection <em class="rfc2119">should</em> be named `popolo_posts`.
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#post-schema">JSON Schema</a></li>
-  <li><a href="#post-json">JSON example</a></li>
-  <li><a href="#post-rdf">RDF example</a></li>
+  <li><a href="#post-json">JSON and MongoDB</a></li>
+  <li><a href="#post-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content">
@@ -604,15 +605,16 @@ The MongoDB collection <em class="rfc2119">should</em> be named `popolo_posts`.
   <div class="tab-pane" id="post-rdf" data-url="/examples/post.ttl"></div>
 </div>
 
-
 ## 5.5. Membership
 
 The MongoDB collection <em class="rfc2119">should</em> be named `popolo_memberships`.
 
+**Differences from RDF:** MongoDB's `_id` field is added. Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, a simple `start_date` and `end_date`[<sup>9</sup>](#note9) pair is used, as [proposed](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology. The terms `person_id` and `organization_id` are used instead of `member` and `organization` to conform to popular ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
+
 <ul class="nav nav-tabs">
   <li class="active"><a href="#membership-schema">JSON Schema</a></li>
-  <li><a href="#membership-json">JSON example</a></li>
-  <li><a href="#membership-rdf">RDF example</a></li>
+  <li><a href="#membership-json">JSON and MongoDB</a></li>
+  <li><a href="#membership-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content">
@@ -620,9 +622,6 @@ The MongoDB collection <em class="rfc2119">should</em> be named `popolo_membersh
   <div class="tab-pane" id="membership-json" data-url="/examples/membership.json"></div>
   <div class="tab-pane" id="membership-rdf" data-url="/examples/membership.ttl"></div>
 </div>
-
-
-<!-- todo: document differences from inspired vocabs as we go -->
 
 <h1 id="code-lists">6. Code lists</h1>
 

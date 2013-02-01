@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://popoloproject.com/schemas/membership.json#",
+  "title": "Membership",
+  "description": "A relationship between a person and an organization",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "description": "The membership's unique identifier",
+      "type": "string",
+      "required": true
+    },
+    "person_id": {
+      "description": "The ID of the person who is a party to the relationship",
+      "type": "string"
+    },
+    "organization_id": {
+      "description": "The ID of the organization that is a party to the relationship",
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "description": "The role that the holder of the post fulfills",
+      "type": "string"
+    },
+    "start_date": {
+      "description": "The date on which the relationship began",
+      "type": "string",
+      "pattern": "^[0-9]{4}((-[0-9]{2}){0,2}|(-[0-9]{2}){2}(T[0-9]{2}(:[0-9]{2}(:[0-9]{2})?)?Z)?)$"
+    },
+    "end_date": {
+      "description": "The date on which the relationship ended",
+      "type": "string",
+      "pattern": "^[0-9]{4}((-[0-9]{2}){0,2}|(-[0-9]{2}){2}(T[0-9]{2}(:[0-9]{2}(:[0-9]{2})?)?Z)?)$"
+    }
+  }
+}

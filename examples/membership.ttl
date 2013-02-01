@@ -5,7 +5,7 @@
 <http://example.com/memberships/47cc67093475061e3d95369d.ttl>
   a org:Membership;
   org:member <http://example.com/people/57cc67093475061e3d95369d.ttl>;
-  org:organizations <http://example.com/organizations/27cc67093475061e3d95369d.ttl>;
+  org:organization <http://example.com/organizations/27cc67093475061e3d95369d.ttl>;
   org:role [a skos:Concept; skos:prefLabel "Member"];
   org:memberDuring [
     a time:Interval;

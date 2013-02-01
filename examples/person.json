@@ -1,5 +1,5 @@
 {
-  "_id": "47cc67093475061e3d95369d",
+  "_id": "57cc67093475061e3d95369d",
   "name": "Mr. John Q. Public, Esq.",
   "family_name": "Public",
   "given_name": "John",
@@ -10,10 +10,12 @@
     {
       "name": "Mr. Ziggy Q. Public, Esq.",
       "start_date": "1920-01",
-      "end_date": "1949-12-31"
+      "end_date": "1949-12-31",
+      "note": "Birth name"
     },
     {
-      "name": "Dragonsbane"
+      "name": "Dragonsbane",
+      "note": "LARP character name"
     }
   ],
   "email": "jqpublic@xyz.example.com",
@@ -25,10 +27,12 @@
   "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
   "links": [
     {
-      "url": "http://twitter.com/ev"
+      "url": "http://twitter.com/ev",
+      "note": "Twitter account"
     },
     {
-      "url": "http://en.wikipedia.org/wiki/John_Q._Public"
+      "url": "http://en.wikipedia.org/wiki/John_Q._Public",
+      "note": "Wikipedia page"
     }
   ]
 }
