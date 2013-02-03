@@ -538,7 +538,7 @@ The former name and alternate name properties are serialized as a single `other_
 
 <p class="note" id="note9">9. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
 <p class="note" id="note10">10. With respect to reuse, <a href="http://drupal.org/">Drupal</a> uses the term <code>summary</code> to describe a brief version of a long text.</p>
-<p class="note" id="note13">13. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
+<p class="note" id="note11">11. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#person-schema">JSON Schema</a></li>
@@ -595,7 +595,7 @@ In MongoDB, addresses <em class="rfc2119">must</em> be embedded documents.
 
 The MongoDB collection <em class="rfc2119">should</em> be named `popolo_posts`.
 
-**Differences from RDF:** The terms `person_id` and `organization_id` are used instead of `heldBy` and `postIn` to conform to popular ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
+**Differences from RDF:** The terms `person_id` and `organization_id` are used instead of `heldBy` and `postIn` to conform to ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#post-schema">JSON Schema</a></li>
