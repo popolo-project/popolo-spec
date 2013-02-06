@@ -40,19 +40,9 @@
         }
       }
     },
-    "classifications": {
-      "description": "Organization categories",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "classification": {
-            "description": "An organizational category, e.g. charity",
-            "type": "string",
-            "required": true
-          }
-        }
-      }
+    "classification": {
+      "description": "An organization category, e.g. committee",
+      "type": "string"
     },
     "parent_id": {
       "description": "An organization that contains this organization",

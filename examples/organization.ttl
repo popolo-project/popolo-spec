@@ -11,6 +11,5 @@
   org:identifier "123456789"^^ex:duns;
   org:identifier "US0123456789"^^ex:isin;
   org:classification [a skos:Concept; skos:prefLabel "Corporation"];
-  org:classification [a skos:Concept; skos:prefLabel "Fast-food chain"];
   org:subOrganizationOf <http://example.com/organizations/17cc67093475061e3d95369d.ttl>;
   schema:foundingDate "1950-01-01"^^xsd:date .

@@ -25,14 +25,7 @@
       "scheme": "ISIN"
     }
   ],
-  "classifications": [
-    {
-      "classification": "Corporation"
-    },
-    {
-      "classification": "Fast-food chain"
-    }
-  ],
+  "classification": "Corporation",
   "parent_id": "17cc67093475061e3d95369d",
   "founding_date": "1950-01-01",
   "dissolution_date": "2000-01-01"

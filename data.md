@@ -277,7 +277,7 @@ This data standard imposes cardinality and range restrictions on some properties
 
 In [vCard](http://tools.ietf.org/html/rfc6350), each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data standard requires that each component of a name can include one text value only.
 
-According to the [W3C organization ontology](http://www.w3.org/TR/vocab-org/), multiple people can hold a post, and either a person or an organization can hold a post. In Popolo, only a single *person* can hold a post.
+According to the [W3C organization ontology](http://www.w3.org/TR/vocab-org/), multiple people can hold a post, and either a person or an organization can hold a post. In Popolo, only a single *person* can hold a post. Similarly, in Popolo, an organization may have only one classification; implementations must therefore choose a unique classification scheme.
 
 **TODO: OWL file describing the restrictions**
 
@@ -522,7 +522,7 @@ Schemas are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://t
 
 Reusable software components implementing the data standard should isolate themselves from their host applications. For the MongoDB serialization, it is therefore <em class="rfc2119">recommended</em> to namespace the collections by prepending a `popolo_` prefix to the names of the collections.
 
-Many MongoDB ODMs, including [Mongoid](http://mongoid.org/), use a `_type` field on a document to indicate that the document maps to a subclass of the class that is otherwise associated with the collection. MongoDB serializations <em class="rfc2119">should</em> leave the management of the `_type` field to the ODM.
+Many MongoDB ODMs, including [Mongoid](http://mongoid.org/), use a `_type` field on a document to indicate that the document represents an instance of a subclass of the base class that is otherwise associated with the MongoDB collection. MongoDB serializations <em class="rfc2119">should</em> leave the management of the `_type` field to the ODM and <em class="rfc2119">should</em> place subclasses and base classes in the same collection.
 
 In order to satisfy the [requirement](#use-cases-and-requirements) to allow the use of imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates is <em class="rfc2119">recommended</em>. [XML Schema](http://www.w3.org/XML/Schema.html) supports [reduced dates](http://www.w3.org/TR/xmlschema-2/#truncatedformats) such as [`YYYY`](http://www.w3.org/TR/xmlschema-2/#gYear) and [`YYYY-MM`](http://www.w3.org/TR/xmlschema-2/#gYearMonth). MongoDB does not; it stores a [date](http://docs.mongodb.org/manual/core/document/#date) as a 64-bit integer that represents the number of milliseconds since the [Unix epoch](http://en.wikipedia.org/wiki/Unix_time). Unless a use case emerges requiring fast date operations, dates <em class="rfc2119">should</em> be serialized as strings in MongoDB.
 
