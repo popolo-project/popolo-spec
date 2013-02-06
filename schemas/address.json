@@ -25,6 +25,26 @@
     "fax": {
       "description": "A facsimile telephone number",
       "type": "string"
+    },
+    "cell": {
+      "description": "A mobile telephone number",
+      "type": "string"
+    },
+    "tollfree": {
+      "description": "A toll-free telephone number",
+      "type": "string"
+    },
+    "video": {
+      "description": "A video conferencing telephone number",
+      "type": "string"
+    },
+    "pager": {
+      "description": "A paging device telephone number",
+      "type": "string"
+    },
+    "textphone": {
+      "description": "A telecommunication device for people with hearing or speech difficulties",
+      "type": "string"
     }
   }
 }

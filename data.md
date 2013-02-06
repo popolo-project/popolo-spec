@@ -640,7 +640,7 @@ Values other than `male` and `female` may be used to reflect the diversity of ge
 
 ## Telephone
 
-The following is a superset of [vCard 4.0](http://tools.ietf.org/html/rfc6350#section-6.4.1)'s code list:
+The following adds `tollfree` and removes `text` from [vCard 4.0](http://tools.ietf.org/html/rfc6350#section-6.4.1)'s code list:
 
 <table id="telephone-types">
   <caption>Telephone types code list</caption>
@@ -678,10 +678,6 @@ The following is a superset of [vCard 4.0](http://tools.ietf.org/html/rfc6350#se
     <tr>
       <td><code>textphone</code></td>
       <td>A telecommunication device for people with hearing or speech difficulties</td>
-    </tr>
-    <tr>
-      <td><code>text</code></td>
-      <td>The telephone number supports text messages (SMS)</td>
     </tr>
   </tbody>
 </table>
