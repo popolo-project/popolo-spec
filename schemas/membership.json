@@ -27,12 +27,12 @@
     "start_date": {
       "description": "The date on which the relationship began",
       "type": "string",
-      "pattern": "^[0-9]{4}((-[0-9]{2}){0,2}|(-[0-9]{2}){2}(T[0-9]{2}(:[0-9]{2}(:[0-9]{2})?)?Z)?)$"
+      "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
     },
     "end_date": {
       "description": "The date on which the relationship ended",
       "type": "string",
-      "pattern": "^[0-9]{4}((-[0-9]{2}){0,2}|(-[0-9]{2}){2}(T[0-9]{2}(:[0-9]{2}(:[0-9]{2})?)?Z)?)$"
+      "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
     }
   }
 }

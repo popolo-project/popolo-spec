@@ -10,9 +10,9 @@
   org:memberDuring [
     a time:Interval;
     time:hasBeginning [
-      time:inXSDDateTime "1970-01-01T00:00:00Z"^^xsd:dateTime
+      time:inXSDDateTime "1970-01"^^xsd:gYearMonth
     ];
     time:hasEnd [
-      time:inXSDDateTime "1972-01-01T00:00:00Z"^^xsd:dateTime
+      time:inXSDDateTime "1972-01-01"^^xsd:date
     ]
   ] .
