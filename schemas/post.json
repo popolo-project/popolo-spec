@@ -21,7 +21,8 @@
     },
     "role": {
       "description": "The role that the holder of the post fulfills",
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "addresses": {
       "description": "Addresses at which the post is based",
