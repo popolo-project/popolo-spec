@@ -12,6 +12,6 @@ The project's core parts are:
 
 * a [data standard](data.html)
 * an [API specification](api.html) *(coming soon)*
-* a [reference implementation](https://github.com/opennorth/popolo) *(in progress)*
+* a [reference implementation](https://github.com/opennorth/popolo)
 
 These documents are **Working Drafts**. Their governance will follow a simplified [W3C process](http://www.w3.org/Consortium/Process/).
