@@ -10,7 +10,7 @@ id: data
   <li class="active">Existing Standards</li>
 </ul>
 
-# Dublin Core Metadata Initiative <span class="label"></span>
+# Dublin Core Metadata Initiative
 
 [DCMI](http://dublincore.org/) defines general properties for describing resources, e.g. `dcterms:created` and `dcterms:modified`. The [Dublin Core Metadata Element Set](http://dublincore.org/documents/dces/) describes 15 properties that have been endorsed in [IETF](http://tools.ietf.org/html/rfc5013), ISO and ANSI/NISO standards. [DCMI Metadata Terms](http://dublincore.org/documents/dcmi-terms/) specifies all properties maintained by DCMI. Both are among the [most referenced](http://lov.okfn.org/dataset/lov/details/vocabulary_dce.html) linked open vocabularies. DCMI has a clear [governance and operation structure](http://dublincore.org/about/).
 
@@ -158,6 +158,23 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 ## Links
 
 * CIQ maintains a list of [other industry standards used](http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716017).
+
+***
+
+# National Information Exchange Model <span class="label">Person</span> <span class="label">Organization</span> <span class="label">Address</span>
+
+[NIEM](https://www.niem.gov/) was initiated as a joint venture between the U.S. Department of Homeland Security and the U.S. Department of Justice with outreach to other departments and agencies. Its goal is to allow for national-level interoperable information sharing and data exchange. Several specializations of the NIEM Core schema exist.
+
+* [Specification](http://release.niem.gov/)
+* [Specializations](https://www.niem.gov/communities/Pages/communities.aspx)
+
+## Review
+
+* NIEM has no property for external links.
+
+## Links
+
+* NIEM reuses GML, OASIS' xAL, xNL and xPIL, and other XML standards.
 
 ***
 
