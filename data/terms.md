@@ -124,14 +124,14 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
     <tr>
       <th scope="row"><code>person</code></th>
       <td><a href="http://www.w3.org/ns/person#Person">Person</a></td>
-      <td><a href="http://xmlns.com/foaf/spec/#term_name">name</a></td>
+      <td>see <code>foaf</code></td>
       <td><a href="http://dublincore.org/documents/dcmi-terms/#terms-alternative">alternative</a></td>
       <td><a href="http://www.w3.org/ns/person#birthName">birthName</a></td>
-      <td><a href="http://xmlns.com/foaf/spec/#term_familyName">familyName</a></td>
-      <td><a href="http://xmlns.com/foaf/spec/#term_givenName">givenName</a></td>
-      <td><a href="http://schema.org/Person">additionalName</a></td>
-      <td><a href="http://schema.org/Person">honorificPrefix</a></td>
-      <td><a href="http://schema.org/Person">honorificSuffix</a></td>
+      <td>see <code>foaf</code></td>
+      <td>see <code>foaf</code></td>
+      <td>see <code>schema</code></td>
+      <td>see <code>schema</code></td>
+      <td>see <code>schema</code></td>
     </tr>
     <tr>
       <th scope="row"><code>ciq</code></th>
@@ -233,14 +233,14 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
     </tr>
     <tr>
       <th scope="row"><code>person</code></th>
-      <td><a href="http://schema.org/Person">email</a></td>
-      <td><a href="http://schema.org/Person">gender</a></td>
-      <td><a href="http://schema.org/Person">birthDate</a></td>
-      <td><a href="http://schema.org/Person">deathDate</a></td>
-      <td><a href="http://schema.org/Person">image</a></td>
+      <td>see <code>schema</code></td>
+      <td>see <code>schema</code></td>
+      <td>see <code>schema</code></td>
+      <td>see <code>schema</code></td>
+      <td>see <code>schema</code></td>
       <td></td>
       <td></td>
-      <td><a href="http://schema.org/Person">url</a></td>
+      <td>see <code>foaf</code></td>
     </tr>
     <tr>
       <th scope="row"><code>ciq</code></th>
