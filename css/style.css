@@ -56,7 +56,10 @@ table.table-terms th {
 table.table-terms td {
   width: 7.3em;
 }
-table.table-wide td {
+table.table-wider td {
+  width: 8.5em;
+}
+table.table-widest td {
   width: 9em;
 }
 

@@ -17,10 +17,10 @@ id: data
     <th>Prefix</th>
     <th>Namespace</th>
   </thead>
-  <tr>
+  <!--tr>
     <td><code>dcterms</code></td>
     <td><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></td>
-  </tr>
+  </tr-->
   <tr>
     <td><code>foaf</code></td>
     <td><a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a></td>
@@ -282,14 +282,13 @@ id: data
 * Schema.org adds a new property for each classification scheme, e.g. `isicV4` and `naics`.
 * vCard's terms are from the [RDF encoding](http://www.w3.org/TR/vcard-rdf/) of vCard 3.0, except for `org` which is from [RFC 6350](http://tools.ietf.org/html/rfc6350) and `DEATHDATE` which is from [RFC 6474](http://tools.ietf.org/html/rfc6474).
 
-<table class="table table-striped table-condensed table-terms">
+<table class="table table-striped table-condensed table-terms table-wider">
   <thead>
     <tr>
       <th scope="row">Term</th>
       <td>Organization</td>
       <td>name</td>
       <td>alternate name</td>
-      <td>former name</td>
       <td>identifier</td>
       <td>classification</td>
       <td>parent org.</td>
@@ -305,7 +304,6 @@ id: data
       <td><a href="http://xmlns.com/foaf/spec/#term_nick">nick</a></td>
       <td></td>
       <td></td>
-      <td></td>
       <td><a href="http://xmlns.com/foaf/spec/#term_member">member</a></td>
       <td><a href="http://xmlns.com/foaf/spec/#term_birthday">birthday</a></td>
       <td></td>
@@ -315,7 +313,6 @@ id: data
       <td><a href="http://schema.org/Organization">Organization</a></td>
       <td><a href="http://schema.org/Organization">name</a></td>
       <td><a href="http://schema.org/Organization">legalName</a></td>
-      <td></td>
       <td><a href="http://schema.org/Organization">duns</a>, etc.</td>
       <td><a href="http://schema.org/Organization">isicV4</a>, etc.</td>
       <td><a href="http://schema.org/Organization">member</a></td>
@@ -325,9 +322,8 @@ id: data
     <tr>
       <th scope="row"><code>org</code></th>
       <td><a href="http://www.w3.org/TR/vocab-org/#org:Organization">Organization</a></td>
-      <td><a href="http://www.w3.org/TR/skos-reference/#labels">prefLabel</a></td>
-      <td><a href="http://www.w3.org/TR/skos-reference/#labels">altLabel</a></td>
-      <td></td>
+      <td><a href="http://www.w3.org/TR/skos-reference/#labels">skos:prefLabel</a></td>
+      <td><a href="http://www.w3.org/TR/skos-reference/#labels">skos:altLabel</a></td>
       <td><a href="http://www.w3.org/TR/vocab-org/#org:identifier">identifier</a></td>
       <td><a href="http://www.w3.org/TR/vocab-org/#org:classification">classification</a></td>
       <td><a href="http://www.w3.org/TR/vocab-org/#org:subOrganizationOf">subOrganizationOf</a></td>
@@ -342,7 +338,6 @@ id: data
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
       <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:bday">bday</a></td>
       <td><a href="http://tools.ietf.org/html/rfc6474#section-2.3">DEATHDATE</a></td>
     </tr>
@@ -350,7 +345,6 @@ id: data
       <th scope="row">LDAP</th>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-3.8">organization</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.19">o</a></td>
-      <td></td>
       <td></td>
       <td><a href="http://tools.ietf.org/html/rfc4524#section-2.24">uniqueIdentifier</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.1">businessCategory</a></td>
@@ -362,7 +356,6 @@ id: data
       <th scope="row">CIQ</th>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/xPRL/specs/ciq-xprl-specs.html#_Toc213421948">Party</a></td>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716020">PartyName</a></td>
-      <td></td>
       <td></td>
       <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Identifier</a></td>
       <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Type</a></td>
@@ -379,7 +372,7 @@ id: data
 * Schema.org adds [faxNumber](http://schema.org/PostalAddress) and LDAP adds [mobile](http://tools.ietf.org/html/rfc4524#section-2.18), [pager](http://tools.ietf.org/html/rfc4524#section-2.20),
 and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) to disambiguate between different telephone types.
 
-<table class="table table-striped table-condensed table-terms">
+<table class="table table-striped table-condensed table-terms table-widest">
   <thead>
     <tr>
       <th scope="row">Term</th>
@@ -437,7 +430,7 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
 
 # Post
 
-<table class="table table-striped table-condensed table-terms table-wide">
+<table class="table table-striped table-condensed table-terms table-widest">
   <thead>
     <tr>
       <th scope="row">Term</th>
@@ -470,7 +463,7 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
 
 # Membership
 
-<table class="table table-striped table-condensed table-terms table-wide">
+<table class="table table-striped table-condensed table-terms table-widest">
   <thead>
     <tr>
       <th scope="row">Term</th>
