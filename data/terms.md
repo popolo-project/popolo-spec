@@ -51,8 +51,6 @@ id: data
   </tr>
 </table>
 
-LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixes nonetheless.
-
 # Person
 
 * vCard's terms are from the [RDF encoding](http://www.w3.org/TR/vcard-rdf/) of vCard 3.0, except for `individual` and `GENDER` and which are from [RFC 6350](http://tools.ietf.org/html/rfc6350) and `DEATHDATE` which is from [RFC 6474](http://tools.ietf.org/html/rfc6474).
@@ -61,7 +59,7 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
   <thead>
     <tr>
       <th scope="row">Term</th>
-      <td><strong>Person</strong></td>
+      <td>Person</td>
       <td>name</td>
       <td>alternate name</td>
       <td>former name</td>
@@ -110,18 +108,6 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
       <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:honorific-suffix">honorific-suffix</a></td>
     </tr>
     <tr>
-      <th scope="row"><code>ldap</code></th>
-      <td><a href="http://tools.ietf.org/html/rfc4519#section-3.12">person</a></td>
-      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.3">cn</a></td>
-      <td></td>
-      <td></td>
-      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.32">sn</a></td>
-      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.12">givenName</a></td>
-      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.14">initials</a></td>
-      <td><a href="http://tools.ietf.org/html/rfc4524#section-2.21">personalTitle</a></td>
-      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.11">generationQualifier</a></td>
-    </tr>
-    <tr>
       <th scope="row"><code>person</code></th>
       <td><a href="http://www.w3.org/ns/person#Person">Person</a></td>
       <td>see <code>foaf</code></td>
@@ -134,7 +120,19 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
       <td>see <code>schema</code></td>
     </tr>
     <tr>
-      <th scope="row"><code>ciq</code></th>
+      <th scope="row">LDAP</th>
+      <td><a href="http://tools.ietf.org/html/rfc4519#section-3.12">person</a></td>
+      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.3">cn</a></td>
+      <td></td>
+      <td></td>
+      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.32">sn</a></td>
+      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.12">givenName</a></td>
+      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.14">initials</a></td>
+      <td><a href="http://tools.ietf.org/html/rfc4524#section-2.21">personalTitle</a></td>
+      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.11">generationQualifier</a></td>
+    </tr>
+    <tr>
+      <th scope="row">CIQ</th>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/xPRL/specs/ciq-xprl-specs.html#_Toc213421948">Party</a></td>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716020">PartyName</a></td>
       <td></td>
@@ -146,7 +144,7 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
       <td></td>
     </tr>
     <tr>
-      <th scope="row"><code>opensocial</code></th>
+      <th scope="row">OpenSocial</th>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">Person</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">displayName</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">nickname</a></td>
@@ -158,7 +156,7 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Name">honorificSuffix</a></td>
     </tr>
     <tr>
-      <th scope="row"><code>facebook</code></th>
+      <th scope="row">Facebook</th>
       <td><a href="https://developers.facebook.com/docs/reference/api/user/">User</a></td>
       <td><a href="https://developers.facebook.com/docs/reference/api/user/">name</a></td>
       <td></td>
@@ -221,17 +219,6 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
       <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:url">url</a></td>
     </tr>
     <tr>
-      <th scope="row"><code>ldap</code></th>
-      <td><a href="http://tools.ietf.org/html/rfc4524#section-2.16">mail</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a href="http://tools.ietf.org/html/rfc2798#section-2.6">jpegPhoto</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
       <th scope="row"><code>person</code></th>
       <td>see <code>schema</code></td>
       <td>see <code>schema</code></td>
@@ -243,7 +230,18 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
       <td>see <code>foaf</code></td>
     </tr>
     <tr>
-      <th scope="row"><code>ciq</code></th>
+      <th scope="row">LDAP</th>
+      <td><a href="http://tools.ietf.org/html/rfc4524#section-2.16">mail</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="http://tools.ietf.org/html/rfc2798#section-2.6">jpegPhoto</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">CIQ</th>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533305" title="ElectronicAddressIdentifier">Electronic&hellip;</a></td>
       <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Gender</a></td>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533303">BirthDateTime</a></td>
@@ -254,7 +252,7 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
       <td></td>
     </tr>
     <tr>
-      <th scope="row"><code>opensocial</code></th>
+      <th scope="row">OpenSocial</th>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">emails</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">gender</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">birthday</a></td>
@@ -265,7 +263,7 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">urls</a></td>
     </tr>
     <tr>
-      <th scope="row"><code>facebook</code></th>
+      <th scope="row">Facebook</th>
       <td><a href="https://developers.facebook.com/docs/reference/api/user/">email</a></td>
       <td><a href="https://developers.facebook.com/docs/reference/api/user/">gender</a></td>
       <td><a href="https://developers.facebook.com/docs/reference/api/user/">birthday</a></td>
@@ -288,7 +286,7 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
   <thead>
     <tr>
       <th scope="row">Term</th>
-      <td><strong>Organization</strong></td>
+      <td>Organization</td>
       <td>name</td>
       <td>alternate name</td>
       <td>former name</td>
@@ -349,7 +347,7 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
       <td><a href="http://tools.ietf.org/html/rfc6474#section-2.3">DEATHDATE</a></td>
     </tr>
     <tr>
-      <th scope="row"><code>ldap</code></th>
+      <th scope="row">LDAP</th>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-3.8">organization</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.19">o</a></td>
       <td></td>
@@ -361,7 +359,7 @@ LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixe
       <td></td>
     </tr>
     <tr>
-      <th scope="row"><code>ciq</code></th>
+      <th scope="row">CIQ</th>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/xPRL/specs/ciq-xprl-specs.html#_Toc213421948">Party</a></td>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716020">PartyName</a></td>
       <td></td>
@@ -385,7 +383,7 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
   <thead>
     <tr>
       <th scope="row">Term</th>
-      <td><strong>Address</strong></td>
+      <td>Address</td>
       <td>address type</td>
       <td>postal address</td>
       <td>telephone</td>
@@ -407,13 +405,6 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td><a href="http://www.w3.org/TR/vcard-rdf/#vcard:tel2">tel</a></td>
     </tr>
     <tr>
-      <th scope="row"><code>ldap</code></th>
-      <td></td>
-      <td></td>
-      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.23">postalAddress</a></td>
-      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.35">telephoneNumber</a></td>
-    </tr>
-    <tr>
       <th scope="row"><code>locn</code></th>
       <td><a href="http://philarcher.org/isa/locn-v1.00.html#locn:Address">Address</a></td>
       <td></td>
@@ -421,14 +412,21 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td></td>
     </tr>
     <tr>
-      <th scope="row"><code>ciq</code></th>
+      <th scope="row">LDAP</th>
+      <td></td>
+      <td></td>
+      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.23">postalAddress</a></td>
+      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.35">telephoneNumber</a></td>
+    </tr>
+    <tr>
+      <th scope="row">CIQ</th>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716059">Address</a></td>
       <td></td>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716059">FreeTextAddress</a></td>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533305">ContactNumber</a></td>
     </tr>
     <tr>
-      <th scope="row"><code>opensocial</code></th>
+      <th scope="row">OpenSocial</th>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Address">Address</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Address">type</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Address">formatted</a></td>
@@ -443,7 +441,7 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
   <thead>
     <tr>
       <th scope="row">Term</th>
-      <td><strong>Post</strong></td>
+      <td>Post</td>
       <td>person</td>
       <td>organization</td>
       <td>role</td>
@@ -460,7 +458,7 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td></td>
     </tr>
     <tr>
-      <th scope="row"><code>ldap</code></th>
+      <th scope="row">LDAP</th>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-3.10">organizationalRole</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.28">roleOccupant</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.20">o</a></td>
@@ -476,7 +474,7 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
   <thead>
     <tr>
       <th scope="row">Term</th>
-      <td><strong>Membership</strong></td>
+      <td>Membership</td>
       <td>person</td>
       <td>organization</td>
       <td>role</td>
