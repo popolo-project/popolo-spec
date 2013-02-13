@@ -60,6 +60,111 @@ id: data
     <tr>
       <th scope="row">Term</th>
       <td>Person</td>
+      <td>email address</td>
+      <td>gender</td>
+      <td>date of birth</td>
+      <td>date of death</td>
+      <td>head shot</td>
+      <td>biography</td>
+      <td>external links</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><code>foaf</code></th>
+      <td><a href="http://xmlns.com/foaf/spec/#term_Person">Person</a></td>
+      <td><a href="http://xmlns.com/foaf/spec/#term_mbox">mbox</a></td>
+      <td><a href="http://xmlns.com/foaf/spec/#term_gender">gender</a></td>
+      <td><a href="http://xmlns.com/foaf/spec/#term_birthday">birthday</a></td>
+      <td></td>
+      <td><a href="http://xmlns.com/foaf/spec/#term_img">img</a></td>
+      <td></td>
+      <td><a href="http://xmlns.com/foaf/spec/#term_page">page</a></td>
+    </tr>
+    <tr>
+      <th scope="row"><code>schema</code></th>
+      <td><a href="http://schema.org/Person">Person</a></td>
+      <td><a href="http://schema.org/Person">email</a></td>
+      <td><a href="http://schema.org/Person">gender</a></td>
+      <td><a href="http://schema.org/Person">birthDate</a></td>
+      <td><a href="http://schema.org/Person">deathDate</a></td>
+      <td><a href="http://schema.org/Person">image</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row"><code>vcard</code></th>
+      <td><a href="http://tools.ietf.org/html/rfc6350#section-6.1.4">individual</a></td>
+      <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:email2">email</a></td>
+      <td><a href="http://tools.ietf.org/html/rfc6350#section-6.2.7">GENDER</a></td>
+      <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:bday">bday</a></td>
+      <td><a href="http://tools.ietf.org/html/rfc6474#section-2.3">DEATHDATE</a></td>
+      <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:photo">photo</a></td>
+      <td></td>
+      <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:url">url</a></td>
+    </tr>
+    <tr>
+      <th scope="row"><code>person</code></th>
+      <td><a href="http://www.w3.org/ns/person#Person">Person</a></td>
+      <td>see <code>schema</code></td>
+      <td>see <code>schema</code></td>
+      <td>see <code>schema</code></td>
+      <td>see <code>schema</code></td>
+      <td>see <code>schema</code></td>
+      <td></td>
+      <td>see <code>foaf</code></td>
+    </tr>
+    <tr>
+      <th scope="row">LDAP</th>
+      <td><a href="http://tools.ietf.org/html/rfc4519#section-3.12">person</a></td>
+      <td><a href="http://tools.ietf.org/html/rfc4524#section-2.16">mail</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="http://tools.ietf.org/html/rfc2798#section-2.6">jpegPhoto</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">CIQ</th>
+      <td><a href="http://docs.oasis-open.org/ciq/v3.0/xPRL/specs/ciq-xprl-specs.html#_Toc213421948">Party</a></td>
+      <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533305" title="ElectronicAddressIdentifier">Electronic&hellip;</a></td>
+      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Gender</a></td>
+      <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533303">BirthDateTime</a></td>
+      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Event/Date</a></td>
+      <td></td>
+      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">FreeTextLines</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">OpenSocial</th>
+      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">Person</a></td>
+      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">emails</a></td>
+      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">gender</a></td>
+      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">birthday</a></td>
+      <td></td>
+      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">photos</a></td>
+      <td></td>
+      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">urls</a></td>
+    </tr>
+    <tr>
+      <th scope="row">Facebook</th>
+      <td><a href="https://developers.facebook.com/docs/reference/api/user/">User</a></td>
+      <td><a href="https://developers.facebook.com/docs/reference/api/user/">email</a></td>
+      <td><a href="https://developers.facebook.com/docs/reference/api/user/">gender</a></td>
+      <td><a href="https://developers.facebook.com/docs/reference/api/user/">birthday</a></td>
+      <td></td>
+      <td><a href="https://developers.facebook.com/docs/reference/api/user/">picture</a></td>
+      <td><a href="https://developers.facebook.com/docs/reference/api/user/">bio</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-striped table-condensed table-terms">
+  <thead>
+    <tr>
+      <th scope="row">Term</th>
       <td>name</td>
       <td>alternate name</td>
       <td>former name</td>
@@ -73,7 +178,6 @@ id: data
   <tbody>
     <tr>
       <th scope="row"><code>foaf</code></th>
-      <td><a href="http://xmlns.com/foaf/spec/#term_Person">Person</a></td>
       <td><a href="http://xmlns.com/foaf/spec/#term_name">name</a></td>
       <td><a href="http://xmlns.com/foaf/spec/#term_nick">nick</a></td>
       <td></td>
@@ -85,7 +189,6 @@ id: data
     </tr>
     <tr>
       <th scope="row"><code>schema</code></th>
-      <td><a href="http://schema.org/Person">Person</a></td>
       <td><a href="http://schema.org/Person">name</a></td>
       <td></td>
       <td></td>
@@ -97,7 +200,6 @@ id: data
     </tr>
     <tr>
       <th scope="row"><code>vcard</code></th>
-      <td><a href="http://tools.ietf.org/html/rfc6350#section-6.1.4">individual</a></td>
       <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:fn">fn</a></td>
       <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:nickname">nickname</a></td>
       <td></td>
@@ -109,7 +211,6 @@ id: data
     </tr>
     <tr>
       <th scope="row"><code>person</code></th>
-      <td><a href="http://www.w3.org/ns/person#Person">Person</a></td>
       <td>see <code>foaf</code></td>
       <td><a href="http://dublincore.org/documents/dcmi-terms/#terms-alternative">alternative</a></td>
       <td><a href="http://www.w3.org/ns/person#birthName">birthName</a></td>
@@ -121,7 +222,6 @@ id: data
     </tr>
     <tr>
       <th scope="row">LDAP</th>
-      <td><a href="http://tools.ietf.org/html/rfc4519#section-3.12">person</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.3">cn</a></td>
       <td></td>
       <td></td>
@@ -133,7 +233,6 @@ id: data
     </tr>
     <tr>
       <th scope="row">CIQ</th>
-      <td><a href="http://docs.oasis-open.org/ciq/v3.0/xPRL/specs/ciq-xprl-specs.html#_Toc213421948">Party</a></td>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716020">PartyName</a></td>
       <td></td>
       <td></td>
@@ -145,7 +244,6 @@ id: data
     </tr>
     <tr>
       <th scope="row">OpenSocial</th>
-      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">Person</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">displayName</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">nickname</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">alternateNames</a></td>
@@ -157,7 +255,6 @@ id: data
     </tr>
     <tr>
       <th scope="row">Facebook</th>
-      <td><a href="https://developers.facebook.com/docs/reference/api/user/">User</a></td>
       <td><a href="https://developers.facebook.com/docs/reference/api/user/">name</a></td>
       <td></td>
       <td></td>
@@ -170,119 +267,13 @@ id: data
   </tbody>
 </table>
 
-<table class="table table-striped table-condensed table-terms">
-  <thead>
-    <tr>
-      <th scope="row">Term</th>
-      <td>email address</td>
-      <td>gender</td>
-      <td>date of birth</td>
-      <td>date of death</td>
-      <td>head shot</td>
-      <td>one-line bio</td>
-      <td>biography</td>
-      <td>external links</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><code>foaf</code></th>
-      <td><a href="http://xmlns.com/foaf/spec/#term_mbox">mbox</a></td>
-      <td><a href="http://xmlns.com/foaf/spec/#term_gender">gender</a></td>
-      <td><a href="http://xmlns.com/foaf/spec/#term_birthday">birthday</a></td>
-      <td></td>
-      <td><a href="http://xmlns.com/foaf/spec/#term_img">img</a></td>
-      <td></td>
-      <td></td>
-      <td><a href="http://xmlns.com/foaf/spec/#term_page">page</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><code>schema</code></th>
-      <td><a href="http://schema.org/Person">email</a></td>
-      <td><a href="http://schema.org/Person">gender</a></td>
-      <td><a href="http://schema.org/Person">birthDate</a></td>
-      <td><a href="http://schema.org/Person">deathDate</a></td>
-      <td><a href="http://schema.org/Person">image</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row"><code>vcard</code></th>
-      <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:email2">email</a></td>
-      <td><a href="http://tools.ietf.org/html/rfc6350#section-6.2.7">GENDER</a></td>
-      <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:bday">bday</a></td>
-      <td><a href="http://tools.ietf.org/html/rfc6474#section-2.3">DEATHDATE</a></td>
-      <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:photo">photo</a></td>
-      <td></td>
-      <td></td>
-      <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:url">url</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><code>person</code></th>
-      <td>see <code>schema</code></td>
-      <td>see <code>schema</code></td>
-      <td>see <code>schema</code></td>
-      <td>see <code>schema</code></td>
-      <td>see <code>schema</code></td>
-      <td></td>
-      <td></td>
-      <td>see <code>foaf</code></td>
-    </tr>
-    <tr>
-      <th scope="row">LDAP</th>
-      <td><a href="http://tools.ietf.org/html/rfc4524#section-2.16">mail</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a href="http://tools.ietf.org/html/rfc2798#section-2.6">jpegPhoto</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">CIQ</th>
-      <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533305" title="ElectronicAddressIdentifier">Electronic&hellip;</a></td>
-      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Gender</a></td>
-      <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533303">BirthDateTime</a></td>
-      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Event/Date</a></td>
-      <td></td>
-      <td></td>
-      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">FreeTextLines</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">OpenSocial</th>
-      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">emails</a></td>
-      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">gender</a></td>
-      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">birthday</a></td>
-      <td></td>
-      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">photos</a></td>
-      <td></td>
-      <td></td>
-      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">urls</a></td>
-    </tr>
-    <tr>
-      <th scope="row">Facebook</th>
-      <td><a href="https://developers.facebook.com/docs/reference/api/user/">email</a></td>
-      <td><a href="https://developers.facebook.com/docs/reference/api/user/">gender</a></td>
-      <td><a href="https://developers.facebook.com/docs/reference/api/user/">birthday</a></td>
-      <td></td>
-      <td><a href="https://developers.facebook.com/docs/reference/api/user/">picture</a></td>
-      <td></td>
-      <td><a href="https://developers.facebook.com/docs/reference/api/user/">bio</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
 # Organization
 
 * Schema.org adds a new property for each identifier scheme, e.g. `duns`, `globalLocationNumber`, `taxID` and `vatID`.
 * Schema.org adds a new property for each classification scheme, e.g. `isicV4` and `naics`.
 * vCard's terms are from the [RDF encoding](http://www.w3.org/TR/vcard-rdf/) of vCard 3.0, except for `org` which is from [RFC 6350](http://tools.ietf.org/html/rfc6350) and `DEATHDATE` which is from [RFC 6474](http://tools.ietf.org/html/rfc6474).
 
-<table class="table table-striped table-condensed table-terms table-wider">
+<table class="table table-striped table-condensed table-terms">
   <thead>
     <tr>
       <th scope="row">Term</th>

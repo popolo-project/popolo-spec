@@ -46,18 +46,26 @@ td {
   vertical-align: top;
 }
 
-table.table-terms {
-  width: auto;
-  max-width: none;
+@media (max-width: 1199px) {
+  table.table-widest {
+    width: auto;
+    max-width: none;
+  }
+  table.table-widest th {
+    width: 80px;
+  }
 }
-table.table-terms th {
-  width: 6.6em;
-}
-table.table-terms td {
-  width: 7.3em;
-}
-table.table-wider td {
-  width: 8.5em;
+@media (min-width: 1200px) {
+  table.table-terms {
+    width: auto;
+    max-width: none;
+  }
+  table.table-terms th {
+    width: 80px;
+  }
+  table.table-terms td {
+    width: 123px;
+  }
 }
 table.table-widest td {
   width: 9em;
