@@ -54,6 +54,7 @@ id: data
 # Person
 
 * vCard's terms are from the [RDF encoding](http://www.w3.org/TR/vcard-rdf/) of vCard 3.0, except for `individual` and `GENDER` and which are from [RFC 6350](http://tools.ietf.org/html/rfc6350) and `DEATHDATE` which is from [RFC 6474](http://tools.ietf.org/html/rfc6474).
+* NIEM terms have been abbreviated, removing the repetitive `Person` prefix, e.g. `PersonFullName` becomes `FullName` below.
 
 <table class="table table-striped table-condensed table-terms">
   <thead>
@@ -128,12 +129,23 @@ id: data
     <tr>
       <th scope="row">CIQ</th>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/xPRL/specs/ciq-xprl-specs.html#_Toc213421948">Party</a></td>
-      <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533305" title="ElectronicAddressIdentifier">Electronic&hellip;</a></td>
+      <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533305"><abbr title="ElectronicAddressIdentifier">Electronic&hellip;</abbr></a></td>
       <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Gender</a></td>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533303">BirthDateTime</a></td>
-      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Event/Date</a></td>
+      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Date</a></td>
       <td></td>
       <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">FreeTextLines</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">NIEM</th>
+      <td>PersonType</td>
+      <td>ContactEmailID</td>
+      <td><abbr title="PersonSex">Sex</abbr></td>
+      <td><abbr title="PersonBirthDate">BirthDate</abbr></td>
+      <td><abbr title="PersonDeathDate">DeathDate</abbr></td>
+      <td><abbr title="PersonDigitalImage">DigitalImage</abbr></td>
+      <td><abbr title="PersonDescriptionText">DescriptionText</abbr></td>
       <td></td>
     </tr>
     <tr>
@@ -243,6 +255,17 @@ id: data
       <td></td>
     </tr>
     <tr>
+      <th scope="row">NIEM</th>
+      <td><abbr title="PersonFullName">FullName</abbr></td>
+      <td><abbr title="PersonAlternateName">AlternateName</abbr></td>
+      <td><abbr title="PersonMaidenName">MaidenName</abbr></td>
+      <td><abbr title="PersonSurName">SurName</abbr></td>
+      <td><abbr title="PersonGivenName">GivenName</abbr></td>
+      <td><abbr title="PersonMiddleName">MiddleName</abbr></td>
+      <td><abbr title="PersonNamePrefixText">NamePrefixText</abbr></td>
+      <td><abbr title="PersonNameSuffixText">NameSuffixText</abbr></td>
+    </tr>
+    <tr>
       <th scope="row">OpenSocial</th>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">displayName</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">nickname</a></td>
@@ -272,6 +295,7 @@ id: data
 * Schema.org adds a new property for each identifier scheme, e.g. `duns`, `globalLocationNumber`, `taxID` and `vatID`.
 * Schema.org adds a new property for each classification scheme, e.g. `isicV4` and `naics`.
 * vCard's terms are from the [RDF encoding](http://www.w3.org/TR/vcard-rdf/) of vCard 3.0, except for `org` which is from [RFC 6350](http://tools.ietf.org/html/rfc6350) and `DEATHDATE` which is from [RFC 6474](http://tools.ietf.org/html/rfc6474).
+* NIEM terms have been abbreviated, removing the repetitive `Organization` prefix, e.g. `OrganizationName` becomes `Name` below.
 
 <table class="table table-striped table-condensed table-terms">
   <thead>
@@ -351,17 +375,28 @@ id: data
       <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Identifier</a></td>
       <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Type</a></td>
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533310">Relationship</a></td>
-      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Event/Date</a></td>
-      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Event/Date</a></td>
+      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Date</a></td>
+      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Date</a></td>
+    </tr>
+    <tr>
+      <th scope="row">NIEM</th>
+      <td>OrganizationType</td>
+      <td><abbr title="OrganizationName">Name</abbr></td>
+      <td><abbr title="OrganizationDoingBusinessAsName">DoingBusiness&hellip;</abbr></td>
+      <td><abbr title="OrganizationIdentification">Identification</abbr></td>
+      <td><abbr title="OrganizationCategory">Category</abbr></td>
+      <td><abbr title="OrganizationParent">Parent</abbr></td>
+      <td><abbr title="OrganizationEstablishedDate">EstablishedDate</abbr></td>
+      <td><abbr title="OrganizationTerminationDate">TerminationDate</abbr></td>
     </tr>
   </tbody>
 </table>
 
 # Address
 
-* LDAP adds properties like [homePostalAddress](http://tools.ietf.org/html/rfc4524#section-2.13) to disambiguate between different address types.
-* Schema.org adds [faxNumber](http://schema.org/PostalAddress) and LDAP adds [mobile](http://tools.ietf.org/html/rfc4524#section-2.18), [pager](http://tools.ietf.org/html/rfc4524#section-2.20),
-and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) to disambiguate between different telephone types.
+* Schema.org adds [faxNumber](http://schema.org/PostalAddress), LDAP adds [mobile](http://tools.ietf.org/html/rfc4524#section-2.18), [pager](http://tools.ietf.org/html/rfc4524#section-2.20),
+and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) and NIEM adds `ContactFaxNumber`, `ContactMobileTelephoneNumber` and `ContactPagerNumber` to disambiguate between different telephone types. LDAP adds properties like [homePostalAddress](http://tools.ietf.org/html/rfc4524#section-2.13) to disambiguate between different address types.
+* NIEM terms have been abbreviated, removing the repetitive `Address` prefix, e.g. `AddressRepresentation` becomes `Representation` below.
 
 <table class="table table-striped table-condensed table-terms table-widest">
   <thead>
@@ -410,6 +445,13 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td><a href="http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533305">ContactNumber</a></td>
     </tr>
     <tr>
+      <th scope="row">NIEM</th>
+      <td>AddressType</td>
+      <td>LocationCategory</td>
+      <td><abbr title="AddressRepresentation">Representation</abbr></td>
+      <td><abbr title="ContactTelephoneNumber">ContactTel&hellip;</abbr></td>
+    </tr>
+    <tr>
       <th scope="row">OpenSocial</th>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Address">Address</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Address">type</a></td>
@@ -420,6 +462,8 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
 </table>
 
 # Post
+
+* NIEM terms have been abbreviated, removing the repetitive `Employee` prefix, e.g. `EmployeePositionName` becomes `PositionName` below.
 
 <table class="table table-striped table-condensed table-terms table-widest">
   <thead>
@@ -449,6 +493,13 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.3">cn</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.23">postalAddress</a></td>
     </tr>
+    <tr>
+      <th scope="row">NIEM</th>
+      <td><abbr title="PersonEmploymentAssociationType">PersonEmploy&hellip;</abbr></td>
+      <td><abbr title="EmployeeReference">Reference</abbr></td>
+      <td>Employer</td>
+      <td><abbr title="EmployeePositionName">PositionName</abbr></td>
+      <td><abbr title="EmploymentLocationReference">EmploymentLoc&hellip;</abbr></td>
   </tbody>
 </table>
 
@@ -476,12 +527,3 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
     </tr>
   </tbody>
 </table>
-
-<!-- TODO
-<a href="http://tools.ietf.org/html/rfc4519#section-2.38">title</a>
-<a href="http://tools.ietf.org/html/rfc4519#section-2.28">roleOccupant</a>
-<a href="http://tools.ietf.org/html/rfc4524#section-2.19">organizationalStatus</a>
-
-organizationalPerson
-organizationalRole
--->
