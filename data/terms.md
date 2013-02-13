@@ -51,6 +51,8 @@ id: data
   </tr>
 </table>
 
+LDAP, CIQ, OpenSocial and Facebook do not have namespaces, but are given prefixes nonetheless.
+
 # Person
 
 * vCard's terms are from the [RDF encoding](http://www.w3.org/TR/vcard-rdf/) of vCard 3.0, except for `individual` and `GENDER` and which are from [RFC 6350](http://tools.ietf.org/html/rfc6350) and `DEATHDATE` which is from [RFC 6474](http://tools.ietf.org/html/rfc6474).
