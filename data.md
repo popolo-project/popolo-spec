@@ -22,8 +22,6 @@ The data standard's initial scope is to describe the entities below and the rela
   <dd>A position in an organization that exists independently of the person holding it</dd>
   <dt>Membership</dt>
   <dd>A relationship between a person and an organization</dd>
-  <!--dt>Area</dt>
-  <dd>A bounded area, like an administrative boundary</dd-->
 </dl>
 
 The data standard will initially define <abbr title="JavaScript Object Notation">JSON</abbr>, <abbr title="Resource Description Framework">RDF</abbr> and MongoDB serializations.
@@ -128,7 +126,7 @@ The Organization class should have properties for:
 
     >To provide historical detail.
 
-<h2 id="address">2.3. Address</h2>
+<h2 id="Address">2.3. Address</h2>
 
 The Address class should have properties for:
 
@@ -144,20 +142,6 @@ The Address class should have properties for:
 1. telephone numbers by type [*[8]*](https://github.com/opennorth/popolo-standard/issues/8)
 
     >e.g. a mobile, toll-free or facsimile telephone number.
-
-<!--
-<h2 id="Area">2.X. Area</h2>
-
-The Area class should have properties for:
-
-1. name
-
-    >Canada
-
-1. parent area
-
-    >Ontario is part of Canada.
--->
 
 <h2 id="relations">2.4. Relations</h2>
 
@@ -208,14 +192,19 @@ This project should adopt suitable existing standards wherever possible. Followi
   </thead>
   <tbody>
     <tr>
-      <td><abbr title="Internet Engineering Task Force">IETF</abbr></td>
-      <td><a href="http://tools.ietf.org/html/rfc6350">vCard 4.0</a></td>
-      <td><code>vcard</code></td>
-    </tr>
-    <tr>
       <td><abbr title="Dublic Core Metadata Initiative">DCMI</abbr></td>
       <td><a href="http://dublincore.org/documents/dcmi-terms/">Metadata Terms</a></td>
       <td><code>dcterms</code></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="http://vocab.org/bio/0.1/.html">Friend of a Friend (FOAF)</a></td>
+      <td><code>foaf</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
+      <td><a href="http://schema.org/">Schema.org</a></td>
+      <td><code>schema</code></td>
     </tr>
     <tr>
       <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
@@ -233,19 +222,14 @@ This project should adopt suitable existing standards wherever possible. Followi
       <td><code>rdfs</code></td>
     </tr>
     <tr>
-      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
-      <td><a href="http://schema.org/">Schema.org</a></td>
-      <td><code>schema</code></td>
+      <td><abbr title="Internet Engineering Task Force">IETF</abbr></td>
+      <td><a href="http://tools.ietf.org/html/rfc6350">vCard 4.0</a></td>
+      <td><code>vcard</code></td>
     </tr>
     <tr>
       <td><abbr title="Interoperability Solutions for European Public Administrations">ISA</abbr></td>
       <td><a href="http://philarcher.org/isa/person-v1.00.html">Person Core Vocabulary</a></td>
       <td><code>person</code></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><a href="http://vocab.org/bio/0.1/.html">Friend of a Friend (FOAF)</a></td>
-      <td><code>foaf</code></td>
     </tr>
     <tr>
       <td></td>
@@ -267,7 +251,7 @@ For the Organization class:
 * No vocabulary has a property for dissolution dates, except for `vcard:deathDate`.
 * The Organization ontology is the only vocabulary to meet all other [requirements](#Organization).
 
-For the Address class, vCard is the only vocabulary to meet all [requirements](#Address). In terms of relations, only the Organization ontology offers multiple ways to describe the relation between people and organizations.
+For the Address class, vCard is the only vocabulary to meet all [requirements](#Address). In terms of relations, only the Organization ontology offers multiple ways to describe the relation between people and organizations. An [inventory of the terms in the survey](data/terms.html) is available.
 
 <p class="note">Note: <a href="http://schema.org/">Schema.org</a> can nonetheless be used for HTML serialization, but HTML serialization is out of scope.</p>
 
@@ -291,7 +275,7 @@ This data standard is a [profile of the W3C organization ontology](http://www.w3
 
 Given that the [standards reused](#standard-reuse) are defined in RDF, the data standard's classes and properties will map to RDF terms. Serialization is not limited to RDF; JSON and MongoDB schema are defined in [the next section](#serialization).
 
-Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alternate names, it usually represents abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames. vCard 4.0 can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred. No standard has a property for former names, however. This data standard may therefore propose a new term for both alternate and former names. The RDF definition is not yet available, however.
+Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alternate names, it usually represents abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames. vCard 4.0 can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred. The Person Core Vocabulary uses `dcterms:alternative`. No standard has a property for former names, however. This data standard may therefore propose a new term for both alternate and former names. The RDF definition is not yet available, however.
 
 In RDF, the permanent, unique identifier is the resource's URL.
 
@@ -315,9 +299,9 @@ In RDF, the permanent, unique identifier is the resource's URL.
       <td><code><a href="http://xmlns.com/foaf/0.1/name">foaf:name</a></code></td>
       <td>A person's preferred full name</td>
     </tr>
-    <tr>
+    <tr id="dcterms:alternative">
       <td>alternate name</td>
-      <td></td>
+      <td><code><a href="http://purl.org/dc/terms/alternative">dcterms:alternative</a></code></td>
       <td>An alternate name, such as a pseudonym</td>
     </tr>
     <tr>
@@ -685,11 +669,6 @@ The following adds `tollfree` and removes `text` from [vCard 4.0](http://tools.i
 <h1 id="conformance">7. Conformance</h1>
 
 **TODO: Similar section to the [Organization ontology](http://www.w3.org/TR/vocab-org/#conformance)**
-
-<!--
-<em class="rfc2119">must</em> conform to the [schemas](#serialization) in the Serialization section.
-<em class="rfc2119">may</em> subclass [Organizational unit](http://www.w3.org/TR/vocab-org/#org:OrganizationalUnit) [describe subclass mechanism wrt ORMs]
--->
 
 <h1 id="history">8. Change history</h1>
 

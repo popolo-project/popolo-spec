@@ -46,6 +46,20 @@ td {
   vertical-align: top;
 }
 
+table.table-terms {
+  width: auto;
+  max-width: none;
+}
+table.table-terms th {
+  width: 6.6em;
+}
+table.table-terms td {
+  width: 7.3em;
+}
+table.table-wide td {
+  width: 9em;
+}
+
 footer {
   text-align: center;
 }

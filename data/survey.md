@@ -20,7 +20,7 @@ id: data
 
 ***
 
-# The FOAF Project <span class="label">Person</span> <span class="label">Organization</span>
+# The Friend of a Friend Project <span class="label">Person</span> <span class="label">Organization</span>
 
 [FOAF](http://xmlns.com/foaf/spec/) is among the [most referenced](http://lov.okfn.org/dataset/lov/details/vocabulary_foaf.html) and oldest linked open vocabularies. It is [managed more in the style of an open source project](http://xmlns.com/foaf/spec/#sec-standards) than as a standard. It is unclear whether contributing to the project would be productive; Dan Brickley is the only editor, and his focus is on [Schema.org](http://schema.org/).
 
@@ -51,11 +51,11 @@ id: data
 
 * [`schema:Person`](http://schema.org/Person) has no properties for alternate names or external links.
 * [`schema:Organization`](http://schema.org/Organization) has no property for dissolution dates.
-* `schema:legalName` is only one type of alternate name for an `schema:Organization`.
-* `schema:duns`, `schema:globalLocationNumber`, `schema:taxID` and `schema:vatID` may be used to identify an `schema:Organization`.
-* `schema:isicV4` and `schema:naics` may be used to classify an `schema:Organization`.
+* `schema:legalName` is only one type of alternate name for a `schema:Organization`.
+* `schema:duns`, `schema:globalLocationNumber`, `schema:taxID` and `schema:vatID` may be used to identify a `schema:Organization`.
+* `schema:isicV4` and `schema:naics` may be used to classify a `schema:Organization`.
 * `schema:member` (and its inverse `schema:memberOf`) is the only way to describe the relation between `schema:Person` and `schema:Organization`.
-* [`schema:PostalAddress`](http://schema.org/PostalAddress) can't disambiguate between different types of telephone numbers, e.g. landline versus mobile.
+* [`schema:PostalAddress`](http://schema.org/PostalAddress) disambiguates between different types of telephone numbers by adding new properties.
 
 ## Links
 
@@ -100,17 +100,20 @@ Deliverables of past working groups of interest are the [Simple Knowledge Organi
 
 # Internet Engineering Task Force <span class="label">Person</span> <span class="label">Organization</span> <span class="label">Address</span>
 
-[IETF](http://www.ietf.org/) is a volunteer-run Internet standards organization. It cooperates closely with the W3C, ISO and IEC standards bodies. Its [vCard 4.0](http://tools.ietf.org/html/rfc6350) standard is of interest. IANA maintains a [registry of vCard elements](http://www.iana.org/assignments/vcard-elements/vcard-elements.xml). An [RDF encoding](http://www.w3.org/Submission/vcard-rdf/) of [vCard 3.0](http://tools.ietf.org/html/rfc2426) exists. A vCard 4.0 RDF encoding is [in progress](http://www.w3.org/wiki/RepresentingVCardinRDFOWL).
+[IETF](http://www.ietf.org/) is a volunteer-run Internet standards organization. It cooperates closely with the W3C, ISO and IEC standards bodies. Its [RFC 6350](http://tools.ietf.org/html/rfc6350) (vCard 4.0), [RFC 4519](https://tools.ietf.org/html/rfc4519) and [RFC 4524](http://tools.ietf.org/html/rfc4524) (LDAP) are of interest. IANA maintains a [registry of vCard elements](http://www.iana.org/assignments/vcard-elements/vcard-elements.xml). An [RDF encoding](http://www.w3.org/Submission/vcard-rdf/) of [vCard 3.0](http://tools.ietf.org/html/rfc2426) exists. An RDF encoding of vCard 4.0 is [in progress](http://www.w3.org/wiki/RepresentingVCardinRDFOWL).
 
 ## Review
 
-* [RFC 6474](http://tools.ietf.org/html/rfc6474) adds `vcard:birthPlace`, `vcard:deathPlace` and `vcard:deathDate`.
+* RFC 4519 and RFC 4524 have no properties for alternate person names, genders, dates of birth, dates of death or external links.
+* [RFC 2798](http://tools.ietf.org/html/rfc2798) adds `ldap:jpegPhoto` and [RFC 6474](http://tools.ietf.org/html/rfc6474) adds `vcard:birthPlace`, `vcard:deathPlace` and `vcard:deathDate`.
 * `vcard:Organization` has no properties for identifiers, classifications or parent organizations.
+* RFC 4519 and RFC 4524 have no properties for alternate organization names, founding dates or dissolution dates.
 * It has no property to link a `vcard:Person` to a `vcard:Organization`.
+* LDAP disambiguates between different types of addresses and telephone numbers by adding new properties.
 
 ## Links
 
-* vCard does not explicitly link to other standards, besides other RFCs.
+* RFC 4519 and RFC 6350 do not explicitly link to other standards, besides other RFCs.
 
 ***
 
@@ -122,7 +125,7 @@ The European Commission's [Interoperability Solutions for European Public Admini
 
 * [`person:patronymicName`](http://philarcher.org/isa/person-v1.00.html#person:patronymicName) is unique to this vocabulary and solves an internationalization issue. [*[2]*](https://github.com/opennorth/popolo-standard/issues/2)
 * [`person:birthName`](http://philarcher.org/isa/person-v1.00.html#person:birthName) covers one type of former name.
-* [`locn:Address`](http://philarcher.org/isa/locn-v1.00.html#locn:Address) only describes the postal address; it has no properties for labels or telephone numbers.
+* [`locn:Address`](http://philarcher.org/isa/locn-v1.00.html#locn:Address) has no property for address types or telephone numbers.
 * `locn:Address` is INSPIRE conformant. [*[1]*](https://github.com/opennorth/popolo-standard/issues/1)
 
 ## Links
@@ -147,9 +150,8 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 
 * CIQ has no properties for head shots or external links.
 * xNL can [handle](http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533217) special [cases](http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Ref174170633) where `givenName` and `familyName` are insufficient.
-* `xPIL.xsd` defines `ElectronicAddressIdentifiers` for emails, `PersonInfo/Gender` for genders, `BirthInfo/BirthDateTime` for birth dates, `Events/Event` for death dates and `FreeTextLines` for biographies.
-* `xPIL.xsd` defines `Identifiers` for identifiers, `OrganisationInfo/Type`, `OrganisationInfo/CategoryType` and `OrganisationInfo/Nature` for classifications, `Relationships` for parent organizations, and `Events/Event` for founding dates and dissolution dates.
-* xPIL `ContactNumbers` belong to a party, not to an address.
+* `xPIL.xsd` defines `ElectronicAddressIdentifier` for emails, `PersonInfo/Gender` for genders, `BirthInfo/BirthDateTime` for birth dates, `Events/Event` for death dates and `FreeTextLines` for biographies.
+* `xPIL.xsd` defines `Identifier` for identifiers, `OrganisationInfo/Type`, `OrganisationInfo/CategoryType` and `OrganisationInfo/Nature` for classifications, `Relationship` for parent organizations, and `Events/Event` for founding dates and dissolution dates.
 * xPIL defines `Memberships`, but no class for posts. xPRL defines `Relationship/RelationshipRole`.
 * CIQ often uses code lists for maximum flexibility and extensibility, instead of defining a vocabulary.
 
@@ -177,7 +179,7 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 
 ***
 
-# Other
+# Others
 
 The [BIO vocabulary](http://vocab.org/bio/0.1/.html) adds properties for biographical information like [`bio:biography`](http://vocab.org/bio/0.1/.html#biography) and [`bio:olb`](http://vocab.org/bio/0.1/.html#olb) to `foaf:Agent` and `foaf:Person`.
 
