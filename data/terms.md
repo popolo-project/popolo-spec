@@ -500,6 +500,15 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td>Employer</td>
       <td><abbr title="EmployeePositionName">PositionName</abbr></td>
       <td><abbr title="EmploymentLocationReference">EmploymentLoc&hellip;</abbr></td>
+    </tr>
+    <tr>
+      <th scope="row">PMF</th>
+      <td>Role</td>
+      <td>related_object</td>
+      <td>primary_object</td>
+      <td>role_name</td>
+      <td>contact_information</td>
+    </tr>
   </tbody>
 </table>
 

@@ -178,6 +178,20 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 
 ***
 
+# Object Management Group
+
+[OMG](http://www.omg.org/) is an international organization that establishes industry guidelines and specifications to ensure the reusability, portability, and interoperability of object-based software in different environments. Its [Party Management Facility (PMF)](http://www.omg.org/spec/PARTY/) specification is of interest.
+
+## Review
+
+* PMF primarily defines interfaces, not properties and classes. Unlike most standards, it models relationships are first-class objects.
+
+## Links
+
+* PMF does not explicitly link to other standards, besides other OMG standards.
+
+***
+
 # OpenSocial <span class="label">Person</span> <span class="label">Address</span>
 
 [OpenSocial](http://opensocial.org/) <span class="label">non-RDF</span> defines an open social application platform. LinkedIn, MySpace, Ning, Orkut and hi5 were early adopters after its launch in 2007. It is now independent from Google, and is increasing adoption among domain-specific social networks and enterprise vendors.
