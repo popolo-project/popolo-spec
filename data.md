@@ -698,5 +698,5 @@ The following adds `tollfree` and removes `text` from [vCard 4.0](http://tools.i
 
 <h1 id="history">8. Change history</h1>
 
-* 2013-02-16: Add label property to the Post class, change cardinality of classification property on the Organziation class, add NIEM and ORG to the survey, add an inventory of the terms in the survey
+* 2013-02-16: Add a label property to the Post class, change the cardinality of the classification property on the Organziation class, add NIEM and ORG to the survey, add an inventory of the terms in the survey
 * 2013-02-01: First public working draft
