@@ -13,9 +13,9 @@ The data standard's initial scope is to describe the entities below and the rela
 
 <dl>
   <dt>Person</dt>
-  <dd>A real <a href="http://en.wikipedia.org/wiki/Person">person</a>, alive or dead</a></dd>
+  <dd>A real <a href="http://en.wikipedia.org/wiki/Person">person</a>, alive or dead</dd>
   <dt>Organization</dt>
-  <dd>A group with a common purpose or reason for existence that goes beyond the set of people belonging to it, e.g. a social, commercial or political structure.</a></dd>
+  <dd>A group with a common purpose or reason for existence that goes beyond the set of people belonging to it, e.g. a social, commercial or political structure</dd>
   <dt>Address</dt>
   <dd>A physical location or a mail delivery point</dd>
   <dt>Post</dt>
