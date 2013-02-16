@@ -166,7 +166,7 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 [NIEM](https://www.niem.gov/) was initiated as a joint venture between the U.S. Department of Homeland Security and the U.S. Department of Justice with outreach to other departments and agencies. Its goal is to allow for national-level interoperable information sharing and data exchange. Several specializations of the NIEM Core schema exist.
 
 * [Specification](http://release.niem.gov/)
-* [Specializations](https://www.niem.gov/communities/Pages/communities.aspx)
+* [Communities](https://www.niem.gov/communities/Pages/communities.aspx)
 
 ## Review
 

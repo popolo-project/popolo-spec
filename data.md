@@ -118,13 +118,13 @@ The Organization class should have properties for:
 
     >The Standing Committee on Finance is part of the House of Commons.
 
-1. date of dissolution [*[9]*](https://github.com/opennorth/popolo-standard/issues/9)
-
-    >To determine whether an organization exists, e.g. in order to disable related functionality.
-
 1. date of founding [*[9]*](https://github.com/opennorth/popolo-standard/issues/9)
 
     >To provide historical detail.
+
+1. date of dissolution [*[9]*](https://github.com/opennorth/popolo-standard/issues/9)
+
+    >To determine whether an organization exists, e.g. in order to disable related functionality.
 
 <h2 id="Address">2.3. Address</h2>
 
@@ -284,7 +284,7 @@ For the Address class, vCard is the only vocabulary to meet all [requirements](#
 
 The data standard imposes cardinality and range restrictions on some properties of other standards.
 
-In [vCard](http://tools.ietf.org/html/rfc6350), each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data standard requires that each component of a name can include one text value only.
+In vCard, each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data standard requires that each component of a name can include one text value only.
 
 According to the Organization ontology, multiple people can hold a post, and either a person or an organization can hold a post. In this data standard, only a single *person* can hold a post. Similarly, an organization may have only one classification; implementations must therefore choose a unique classification scheme.
 
@@ -698,4 +698,5 @@ The following adds `tollfree` and removes `text` from [vCard 4.0](http://tools.i
 
 <h1 id="history">8. Change history</h1>
 
+* 2013-02-16: Add label property to the Post class, change cardinality of classification property on the Organziation class, add NIEM and ORG to the survey, add an inventory of the terms in the survey
 * 2013-02-01: First public working draft

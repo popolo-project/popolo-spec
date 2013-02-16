@@ -12,7 +12,8 @@
     },
     "label": {
       "description": "A label describing the post",
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "role": {
       "description": "The role that the holder of the post fulfills",
