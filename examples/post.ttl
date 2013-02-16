@@ -2,6 +2,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 <http://example.com/posts/37cc67093475061e3d95369d.ttl>
   a org:Post;
+  skos:prefLabel "Chef at Joe's Diner"@en;
+  org:role [a skos:Concept; skos:prefLabel "Chef"@en];
   org:heldBy <http://example.com/people/57cc67093475061e3d95369d.ttl>;
-  org:postIn <http://example.com/organizations/27cc67093475061e3d95369d.ttl>;
-  org:role [a skos:Concept; skos:prefLabel "Treasurer"] .
+  org:postIn <http://example.com/organizations/27cc67093475061e3d95369d.ttl> .

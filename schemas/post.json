@@ -10,17 +10,21 @@
       "type": "string",
       "required": true
     },
+    "label": {
+      "description": "A label describing the post",
+      "type": "string"
+    },
+    "role": {
+      "description": "The role that the holder of the post fulfills",
+      "type": "string",
+      "required": true
+    },
     "person_id": {
       "description": "The ID of the person who holds the post",
       "type": "string"
     },
     "organization_id": {
       "description": "The ID of the organization in which the post is held",
-      "type": "string",
-      "required": true
-    },
-    "role": {
-      "description": "The role that the holder of the post fulfills",
       "type": "string",
       "required": true
     },

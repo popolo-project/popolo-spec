@@ -10,6 +10,10 @@
       "type": "string",
       "required": true
     },
+    "role": {
+      "description": "The role that the holder of the post fulfills",
+      "type": "string"
+    },
     "person_id": {
       "description": "The ID of the person who is a party to the relationship",
       "type": "string",
@@ -19,10 +23,6 @@
       "description": "The ID of the organization that is a party to the relationship",
       "type": "string",
       "required": true
-    },
-    "role": {
-      "description": "The role that the holder of the post fulfills",
-      "type": "string"
     },
     "start_date": {
       "description": "The date on which the relationship began",

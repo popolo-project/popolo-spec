@@ -136,7 +136,7 @@ The Address class should have properties for:
 
 1. postal address [*[10]*](https://github.com/opennorth/popolo-standard/issues/10)
 
-    >1 Main Street<br>
+    >1 Main Street  
     Anytown, USA
 
 1. telephone numbers by type [*[8]*](https://github.com/opennorth/popolo-standard/issues/8)
@@ -161,19 +161,44 @@ Some use cases may therefore require both Post and Membership classes to satisfy
 
 The Post class should have properties for:
 
-* the person who holds the post
-* the organization in which the post is held
-* the role that the holder of the post fulfills
-* the address at which the post is based
+1. label
+
+    > Member of Parliament for Avalon
+
+1. the role that the holder of the post fulfills
+
+    > Member of Parliament
+
+1. the person who holds the post
+
+    > John Doe
+
+1. the organization in which the post is held
+
+    > House of Commons
+
+1. the address at which the post is based
+
+    > 1 Main Street  
+    Anytown, USA
 
 The Membership class should have properties for:
 
-* the person who is a party to the relationship
-* the organization that is a party to the relationship
-* the role that the person fulfills in the organization
-* the time interval over which the relationship exists
+1. the role that the person fulfills in the organization
 
-In both cases, the `role` property serves as the title of the Post or Membership.
+    > Member
+
+1. the person who is a party to the relationship
+
+    > John Doe
+
+1. the organization that is a party to the relationship
+
+    > XYZ Party
+
+1. the time interval over which the relationship exists
+
+    > since 2000
 
 <p class="note" id="note1">1. A Post instance cannot represent historical holders of the position, given that a Post survives all its holders. To represent such historical information, a Membership instance can be used. If a Post ceases to exist, a Post instance can of course be used to represent that historical position; it just can't represent all historical holders of that position.</p>
 
@@ -257,19 +282,15 @@ For the Address class, vCard is the only vocabulary to meet all [requirements](#
 
 <h2 id="restrictions">3.1 Restrictions</h1>
 
-This data standard imposes cardinality and range restrictions on some properties of other standards.
+The data standard imposes cardinality and range restrictions on some properties of other standards.
 
 In [vCard](http://tools.ietf.org/html/rfc6350), each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data standard requires that each component of a name can include one text value only.
 
-According to the [W3C organization ontology](http://www.w3.org/TR/vocab-org/), multiple people can hold a post, and either a person or an organization can hold a post. In Popolo, only a single *person* can hold a post. Similarly, in Popolo, an organization may have only one classification; implementations must therefore choose a unique classification scheme.
+According to the Organization ontology, multiple people can hold a post, and either a person or an organization can hold a post. In this data standard, only a single *person* can hold a post. Similarly, an organization may have only one classification; implementations must therefore choose a unique classification scheme.
+
+The data standard is a [profile of the W3C organization ontology](http://www.w3.org/TR/vocab-org/#conformance).
 
 **TODO: OWL file describing the restrictions**
-
-<h2 id="org-profile">3.2 Organization ontology profile</h1>
-
-This data standard is a [profile of the W3C organization ontology](http://www.w3.org/TR/vocab-org/#conformance).
-
-**TODO: Define the ORG profile**
 
 <h1 id="classes-and-properties">4. Classes and properties</h1>
 
@@ -379,7 +400,7 @@ In RDF, the permanent, unique identifier is the resource's URL.
       <td><code><a href="http://www.w3.org/ns/org#Organization">org:Organization</a></code></td>
       <td>A group with a common purpose or reason for existence that goes beyond the set of people belonging to it, e.g. a social, commercial or political structure</td>
     </tr>
-    <tr id="skos:prefLabel">
+    <tr id="skos:prefLabel1">
       <td>name</td>
       <td><code><a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
       <td>A primary name, e.g. a legally recognized name</td>
@@ -444,6 +465,16 @@ In RDF, the permanent, unique identifier is the resource's URL.
       <td><code><a href="http://www.w3.org/ns/org#Post">org:Post</a></code></td>
       <td>A position that exists independent of the person holding it</td>
     </tr>
+    <tr id="skos:prefLabel2">
+      <td>label</td>
+      <td><code><a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
+      <td>A label describing the post</td>
+    </tr>
+    <tr id="org:role-Post">
+      <td>role</td>
+      <td><code><a href="http://www.w3.org/ns/org#role">org:role</a></code></td>
+      <td>The role that the holder of the post fulfills</td>
+    </tr>
     <tr id="org:heldBy">
       <td>person</td>
       <td><code><a href="http://www.w3.org/ns/org#heldBy">org:heldBy</a></code><a href="#note7"><sup>7</sup></a></td>
@@ -453,11 +484,6 @@ In RDF, the permanent, unique identifier is the resource's URL.
       <td>organization</td>
       <td><code><a href="http://www.w3.org/ns/org#postIn">org:postIn</a></code><a href="#note7"><sup>7</sup></a></td>
       <td>The organization in which the post is held</td>
-    </tr>
-    <tr id="org:role-Post">
-      <td>role</td>
-      <td><code><a href="http://www.w3.org/ns/org#role">org:role</a></code></td>
-      <td>The role that the holder of the post fulfills</td>
     </tr>
     <tr>
       <td>address</td>
@@ -469,6 +495,11 @@ In RDF, the permanent, unique identifier is the resource's URL.
       <td><code><a href="http://www.w3.org/ns/org#Membership">org:Membership</a></code></td>
       <td>A relationship between a person and an organization</td>
     </tr>
+    <tr id="org:role-Membership">
+      <td>role</td>
+      <td><code><a href="http://www.w3.org/ns/org#role">org:role</a></code></td>
+      <td>The role that the person fulfills in the organization</td>
+    </tr>
     <tr id="org:member">
       <td>person</td>
       <td><code><a href="http://www.w3.org/ns/org#member">org:member</a></code><a href="#note7"><sup>7</sup></a></td>
@@ -478,11 +509,6 @@ In RDF, the permanent, unique identifier is the resource's URL.
       <td>organization</td>
       <td><code><a href="org:organization">org:organization</a></code><a href="#note7"><sup>7</sup></a></td>
       <td>The organization that is a party to the relationship</td>
-    </tr>
-    <tr id="org:role-Membership">
-      <td>role</td>
-      <td><code><a href="http://www.w3.org/ns/org#role">org:role</a></code></td>
-      <td>The role that the person fulfills in the organization</td>
     </tr>
     <tr id="org:memberDuring">
       <td>time interval</td>
@@ -502,7 +528,7 @@ In RDF, the permanent, unique identifier is the resource's URL.
 
 <h1 id="serialization">5. Serialization</h1>
 
-Schemas are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) and apply to the JSON and MongoDB serializations. The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s and <abbr title="object-document mapper">ODM</abbr>s. The RDF serialization follows the [classes and properties](#classes-and-properties) section; example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
+Schemas are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) and apply to the JSON and MongoDB serializations. The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s and <abbr title="object-document mapper">ODM</abbr>s. The RDF serialization follows the [classes and properties](#classes-and-properties) section above; example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
 
 Reusable software components implementing the data standard should isolate themselves from their host applications. For the MongoDB serialization, it is therefore <em class="rfc2119">recommended</em> to namespace the collections by prepending a `popolo_` prefix to the names of the collections.
 
@@ -540,7 +566,7 @@ The former name and alternate name properties are serialized as a single `other_
 
 The MongoDB collection <em class="rfc2119">should</em> be named `popolo_organizations`.
 
-**Differences from RDF:** The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with Person. A new `scheme`[<sup>12</sup>](#12) property indicates an identifier's scheme, because JSON and MongoDB values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF. The term `parent_id` is used instead of `subOrganizationOf`[<sup>13</sup>](#13). A new `note`[<sup>11</sup>](#11) property adds a note to an external link.
+**Differences from RDF:** The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with the Person class. A new `scheme`[<sup>12</sup>](#12) property indicates an identifier's scheme, because JSON and MongoDB values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF. The term `parent_id`[<sup>13</sup>](#13) is used instead of `subOrganizationOf`.
 
 <p class="note" id="note12">12. With respect to reuse, both ORG and SKOS use the word <code>scheme</code> to refer to this value.</p>
 <p class="note" id="note13">13. With respect to reuse, <a href="https://github.com/benedikt/mongoid-tree">mongoid-tree</a>, <a href="https://github.com/collectiveidea/awesome_nested_set/tree/master/lib/awesome_nested_set">awesome_nested_set</a> and <a href="https://github.com/amerine/acts_as_tree">acts_as_tree</a> use <code>parent_id</code>.</p>
@@ -561,7 +587,7 @@ The MongoDB collection <em class="rfc2119">should</em> be named `popolo_organiza
 
 In MongoDB, addresses <em class="rfc2119">must</em> be embedded documents.
 
-**Differences from RDF:** All RDF properties are flattened; `address` and `type` are top-level properties matching `vcard:label` and `rdf:type`. Property names matching [telephone types](#telephone-types) are used instead of the `vcard:tel` term. Telephone numbers should be in [RFC 3966](http://tools.ietf.org/html/rfc3966) format, without the `tel:` prefix.
+**Differences from RDF:** All RDF properties are flattened; `address` and `type` are top-level properties matching `vcard:label` and `rdf:type`. Properties whose names match [telephone type codes](#telephone-types) are used instead of the `vcard:tel` property. Telephone number values should be in [RFC 3966](http://tools.ietf.org/html/rfc3966) format, without the `tel:` prefix.
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#address-schema">JSON Schema</a></li>
@@ -579,7 +605,7 @@ In MongoDB, addresses <em class="rfc2119">must</em> be embedded documents.
 
 The MongoDB collection <em class="rfc2119">should</em> be named `popolo_posts`.
 
-**Differences from RDF:** The terms `person_id` and `organization_id` are used instead of `heldBy` and `postIn` to conform to ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
+**Differences from RDF:** The term `name` is used instead of `prefLabel`, to be consistent with the Person class. The terms `person_id` and `organization_id` are used instead of `heldBy` and `postIn` to conform to ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#post-schema">JSON Schema</a></li>
@@ -597,7 +623,7 @@ The MongoDB collection <em class="rfc2119">should</em> be named `popolo_posts`.
 
 The MongoDB collection <em class="rfc2119">should</em> be named `popolo_memberships`.
 
-**Differences from RDF:** Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, a simple `start_date` and `end_date`[<sup>9</sup>](#note9) pair is used, as [proposed](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology. The terms `person_id` and `organization_id` are used instead of `member` and `organization` to conform to popular ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
+**Differences from RDF:** Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, a simple `start_date` and `end_date`[<sup>9</sup>](#note9) pair is used, as [proposed](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology. The terms `person_id` and `organization_id` are used instead of `member` and `organization` to conform to ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#membership-schema">JSON Schema</a></li>
