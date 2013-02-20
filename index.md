@@ -1,9 +1,9 @@
 ---
 layout: default
-title: The Popolo Standard
+title: The Popolo Project
 ---
 <div class="page-header">
-  <h1>The Popolo Standard</h1>
+  <h1>The Popolo Project</h1>
 </div>
 
 This project's motivation is to make it easier for civic developers to create government transparency, monitoring and engagement websites.
