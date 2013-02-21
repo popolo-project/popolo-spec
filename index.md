@@ -8,6 +8,8 @@ title: The Popolo Project
 
 This project's motivation is to make it easier for civic developers to create government transparency, monitoring and engagement websites.
 
+[Read the blog post announcing the project for additional context.](http://blog.opennorth.ca/2013/02/21/update-on-opengovernment/)
+
 The project's core parts are:
 
 * a [data standard](data.html)
