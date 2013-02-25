@@ -530,7 +530,7 @@ In RDF, the permanent, unique identifier is the resource's URL.
 
 Schemas are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) and apply to the JSON and MongoDB serializations. The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s and <abbr title="object-document mapper">ODM</abbr>s. The RDF serialization follows the [classes and properties](#classes-and-properties) section above; example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
 
-Reusable software components implementing the data standard should isolate themselves from their host applications. For the MongoDB serialization, it is therefore <em class="rfc2119">recommended</em> to namespace the collections by prepending a `popolo_` prefix to the names of the collections.
+Reusable software components implementing the data standard should isolate themselves from their host applications. For the MongoDB serialization, such components <em class="rfc2119">may</em> therefore namespace the collections by prepending a `popolo_` prefix to the names of the collections.
 
 Many MongoDB ODMs, including [Mongoid](http://mongoid.org/), use a `_type` field on a document to indicate that the document represents an instance of a subclass of the base class that is otherwise associated with the MongoDB collection. MongoDB serializations <em class="rfc2119">should</em> leave the management of the `_type` field to the ODM and <em class="rfc2119">should</em> place subclasses and base classes in the same collection.
 
@@ -540,7 +540,7 @@ In order to satisfy the [requirement](#use-cases-and-requirements) to allow the 
 
 ## 5.1. Person
 
-The MongoDB collection <em class="rfc2119">should</em> be named `popolo_people`.
+The MongoDB collection <em class="rfc2119">should</em> be named `people` or `popolo_people`.
 
 The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of name objects. If a name object sets an `end_date`[<sup>9</sup>](#note9) property, it represents a former name.
 
@@ -551,20 +551,20 @@ The former name and alternate name properties are serialized as a single `other_
 <p class="note" id="note11">11. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
 
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#person-schema">JSON Schema</a></li>
-  <li><a href="#person-json">JSON and MongoDB</a></li>
+  <li><a href="#person-schema">JSON Schema</a></li>
+  <li class="active"><a href="#person-json">JSON and MongoDB</a></li>
   <li><a href="#person-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane active" id="person-schema" data-url="/schemas/person.json"></div>
-  <div class="tab-pane" id="person-json" data-url="/examples/person.json"></div>
+  <div class="tab-pane" id="person-schema" data-url="/schemas/person.json"></div>
+  <div class="tab-pane active" id="person-json" data-url="/examples/person.json"></div>
   <div class="tab-pane" id="person-rdf" data-url="/examples/person.ttl"></div>
 </div>
 
 ## 5.2. Organization
 
-The MongoDB collection <em class="rfc2119">should</em> be named `popolo_organizations`.
+The MongoDB collection <em class="rfc2119">should</em> be named `organizations` or `popolo_organizations`.
 
 **Differences from RDF:** The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with the Person class. A new `scheme`[<sup>12</sup>](#12) property indicates an identifier's scheme, because JSON and MongoDB values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF. The term `parent_id`[<sup>13</sup>](#13) is used instead of `subOrganizationOf`.
 
@@ -572,14 +572,14 @@ The MongoDB collection <em class="rfc2119">should</em> be named `popolo_organiza
 <p class="note" id="note13">13. With respect to reuse, <a href="https://github.com/benedikt/mongoid-tree">mongoid-tree</a>, <a href="https://github.com/collectiveidea/awesome_nested_set/tree/master/lib/awesome_nested_set">awesome_nested_set</a> and <a href="https://github.com/amerine/acts_as_tree">acts_as_tree</a> use <code>parent_id</code>.</p>
 
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#organization-schema">JSON Schema</a></li>
-  <li><a href="#organization-json">JSON and MongoDB</a></li>
+  <li><a href="#organization-schema">JSON Schema</a></li>
+  <li class="active"><a href="#organization-json">JSON and MongoDB</a></li>
   <li><a href="#organization-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane active" id="organization-schema" data-url="/schemas/organization.json"></div>
-  <div class="tab-pane" id="organization-json" data-url="/examples/organization.json"></div>
+  <div class="tab-pane" id="organization-schema" data-url="/schemas/organization.json"></div>
+  <div class="tab-pane active" id="organization-json" data-url="/examples/organization.json"></div>
   <div class="tab-pane" id="organization-rdf" data-url="/examples/organization.ttl"></div>
 </div>
 
@@ -587,53 +587,53 @@ The MongoDB collection <em class="rfc2119">should</em> be named `popolo_organiza
 
 In MongoDB, addresses <em class="rfc2119">must</em> be embedded documents.
 
-**Differences from RDF:** All RDF properties are flattened; `address` and `type` are top-level properties matching `vcard:label` and `rdf:type`. Properties whose names match [telephone type codes](#telephone-types) are used instead of the `vcard:tel` property. Telephone number values should be in [RFC 3966](http://tools.ietf.org/html/rfc3966) format, without the `tel:` prefix.
+**Differences from RDF:** All RDF properties are flattened; `address` and `type` are top-level properties matching `vcard:label` and `rdf:type`. Properties whose names match [telephone type codes](#telephone-types) are used instead of the `vcard:tel` property. Telephone number values <em class="rfc2119">should</em> be in [RFC 3966](http://tools.ietf.org/html/rfc3966) format, without the `tel:` prefix.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#address-schema">JSON Schema</a></li>
-  <li><a href="#address-json">JSON and MongoDB</a></li>
+  <li><a href="#address-schema">JSON Schema</a></li>
+  <li class="active"><a href="#address-json">JSON and MongoDB</a></li>
   <li><a href="#address-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane active" id="address-schema" data-url="/schemas/address.json"></div>
-  <div class="tab-pane" id="address-json" data-url="/examples/address.json"></div>
+  <div class="tab-pane" id="address-schema" data-url="/schemas/address.json"></div>
+  <div class="tab-pane active" id="address-json" data-url="/examples/address.json"></div>
   <div class="tab-pane" id="address-rdf" data-url="/examples/address.ttl"></div>
 </div>
 
 ## 5.4. Post
 
-The MongoDB collection <em class="rfc2119">should</em> be named `popolo_posts`.
+The MongoDB collection <em class="rfc2119">should</em> be named `posts` or `popolo_posts`.
 
 **Differences from RDF:** The term `name` is used instead of `prefLabel`, to be consistent with the Person class. The terms `person_id` and `organization_id` are used instead of `heldBy` and `postIn` to conform to ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#post-schema">JSON Schema</a></li>
-  <li><a href="#post-json">JSON and MongoDB</a></li>
+  <li><a href="#post-schema">JSON Schema</a></li>
+  <li class="active"><a href="#post-json">JSON and MongoDB</a></li>
   <li><a href="#post-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane active" id="post-schema" data-url="/schemas/post.json"></div>
-  <div class="tab-pane" id="post-json" data-url="/examples/post.json"></div>
+  <div class="tab-pane" id="post-schema" data-url="/schemas/post.json"></div>
+  <div class="tab-pane active" id="post-json" data-url="/examples/post.json"></div>
   <div class="tab-pane" id="post-rdf" data-url="/examples/post.ttl"></div>
 </div>
 
 ## 5.5. Membership
 
-The MongoDB collection <em class="rfc2119">should</em> be named `popolo_memberships`.
+The MongoDB collection <em class="rfc2119">should</em> be named `memberships` or `popolo_memberships`.
 
 **Differences from RDF:** Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, a simple `start_date` and `end_date`[<sup>9</sup>](#note9) pair is used, as [proposed](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology. The terms `person_id` and `organization_id` are used instead of `member` and `organization` to conform to ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#membership-schema">JSON Schema</a></li>
-  <li><a href="#membership-json">JSON and MongoDB</a></li>
+  <li><a href="#membership-schema">JSON Schema</a></li>
+  <li class="active"><a href="#membership-json">JSON and MongoDB</a></li>
   <li><a href="#membership-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane active" id="membership-schema" data-url="/schemas/membership.json"></div>
-  <div class="tab-pane" id="membership-json" data-url="/examples/membership.json"></div>
+  <div class="tab-pane" id="membership-schema" data-url="/schemas/membership.json"></div>
+  <div class="tab-pane active" id="membership-json" data-url="/examples/membership.json"></div>
   <div class="tab-pane" id="membership-rdf" data-url="/examples/membership.ttl"></div>
 </div>
 
@@ -694,9 +694,17 @@ The following adds `tollfree` and removes `text` from [vCard 4.0](http://tools.i
 
 <h1 id="conformance">7. Conformance</h1>
 
-**TODO: Similar section to the [Organization ontology](http://www.w3.org/TR/vocab-org/#conformance)**
+1. An implementation's usage of [this standard's terms](#classes-and-properties) <em class="rfc2119">must</em> be consistent with the semantics of those terms.
+1. A conforming implementation <em class="rfc2119">must not</em> use other terms where this standard's terms would suffice[<sup>14</sup>](#note14).
+1. A conforming implementation <em class="rfc2119">may</em> use terms from outside this standard's terms where this standard's terms are insufficient.
+1. If an implementation serializes to JSON or MongoDB, its serializations <em class="rfc2119">must</em> validate against this standard's [JSON Schema](#serialization).
+1. If an implementation serializes to MongoDB, it <em class="rfc2119">may</em> denormalize its data [*[14]*](https://github.com/opennorth/popolo-standard/issues/14).</h2>
+1. A conforming implementation <em class="rfc2119">may</em> use only a subset of this standard's terms.
+
+<p class="note" id="note14">14. For example, it <em class="rfc2119">must not</em> use vCard's <code>fn</code> where this standard's <code>name</code> would suffice.</p>
 
 <h1 id="history">8. Change history</h1>
 
-* 2013-02-16: Add a label property to the Post class, change the cardinality of the classification property on the Organziation class, add NIEM and ORG to the survey, add an inventory of the terms in the survey
+* 2013-02-25: Add the conformance section, relax requirements with respect to MongoDB collection names.
+* 2013-02-16: Add a label property to the Post class, change the cardinality of the classification property on the Organization class, add NIEM and ORG to the survey, add an inventory of the terms in the survey
 * 2013-02-01: First public working draft
