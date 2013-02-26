@@ -123,10 +123,10 @@ The European Commission's [Interoperability Solutions for European Public Admini
 
 ## Review
 
-* [`person:patronymicName`](http://philarcher.org/isa/person-v1.00.html#person:patronymicName) is unique to this vocabulary and solves an internationalization issue. [*[2]*](https://github.com/opennorth/popolo-standard/issues/2)
+* [`person:patronymicName`](http://philarcher.org/isa/person-v1.00.html#person:patronymicName) is unique to this vocabulary and solves an internationalization issue. [*[issue 2]*](https://github.com/opennorth/popolo-standard/issues/2)
 * [`person:birthName`](http://philarcher.org/isa/person-v1.00.html#person:birthName) covers one type of former name.
 * [`locn:Address`](http://philarcher.org/isa/locn-v1.00.html#locn:Address) has no property for address types or telephone numbers.
-* `locn:Address` is INSPIRE conformant. [*[1]*](https://github.com/opennorth/popolo-standard/issues/1)
+* `locn:Address` is INSPIRE conformant. [*[issue 1]*](https://github.com/opennorth/popolo-standard/issues/1)
 
 ## Links
 

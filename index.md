@@ -16,6 +16,6 @@ The project's core parts are:
 * an [API specification](api.html) *(coming soon)*
 * a [reference implementation](https://github.com/opennorth/popolo)
 
-These documents are **Working Drafts**. Their governance will follow a simplified [W3C process](http://www.w3.org/Consortium/Process/).
+These documents are **Working Drafts** and managed in [a repository on GitHub](https://github.com/opennorth/popolo-standard). Their governance will follow a simplified [W3C process](http://www.w3.org/Consortium/Process/).
 
 Questions? Contact [james@opennorth.ca](mailto:james@opennorth.ca).
