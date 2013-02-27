@@ -184,7 +184,7 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 
 ## Review
 
-* PMF primarily defines interfaces, not properties and classes. Unlike most standards, it models relationships are first-class objects.
+* PMF primarily defines interfaces, not properties and classes. Unlike most standards, it models relationships as first-class objects.
 
 ## Links
 
