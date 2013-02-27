@@ -1,5 +1,5 @@
 ---
-layout: data
+layout: standard
 title: Data Standard
 id: data
 ---
