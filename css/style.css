@@ -47,6 +47,10 @@ td {
 }
 
 @media (max-width: 1199px) {
+  table.table-terms {
+    width: auto;
+    max-width: none;
+  }
   table.table-widest {
     width: auto;
     max-width: none;

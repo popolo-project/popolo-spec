@@ -10,7 +10,7 @@ id: data
   <li class="active">Existing Standards</li>
 </ul>
 
-# Dublin Core Metadata Initiative
+<h1 id="dcterms">Dublin Core Metadata Initiative</h1>
 
 [DCMI](http://dublincore.org/) defines general properties for describing resources, e.g. `dcterms:created` and `dcterms:modified`. The [Dublin Core Metadata Element Set](http://dublincore.org/documents/dces/) describes 15 properties that have been endorsed in [IETF](http://tools.ietf.org/html/rfc5013), ISO and ANSI/NISO standards. [DCMI Metadata Terms](http://dublincore.org/documents/dcmi-terms/) specifies all properties maintained by DCMI. Both are among the [most referenced](http://lov.okfn.org/dataset/lov/details/vocabulary_dce.html) linked open vocabularies. DCMI has a clear [governance and operation structure](http://dublincore.org/about/).
 
@@ -65,7 +65,7 @@ id: data
 
 ***
 
-# World Wide Web Consortium <span class="label">Organization</span>
+<h1 id="w3c">World Wide Web Consortium <span class="label">Organization</span></h1>
 
 [W3C](http://www.w3.org/) is the main international standards organization for the World Wide Web. It is not incorporated. Member organizations and invited experts from the public produce most of W3C's deliverables. Invited experts do not pay [fees](http://www.w3.org/Consortium/fees). It follows a [consensus-based process](http://www.w3.org/2005/10/Process-20051014/).
 
@@ -210,7 +210,7 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 
 ***
 
-# NEPOMUK Social Semantic Desktop
+<h1 id="nepomuk">NEPOMUK Social Semantic Desktop</h1>
 
 An apparently abandoned project of the [Open Semantic Collaboration Architecture Foundation](http://www.oscaf.org/). Its [Personal Information Model (PIMO) Ontology](http://www.semanticdesktop.org/ontologies/pimo/) has no properties for names, emails, genders, birth dates, death dates or external links. Its [NEPOMUK Contact Ontology (NCO)](http://www.semanticdesktop.org/ontologies/nco/), on the other hand, is of interest.
 
@@ -220,7 +220,7 @@ An apparently abandoned project of the [Open Semantic Collaboration Architecture
 
 ## Links
 
-* The NEPOMUK Contact Ontology declares some of its properties equivalent to vCard properties.
+* The NEPOMUK Contact Ontology declares some of its properties equivalent to vCard properties, declares others as subproperties of `dcterms` properties and reuses other NEPOMUK ontologies.
 
 ***
 
