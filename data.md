@@ -282,7 +282,7 @@ For the Address class, vCard is the only vocabulary to meet all [requirements](#
 
 <h2 id="restrictions">3.1 Restrictions</h1>
 
-The data standard imposes cardinality and range restrictions on some properties of other standards.
+The data standard imposes cardinality and range restrictions on some properties of other standards, in order to allow for simpler JSON and MongoDB serializations.
 
 In vCard, each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data standard requires that each component of a name can include one text value only.
 
