@@ -547,8 +547,8 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td><a href="http://tools.ietf.org/html/rfc4519#section-3.10">organizationalRole</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.28">roleOccupant</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.20">o</a></td>
-      <td></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.3">cn</a></td>
+      <td><a href="http://tools.ietf.org/html/rfc4519#section-2.38">title</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.23">postalAddress</a></td>
     </tr>
     <tr>
