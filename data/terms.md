@@ -46,6 +46,14 @@ id: data
       <td><code>locn</code></td>
       <td><a href="http://www.w3.org/ns/locn#">http://www.w3.org/ns/locn#</a></td>
     </tr>
+    <tr>
+      <td><code>nco</code></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#">http://www.semanticdesktop.org/ontologies/nco/#</a></td>
+    </tr>
+    <tr>
+      <td><code>nie</code></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nie/#">http://www.semanticdesktop.org/ontologies/nie/#</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -112,6 +120,17 @@ id: data
       <td>see <code>schema</code></td>
       <td></td>
       <td>see <code>foaf</code></td>
+    </tr>
+    <tr>
+      <th scope="row"><code>nco</code></th>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#PersonContact">PersonContact</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#hasEmailAddress">hasEmailAddress</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#gender">gender</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#birthDate">birthDate</a></td>
+      <td></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#photo">photo</a></td>
+      <td></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#url">url</a></td>
     </tr>
     <tr>
       <th scope="row">LDAP</th>
@@ -231,6 +250,17 @@ id: data
       <td>see <code>schema</code></td>
     </tr>
     <tr>
+      <th scope="row"><code>nco</code></th>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#fullname">fullname</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#nickname">nickname</a></td>
+      <td></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#nameFamily">nameFamily</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#nameGiven">nameGiven</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#nameAdditional">nameAdditional</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#nameHonorificPrefix">nameHonorificPrefix</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#nameHonorificSuffix">nameHonorificSuffix</a></td>
+    </tr>
+    <tr>
       <th scope="row">LDAP</th>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.3">cn</a></td>
       <td></td>
@@ -340,7 +370,7 @@ id: data
       <td><a href="http://www.w3.org/TR/vocab-org/#org:identifier">identifier</a></td>
       <td><a href="http://www.w3.org/TR/vocab-org/#org:classification">classification</a></td>
       <td><a href="http://www.w3.org/TR/vocab-org/#org:subOrganizationOf">subOrganizationOf</a></td>
-      <td><a href="http://xmlns.com/foaf/spec/#term_birthday">birthday</a></td>
+      <td>see <code>foaf</code></td>
       <td></td>
     </tr>
     <tr>
@@ -348,11 +378,22 @@ id: data
       <td><a href="http://tools.ietf.org/html/rfc6350#section-6.1.4">org</a></td>
       <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:fn">fn</a></td>
       <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:nickname">nickname</a></td>
-      <td></td>
+      <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:uid">uid</a></td>
       <td></td>
       <td></td>
       <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:bday">bday</a></td>
       <td><a href="http://tools.ietf.org/html/rfc6474#section-2.3">DEATHDATE</a></td>
+    </tr>
+    <tr>
+      <th scope="row"><code>nco</code></th>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#OrganizationContact">OrganizationContact</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#fullname">fullname</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#nickname">nickname</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nie/#identifier">nie:identifier</a></td>
+      <td></td>
+      <td></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#birthDate">birthDate</a></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row">LDAP</th>
@@ -429,6 +470,13 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td></td>
     </tr>
     <tr>
+      <th scope="row"><code>nco</code></th>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#PostalAddress">PostalAddress</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
       <th scope="row">LDAP</th>
       <td></td>
       <td></td>
@@ -470,6 +518,7 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td>Post</td>
       <td>person</td>
       <td>organization</td>
+      <td>label</td>
       <td>role</td>
       <td>address</td>
     </tr>
@@ -480,7 +529,17 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td><a href="http://www.w3.org/TR/vocab-org/#org:Post">Post</a></td>
       <td><a href="http://www.w3.org/TR/vocab-org/#org:heldBy">heldBy</a></td>
       <td><a href="http://www.w3.org/TR/vocab-org/#org:postIn">postIn</a></td>
+      <td><a href="http://www.w3.org/TR/skos-reference/#labels">skos:prefLabel</a></td>
       <td><a href="http://www.w3.org/TR/vocab-org/#org:role">role</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row"><code>nco</code></th>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#Affiliation">Affiliation</a></td>
+      <td></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#org">org</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#title">title</a></td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/nco/#role">role</a></td>
       <td></td>
     </tr>
     <tr>
@@ -488,6 +547,7 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td><a href="http://tools.ietf.org/html/rfc4519#section-3.10">organizationalRole</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.28">roleOccupant</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.20">o</a></td>
+      <td></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.3">cn</a></td>
       <td><a href="http://tools.ietf.org/html/rfc4519#section-2.23">postalAddress</a></td>
     </tr>
@@ -496,6 +556,7 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td><abbr title="PersonEmploymentAssociationType">PersonEmploy&hellip;</abbr></td>
       <td><abbr title="EmployeeReference">Reference</abbr></td>
       <td>Employer</td>
+      <td></td>
       <td><abbr title="EmployeePositionName">PositionName</abbr></td>
       <td><abbr title="EmploymentLocationReference">EmploymentLoc&hellip;</abbr></td>
     </tr>
@@ -504,6 +565,7 @@ and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) 
       <td>Role</td>
       <td>related_object</td>
       <td>primary_object</td>
+      <td></td>
       <td>role_name</td>
       <td>contact_information</td>
     </tr>

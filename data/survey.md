@@ -107,7 +107,7 @@ Deliverables of past working groups of interest are the [Simple Knowledge Organi
 * RFC 4519 and RFC 4524 have no properties for alternate person names, genders, dates of birth, dates of death or external links.
 * [RFC 2798](http://tools.ietf.org/html/rfc2798) adds `ldap:jpegPhoto` and [RFC 6474](http://tools.ietf.org/html/rfc6474) adds `vcard:birthPlace`, `vcard:deathPlace` and `vcard:deathDate`.
 * `vcard:Organization` has no properties for identifiers, classifications or parent organizations.
-* RFC 4519 and RFC 4524 have no properties for alternate organization names, founding dates or dissolution dates.
+* RFC 4519 and RFC 4524 have no properties for alternate organization names or founding dates.
 * It has no property to link a `vcard:Person` to a `vcard:Organization`.
 * LDAP disambiguates between different types of addresses and telephone numbers by adding new properties.
 
@@ -158,6 +158,20 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 ## Links
 
 * CIQ maintains a list of [other industry standards used](http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716017).
+
+***
+
+# NEPOMUK Social Semantic Desktop
+
+An apparently abandoned project of the [Open Semantic Collaboration Architecture Foundation](http://www.oscaf.org/). Its [Personal Information Model (PIMO) Ontology](http://www.semanticdesktop.org/ontologies/pimo/) has no properties for names, emails, genders, birth dates, death dates or external links. Its [NEPOMUK Contact Ontology (NCO)](http://www.semanticdesktop.org/ontologies/nco/), on the other hand, is of interest.
+
+## Review
+
+* NCO has no properties for dates of death; classifications, parent organizations; and all address properties of interest.
+
+## Links
+
+* The NEPOMUK Contact Ontology declares some of its properties equivalent to vCard properties.
 
 ***
 
@@ -226,7 +240,6 @@ The following vocabularies have not seen widepread adoption beyond their authors
 * [OpenCalais](http://www.opencalais.com/documentation/calais-web-service-api/api-metadata/entity-index-and-definitions) defines classes relevant to its extraction service, which are too narrow for this project. 
 * The [Participation ontology](http://vocab.org/participation/schema) [`participation:Role`](http://vocab.org/participation/schema#term-Role) class is a cross between [`org:Membership`](http://www.w3.org/TR/vocab-org/#class--membership) and [`org:Role`](http://www.w3.org/TR/vocab-org/#class--role).
 * [oeGOV](http://oegov.org/) uses a large set of classes instead of properties like [`org:classification`](http://www.w3.org/TR/vocab-org/#org:classification) or [`org:identifier`](http://www.w3.org/TR/vocab-org/#org:identifier).
-* The [PIMO Ontology](http://www.semanticdesktop.org/ontologies/pimo/) has no properties for names, emails, genders, birth dates, death dates or external links.
 
 The following are not appropriate to the scope of this project:
 
