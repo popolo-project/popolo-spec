@@ -280,7 +280,7 @@ For the Address class, vCard is the only vocabulary to meet all [requirements](#
 
 <p class="note">Note: <a href="http://schema.org/">Schema.org</a> can nonetheless be used for HTML serialization, but HTML serialization is out of scope.</p>
 
-<h2 id="restrictions">3.1 Restrictions</h1>
+<h2 id="restrictions">3.1 Restrictions</h2>
 
 The data standard imposes cardinality and range restrictions on some properties of other standards, in order to allow for simpler JSON and MongoDB serializations.
 
@@ -534,7 +534,7 @@ Reusable software components implementing the data standard should isolate thems
 
 Many MongoDB ODMs, including [Mongoid](http://mongoid.org/), use a `_type` field on a document to indicate that the document represents an instance of a subclass of the base class that is otherwise associated with the MongoDB collection. MongoDB serializations <em class="rfc2119">should</em> leave the management of the `_type` field to the ODM and <em class="rfc2119">should</em> place subclasses and base classes in the same collection.
 
-In order to satisfy the [requirement](#use-cases-and-requirements) to allow the use of imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates is <em class="rfc2119">recommended</em>. [XML Schema](http://www.w3.org/XML/Schema.html) supports [reduced dates](http://www.w3.org/TR/xmlschema-2/#truncatedformats) such as [`YYYY`](http://www.w3.org/TR/xmlschema-2/#gYear) and [`YYYY-MM`](http://www.w3.org/TR/xmlschema-2/#gYearMonth). MongoDB does not; it stores a [date](http://docs.mongodb.org/manual/core/document/#date) as a 64-bit integer that represents the number of milliseconds since the [Unix epoch](http://en.wikipedia.org/wiki/Unix_time). Unless a use case emerges requiring fast date operations, dates <em class="rfc2119">should</em> be serialized as strings in MongoDB.
+In order to satisfy the [requirement](#use-cases-and-requirements) to allow the use of imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates is <em class="rfc2119">recommended</em>. [XML Schema](http://www.w3.org/XML/Schema.html) supports [reduced dates](http://www.w3.org/TR/xmlschema-2/#truncatedformats) such as [`YYYY`](http://www.w3.org/TR/xmlschema-2/#gYear) and [`YYYY-MM`](http://www.w3.org/TR/xmlschema-2/#gYearMonth). MongoDB does not; it stores a [date](http://docs.mongodb.org/manual/core/document/#date) as a 64-bit integer that represents the number of milliseconds since the [Unix epoch](http://en.wikipedia.org/wiki/Unix_time). Unless a use case emerges requiring fast date operations, dates <em class="rfc2119">should</em> be serialized as strings in MongoDB. Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>.
 
 **General differences from RDF:** For all MongoDB collections, MongoDB's `_id` field is added. This field is `id` in the JSON serialiation.
 
@@ -705,6 +705,7 @@ The following adds `tollfree` and removes `text` from [vCard 4.0](http://tools.i
 
 <h1 id="history">8. Change history</h1>
 
+* 2013-02-28: Add requirement for dates to be stored in UTC.
 * 2013-02-25: Add the conformance section, relax requirements with respect to MongoDB collection names.
 * 2013-02-16: Add a label property to the Post class, change the cardinality of the classification property on the Organization class, add NIEM and ORG to the survey, add an inventory of the terms in the survey
 * 2013-02-01: First public working draft
