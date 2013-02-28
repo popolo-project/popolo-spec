@@ -161,20 +161,6 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 
 ***
 
-# NEPOMUK Social Semantic Desktop
-
-An apparently abandoned project of the [Open Semantic Collaboration Architecture Foundation](http://www.oscaf.org/). Its [Personal Information Model (PIMO) Ontology](http://www.semanticdesktop.org/ontologies/pimo/) has no properties for names, emails, genders, birth dates, death dates or external links. Its [NEPOMUK Contact Ontology (NCO)](http://www.semanticdesktop.org/ontologies/nco/), on the other hand, is of interest.
-
-## Review
-
-* NCO has no properties for dates of death; classifications, parent organizations; and all address properties of interest.
-
-## Links
-
-* The NEPOMUK Contact Ontology declares some of its properties equivalent to vCard properties.
-
-***
-
 # National Information Exchange Model <span class="label">Person</span> <span class="label">Organization</span> <span class="label">Address</span>
 
 [NIEM](https://www.niem.gov/) was initiated as a joint venture between the U.S. Department of Homeland Security and the U.S. Department of Justice with outreach to other departments and agencies. Its goal is to allow for national-level interoperable information sharing and data exchange. Several specializations of the NIEM Core schema exist.
@@ -221,6 +207,20 @@ An apparently abandoned project of the [Open Semantic Collaboration Architecture
 ## Links
 
 * Its [Social Data Specification](http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml) is aligned with [Portable Contacts](http://portablecontacts.net/).
+
+***
+
+# NEPOMUK Social Semantic Desktop
+
+An apparently abandoned project of the [Open Semantic Collaboration Architecture Foundation](http://www.oscaf.org/). Its [Personal Information Model (PIMO) Ontology](http://www.semanticdesktop.org/ontologies/pimo/) has no properties for names, emails, genders, birth dates, death dates or external links. Its [NEPOMUK Contact Ontology (NCO)](http://www.semanticdesktop.org/ontologies/nco/), on the other hand, is of interest.
+
+## Review
+
+* NCO has no properties for dates of death; classifications, parent organizations; and all address properties of interest.
+
+## Links
+
+* The NEPOMUK Contact Ontology declares some of its properties equivalent to vCard properties.
 
 ***
 
