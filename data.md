@@ -286,7 +286,7 @@ The data standard imposes cardinality and range restrictions on some properties 
 
 In vCard, each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data standard requires that each component of a name can include one text value only.
 
-According to the Organization ontology, multiple people can hold a post, and either a person or an organization can hold a post. In this data standard, only a single *person* can hold a post. Similarly, an organization may have only one classification; implementations must therefore choose a unique classification scheme.
+According to the Organization ontology, multiple people can hold a post, and either a person or an organization can hold a post; in this data standard, only a single *person* can hold a post. According to the Organization ontology, either a person or an organization can be a member of an organization; in this data standard, only a person can be a member of an organization. Unlike the Organization ontology, an organization may have only one classification in this data standard; implementations must therefore choose a unique classification scheme.
 
 The data standard is a [profile of the W3C organization ontology](http://www.w3.org/TR/vocab-org/#conformance).
 
