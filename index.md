@@ -12,7 +12,7 @@ This project's motivation is to make it easier for civic developers to create go
 
 The project's core parts are:
 
-* a [data standard](data.html)
+* a [data specification](data.html)
 * an [API specification](api.html) *(coming soon)*
 * a [reference implementation](https://github.com/opennorth/popolo)
 

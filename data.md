@@ -1,6 +1,6 @@
 ---
 layout: standard
-title: Data Standard
+title: Data Specification
 id: data
 ---
 **<abbr title="too long, didn't read">tl;dr</abbr> Read [this part of the requirements](#relations) then skip to the [serialization](#serialization) and [conformance](#conformance) sections**
@@ -9,7 +9,7 @@ The key words <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>, 
 
 <h1 id="scope">1. Scope</h1>
 
-The data standard's initial scope is to describe the entities below and the relations between them:
+The data specification's initial scope is to describe the entities below and the relations between them:
 
 <dl>
   <dt>Person</dt>
@@ -24,11 +24,11 @@ The data standard's initial scope is to describe the entities below and the rela
   <dd>A relationship between a person and an organization</dd>
 </dl>
 
-The data standard will initially define <abbr title="JavaScript Object Notation">JSON</abbr>, <abbr title="Resource Description Framework">RDF</abbr> and MongoDB serializations.
+The data specification will initially define <abbr title="JavaScript Object Notation">JSON</abbr>, <abbr title="Resource Description Framework">RDF</abbr> and MongoDB serializations.
 
 <h1 id="use-cases-and-requirements">2. Use Cases &amp; Requirements</h1>
 
-The data standard is designed primarily for open government use cases, though other use cases are supported. The data standard defines classes and properties to fulfill the requirements below.
+The data specification is designed primarily for open government use cases, though other use cases are supported. The data specification defines classes and properties to fulfill the requirements below.
 
 1. Allow the use of imprecise dates [*[issue 7]*](https://github.com/opennorth/popolo-standard/issues/7).
 
@@ -268,7 +268,7 @@ Briefly, the survey concludes that, with respect to the Person class:
 
 * No vocabulary has a property for former names, except for `person:birthName`.
 * No vocabulary describes biographies without importing the BIO vocabulary, except for `facebook:bio`.
-* Only `person:Person` fits [the data standard's definition of a person](#scope).
+* Only `person:Person` fits [the data specification's definition of a person](#scope).
 
 For the Organization class:
 
@@ -282,21 +282,21 @@ For the Address class, vCard is the only vocabulary to meet all [requirements](#
 
 <h2 id="restrictions">3.1 Restrictions</h2>
 
-The data standard imposes cardinality and range restrictions on some properties of other standards, in order to allow for simpler JSON and MongoDB serializations.
+The data specification imposes cardinality and range restrictions on some properties of other standards, in order to allow for simpler JSON and MongoDB serializations.
 
-In vCard, each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data standard requires that each component of a name can include one text value only.
+In vCard, each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data specification requires that each component of a name can include one text value only.
 
-According to the Organization ontology, multiple people can hold a post, and either a person or an organization can hold a post; in this data standard, only a single *person* can hold a post. According to the Organization ontology, either a person or an organization can be a member of an organization; in this data standard, only a person can be a member of an organization. Unlike the Organization ontology, an organization may have only one classification in this data standard; implementations must choose a unique classification scheme.
+According to the Organization ontology, multiple people can hold a post, and either a person or an organization can hold a post; in this data specification, only a single *person* can hold a post. According to the Organization ontology, either a person or an organization can be a member of an organization; in this data specification, only a person can be a member of an organization. Unlike the Organization ontology, an organization may have only one classification in this data specification; implementations must choose a unique classification scheme.
 
-The data standard is a [profile of the W3C organization ontology](http://www.w3.org/TR/vocab-org/#conformance).
+The data specification is a [profile of the W3C organization ontology](http://www.w3.org/TR/vocab-org/#conformance).
 
 **TODO: OWL file describing the restrictions**
 
 <h1 id="classes-and-properties">4. Classes and properties</h1>
 
-Given that the [standards reused](#standard-reuse) are defined in RDF, the data standard's classes and properties will map to RDF terms. Serialization is not limited to RDF; JSON and MongoDB schema are defined in [the next section](#serialization).
+Given that the [standards reused](#standard-reuse) are defined in RDF, the data specification's classes and properties will map to RDF terms. Serialization is not limited to RDF; JSON and MongoDB schema are defined in [the next section](#serialization).
 
-Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alternate names, it usually represents abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames. vCard 4.0 can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred. The Person Core Vocabulary uses `dcterms:alternative`. No standard has a property for former names, however. This data standard may therefore propose a new term for both alternate and former names. The RDF definition is not yet available, however.
+Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alternate names, it usually represents abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames. vCard 4.0 can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred. The Person Core Vocabulary uses `dcterms:alternative`. No standard has a property for former names, however. This data specification may therefore propose a new term for both alternate and former names. The RDF definition is not yet available, however.
 
 In RDF, the permanent, unique identifier is the resource's URL.
 
@@ -530,7 +530,7 @@ In RDF, the permanent, unique identifier is the resource's URL.
 
 Schemas are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) and apply to the JSON and MongoDB serializations. The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s and <abbr title="object-document mapper">ODM</abbr>s. The RDF serialization follows the [classes and properties](#classes-and-properties) section above; example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
 
-Reusable software components implementing the data standard should isolate themselves from their host applications. For the MongoDB serialization, such components <em class="rfc2119">may</em> therefore namespace the collections by prepending a `popolo_` prefix to the names of the collections.
+Reusable software components implementing the data specification should isolate themselves from their host applications. For the MongoDB serialization, such components <em class="rfc2119">may</em> therefore namespace the collections by prepending a `popolo_` prefix to the names of the collections.
 
 Many MongoDB ODMs, including [Mongoid](http://mongoid.org/), use a `_type` field on a document to indicate that the document represents an instance of a subclass of the base class that is otherwise associated with the MongoDB collection. MongoDB serializations <em class="rfc2119">should</em> leave the management of the `_type` field to the ODM and <em class="rfc2119">should</em> place subclasses and base classes in the same collection.
 
@@ -694,14 +694,14 @@ The following adds `tollfree` and removes `text` from [vCard 4.0](http://tools.i
 
 <h1 id="conformance">7. Conformance</h1>
 
-1. An implementation's usage of [this standard's terms](#classes-and-properties) <em class="rfc2119">must</em> be consistent with the semantics of those terms.
-1. A conforming implementation <em class="rfc2119">must not</em> use other terms where this standard's terms would suffice[<sup>14</sup>](#note14).
-1. A conforming implementation <em class="rfc2119">may</em> use terms from outside this standard's terms where this standard's terms are insufficient.
-1. If an implementation serializes to JSON or MongoDB, its serializations <em class="rfc2119">must</em> validate against this standard's [JSON Schema](#serialization).
+1. An implementation's usage of [this specification's terms](#classes-and-properties) <em class="rfc2119">must</em> be consistent with the semantics of those terms.
+1. A conforming implementation <em class="rfc2119">must not</em> use other terms where this specification's terms would suffice[<sup>14</sup>](#note14).
+1. A conforming implementation <em class="rfc2119">may</em> use terms from outside this specification's terms where this specification's terms are insufficient.
+1. If an implementation serializes to JSON or MongoDB, its serializations <em class="rfc2119">must</em> validate against this specification's [JSON Schema](#serialization).
 1. If an implementation serializes to MongoDB, it <em class="rfc2119">may</em> denormalize its data [*[issue 14]*](https://github.com/opennorth/popolo-standard/issues/14).</h2>
-1. A conforming implementation <em class="rfc2119">may</em> use only a subset of this standard's terms.
+1. A conforming implementation <em class="rfc2119">may</em> use only a subset of this specification's terms.
 
-<p class="note" id="note14">14. For example, it <em class="rfc2119">must not</em> use vCard's <code>fn</code> where this standard's <code>name</code> would suffice.</p>
+<p class="note" id="note14">14. For example, it <em class="rfc2119">must not</em> use vCard's <code>fn</code> where this specification's <code>name</code> would suffice.</p>
 
 <h1 id="history">8. Change history</h1>
 

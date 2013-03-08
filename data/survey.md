@@ -6,7 +6,7 @@ id: data
 {% include navigation.html %}
 
 <ul class="breadcrumb">
-  <li><a href="/data.html">Data Standard</a> <span class="divider">/</span></li>
+  <li><a href="/data.html">Data Specification</a> <span class="divider">/</span></li>
   <li class="active">Existing Standards</li>
 </ul>
 
