@@ -568,7 +568,7 @@ The MongoDB collection <em class="rfc2119">should</em> be named `organizations` 
 
 **Differences from RDF:** The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with the Person class. A new `scheme`[<sup>12</sup>](#12) property indicates an identifier's scheme, because JSON and MongoDB values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF. The term `parent_id`[<sup>13</sup>](#13) is used instead of `subOrganizationOf`.
 
-<p class="note" id="note12">12. With respect to reuse, both ORG and SKOS use the word <code>scheme</code> to refer to this value.</p>
+<p class="note" id="note12">12. With respect to reuse, ORG, SKOS and XBRL use the word <code>scheme</code> to refer to this value.</p>
 <p class="note" id="note13">13. With respect to reuse, <a href="https://github.com/benedikt/mongoid-tree">mongoid-tree</a>, <a href="https://github.com/collectiveidea/awesome_nested_set/tree/master/lib/awesome_nested_set">awesome_nested_set</a> and <a href="https://github.com/amerine/acts_as_tree">acts_as_tree</a> use <code>parent_id</code>.</p>
 
 <ul class="nav nav-tabs">

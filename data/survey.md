@@ -240,9 +240,16 @@ The following vocabularies have not seen widepread adoption beyond their authors
 * [OpenCalais](http://www.opencalais.com/documentation/calais-web-service-api/api-metadata/entity-index-and-definitions) defines classes relevant to its extraction service, which are too narrow for this project. 
 * The [Participation ontology](http://vocab.org/participation/schema) [`participation:Role`](http://vocab.org/participation/schema#term-Role) class is a cross between [`org:Membership`](http://www.w3.org/TR/vocab-org/#class--membership) and [`org:Role`](http://www.w3.org/TR/vocab-org/#class--role).
 * [oeGOV](http://oegov.org/) uses a large set of classes instead of properties like [`org:classification`](http://www.w3.org/TR/vocab-org/#org:classification) or [`org:identifier`](http://www.w3.org/TR/vocab-org/#org:identifier).
+* [XBRL](http://www.xbrl.org/SpecRecommendations) provides an [`Entity`](http://www.xbrl.org/Specification/XBRL-2.1/REC-2003-12-31/XBRL-2.1-REC-2003-12-31+corrected-errata-2013-02-20.html#_4.7.3) class and an [`identifier`](http://www.xbrl.org/Specification/XBRL-2.1/REC-2003-12-31/XBRL-2.1-REC-2003-12-31+corrected-errata-2013-02-20.html#_4.7.3.1) property for organizations.
 
 The following are not appropriate to the scope of this project:
 
 * [Akoma Ntoso](http://www.akomantoso.org/) <span class="label">non-RDF</span> has no person or organization vocabulary.
+
+The following were not reviewed and are likely inappropriate:
+
+* The [Open Applications Group](http://www.oagi.org/), [Accredited Standards Committee X12](http://www.x12.org/) charge hundreds of US dollars for access to their standards.
+* [SWIFT Standards](http://www.swift.com/standards) are only available to financial institutions.
+* [RosettaNet](http://www.rosettanet.org/) requires account activation by an administrator.
 
 This project may consider publishing mappings to DBPedia and Freebase classes and properties.
