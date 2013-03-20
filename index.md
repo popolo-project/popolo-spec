@@ -6,7 +6,7 @@ title: The Popolo Project
   <h1>The Popolo Project</h1>
 </div>
 
-This project's motivation is to make it easier for civic developers to create government transparency, monitoring and engagement websites.
+This project's goal is to author, through community consensus, international open government data specifications relating to the legislative branch, so that the open government sector can spend less time transforming data and more time applying it to the problems they face. A related goal is to make it easier for civic developers to create government transparency, monitoring and engagement websites, by developing reusable open source components that implement the specifications.
 
 The project's core parts are:
 
