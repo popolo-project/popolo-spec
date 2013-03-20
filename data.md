@@ -312,17 +312,17 @@ In RDF, the permanent, unique identifier is the resource's URL.
   <tbody>
     <tr id="person:Person">
       <td><strong>Person</strong></td>
-      <td><code><a href="http://www.w3.org/ns/person#Person">person:Person</a></code></td>
+      <td><code><a href="http://philarcher.org/isa/person-v1.00.html#person:Person" title="http://www.w3.org/ns/person#Person">person:Person</a></code></td>
       <td>A real person, alive or dead</td>
     </tr>
     <tr id="foaf:name">
       <td>name</td>
-      <td><code><a href="http://xmlns.com/foaf/0.1/name">foaf:name</a></code></td>
+      <td><code><a href="http://xmlns.com/foaf/spec/#term_name" title="http://xmlns.com/foaf/0.1/name">foaf:name</a></code></td>
       <td>A person's preferred full name</td>
     </tr>
     <tr id="dcterms:alternative">
       <td>alternate name</td>
-      <td><code><a href="http://purl.org/dc/terms/alternative">dcterms:alternative</a></code></td>
+      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-alternative" title="http://purl.org/dc/terms/alternative">dcterms:alternative</a></code></td>
       <td>An alternate name, such as a pseudonym</td>
     </tr>
     <tr>
@@ -332,32 +332,32 @@ In RDF, the permanent, unique identifier is the resource's URL.
     </tr>
     <tr id="foaf:familyName">
       <td>family name</td>
-      <td><code><a href="http://xmlns.com/foaf/0.1/familyName">foaf:familyName</a></code></td>
+      <td><code><a href="http://xmlns.com/foaf/spec/#term_familyName" title="http://xmlns.com/foaf/0.1/familyName">foaf:familyName</a></code></td>
       <td>One or more family names</td>
     </tr>
     <tr id="foaf:givenName">
       <td>given name</td>
-      <td><code><a href="http://xmlns.com/foaf/0.1/givenName">foaf:givenName</a></code></td>
+      <td><code><a href="http://xmlns.com/foaf/spec/#term_givenName" title="http://xmlns.com/foaf/0.1/givenName">foaf:givenName</a></code></td>
       <td>One or more primary given names</td>
     </tr>
     <tr id="schema:additionalName">
       <td>additional name</td>
-      <td><code><a href="http://schema.org/additionalName">schema:additionalName</a></code></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/additionalName">schema:additionalName</a></code></td>
       <td>One or more secondary given names</td>
     </tr>
     <tr id="schema:honorificPrefix">
       <td>honorific prefix</td>
-      <td><code><a href="http://schema.org/honorificPrefix">schema:honorificPrefix</a></code><a href="#note3"><sup>3</sup></a></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/honorificPrefix">schema:honorificPrefix</a></code><a href="#note3"><sup>3</sup></a></td>
       <td>One or more honorifics preceding a person's name</td>
     </tr>
     <tr id="schema:honorificSuffix">
       <td>honorific suffix</td>
-      <td><code><a href="http://schema.org/honorificSuffix">schema:honorificSuffix</a></code></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/honorificSuffix">schema:honorificSuffix</a></code></td>
       <td>One or more honorifics following a person's name</td>
     </tr>
     <tr id="schema:email">
       <td>email address</td>
-      <td><code><a href="http://schema.org/email">schema:email</a></code><a href="#note4"><sup>4</sup></a></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/email">schema:email</a></code><a href="#note4"><sup>4</sup></a></td>
       <td>An email address</td>
     </tr>
     <tr id="foaf:gender">
@@ -367,47 +367,47 @@ In RDF, the permanent, unique identifier is the resource's URL.
     </tr>
     <tr id="schema:birthDate">
       <td>date of birth</td>
-      <td><code><a href="http://schema.org/birthDate">schema:birthDate</a></code><a href="#note5"><sup>5</sup></a></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/birthDate">schema:birthDate</a></code><a href="#note5"><sup>5</sup></a></td>
       <td>A date of birth</td>
     </tr>
     <tr id="schema:deathDate">
       <td>date of death</td>
-      <td><code><a href="http://schema.org/deathDate">schema:deathDate</a></code></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/deathDate">schema:deathDate</a></code></td>
       <td>A date of death</td>
     </tr>
     <tr id="schema:image">
       <td>head shot</td>
-      <td><code><a href="http://schema.org/image">schema:image</a></code><a href="#note6"><sup>6</sup></a></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/image">schema:image</a></code><a href="#note6"><sup>6</sup></a></td>
       <td>A URL of a head shot</td>
     </tr>
     <tr id="bio:olb">
       <td>one-line biography</td>
-      <td><code><a href="http://purl.org/vocab/bio/0.1/olb">bio:olb</a></code></td>
+      <td><code><a href="http://vocab.org/bio/0.1/olb.html" title="http://purl.org/vocab/bio/0.1/olb">bio:olb</a></code></td>
       <td>A one-line account of a person's life</td>
     </tr>
     <tr id="bio:biography">
       <td>biography</td>
-      <td><code><a href="http://purl.org/vocab/bio/0.1/biography">bio:biography</a></code></td>
+      <td><code><a href="http://vocab.org/bio/0.1/biography.html" title="http://purl.org/vocab/bio/0.1/biography">bio:biography</a></code></td>
       <td>An extended account of a person's life</td>
     </tr>
     <tr id="rdfs:seeAlso">
       <td>external links</td>
-      <td><code><a href="http://www.w3.org/2000/01/rdf-schema#seeAlso">rdfs:seeAlso</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_seealso" title="http://www.w3.org/2000/01/rdf-schema#seeAlso">rdfs:seeAlso</a></code></td>
       <td>A URL for a document about the person</td>
     </tr>
     <tr id="org:Organization">
       <td><strong>Organization</strong></td>
-      <td><code><a href="http://www.w3.org/ns/org#Organization">org:Organization</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:Organization" title="http://www.w3.org/ns/org#Organization">org:Organization</a></code></td>
       <td>A group with a common purpose or reason for existence that goes beyond the set of people belonging to it, e.g. a social, commercial or political structure</td>
     </tr>
     <tr id="skos:prefLabel1">
       <td>name</td>
-      <td><code><a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/skos-reference/#labels" title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
       <td>A primary name, e.g. a legally recognized name</td>
     </tr>
     <tr id="skos:altLabel">
       <td>alternate name</td>
-      <td><code><a href="http://www.w3.org/2004/02/skos/core#altLabel">skos:altLabel</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/skos-reference/#labels" title="http://www.w3.org/2004/02/skos/core#altLabel">skos:altLabel</a></code></td>
       <td>An alternate name, e.g. a trading or colloquial name</td>
     </tr>
     <tr>
@@ -417,22 +417,22 @@ In RDF, the permanent, unique identifier is the resource's URL.
     </tr>
     <tr id="org:identifier">
       <td>identifier</td>
-      <td><code><a href="http://www.w3.org/ns/org#identifier">org:identifier</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:identifier" title="http://www.w3.org/ns/org#identifier">org:identifier</a></code></td>
       <td>An issued identifier, e.g. a <abbr title="Data Universal Numbering System">DUNS</abbr> number, <abbr title="Global Location Number">GLN</abbr>, <abbr title="Taxpayer Identification Number">TIN</abbr>, etc.</td>
     </tr>
     <tr id="org:classification">
       <td>classification</td>
-      <td><code><a href="http://www.w3.org/ns/org#classification">org:classification</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:classification" title="http://www.w3.org/ns/org#classification">org:classification</a></code></td>
       <td>An organizational category, e.g. charity, committee, etc.</td>
     </tr>
     <tr id="org:subOrganizationOf">
       <td>parent organization</td>
-      <td><code><a href="http://www.w3.org/ns/org#subOrganizationOf">org:subOrganizationOf</a></code><a href="#note7"><sup>7</sup></a></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:subOrganizationOf" title="http://www.w3.org/ns/org#subOrganizationOf">org:subOrganizationOf</a></code><a href="#note7"><sup>7</sup></a></td>
       <td>An organization that contains this organization</td>
     </tr>
     <tr id="schema:foundingDate">
       <td>date of founding</td>
-      <td><code><a href="http://schema.org/foundingDate">schema:foundingDate</a></code></td>
+      <td><code><a href="http://schema.org/Organization" title="http://schema.org/foundingDate">schema:foundingDate</a></code></td>
       <td>A date of founding</td>
     </tr>
     <tr>
@@ -442,47 +442,47 @@ In RDF, the permanent, unique identifier is the resource's URL.
     </tr>
     <tr id="vcard:VCard">
       <td><strong>Address</strong></td>
-      <td><code><a href="http://www.w3.org/2006/vcard/ns#VCard">vcard:VCard</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/vcard-rdf/#vcard:VCard" title="http://www.w3.org/2006/vcard/ns#VCard">vcard:VCard</a></code></td>
       <td>A physical location or a mail delivery point</td>
     </tr>
     <tr id="rdf:type">
       <td>address type</td>
-      <td><code><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></code><a href="#note8"><sup>8</sup></a></td>
+      <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></code><a href="#note8"><sup>8</sup></a></td>
       <td>A type of address, e.g. "Constituency office"</td>
     </tr>
     <tr id="vcard:label">
       <td>postal address</td>
-      <td><code><a href="http://www.w3.org/2006/vcard/ns#label">vcard:label</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/vcard-rdf/#vcard:label2" title="http://www.w3.org/2006/vcard/ns#label">vcard:label</a></code></td>
       <td>A postal address</td>
     </tr>
     <tr id="vcard:tel">
       <td>telephone number</td>
-      <td><code><a href="http://www.w3.org/2006/vcard/ns#tel">vcard:tel</a></code><a href="#note8"><sup>8</sup></a></td>
+      <td><code><a href="http://www.w3.org/TR/vcard-rdf/#vcard:tel2" title="http://www.w3.org/2006/vcard/ns#tel">vcard:tel</a></code><a href="#note8"><sup>8</sup></a></td>
       <td>A telephone number</td>
     </tr>
     <tr id="org:Post">
       <td><strong>Post</strong></td>
-      <td><code><a href="http://www.w3.org/ns/org#Post">org:Post</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:Post" title="http://www.w3.org/ns/org#Post">org:Post</a></code></td>
       <td>A position that exists independent of the person holding it</td>
     </tr>
     <tr id="skos:prefLabel2">
       <td>label</td>
-      <td><code><a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/skos-reference/#labels" title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
       <td>A label describing the post</td>
     </tr>
     <tr id="org:role-Post">
       <td>role</td>
-      <td><code><a href="http://www.w3.org/ns/org#role">org:role</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:role" title="http://www.w3.org/ns/org#role">org:role</a></code></td>
       <td>The role that the holder of the post fulfills</td>
     </tr>
     <tr id="org:heldBy">
       <td>person</td>
-      <td><code><a href="http://www.w3.org/ns/org#heldBy">org:heldBy</a></code><a href="#note7"><sup>7</sup></a></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:heldBy" title="http://www.w3.org/ns/org#heldBy">org:heldBy</a></code><a href="#note7"><sup>7</sup></a></td>
       <td>The person who holds the post</td>
     </tr>
     <tr id="org:postIn">
       <td>organization</td>
-      <td><code><a href="http://www.w3.org/ns/org#postIn">org:postIn</a></code><a href="#note7"><sup>7</sup></a></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:postIn" title="http://www.w3.org/ns/org#postIn">org:postIn</a></code><a href="#note7"><sup>7</sup></a></td>
       <td>The organization in which the post is held</td>
     </tr>
     <tr>
@@ -492,27 +492,27 @@ In RDF, the permanent, unique identifier is the resource's URL.
     </tr>
     <tr id="org:Membership">
       <td><strong>Membership</strong></td>
-      <td><code><a href="http://www.w3.org/ns/org#Membership">org:Membership</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:Membership" title="http://www.w3.org/ns/org#Membership">org:Membership</a></code></td>
       <td>A relationship between a person and an organization</td>
     </tr>
     <tr id="org:role-Membership">
       <td>role</td>
-      <td><code><a href="http://www.w3.org/ns/org#role">org:role</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:role" title="http://www.w3.org/ns/org#role">org:role</a></code></td>
       <td>The role that the person fulfills in the organization</td>
     </tr>
     <tr id="org:member">
       <td>person</td>
-      <td><code><a href="http://www.w3.org/ns/org#member">org:member</a></code><a href="#note7"><sup>7</sup></a></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:member" title="http://www.w3.org/ns/org#member">org:member</a></code><a href="#note7"><sup>7</sup></a></td>
       <td>The person who is a party to the relationship</td>
     </tr>
     <tr id="org:organization">
       <td>organization</td>
-      <td><code><a href="org:organization">org:organization</a></code><a href="#note7"><sup>7</sup></a></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:organization" title="http://www.w3.org/ns/org#organization">org:organization</a></code><a href="#note7"><sup>7</sup></a></td>
       <td>The organization that is a party to the relationship</td>
     </tr>
     <tr id="org:memberDuring">
       <td>time interval</td>
-      <td><code><a href="http://www.w3.org/ns/org#memberDuring">org:memberDuring</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:memberDuring" title="http://www.w3.org/ns/org#memberDuring">org:memberDuring</a></code></td>
       <td>the time interval over which the relationship exists</td>
     </tr>
   </tbody>
