@@ -30,7 +30,7 @@ The data specification will initially define <abbr title="JavaScript Object Nota
 
 The data specification is designed primarily for open government use cases, though other use cases are supported. The data specification defines classes and properties to fulfill the requirements below.
 
-1. Allow the use of imprecise dates [*[issue 7]*](https://github.com/opennorth/popolo-standard/issues/7).
+1. Allow the use of imprecise dates [*[issue 7]*](https://github.com/opennorth/popolo-spec/issues/7).
 
     >Shakespeare was born in April 1564.
 
@@ -58,11 +58,11 @@ The Person class should have properties for:
 
     >To find a person by a pseudonym or nickname, e.g. "Mark Twain" for Samuel Clemens.
 
-1. email address [*[issue 5]*](https://github.com/opennorth/popolo-standard/issues/5)
+1. email address [*[issue 5]*](https://github.com/opennorth/popolo-spec/issues/5)
 
     >To contact representatives via email.
 
-1. gender [*[issue 3]*](https://github.com/opennorth/popolo-standard/issues/3)
+1. gender [*[issue 3]*](https://github.com/opennorth/popolo-spec/issues/3)
 
     >To determine personal pronouns, e.g. "John Doe will be at <u>his</u> constituency office next week."
 
@@ -118,11 +118,11 @@ The Organization class should have properties for:
 
     >The Standing Committee on Finance is part of the House of Commons.
 
-1. date of founding [*[issue 9]*](https://github.com/opennorth/popolo-standard/issues/9)
+1. date of founding [*[issue 9]*](https://github.com/opennorth/popolo-spec/issues/9)
 
     >To provide historical detail.
 
-1. date of dissolution [*[issue 9]*](https://github.com/opennorth/popolo-standard/issues/9)
+1. date of dissolution [*[issue 9]*](https://github.com/opennorth/popolo-spec/issues/9)
 
     >To determine whether an organization exists, e.g. in order to disable related functionality.
 
@@ -134,12 +134,12 @@ The Address class should have properties for:
 
     >e.g. "Hill address" or "Constituency office".
 
-1. postal address [*[issue 10]*](https://github.com/opennorth/popolo-standard/issues/10)
+1. postal address [*[issue 10]*](https://github.com/opennorth/popolo-spec/issues/10)
 
     >1 Main Street  
     Anytown, USA
 
-1. telephone numbers by type [*[issue 8]*](https://github.com/opennorth/popolo-standard/issues/8)
+1. telephone numbers by type [*[issue 8]*](https://github.com/opennorth/popolo-spec/issues/8)
 
     >e.g. a mobile, toll-free or facsimile telephone number.
 
@@ -698,7 +698,7 @@ The following adds `tollfree` and removes `text` from [vCard 4.0](http://tools.i
 1. A conforming implementation <em class="rfc2119">must not</em> use other terms where this specification's terms would suffice[<sup>14</sup>](#note14).
 1. A conforming implementation <em class="rfc2119">may</em> use terms from outside this specification's terms where this specification's terms are insufficient.
 1. If an implementation serializes to JSON or MongoDB, its serializations <em class="rfc2119">must</em> validate against this specification's [JSON Schema](#serialization).
-1. If an implementation serializes to MongoDB, it <em class="rfc2119">may</em> denormalize its data [*[issue 14]*](https://github.com/opennorth/popolo-standard/issues/14).</h2>
+1. If an implementation serializes to MongoDB, it <em class="rfc2119">may</em> denormalize its data [*[issue 14]*](https://github.com/opennorth/popolo-spec/issues/14).</h2>
 1. A conforming implementation <em class="rfc2119">may</em> use only a subset of this specification's terms.
 
 <p class="note" id="note14">14. For example, it <em class="rfc2119">must not</em> use vCard's <code>fn</code> where this specification's <code>name</code> would suffice.</p>

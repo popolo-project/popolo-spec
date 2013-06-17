@@ -15,7 +15,7 @@ This project's goal is to author, through community consensus, international ope
 These documents are **Working Drafts**. Their governance will roughly follow the [W3C process](http://www.w3.org/Consortium/Process/).
 
 * Join the [W3C Open Government Community Group](http://www.w3.org/community/opengov/) and [subscribe to its mailing list](http://lists.w3.org/Archives/Public/public-opengov/) to discuss the project's development
-* Visit the [GitHub repository](https://github.com/opennorth/popolo-standard/tree/gh-pages), discuss [open issues](https://github.com/opennorth/popolo-standard/issues) and consult the [wiki](https://github.com/opennorth/popolo-standard/wiki/Data-standard-wiki)
+* Visit the [GitHub repository](https://github.com/opennorth/popolo-spec/tree/gh-pages), discuss [open issues](https://github.com/opennorth/popolo-spec/issues) and consult the [wiki](https://github.com/opennorth/popolo-spec/wiki/Data-standard-wiki)
 * [Read Open North's blog post announcing the project](http://blog.opennorth.ca/2013/02/21/update-on-opengovernment/) for more context
 
 Questions? Contact [james@opennorth.ca](mailto:james@opennorth.ca).
