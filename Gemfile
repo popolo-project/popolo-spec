@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'haml'
-gem 'jekyll'
+gem 'jekyll', '~> 1.0.0'
 gem 'rake'
 gem 'redcarpet'
 gem 'sass'
