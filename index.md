@@ -10,6 +10,20 @@ This project's goal is to author, through community consensus, international ope
 
 ## Specification
 
+1. [Scope](/specs/#scope)
+1. [Conformance](/specs/#conformance)
+1. [Change history](/specs/#history)
+1. Classes and properties
+    1. [Person](/specs/person.html)
+    1. [Naming](/specs/naming.html)
+    1. [Organization](/specs/organization.html)
+    1. [Post](/specs/post.html)
+    1. [Membership](/specs/membership.html)
+    1. [Address](/specs/address.html)
+    1. [Area](/specs/area.html)
+    1. [Event](/specs/event.html)
+    1. [Document](/specs/document.html)
+
 ## Participation
 
 These documents are **Working Drafts**. Their governance will roughly follow the [W3C process](http://www.w3.org/Consortium/Process/).

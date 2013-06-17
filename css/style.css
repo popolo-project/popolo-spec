@@ -4,7 +4,16 @@
 
 .data-page #data a,
 .data-page #data a:hover,
-.data-page #data a:focus {
+.data-page #data a:focus,
+.area-page #area a,
+.area-page #area a:hover,
+.area-page #area a:focus,
+.document-page #document a,
+.document-page #document a:hover,
+.document-page #document a:focus,
+.event-page #event a,
+.event-page #event a:hover,
+.event-page #event a:focus {
   color: #555555;
   text-decoration: none;
   background-color: #e5e5e5;

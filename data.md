@@ -5,27 +5,6 @@ id: data
 ---
 **<abbr title="too long, didn't read">tl;dr</abbr> Read [this part of the requirements](#relations) then skip to the [serialization](#serialization) and [conformance](#conformance) sections**
 
-The key words <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>, <em class="rfc2119">required</em>, <em class="rfc2119">should</em>, <em class="rfc2119">should not</em>, <em class="rfc2119">recommended</em>, <em class="rfc2119">may</em>, and <em class="rfc2119">optional</em> are to be interpreted as described in [RFC 2119](http://tools.ietf.org/html/rfc2119).
-
-<h1 id="scope">1. Scope</h1>
-
-The data specification's initial scope is to describe the entities below and the relations between them:
-
-<dl>
-  <dt>Person</dt>
-  <dd>A real <a href="http://en.wikipedia.org/wiki/Person">person</a>, alive or dead</dd>
-  <dt>Organization</dt>
-  <dd>A group with a common purpose or reason for existence that goes beyond the set of people belonging to it, e.g. a social, commercial or political structure</dd>
-  <dt>Address</dt>
-  <dd>A physical location or a mail delivery point</dd>
-  <dt>Post</dt>
-  <dd>A position in an organization that exists independently of the person holding it</dd>
-  <dt>Membership</dt>
-  <dd>A relationship between a person and an organization</dd>
-</dl>
-
-The data specification will initially define <abbr title="JavaScript Object Notation">JSON</abbr>, <abbr title="Resource Description Framework">RDF</abbr> and MongoDB serializations.
-
 <h1 id="use-cases-and-requirements">2. Use Cases &amp; Requirements</h1>
 
 The data specification is designed primarily for open government use cases, though other use cases are supported. The data specification defines classes and properties to fulfill the requirements below.
@@ -691,21 +670,3 @@ The following adds `tollfree` and removes `text` from [vCard 4.0](http://tools.i
     </tr>
   </tbody>
 </table>
-
-<h1 id="conformance">7. Conformance</h1>
-
-1. An implementation's usage of [this specification's terms](#classes-and-properties) <em class="rfc2119">must</em> be consistent with the semantics of those terms.
-1. A conforming implementation <em class="rfc2119">must not</em> use other terms where this specification's terms would suffice[<sup>14</sup>](#note14).
-1. A conforming implementation <em class="rfc2119">may</em> use terms from outside this specification's terms where this specification's terms are insufficient.
-1. If an implementation serializes to JSON or MongoDB, its serializations <em class="rfc2119">must</em> validate against this specification's [JSON Schema](#serialization).
-1. If an implementation serializes to MongoDB, it <em class="rfc2119">may</em> denormalize its data [*[issue 14]*](https://github.com/opennorth/popolo-spec/issues/14).</h2>
-1. A conforming implementation <em class="rfc2119">may</em> use only a subset of this specification's terms.
-
-<p class="note" id="note14">14. For example, it <em class="rfc2119">must not</em> use vCard's <code>fn</code> where this specification's <code>name</code> would suffice.</p>
-
-<h1 id="history">8. Change history</h1>
-
-* 2013-02-28: Add requirement for dates to be stored in UTC.
-* 2013-02-25: Add the conformance section, relax requirements with respect to MongoDB collection names.
-* 2013-02-16: Add a label property to the Post class, change the cardinality of the classification property on the Organization class, add NIEM and ORG to the survey, add an inventory of the terms in the survey
-* 2013-02-01: First public working draft
