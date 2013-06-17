@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 gem 'haml'
 gem 'jekyll'
 gem 'rake'

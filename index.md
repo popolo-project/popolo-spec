@@ -11,7 +11,6 @@ This project's goal is to author, through community consensus, international ope
 The project's core parts are:
 
 * a [data specification](data.html)
-* an [API specification](api.html) *(coming soon)*
 * a [reference implementation](https://github.com/opennorth/popolo)
 
 These documents are **Working Drafts**. Their governance will follow a simplified [W3C process](http://www.w3.org/Consortium/Process/).
