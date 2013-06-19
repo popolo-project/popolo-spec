@@ -6,7 +6,7 @@ id: person
 
 **Name components (e.g. family name and given name) have been split into [another document](/specs/person/name-component.html)**.
 
-<h1 id="use-cases-and-requirements">1. Use Cases &amp; Requirements</h1>
+<h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
 The Person class should have properties for:
 

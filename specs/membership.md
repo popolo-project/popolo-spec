@@ -4,7 +4,7 @@ title: Membership | The Popolo Project
 id: membership
 ---
 
-<h1 id="use-cases-and-requirements">1. Use Cases &amp; Requirements</h1>
+<h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
 The Membership class should have properties for:
 

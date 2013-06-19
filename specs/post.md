@@ -4,7 +4,7 @@ title: Post | The Popolo Project
 id: post
 ---
 
-<h1 id="use-cases-and-requirements">1. Use Cases &amp; Requirements</h1>
+<h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
 The Post class should have properties for:
 

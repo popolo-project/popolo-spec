@@ -4,7 +4,7 @@ title: Address | The Popolo Project
 id: address
 ---
 
-<h1 id="use-cases-and-requirements">1. Use Cases &amp; Requirements</h1>
+<h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
 The Address class should have properties for:
 
