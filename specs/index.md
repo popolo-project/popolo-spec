@@ -51,7 +51,7 @@ All classes should:
 <h1 id="classes-and-properties">3. Classes</h1>
 
 1. [Person](/specs/person.html)
-1. [Naming](/specs/naming.html)
+    1. [Name Component](/specs/person/name-component.html)
 1. [Organization](/specs/organization.html)
 1. [Post](/specs/post.html)
 1. [Membership](/specs/membership.html)
@@ -59,19 +59,27 @@ All classes should:
 
 <h1 id="serialization">4. Serialization</h1>
 
+The key words <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>, <em class="rfc2119">should</em>, <em class="rfc2119">should not</em> and <em class="rfc2119">may</em> are to be interpreted as described in [RFC 2119](http://tools.ietf.org/html/rfc2119).
+
 The data specification will define <abbr title="JavaScript Object Notation">JSON</abbr> and <abbr title="Resource Description Framework">RDF</abbr> serializations of the classes above.
+
+Schemas are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) and apply to the JSON serialization. The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s and <abbr title="object-document mapper">ODM</abbr>s. The RDF serialization follows the classes and properties section; example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
+
+In order to satisfy the [requirement](#use-cases-and-requirements) to allow the use of imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>1</sup>](#note1) is <em class="rfc2119">recommended</em>. [XML Schema](http://www.w3.org/XML/Schema.html) supports [reduced dates](http://www.w3.org/TR/xmlschema-2/#truncatedformats) such as [`YYYY`](http://www.w3.org/TR/xmlschema-2/#gYear) and [`YYYY-MM`](http://www.w3.org/TR/xmlschema-2/#gYearMonth). Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>.
+
+<p class="note" id="note1">1. Consult the list of <a href="https://github.com/opennorth/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>.</p>
 
 <h1 id="conformance">5. Conformance</h1>
 
 The key words <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>, <em class="rfc2119">should</em>, <em class="rfc2119">should not</em> and <em class="rfc2119">may</em> are to be interpreted as described in [RFC 2119](http://tools.ietf.org/html/rfc2119).
 
 1. A conforming implementation <em class="rfc2119">may</em> use only a subset of this specification's terms.
-1. It <em class="rfc2119">must not</em> use terms from outside this specification's terms where this specification's terms would suffice[<sup>1</sup>](#note1).
+1. It <em class="rfc2119">must not</em> use terms from outside this specification's terms where this specification's terms would suffice[<sup>2</sup>](#note2).
 1. It <em class="rfc2119">may</em> use terms from outside this specification's terms where this specification's terms are insufficient.
 1. Its usage of this specification's terms <em class="rfc2119">must</em> be consistent with the semantics of those terms.
 1. If an implementation serializes to JSON, its serializations <em class="rfc2119">must</em> validate against this specification's JSON Schema.
 
-<p class="note" id="note1">1. For example, it <em class="rfc2119">must not</em> use vCard's <code>fn</code> where this specification's <code>name</code> would suffice.</p>
+<p class="note" id="note2">2. For example, it <em class="rfc2119">must not</em> use vCard's <code>fn</code> where this specification's <code>name</code> would suffice.</p>
 
 <h1 id="history">6. Change history</h1>
 
