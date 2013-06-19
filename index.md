@@ -12,10 +12,9 @@ This project's goal is to author, through community consensus, international ope
 
 1. [Scope](/specs/#scope)
 1. [Conformance](/specs/#conformance)
-1. [Change history](/specs/#history)
-1. Classes and properties
-    1. [Person](/specs/person.html)
-        1. [Name Component](/specs/person/name-component.html)
+1. [Use cases & requirements](/specs/#use-cases-and-requirements)
+1. [Classes and properties](/specs/#classes-and-properties)
+    1. [Person](/specs/person.html) ([Name Component](/specs/person/name-component.html))
     1. [Organization](/specs/organization.html)
     1. [Post](/specs/post.html)
     1. [Membership](/specs/membership.html)
@@ -25,6 +24,8 @@ This project's goal is to author, through community consensus, international ope
     1. [Event](/specs/event.html)
     1. [Document](/specs/document.html)
 {% endcomment %}
+1. [Serialization](/specs/#serialization)
+1. [Change history](/specs/#history)
 
 ## Participation
 
