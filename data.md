@@ -22,7 +22,7 @@ Some use cases may therefore require both Post and Membership classes to satisfy
 
 <p class="note" id="note1">1. A Post instance cannot represent historical holders of the position, given that a Post survives all its holders. To represent such historical information, a Membership instance can be used. If a Post ceases to exist, a Post instance can of course be used to represent that historical position; it just can't represent all historical holders of that position.</p>
 
-<h1 id="standard-reuse">3. Standard Reuse</h1>
+<h1 id="standard-reuse">2. Standard Reuse</h1>
 
 This project should adopt suitable existing standards wherever possible. Following [a survey](data/survey.html), these are:
 

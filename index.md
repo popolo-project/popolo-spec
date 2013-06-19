@@ -15,7 +15,7 @@ This project's goal is to author, through community consensus, international ope
 1. [Change history](/specs/#history)
 1. Classes and properties
     1. [Person](/specs/person.html)
-    1. [Naming](/specs/naming.html)
+        1. [Name Component](/specs/person/name-component.html)
     1. [Organization](/specs/organization.html)
     1. [Post](/specs/post.html)
     1. [Membership](/specs/membership.html)

@@ -4,6 +4,8 @@ title: Person | The Popolo Project
 id: person
 ---
 
+**Name components (e.g. family name and given name) have been split into [another document](/specs/person/name-component.html)**.
+
 <h1 id="use-cases-and-requirements">1. Use Cases &amp; Requirements</h1>
 
 The Person class should have properties for:
@@ -11,10 +13,6 @@ The Person class should have properties for:
 1. name
 
     >Mr. John Q. Public, Esq.
-
-1. each component of the name (family names, given names, additional names, prefixes and suffixes)
-
-    >To sort a list of representatives by family name, or to display an abbreviated name on a mobile device.
 
 1. former names
 
@@ -90,34 +88,9 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
       <td></td>
       <td>A former name, such as a maiden name</td>
     </tr>
-    <tr id="foaf:familyName">
-      <td>family name</td>
-      <td><code><a href="http://xmlns.com/foaf/spec/#term_familyName" title="http://xmlns.com/foaf/0.1/familyName">foaf:familyName</a></code></td>
-      <td>One or more family names</td>
-    </tr>
-    <tr id="foaf:givenName">
-      <td>given name</td>
-      <td><code><a href="http://xmlns.com/foaf/spec/#term_givenName" title="http://xmlns.com/foaf/0.1/givenName">foaf:givenName</a></code></td>
-      <td>One or more primary given names</td>
-    </tr>
-    <tr id="schema:additionalName">
-      <td>additional name</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/additionalName">schema:additionalName</a></code></td>
-      <td>One or more secondary given names</td>
-    </tr>
-    <tr id="schema:honorificPrefix">
-      <td>honorific prefix</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/honorificPrefix">schema:honorificPrefix</a></code><a href="#note1"><sup>1</sup></a></td>
-      <td>One or more honorifics preceding a person's name</td>
-    </tr>
-    <tr id="schema:honorificSuffix">
-      <td>honorific suffix</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/honorificSuffix">schema:honorificSuffix</a></code></td>
-      <td>One or more honorifics following a person's name</td>
-    </tr>
     <tr id="schema:email">
       <td>email address</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/email">schema:email</a></code><a href="#note2"><sup>2</sup></a></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/email">schema:email</a></code><a href="#note1"><sup>1</sup></a></td>
       <td>An email address</td>
     </tr>
     <tr id="foaf:gender">
@@ -127,7 +100,7 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
     </tr>
     <tr id="schema:birthDate">
       <td>date of birth</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/birthDate">schema:birthDate</a></code><a href="#note3"><sup>3</sup></a></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/birthDate">schema:birthDate</a></code><a href="#note2"><sup>2</sup></a></td>
       <td>A date of birth</td>
     </tr>
     <tr id="schema:deathDate">
@@ -137,7 +110,7 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
     </tr>
     <tr id="schema:image">
       <td>head shot</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/image">schema:image</a></code><a href="#note4"><sup>4</sup></a></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/image">schema:image</a></code><a href="#note3"><sup>3</sup></a></td>
       <td>A URL of a head shot</td>
     </tr>
     <tr id="bio:olb">
@@ -158,24 +131,19 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
   </tbody>
 </table>
 
-<p class="note" id="note1">1. <code>schema:honorificPrefix</code> is used instead of <code>foaf:title</code>, because <code>foaf:title</code> is a <a href="http://xmlns.com/foaf/spec/#term_title">candidate for deprecation</a>.</p>
-<p class="note" id="note2">2. <code>schema:email</code> is used instead of <code>foaf:mbox</code>, because <code>email</code> is a more familiar term than <code>mbox</code>.</p>
-<p class="note" id="note3">3. <code>schema:birthDate</code> is used instead of <code>foaf:birthday</code> to match <code>schema:deathDate</code>, for which FOAF has no property.</p>
-<p class="note" id="note4">4. <code>schema:image</code> is used instead of <code>foaf:img</code>, because abbreviations like <code>img</code> are avoided.</p>
+<p class="note" id="note1">1. <code>schema:email</code> is used instead of <code>foaf:mbox</code>, because <code>email</code> is a more familiar term than <code>mbox</code>.</p>
+<p class="note" id="note2">2. <code>schema:birthDate</code> is used instead of <code>foaf:birthday</code> to match <code>schema:deathDate</code>, for which FOAF has no property.</p>
+<p class="note" id="note3">3. <code>schema:image</code> is used instead of <code>foaf:img</code>, because abbreviations like <code>img</code> are avoided.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 
-Schemas are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) and apply to the JSON serialization. The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s and <abbr title="object-document mapper">ODM</abbr>s. The RDF serialization follows the [classes and properties](#classes-and-properties) section above; example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
+The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of name objects. If a name object sets an `end_date`[<sup>4</sup>](#note4) property, it represents a former name.
 
-In order to satisfy the [requirement](#use-cases-and-requirements) to allow the use of imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates is <em class="rfc2119">recommended</em>. [XML Schema](http://www.w3.org/XML/Schema.html) supports [reduced dates](http://www.w3.org/TR/xmlschema-2/#truncatedformats) such as [`YYYY`](http://www.w3.org/TR/xmlschema-2/#gYear) and [`YYYY-MM`](http://www.w3.org/TR/xmlschema-2/#gYearMonth). Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>.
+**Differences from RDF:** The term `summary`[<sup>5</sup>](#note5) is used instead of `olb`, because abbreviations are avoided. The term `links` is used instead of `seeAlso`. A new `note`[<sup>6</sup>](#note6) property adds a note to an external link.
 
-The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of name objects. If a name object sets an `end_date`[<sup>5</sup>](#note5) property, it represents a former name.
-
-**Differences from RDF:** The term `summary`[<sup>6</sup>](#note6) is used instead of `olb`, because abbreviations are avoided. The term `links` is used instead of `seeAlso`. A new `note`[<sup>7</sup>](#note7) property adds a note to an external link.
-
-<p class="note" id="note5">5. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
-<p class="note" id="note6">6. With respect to reuse, <a href="http://drupal.org/">Drupal</a> uses the term <code>summary</code> to describe a brief version of a long text.</p>
-<p class="note" id="note7">7. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
+<p class="note" id="note4">4. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
+<p class="note" id="note5">5. With respect to reuse, <a href="http://drupal.org/">Drupal</a> uses the term <code>summary</code> to describe a brief version of a long text.</p>
+<p class="note" id="note6">6. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
 
 <ul class="nav nav-tabs">
   <li><a href="#person-schema">JSON Schema</a></li>

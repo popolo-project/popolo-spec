@@ -12,6 +12,7 @@
   schema:additionalName "Quinlan";
   schema:honorificPrefix "Mr.";
   schema:honorificSuffix "Esq.";
+  con:sortName "Public, John Quinlan Esq.";
   schema:email <mailto:jqpublic@xyz.example.com>;
   foaf:gender "male";
   schema:birthDate "1920-01"^^xsd:gYearMonth;
