@@ -6,7 +6,7 @@ title: The Popolo Project
   <h1>The Popolo Project</h1>
 </div>
 
-This project's goal is to author, through community consensus, international open government data specifications relating to the legislative branch of government, so that civil society can spend less time transforming data and more time applying it to the problems they face. A related goal is to make it easier for civic developers to create government transparency, monitoring and engagement websites, by developing reusable open source components that implement the specifications.
+This project's goal is to author, through community consensus, international open government data specifications relating to the legislative branch of government, so that civil society can spend less time transforming data and more time applying it to the problems they face. A related goal is to make it easier for civic developers to create government transparency, monitoring and engagement websites, by developing reusable open source components that implement the specifications. Although the data specification is designed primarily for open government use cases, many other use cases are supported.
 
 ## Specification
 
@@ -20,9 +20,11 @@ This project's goal is to author, through community consensus, international ope
     1. [Post](/specs/post.html)
     1. [Membership](/specs/membership.html)
     1. [Address](/specs/address.html)
+{% comment %}
     1. [Area](/specs/area.html)
     1. [Event](/specs/event.html)
     1. [Document](/specs/document.html)
+{% endcomment %}
 
 ## Participation
 
