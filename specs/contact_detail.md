@@ -67,15 +67,15 @@ Briefly, the survey of existing specifications concludes that vCard is the only 
 **Differences from RDF:** All RDF properties are flattened; `address` and `type` are top-level properties matching `vcard:label` and `rdf:type`. Properties whose names match [telephone type codes](#telephone-types) are used instead of the `vcard:tel` property. Telephone number values <em class="rfc2119">should</em> be in [RFC 3966](http://tools.ietf.org/html/rfc3966) format, without the `tel:` prefix.
 
 <ul class="nav nav-tabs no-js">
-  <li><a href="#address-schema">JSON Schema</a></li>
-  <li class="active"><a href="#address-json">JSON</a></li>
-  <li><a href="#address-rdf">RDF</a></li>
+  <li><a href="#contact-detail-schema">JSON Schema</a></li>
+  <li class="active"><a href="#contact-detail-json">JSON</a></li>
+  <li><a href="#contact-detail-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane" id="address-schema" data-url="/schemas/address.json"></div>
-  <div class="tab-pane active" id="address-json" data-url="/examples/address.json"></div>
-  <div class="tab-pane" id="address-rdf" data-url="/examples/address.ttl"></div>
+  <div class="tab-pane" id="contact-detail-schema" data-url="/schemas/contact_detail.json"></div>
+  <div class="tab-pane active" id="contact-detail-json" data-url="/examples/contact_detail.json"></div>
+  <div class="tab-pane" id="contact-detail-rdf" data-url="/examples/contact_detail.ttl"></div>
 </div>
 
 <h1 id="code-lists">5. Code lists</h1>

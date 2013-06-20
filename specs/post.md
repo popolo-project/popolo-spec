@@ -24,10 +24,12 @@ The Post class should have properties for:
 
     > House of Commons
 
-1. the address at which the post is based
+1. the means of contacting the post
 
     > 1 Main Street  
-    Anytown, USA
+    Anytown, USA  
+    555-555-5555  
+    john@example.com
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
@@ -73,9 +75,9 @@ Briefly, the survey of existing specifications concludes that only the Organizat
       <td>The organization in which the post is held</td>
     </tr>
     <tr>
-      <td>address</td>
+      <td>contact detail</td>
       <td></td>
-      <td>The address at which the post is based</td>
+      <td>A means of contacting the post</td>
     </tr>
   </tbody>
 </table>

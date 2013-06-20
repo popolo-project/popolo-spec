@@ -47,7 +47,7 @@ This project's goal is to author, through community consensus, international ope
     1. [Organization](/specs/organization.html)
     1. [Post](/specs/post.html)
     1. [Membership](/specs/membership.html)
-    1. [Address](/specs/address.html)
+    1. [Contact Detail](/specs/contact-detail.html)
 {% comment %}
     1. [Area](/specs/area.html)
     1. [Event](/specs/event.html)
@@ -68,3 +68,8 @@ These documents are **Working Drafts**. Their governance will roughly follow the
 * [Read Open North's blog post announcing the project](http://blog.opennorth.ca/2013/02/21/update-on-opengovernment/) for more context
 
 Questions? Contact [james@opennorth.ca](mailto:james@opennorth.ca).
+
+## Implementations
+
+* [Larvae by Open Civic Data](https://github.com/opencivicdata/larvae): A Python package to create and validate civic data objects, underpinning the [Sunlight Foundation](http://sunlightfoundation.com/)'s work on government transparency at the local level.
+* [PopIt by mySociety](https://npmjs.org/package/popit-api): A Node.js package to make it simple "to start and maintain a public database of people, organisations and positions."

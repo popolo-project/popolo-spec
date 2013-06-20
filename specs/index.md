@@ -75,7 +75,7 @@ The following subdocuments list use cases and requirements, report standard reus
 1. [Organization](/specs/organization.html)
 1. [Post](/specs/post.html)
 1. [Membership](/specs/membership.html)
-1. [Address](/specs/address.html)
+1. [Contact Detail](/specs/contact-detail.html)
 
 <h1 id="serialization">6. Serialization</h1>
 
@@ -115,9 +115,9 @@ Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Univer
       <td><a href="/examples/membership.ttl">membership.ttl</a></td>
     </tr>
     <tr>
-      <td><a href="/schemas/address.json">Address</a></td>
-      <td><a href="/examples/address.json">address.json</a></td>
-      <td><a href="/examples/address.ttl">address.ttl</a></td>
+      <td><a href="/schemas/contact_detail.json">Contact Detail</a></td>
+      <td><a href="/examples/contact_detail.json">contact_detail.json</a></td>
+      <td><a href="/examples/contact_detail.ttl">contact_detail.ttl</a></td>
     </tr>
   </tbody>
 </table>

@@ -29,11 +29,11 @@
       "type": "string",
       "required": true
     },
-    "addresses": {
-      "description": "Addresses at which the post is based",
+    "contact_details": {
+      "description": "Means of contacting the post",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/address.json#"
+        "$ref": "http://popoloproject.com/schemas/contact_detail.json#"
       }
     }
   }
