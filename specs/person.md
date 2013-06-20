@@ -145,7 +145,7 @@ The former name and alternate name properties are serialized as a single `other_
 <p class="note" id="note5">5. With respect to reuse, <a href="http://drupal.org/">Drupal</a> uses the term <code>summary</code> to describe a brief version of a long text.</p>
 <p class="note" id="note6">6. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs no-js">
   <li><a href="#person-schema">JSON Schema</a></li>
   <li class="active"><a href="#person-json">JSON</a></li>
   <li><a href="#person-rdf">RDF</a></li>

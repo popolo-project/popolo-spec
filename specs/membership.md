@@ -72,7 +72,7 @@ The Membership class should have properties for:
 
 <p class="note" id="note2">2. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs no-js">
   <li><a href="#membership-schema">JSON Schema</a></li>
   <li class="active"><a href="#membership-json">JSON</a></li>
   <li><a href="#membership-rdf">RDF</a></li>

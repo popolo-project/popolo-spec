@@ -80,7 +80,7 @@ The Post class should have properties for:
 
 **Differences from RDF:** The term `name` is used instead of `prefLabel`, to be consistent with the Person class. The terms `person_id` and `organization_id` are used instead of `heldBy` and `postIn` to conform to ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs no-js">
   <li><a href="#post-schema">JSON Schema</a></li>
   <li class="active"><a href="#post-json">JSON</a></li>
   <li><a href="#post-rdf">RDF</a></li>

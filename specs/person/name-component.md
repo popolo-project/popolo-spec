@@ -76,7 +76,7 @@ The Person class should have properties for:
 
 <h1 id="serialization">4. Serialization</h1>
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs no-js">
   <li><a href="#person-schema">JSON Schema</a></li>
   <li class="active"><a href="#person-json">JSON</a></li>
   <li><a href="#person-rdf">RDF</a></li>

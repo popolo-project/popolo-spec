@@ -110,7 +110,7 @@ The Organization class should have properties for:
 <p class="note" id="note3">3. With respect to reuse, ORG, SKOS and XBRL use the word <code>scheme</code> to refer to this value.</p>
 <p class="note" id="note4">4. With respect to reuse, <a href="https://github.com/benedikt/mongoid-tree">mongoid-tree</a>, <a href="https://github.com/collectiveidea/awesome_nested_set/tree/master/lib/awesome_nested_set">awesome_nested_set</a> and <a href="https://github.com/amerine/acts_as_tree">acts_as_tree</a> use <code>parent_id</code>.</p>
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs no-js">
   <li><a href="#organization-schema">JSON Schema</a></li>
   <li class="active"><a href="#organization-json">JSON</a></li>
   <li><a href="#organization-rdf">RDF</a></li>

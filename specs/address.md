@@ -62,7 +62,7 @@ The Address class should have properties for:
 
 **Differences from RDF:** All RDF properties are flattened; `address` and `type` are top-level properties matching `vcard:label` and `rdf:type`. Properties whose names match [telephone type codes](#telephone-types) are used instead of the `vcard:tel` property. Telephone number values <em class="rfc2119">should</em> be in [RFC 3966](http://tools.ietf.org/html/rfc3966) format, without the `tel:` prefix.
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs no-js">
   <li><a href="#address-schema">JSON Schema</a></li>
   <li class="active"><a href="#address-json">JSON</a></li>
   <li><a href="#address-rdf">RDF</a></li>
