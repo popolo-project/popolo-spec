@@ -24,7 +24,7 @@ Some use cases may therefore require both Post and Membership classes to satisfy
 
 <h1 id="standard-reuse">2. Standard Reuse</h1>
 
-This project should adopt suitable existing standards wherever possible. Following [a survey](data/survey.html), these are:
+Following [a survey](data/survey.html), these are:
 
 <table>
   <caption>Suitable existing standards for people and organizations</caption>

@@ -8,13 +8,37 @@ title: The Popolo Project
 
 This project's goal is to author, through community consensus, international open government data specifications relating to the legislative branch of government, so that civil society can spend less time transforming data and more time applying it to the problems they face. A related goal is to make it easier for civic developers to create government transparency, monitoring and engagement websites, by developing reusable open source components that implement the specifications. Although the data specification is designed primarily for open government use cases, many other use cases are supported.
 
+## Approach
+
+This project rigorously researches and studies existing specifications and reuses suitable existing work wherever possible. It looks for specifications that balance breadth of adoption with quality of modeling.
+
+A fact that many specifications overlook is that our knowledge of the world is imprecise and uncertain. This specification attempts, as much as possible, to make it easy to represent real world data while preserving meaning and clarity.
+
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#example-date">Example: Imprecise date</a></li>
+  <li><a href="#example-contact">Example: Missing contact details</a></li>
+  <li><a href="#example-sponsor">Example: Ambiguous bill sponsor</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="example-date">
+    A civil society organization doesn't know the precise date on which a legislator assumed office. Its legislative information service should nonetheless be able to publish an approximate date in that legislator's profile.
+  </div>
+  <div class="tab-pane" id="example-sponsor">
+    When extracting the sponsors of a particular bill from a legislature's website, it isn't immediately possible to disambiguate a sponsor's name and link to the appropriate legislator or committee profile. A legislative information service should be able to publish the incomplete sponsor information, without having to first determine whether that information belongs to a legislator or a committee.
+  </div>
+  <div class="tab-pane" id="example-contact">
+    A civil society organization has the phone number of a legislator; however, it doesn't know whether it is the capitol office number, the constituency office number or a mobile number. A suitable data specification should be able to handle data at varying levels of detail.
+  </div>
+</div>
+
 ## Specification
 
 1. [Scope](/specs/#scope)
 1. [Conformance](/specs/#conformance)
 1. [Use cases & requirements](/specs/#use-cases-and-requirements)
 1. [Classes and properties](/specs/#classes-and-properties)
-    1. [Person](/specs/person.html) ([Name Component](/specs/person/name-component.html))
+    1. [Person](/specs/person.html): [Name Component](/specs/person/name-component.html)
     1. [Organization](/specs/organization.html)
     1. [Post](/specs/post.html)
     1. [Membership](/specs/membership.html)
