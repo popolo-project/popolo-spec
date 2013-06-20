@@ -30,10 +30,10 @@ The data specification will define terms (classes and properties) to describe an
     <div>A relationship between a person and an organization</div>
     <p class="note">e.g. member of the XYZ Party</p>
   </dd>
-  <dt>Address</dt>
+  <dt>Contact Detail</dt>
   <dd>
-    <div>A physical location or a mail delivery point</div>
-    <p class="note">e.g. <a href="https://en.wikipedia.org/wiki/White_House">The White House</a></p>
+    <div>A means of contacting a person, organization or post</div>
+    <p class="note">e.g. a telephone number, email address, postal address, Twitter account, etc.</p>
   </dd>
 </dl>
 
@@ -76,6 +76,19 @@ The following subdocuments list use cases and requirements, report standard reus
 1. [Post](/specs/post.html)
 1. [Membership](/specs/membership.html)
 1. [Contact Detail](/specs/contact-detail.html)
+
+The structure of each subdocument is:
+
+<dl>
+  <dt>1. Use cases &amp; requirements</dt>
+  <dd>Provide a motivation for the class and its properties</dd>
+  <dt>2. Standard reuse</dt>
+  <dd>Evaluates and selects existing specifications for reuse</dd>
+  <dt>3. Classes and properties</dt>
+  <dd>Defines the semantics of the class and its properties</dd>
+  <dt>4. Serialization</dt>
+  <dd>Defines the RDF and JSON serializations</dd>
+</dl>
 
 <h1 id="serialization">6. Serialization</h1>
 
