@@ -69,7 +69,7 @@ These documents are **Working Drafts**. Their governance will roughly follow the
 
 Questions? Contact [james@opennorth.ca](mailto:james@opennorth.ca).
 
-## Implementations
+## Implementation
 
 * [Larvae by Open Civic Data](https://github.com/opencivicdata/larvae): A Python package to create and validate civic data objects, underpinning the [Sunlight Foundation](http://sunlightfoundation.com/)'s work on government transparency at the local level.
-* [PopIt by mySociety](https://npmjs.org/package/popit-api): A Node.js package to make it simple "to start and maintain a public database of people, organisations and positions."
+* [PopIt by mySociety](https://npmjs.org/package/popit-api): A Node.js package to make it simple "to start and maintain a public database of people, organisations and positions," part of mySociety's work on reusable software components.

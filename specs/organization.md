@@ -66,7 +66,7 @@ This data specification is a [profile of the W3C organization ontology](http://w
   <tbody>
     <tr id="org:Organization">
       <td><strong>Organization</strong></td>
-      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:Organization" title="http://www.w3.org/ns/org#Organization">org:Organization</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:Organization" title="http://www.w3.org/ns/org#Organization">org:Organization</a></code><a href="#note1"><sup>1</sup></a></td>
       <td>A group with a common purpose or reason for existence that goes beyond the set of people belonging to it, e.g. a social, commercial or political structure</td>
     </tr>
     <tr id="skos:prefLabel1">
@@ -96,7 +96,7 @@ This data specification is a [profile of the W3C organization ontology](http://w
     </tr>
     <tr id="org:subOrganizationOf">
       <td>parent organization</td>
-      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:subOrganizationOf" title="http://www.w3.org/ns/org#subOrganizationOf">org:subOrganizationOf</a></code><a href="#note1"><sup>1</sup></a></td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:subOrganizationOf" title="http://www.w3.org/ns/org#subOrganizationOf">org:subOrganizationOf</a></code><a href="#note2"><sup>2</sup></a></td>
       <td>An organization that contains this organization</td>
     </tr>
     <tr id="schema:foundingDate">
@@ -106,21 +106,22 @@ This data specification is a [profile of the W3C organization ontology](http://w
     </tr>
     <tr>
       <td>date of dissolution</td>
-      <td><a href="#note2"><sup>2</sup></a></td>
+      <td><a href="#note3"><sup>3</sup></a></td>
       <td>A date of dissolution, termination, withdrawal, expiry, etc.</td>
     </tr>
   </tbody>
 </table>
 
-<p class="note" id="note1">1. ORG defines the inverse properties <code>org:hasSubOrganization</code>, <code>org:holds</code>, <code>org:hasPost</code> and <code>org:hasMembership</code>.</p>
-<p class="note" id="note2">2. <code>vcard:deathDate</code> could have been used for date of dissolution, but <code>deathDate</code> is an unusual term for an organization.</p>
+<p class="note" id="note1">1. According to <a href="http://www.epimorphics.com/web/wiki/organization-ontology-first-draft">a developer blog</a>, the United Kingdom <a href="http://www.w3.org/TR/vocab-org/#acknowledgements">chose</a> the spelling "organization", despite the common usage of the "s" spelling in British English, because it is the spelling that is acceptable to all versions of English. American English uses a "z", whereas both "z" and "s" spellings are correct in British English. The "z" spelling is preferred by the <abbr title="Oxford English Dictionary">OED</abbr>.</p>
+<p class="note" id="note2">2. ORG defines the inverse properties <code>org:hasSubOrganization</code>, <code>org:holds</code>, <code>org:hasPost</code> and <code>org:hasMembership</code>.</p>
+<p class="note" id="note3">3. <code>vcard:deathDate</code> could have been used for date of dissolution, but <code>deathDate</code> is an unusual term for an organization.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 
-**Differences from RDF:** The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with the Person class. A new `scheme`[<sup>3</sup>](#note3) property indicates an identifier's scheme, because JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF. The term `parent_id`[<sup>4</sup>](#note4) is used instead of `subOrganizationOf`.
+**Differences from RDF:** The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with the Person class. A new `scheme`[<sup>4</sup>](#note4) property indicates an identifier's scheme, because JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF. The term `parent_id`[<sup>5</sup>](#note5) is used instead of `subOrganizationOf`.
 
-<p class="note" id="note3">3. With respect to reuse, ORG, SKOS and XBRL use the word <code>scheme</code> to refer to this value.</p>
-<p class="note" id="note4">4. With respect to reuse, <a href="https://github.com/benedikt/mongoid-tree">mongoid-tree</a>, <a href="https://github.com/collectiveidea/awesome_nested_set/tree/master/lib/awesome_nested_set">awesome_nested_set</a> and <a href="https://github.com/amerine/acts_as_tree">acts_as_tree</a> use <code>parent_id</code>.</p>
+<p class="note" id="note4">4. With respect to reuse, ORG, SKOS and XBRL use the word <code>scheme</code> to refer to this value.</p>
+<p class="note" id="note5">5. With respect to reuse, <a href="https://github.com/benedikt/mongoid-tree">mongoid-tree</a>, <a href="https://github.com/collectiveidea/awesome_nested_set/tree/master/lib/awesome_nested_set">awesome_nested_set</a> and <a href="https://github.com/amerine/acts_as_tree">acts_as_tree</a> use <code>parent_id</code>.</p>
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#organization-schema">JSON Schema</a></li>
