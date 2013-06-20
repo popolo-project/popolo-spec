@@ -110,3 +110,10 @@ em.rfc2119 {
   font-size: 85%; /* small */
   font-style: italic;
 }
+
+.well-white {
+  background-color: #fff;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}

@@ -10,25 +10,29 @@ This project's goal is to author, through community consensus, international ope
 
 ## Approach
 
-This project rigorously researches and studies existing specifications and reuses suitable existing work wherever possible. It looks for specifications that balance breadth of adoption with quality of modeling.
+1. This project rigorously researches and studies existing specifications and reuses suitable existing work wherever possible. It looks for existing specifications that balance breadth of adoption with quality of modeling. It prioritizes reuse over novelty.
 
-A fact that many specifications overlook is that our knowledge of the world is imprecise and uncertain. This specification attempts, as much as possible, to make it easy to represent real world data while preserving meaning and clarity.
+1. This specification satisfies a broad range of use cases, without requiring an exhaustive vocabulary of terms. It focuses on flexibility to do more with less.
 
-<ul class="nav nav-tabs no-js">
-  <li class="active"><a href="#example-date">Example: Imprecise date</a></li>
-  <li><a href="#example-contact">Example: Missing contact details</a></li>
-  <li><a href="#example-sponsor">Example: Ambiguous bill sponsor</a></li>
-</ul>
+1. A fact that many specifications overlook is that our knowledge of the world is imprecise and uncertain. This specification attempts, as much as possible, to make it easy to represent real world data while preserving clarity and meaning.
 
-<div class="tab-content">
-  <div class="tab-pane active" id="example-date">
-    A civil society organization doesn't know the precise date on which a legislator assumed office. Its legislative information service should nonetheless be able to publish an approximate date in that legislator's profile.
-  </div>
-  <div class="tab-pane" id="example-sponsor">
-    When extracting the sponsors of a particular bill from a legislature's website, it isn't immediately possible to disambiguate a sponsor's name and link to the appropriate legislator or committee profile. A legislative information service should be able to publish the incomplete sponsor information, without having to first determine whether that information belongs to a legislator or a committee.
-  </div>
-  <div class="tab-pane" id="example-contact">
-    A civil society organization has the phone number of a legislator; however, it doesn't know whether it is the capitol office number, the constituency office number or a mobile number. A suitable data specification should be able to handle data at varying levels of detail.
+<div class="well well-white">
+  <ul class="nav nav-tabs no-js">
+    <li class="active"><a href="#example-date">Example: Imprecise date</a></li>
+    <li><a href="#example-contact">Example: Missing contact details</a></li>
+    <li><a href="#example-sponsor">Example: Ambiguous bill sponsor</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="example-date">
+      A civil society organization doesn't know the precise date on which a legislator assumed office. Its legislative information service should nonetheless be able to publish an approximate date in that legislator's profile.
+    </div>
+    <div class="tab-pane" id="example-sponsor">
+      When extracting the sponsors of a particular bill from a legislature's website, it isn't immediately possible to disambiguate a sponsor's name and link to the appropriate legislator or committee profile. A legislative information service should be able to publish the incomplete sponsor information, without having to first determine whether that information belongs to a legislator or a committee.
+    </div>
+    <div class="tab-pane" id="example-contact">
+      A civil society organization has the phone number of a legislator; however, it doesn't know whether it is the capitol office number, the constituency office number or a mobile number. A suitable data specification should be able to handle data at varying levels of detail.
+    </div>
   </div>
 </div>
 
