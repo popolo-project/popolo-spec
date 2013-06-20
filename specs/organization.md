@@ -32,11 +32,11 @@ The Organization class should have properties for:
 
     >The Standing Committee on Finance is part of the House of Commons.
 
-1. date of founding [*[issue 9]*](https://github.com/opennorth/popolo-spec/issues/9)
+1. date of founding
 
     >To provide historical detail.
 
-1. date of dissolution [*[issue 9]*](https://github.com/opennorth/popolo-spec/issues/9)
+1. date of dissolution
 
     >To determine whether an organization exists, e.g. in order to disable related functionality.
 

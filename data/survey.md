@@ -10,6 +10,11 @@ id: data
   <li class="active">Existing Standards</li>
 </ul>
 
+Existing specifications can be found through:
+
+* [Linked Open Vocabularies](http://lov.okfn.org/) by the [Open Knowledge Foundation](http://okfn.org/) allows you to search and explore over 350 RDF vocabularies by theme and term.
+* The [Interoperability Solutions for European Public Administrations (ISA)](http://ec.europa.eu/isa/) programme of the [European Commission](http://ec.europa.eu/) lists [semantic assets](https://joinup.ec.europa.eu/catalogue/all) (domain models, ontologies, thesauruses and code lists) from more than [20 onlne repositories](https://joinup.ec.europa.eu/catalogue/repository).
+
 <h1 id="dcterms">Dublin Core Metadata Initiative</h1>
 
 [DCMI](http://dublincore.org/) defines general properties for describing resources, e.g. `dcterms:created` and `dcterms:modified`. The [Dublin Core Metadata Element Set](http://dublincore.org/documents/dces/) describes 15 properties that have been endorsed in [IETF](http://tools.ietf.org/html/rfc5013), ISO and ANSI/NISO standards. [DCMI Metadata Terms](http://dublincore.org/documents/dcmi-terms/) specifies all properties maintained by DCMI. Both are among the [most referenced](http://lov.okfn.org/dataset/lov/details/vocabulary_dce.html) linked open vocabularies. DCMI has a clear [governance and operation structure](http://dublincore.org/about/).
@@ -123,10 +128,10 @@ The European Commission's [Interoperability Solutions for European Public Admini
 
 ## Review
 
-* [`person:patronymicName`](http://philarcher.org/isa/person-v1.00.html#person:patronymicName) is unique to this vocabulary and solves an internationalization issue. [*[issue 2]*](https://github.com/opennorth/popolo-spec/issues/2)
+* [`person:patronymicName`](http://philarcher.org/isa/person-v1.00.html#person:patronymicName) is unique to this vocabulary and solves an internationalization issue.
 * [`person:birthName`](http://philarcher.org/isa/person-v1.00.html#person:birthName) covers one type of former name.
 * [`locn:Address`](http://philarcher.org/isa/locn-v1.00.html#locn:Address) has no property for address types or telephone numbers.
-* `locn:Address` is INSPIRE conformant. [*[issue 1]*](https://github.com/opennorth/popolo-spec/issues/1)
+* `locn:Address` is INSPIRE conformant.
 
 ## Links
 

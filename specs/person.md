@@ -22,11 +22,11 @@ The Person class should have properties for:
 
     >To find a person by a pseudonym or nickname, e.g. "Mark Twain" for Samuel Clemens.
 
-1. email address [*[issue 5]*](https://github.com/opennorth/popolo-spec/issues/5)
+1. preferred email address
 
     >To contact representatives via email.
 
-1. gender [*[issue 3]*](https://github.com/opennorth/popolo-spec/issues/3)
+1. gender
 
     >To determine personal pronouns, e.g. "John Doe will be at <u>his</u> constituency office next week."
 

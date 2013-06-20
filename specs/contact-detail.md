@@ -1,23 +1,23 @@
 ---
 layout: class
-title: Address | The Popolo Project
-id: address
+title: Contact Detail | The Popolo Project
+id: contact-detail
 ---
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
-The Address class should have properties for:
+The ContactDetail class should have properties for:
 
 1. address type
 
     >e.g. "Hill address" or "Constituency office".
 
-1. postal address [*[issue 10]*](https://github.com/opennorth/popolo-spec/issues/10)
+1. postal address
 
     >1 Main Street  
     Anytown, USA
 
-1. telephone numbers by type [*[issue 8]*](https://github.com/opennorth/popolo-spec/issues/8)
+1. telephone numbers by type
 
     >e.g. a mobile, toll-free or facsimile telephone number.
 
