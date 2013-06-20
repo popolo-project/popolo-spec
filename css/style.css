@@ -121,6 +121,7 @@ em.rfc2119 {
 .well-example {
   position: relative;
   padding-top: 40px;
+  padding-bottom: 9px;
   background-color: #fff;
   -webkit-box-shadow: none;
      -moz-box-shadow: none;

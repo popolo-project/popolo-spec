@@ -97,9 +97,9 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
       <td>A former name, such as a maiden name</td>
     </tr>
     <tr id="schema:email">
-      <td>email address</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/email">schema:email</a></code><a href="#note1"><sup>1</sup></a></td>
-      <td>An email address</td>
+      <td>email address<a href="#note1"><sup>1</sup></a></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/email">schema:email</a></code><a href="#note2"><sup>2</sup></a></td>
+      <td>A preferred email address</td>
     </tr>
     <tr id="foaf:gender">
       <td>gender</td>
@@ -108,7 +108,7 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
     </tr>
     <tr id="schema:birthDate">
       <td>date of birth</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/birthDate">schema:birthDate</a></code><a href="#note2"><sup>2</sup></a></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/birthDate">schema:birthDate</a></code><a href="#note3"><sup>3</sup></a></td>
       <td>A date of birth</td>
     </tr>
     <tr id="schema:deathDate">
@@ -118,7 +118,7 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
     </tr>
     <tr id="schema:image">
       <td>head shot</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/image">schema:image</a></code><a href="#note3"><sup>3</sup></a></td>
+      <td><code><a href="http://schema.org/Person" title="http://schema.org/image">schema:image</a></code><a href="#note4"><sup>4</sup></a></td>
       <td>A URL of a head shot</td>
     </tr>
     <tr id="bio:olb">
@@ -139,19 +139,20 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
   </tbody>
 </table>
 
-<p class="note" id="note1">1. <code>schema:email</code> is used instead of <code>foaf:mbox</code>, because <code>email</code> is a more familiar term than <code>mbox</code>.</p>
-<p class="note" id="note2">2. <code>schema:birthDate</code> is used instead of <code>foaf:birthday</code> to match <code>schema:deathDate</code>, for which FOAF has no property.</p>
-<p class="note" id="note3">3. <code>schema:image</code> is used instead of <code>foaf:img</code>, because abbreviations like <code>img</code> are avoided.</p>
+<p class="note" id="note1">1. For secondary email addresses, see the <a href="/specs/contact-detail.html">ContactDetail</a> class.</p>
+<p class="note" id="note2">2. <code>schema:email</code> is used instead of <code>foaf:mbox</code>, because <code>email</code> is a more familiar term than <code>mbox</code>.</p>
+<p class="note" id="note3">3. <code>schema:birthDate</code> is used instead of <code>foaf:birthday</code> to match <code>schema:deathDate</code>, for which FOAF has no property.</p>
+<p class="note" id="note4">4. <code>schema:image</code> is used instead of <code>foaf:img</code>, because abbreviations like <code>img</code> are avoided.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 
-The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of name objects. If a name object sets an `end_date`[<sup>4</sup>](#note4) property, it represents a former name.
+The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of name objects. If a name object sets an `end_date`[<sup>5</sup>](#note5) property, it represents a former name.
 
-**Differences from RDF:** The term `summary`[<sup>5</sup>](#note5) is used instead of `olb`, because abbreviations are avoided. The term `links` is used instead of `seeAlso`. A new `note`[<sup>6</sup>](#note6) property adds a note to an external link.
+**Differences from RDF:** The term `summary`[<sup>6</sup>](#note6) is used instead of `olb`, because abbreviations are avoided. The term `links` is used instead of `seeAlso`. A new `note`[<sup>7</sup>](#note7) property adds a note to an external link.
 
-<p class="note" id="note4">4. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
-<p class="note" id="note5">5. With respect to reuse, <a href="http://drupal.org/">Drupal</a> uses the term <code>summary</code> to describe a brief version of a long text.</p>
-<p class="note" id="note6">6. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
+<p class="note" id="note5">5. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
+<p class="note" id="note6">6. With respect to reuse, <a href="http://drupal.org/">Drupal</a> uses the term <code>summary</code> to describe a brief version of a long text.</p>
+<p class="note" id="note7">7. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#person-schema">JSON Schema</a></li>

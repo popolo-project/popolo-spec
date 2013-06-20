@@ -51,7 +51,7 @@
       "type": "string"
     },
     "email": {
-      "description": "An email address",
+      "description": "A preferred email address",
       "type": "string",
       "format": "email"
     },
