@@ -116,6 +116,14 @@ This data specification is a [profile of the W3C organization ontology](http://w
 <p class="note" id="note2">2. ORG defines the inverse properties <code>org:hasSubOrganization</code>, <code>org:holds</code>, <code>org:hasPost</code> and <code>org:hasMembership</code>.</p>
 <p class="note" id="note3">3. <code>vcard:deathDate</code> could have been used for date of dissolution, but <code>deathDate</code> is an unusual term for an organization.</p>
 
+## 3.1. Classification
+
+The Organization ontology has a section on [organizational classification](organizational-classification). It proposes two strategies for classification: either create subclasses of [Organization](http://www.w3.org/TR/vocab-org/#org:Organization), or use the [`classification`](http://www.w3.org/TR/vocab-org/#org:classification) property. It provides guidance on when to use one or the other strategy:
+
+>If the classification is not intrinsic to the organization but simply some way to group organizations, for example as part of a directory, then `org:classification` should be used. If the classification is a reflection of the intrinsic nature of the organization and affects other properties then the sub-class approach should be used. For example, only charities have charity numbers so it would be better to represent a charity as a sub-class of `org:FormalOrganization` rather than via a taxonomic labelling.
+
+In general, subclasses should only be used if the benefits outweigh the complexity. It is of no use to create the classes `Partnership`, `LimitedCompany`, `UnlimitedCompany`, etc. if all these classes behave the same way in your use case. It is simpler to use the `classification` property in that case.
+
 <h1 id="serialization">4. Serialization</h1>
 
 **Differences from RDF:** The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with the Person class. A new `scheme`[<sup>4</sup>](#note4) property indicates an identifier's scheme, because JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF. The term `parent_id`[<sup>5</sup>](#note5) is used instead of `subOrganizationOf`.
