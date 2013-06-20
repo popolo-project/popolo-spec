@@ -65,7 +65,7 @@ The [subdocuments](#classes-and-properties) in the next section add more require
 
 The following subdocuments list use cases and requirements, report standard reuse, define classes and properties, describe serialization in-depth, and provide code lists:
 
-1. [Person](/specs/person.html) ([Name Component](/specs/person/name-component.html))
+1. [Person](/specs/person.html): [Name Component](/specs/person/name-component.html)
 1. [Organization](/specs/organization.html)
 1. [Post](/specs/post.html)
 1. [Membership](/specs/membership.html)
@@ -75,13 +75,13 @@ The following subdocuments list use cases and requirements, report standard reus
 
 Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>1</sup>](#note1) is <em class="rfc2119">recommended</em>.
 
-<abbr title="JavaScript Object Notation">JSON</abbr> serializations <em class="rfc2119">must</em> respect the schemas below, which are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)). The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s. <abbr title="Resource Description Framework">RDF</abbr> serializations <em class="rfc2119">must</em> respect the classes and properties defined in the [subdocuments](#classes-and-properties) in the previous section. Example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
+<abbr title="Resource Description Framework">RDF</abbr> serializations <em class="rfc2119">must</em> respect the classes and properties defined in the [subdocuments](#classes-and-properties) in the previous section. Example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
+
+<abbr title="JavaScript Object Notation">JSON</abbr> serializations <em class="rfc2119">must</em> respect the schemas below, which are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)). The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
 
 <table>
-  <caption>JSON and RDF serializations of the classes</caption>
   <thead>
     <tr>
-      <th>Class</th>
       <th>JSON Schema</th>
       <th>Sample JSON document</th>
       <th>Sample RDF document</th>
@@ -89,32 +89,27 @@ Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Univer
   </thead>
   <tbody>
     <tr>
-      <td>Person</td>
-      <td><a href="/schemas/person.json">JSON Schema</a></td>
+      <td><a href="/schemas/person.json">Person</a></td>
       <td><a href="/examples/person.json">person.json</a></td>
       <td><a href="/examples/person.ttl">person.ttl</a></td>
     </tr>
     <tr>
-      <td>Organization</td>
-      <td><a href="/schemas/organization.json">JSON Schema</a></td>
+      <td><a href="/schemas/organization.json">Organization</a></td>
       <td><a href="/examples/organization.json">organization.json</a></td>
       <td><a href="/examples/organization.ttl">organization.ttl</a></td>
     </tr>
     <tr>
-      <td>Post</td>
-      <td><a href="/schemas/post.json">JSON Schema</a></td>
+      <td><a href="/schemas/post.json">Post</a></td>
       <td><a href="/examples/post.json">post.json</a></td>
       <td><a href="/examples/post.ttl">post.ttl</a></td>
     </tr>
     <tr>
-      <td>Membership</td>
-      <td><a href="/schemas/membership.json">JSON Schema</a></td>
+      <td><a href="/schemas/membership.json">Membership</a></td>
       <td><a href="/examples/membership.json">membership.json</a></td>
       <td><a href="/examples/membership.ttl">membership.ttl</a></td>
     </tr>
     <tr>
-      <td>Address</td>
-      <td><a href="/schemas/address.json">JSON Schema</a></td>
+      <td><a href="/schemas/address.json">Address</a></td>
       <td><a href="/examples/address.json">address.json</a></td>
       <td><a href="/examples/address.ttl">address.ttl</a></td>
     </tr>
