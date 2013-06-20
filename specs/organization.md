@@ -40,6 +40,18 @@ The Organization class should have properties for:
 
     >To determine whether an organization exists, e.g. in order to disable related functionality.
 
+<h1 id="standard-reuse">2. Standard reuse</h1>
+
+Briefly, the survey of existing specifications concludes that:
+
+* No vocabulary has a property for former dates.
+* No vocabulary has a property for dissolution dates, except for `vcard:deathDate`.
+* The Organization ontology is the only vocabulary to meet all other [requirements](#use-cases-and-requirements).
+
+This data specification is a [profile of the W3C organization ontology](http://www.w3.org/TR/vocab-org/#conformance).
+
+**Differences:** Unlike the Organization ontology, an organization may have only one classification in this data specification; implementations must choose a unique classification scheme.
+
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
 <table>

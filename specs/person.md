@@ -54,6 +54,14 @@ The Person class should have properties for:
 
     >A representative's Twitter account, Wikipedia page, or another source of information.
 
+<h1 id="standard-reuse">2. Standard reuse</h1>
+
+Briefly, the survey of existing specifications concludes that:
+
+* No vocabulary has a property for former names, except for `person:birthName`.
+* No vocabulary describes biographies without importing the BIO vocabulary, except for `facebook:bio`.
+* Only `person:Person` fits [the data specification's definition of a person](/specs/#scope).
+
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
 Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alternate names, it usually represents abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames. vCard 4.0 can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred. The Person Core Vocabulary uses `dcterms:alternative`. No standard has a property for former names, however. This data specification may therefore propose a new term for both alternate and former names. The RDF definition is not yet available, however.

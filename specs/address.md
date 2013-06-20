@@ -21,6 +21,10 @@ The Address class should have properties for:
 
     >e.g. a mobile, toll-free or facsimile telephone number.
 
+<h1 id="standard-reuse">2. Standard reuse</h1>
+
+Briefly, the survey of existing specifications concludes that vCard is the only vocabulary to meet all [requirements](#use-cases-and-requirements).
+
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
 <table>

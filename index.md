@@ -37,6 +37,7 @@ A fact that many specifications overlook is that our knowledge of the world is i
 1. [Scope](/specs/#scope)
 1. [Conformance](/specs/#conformance)
 1. [Use cases & requirements](/specs/#use-cases-and-requirements)
+1. [Standard reuse](/specs/#standard-reuse)
 1. [Classes and properties](/specs/#classes-and-properties)
     1. [Person](/specs/person.html): [Name Component](/specs/person/name-component.html)
     1. [Organization](/specs/organization.html)

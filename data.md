@@ -4,7 +4,7 @@ title: Data Specification
 id: data
 ---
 
-<h2 id="relations">2.4. Relations</h2>
+<h2 id="relations">Relations</h2>
 
 [No one size fits all](http://www.w3.org/TR/vocab-org/#reporting_structure) in representing the relationship between people and organizations. In some cases, a simple binary relation is enough, e.g. a `memberOf` property that links a person to an organization. In other cases, a complex [n-ary relation](http://www.w3.org/TR/swbp-n-aryRelations/) is required, e.g. to describe the duration of the person's membership; in such cases, we create a new class to represent the relation, e.g. a Membership class, and attach properties like duration to it to describe the relationship between the person and the organization.
 
@@ -84,30 +84,4 @@ Following [a survey](data/survey.html), these are:
   </tbody>
 </table>
 
-Briefly, the survey concludes that, with respect to the Person class:
-
-* No vocabulary has a property for former names, except for `person:birthName`.
-* No vocabulary describes biographies without importing the BIO vocabulary, except for `facebook:bio`.
-* Only `person:Person` fits [the data specification's definition of a person](#scope).
-
-For the Organization class:
-
-* No vocabulary has a property for former dates.
-* No vocabulary has a property for dissolution dates, except for `vcard:deathDate`.
-* The Organization ontology is the only vocabulary to meet all other [requirements](#use-cases-and-requirements).
-
-For the Address class, vCard is the only vocabulary to meet all [requirements](#use-cases-and-requirements). In terms of relations, only the Organization ontology offers multiple ways to describe the relation between people and organizations. An [inventory of the terms in the survey](data/terms.html) is available.
-
-<p class="note">Note: <a href="http://schema.org/">Schema.org</a> can nonetheless be used for HTML serialization, but HTML serialization is out of scope.</p>
-
-<h2 id="restrictions">3.1 Restrictions</h2>
-
-The data specification imposes cardinality and range restrictions on some properties of other standards, in order to allow for a simpler JSON serialization.
-
-In vCard, each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data specification requires that each component of a name can include one text value only.
-
-According to the Organization ontology, multiple people can hold a post, and either a person or an organization can hold a post; in this data specification, only a single *person* can hold a post. According to the Organization ontology, either a person or an organization can be a member of an organization; in this data specification, only a person can be a member of an organization. Unlike the Organization ontology, an organization may have only one classification in this data specification; implementations must choose a unique classification scheme.
-
-The data specification is a [profile of the W3C organization ontology](http://www.w3.org/TR/vocab-org/#conformance).
-
-**TODO: OWL file describing the restrictions**
+An [inventory of the terms in the survey](data/terms.html) is available.

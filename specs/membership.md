@@ -24,6 +24,12 @@ The Membership class should have properties for:
 
     > since 2000
 
+<h1 id="standard-reuse">2. Standard reuse</h1>
+
+Briefly, the survey of existing specifications concludes that only the Organization ontology offers multiple ways to describe the relation between people and organizations.
+
+**Differences:** According to the Organization ontology, either a person or an organization can be a member of an organization; in this data specification, only a person can be a member of an organization.
+
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
 <table>

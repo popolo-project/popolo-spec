@@ -18,6 +18,10 @@ The Person class should have properties for:
 
 <h1 id="standard-reuse">2. Standard Reuse</h1>
 
+**Differences:** In vCard, each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data specification requires that each component of a name can include one text value only, which itself may contain multiple names.
+
+Additional context:
+
 * The [<abbr title="World Wide Web Consortium">W3C</abbr>](http://www.w3.org/International/questions/qa-personal-names.en) and [<abbr title="Dublin Core Metadata Initiative">DCMI</abbr>](http://dublincore.org/documents/name-representation/) provide guidance on representing people's names.
 * The [<abbr title="Organization for the Advancement of Structured Information Standards">OASIS</abbr>](https://www.oasis-open.org/) [<abbr title="Customer Information Quality">CIQ</abbr> specifications](http://docs.oasis-open.org/ciq/v3.0/prd03/specs/ciq-specs-v3-prd3.html) allow [user-defined name components](http://docs.oasis-open.org/ciq/v3.0/prd03/specs/ciq-specs-v3-prd3.html#_Toc193533217) to satisfy requirements.
 

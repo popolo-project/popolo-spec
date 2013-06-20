@@ -59,9 +59,15 @@ The data specification should:
 
     >e.g. a URL, an integer or a hex string.
 
-The [subdocuments](#classes-and-properties) in the next section add more requirements.
+The [subdocuments](#classes-and-properties) in a later section add more requirements.
 
-<h1 id="classes-and-properties">4. Classes and properties</h1>
+<h1 id="standard-reuse">4. Standard reuse</h1>
+
+The data specification imposes cardinality and range restrictions on some properties of other specifications, in order to allow for a simpler JSON serialization.
+
+The [subdocuments](#classes-and-properties) in the next section describe specific standard reuse.
+
+<h1 id="classes-and-properties">5. Classes and properties</h1>
 
 The following subdocuments list use cases and requirements, report standard reuse, define classes and properties, describe serialization in-depth, and provide code lists:
 
@@ -71,7 +77,7 @@ The following subdocuments list use cases and requirements, report standard reus
 1. [Membership](/specs/membership.html)
 1. [Address](/specs/address.html)
 
-<h1 id="serialization">5. Serialization</h1>
+<h1 id="serialization">6. Serialization</h1>
 
 Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>1</sup>](#note1) is <em class="rfc2119">recommended</em>.
 
@@ -117,8 +123,9 @@ Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Univer
 </table>
 
 <p class="note" id="note1">1. Consult the list of <a href="https://github.com/opennorth/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>. <a href="http://www.w3.org/XML/Schema.html">XML Schema</a> supports <a href="http://www.w3.org/TR/xmlschema-2/#truncatedformats">reduced dates</a> such as <a href="http://www.w3.org/TR/xmlschema-2/#gYear"><code>YYYY</code></a> and <a href="http://www.w3.org/TR/xmlschema-2/#gYearMonth"><code>YYYY-MM</code></a>.</p>
+<p class="note">Note: <a href="http://schema.org/">Schema.org</a> can be used for HTML serialization, but HTML serialization is out of scope.</p>
 
-<h1 id="history">6. Change history</h1>
+<h1 id="history">7. Change history</h1>
 
 * 2013-06-20: Reorganize specification and implement feedback.
 * 2013-02-28: Add requirement for dates to be stored in UTC.
