@@ -10,19 +10,30 @@ The Membership class should have properties for:
 
 1. the role that the person fulfills in the organization
 
-    > Member
+    >Member
 
 1. the person who is a party to the relationship
 
-    > John Doe
+    >John Doe
 
 1. the organization that is a party to the relationship
 
-    > XYZ Party
+    >XYZ Party
 
 1. the time interval over which the relationship exists
 
-    > since 2000
+    >since 2000
+
+1. the means of contacting the person who is a party to the relationship
+
+    >1 Main Street  
+    Anytown, USA  
+    555-555-5555  
+    john@example.com
+
+1. external links
+
+    >A URL to a document describing the person's membership in the organization.
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
@@ -67,6 +78,16 @@ Briefly, the survey of existing specifications concludes that only the Organizat
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:memberDuring" title="http://www.w3.org/ns/org#memberDuring">org:memberDuring</a></code></td>
       <td>the time interval over which the relationship exists</td>
     </tr>
+    <tr>
+      <td>contact detail</td>
+      <td></td>
+      <td>A means of contacting the person who is a party to the relationship</td>
+    </tr>
+    <tr id="rdfs:seeAlso">
+      <td>external links</td>
+      <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_seealso" title="http://www.w3.org/2000/01/rdf-schema#seeAlso">rdfs:seeAlso</a></code></td>
+      <td>A URL to a document about the membership</td>
+    </tr>
   </tbody>
 </table>
 
@@ -74,9 +95,15 @@ Briefly, the survey of existing specifications concludes that only the Organizat
 
 <h1 id="serialization">4. Serialization</h1>
 
-**Differences from RDF:** Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, a simple `start_date` and `end_date`[<sup>2</sup>](#note2) pair is used, as [proposed](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology. The terms `person_id` and `organization_id` are used instead of `member` and `organization` to conform to ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
+**Differences from RDF:**
+
+* Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, a simple `start_date` and `end_date`[<sup>2</sup>](#note2) pair is used, as [proposed](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.
+* The terms `person_id` and `organization_id` are used instead of `member` and `organization` to conform to ODM conventions.
+* The value of the `role` property is a string, instead of a `skos:Concept`.
+* The term `links` is used instead of `seeAlso`. A new `note`[<sup>3</sup>](#note3) property adds a note to an external link.
 
 <p class="note" id="note2">2. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
+<p class="note" id="note3">3. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#membership-schema">JSON Schema</a></li>

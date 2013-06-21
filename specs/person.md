@@ -50,6 +50,13 @@ The Person class should have properties for:
 
     >To provide a long form biography.
 
+1. the means of contacting the person
+
+    >1 Main Street  
+    Anytown, USA  
+    555-555-5555  
+    john@example.com
+
 1. external links
 
     >A representative's Twitter account, Wikipedia page, or another source of information.
@@ -131,10 +138,15 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
       <td><code><a href="http://vocab.org/bio/0.1/biography.html" title="http://purl.org/vocab/bio/0.1/biography">bio:biography</a></code></td>
       <td>An extended account of a person's life</td>
     </tr>
+    <tr>
+      <td>contact detail</td>
+      <td></td>
+      <td>A means of contacting the person</td>
+    </tr>
     <tr id="rdfs:seeAlso">
       <td>external links</td>
       <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_seealso" title="http://www.w3.org/2000/01/rdf-schema#seeAlso">rdfs:seeAlso</a></code></td>
-      <td>A URL for a document about the person</td>
+      <td>A URL to a document about the person</td>
     </tr>
   </tbody>
 </table>
@@ -148,7 +160,10 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
 
 The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of name objects. If a name object sets an `end_date`[<sup>5</sup>](#note5) property, it represents a former name.
 
-**Differences from RDF:** The term `summary`[<sup>6</sup>](#note6) is used instead of `olb`, because abbreviations are avoided. The term `links` is used instead of `seeAlso`. A new `note`[<sup>7</sup>](#note7) property adds a note to an external link.
+**Differences from RDF:**
+
+* The term `summary`[<sup>6</sup>](#note6) is used instead of `olb`, because abbreviations are avoided.
+* The term `links` is used instead of `seeAlso`. A new `note`[<sup>7</sup>](#note7) property adds a note to an external link.
 
 <p class="note" id="note5">5. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
 <p class="note" id="note6">6. With respect to reuse, <a href="http://drupal.org/">Drupal</a> uses the term <code>summary</code> to describe a brief version of a long text.</p>

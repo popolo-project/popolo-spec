@@ -10,26 +10,30 @@ The Post class should have properties for:
 
 1. label
 
-    > Member of Parliament for Avalon
+    >Member of Parliament for Avalon
 
 1. the role that the holder of the post fulfills
 
-    > Member of Parliament
+    >Member of Parliament
 
 1. the person who holds the post
 
-    > John Doe
+    >John Doe
 
 1. the organization in which the post is held
 
-    > House of Commons
+    >House of Commons
 
-1. the means of contacting the post
+1. the means of contacting the holder of the post
 
-    > 1 Main Street  
+    >1 Main Street  
     Anytown, USA  
     555-555-5555  
     john@example.com
+
+1. external links
+
+    >http://pm.gc.ca/
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
@@ -77,7 +81,12 @@ Briefly, the survey of existing specifications concludes that only the Organizat
     <tr>
       <td>contact detail</td>
       <td></td>
-      <td>A means of contacting the post</td>
+      <td>A means of contacting the holder of the post</td>
+    </tr>
+    <tr id="rdfs:seeAlso">
+      <td>external links</td>
+      <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_seealso" title="http://www.w3.org/2000/01/rdf-schema#seeAlso">rdfs:seeAlso</a></code></td>
+      <td>A URL to a document about the post</td>
     </tr>
   </tbody>
 </table>
@@ -86,7 +95,14 @@ Briefly, the survey of existing specifications concludes that only the Organizat
 
 <h1 id="serialization">4. Serialization</h1>
 
-**Differences from RDF:** The term `name` is used instead of `prefLabel`, to be consistent with the Person class. The terms `person_id` and `organization_id` are used instead of `heldBy` and `postIn` to conform to ODM conventions. The value of the `role` property is a string, instead of a `skos:Concept`.
+**Differences from RDF:**
+
+* The term `name` is used instead of `prefLabel`, to be consistent with the Person class.
+* The terms `person_id` and `organization_id` are used instead of `heldBy` and `postIn` to conform to ODM conventions.
+* The value of the `role` property is a string, instead of a `skos:Concept`.
+* The term `links` is used instead of `seeAlso`. A new `note`[<sup>2</sup>](#note2) property adds a note to an external link.
+
+<p class="note" id="note2">2. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#post-schema">JSON Schema</a></li>

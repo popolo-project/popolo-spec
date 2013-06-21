@@ -40,6 +40,17 @@ The Organization class should have properties for:
 
     >To determine whether an organization exists, e.g. in order to disable related functionality.
 
+1. the means of contacting the organization
+
+    >1 Main Street  
+    Anytown, USA  
+    555-555-5555  
+    john@example.com
+
+1. external links
+
+    >http://house.gov/
+
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
 Briefly, the survey of existing specifications concludes that:
@@ -109,6 +120,16 @@ This data specification is a [profile of the W3C organization ontology](http://w
       <td><a href="#note3"><sup>3</sup></a></td>
       <td>A date of dissolution, termination, withdrawal, expiry, etc.</td>
     </tr>
+    <tr>
+      <td>contact detail</td>
+      <td></td>
+      <td>A means of contacting the organization</td>
+    </tr>
+    <tr id="rdfs:seeAlso">
+      <td>external links</td>
+      <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_seealso" title="http://www.w3.org/2000/01/rdf-schema#seeAlso">rdfs:seeAlso</a></code></td>
+      <td>A URL to a document about the organization</td>
+    </tr>
   </tbody>
 </table>
 
@@ -126,10 +147,16 @@ In general, subclasses should only be used if the benefits outweigh the complexi
 
 <h1 id="serialization">4. Serialization</h1>
 
-**Differences from RDF:** The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with the Person class. A new `scheme`[<sup>4</sup>](#note4) property indicates an identifier's scheme, because JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF. The term `parent_id`[<sup>5</sup>](#note5) is used instead of `subOrganizationOf`.
+**Differences from RDF:**
+
+* The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with the Person class.
+* A new `scheme`[<sup>4</sup>](#note4) property indicates an identifier's scheme, because JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF.
+* The term `parent_id`[<sup>5</sup>](#note5) is used instead of `subOrganizationOf`.
+* The term `links` is used instead of `seeAlso`. A new `note`[<sup>6</sup>](#note6) property adds a note to an external link.
 
 <p class="note" id="note4">4. With respect to reuse, ORG, SKOS and XBRL use the word <code>scheme</code> to refer to this value.</p>
 <p class="note" id="note5">5. With respect to reuse, <a href="https://github.com/benedikt/mongoid-tree">mongoid-tree</a>, <a href="https://github.com/collectiveidea/awesome_nested_set/tree/master/lib/awesome_nested_set">awesome_nested_set</a> and <a href="https://github.com/amerine/acts_as_tree">acts_as_tree</a> use <code>parent_id</code>.</p>
+<p class="note" id="note6">6. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#organization-schema">JSON Schema</a></li>
