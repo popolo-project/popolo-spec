@@ -100,7 +100,7 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
     </tr>
     <tr>
       <td>former name</td>
-      <td></td>
+      <td><em>none yet</em></td>
       <td>A former name, such as a maiden name</td>
     </tr>
     <tr id="schema:email">
@@ -140,7 +140,7 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
     </tr>
     <tr>
       <td>contact detail</td>
-      <td></td>
+      <td><em>none yet</em></td>
       <td>A means of contacting the person</td>
     </tr>
     <tr id="rdfs:seeAlso">

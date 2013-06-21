@@ -92,7 +92,7 @@ This data specification is a [profile of the W3C organization ontology](http://w
     </tr>
     <tr>
       <td>former name</td>
-      <td></td>
+      <td><em>none yet</em></td>
       <td>A former name, e.g. a pre-merger name</td>
     </tr>
     <tr id="org:identifier">
@@ -117,12 +117,12 @@ This data specification is a [profile of the W3C organization ontology](http://w
     </tr>
     <tr>
       <td>date of dissolution</td>
-      <td><a href="#note3"><sup>3</sup></a></td>
+      <td><em>none yet</em><a href="#note3"><sup>3</sup></a></td>
       <td>A date of dissolution, termination, withdrawal, expiry, etc.</td>
     </tr>
     <tr>
       <td>contact detail</td>
-      <td></td>
+      <td><em>none yet</em></td>
       <td>A means of contacting the organization</td>
     </tr>
     <tr id="rdfs:seeAlso">

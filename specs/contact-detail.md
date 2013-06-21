@@ -48,7 +48,7 @@ The [survey of existing specifications](/appendices/survey.html) found that [RFC
   <tbody>
     <tr>
       <td><strong>ContactDetail</strong></td>
-      <td>N/A</td>
+      <td>No <code>rdf:type</code></td>
       <td>A means of contacting an entity</td>
     </tr>
     <tr id="rdfs:label">

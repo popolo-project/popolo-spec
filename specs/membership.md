@@ -80,8 +80,8 @@ Briefly, the survey of existing specifications concludes that only the Organizat
     </tr>
     <tr>
       <td>contact detail</td>
-      <td></td>
-      <td>A means of contacting the person who is a party to the relationship</td>
+      <td><em>none yet</em></td>
+      <td>A means of contacting the person in the relationship</td>
     </tr>
     <tr id="rdfs:seeAlso">
       <td>external links</td>

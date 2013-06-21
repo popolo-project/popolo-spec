@@ -80,7 +80,7 @@ Briefly, the survey of existing specifications concludes that only the Organizat
     </tr>
     <tr>
       <td>contact detail</td>
-      <td></td>
+      <td><em>none yet</em></td>
       <td>A means of contacting the holder of the post</td>
     </tr>
     <tr id="rdfs:seeAlso">
