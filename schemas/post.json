@@ -7,8 +7,7 @@
   "properties": {
     "id": {
       "description": "The post's unique identifier",
-      "type": "string",
-      "required": true
+      "type": ["string", "null"]
     },
     "label": {
       "description": "A label describing the post",
@@ -22,15 +21,21 @@
     },
     "person_id": {
       "description": "The ID of the person who holds the post",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "organization_id": {
       "description": "The ID of the organization in which the post is held",
-      "type": "string",
-      "required": true
+      "type": ["string", "null"]
+    },
+    "links": {
+      "description": "URLs for documents about the person",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/link.json#"
+      }
     },
     "contact_details": {
-      "description": "Means of contacting the post",
+      "description": "Means of contacting the person who holds the post",
       "type": "array",
       "items": {
         "$ref": "http://popoloproject.com/schemas/contact_detail.json#"

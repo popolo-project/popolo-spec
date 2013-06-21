@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://popoloproject.com/schemas/identifier.json#",
+  "title": "Identifier",
+  "description": "An issued identifier",
+  "type": "object",
+  "properties": {
+    "identifier": {
+      "description": "An issued identifier, e.g. a DUNS number",
+      "type": "string",
+      "required": true
+    },
+    "scheme": {
+      "description": "An identifier scheme, e.g. DUNS",
+      "type": ["string", "null"]
+    }
+  }
+}

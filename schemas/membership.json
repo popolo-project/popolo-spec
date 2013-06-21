@@ -7,12 +7,11 @@
   "properties": {
     "id": {
       "description": "The membership's unique identifier",
-      "type": "string",
-      "required": true
+      "type": ["string", "null"]
     },
     "role": {
       "description": "The role that the holder of the post fulfills",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "person_id": {
       "description": "The ID of the person who is a party to the relationship",
@@ -26,12 +25,12 @@
     },
     "start_date": {
       "description": "The date on which the relationship began",
-      "type": "string",
+      "type": ["string", "null"],
       "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
     },
     "end_date": {
       "description": "The date on which the relationship ended",
-      "type": "string",
+      "type": ["string", "null"],
       "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
     }
   }

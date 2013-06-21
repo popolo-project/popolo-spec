@@ -7,8 +7,7 @@
   "properties": {
     "id": {
       "description": "The organization's unique identifier",
-      "type": "string",
-      "required": true
+      "type": ["string", "null"]
     },
     "name": {
       "description": "A primary name, e.g. a legally recognized name",
@@ -26,37 +25,47 @@
       "description": "Issued identifiers",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "identifier": {
-            "description": "An issued identifier, e.g. a DUNS number",
-            "type": "string",
-            "required": true
-          },
-          "scheme": {
-            "description": "An identifier scheme, e.g. DUNS",
-            "type": "string"
-          }
-        }
+        "$ref": "http://popoloproject.com/schemas/identifier.json#"
       }
     },
     "classification": {
       "description": "An organization category, e.g. committee",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "parent_id": {
       "description": "An organization that contains this organization",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "founding_date": {
       "description": "A date of founding",
-      "type": "string",
+      "type": ["string", "null"],
       "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
     },
     "dissolution_date": {
       "description": "A date of dissolution",
-      "type": "string",
+      "type": ["string", "null"],
       "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+    },
+    "contact_details": {
+      "description": "Means of contacting the organization",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/contact_detail.json#"
+      }
+    },
+    "links": {
+      "description": "URLs for documents about the organization",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/link.json#"
+      }
+    },
+    "posts": {
+      "description": "Posts within the organization",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/post.json#"
+      }
     }
   }
 }

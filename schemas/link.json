@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://popoloproject.com/schemas/link.json#",
+  "title": "Link",
+  "description": "A URL",
+  "type": "object",
+  "properties": {
+    "url": {
+      "description": "A URL",
+      "type": "string",
+      "format": "uri",
+      "required": true
+    },
+    "note": {
+      "description": "A note, e.g. 'Wikipedia page'",
+      "type": ["string", "null"]
+    }
+  }
+}

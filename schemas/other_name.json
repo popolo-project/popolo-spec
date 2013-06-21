@@ -1,6 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
   "id": "http://popoloproject.com/schemas/other_name.json#",
+  "title": "Other name",
+  "description": "An alternate or former name",
   "type": "object",
   "properties": {
     "name": {
@@ -10,17 +12,17 @@
     },
     "start_date": {
       "description": "The date on which the name was adopted",
-      "type": "string",
+      "type": ["string", "null"],
       "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
     },
     "end_date": {
       "description": "The date on which the name was abandoned",
-      "type": "string",
+      "type": ["string", "null"],
       "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
     },
     "note": {
       "description": "A note, e.g. 'Birth name'",
-      "type": "string"
+      "type": ["string", "null"]
     }
   }
 }

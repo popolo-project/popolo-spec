@@ -7,23 +7,25 @@
   "properties": {
     "id": {
       "description": "The contact detail's unique identifier",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "label": {
       "description": "A human-readable label for the contact detail",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "type": {
       "description": "A type of medium, e.g. 'fax' or 'email'",
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "value": {
       "description": "A value, e.g. a phone number or email address",
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "note": {
       "description": "A note, e.g. for grouping contact details by physical location",
-      "type": "string"
+      "type": ["string", "null"]
     }
   }
 }
