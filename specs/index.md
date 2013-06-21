@@ -135,6 +135,12 @@ Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Univer
   </tbody>
 </table>
 
+The JSON Schema above reuse the following schema for specific properties:
+
+* [Identifier](/schemas/identifier.json)
+* [Link](/schemas/link.json)
+* [Other name](/schemas/other_name.json)
+
 <p class="note" id="note1">1. Consult the list of <a href="https://github.com/opennorth/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>. <a href="http://www.w3.org/XML/Schema.html">XML Schema</a> supports <a href="http://www.w3.org/TR/xmlschema-2/#truncatedformats">reduced dates</a> such as <a href="http://www.w3.org/TR/xmlschema-2/#gYear"><code>YYYY</code></a> and <a href="http://www.w3.org/TR/xmlschema-2/#gYearMonth"><code>YYYY-MM</code></a>.</p>
 <p class="note">Note: <a href="http://schema.org/">Schema.org</a> can be used for HTML serialization, but HTML serialization is out of scope.</p>
 
