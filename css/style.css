@@ -145,8 +145,26 @@ em.rfc2119 {
 }
 
 .tab-pane {
+  position: relative;
+}
+.download-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #000;
+}
+
+/* To avoid line-wrapping.
+.tab-pane {
   overflow-x: scroll;
 }
 .tab-pane pre {
   width: 100%;
 }
+*/
