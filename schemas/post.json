@@ -19,13 +19,16 @@
       "type": "string",
       "required": true
     },
-    "person_id": {
-      "description": "The ID of the person who holds the post",
-      "type": ["string", "null"]
-    },
     "organization_id": {
       "description": "The ID of the organization in which the post is held",
       "type": ["string", "null"]
+    },
+    "contact_details": {
+      "description": "Means of contacting the person who holds the post",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/contact_detail.json#"
+      }
     },
     "links": {
       "description": "URLs for documents about the person",
@@ -34,11 +37,11 @@
         "$ref": "http://popoloproject.com/schemas/link.json#"
       }
     },
-    "contact_details": {
-      "description": "Means of contacting the person who holds the post",
+    "memberships": {
+      "description": "The relationships to which the organization is a party",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/contact_detail.json#"
+        "$ref": "http://popoloproject.com/schemas/membership.json#"
       }
     }
   }
