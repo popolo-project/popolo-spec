@@ -54,7 +54,7 @@
       }
     },
     "links": {
-      "description": "URLs for documents about the organization",
+      "description": "URLs to documents about the organization",
       "type": "array",
       "items": {
         "$ref": "http://popoloproject.com/schemas/link.json#"

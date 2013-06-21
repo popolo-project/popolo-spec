@@ -96,7 +96,7 @@
       }
     },
     "links": {
-      "description": "URLs for documents about the person",
+      "description": "URLs to documents about the person",
       "type": "array",
       "items": {
         "$ref": "http://popoloproject.com/schemas/link.json#"
