@@ -60,6 +60,13 @@
         "$ref": "http://popoloproject.com/schemas/link.json#"
       }
     },
+    "memberships": {
+      "description": "The relationships to which the organization is a party",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/membership.json#"
+      }
+    },
     "posts": {
       "description": "Posts within the organization",
       "type": "array",
