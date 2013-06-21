@@ -149,14 +149,14 @@ In general, subclasses should only be used if the benefits outweigh the complexi
 
 **Differences from RDF:**
 
-* The terms `name` and `other_names` are used instead of `prefLabel` and `altLabel`, to be consistent with the Person class.
-* A new `scheme`[<sup>4</sup>](#note4) property indicates an identifier's scheme, because JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF.
-* The term `parent_id`[<sup>5</sup>](#note5) is used instead of `subOrganizationOf`.
-* The term `links` is used instead of `seeAlso`. A new `note`[<sup>6</sup>](#note6) property adds a note to an external link.
+* The terms `name` is used instead of `prefLabel`, to be consistent with the [Person](/specs/person.html) class.
+* The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of [name objects](/specs/#other-name).
+* The identifier property is serialized as `identifiers`, whose value is an array of [identifier objects](/specs/#identifier).
+* The term `parent_id`[<sup>4</sup>](#note4) is used instead of `subOrganizationOf`.
+* A new `dissolution_date` term is used for the date of dissolution, for which there is no RDF term.
+* The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 
-<p class="note" id="note4">4. With respect to reuse, ORG, SKOS and XBRL use the word <code>scheme</code> to refer to this value.</p>
-<p class="note" id="note5">5. With respect to reuse, <a href="https://github.com/benedikt/mongoid-tree">mongoid-tree</a>, <a href="https://github.com/collectiveidea/awesome_nested_set/tree/master/lib/awesome_nested_set">awesome_nested_set</a> and <a href="https://github.com/amerine/acts_as_tree">acts_as_tree</a> use <code>parent_id</code>.</p>
-<p class="note" id="note6">6. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
+<p class="note" id="note4">4. With respect to reuse, <a href="https://github.com/benedikt/mongoid-tree">mongoid-tree</a>, <a href="https://github.com/collectiveidea/awesome_nested_set/tree/master/lib/awesome_nested_set">awesome_nested_set</a> and <a href="https://github.com/amerine/acts_as_tree">acts_as_tree</a> use <code>parent_id</code>.</p>
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#organization-schema">JSON Schema</a></li>

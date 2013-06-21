@@ -158,16 +158,13 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
 
 <h1 id="serialization">4. Serialization</h1>
 
-The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of name objects. If a name object sets an `end_date`[<sup>5</sup>](#note5) property, it represents a former name.
-
 **Differences from RDF:**
 
-* The term `summary`[<sup>6</sup>](#note6) is used instead of `olb`, because abbreviations are avoided.
-* The term `links` is used instead of `seeAlso`. A new `note`[<sup>7</sup>](#note7) property adds a note to an external link.
+* The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of [name objects](/specs/#other-name).
+* The term `summary`[<sup>5</sup>](#note5) is used instead of `olb`, because abbreviations are avoided.
+* The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 
-<p class="note" id="note5">5. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
-<p class="note" id="note6">6. With respect to reuse, <a href="http://drupal.org/">Drupal</a> uses the term <code>summary</code> to describe a brief version of a long text.</p>
-<p class="note" id="note7">7. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
+<p class="note" id="note5">5. With respect to reuse, <a href="http://drupal.org/">Drupal</a> uses the term <code>summary</code> to describe a brief version of a long text.</p>
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#person-schema">JSON Schema</a></li>

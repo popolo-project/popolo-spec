@@ -97,13 +97,13 @@ Briefly, the survey of existing specifications concludes that only the Organizat
 
 **Differences from RDF:**
 
-* Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, a simple `start_date` and `end_date`[<sup>2</sup>](#note2) pair is used, as [proposed](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.
-* The terms `person_id` and `organization_id` are used instead of `member` and `organization` to conform to ODM conventions.
 * The value of the `role` property is a string, instead of a `skos:Concept`.
-* The term `links` is used instead of `seeAlso`. A new `note`[<sup>3</sup>](#note3) property adds a note to an external link.
+* The terms `person_id` is used instead of `member` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
+* The terms `organization_id` is used instead of `organization` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
+* Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, a simple `start_date` and `end_date`[<sup>2</sup>](#note2) pair is used instead of `memberDuring`, as [proposed](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.
+* The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 
 <p class="note" id="note2">2. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
-<p class="note" id="note3">3. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#membership-schema">JSON Schema</a></li>

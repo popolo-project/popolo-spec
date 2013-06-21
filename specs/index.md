@@ -135,14 +135,40 @@ Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Univer
   </tbody>
 </table>
 
-The JSON Schema above reuse the following schema for specific properties:
-
-* [Identifier](/schemas/identifier.json)
-* [Link](/schemas/link.json)
-* [Other name](/schemas/other_name.json)
-
 <p class="note" id="note1">1. Consult the list of <a href="https://github.com/opennorth/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>. <a href="http://www.w3.org/XML/Schema.html">XML Schema</a> supports <a href="http://www.w3.org/TR/xmlschema-2/#truncatedformats">reduced dates</a> such as <a href="http://www.w3.org/TR/xmlschema-2/#gYear"><code>YYYY</code></a> and <a href="http://www.w3.org/TR/xmlschema-2/#gYearMonth"><code>YYYY-MM</code></a>.</p>
 <p class="note">Note: <a href="http://schema.org/">Schema.org</a> can be used for HTML serialization, but HTML serialization is out of scope.</p>
+
+## 6.1. Subschema
+
+The JSON Schema above reuse the following subschema for specific properties:
+
+<h3 id="identifier">6.1.1. Identifier</h3>
+
+With respect to standard reuse, ORG, SKOS and XBRL use the word `scheme` to refer to an identifier's scheme. This class is necessary for JSON serialization, because JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF values to indicate an identifier's scheme.
+
+<div class="tab-content no-js">
+  <div class="tab-pane active" data-url="/schemas/identifier.json"></div>
+</div>
+
+<h3 id="link">6.1.2. Link</h3>
+
+With respect to standard reuse, `note` comes from [`skos:note`](http://www.w3.org/TR/skos-reference/#notes).
+
+**Differences from RDF:**
+
+* A new `note` property adds a note (e.g. "Wikipedia page") to the external link.
+
+<div class="tab-content no-js">
+  <div class="tab-pane active" data-url="/schemas/link.json"></div>
+</div>
+
+<h3 id="other-name">6.1.3 Other name</h3>
+
+If a name object sets an `end_date` property, it represents a former name. With respect to standard reuse, the terms `start_date` and `end_date` are used in the [Participation ontology](http://vocab.org/participation/schema) and others, and `note` comes from [`skos:note`](http://www.w3.org/TR/skos-reference/#notes).
+
+<div class="tab-content no-js">
+  <div class="tab-pane active" data-url="/schemas/other_name.json"></div>
+</div>
 
 <h1 id="history">7. Change history</h1>
 

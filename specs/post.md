@@ -97,12 +97,11 @@ Briefly, the survey of existing specifications concludes that only the Organizat
 
 **Differences from RDF:**
 
-* The term `name` is used instead of `prefLabel`, to be consistent with the Person class.
-* The terms `person_id` and `organization_id` are used instead of `heldBy` and `postIn` to conform to ODM conventions.
+* The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
 * The value of the `role` property is a string, instead of a `skos:Concept`.
-* The term `links` is used instead of `seeAlso`. A new `note`[<sup>2</sup>](#note2) property adds a note to an external link.
-
-<p class="note" id="note2">2. <code>note</code> comes from <a href="http://www.w3.org/TR/skos-reference/#notes"><code>skos:note</code></a>. Any additional documentation properties <em class="rfc2119">should</em> re-use SKOS terms.</p>
+* The terms `person_id` is used instead of `heldBy` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
+* The terms `organization_id` is used instead of `postIn` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
+* The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#post-schema">JSON Schema</a></li>
