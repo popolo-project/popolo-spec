@@ -160,7 +160,7 @@ The former name and alternate name properties are serialized as a single `other_
   <li><a href="#person-rdf">RDF</a></li>
 </ul>
 
-<div class="tab-content">
+<div class="tab-content no-js">
   <div class="tab-pane" id="person-schema" data-url="/schemas/person.json"></div>
   <div class="tab-pane active" id="person-json" data-url="/examples/person.json"></div>
   <div class="tab-pane" id="person-rdf" data-url="/examples/person.ttl"></div>

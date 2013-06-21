@@ -1,4 +1,4 @@
-$('.span9 .tab-content div').each(function () {
+$('.tab-content.no-js div').each(function () {
   var $this = $(this);
   if ($this.data('url')) {
     $.get($this.data('url'), function (data) {

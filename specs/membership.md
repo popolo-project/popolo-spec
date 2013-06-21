@@ -84,7 +84,7 @@ Briefly, the survey of existing specifications concludes that only the Organizat
   <li><a href="#membership-rdf">RDF</a></li>
 </ul>
 
-<div class="tab-content">
+<div class="tab-content no-js">
   <div class="tab-pane" id="membership-schema" data-url="/schemas/membership.json"></div>
   <div class="tab-pane active" id="membership-json" data-url="/examples/membership.json"></div>
   <div class="tab-pane" id="membership-rdf" data-url="/examples/membership.ttl"></div>

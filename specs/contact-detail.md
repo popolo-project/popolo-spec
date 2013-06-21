@@ -88,7 +88,7 @@ The [survey of existing specifications](/appendices/survey.html) found that [RFC
   <li><a href="#contact-detail-rdf">RDF</a></li>
 </ul>
 
-<div class="tab-content">
+<div class="tab-content no-js">
   <div class="tab-pane" id="contact-detail-schema" data-url="/schemas/contact_detail.json"></div>
   <div class="tab-pane active" id="contact-detail-json" data-url="/examples/contact_detail.json"></div>
   <div class="tab-pane" id="contact-detail-rdf" data-url="/examples/contact_detail.ttl"></div>

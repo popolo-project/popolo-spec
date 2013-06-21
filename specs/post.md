@@ -94,7 +94,7 @@ Briefly, the survey of existing specifications concludes that only the Organizat
   <li><a href="#post-rdf">RDF</a></li>
 </ul>
 
-<div class="tab-content">
+<div class="tab-content no-js">
   <div class="tab-pane" id="post-schema" data-url="/schemas/post.json"></div>
   <div class="tab-pane active" id="post-json" data-url="/examples/post.json"></div>
   <div class="tab-pane" id="post-rdf" data-url="/examples/post.ttl"></div>

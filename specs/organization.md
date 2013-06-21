@@ -137,7 +137,7 @@ In general, subclasses should only be used if the benefits outweigh the complexi
   <li><a href="#organization-rdf">RDF</a></li>
 </ul>
 
-<div class="tab-content">
+<div class="tab-content no-js">
   <div class="tab-pane" id="organization-schema" data-url="/schemas/organization.json"></div>
   <div class="tab-pane active" id="organization-json" data-url="/examples/organization.json"></div>
   <div class="tab-pane" id="organization-rdf" data-url="/examples/organization.ttl"></div>
