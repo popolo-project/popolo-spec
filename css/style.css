@@ -143,3 +143,10 @@ em.rfc2119 {
      -moz-border-radius: 4px 0 4px 0;
           border-radius: 4px 0 4px 0;
 }
+
+.tab-pane {
+  overflow-x: scroll;
+}
+.tab-pane pre {
+  width: 100%;
+}

@@ -1,48 +1,28 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/address.json#",
-  "title": "Address",
-  "description": "A physical location or a mail delivery point",
+  "id": "http://popoloproject.com/schemas/contact_detail.json#",
+  "title": "Contact detail",
+  "description": "A means of contacting an entity",
   "type": "object",
   "properties": {
     "id": {
-      "description": "The address' unique identifier",
+      "description": "The contact detail's unique identifier",
+      "type": "string"
+    },
+    "label": {
+      "description": "A human-readable label for the contact detail",
       "type": "string"
     },
     "type": {
-      "description": "A type of address, e.g. 'capitol'",
+      "description": "A type of medium, e.g. 'fax' or 'email'",
       "type": "string"
     },
-    "address": {
-      "description": "A postal address",
+    "value": {
+      "description": "A value, e.g. a phone number or email address",
       "type": "string"
     },
-    "voice": {
-      "description": "A voice telephone number",
-      "type": "string"
-    },
-    "fax": {
-      "description": "A facsimile telephone number",
-      "type": "string"
-    },
-    "cell": {
-      "description": "A mobile telephone number",
-      "type": "string"
-    },
-    "tollfree": {
-      "description": "A toll-free telephone number",
-      "type": "string"
-    },
-    "video": {
-      "description": "A video conferencing telephone number",
-      "type": "string"
-    },
-    "pager": {
-      "description": "A paging device telephone number",
-      "type": "string"
-    },
-    "textphone": {
-      "description": "A telecommunication device for people with hearing or speech difficulties",
+    "note": {
+      "description": "A note, e.g. for grouping contact details by physical location",
       "type": "string"
     }
   }

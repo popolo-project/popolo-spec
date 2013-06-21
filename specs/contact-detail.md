@@ -6,24 +6,33 @@ id: contact-detail
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
+It is impossible to predict the means by which people will be contacted: from mail and telephones to email and <abbr title="Voice over Internet Protocol">VoIP</abbr>. Some contact details are related to physical locations, like an office's postal address and fax number, while others are not, like a person's mobile number and email address. To support the widest variety of mediums in the widest range of contexts, the ContactDetail class should allow user-defined contact details.
+
+<div class="well well-example">
+  <p>A civil society organization has the phone number of a legislator; however, it doesn't know whether it is the capitol office number, the constituency office number or a mobile number. A suitable specification should be able to handle data at varying levels of precision.</p>
+</div>
+
 The ContactDetail class should have properties for:
 
-1. address type
+1. label
 
-    >e.g. "Hill address" or "Constituency office".
+    >e.g. "Hill address" or "Mobile number".
 
-1. postal address
+1. type of medium
 
-    >1 Main Street  
-    Anytown, USA
+    >e.g. "email" or "fax".
 
-1. telephone numbers by type
+1. value
 
-    >e.g. a mobile, toll-free or facsimile telephone number.
+    >e.g. a telephone number, email address, postal address, Twitter account, etc.
+
+1. note
+
+    >e.g. for grouping contact details by physical location.
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Briefly, the survey of existing specifications concludes that vCard is the only vocabulary to meet all [requirements](#use-cases-and-requirements).
+The [survey of existing specifications](/appendices/survey.html) found that [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350), with its RDF mappings, is the only vocabulary to meet all [requirements](#use-cases-and-requirements). Few specification allow for the ad hoc definition of contact details. Ultimately, only the data model – consisting of RDF, RDF Schema, and <abbr title="Simple Knowledge Organization System">SKOS</abbr> terms – was reused.
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
@@ -37,34 +46,41 @@ Briefly, the survey of existing specifications concludes that vCard is the only 
     </tr>
   </thead>
   <tbody>
-    <tr id="vcard:VCard">
-      <td><strong>Address</strong></td>
-      <td><code><a href="http://www.w3.org/TR/vcard-rdf/#vcard:VCard" title="http://www.w3.org/2006/vcard/ns#VCard">vcard:VCard</a></code></td>
-      <td>A physical location or a mail delivery point</td>
+    <tr>
+      <td><strong>ContactDetail</strong></td>
+      <td>N/A</td>
+      <td>A means of contacting an entity</td>
+    </tr>
+    <tr id="rdfs:label">
+      <td>label</td>
+      <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_label" title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></code></td>
+      <td>A human-readable label for the contact detail</td>
     </tr>
     <tr id="rdf:type">
-      <td>address type</td>
+      <td>type of medium</td>
       <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></code><a href="#note1"><sup>1</sup></a></td>
-      <td>A type of address, e.g. "Constituency office"</td>
+      <td>A type of medium, e.g. "fax" or "email"</td>
     </tr>
-    <tr id="vcard:label">
-      <td>postal address</td>
-      <td><code><a href="http://www.w3.org/TR/vcard-rdf/#vcard:label2" title="http://www.w3.org/2006/vcard/ns#label">vcard:label</a></code></td>
-      <td>A postal address</td>
+    <tr id="rdf:value">
+      <td>value</td>
+      <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_value" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">rdf:value</a></code></td>
+      <td>A value, e.g. a phone number or email address</td>
     </tr>
-    <tr id="vcard:tel">
-      <td>telephone number</td>
-      <td><code><a href="http://www.w3.org/TR/vcard-rdf/#vcard:tel2" title="http://www.w3.org/2006/vcard/ns#tel">vcard:tel</a></code><a href="#note1"><sup>1</sup></a></td>
-      <td>A telephone number</td>
+    <tr id="skos:note">
+      <td>note</td>
+      <td><code><a href="http://www.w3.org/TR/skos-reference/#notes" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">skos:note</a></code></td>
+      <td>A note, e.g. for grouping contact details by physical location</td>
     </tr>
   </tbody>
 </table>
 
-<p class="note" id="note1">1. vCard <a href="http://www.w3.org/TR/vcard-rdf/#Param">uses</a> <code>rdf:type</code> to indicate the type of address or telephone number.</p>
+<p class="note" id="note1">1. The <a href="http://www.w3.org/Submission/vcard-rdf/#Param">W3C Member Submission on Representing vCard Objects in RDF</a> and the <a href="http://www.w3.org/TR/vcard-rdf/#Code_Sets">vCard Ontology</a> use <code>rdf:type</code> to indicate the type of address or telephone number.</p>
+
+## 3.1 Relations
 
 <h1 id="serialization">4. Serialization</h1>
 
-**Differences from RDF:** All RDF properties are flattened; `address` and `type` are top-level properties matching `vcard:label` and `rdf:type`. Properties whose names match [telephone type codes](#telephone-types) are used instead of the `vcard:tel` property. Telephone number values <em class="rfc2119">should</em> be in [RFC 3966](http://tools.ietf.org/html/rfc3966) format, without the `tel:` prefix.
+**Differences from RDF:** Telephone number values <em class="rfc2119">should</em> be in [RFC 3966](http://tools.ietf.org/html/rfc3966) format, without the `tel:` prefix.
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#contact-detail-schema">JSON Schema</a></li>
@@ -80,12 +96,12 @@ Briefly, the survey of existing specifications concludes that vCard is the only 
 
 <h1 id="code-lists">5. Code lists</h1>
 
-## Telephone
+## Type of medium
 
-The following adds `tollfree` and removes `text` from [vCard 4.0](http://tools.ietf.org/html/rfc6350#section-6.4.1)'s code list:
+The following adds `tollfree` and removes `text` from [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350#section-6.4.1)'s code list. Implementations <em class="rfc2119">may</em> use values from outside this list.
 
-<table id="telephone-types">
-  <caption>Telephone types code list</caption>
+<table id="medium-types">
+  <caption>Type of medium code list</caption>
   <thead>
     <tr>
       <th>Value</th>

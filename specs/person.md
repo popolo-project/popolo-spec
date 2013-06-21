@@ -170,9 +170,7 @@ The former name and alternate name properties are serialized as a single `other_
 
 ## Gender
 
-The following is a subset of [vCard 4.0](http://tools.ietf.org/html/rfc6350#section-6.2.7)'s code list:
+The following is a subset of [vCard 4.0](http://tools.ietf.org/html/rfc6350#section-6.2.7)'s code list. Implementations <em class="rfc2119">may</em> use values from outside this list to reflect the diversity of gender identities.
 
 * `male`
 * `female`
-
-Values other than `male` and `female` may be used to reflect the diversity of gender identities.
