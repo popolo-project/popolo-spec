@@ -20,15 +20,15 @@ The data specification will define terms (classes and properties) to describe an
     <div>A collection of people with a common purpose or reason for existence that goes beyond the set of people belonging to it</div>
     <p class="note">e.g. a social, commercial or political structure</p>
   </dd>
-  <dt>Post</dt>
-  <dd>
-    <div>A position in an organization that exists independently of the person holding it</div>
-    <p class="note">e.g. Member of Parliament for Avalon</p>
-  </dd>
   <dt>Membership</dt>
   <dd>
     <div>A relationship between a person and an organization</div>
     <p class="note">e.g. member of the XYZ Party</p>
+  </dd>
+  <dt>Post</dt>
+  <dd>
+    <div>A position in an organization that exists independently of the person holding it</div>
+    <p class="note">e.g. Member of Parliament for Avalon</p>
   </dd>
   <dt>Contact Detail</dt>
   <dd>
@@ -69,12 +69,12 @@ The [subdocuments](#classes-and-properties) in the next section describe specifi
 
 <h1 id="classes-and-properties">5. Classes and properties</h1>
 
-The following subdocuments list use cases and requirements, report standard reuse, define classes and properties, describe serialization in-depth, and provide code lists:
+The data specification describes each class in a subdocument:
 
 1. [Person](/specs/person.html): [Name Component](/specs/person/name-component.html)
 1. [Organization](/specs/organization.html)
-1. [Post](/specs/post.html)
 1. [Membership](/specs/membership.html)
+1. [Post](/specs/post.html)
 1. [Contact Detail](/specs/contact-detail.html)
 
 The structure of each subdocument is:
@@ -88,6 +88,8 @@ The structure of each subdocument is:
   <dd>Defines the semantics of the class and its properties</dd>
   <dt>4. Serialization</dt>
   <dd>Defines the RDF and JSON serializations</dd>
+  <dt>5. Code lists</dt>
+  <dd>Lists any standardized nomenclatures used as property values</dd>
 </dl>
 
 The following diagram succinctly describes the relationships among the classes. All arrows are one-to-many relationships.
@@ -101,7 +103,7 @@ Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Univer
 
 <abbr title="Resource Description Framework">RDF</abbr> serializations <em class="rfc2119">must</em> respect the classes and properties defined in the [subdocuments](#classes-and-properties) in the previous section. Example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
 
-<abbr title="JavaScript Object Notation">JSON</abbr> serializations <em class="rfc2119">must</em> respect the schemas below, which are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)). The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
+<abbr title="JavaScript Object Notation">JSON</abbr> serializations <em class="rfc2119">must</em> respect the schemas below, which are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)). The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase) for terms, due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
 
 Additional serializations details are given in the [subdocuments](#classes-and-properties) in the previous section.
 
@@ -125,14 +127,14 @@ Additional serializations details are given in the [subdocuments](#classes-and-p
       <td><a href="/examples/organization.ttl">organization.ttl</a></td>
     </tr>
     <tr>
-      <td><a href="/schemas/post.json">Post</a></td>
-      <td><a href="/examples/post.json">post.json</a></td>
-      <td><a href="/examples/post.ttl">post.ttl</a></td>
-    </tr>
-    <tr>
       <td><a href="/schemas/membership.json">Membership</a></td>
       <td><a href="/examples/membership.json">membership.json</a></td>
       <td><a href="/examples/membership.ttl">membership.ttl</a></td>
+    </tr>
+    <tr>
+      <td><a href="/schemas/post.json">Post</a></td>
+      <td><a href="/examples/post.json">post.json</a></td>
+      <td><a href="/examples/post.ttl">post.ttl</a></td>
     </tr>
     <tr>
       <td><a href="/schemas/contact_detail.json">Contact Detail</a></td>
@@ -172,18 +174,18 @@ For the inverse relation, i.e. to embed a post's organization on its Post docume
 In either case, you <em class="rfc2119">must not</em> embed an entity in another unless the two are related. You <em class="rfc2119">may</em> embed to any depth, but you <em class="rfc2119">must not</em> embed recursively, e.g. embed an organization in a post in an organization.
 
 <ul class="nav nav-tabs no-js">
-  <li class="disabled"><a>Embedding Examples:</a></li>
+  <li class="disabled"><a>Embedding examples:</a></li>
   <li class="active"><a href="#embedding-person">Person</a></li>
   <li><a href="#embedding-organization">Organization</a></li>
-  <li><a href="#embedding-post">Post</a></li>
   <li><a href="#embedding-membership">Membership</a></li>
+  <li><a href="#embedding-post">Post</a></li>
 </ul>
 
 <div class="tab-content no-js">
   <div class="tab-pane active" id="embedding-person" data-url="/examples/embedding-person.json"></div>
   <div class="tab-pane" id="embedding-organization" data-url="/examples/embedding-organization.json"></div>
-  <div class="tab-pane" id="embedding-post" data-url="/examples/embedding-post.json"></div>
   <div class="tab-pane" id="embedding-membership" data-url="/examples/embedding-membership.json"></div>
+  <div class="tab-pane" id="embedding-post" data-url="/examples/embedding-post.json"></div>
 </div>
 
 ## 6.2. Subschema

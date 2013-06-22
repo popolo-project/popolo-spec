@@ -18,9 +18,10 @@ This project's goal is to author, through community consensus, international ope
 
 <div class="well well-white">
   <ul class="nav nav-tabs no-js">
-    <li class="active"><a href="#example-date">Example: Imprecise date</a></li>
-    <li><a href="#example-contact">Example: Missing contact details</a></li>
-    <li><a href="#example-sponsor">Example: Ambiguous bill sponsor</a></li>
+    <li class="disabled"><a>Examples of imprecision and uncertainty:</a>
+    <li class="active"><a href="#example-date">Imprecise date</a></li>
+    <li><a href="#example-contact">Missing contact details</a></li>
+    <li><a href="#example-sponsor">Ambiguous bill sponsor</a></li>
   </ul>
 
   <div class="tab-content">
@@ -45,8 +46,8 @@ This project's goal is to author, through community consensus, international ope
 1. [Classes and properties](/specs/#classes-and-properties)
     1. [Person](/specs/person.html): [Name Component](/specs/person/name-component.html)
     1. [Organization](/specs/organization.html)
-    1. [Post](/specs/post.html)
     1. [Membership](/specs/membership.html)
+    1. [Post](/specs/post.html)
     1. [Contact Detail](/specs/contact-detail.html)
 {% comment %}
     1. [Area](/specs/area.html)
@@ -64,7 +65,7 @@ This project's goal is to author, through community consensus, international ope
 These documents are **Working Drafts**. Their governance will roughly follow the [W3C process](http://www.w3.org/Consortium/Process/).
 
 * Join the [W3C Open Government Community Group](http://www.w3.org/community/opengov/) and [subscribe to its mailing list](http://lists.w3.org/Archives/Public/public-opengov/) to discuss the project's development
-* Visit the [GitHub repository](https://github.com/opennorth/popolo-spec/tree/gh-pages) and discuss [open issues](https://github.com/opennorth/popolo-spec/issues)
+* Visit the [GitHub repository](https://github.com/opennorth/popolo-spec/tree/gh-pages), discuss [open issues](https://github.com/opennorth/popolo-spec/issues), and create pull requests
 * [Read Open North's blog post announcing the project](http://blog.opennorth.ca/2013/02/21/update-on-opengovernment/) for more context
 
 Questions? Contact [james@opennorth.ca](mailto:james@opennorth.ca).
@@ -73,3 +74,4 @@ Questions? Contact [james@opennorth.ca](mailto:james@opennorth.ca).
 
 * [Larvae by Open Civic Data](https://github.com/opencivicdata/larvae): A Python package to create and validate civic data objects, underpinning the [Sunlight Foundation](http://sunlightfoundation.com/)'s work on government transparency at the local level.
 * [PopIt by mySociety](https://npmjs.org/package/popit-api): A Node.js package to make it simple "to start and maintain a public database of people, organisations and positions," part of mySociety's work on reusable software components.
+* [Popolo Engine by Open North](https://github.com/opennorth/popolo-engine): A Ruby on Rails engine that provides basic models, controllers and views for all classes in Popolo.
