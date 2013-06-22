@@ -26,9 +26,9 @@
 .organization-page #organization a,
 .organization-page #organization a:hover,
 .organization-page #organization a:focus,
-.person-page #person a,
-.person-page #person a:hover,
-.person-page #person a:focus,
+.person-page #person>a,
+.person-page #person>a:hover,
+.person-page #person>a:focus,
 .post-page #post a,
 .post-page #post a:hover,
 .post-page #post a:focus {
