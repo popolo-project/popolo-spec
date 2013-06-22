@@ -1,0 +1,18 @@
+{
+  "id": "abc-inc-chef",
+  "label": "Chef at Joe's Diner",
+  "organization": {
+    "id": "abc-inc",
+    "name": "ABC, Inc."
+  },
+  "memberships": [
+    {
+      "id": "700",
+      "role": "Chef",
+      "organization_id": "abc-inc",
+      "person_id": "john-q-public",
+      "start_date": "1972-01-01",
+      "end_date": "1980-03-15"
+    }
+  ]
+}

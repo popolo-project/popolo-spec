@@ -1,0 +1,32 @@
+{
+  "id": "abc-inc",
+  "name": "ABC, Inc.",
+  "memberships": [
+    {
+      "id": "593",
+      "role": "Kitchen assistant",
+      "person_id": "john-q-public",
+      "post_id": "abc-inc-kitchen-assistant",
+      "start_date": "1970-01",
+      "end_date": "1971-12-31"
+    },
+    {
+      "id": "700",
+      "role": "Chef",
+      "person_id": "john-q-public",
+      "post_id": "abc-inc-chef",
+      "start_date": "1972-01-01",
+      "end_date": "1980-03-15"
+    }
+  ],
+  "posts": [
+    {
+      "id": "abc-inc-kitchen-assistant",
+      "label": "Kitchen Assistant at Joe's Diner"
+    },
+    {
+      "id": "abc-inc-chef",
+      "label": "Chef at Joe's Diner"
+    }
+  ]
+}

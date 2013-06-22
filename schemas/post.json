@@ -23,6 +23,10 @@
       "description": "The ID of the organization in which the post is held",
       "type": ["string", "null"]
     },
+    "organization": {
+      "description": "The organization in which the post is held",
+      "$ref": "http://popoloproject.com/schemas/organization.json#"
+    },
     "contact_details": {
       "description": "Means of contacting the holder of the post",
       "type": "array",

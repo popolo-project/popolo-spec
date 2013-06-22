@@ -1,5 +1,5 @@
 {
-  "id": "27cc67093475061e3d95369d",
+  "id": "abc-inc",
   "name": "ABC, Inc.",
   "other_names": [
     {
@@ -26,7 +26,7 @@
     }
   ],
   "classification": "Corporation",
-  "parent_id": "17cc67093475061e3d95369d",
+  "parent_id": "holding-company-corp",
   "founding_date": "1950-01-01",
   "dissolution_date": "2000-01-01"
 }

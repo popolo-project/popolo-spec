@@ -1,6 +1,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-<http://example.com/addresses/67cc67093475061e3d95369d.ttl>
+<http://example.com/contact_details/example.ttl>
   a vcard:Voice;
   rdfs:label "Phone number";
   rdf:value <tel:+1-800-555-0100;ext=555>;

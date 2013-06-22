@@ -3,7 +3,7 @@
 @prefix ex: <http://example.org/> .
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-<http://example.com/organizations/27cc67093475061e3d95369d.ttl>
+<http://example.com/organizations/abc-inc.ttl>
   a org:Organization;
   skos:prefLabel "ABC, Inc."@en;
   skos:altLabel "Joe's Diner"@en;
@@ -11,5 +11,5 @@
   org:identifier "123456789"^^ex:duns;
   org:identifier "US0123456789"^^ex:isin;
   org:classification [a skos:Concept; skos:prefLabel "Corporation"@en];
-  org:subOrganizationOf <http://example.com/organizations/17cc67093475061e3d95369d.ttl>;
+  org:subOrganizationOf <http://example.com/organizations/holding-company-corp.ttl>;
   schema:foundingDate "1950-01-01"^^xsd:date .

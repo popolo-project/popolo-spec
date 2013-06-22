@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix bio: <http://purl.org/vocab/bio/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-<http://example.com/people/57cc67093475061e3d95369d.ttl>
+<http://example.com/people/john-q-public.ttl>
   a person:Person;
   foaf:name "Mr. John Q. Public Esq.";
   foaf:familyName "Public";

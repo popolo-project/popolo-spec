@@ -90,6 +90,11 @@ The structure of each subdocument is:
   <dd>Defines the RDF and JSON serializations</dd>
 </dl>
 
+The following diagram succinctly describes the relationships among the classes. All arrows are one-to-many relationships.
+
+<img src="/img/diagram.png" width="687" height="84" alt="UML diagram">
+{% comment %}http://yuml.me/edit/730bfbbb{% endcomment %}
+
 <h1 id="serialization">6. Serialization</h1>
 
 Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>1</sup>](#note1) is <em class="rfc2119">recommended</em>.
@@ -97,6 +102,8 @@ Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Univer
 <abbr title="Resource Description Framework">RDF</abbr> serializations <em class="rfc2119">must</em> respect the classes and properties defined in the [subdocuments](#classes-and-properties) in the previous section. Example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
 
 <abbr title="JavaScript Object Notation">JSON</abbr> serializations <em class="rfc2119">must</em> respect the schemas below, which are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)). The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
+
+Additional serializations details are given in the [subdocuments](#classes-and-properties) in the previous section.
 
 <table>
   <thead>
@@ -138,11 +145,51 @@ Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Univer
 <p class="note" id="note1">1. Consult the list of <a href="https://github.com/opennorth/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>. <a href="http://www.w3.org/XML/Schema.html">XML Schema</a> supports <a href="http://www.w3.org/TR/xmlschema-2/#truncatedformats">reduced dates</a> such as <a href="http://www.w3.org/TR/xmlschema-2/#gYear"><code>YYYY</code></a> and <a href="http://www.w3.org/TR/xmlschema-2/#gYearMonth"><code>YYYY-MM</code></a>.</p>
 <p class="note">Note: <a href="http://schema.org/">Schema.org</a> can be used for HTML serialization, but HTML serialization is out of scope.</p>
 
-## 6.1. Subschema
+## 6.1. Embedded JSON documents
 
-The JSON Schema above reuse the following subschema for specific properties:
+When serializing to JSON, you have two options when relating entities, which you may use simultaneously:
 
-<h3 id="identifier">6.1.1. Identifier</h3>
+1. Link organizations, people, posts and memberships with the properties:
+    * `organization_id`
+    * `person_id`
+    * `post_id`
+    * `parent_id`
+
+2. Embed an entity's relations on the entity's document with the properties:
+    * `memberships`
+    * `organization`
+    * `person`
+    * `post`
+    * `posts`
+    * `parent`
+
+The first option is straight-forward and is used in the examples in the subdocuments above.
+
+To embed an organization's posts on its Organization document, add a plural `posts` property to that document, whose value is an array of Post documents. Since the `organization_id` property on each Post subdocument is redundant with the `id` property on the Organization document, you <em class="rfc2119">may</em> remove the `organization_id` property from each subdocument.
+
+For the inverse relation, i.e. to embed a post's organization on its Post document, add a singular `organization` property to that document, whose value is the Organization document. You <em class="rfc2119">may</em> remove the `organization_id` property from the Post document, since it is redundant with the `id` property on the Organization document.
+
+In either case, you <em class="rfc2119">must not</em> embed an entity in another unless the two are related. You <em class="rfc2119">may</em> embed to any depth, but you <em class="rfc2119">must not</em> embed recursively, e.g. embed an organization in a post in an organization.
+
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#embedding-person">Person</a></li>
+  <li><a href="#embedding-organization">Organization</a></li>
+  <li><a href="#embedding-post">Post</a></li>
+  <li><a href="#embedding-membership">Membership</a></li>
+</ul>
+
+<div class="tab-content no-js">
+  <div class="tab-pane active" id="embedding-person" data-url="/examples/embedding-person.json"></div>
+  <div class="tab-pane" id="embedding-organization" data-url="/examples/embedding-organization.json"></div>
+  <div class="tab-pane" id="embedding-post" data-url="/examples/embedding-post.json"></div>
+  <div class="tab-pane" id="embedding-membership" data-url="/examples/embedding-membership.json"></div>
+</div>
+
+## 6.2. Subschema
+
+The JSON Schema above reuse the following subschema for specific properties.
+
+<h3 id="identifier">6.2.1. Identifier</h3>
 
 With respect to standard reuse, ORG, SKOS and XBRL use the word `scheme` to refer to an identifier's scheme. This class is necessary for JSON serialization, because JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF values to indicate an identifier's scheme.
 
@@ -150,7 +197,7 @@ With respect to standard reuse, ORG, SKOS and XBRL use the word `scheme` to refe
   <div class="tab-pane active" data-url="/schemas/identifier.json"></div>
 </div>
 
-<h3 id="link">6.1.2. Link</h3>
+<h3 id="link">6.2.2. Link</h3>
 
 With respect to standard reuse, `note` comes from [`skos:note`](http://www.w3.org/TR/skos-reference/#notes).
 
@@ -162,7 +209,7 @@ With respect to standard reuse, `note` comes from [`skos:note`](http://www.w3.or
   <div class="tab-pane active" data-url="/schemas/link.json"></div>
 </div>
 
-<h3 id="other-name">6.1.3 Other name</h3>
+<h3 id="other-name">6.2.3 Other name</h3>
 
 If a name object sets an `end_date` property, it represents a former name. With respect to standard reuse, the terms `start_date` and `end_date` are used in the [Participation ontology](http://vocab.org/participation/schema) and others, and `note` comes from [`skos:note`](http://www.w3.org/TR/skos-reference/#notes).
 

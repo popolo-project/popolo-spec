@@ -33,8 +33,12 @@
       "type": ["string", "null"]
     },
     "parent_id": {
-      "description": "An organization that contains this organization",
+      "description": "The ID of the organization that contains this organization",
       "type": ["string", "null"]
+    },
+    "parent": {
+      "description": "The organization that contains this organization",
+      "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
     "founding_date": {
       "description": "A date of founding",

@@ -15,17 +15,27 @@
     },
     "person_id": {
       "description": "The ID of the person who is a party to the relationship",
-      "type": "string",
-      "required": true
+      "type": ["string", "null"]
+    },
+    "person": {
+      "description": "The person who is a party to the relationship",
+      "$ref": "http://popoloproject.com/schemas/person.json#"
     },
     "organization_id": {
       "description": "The ID of the organization that is a party to the relationship",
-      "type": "string",
-      "required": true
+      "type": ["string", "null"]
+    },
+    "organization": {
+      "description": "The organization that is a party to the relationship",
+      "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
     "post_id": {
       "description": "The ID of the post held by the person in the organization through this membership",
       "type": ["string", "null"]
+    },
+    "post": {
+      "description": "The post held by the person in the organization through this membership",
+      "$ref": "http://popoloproject.com/schemas/post.json#"
     },
     "start_date": {
       "description": "The date on which the relationship began",
