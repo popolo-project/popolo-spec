@@ -33,7 +33,7 @@ The Membership class should have properties for:
 
 1. external links
 
-    >A URL to a document describing the person's membership in the organization.
+    >A URL to a document about the membership.
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
