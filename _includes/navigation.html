@@ -3,7 +3,15 @@
     <a class="brand" href="/">Popolo</a>
     <ul class="nav">
       <li id="specification"><a href="/specs/">Specification</a></li>
-      <li id="person"><a href="/specs/person.html">Person</a></li>
+      <li id="person" class="dropdown">
+        <a href="/specs/person.html" class="dropdown-toggle" data-toggle="dropdown" data-target="#" role="button" id="person-button">
+          Person
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="person-button">
+          <li><a tabindex="-1" href="/specs/person/name-component.html">Name Component</a></li>
+        </ul>
+      </li>
       <li id="organization"><a href="/specs/organization.html">Organization</a></li>
       <li id="post"><a href="/specs/post.html">Post</a></li>
       <li id="membership"><a href="/specs/membership.html">Membership</a></li>
