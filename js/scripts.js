@@ -6,7 +6,7 @@ $('.tab-content.no-js div').each(function () {
     }, 'html');
   }
 });
-$('.nav-tabs.no-js a').click(function (e) {
+$('.nav-tabs.no-js li:not(.disabled) a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
 });

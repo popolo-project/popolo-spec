@@ -159,6 +159,9 @@ em.rfc2119 {
   border: 1px solid #ddd;
   color: #333;
 }
+.nav .disabled a:hover {
+  border-color: rgba(0,0,0,0);
+}
 
 /* To avoid line-wrapping.
 .tab-pane {

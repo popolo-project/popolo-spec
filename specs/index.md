@@ -172,6 +172,7 @@ For the inverse relation, i.e. to embed a post's organization on its Post docume
 In either case, you <em class="rfc2119">must not</em> embed an entity in another unless the two are related. You <em class="rfc2119">may</em> embed to any depth, but you <em class="rfc2119">must not</em> embed recursively, e.g. embed an organization in a post in an organization.
 
 <ul class="nav nav-tabs no-js">
+  <li class="disabled"><a>Embedding Examples:</a></li>
   <li class="active"><a href="#embedding-person">Person</a></li>
   <li><a href="#embedding-organization">Organization</a></li>
   <li><a href="#embedding-post">Post</a></li>
