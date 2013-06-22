@@ -32,7 +32,7 @@
   "contact_details": [
     {
       "label": "Toll-free number",
-      "type": "tollfree",
+      "type": "voice",
       "value": "+1-800-555-0199",
       "note": "9am to 5pm weekdays"
     }

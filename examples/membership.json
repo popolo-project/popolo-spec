@@ -8,7 +8,7 @@
   "contact_details": [
     {
       "label": "Take-out and delivery",
-      "type": "tollfree",
+      "type": "voice",
       "value": "+1-800-555-0199",
       "note": "12pm to midnight"
     }
