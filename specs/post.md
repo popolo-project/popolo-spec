@@ -91,7 +91,7 @@ Briefly, the survey of existing specifications concludes that only the Organizat
   </tbody>
 </table>
 
-<p class="note" id="note1">1. ORG defines the inverse properties <code>org:hasSubOrganization</code>, <code>org:holds</code>, <code>org:hasPost</code> and <code>org:hasMembership</code>.</p>
+<p class="note" id="note1">1. ORG defines the inverse properties <code>org:holds</code> and <code>org:hasPost</code>.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 
