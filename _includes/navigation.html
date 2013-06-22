@@ -2,7 +2,21 @@
   <div class="navbar-inner">
     <a class="brand" href="/">Popolo</a>
     <ul class="nav">
-      <li id="specification"><a href="/specs/">Specification</a></li>
+      <li id="specification" class="dropdown">
+        <a href="/specs/" class="dropdown-toggle" data-toggle="dropdown" data-target="#" role="button" id="person-button">
+          Specification
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="person-button">
+          <li><a tabindex="-1" href="/specs/#scope">Scope</a></li>
+          <li><a tabindex="-1" href="/specs/#conformance">Conformance</a></li>
+          <li><a tabindex="-1" href="/specs/#use-cases-and-requirements">Use cases &amp; requirements</a></li>
+          <li><a tabindex="-1" href="/specs/#standard-reuse">Standard reuse</a></li>
+          <li><a tabindex="-1" href="/specs/#classes-and-properties">Classes and properties</a></li>
+          <li><a tabindex="-1" href="/specs/#serialization">Serialization</a></li>
+          <li><a tabindex="-1" href="/specs/#history">Change history</a></li>
+        </ul>
+      </li>
       <li id="person" class="dropdown">
         <a href="/specs/person.html" class="dropdown-toggle" data-toggle="dropdown" data-target="#" role="button" id="person-button">
           Person
@@ -17,6 +31,17 @@
       <li id="membership"><a href="/specs/membership.html">Membership</a></li>
       <li id="post"><a href="/specs/post.html">Post</a></li>
       <li id="contact-detail"><a href="/specs/contact-detail.html">Contact Detail</a></li>
+      <li id="appendices" class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" id="appendices-button">
+          Appendices
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="appendices-button">
+          <li><a tabindex="-1" href="/appendices/examples.html">Examples JSON documents</a></li>
+          <li><a tabindex="-1" href="/appendices/data-patterns.html">JSON data design patterns</a></li>
+          <li><a tabindex="-1" href="/appendices/components.html">Best practices for software components</a></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </div>

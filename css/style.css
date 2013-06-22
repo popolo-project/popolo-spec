@@ -2,9 +2,9 @@
   padding-top: 1em;
 }
 
-.specification-page #specification a,
-.specification-page #specification a:hover,
-.specification-page #specification a:focus,
+.specification-page #specification>a,
+.specification-page #specification>a:hover,
+.specification-page #specification>a:focus,
 .contact-detail-page #contact-detail a,
 .contact-detail-page #contact-detail a:hover,
 .contact-detail-page #contact-detail a:focus,
@@ -31,7 +31,16 @@
 .person-page #person>a:focus,
 .post-page #post a,
 .post-page #post a:hover,
-.post-page #post a:focus {
+.post-page #post a:focus,
+.examples-page #appendices>a,
+.examples-page #appendices>a:hover,
+.examples-page #appendices>a:focus,
+.data-patterns-page #appendices>a,
+.data-patterns-page #appendices>a:hover,
+.data-patterns-page #appendices>a:focus,
+.components-page #appendices>a,
+.components-page #appendices>a:hover,
+.components-page #appendices>a:focus {
   color: #555555;
   text-decoration: none;
   background-color: #e5e5e5;
