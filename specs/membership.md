@@ -4,6 +4,10 @@ title: Membership | The Popolo Project
 id: membership
 ---
 
+[No one size fits all](http://www.w3.org/TR/vocab-org/#reporting_structure) in representing the relationship between people and organizations.
+
+In some cases, a simple binary relation is enough, e.g. a `memberOf` property linking an organization and a person. In other cases, a complex [n-ary relation](http://www.w3.org/TR/swbp-n-aryRelations/) is required, e.g. to describe the duration of the person's membership; in such cases, we create a new class to represent the relation, e.g. a `Membership` class, and attach properties to it, like duration, to describe the relationship between the person and the organization.
+
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
 The Membership class should have properties for:
@@ -12,13 +16,17 @@ The Membership class should have properties for:
 
     >Member
 
-1. the person who is a party to the relationship
+1. the [person](/specs/person.html) who is a party to the relationship
 
     >John Doe
 
-1. the organization that is a party to the relationship
+1. the [organization](/specs/organization.html) that is a party to the relationship
 
     >XYZ Party
+
+1. The [post](/specs/post.html) held by the person in the organization
+
+    >Chairman of the XYZ Party
 
 1. the time interval over which the relationship exists
 
@@ -37,9 +45,11 @@ The Membership class should have properties for:
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Briefly, the survey of existing specifications concludes that only the Organization ontology offers multiple ways to describe the relation between people and organizations.
+Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that only the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a rich membership model for describing the relation between people and organizations.
 
-**Differences:** According to the Organization ontology, either a person or an organization can be a member of an organization; in this data specification, only a person can be a member of an organization.
+## 2.1. Range restrictions
+
+According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), either a person or an organization can be a member of an organization; in this data specification, only a person can be a member of an organization.
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
@@ -73,6 +83,11 @@ Briefly, the survey of existing specifications concludes that only the Organizat
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:organization" title="http://www.w3.org/ns/org#organization">org:organization</a></code><a href="#note1"><sup>1</sup></a></td>
       <td>The organization that is a party to the relationship</td>
     </tr>
+    <tr>
+      <td>post</td>
+      <td><em>none yet</em></td>
+      <td>The post held by the person in the organization</td>
+    </tr>
     <tr id="org:memberDuring">
       <td>time interval</td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:memberDuring" title="http://www.w3.org/ns/org#memberDuring">org:memberDuring</a></code></td>
@@ -95,11 +110,13 @@ Briefly, the survey of existing specifications concludes that only the Organizat
 
 <h1 id="serialization">4. Serialization</h1>
 
+A membership relation cannot exist without both a person and an organization. All memberships <em class="rfc2119">must</em> therefore assign values to either `person_id` or `person` and to either `organization_id` or `organization`.
+
 **Differences from RDF:**
 
 * The value of the `role` property is a string, instead of a `skos:Concept`.
-* The terms `person_id` is used instead of `member` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
-* The terms `organization_id` is used instead of `organization` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
+* The term `person_id` is used instead of `member` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
+* The term `organization_id` is used instead of `organization` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
 * Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, a simple `start_date` and `end_date`[<sup>2</sup>](#note2) pair is used instead of `memberDuring`, as [proposed](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 

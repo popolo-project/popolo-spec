@@ -1,10 +1,11 @@
 {
   "id": "593",
-  "role": "Member",
+  "role": "Kitchen assistant",
   "person_id": "john-q-public",
   "organization_id": "abc-inc",
+  "post_id": "abc-inc-kitchen-assistant",
   "start_date": "1970-01",
-  "end_date": "1972-01-01",
+  "end_date": "1971-12-31",
   "contact_details": [
     {
       "label": "Take-out and delivery",
