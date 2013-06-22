@@ -22,6 +22,10 @@ The Person class should have properties for:
 
     >To find a person by a pseudonym or nickname, e.g. "Mark Twain" for Samuel Clemens.
 
+1. identifiers
+
+    >Eric Cantor has the THOMAS identifier "01674".
+
 1. preferred email address
 
     >To contact representatives via email.
@@ -71,7 +75,7 @@ Briefly, the survey of existing specifications concludes that:
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
-Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alternate names, it usually represents abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames. vCard 4.0 can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred. The Person Core Vocabulary uses `dcterms:alternative`. No standard has a property for former names, however. This data specification may therefore propose a new term for both alternate and former names. The RDF definition is not yet available, however.
+With respect to the choice of terms, the Person Core Vocabulary uses `dcterms:alternative` for alternate names; vCard 4.0 instead can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred. `foaf:nick` usually represents abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames, and is therefore used for identifiers.
 
 <table>
   <caption>Definitions and mappings of classes and properties</caption>
@@ -103,6 +107,11 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
       <td><em>none yet</em></td>
       <td>A former name, such as a maiden name</td>
     </tr>
+    <tr id="foaf:nick">
+      <td>identifier</td>
+      <td><code><a href="http://xmlns.com/foaf/spec/#term_nick" title="http://xmlns.com/foaf/0.1/nick">foaf:nick</a></code></td>
+      <td>An issued identifier, e.g. a Library of Congress Name Authority File number</td>
+    </tr>
     <tr id="schema:email">
       <td>email address<a href="#note1"><sup>1</sup></a></td>
       <td><code><a href="http://schema.org/Person" title="http://schema.org/email">schema:email</a></code><a href="#note2"><sup>2</sup></a></td>
@@ -110,7 +119,7 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
     </tr>
     <tr id="foaf:gender">
       <td>gender</td>
-      <td><code><a href="http://xmlns.com/foaf/0.1/gender">foaf:gender</a></code></td>
+      <td><code><a href="http://xmlns.com/foaf/spec/#term_gender" title="http://xmlns.com/foaf/0.1/gender">foaf:gender</a></code></td>
       <td>A gender</td>
     </tr>
     <tr id="schema:birthDate">
@@ -161,6 +170,7 @@ Although [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick) can represent alte
 **Differences from RDF:**
 
 * The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of [name objects](/specs/#other-name).
+* The identifier property is serialized as `identifiers`, whose value is an array of [identifier objects](/specs/#identifier).
 * The term `summary`[<sup>5</sup>](#note5) is used instead of `olb`, because abbreviations are avoided.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 

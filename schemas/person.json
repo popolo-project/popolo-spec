@@ -21,6 +21,13 @@
         "$ref": "http://popoloproject.com/schemas/other_name.json#"
       }
     },
+    "identifiers": {
+      "description": "Issued identifiers",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/identifier.json#"
+      }
+    },
     "family_name": {
       "description": "One or more family names",
       "type": ["string", "null"]
@@ -86,13 +93,6 @@
       "type": "array",
       "items": {
         "$ref": "http://popoloproject.com/schemas/contact_detail.json#"
-      }
-    },
-    "identifiers": {
-      "description": "Issued identifiers",
-      "type": "array",
-      "items": {
-        "$ref": "http://popoloproject.com/schemas/identifier.json#"
       }
     },
     "links": {
