@@ -1,9 +1,8 @@
 {
   "id": "abc-inc-chef",
   "label": "Chef at Joe's Diner",
-  "person_id": "john-q-public",
-  "organization_id": "abc-inc",
   "role": "Chef",
+  "organization_id": "abc-inc",
   "contact_details": [
     {
       "label": "Take-out and delivery",
