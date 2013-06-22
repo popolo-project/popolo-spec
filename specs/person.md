@@ -14,33 +14,33 @@ The Person class should have properties for:
 
     >Mr. John Q. Public, Esq.
 
-1. former names
-
-    >If a councillor changes name, earlier council transcripts should continue to use the former name.
-
 1. alternate names
 
     >To find a person by a pseudonym or nickname, e.g. "Mark Twain" for Samuel Clemens.
 
+1. former names
+
+    >If a councillor changes name, earlier council transcripts should continue to use the former name.
+
 1. identifiers
 
-    >Eric Cantor has the THOMAS identifier "01674".
+    >Eric Cantor has the THOMAS identifier 01674.
 
 1. preferred email address
 
-    >To contact representatives via email.
+    >To contact a representative via email.
 
 1. gender
 
     >To determine personal pronouns, e.g. "John Doe will be at <u>his</u> constituency office next week."
 
-1. date of death
-
-    >To determine whether a person is alive or dead, e.g. in order to disable the deceased's contact form.
-
 1. date of birth
 
     >To provide biographical detail, or to report a person's age.
+
+1. date of death
+
+    >To determine whether a person is alive or dead, e.g. in order to disable the deceased's contact form.
 
 1. [head shot](http://en.wikipedia.org/wiki/Head_shot)
 
@@ -58,24 +58,28 @@ The Person class should have properties for:
 
     >1 Main Street  
     Anytown, USA  
-    555-555-5555  
+    555-555-0100  
     john@example.com
 
 1. external links
 
-    >A representative's Twitter account, Wikipedia page, or another source of information.
+    >A representative's Wikipedia page or official website.
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Briefly, the survey of existing specifications concludes that:
+Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that:
 
-* No vocabulary has a property for former names, except for `person:birthName`.
-* No vocabulary describes biographies without importing the BIO vocabulary, except for `facebook:bio`.
-* Only `person:Person` fits [the data specification's definition of a person](/specs/#scope).
+* Only `person:Person` fits the data specification's [definition of a person](/specs/#scope).
+* `person:birthName` and `PersonMaidenName` are the only properties for former names.
+* Only `facebook:bio` describes biographies without importing the BIO vocabulary.
+
+With respect to the choice of terms:
+
+* Many specifications use the same terms, including [<abbr title="Friend of a Friend">FOAF</abbr>](http://xmlns.com/foaf/spec/), [Schema.org](http://schema.org/Person) and [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350#section-6.2.2). FOAF and Schema.org terms are reused, given their breadth of adoption.
+* The [Person Core Vocabulary](http://philarcher.org/isa/person-v1.00.html#dcterms:alternative) uses `dcterms:alternative` for alternate names; vCard 4.0 instead can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred.
+* `foaf:nick` is frequently used for abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames, and is therefore used for issued identifiers.
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
-
-With respect to the choice of terms, the Person Core Vocabulary uses `dcterms:alternative` for alternate names; vCard 4.0 instead can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred. `foaf:nick` usually represents abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames, and is therefore used for identifiers.
 
 <table>
   <caption>Definitions and mappings of classes and properties</caption>
@@ -160,7 +164,7 @@ With respect to the choice of terms, the Person Core Vocabulary uses `dcterms:al
   </tbody>
 </table>
 
-<p class="note" id="note1">1. For secondary email addresses, see the <a href="/specs/contact-detail.html">ContactDetail</a> class.</p>
+<p class="note" id="note1">1. Add additional email addresses as contact details, using the <a href="/specs/contact-detail.html">ContactDetail</a> class.</p>
 <p class="note" id="note2">2. <code>schema:email</code> is used instead of <code>foaf:mbox</code>, because <code>email</code> is a more familiar term than <code>mbox</code>.</p>
 <p class="note" id="note3">3. <code>schema:birthDate</code> is used instead of <code>foaf:birthday</code> to match <code>schema:deathDate</code>, for which FOAF has no property.</p>
 <p class="note" id="note4">4. <code>schema:image</code> is used instead of <code>foaf:img</code>, because abbreviations like <code>img</code> are avoided.</p>

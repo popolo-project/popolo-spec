@@ -12,13 +12,13 @@ The Organization class should have properties for:
 
     >Acme Corporation
 
-1. former names
-
-    >In 2003, Philip Morris Companies Inc. changed its name to Altria Group, Inc.
-
 1. alternate names
 
     >The Department of Natural Resources operates under the [FIP](http://en.wikipedia.org/wiki/Federal_Identity_Program) title Natural Resources Canada (NRCan).
+
+1. former names
+
+    >In 2003, Philip Morris Companies Inc. changed its name to Altria Group, Inc.
 
 1. identifiers
 
@@ -53,15 +53,18 @@ The Organization class should have properties for:
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Briefly, the survey of existing specifications concludes that:
+Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that:
 
-* No vocabulary has a property for former dates.
-* No vocabulary has a property for dissolution dates, except for `vcard:deathDate`.
-* The Organization ontology is the only vocabulary to meet all other [requirements](#use-cases-and-requirements).
+* No vocabulary has a property for former names.
+* `schema:foundingDate` and `OrganizationEstablishmentDate` are the only properties for founding dates.
+* `vcard:deathDate` and `OrganizationTerminationDate` are the only properties for dissolution dates.
+* The [Organization ontology](http://www.w3.org/TR/vocab-org/) is the only vocabulary to meet all other [requirements](#use-cases-and-requirements).
 
 This data specification is a [profile of the W3C organization ontology](http://www.w3.org/TR/vocab-org/#conformance).
 
-**Differences:** Unlike the Organization ontology, an organization may have only one classification in this data specification; implementations must choose a unique classification scheme.
+## 2.1. Cardinality restrictions
+
+Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organization may have only one classification in this data specification; implementations must choose a unique classification scheme.
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
@@ -108,7 +111,7 @@ This data specification is a [profile of the W3C organization ontology](http://w
     <tr id="org:subOrganizationOf">
       <td>parent organization</td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:subOrganizationOf" title="http://www.w3.org/ns/org#subOrganizationOf">org:subOrganizationOf</a></code><a href="#note2"><sup>2</sup></a></td>
-      <td>An organization that contains this organization</td>
+      <td>The organization that contains this organization</td>
     </tr>
     <tr id="schema:foundingDate">
       <td>date of founding</td>
@@ -152,7 +155,7 @@ In general, subclasses should only be used if the benefits outweigh the complexi
 * The terms `name` is used instead of `prefLabel`, to be consistent with the [Person](/specs/person.html) class.
 * The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of [name objects](/specs/#other-name).
 * The identifier property is serialized as `identifiers`, whose value is an array of [identifier objects](/specs/#identifier).
-* The term `parent_id`[<sup>4</sup>](#note4) is used instead of `subOrganizationOf`.
+* The term `parent_id`[<sup>4</sup>](#note4) is used instead of `subOrganizationOf`, due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
 * A new `dissolution_date` term is used for the date of dissolution, for which there is no RDF term.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 

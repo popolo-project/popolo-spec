@@ -19,12 +19,6 @@
       "scheme": "SIN"
     }
   ],
-  "family_name": "Public",
-  "given_name": "John",
-  "additional_name": "Quinlan",
-  "honorific_prefix": "Mr.",
-  "honorific_suffix": "Esq.",
-  "sort_name": "Public, John Quinlan Esq.",
   "email": "jqpublic@xyz.example.com",
   "gender": "male",
   "birth_date": "1920-01",
