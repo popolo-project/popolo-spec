@@ -28,5 +28,19 @@
   "classification": "Corporation",
   "parent_id": "holding-company-corp",
   "founding_date": "1950-01-01",
-  "dissolution_date": "2000-01-01"
+  "dissolution_date": "2000-01-01",
+  "contact_details": [
+    {
+      "label": "Toll-free number",
+      "type": "tollfree",
+      "value": "+1-800-555-0199",
+      "note": "9am to 5pm weekdays"
+    }
+  ],
+  "links": [
+    {
+      "url": "http://en.wikipedia.org/wiki/Joe's_Diner_(placeholder_name)",
+      "note": "Wikipedia page"
+    }
+  ]
 }

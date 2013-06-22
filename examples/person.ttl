@@ -1,12 +1,15 @@
 @prefix person: <http://www.w3.org/ns/person#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ex: <http://example.org/> .
 @prefix schema: <http://schema.org/> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix bio: <http://purl.org/vocab/bio/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 <http://example.com/people/john-q-public.ttl>
   a person:Person;
   foaf:name "Mr. John Q. Public Esq.";
+  foaf:nick "046454286"^^ex:sin;
   foaf:familyName "Public";
   foaf:givenName "John";
   schema:additionalName "Quinlan";
@@ -20,5 +23,4 @@
   schema:image <http://www.example.com/pub/photos/jqpublic.gif>;
   bio:olb "A hypothetical member of society deemed a 'common man'";
   bio:biography "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...";
-  rdfs:seeAlso <http://twitter.com/ev>;
   rdfs:seeAlso <http://en.wikipedia.org/wiki/John_Q._Public> .

@@ -1,12 +1,6 @@
 {
   "id": "john-q-public",
   "name": "Mr. John Q. Public, Esq.",
-  "family_name": "Public",
-  "given_name": "John",
-  "additional_name": "Quinlan",
-  "honorific_prefix": "Mr.",
-  "honorific_suffix": "Esq.",
-  "sort_name": "Public, John Quinlan Esq.",
   "other_names": [
     {
       "name": "Mr. Ziggy Q. Public, Esq.",
@@ -19,6 +13,18 @@
       "note": "LARP character name"
     }
   ],
+  "identifiers": [
+    {
+      "identifier": "046454286",
+      "scheme": "SIN"
+    }
+  ],
+  "family_name": "Public",
+  "given_name": "John",
+  "additional_name": "Quinlan",
+  "honorific_prefix": "Mr.",
+  "honorific_suffix": "Esq.",
+  "sort_name": "Public, John Quinlan Esq.",
   "email": "jqpublic@xyz.example.com",
   "gender": "male",
   "birth_date": "1920-01",
@@ -26,11 +32,15 @@
   "image": "http://example.com/john.jpg",
   "summary": "A hypothetical member of society deemed a 'common man'",
   "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
-  "links": [
+  "contact_details": [
     {
-      "url": "http://twitter.com/ev",
-      "note": "Twitter account"
-    },
+      "label": "Mobile number",
+      "type": "cell",
+      "value": "+1-555-555-0100",
+      "note": "Free evenings and weekends"
+    }
+  ],
+  "links": [
     {
       "url": "http://en.wikipedia.org/wiki/John_Q._Public",
       "note": "Wikipedia page"
