@@ -3,5 +3,5 @@
 <http://example.com/contact_details/example.ttl>
   a vcard:Voice;
   rdfs:label "Phone number";
-  rdf:value <tel:+1-800-555-0100;ext=555>;
+  rdf:value <tel:+1-555-555-0199;ext=555>;
   skos:note "Capitol Hill"@en .
