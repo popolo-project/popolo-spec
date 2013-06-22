@@ -114,3 +114,7 @@ Briefly, the survey of existing specifications concludes that only the Organizat
   <div class="tab-pane active" id="post-json" data-url="/examples/post.json"></div>
   <div class="tab-pane" id="post-rdf" data-url="/examples/post.ttl"></div>
 </div>
+
+<h1 id="code-lists">5. Code lists</h1>
+
+None.
