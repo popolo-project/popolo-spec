@@ -44,7 +44,7 @@ The Organization class should have properties for:
 
     >1 Main Street  
     Anytown, USA  
-    555-555-5555  
+    555-555-0100  
     info@example.com
 
 1. external links

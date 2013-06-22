@@ -28,7 +28,7 @@ The Post class should have properties for:
 
     >1 Main Street  
     Anytown, USA  
-    555-555-5555  
+    555-555-0100  
     treasurer@example.com
 
 1. external links
