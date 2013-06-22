@@ -5,4 +5,5 @@
   skos:prefLabel "Chef at Joe's Diner"@en;
   org:role [a skos:Concept; skos:prefLabel "Chef"@en];
   org:heldBy <http://example.com/people/john-q-public.ttl>;
-  org:postIn <http://example.com/organizations/abc-inc.ttl> .
+  org:postIn <http://example.com/organizations/abc-inc.ttl>;
+  rdfs:seeAlso <http://example.com/abc-inc/staff> .

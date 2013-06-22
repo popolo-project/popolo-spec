@@ -4,5 +4,19 @@
   "person_id": "john-q-public",
   "organization_id": "abc-inc",
   "start_date": "1970-01",
-  "end_date": "1972-01-01"
+  "end_date": "1972-01-01",
+  "contact_details": [
+    {
+      "label": "Take-out and delivery",
+      "type": "tollfree",
+      "value": "+1-800-555-0199",
+      "note": "12pm to midnight"
+    }
+  ],
+  "links": [
+    {
+      "url": "http://example.com/abc-inc/staff",
+      "note": "ABC, Inc. staff page"
+    }
+  ]
 }
