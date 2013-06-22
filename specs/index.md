@@ -194,7 +194,7 @@ The JSON Schema above reuse the following subschema for specific properties.
 
 <h3 id="identifier">6.2.1. Identifier</h3>
 
-With respect to standard reuse, ORG, SKOS and XBRL use the word `scheme` to refer to an identifier's scheme. This class is necessary for JSON serialization, because JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) like RDF values to indicate an identifier's scheme.
+With respect to standard reuse, the [Organization ontology](http://www.w3.org/TR/vocab-org/), [<abbr title="Simple Knowledge Organization System">SKOS</abbr>](http://www.w3.org/TR/skos-reference/) and [<abbr title="eXtensible Business Reporting Language">XBRL</abbr>](http://en.wikipedia.org/wiki/XBRL) use the word `scheme` to refer to an identifier's scheme. The Identifier class is necessary for JSON serialization, because, unlike RDF values, JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) to indicate an identifier's scheme.
 
 <div class="tab-content no-js">
   <div class="tab-pane active" data-url="/schemas/identifier.json"></div>

@@ -8,6 +8,11 @@ id: membership
 
 In some cases, a simple binary relation is enough, e.g. a `memberOf` property linking an organization and a person. In other cases, a complex [n-ary relation](http://www.w3.org/TR/swbp-n-aryRelations/) is required, e.g. to describe the duration of the person's membership; in such cases, we create a new class to represent the relation, e.g. a `Membership` class, and attach properties to it, like duration, to describe the relationship between the person and the organization.
 
+According to this data specification, a [person](/specs/person.html) is a member of an [organization](/specs/organization.html), and may optionally hold a [post](/specs/post.html) in that organization through their membership, as illustrated by the class diagram below.
+
+<img src="/img/diagram.png" width="687" height="84" alt="UML diagram">
+{% comment %}http://yuml.me/edit/730bfbbb{% endcomment %}
+
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
 The Membership class should have properties for:
@@ -106,7 +111,7 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
   </tbody>
 </table>
 
-<p class="note" id="note1">1. ORG defines the inverse property <code>org:hasMembership</code>.</p>
+<p class="note" id="note1">1. The Organization ontology defines the inverse property <code>org:hasMembership</code>.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 
