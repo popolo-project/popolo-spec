@@ -225,3 +225,5 @@ If a name object sets an `end_date` property, it represents a former name. With 
 * 2013-02-25: Add the conformance section, relax requirements with respect to MongoDB collection names.
 * 2013-02-16: Add a label property to the Post class, change the cardinality of the classification property on the Organization class, add NIEM and ORG to the survey, add an inventory of the terms in the survey.
 * 2013-02-01: First public working draft.
+
+[Browse all Git commits on GitHub](https://github.com/opennorth/popolo-spec/commits/gh-pages)
