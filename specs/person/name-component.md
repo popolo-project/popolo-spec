@@ -4,6 +4,8 @@ title: Person Name Components | The Popolo Project
 id: name-component
 ---
 
+This document adds additional properties to the [Person](/specs/person.html) class.
+
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
 The Person class should have properties for:
@@ -18,12 +20,20 @@ The Person class should have properties for:
 
 <h1 id="standard-reuse">2. Standard Reuse</h1>
 
-**Differences:** In vCard, each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including FOAF, do not restrict the cardinality of these properties either. Some, like OpenSocial, do. This data specification requires that each component of a name can include one text value only, which itself may contain multiple names.
+Many specifications use the same terms for name components, including [<abbr title="Friend of a Friend">FOAF</abbr>](http://xmlns.com/foaf/spec/), [Schema.org](http://schema.org/Person), [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350#section-6.2.2) and [OpenSocial](http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#rfc.section.3.11). FOAF and Schema.org terms are reused, given their breadth of adoption.
 
-Additional context:
+The [survey of existing specifications](/appendices/survey.html) found few terms for sort keys; `sortName` was chosen, which is under consideration for FOAF. The [Person Core Vocabulary](http://philarcher.org/isa/person-v1.00.html) adds a [`patronymicName`](http://philarcher.org/isa/person-v1.00.html#person:patronymicName) component:
+
+>Patronymic names are important in some countries. Iceland does not have a concept of family name in the way that many other European countries do. In Bulgaria and Russia, patronymic names are in every day usage.
+
+Additional resources:
 
 * The [<abbr title="World Wide Web Consortium">W3C</abbr>](http://www.w3.org/International/questions/qa-personal-names.en) and [<abbr title="Dublin Core Metadata Initiative">DCMI</abbr>](http://dublincore.org/documents/name-representation/) provide guidance on representing people's names.
-* The [<abbr title="Organization for the Advancement of Structured Information Standards">OASIS</abbr>](https://www.oasis-open.org/) [<abbr title="Customer Information Quality">CIQ</abbr> specifications](http://docs.oasis-open.org/ciq/v3.0/prd03/specs/ciq-specs-v3-prd3.html) allow [user-defined name components](http://docs.oasis-open.org/ciq/v3.0/prd03/specs/ciq-specs-v3-prd3.html#_Toc193533217) to satisfy requirements.
+* The [<abbr title="Organization for the Advancement of Structured Information Standards">OASIS</abbr>](https://www.oasis-open.org/) [<abbr title="Customer Information Quality">CIQ</abbr> specifications](http://docs.oasis-open.org/ciq/v3.0/prd03/specs/ciq-specs-v3-prd3.html) allow [user-defined name components](http://docs.oasis-open.org/ciq/v3.0/prd03/specs/ciq-specs-v3-prd3.html#_Toc193533217) to maximize flexibility.
+
+## 2.1. Cardinality restrictions
+
+In [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350), each component of a name – family name, given name, additional name, honorific prefix and honorific suffix – can include multiple text values. Other vocabularies, including [<abbr title="Friend of a Friend">FOAF</abbr>](http://xmlns.com/foaf/spec/), do not restrict the cardinality of these properties either. Some, like [OpenSocial](http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#rfc.section.3.11), do. This data specification requires that each component of a name can include one text value only, which itself may contain multiple names.
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
@@ -82,14 +92,14 @@ Additional context:
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#person-schema">JSON Schema</a></li>
-  <li class="active"><a href="#person-json">JSON</a></li>
-  <li><a href="#person-rdf">RDF</a></li>
+  <li class="active"><a href="#name-component-json">JSON</a></li>
+  <li><a href="#name-component-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content no-js">
   <div class="tab-pane" id="person-schema" data-url="/schemas/person.json"></div>
-  <div class="tab-pane active" id="person-json" data-url="/examples/person.json"></div>
-  <div class="tab-pane" id="person-rdf" data-url="/examples/person.ttl"></div>
+  <div class="tab-pane active" id="name-component-json" data-url="/examples/name-component.json"></div>
+  <div class="tab-pane" id="name-component-rdf" data-url="/examples/name-component.ttl"></div>
 </div>
 
 <h1 id="code-lists">5. Code lists</h1>

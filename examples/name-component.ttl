@@ -1,0 +1,13 @@
+@prefix person: <http://www.w3.org/ns/person#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+<http://example.com/people/john-q-public.ttl>
+  a person:Person;
+  foaf:name "Mr. John Q. Public Esq.";
+  foaf:familyName "Public";
+  foaf:givenName "John";
+  schema:additionalName "Quinlan";
+  schema:honorificPrefix "Mr.";
+  schema:honorificSuffix "Esq.";
+  con:sortName "Public, John Quinlan Esq." .

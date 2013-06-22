@@ -20,11 +20,11 @@ The ContactDetail class should have properties for:
 
 1. type of medium
 
-    >e.g. "email" or "fax".
+    >e.g. "address" or "cell".
 
 1. value
 
-    >e.g. a telephone number, email address, postal address, Twitter account, etc.
+    >e.g. a postal address, mobile number, email address, Twitter account, etc.
 
 1. note
 
@@ -96,10 +96,10 @@ The [survey of existing specifications](/appendices/survey.html) found that [RFC
 
 ## Type of medium
 
-The following adds `tollfree` and removes `text` from [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350#section-6.4.1)'s code list. Implementations <em class="rfc2119">may</em> use values from outside this list.
+Implementations <em class="rfc2119">may</em> use values from outside the following lists.
 
 <table id="medium-types">
-  <caption>Type of medium code list</caption>
+  <caption>Types of medium code list</caption>
   <thead>
     <tr>
       <th>Value</th>
@@ -107,6 +107,36 @@ The following adds `tollfree` and removes `text` from [RFC 6350 (vCard 4.0)](htt
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><code>address</code></td>
+      <td>A postal address</td>
+    </tr>
+    <tr>
+      <td><code>email</code></td>
+      <td>An email address</td>
+    </tr>
+    <tr>
+      <td><code>url</code></td>
+      <td>A URL to a contact form, Twitter profile, etc.</td>
+    </tr>
+  </tbody>
+</table>
+
+The following is a copy of [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350#section-6.4.1)'s code list.
+
+<table id="telephone-types">
+  <caption>Types of medium (telephone types) code list</caption>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>text</code></td>
+      <td>A telephone number primarily supporting text messages (SMS)</td>
+    </tr>
     <tr>
       <td><code>voice</code></td>
       <td>A voice telephone number</td>
@@ -118,10 +148,6 @@ The following adds `tollfree` and removes `text` from [RFC 6350 (vCard 4.0)](htt
     <tr>
       <td><code>cell</code></td>
       <td>A mobile telephone number</td>
-    </tr>
-    <tr>
-      <td><code>tollfree</code></td>
-      <td>A toll-free telephone number</td>
     </tr>
     <tr>
       <td><code>video</code></td>
