@@ -19,7 +19,6 @@ It is impractical to define every possible property for a given class in order t
 
 ```json
 {
-  "@type": "Person",
   "name": "Mr. John Q. Public, Esq.",
   "hair_colour": "brown"
 }
@@ -33,7 +32,6 @@ To avoid misinterpretation, some implementations flag additional properties that
 
     ```json
     {
-      "@type": "Person",
       "name": "Mr. John Q. Public, Esq.",
       "+hair_colour": "brown"
     }
@@ -43,7 +41,6 @@ To avoid misinterpretation, some implementations flag additional properties that
 
     ```json
     {
-      "@type": "Person",
       "name": "Mr. John Q. Public, Esq.",
       "extra": {
         "+hair_colour": "brown"
