@@ -63,7 +63,7 @@ The [subdocuments](#classes-and-properties) in a later section add more requirem
 
 <h1 id="standard-reuse">4. Standard reuse</h1>
 
-The data specification reuses terms from the existing specifications below:
+Following a [survey of existing specifications](/appendices/survey.html), the data specification reuses terms from:
 
 <table>
   <caption>Suitable existing standards for people and organizations</caption>
@@ -127,6 +127,8 @@ The data specification reuses terms from the existing specifications below:
     </tr>
   </tbody>
 </table>
+
+The inventory of terms from the surveyed specifications is captured in an [appendix](/appendices/terms.html).
 
 The [subdocuments](#classes-and-properties) in the next section describe specific standard reuse. Some impose cardinality and range restrictions on the properties of the above specifications, in order to allow for a simpler JSON serialization.
 
