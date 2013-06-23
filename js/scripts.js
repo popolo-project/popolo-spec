@@ -1,8 +1,19 @@
 $('.tab-content.no-js div').each(function () {
-  var $this = $(this);
-  if ($this.data('url')) {
-    $.get($this.data('url'), function (data) {
-      $this.html('<a class="download-link" href="' + $this.data('url') + '">Download</a><pre>' + $('<div/>').text(data).html() + '</pre>');
+  var $this = $(this),
+      url = $this.data('url');
+  if (url) {
+    $.get(url, function (data) {
+      var json = url.indexOf('.json', url.length - 5) !== -1,
+          html = '<a class="download-link" href="' + url + '">Download</a><pre>';
+      if (json) {
+        html += '<code class="language-json">';
+      }
+      html += $('<div/>').text(data).html();
+      if (json) {
+        html += '</code>';
+      }
+      $this.html(html + '</pre>');
+      hljs.highlightBlock($this.find('code').get(0));
     }, 'html');
   }
 });
