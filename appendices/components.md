@@ -5,7 +5,11 @@ id: components
 ---
 {% include navigation.html %}
 
-# Best Practices for Software Components
+<ul class="breadcrumb">
+  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
+  <li>Appendices <span class="divider">/</span></li>
+  <li class="active">Best practices for software components</li>
+</ul>
 
 This document describes best practices for software components implementing the Popolo specification.
 

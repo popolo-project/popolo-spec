@@ -5,7 +5,11 @@ id: api-patterns
 ---
 {% include navigation.html %}
 
-# API Design Patterns
+<ul class="breadcrumb">
+  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
+  <li>Appendices <span class="divider">/</span></li>
+  <li class="active">API design patterns</li>
+</ul>
 
 This document collects emerging design patterns for APIs for accessing legislative information.
 

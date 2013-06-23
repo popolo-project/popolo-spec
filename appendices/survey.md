@@ -6,8 +6,9 @@ id: data
 {% include navigation.html %}
 
 <ul class="breadcrumb">
-  <li><a href="/data.html">Data Specification</a> <span class="divider">/</span></li>
-  <li class="active">Existing Standards</li>
+  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
+  <li>Appendices <span class="divider">/</span></li>
+  <li class="active">Survey of existing specifications</li>
 </ul>
 
 Existing specifications can be found through:

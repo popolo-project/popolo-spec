@@ -6,8 +6,9 @@ id: data
 {% include navigation.html %}
 
 <ul class="breadcrumb">
-  <li><a href="/data.html">Data Specification</a> <span class="divider">/</span></li>
-  <li class="active">Terms</li>
+  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
+  <li>Appendices <span class="divider">/</span></li>
+  <li class="active">Inventory of terms from survey</li>
 </ul>
 
 # Namespaces

@@ -4,6 +4,12 @@ title: Organization | The Popolo Project
 id: organization
 ---
 
+<ul class="breadcrumb">
+  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
+  <li><a href="/specs/#classes-and-properties">Classes and properties</a> <span class="divider">/</span></li>
+  <li class="active">Organization</li>
+</ul>
+
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
 The Organization class should have properties for:

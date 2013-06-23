@@ -4,6 +4,12 @@ title: Membership | The Popolo Project
 id: membership
 ---
 
+<ul class="breadcrumb">
+  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
+  <li><a href="/specs/#classes-and-properties">Classes and properties</a> <span class="divider">/</span></li>
+  <li class="active">Membership</li>
+</ul>
+
 [No one size fits all](http://www.w3.org/TR/vocab-org/#reporting_structure) in representing the relationship between people and organizations.
 
 In some cases, a simple binary relation is enough, e.g. a `memberOf` property linking an organization and a person. In other cases, a complex [n-ary relation](http://www.w3.org/TR/swbp-n-aryRelations/) is required, e.g. to describe the duration of the person's membership; in such cases, we create a new class to represent the relation, e.g. a `Membership` class, and attach properties to it, like duration, to describe the relationship between the person and the organization.

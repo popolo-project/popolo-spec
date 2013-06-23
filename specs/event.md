@@ -5,4 +5,10 @@ id: event
 ---
 {% include navigation.html %}
 
+<ul class="breadcrumb">
+  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
+  <li><a href="/specs/#classes-and-properties">Classes and properties</a> <span class="divider">/</span></li>
+  <li class="active">Event</li>
+</ul>
+
 _Coming soon: [See issue #22](https://github.com/opennorth/popolo-spec/issues/22)_

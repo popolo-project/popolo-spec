@@ -4,6 +4,12 @@ title: Post | The Popolo Project
 id: post
 ---
 
+<ul class="breadcrumb">
+  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
+  <li><a href="/specs/#classes-and-properties">Classes and properties</a> <span class="divider">/</span></li>
+  <li class="active">Post</li>
+</ul>
+
 [No one size fits all](http://www.w3.org/TR/vocab-org/#reporting_structure) in representing the relationship between people and organizations.
 
 In some cases, it is relevant to represent the organizational structure independently of the people within that structure; for example, it is relevant to represent the position of the Member of Parliament for Avalon even when no one holds that position. A *post* is such a position that exists independently of the person holding it.

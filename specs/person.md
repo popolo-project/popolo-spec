@@ -4,6 +4,12 @@ title: Person | The Popolo Project
 id: person
 ---
 
+<ul class="breadcrumb">
+  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
+  <li><a href="/specs/#classes-and-properties">Classes and properties</a> <span class="divider">/</span></li>
+  <li class="active">Person</li>
+</ul>
+
 Name components (e.g. family name and given name) have been split into [another document](/specs/person/name-component.html).
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>

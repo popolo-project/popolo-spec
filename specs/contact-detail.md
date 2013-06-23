@@ -4,6 +4,12 @@ title: Contact Detail | The Popolo Project
 id: contact-detail
 ---
 
+<ul class="breadcrumb">
+  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
+  <li><a href="/specs/#classes-and-properties">Classes and properties</a> <span class="divider">/</span></li>
+  <li class="active">Contact detail</li>
+</ul>
+
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
 It is impossible to predict the means by which people will be contacted: from mail and telephones to email and <abbr title="Voice over Internet Protocol">VoIP</abbr>. Some contact details are related to physical locations, like an office's postal address and fax number, while others are not, like a person's mobile number and email address. To support the widest variety of mediums in the widest range of contexts, the ContactDetail class should allow user-defined contact details.

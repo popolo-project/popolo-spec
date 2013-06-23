@@ -5,7 +5,11 @@ id: data-patterns
 ---
 {% include navigation.html %}
 
-# JSON Data Design Patterns
+<ul class="breadcrumb">
+  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
+  <li>Appendices <span class="divider">/</span></li>
+  <li class="active">JSON data design patterns</li>
+</ul>
 
 This document collects emerging design patterns for JSON serializations.
 
