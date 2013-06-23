@@ -43,7 +43,7 @@ The data specification will define terms (classes and properties) to describe an
 1. It <em class="rfc2119">must not</em> use terms from outside this specification's terms where this specification's terms would suffice[<sup>2</sup>](#note2).
 1. It <em class="rfc2119">may</em> use terms from outside this specification's terms where this specification's terms are insufficient.
 1. Its usage of this specification's terms <em class="rfc2119">must</em> be consistent with the semantics of those terms.
-1. If an implementation serializes to JSON, its serializations <em class="rfc2119">must</em> validate against this specification's JSON Schema.
+1. If an implementation serializes to <abbr title="JavaScript Object Notation">JSON</abbr>, its serializations <em class="rfc2119">must</em> validate against [this specification's JSON Schema](#json-schema).
 
 <p class="note" id="note2">2. For example, it <em class="rfc2119">must not</em> use vCard's <code>fn</code> where this specification's <code>name</code> would suffice.</p>
 
@@ -152,7 +152,7 @@ The structure of each subdocument is:
   <dt>3. Classes and properties</dt>
   <dd>Defines the semantics of the class and its properties</dd>
   <dt>4. Serialization</dt>
-  <dd>Defines the RDF and JSON serializations</dd>
+  <dd>Defines the <abbr title="Resource Description Framework">RDF</abbr> and <abbr title="JavaScript Object Notation">JSON</abbr> serializations</dd>
   <dt>5. Code lists</dt>
   <dd>Lists any standardized nomenclatures used as property values</dd>
 </dl>
@@ -164,15 +164,21 @@ The following diagram succinctly describes the relationships among the classes. 
 
 <h1 id="serialization">6. Serialization</h1>
 
+The data specification defines two serializations: <abbr title="Resource Description Framework">RDF</abbr> and <abbr title="JavaScript Object Notation">JSON</abbr>. RDF is a technology for data modeling, with a variety of syntax notations and serialization formats, including [<abbr title="Extensible Markup Language">XML</abbr>](http://www.w3.org/TR/rdf-syntax-grammar/), JSON (via [JSON-LD]((http://json-ld.org/spec/latest/json-ld/)), <abbr title="HyperText Markup Language">HTML</abbr> (via [<abbr title="Resource Description Framework in Attributes">RDFa</abbr>](http://www.w3.org/TR/rdfa-primer/) or [RDFa Lite](http://www.w3.org/TR/rdfa-lite/)), and [<abbr title="Notation 3">N3</abbr>](http://en.wikipedia.org/wiki/Notation_3) (a superset of the simpler [Turtle](http://www.w3.org/TR/turtle/) and [N-Triples](http://www.w3.org/TR/n-triples/) formats). JSON is a text-based, language-independent interchange format for structured data, derived from the JavaScript scripting language.
+
+Given that the same RDF resource can be serialized in many different ways using [JSON-LD](http://json-ld.org/), [JSON Schema](http://json-schema.org/) (see next subsection) are used to ensure all JSON serializations look alike, to maximize interoperability.
+
 Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>1</sup>](#note1) is <em class="rfc2119">recommended</em>.
-
-<abbr title="Resource Description Framework">RDF</abbr> serializations <em class="rfc2119">must</em> respect the classes and properties defined in the [subdocuments](#classes-and-properties) in the previous section. Example RDF documents are given in [Turtle notation](http://www.w3.org/TeamSubmission/turtle/).
-
-<abbr title="JavaScript Object Notation">JSON</abbr> serializations <em class="rfc2119">must</em> respect the schemas below, which are given in [JSON Schema](http://json-schema.org/) (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)). The schemas use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase) for terms, due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
 
 Additional serializations details are given in the [subdocuments](#classes-and-properties) in the previous section.
 
-<table>
+<p class="note" id="note1">1. Consult the list of <a href="https://github.com/opennorth/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>. <a href="http://www.w3.org/XML/Schema.html">XML Schema</a> supports <a href="http://www.w3.org/TR/xmlschema-2/#truncatedformats">reduced dates</a> such as <a href="http://www.w3.org/TR/xmlschema-2/#gYear"><code>YYYY</code></a> and <a href="http://www.w3.org/TR/xmlschema-2/#gYearMonth"><code>YYYY-MM</code></a>.</p>
+
+<h2 id="schema-and-examples">6.1. Schema and examples</h2>
+
+As described in the [conformance](#conformance) section, JSON serializations <em class="rfc2119">must</em> validate against the JSON Schema (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) below. The terms use [snake case](http://en.wikipedia.org/wiki/Snake_case) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
+
+<table id="json-schema">
   <thead>
     <tr>
       <th>JSON Schema</th>
@@ -209,10 +215,7 @@ Additional serializations details are given in the [subdocuments](#classes-and-p
   </tbody>
 </table>
 
-<p class="note" id="note1">1. Consult the list of <a href="https://github.com/opennorth/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>. <a href="http://www.w3.org/XML/Schema.html">XML Schema</a> supports <a href="http://www.w3.org/TR/xmlschema-2/#truncatedformats">reduced dates</a> such as <a href="http://www.w3.org/TR/xmlschema-2/#gYear"><code>YYYY</code></a> and <a href="http://www.w3.org/TR/xmlschema-2/#gYearMonth"><code>YYYY-MM</code></a>.</p>
-<p class="note">Note: <a href="http://schema.org/">Schema.org</a> can be used for HTML serialization, but HTML serialization is out of scope.</p>
-
-## 6.1. Embedded JSON documents
+## 6.2. Embedded JSON documents
 
 When serializing to JSON, you have two options when relating entities, which you may use simultaneously:
 
@@ -253,11 +256,11 @@ In either case, you <em class="rfc2119">must not</em> embed an entity in another
   <div class="tab-pane" id="embedding-post" data-url="/examples/embedding-post.json"></div>
 </div>
 
-## 6.2. Subschema
+## 6.3. Subschema
 
 The JSON Schema above reuse the following subschema for specific properties.
 
-<h3 id="identifier">6.2.1. Identifier</h3>
+<h3 id="identifier">6.3.1. Identifier</h3>
 
 With respect to standard reuse, the [Organization ontology](http://www.w3.org/TR/vocab-org/), [<abbr title="Simple Knowledge Organization System">SKOS</abbr>](http://www.w3.org/TR/skos-reference/) and [<abbr title="eXtensible Business Reporting Language">XBRL</abbr>](http://en.wikipedia.org/wiki/XBRL) use the word `scheme` to refer to an identifier's scheme. The Identifier class is necessary for JSON serialization, because, unlike RDF values, JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) to indicate an identifier's scheme.
 
@@ -265,7 +268,7 @@ With respect to standard reuse, the [Organization ontology](http://www.w3.org/TR
   <div class="tab-pane active" data-url="/schemas/identifier.json"></div>
 </div>
 
-<h3 id="link">6.2.2. Link</h3>
+<h3 id="link">6.3.2. Link</h3>
 
 With respect to standard reuse, `note` comes from [`skos:note`](http://www.w3.org/TR/skos-reference/#notes).
 
@@ -277,7 +280,7 @@ With respect to standard reuse, `note` comes from [`skos:note`](http://www.w3.or
   <div class="tab-pane active" data-url="/schemas/link.json"></div>
 </div>
 
-<h3 id="other-name">6.2.3 Other name</h3>
+<h3 id="other-name">6.3.3 Other name</h3>
 
 If a name object sets an `end_date` property, it represents a former name. With respect to standard reuse, the terms `start_date` and `end_date` are used in the [Participation ontology](http://vocab.org/participation/schema) and others, and `note` comes from [`skos:note`](http://www.w3.org/TR/skos-reference/#notes).
 
