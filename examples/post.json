@@ -3,6 +3,8 @@
   "label": "Chef at Joe's Diner",
   "role": "Chef",
   "organization_id": "abc-inc",
+  "start_date": "1950",
+  "end_date": "2010",
   "contact_details": [
     {
       "label": "Take-out and delivery",

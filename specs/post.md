@@ -31,6 +31,14 @@ The Post class should have properties for:
 
     >House of Commons
 
+1. date of creation
+
+    >The Canadian federal electoral district of Westmount—Ville Marie was established in 1996, thereby creating the post of Member of Parliament for Westmount—Ville Marie.
+
+1. date of elimination
+
+    >The Canadian federal electoral district of Annapolis was abolished in 1914, thereby eliminating the post of Member of Parliament for Annapolis.
+
 1. the means of contacting the holder of the post
 
     >1 Main Street  
@@ -44,7 +52,10 @@ The Post class should have properties for:
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that only the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a sufficiently rich model for describing organizational structure.
+Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that:
+
+* Only the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a sufficiently rich model for describing organizational structure.
+* No vocabulary has properties for dates of creation and dates of elimination.
 
 ## 2.1. Changes to data model
 
@@ -97,6 +108,16 @@ According to the Organization ontology, either a person or an organization can h
       <td>The organization in which the post is held</td>
     </tr>
     <tr>
+      <td>date of creation<a href="#note2"><sup>2</sup></a></td>
+      <td><em>none yet</em></td>
+      <td>A date of creation</td>
+    </tr>
+    <tr>
+      <td>date of elimination</td>
+      <td><em>none yet</em></td>
+      <td>A date of elimination</td>
+    </tr>
+    <tr>
       <td>contact detail</td>
       <td><em>none yet</em></td>
       <td>A means of contacting the holder of the post</td>
@@ -121,6 +142,7 @@ A post cannot exist outside an organization. All posts <em class="rfc2119">must<
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
 * The value of the `role` property is a string, instead of a `skos:Concept`.
 * The term `organization_id` is used instead of `postIn` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
+* The terms `start_date` and `end_date` pair are used, to be consistent with the [Membership](/specs/membership.html) class.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 
 <ul class="nav nav-tabs no-js">

@@ -26,6 +26,16 @@
       "description": "The organization in which the post is held",
       "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
+    "start_date": {
+      "description": "The date on which the post was created",
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+    },
+    "end_date": {
+      "description": "The date on which the post was eliminated",
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+    },
     "contact_details": {
       "description": "Means of contacting the holder of the post",
       "type": "array",
