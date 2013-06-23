@@ -63,9 +63,72 @@ The [subdocuments](#classes-and-properties) in a later section add more requirem
 
 <h1 id="standard-reuse">4. Standard reuse</h1>
 
-The data specification imposes cardinality and range restrictions on some properties of other specifications, in order to allow for a simpler JSON serialization.
+The data specification reuses terms from the existing specifications below:
 
-The [subdocuments](#classes-and-properties) in the next section describe specific standard reuse.
+<table>
+  <caption>Suitable existing standards for people and organizations</caption>
+  <thead>
+    <tr>
+      <th>Publisher</th>
+      <th>Name</th>
+      <th>Prefix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><abbr title="Dublic Core Metadata Initiative">DCMI</abbr></td>
+      <td><a href="http://dublincore.org/documents/dcmi-terms/">Metadata Terms</a></td>
+      <td><code>dcterms</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="Internet Engineering Task Force">IETF</abbr></td>
+      <td><a href="http://tools.ietf.org/html/rfc6350">vCard 4.0</a></td>
+      <td><code>vcard</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="Interoperability Solutions for European Public Administrations">ISA</abbr></td>
+      <td><a href="http://philarcher.org/isa/person-v1.00.html">Person Core Vocabulary</a></td>
+      <td><code>person</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
+      <td><a href="http://www.w3.org/TR/vocab-org/">Organization ontology (ORG)</a></td>
+      <td><code>org</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
+      <td><a href="http://www.w3.org/TR/rdf-schema/">RDF Schema (RDFS)</a></td>
+      <td><code>rdfs</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
+      <td><a href="http://schema.org/">Schema.org</a></td>
+      <td><code>schema</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
+      <td><a href="http://www.w3.org/TR/skos-reference/">Simple Knowledge Organization System (SKOS)</a></td>
+      <td><code>skos</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
+      <td><a href="http://www.w3.org/2000/10/swap/pim/contact">Contact: Utility concepts for everyday life</a></td>
+      <td><code>con</code></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="http://vocab.org/bio/0.1/.html">BIO vocabulary</a></td>
+      <td><code>bio</code></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="http://vocab.org/bio/0.1/.html">Friend of a Friend (FOAF)</a></td>
+      <td><code>foaf</code></td>
+    </tr>
+  </tbody>
+</table>
+
+The [subdocuments](#classes-and-properties) in the next section describe specific standard reuse. Some impose cardinality and range restrictions on the properties of the above specifications, in order to allow for a simpler JSON serialization.
 
 <h1 id="classes-and-properties">5. Classes and properties</h1>
 
