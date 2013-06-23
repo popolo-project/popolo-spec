@@ -16,8 +16,7 @@
     },
     "role": {
       "description": "The function that the holder of the post fulfills",
-      "type": "string",
-      "required": true
+      "type": ["string", "null"]
     },
     "organization_id": {
       "description": "The ID of the organization in which the post is held",
