@@ -215,7 +215,7 @@ As described in the [conformance](#conformance) section, JSON serializations <em
   </tbody>
 </table>
 
-## 6.2. Embedded JSON documents
+<h2 id="embedded-json-documents">6.2. Embedded JSON documents</h2>
 
 When serializing to JSON, you have two options when relating entities, which you may use simultaneously:
 
@@ -256,7 +256,7 @@ In either case, you <em class="rfc2119">must not</em> embed an entity in another
   <div class="tab-pane" id="embedding-post" data-url="/examples/embedding-post.json"></div>
 </div>
 
-## 6.3. Subschema
+<h2 id="subschema">6.3. Subschema</h2>
 
 The JSON Schema above reuse the following subschema for specific properties.
 

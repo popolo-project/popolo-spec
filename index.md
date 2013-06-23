@@ -55,6 +55,9 @@ This project's goal is to author, through community consensus, international ope
     1. [Document](/specs/document.html)
 {% endcomment %}
 1. [Serialization](/specs/#serialization)
+    1. [Schema and examples](/specs/#schema-and-examples)
+    1. [Embedded JSON documents](/specs/#embedded-json-documents)
+    1. [Subschema](/specs/#subschema)
 1. [Change history](/specs/#history)
 1. Appendices
     1. [Survey of existing specifications](/appendices/survey.html)
