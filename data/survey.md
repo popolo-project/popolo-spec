@@ -14,6 +14,7 @@ Existing specifications can be found through:
 
 * [Linked Open Vocabularies](http://lov.okfn.org/) by the [Open Knowledge Foundation](http://okfn.org/) allows you to search and explore over 350 RDF vocabularies by theme and term.
 * The [Interoperability Solutions for European Public Administrations (ISA)](http://ec.europa.eu/isa/) programme of the [European Commission](http://ec.europa.eu/) lists [semantic assets](https://joinup.ec.europa.eu/catalogue/all) (domain models, ontologies, thesauruses and code lists) from more than [20 onlne repositories](https://joinup.ec.europa.eu/catalogue/repository).
+* Various ontology search engines exist, including [Watson](http://watson.kmi.open.ac.uk/), [Swoogle](http://swoogle.umbc.edu/) and [FalconS](http://ws.nju.edu.cn/falcons/).
 
 <h1 id="dcterms">Dublin Core Metadata Initiative</h1>
 
