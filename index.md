@@ -57,6 +57,7 @@ This project's goal is to author, through community consensus, international ope
 1. [Serialization](/specs/#serialization)
 1. [Change history](/specs/#history)
 1. Appendices
+    1. [Example JSON documents](/appendices/examples.html)
     1. [JSON data design patterns](/appendices/data-patterns.html)
     1. [Best practices for software components](/appendices/components.html)
 
