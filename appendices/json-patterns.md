@@ -104,6 +104,91 @@ However, this approach should be avoided, as it is more difficult to identify an
 
 <p class="note" id="note1">1. The <a href="http://www.w3.org/TR/owl2-overview/">Web Ontology Language (OWL)</a> defines an <code><a href="http://www.w3.org/TR/owl2-syntax/#Classes">owl:Thing</a></code> class, which is the superclass to all classes.</p>
 
+## Remove unnecessary embedding
+
+For example, consider the following response from an API call:
+
+```json
+{
+  "objects": [
+    {
+      "id": "foo"
+    },
+    {
+      "id": "bar"
+    }
+  ]
+}
+```
+
+The array datatype already captures the fact that the response is a list of objects. The surrounding object is redundant and unnecessary:
+
+```json
+[
+  {
+    "id": "foo"
+  },
+  {
+    "id": "bar"
+  }
+]
+```
+
+### Pagination and metadata
+
+[Django REST framework](http://django-rest-framework.org/), [Tastypie](http://tastypieapi.org/) and other API frameworks return responses like:
+
+```json
+{
+  "count": 20,
+  "next": "/path?limit=20&offset=20",
+  "previous": null,
+  "results": [
+    {
+      "id": "foo"
+    },
+    ...
+  ]
+}
+```
+
+Or with all metadata fields inside a single `meta` object:
+
+```json
+{
+  "meta": {
+    "limit": 20,
+    "next": "/path?limit=20&offset=20",
+    "offset": 0,
+    "previous": null,
+    "total_count": 50
+  },
+  "objects": [
+    {
+      "id": "foo"
+    },
+    ...
+  ]
+}
+```
+
+To eliminate the metadata from the response, APIs like [GitHub's](http://developer.github.com/v3/#pagination) put this information in the Link HTTP header, following [RFC 5988](http://tools.ietf.org/html/rfc5988):
+
+```http
+GET https://example.com/path HTTP/1.1
+Content-Type: application/json; charset=utf-8
+Status: 200 OK
+Link: <https://example.com/path?offset=20>; rel="next"
+
+
+[
+  {
+    "id": "foo"
+  },
+  ...
+]
+```
+
 ## Flag additional properties
 
 It is impractical to define every possible property for a given class in order to satisfy all possible use cases. Some properties used for specific use cases will therefore not be defined in the data specification. For example, the following JSON document adds a `hair_colour` property:
