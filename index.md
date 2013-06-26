@@ -8,11 +8,11 @@ title: The Popolo Project
 
 This project's goal is to author, through community consensus, international open government data specifications relating to the legislative branch of government, so that civil society can spend less time transforming data and more time applying it to the problems they face. A related goal is to make it easier for civic developers to create government transparency, monitoring and engagement websites, by developing reusable open source components that implement the specifications. Although the data specification is designed primarily for open government use cases, many other use cases are supported.
 
-## Approach
+<h2 id="principles">Principles</h2>
 
 1. This project rigorously researches and studies existing specifications and reuses suitable existing work wherever possible. It looks for existing specifications that balance breadth of adoption with quality of modeling. It prioritizes reuse over novelty.
 
-1. This specification satisfies a broad range of use cases, without requiring an exhaustive vocabulary of terms. It focuses on flexibility to do more with less.
+1. This specification satisfies a broad range of use cases, without requiring an exhaustive vocabulary of terms. It focuses on flexibility to do more with fewer terms.
 
 1. A fact that many specifications overlook is that our knowledge of the world is imprecise and uncertain. This specification attempts, as much as possible, to make it easy to represent real world data while preserving clarity and meaning.
 
@@ -36,6 +36,17 @@ This project's goal is to author, through community consensus, international ope
     </div>
   </div>
 </div>
+
+## Process
+
+The high-level specification development process is as follows:
+
+1. Identify use cases and requirements for a specific [activity system](http://www.thoughtworks-studios.com/blog/stop-designing-users).
+2. Research existing specifications that fulfill the use cases and requirements.
+3. Author a specification and related documentation that respect the [principles](#principles).
+4. Iteratively improve the specification.
+
+Specification development works by an open process and by rough consensus. [Participation](#participation) is open and free to all.
 
 ## Specification
 
@@ -66,7 +77,7 @@ This project's goal is to author, through community consensus, international ope
     1. [JSON data design patterns](/appendices/json-patterns.html)
     1. [Best practices for software components](/appendices/components.html)
 
-## Participation
+<h2 id="participation">Participation</h2>
 
 These documents are **Working Drafts**. Their governance will roughly follow the [W3C process](http://www.w3.org/Consortium/Process/).
 
