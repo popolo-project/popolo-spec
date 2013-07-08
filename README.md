@@ -6,7 +6,7 @@ This project's goal is to author, through community consensus, international ope
 
 ## Participation
 
-* Join the [W3C Open Government Community Group](http://www.w3.org/community/opengov/) and [subscribe to its mailing list](http://lists.w3.org/Archives/Public/public-opengov/) to discuss the project's development
+* Join the [W3C Open Government Community Group](http://www.w3.org/community/opengov/) and [subscribe to its mailing list](http://lists.w3.org/Archives/Public/public-opengov/)
 * Discuss [open issues](https://github.com/opennorth/popolo-spec/issues) and create pull requests in this GitHub repository
 * [Read Open North's blog post announcing the project](http://blog.opennorth.ca/2013/02/21/update-on-opengovernment/) for more context
 
