@@ -160,7 +160,7 @@ In general, subclasses should only be used if the benefits outweigh the complexi
 
 * The term `name` is used instead of `prefLabel`, to be consistent with the [Person](/specs/person.html) class.
 * The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of [name objects](/specs/#other-name).
-* The identifier property is serialized as `identifiers`, whose value is an array of [identifier objects](/specs/#identifier).
+* The term `identifiers` is used instead of `identifier` and is serialized as an array of [identifier objects](/specs/#identifier).
 * The term `parent_id`[<sup>4</sup>](#note4) is used instead of `subOrganizationOf`, due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
 * A new `dissolution_date` term is used for the date of dissolution, for which there is no RDF term.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).

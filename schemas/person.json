@@ -108,6 +108,23 @@
       "items": {
         "$ref": "http://popoloproject.com/schemas/membership.json#"
       }
+    },
+    "created_at": {
+      "description": "The time at which the resource was created",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "description": "The time at which the resource was last modified",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "sources": {
+      "description": "URLs to source documents about the person",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/link.json#"
+      }
     }
   }
 }

@@ -1,0 +1,12 @@
+{
+  "id": "john-q-public",
+  "name": "Mr. John Q. Public, Esq.",
+  "created_at": "2000-05-01T12:00:00Z",
+  "updated_at": "2005-06-15T12:00:00Z",
+  "sources": [
+    {
+      "url": "http://example.org/john-q-public",
+      "note": "Biography"
+    }
+  ]
+}
