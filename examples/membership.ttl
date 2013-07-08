@@ -4,7 +4,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 <http://example.com/memberships/593.ttl>
   a org:Membership;
-  org:role [a skos:Concept; skos:prefLabel "Kitchen assistant"@en];
+  skos:prefLabel "Kitchen assistant at Joe's Diner"@en;
+  org:role [a org:Role; skos:prefLabel "Kitchen assistant"@en];
   org:member <http://example.com/people/john-q-public.ttl>;
   org:organization <http://example.com/organizations/abc-inc.ttl>;
   org:memberDuring [

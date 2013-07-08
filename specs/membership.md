@@ -23,9 +23,13 @@ According to this data specification, a [person](/specs/person.html) is a member
 
 The Membership class should have properties for:
 
+1. label
+
+    >Chairman of the XYZ Party
+
 1. the role that the person fulfills in the organization
 
-    >Member
+    >Chairman
 
 1. the [person](/specs/person.html) who is a party to the relationship
 
@@ -79,6 +83,16 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:Membership" title="http://www.w3.org/ns/org#Membership">org:Membership</a></code></td>
       <td>A relationship between a person and an organization</td>
     </tr>
+    <tr id="skos:prefLabel2">
+      <td>label</td>
+      <td><code><a href="http://www.w3.org/TR/skos-reference/#labels" title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
+      <td>A label describing the membership</td>
+    </tr>
+    <tr>
+      <td>role</td>
+      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:role" title="http://www.w3.org/ns/org#role">org:role</a></code></td>
+      <td>The role that the person fulfills in the organization</td>
+    </tr>
     <tr id="org:role-Membership">
       <td>role</td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:role" title="http://www.w3.org/ns/org#role">org:role</a></code></td>
@@ -125,7 +139,8 @@ A membership relation cannot exist without both a person and an organization. Al
 
 **JSON differences from other RDF serializations:**
 
-* The value of the `role` property is a string, instead of a `skos:Concept`.
+* The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
+* The value of the `role` property is a string, instead of an `org:Role`.
 * The term `person_id` is used instead of `member` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
 * The term `organization_id` is used instead of `organization` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
 * Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, a simple `start_date` and `end_date`[<sup>2</sup>](#note2) pair is used instead of `memberDuring`, as [proposed](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.

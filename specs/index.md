@@ -358,6 +358,7 @@ If a name object sets an `end_date` property, it represents a former name. With 
 
 <h1 id="history">7. Change history</h1>
 
+* 2013-07-08: Add a label property to the Membership class.
 * 2013-07-08: Add time of creation, time of modification, and source document metadata properties.
 * 2013-06-20: Reorganize specification and implement feedback.
 * 2013-02-28: Add requirement for dates to be stored in UTC.
