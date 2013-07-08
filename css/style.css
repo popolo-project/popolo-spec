@@ -109,6 +109,22 @@ table.table-widest td {
   width: 9em;
 }
 
+#example-date {
+  min-height: 50px;
+  background: url(/img/nounproject/polling-place-14292.png) no-repeat 0 0;
+  padding-left: 60px;
+}
+#example-contact {
+  min-height: 50px;
+  background: url(/img/nounproject/telephone-127.png) no-repeat 6px 0;
+  padding-left: 60px;
+}
+#example-sponsor {
+  min-height: 50px;
+  background: url(/img/nounproject/document-17380.png) no-repeat 0 0;
+  padding-left: 60px;
+}
+
 em.rfc2119 {
   font-style: normal;
   font-variant: small-caps;
