@@ -177,7 +177,7 @@ With respect to the choice of terms:
 
 <h1 id="serialization">4. Serialization</h1>
 
-**Differences from RDF:**
+**JSON differences from other RDF serializations:**
 
 * The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of [name objects](/specs/#other-name).
 * The identifier property is serialized as `identifiers`, whose value is an array of [identifier objects](/specs/#identifier).

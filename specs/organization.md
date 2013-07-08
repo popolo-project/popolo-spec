@@ -156,7 +156,7 @@ In general, subclasses should only be used if the benefits outweigh the complexi
 
 <h1 id="serialization">4. Serialization</h1>
 
-**Differences from RDF:**
+**JSON differences from other RDF serializations:**
 
 * The term `name` is used instead of `prefLabel`, to be consistent with the [Person](/specs/person.html) class.
 * The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of [name objects](/specs/#other-name).

@@ -123,7 +123,7 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
 
 A membership relation cannot exist without both a person and an organization. All memberships <em class="rfc2119">must</em> therefore assign values to either `person_id` or `person` and to either `organization_id` or `organization`.
 
-**Differences from RDF:**
+**JSON differences from other RDF serializations:**
 
 * The value of the `role` property is a string, instead of a `skos:Concept`.
 * The term `person_id` is used instead of `member` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.

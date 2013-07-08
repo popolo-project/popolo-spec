@@ -143,7 +143,7 @@ According to the Organization ontology, either a person or an organization can h
 
 A post cannot exist outside an organization. All posts <em class="rfc2119">must</em> therefore assign a value to either `organization_id` or `organization`.
 
-**Differences from RDF:**
+**JSON differences from other RDF serializations:**
 
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
 * The value of the `role` property is a string, instead of a `skos:Concept`.
