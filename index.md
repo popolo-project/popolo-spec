@@ -74,8 +74,10 @@ Specification development works by an open process and by rough consensus. [Part
     1. [Survey of existing specifications](/appendices/survey.html)
     1. [Inventory of terms from survey](/appendices/terms.html)
     1. [Example JSON documents](/appendices/examples.html)
-    1. [JSON data design patterns](/appendices/json-patterns.html)
     1. [Best practices for software components](/appendices/components.html)
+    1. [Data model patterns](/appendices/data-patterns.html)
+    1. [JSON serialization patterns](/appendices/json-patterns.html)
+    1. [API design patterns](/appendices/api-patterns.html)
 
 <h2 id="participation">Participation</h2>
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: JSON Data Design Patterns | The Popolo Project
+title: JSON Serialization Patterns | The Popolo Project
 id: json-patterns
 ---
 {% include navigation.html %}
@@ -8,7 +8,7 @@ id: json-patterns
 <ul class="breadcrumb">
   <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
   <li>Appendices <span class="divider">/</span></li>
-  <li class="active">JSON data design patterns</li>
+  <li class="active">JSON serialization patterns</li>
 </ul>
 
 This document collects emerging design patterns for JSON serializations. If you are developing your own data specification, you may benefit from reading the different solutions to design problems discussed below.
