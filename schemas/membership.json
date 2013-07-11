@@ -9,8 +9,12 @@
       "description": "The membership's unique identifier",
       "type": ["string", "null"]
     },
+    "label": {
+      "description": "A label describing the membership",
+      "type": ["string", "null"]
+    },
     "role": {
-      "description": "The role that the holder of the post fulfills",
+      "description": "The role that the person fulfills in the organization",
       "type": ["string", "null"]
     },
     "person_id": {
