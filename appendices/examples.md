@@ -13,9 +13,19 @@ id: examples
 
 This document provides more complex examples than [the samples given in the specification](/specs/#schema-and-examples).
 
-# 1. Contact details
+1. [Contact details](#contact-details)
+  1. [Multiple email addresses](#multiple-email-addresses)
+  1. [Email contact form](#email-contact-form)
+1. [Relations between people and organizations](#relations-people-organizations)
+  1. [A historical post](#historical-post)
+  1. [Promotion from member to post within a committee](#committee-promotion)
+  1. [Change in party affiliation](#party-affiliation)
+  1. [A previously held post](#previous-post)
+  1. [A post held by more than one person simultaneously](#simultaneous-post)
 
-## 1.1. Multiple email addresses
+<h1 id="contact-details">1. Contact details</h1>
+
+<h2 id="multiple-email-addresses">1.1. Multiple email addresses</h2>
 
 **Scenario:** John Q. Public has a primary email address of `john@example.com`. He also has secondary email addresses related to his functions.
 
@@ -38,7 +48,7 @@ This document provides more complex examples than [the samples given in the spec
 }
 ```
 
-## 1.2. Email contact form
+<h2 id="email-contact-form">1.2. Email contact form</h2>
 
 **Scenario:** John Q. Public has no public email address and requires all communications from the public to be made through a contact form.
 
@@ -55,9 +65,9 @@ This document provides more complex examples than [the samples given in the spec
 }
 ```
 
-# 2. Relations between people and organizations
+<h1 id="relations-people-organizations">2. Relations between people and organizations</h1>
 
-## 2.1. A historical post
+<h2 id="historical-post">2.1. A historical post</h2>
 
 **Scenario:** The Canadian federal electoral district of Annapolis is abolished in 1914, thereby eliminating the post of Member of Parliament for Annapolis.
 
@@ -77,7 +87,7 @@ The House of Commons, an organization, and its posts:
 }
 ```
 
-## 2.2. Promotion from member to post within a committee
+<h2 id="committee-promotion">2.2. Promotion from member to post within a committee</h2>
 
 **Scenario:** Jane Q. Citizen is promoted to chair of the Standing Committee on Finance on January 1, 2013, after four years as a member.
 
@@ -123,7 +133,7 @@ Jane Q. Citizen, a person, and her memberships:
 }
 ```
 
-## 2.3. Change in party affiliation
+<h2 id="party-affiliation">2.3. Change in party affiliation</h2>
 
 John Q. Public changes party affiliation while holding the post of Member of Parliament for Avalon.
 
@@ -185,7 +195,7 @@ John Q. Public, a person, and his memberships:
 }
 ```
 
-## 2.4. A previously held post
+<h2 id="previous-post">2.4. A previously held post</h2>
 
 **Scenario:** John Q. Public was previously Member of Parliament for Avalon from 2000 to 2004, and is now again as of 2011.
 
@@ -225,7 +235,7 @@ John Q. Public, a person, and his memberships:
 }
 ```
 
-## 2.5. A post held by more than one person simultaneously
+<h2 id="simultaneous-post">2.5. A post held by more than one person simultaneously</h2>
 
 **Scenario:** Same as 2.4 above, except Jane Q. Citizen timeshares as Member of Parliament for Avalon, also as of 2011.
 

@@ -11,9 +11,14 @@ id: json-patterns
   <li class="active">JSON serialization patterns</li>
 </ul>
 
-This document collects emerging design patterns for JSON serializations. If you are developing your own data specification, you may benefit from reading the different solutions to design problems discussed below.
+This document collects some emerging patterns for JSON serializations. If you are developing your own data specification, you may benefit from reading the different solutions to design problems discussed below.
 
-## Include data about a related object
+* [Include data about a related object](#relations)
+* [Remove unnecessary complexity](#complexity)
+  * [Pagination and metadata](#metadata)
+* [Flag non-specification properties](#flag-properties)
+
+<h2 id="relations">Include data about a related object</h2>
 
 It is very common for a JSON document to embed data about a related object. For example, it makes sense to put information about a bill's sponsors on the bill object. In this example, you may start off with a relatively flat structure like:
 
@@ -104,7 +109,7 @@ However, this approach should be avoided, as it is more difficult to identify an
 
 <p class="note" id="note1">1. The <a href="http://www.w3.org/TR/owl2-overview/">Web Ontology Language (OWL)</a> defines an <code><a href="http://www.w3.org/TR/owl2-syntax/#Classes">owl:Thing</a></code> class, which is the superclass to all classes.</p>
 
-## Remove unnecessary embedding
+<h2 id="complexity">Remove unnecessary complexity</h2>
 
 For example, consider the following response from an API call:
 
@@ -134,7 +139,7 @@ The array datatype already captures the fact that the response is a list of obje
 ]
 ```
 
-### Pagination and metadata
+<h3 id="metadata">Pagination and metadata</h3>
 
 [Django REST framework](http://django-rest-framework.org/), [Tastypie](http://tastypieapi.org/) and other API frameworks return responses like:
 
@@ -189,7 +194,7 @@ Link: <https://example.com/path?offset=20>; rel="next"
 ]
 ```
 
-## Flag additional properties
+<h2 id="flag-properties">Flag non-specification properties</h2>
 
 It is impractical to define every possible property for a given class in order to satisfy all possible use cases. Some properties used for specific use cases will therefore not be defined in the data specification. For example, the following JSON document adds a `hair_colour` property:
 

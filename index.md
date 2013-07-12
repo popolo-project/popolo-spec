@@ -29,7 +29,7 @@ This project's goal is to author, through community consensus, international ope
       A civil society organization doesn't know the precise date on which a legislator assumed office. Its legislative information service should nonetheless be able to publish an approximate date in that legislator's profile.
     </div>
     <div class="tab-pane" id="example-sponsor">
-      When extracting the sponsors of a particular bill from a legislature's website, it isn't immediately possible to disambiguate a sponsor's name and link to the appropriate legislator or committee profile. A legislative information service should be able to publish the incomplete sponsor information, without having to first determine whether that information belongs to a legislator or a committee.
+      When extracting the sponsors of a bill from a legislature's website, it isn't immediately possible to disambiguate a sponsor's name and link to the appropriate legislator or committee profile. A legislative information service should be able to publish the incomplete sponsor information, without having to first determine whether that information belongs to a legislator or a committee.
     </div>
     <div class="tab-pane" id="example-contact">
       A civil society organization has the phone number of a legislator; however, it doesn't know whether it is the capitol office number, the constituency office number or a mobile number. A suitable data specification should be able to handle data at varying levels of detail.

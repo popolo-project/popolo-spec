@@ -11,9 +11,12 @@ id: api-patterns
   <li class="active">API design patterns</li>
 </ul>
 
-This document collects emerging design patterns for APIs for accessing legislative information.
+This document collects some emerging design patterns for APIs for accessing legislative information. If you are developing your own API, you may benefit from reading the different solutions to the use cases and requirements discussed below.
 
-## Support multiple languages
+* [Support multiple languages](#internationalization)
+* [Merge duplicates](#duplicates)
+
+<h2 id="internationalization">Support multiple languages</h2>
 
 ### Negotiate the client's preferred language
 
@@ -94,7 +97,7 @@ Until a unique, standard approach to language tagging emerges for JSON, to simpl
         }
         ```
 
-## Merge duplicates
+<h2 id="duplicates">Merge duplicates</h2>
 
 Many systems support merging documents to remove duplicates. [Billy](https://github.com/sunlightlabs/billy/) has [Merge-o-Matic (MoM)](https://github.com/sunlightlabs/billy/wiki/Merge-o-matic) which adds an `all_ids` field on all documents. The "winner" of a merge adds the loser's ID to its `all_ids`. Billy can therefore support lookups using old IDs.
 
