@@ -6,15 +6,15 @@ title: The Popolo Project
   <h1>The Popolo Project</h1>
 </div>
 
-This project's goal is to author, through community consensus, international open government data specifications relating to the legislative branch of government, so that civil society can spend less time transforming data and more time applying it to the problems they face. A related goal is to make it easier for civic developers to create government transparency, monitoring and engagement websites, by developing reusable open source components that implement the specifications. Although the data specification is designed primarily for open government use cases, many other use cases are supported.
+This project's goal is to author, through community consensus, **international open government data specifications** relating to the legislative branch of government, so that civil society can spend less time transforming data and more time applying it to the problems they face. A related goal is to make it easier for civic developers to create government transparency, monitoring and engagement websites, by developing reusable open source components that implement the specifications. Although the data specification is designed primarily for open government use cases, many other use cases are supported.
 
 <h2 id="principles">Principles</h2>
 
-1. This project rigorously researches and studies existing specifications and reuses suitable existing work wherever possible. It looks for existing specifications that balance breadth of adoption with quality of modeling. It prioritizes reuse over novelty.
+1. This project rigorously researches and studies existing specifications and reuses suitable existing work wherever possible. It looks for existing specifications that balance breadth of adoption with quality of modeling. It **prioritizes reuse over novelty**.
 
-1. This specification satisfies a broad range of use cases, without requiring an exhaustive vocabulary of terms. It focuses on flexibility to do more with fewer terms.
+1. This specification satisfies a broad range of use cases, without requiring an exhaustive vocabulary of terms. It **focuses on flexibility** to do more with fewer terms.
 
-1. A fact that many specifications overlook is that our knowledge of the world is imprecise and uncertain. This specification attempts, as much as possible, to make it easy to represent real world data while preserving clarity and meaning.
+1. A fact that many specifications overlook is that our knowledge of the world is imprecise and uncertain. This specification attempts, as much as possible, to make it easy to represent **real world data** while preserving clarity and meaning.
 
 <div class="well well-white">
   <ul class="nav nav-tabs no-js">
@@ -32,7 +32,7 @@ This project's goal is to author, through community consensus, international ope
       When extracting the sponsors of a bill from a legislature's website, it isn't immediately possible to disambiguate a sponsor's name and link to the appropriate legislator or committee profile. A legislative information service should be able to publish the incomplete sponsor information, without having to first determine whether that information belongs to a legislator or a committee.
     </div>
     <div class="tab-pane" id="example-contact">
-      A civil society organization has the phone number of a legislator; however, it doesn't know whether it is the capitol office number, the constituency office number or a mobile number. A suitable data specification should be able to handle data at varying levels of detail.
+      A civil society organization has the phone number of a legislator; however, it doesn't know whether it is the capitol office number, the constituency office number or a mobile number. A data specification should be able to handle data at varying levels of detail.
     </div>
   </div>
 </div>
@@ -49,6 +49,8 @@ The high-level specification development process is as follows:
 Specification development works by an open process and by rough consensus. [Participation](#participation) is open and free to all.
 
 ## Specification
+
+Jump to a section below or start at the [beginning](/specs/).
 
 1. [Scope](/specs/#scope)
 1. [Conformance](/specs/#conformance)
@@ -70,14 +72,16 @@ Specification development works by an open process and by rough consensus. [Part
     1. [Embedded JSON documents](/specs/#embedded-json-documents)
     1. [Subschema](/specs/#subschema)
 1. [Change history](/specs/#history)
-1. Appendices
-    1. [Survey of existing specifications](/appendices/survey.html)
-    1. [Inventory of terms from survey](/appendices/terms.html)
-    1. [Example JSON documents](/appendices/examples.html)
-    1. [Best practices for software components](/appendices/components.html)
-    1. [Data model patterns](/appendices/data-patterns.html)
-    1. [JSON serialization patterns](/appendices/json-patterns.html)
-    1. [API design patterns](/appendices/api-patterns.html)
+
+**Appendices**
+
+1. [Survey of existing specifications](/appendices/survey.html)
+1. [Inventory of terms from the survey](/appendices/terms.html)
+1. [Example conformant JSON documents](/appendices/examples.html)
+1. [Best practices for software components](/appendices/components.html)
+1. [Data model patterns](/appendices/data-patterns.html)
+1. [JSON serialization patterns](/appendices/json-patterns.html)
+1. [API design patterns](/appendices/api-patterns.html)
 
 <h2 id="participation">Participation</h2>
 
