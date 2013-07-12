@@ -88,11 +88,6 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
       <td><code><a href="http://www.w3.org/TR/skos-reference/#labels" title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
       <td>A label describing the membership</td>
     </tr>
-    <tr>
-      <td>role</td>
-      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:role" title="http://www.w3.org/ns/org#role">org:role</a></code></td>
-      <td>The role that the person fulfills in the organization</td>
-    </tr>
     <tr id="org:role-Membership">
       <td>role</td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:role" title="http://www.w3.org/ns/org#role">org:role</a></code></td>
