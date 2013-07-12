@@ -69,7 +69,7 @@ This document provides more complex examples than [the samples given in the spec
 
 <h2 id="historical-post">2.1. A historical post</h2>
 
-**Scenario:** The Canadian federal electoral district of Annapolis is abolished in 1914, thereby eliminating the post of Member of Parliament for Annapolis.
+**Scenario:** The Canadian electoral district of Annapolis is abolished in 1914, thereby eliminating the post of Member of Parliament for Annapolis.
 
 The House of Commons, an organization, and its posts:
 

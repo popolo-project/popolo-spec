@@ -21,7 +21,7 @@ This document describes best practices for software components implementing the 
 
 <h2 id="identifiers">Identifiers</h2>
 
-It is recommended to use a URL as the [permanent, unique identifier](/specs/#use-cases-and-requirements) of each instance of each class when distributing data as JSON:
+It is recommended to use a URI as the [permanent, unique identifier](/specs/#use-cases-and-requirements) of each instance of each class when distributing data as JSON:
 
 ```json
 {
@@ -29,7 +29,7 @@ It is recommended to use a URL as the [permanent, unique identifier](/specs/#use
 }
 ```
 
-A software component may instead choose to use e.g. MongoDB's automatically-assigned hexadecimal strings as its internal, permanent, unique identifier and to put URLs in the metadata of the JSON document, e.g. using the [Hypertext Application Language (HAL)](http://stateless.co/hal_specification.html):
+A software component may instead choose to use e.g. MongoDB's automatically-assigned hexadecimal strings as its internal, permanent, unique identifier and to put URIs in the metadata of the JSON document, e.g. using the [Hypertext Application Language (HAL)](http://stateless.co/hal_specification.html):
 
 ```json
 {
@@ -67,6 +67,6 @@ If two software components are to interoperate by allowing direct access to each
 
 <h3 id="mongodb">MongoDB caveats</h3>
 
-MongoDB does not support reduced dates as in XML Schema; it stores a [date](http://docs.mongodb.org/manual/core/document/#date) as a 64-bit integer that represents the number of milliseconds since the [Unix epoch](http://en.wikipedia.org/wiki/Unix_time). Unless a use case emerges requiring fast date operations, dates should be serialized as strings in MongoDB.
+MongoDB does not support reduced dates like `2004-08` as in XML Schema; it stores a [date](http://docs.mongodb.org/manual/core/document/#date) as a 64-bit integer that represents the number of milliseconds since the [Unix epoch](http://en.wikipedia.org/wiki/Unix_time). Unless a use case emerges requiring fast date operations, dates should be serialized as strings in MongoDB.
 
 Many MongoDB ODMs, including [Mongoid](http://mongoid.org/), use a `_type` field on a document to indicate that the document represents an instance of a subclass of the base class that is otherwise associated with the MongoDB collection. The management of the `_type` field should be left to the ODM.
