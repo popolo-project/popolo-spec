@@ -94,6 +94,18 @@ Furthermore, if the states are disjoint, using a single `status` property ensure
 
 <p class="note" id="note1">1. These event states are from the <a href="http://tools.ietf.org/html/rfc5545#section-3.8.1.11">iCalendar specification</a>.</p>
 
+<h1 id="limit-classes">Limit the number of classes</h1>
+
+When creating an ontology, **resist the urge to name all the things**. For example, the [MUNI Ontology](http://vocab.muni-ontology.org) used by [Citizen DAN](http://demo.citizen-dan.org/) has 2669 classes and 121 properties. It includes 23 classes for musical styles, including Chinese and Japanese music. It would be easy to add another 200-plus classes to represent the musical style of each country in the world, at the expense of significantly increasing the complexity of the ontology and the time it takes to learn and adopt it. An approach that favors classes, like this one, obliges an ontology to continously add new classes, in order to have a comprehensive list of musical styles, for example.
+
+An alternative approach, which drastically simplifies an ontology, is to have a single property `musical_style` instead of 23 or more classes as above. The [Organization ontology](http://www.w3.org/TR/vocab-org/) discusses each approach with respect to classifying organizations. It proposes two strategies: either create subclasses of [Organization](http://www.w3.org/TR/vocab-org/#org:Organization), or use the `classification` property. Its guidance is:
+
+>If the classification is not intrinsic to the organization but simply some way to group organizations, for example as part of a directory, then `org:classification` should be used. If the classification is a reflection of the intrinsic nature of the organization and affects other properties then the sub-class approach should be used. For example, only charities have charity numbers so it would be better to represent a charity as a sub-class of `org:FormalOrganization` rather than via a taxonomic labelling.
+
+In other words, subclasses should only be used if the benefits – for example, being able to add class-specific properties – outweigh the complexity. In the organization classification example, it is of no use to create the classes `Partnership`, `LimitedCompany`, `UnlimitedCompany`, etc. if all these classes behave the same way in your use case. It is simpler to use the `classification` property in that case.
+
+It is very important to identify a reasonable set of use cases and requirements before creating an ontology. Without use cases and requirements to guide its development, an ontology risks becoming a catalog of all things that exist: a list of nouns (classes) that occur within the field of interest. An ontology that focuses on use cases is more likely to have a small number of terms, which include only those necessary to fulfill its use cases.
+
 <h1 id="unknown-or-null">A property with an unknown value or no value</h1>
 
 It is sometimes useful to distinguish between the following cases for a given resource and property. In the context of the resource:
