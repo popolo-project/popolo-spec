@@ -146,7 +146,7 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
 <p class="note" id="note2">2. The Organization ontology defines the inverse property <code>org:hasSubOrganization</code>.</p>
 <p class="note" id="note3">3. <code>vcard:deathDate</code> could have been used for date of dissolution, but <code>deathDate</code> is an unusual term for an organization.</p>
 
-## 3.1. Classification
+<h2 id="classification">3.1. Classification</h2>
 
 The Organization ontology has a section on [organizational classification](organizational-classification). It proposes two strategies for classification: either create subclasses of [Organization](http://www.w3.org/TR/vocab-org/#org:Organization), or use the [`classification`](http://www.w3.org/TR/vocab-org/#org:classification) property. It provides guidance on when to use one or the other strategy:
 

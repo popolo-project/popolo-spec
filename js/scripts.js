@@ -21,3 +21,6 @@ $('.nav-tabs.no-js li:not(.disabled) a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
 });
+$('.highlight').each(function () {
+  hljs.highlightBlock(this);
+});

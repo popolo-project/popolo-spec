@@ -15,8 +15,7 @@ This document collects some emerging patterns for data modeling. If you are deve
 
 * [Be semantic](#semantic)
 * [Be concise](#concise)
-* [Plan for failure modes](#failure-modes)
-* [Allow the use of dummy values](#dummy-values)
+* [Limit the number of classes](#limit-classes)
 * [Represent a property with an unknown value or no value](#unknown-or-null)
 
 <h1 id="semantic">Be semantic</h1>
@@ -63,7 +62,6 @@ In response to new use cases, you add a `content_type` property for each formatt
 }
 ```
 
-
 <h1 id="concise">Be concise</h1>
 
 **Use fewer terms where possible.** For example, an event may have many possible states: tentative, confirmed and cancelled.[<sup>1</sup>](#note1)
@@ -100,65 +98,177 @@ Furthermore, if the states are disjoint, using a single `status` property ensure
 
 It is sometimes useful to distinguish between the following cases for a given resource and property. In the context of the resource:
 
-1. The value of the property is unknown, e.g. [Herodotus](http://en.wikipedia.org/wiki/Herodotus)' birth date.
+1. The property is known to be applicable, but its value is unknown, e.g. [Herodotus](http://en.wikipedia.org/wiki/Herodotus)' birth date.
 
-1. The property is known to be inapplicable and to have no value, e.g. a living person's death date.
+1. The property is known to be inapplicable, and no value is appropriate, e.g. a living person's death date.
 
-In both cases, the value is absent, but for different reasons. In the first case, the property is applicable, but its value is unknown; in the second case, the property is inapplicable, and no value is appropriate. Two approaches exist to disambiguate the two. One uses [sentinel values](http://en.wikipedia.org/wiki/Sentinel_value) (or markers), like `NULL`. Another addresses the problem at the level of the schema.
+In each case, the value is absent, but for different reasons. Two approaches exist to disambiguate the two: one using [sentinel values](http://en.wikipedia.org/wiki/Sentinel_value) (or markers), like `NULL`, another addressing the problem at the schema level. In most use cases, however, it's not important to distinguish between the two.
 
-In most use cases, however, it is not important to distinguish between the two cases.
+In general, if, for a given resource, a property is applicable but its value is unknown, do not make any statements about its value. This approach is consistent with the <a href="https://en.wikipedia.org/wiki/Open_world_assumption">open world assumption</a> used by RDF, according to which the absence of a particular statement implies nothing about the world; its absence implies only that the truth value of that statement is unknown, which is the desired interpretation.
 
 ## Marker strategy
 
 <abbr title="Structured Query Language">SQL</abbr> implements a three-valued logic, in which the truth values are *true*, *false* or *unknown*. In SQL, [`NULL`](https://en.wikipedia.org/wiki/Null_\(SQL\)) means "unknown"; it is not a value, but rather a marker indicating the absence of value. `NULL` does not indicate the reason for this absence of value, however; as such, `NULL` cannot disambiguate between the two cases above. In an attempt to address this problem, [E. F. Codd](https://en.wikipedia.org/wiki/Edgar_F._Codd), the creator of the relational database model, proposed two new markers to stand for "applicable but unknown" and "inapplicable", effectively requiring a four-valued logic.
 
-Like SQL, most programming languages and data models implement at most three-valued logic. Instead of relying on a native implementation of four-valued logic, strings can be used as markers in practice. For example, <abbr title="National Aeronautics and Space Administration">NASA</abbr>'s [Planetary Data System (PDS)](http://pds.jpl.nasa.gov/tools/standards-reference.shtml) uses the strings ["N/A", "UNK" and "NULL"](http://pds.jpl.nasa.gov/documents/sr/Chapter17.pdf) to stand for "not applicable", "permanently unknown" and "temporarily unknown". You may choose your own strings to indicate as many reasons as you need for an absence of value.
+Like SQL, most programming languages and data models implement at most three-valued logic. Instead of relying on a native implementation of four-valued logic, strings, classes and [blank nodes](http://en.wikipedia.org/wiki/Blank_node) can be used as markers in practice.
 
-Unfortunately, using strings as markers is problematic. Markers must receive special handling to ensure the expected behavior. In SQL, for example, `NULL` is not equal to `NULL`; one unknown is not equal to another unknown. If you have a record for a book by an unknown author, querying for other books by the same author will return zero results, thanks to this special handing:
+### Using strings
+
+<abbr title="National Aeronautics and Space Administration">NASA</abbr>'s [Planetary Data System (PDS)](http://pds.jpl.nasa.gov/tools/standards-reference.shtml) uses the strings ["N/A", "UNK" and "NULL"](http://pds.jpl.nasa.gov/documents/sr/Chapter17.pdf) as markers to stand for "not applicable", "permanently unknown" and "temporarily unknown". You may choose your own strings to indicate as many reasons as you need for an absence of value.
+
+Unfortunately, using strings as markers is problematic. Markers must receive special handling to ensure expected behavior. In SQL, for example, the marker `NULL` is not equal to `NULL`; one unknown is not equal to another unknown. Take for example <cite>Beowulf</cite>, a book by an unknown author, whose its author would be set to `NULL` in a SQL table. Querying for books by the same author would return zero results:
 
     SELECT * FROM books WHERE author = NULL
 
-If you want to find all books by unknown authors, which is a different question, the query would be:
+If you want to find all books by unknown author<u>s</u>, which is a different question, the query would be:
 
     SELECT * FROM books WHERE author IS NULL
 
-On the other hand, in SQL, the string marker "UNK" is equal to itself, unlike `NULL`. Performing the same query as above against a database that uses a custom "UNK" marker instead of `NULL` will return all books by unknown authors, instead of returning zero results:
+Unlike `NULL`, the custom string marker "UNK" is equal to itself. Performing the first query above against a table that uses "UNK" instead of `NULL` would return all books by unknown authors, instead of returning zero results:
 
     SELECT * FROM books WHERE author = "UNK"
 
-This result is not desirable, and it is only one example of the many cases in which markers like `NULL` must receive special handling. To handle custom markers appropriately, you would have to add considerable additional logic to your implementation.
+This result is incorrect; it isn't true that the author of <cite>Beowulf</cite> is the author of all books by unknown authors! This is only one of many cases in which markers like `NULL` receive special handling. To handle string markers appropriately, you would have to implement considerable additional logic.
+
+### Using blank nodes
+
+In RDF, [blank nodes](http://www.w3.org/TR/rdf-mt/#unlabel) indicate the existence of a thing, without using, or saying anything about, the name of that thing. Therefore, you can write:
+
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#blank-rdf">RDF</a></li>
+  <li><a href="#blank-json">JSON</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="blank-rdf">
+    <pre><code>ex:beowulf ex:author [] .</code></pre>
+  </div>
+  <div class="tab-pane" id="blank-json">
+    <pre><code class="highlight" data-lang="json">{
+  "@id": "ex:beowulf",
+  "ex:author": {}
+}</code></pre>
+  </div>
+</div>
+
+which states that <cite>Beowulf</cite> has an author, while saying nothing about the author. Unlike a string, a blank node is not equal to another blank node, preserving the logic of `NULL` described above, which is that one unknown is not equal to another unknown.
+
+Note that when using a blank node, it's possible to say something about an author, without naming the author. For example, the author of <cite>Beowulf</cite> was, in all likelihood, a person. Therefore, you can write:
+
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#blank-data-rdf">RDF</a></li>
+  <li><a href="#blank-data-json">JSON</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="blank-data-rdf">
+    <pre><code>ex:beowulf ex:author [ a foaf:Person ] .</code></pre>
+  </div>
+  <div class="tab-pane" id="blank-data-json">
+    <pre><code class="highlight" data-lang="json">{
+  "@id": "ex:beowulf",
+  "ex:author": { "@type": "foaf:Person" }
+}</code></pre>
+  </div>
+</div>
+
+### Using classes
+
+To describe the relationship between a politician and a political party, the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a [`memberOf`](http://www.w3.org/TR/vocab-org/#property-memberof) property, whose range is [`Organization`](http://www.w3.org/TR/vocab-org/#org:Organization). In other words, the property maps a person to an organization, for example:
+
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#member-rdf">RDF</a></li>
+  <li><a href="#member-json">JSON</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="member-rdf">
+    <pre><code>ex:john org:memberOf ex:xyz-party .</code></pre>
+  </div>
+  <div class="tab-pane" id="member-json">
+    <pre><code class="highlight" data-lang="json">{
+  "@id": "ex:john",
+  "org:memberOf": "ex:xyz-party"
+}</code></pre>
+  </div>
+</div>
+
+In many democracies, it is common to elect a candidate who belongs to no political party. To disambiguate a candidate with no party affiliation from a candidate whose party affiliation is unknown, you may change the range of the `memberOf` property to be the union of the `Organization` class and a new marker class that stands for "no party", using [<abbr title="Web Ontology Language">OWL</abbr>](http://www.w3.org/TR/owl2-primer/):
+
+```
+org:memberOf rdfs:domain [ owl:unionOf (org:Organization ex:Independent) ]
+```
+
+You may then publish data on independent candidates, like:
+
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#member-marker-rdf">RDF</a></li>
+  <li><a href="#member-marker-json">JSON</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="member-marker-rdf">
+    <pre><code>ex:john org:memberOf ex:Independent .</code></pre>
+  </div>
+  <div class="tab-pane" id="member-marker-json">
+    <pre><code class="highlight" data-lang="json">{
+  "@id": "ex:john",
+  "org:memberOf": "ex:Independent"
+}</code></pre>
+  </div>
+</div>
+
+As with string markers, querying for all candidates belonging to the same party as an independent member, using [SPARQL](http://en.wikipedia.org/wiki/SPARQL) for example, would returns all independent candidates, which is incorrect:
+
+    SELECT ?person WHERE {
+      ?person org:memberOf ex:Independent .
+    }
+
+To correct this problem, you may change the query template to limit the results to candidates belonging to an organization, which in this case will return zero results, because `ex:Independent` is not an organization, but a marker for "no party":
+
+    SELECT ?person WHERE {
+      ?person org:MemberOf ?organization .
+      ?organization a org:Organization .
+      FILTER (?organization = ex:Independent)
+    }
+
+This approach is effective but inefficient, as it requires creating a marker for most classes, and not always feasible, as it requires changing the range of properties which may be defined by third-party ontologies.
 
 ## Schema strategy
 
-Instead of introducing a new truth value every time there is a new reason for an absence of value, you should avoid `NULL` and markers altogether. You should not make a statement like "Herodotus was born on \<unknown\>" when the value of a property is unknown, or "John Doe died on \<not applicable\>" when a property is inapplicable, as you would if using `NULL` in your data model.
+Instead of introducing a new truth value every time there is a new reason for an absence of value, you should avoid `NULL` and markers altogether. You should not make a statement like "Herodotus was born on \<unknown\>" when the value of a property is unknown, or "John Doe died on \<not applicable\>" when a property is inapplicable, as you would if using `NULL`. Instead, state the reason for which the property is absent. For example, if John is alive, and a `death_date` property is therefore inapplicable, you may first, for example, either state that John belongs to the class `Alive`:
 
-Instead, state the reason for which the property is inapplicable. For example, if John is alive, and a `death_date` property is therefore inapplicable, you may first, for example, either state that John belongs to the class `Alive`:
-
-```
-ex:john rdf:type ex:Alive .
-```
-
-```json
-{
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#class-rdf">RDF</a></li>
+  <li><a href="#class-json">JSON</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="class-rdf">
+    <pre><code>ex:john rdf:type ex:Alive .</code></pre>
+  </div>
+  <div class="tab-pane" id="class-json">
+    <pre><code class="highlight" data-lang="json">{
   "@id": "ex:john",
   "@type": "ex:Alive"
-}
-```
+}</code></pre>
+  </div>
+</div>
 
 Or state that the property `alive` has the value `true` for John:
 
-```
-ex:john ex:alive true .
-```
-
-```json
-{
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#property-rdf">RDF</a></li>
+  <li><a href="#property-json">JSON</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="property-rdf">
+    <pre><code>ex:john ex:alive true .</code></pre>
+  </div>
+  <div class="tab-pane" id="property-json">
+    <pre><code class="highlight" data-lang="json">{
   "@id": "ex:john",
   "ex:alive": true
-}
-```
+}</code></pre>
+  </div>
+</div>
 
-Second, using [<abbr title="Web Ontology Language">OWL</abbr>](http://www.w3.org/TR/owl2-primer/) for example, you may state that instances of the class `Alive` cannot have a value for the property `death_date` (i.e. live people cannot have a death date):
+Second, using [<abbr title="Web Ontology Language">OWL</abbr>](http://www.w3.org/TR/owl2-primer/) for example, you may state that instances of the class `Alive` cannot have a value for the property `death_date` – in other words, that live people cannot have a death date:
 
     # Live people are the class of people whose "alive" property is set to true.
     :Alive rdfs:subClassOf foaf:Person ;
@@ -178,4 +288,4 @@ Second, using [<abbr title="Web Ontology Language">OWL</abbr>](http://www.w3.org
     # The death_date property can only be set for a dead person.
     :death_date rdfs:domain :Dead .
 
-If, for a given resource, a property is applicable but its value is unknown, simply do not make any statements about its value. This approach is consistent with the <a href="https://en.wikipedia.org/wiki/Open_world_assumption">open world assumption</a> used by RDF, in which the absence of a particular statement implies nothing about the world; its absence implies only that the truth value of the statement is unknown, which is the desired interpretation.
+In this way, it is possible to use a [semantic reasoner](http://en.wikipedia.org/wiki/Semantic_reasoner) to infer the reason for which a value is absent. For a live person, if the `death_date` property is absent, it is because live people cannot have a death date. For a dead person, if the `death_date` property is absent, it is because the death date is unknown. This approach is effective but inefficient, as it requires writing rules for each property.

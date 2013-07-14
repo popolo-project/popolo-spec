@@ -60,6 +60,10 @@ blockquote p {
   line-height: 1.5em;
 }
 
+cite {
+  font-style: italic;
+}
+
 table {
   margin-bottom: 1em;
 }
