@@ -124,7 +124,7 @@ In general, if, for a given resource, a property is applicable but its value is 
 
 Like SQL, most programming languages and data models implement at most three-valued logic. Instead of relying on a native implementation of four-valued logic, strings, classes and [blank nodes](http://en.wikipedia.org/wiki/Blank_node) can be used as markers in practice.
 
-### Using strings
+<h3 id="markers-using-strings">Using strings</h3>
 
 <abbr title="National Aeronautics and Space Administration">NASA</abbr>'s [Planetary Data System (PDS)](http://pds.jpl.nasa.gov/tools/standards-reference.shtml) uses the strings ["N/A", "UNK" and "NULL"](http://pds.jpl.nasa.gov/documents/sr/Chapter17.pdf) as markers to stand for "not applicable", "permanently unknown" and "temporarily unknown". You may choose your own strings to indicate as many reasons as you need for an absence of value.
 
@@ -142,7 +142,7 @@ Unlike `NULL`, the custom string marker "UNK" is equal to itself. Performing the
 
 This result is incorrect; it isn't true that the author of <cite>Beowulf</cite> is the author of all books by unknown authors! This is only one of many cases in which markers like `NULL` receive special handling. To handle string markers appropriately, you would have to implement considerable additional logic.
 
-### Using blank nodes
+<h3 id="markers-using-blank-nodes">Using blank nodes</h3>
 
 In RDF, [blank nodes](http://www.w3.org/TR/rdf-mt/#unlabel) indicate the existence of a thing, without using, or saying anything about, the name of that thing. Therefore, you can write:
 
@@ -182,7 +182,7 @@ Note that when using a blank node, it's possible to say something about an autho
   </div>
 </div>
 
-### Using classes
+<h3 id="markers-using-classes">Using classes</h3>
 
 To describe the relationship between a politician and a political party, the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a [`memberOf`](http://www.w3.org/TR/vocab-org/#property-memberof) property, whose range is [`Organization`](http://www.w3.org/TR/vocab-org/#org:Organization). In other words, the property maps a person to an organization, for example:
 
@@ -202,7 +202,7 @@ To describe the relationship between a politician and a political party, the [Or
   </div>
 </div>
 
-In many democracies, it is common to elect a candidate who belongs to no political party. To disambiguate a candidate with no party affiliation from a candidate whose party affiliation is unknown, you may change the range of the `memberOf` property to be the union of the `Organization` class and a new marker class that stands for "no party", using [<abbr title="Web Ontology Language">OWL</abbr>](http://www.w3.org/TR/owl2-primer/):
+In many democracies, it is common to elect a candidate who belongs to no political party. To disambiguate a candidate with no party affiliation from a candidate whose party affiliation is unknown, change the range of the `memberOf` property to be the union of the `Organization` class and a new marker class that stands for "no party", using [<abbr title="Web Ontology Language">OWL</abbr>](http://www.w3.org/TR/owl2-primer/):
 
 ```
 org:memberOf rdfs:domain [ owl:unionOf (org:Organization ex:Independent) ]
@@ -226,7 +226,7 @@ You may then publish data on independent candidates, like:
   </div>
 </div>
 
-As with string markers, querying for all candidates belonging to the same party as an independent member, using [SPARQL](http://en.wikipedia.org/wiki/SPARQL) for example, would returns all independent candidates, which is incorrect:
+As with string markers, querying for all candidates belonging to the same party (`ex:Independent`) as an independent member, using [SPARQL](http://en.wikipedia.org/wiki/SPARQL) for example, would returns all independent candidates, which is incorrect:
 
     SELECT ?person WHERE {
       ?person org:memberOf ex:Independent .
@@ -283,16 +283,30 @@ Or state that the property `alive` has the value `true` for John:
 Second, using [<abbr title="Web Ontology Language">OWL</abbr>](http://www.w3.org/TR/owl2-primer/) for example, you may state that instances of the class `Alive` cannot have a value for the property `death_date` – in other words, that live people cannot have a death date:
 
     # Live people are the class of people whose "alive" property is set to true.
-    :Alive rdfs:subClassOf foaf:Person ;
-      a owl:Restriction ;
-      owl:onProperty :alive ;
-      owl:hasValue true .
+    :Alive owl:equivalentClass [
+      a owl:Class ;
+      owl:intersectionOf (
+        foaf:Person
+        [
+          a owl:Restriction ;
+          owl:onProperty :alive ;
+          owl:hasValue true .
+        ]
+      )
+    ] .
 
     # Dead people are the class of people whose "alive" property is set to false.
-    :Dead rdfs:subClassOf foaf:Person ;
-      a owl:Restriction ;
-      owl:onProperty :alive ;
-      owl:hasValue false .
+    :Dead owl:equivalentClass [
+      a owl:Class ;
+      owl:intersectionOf (
+        foaf:Person
+        [
+          a owl:Restriction ;
+          owl:onProperty :alive ;
+          owl:hasValue false .
+        ]
+      )
+    ] .
 
     # A person cannot be both alive and dead.
     :Alive owl:disjointWith :Dead .
@@ -301,3 +315,95 @@ Second, using [<abbr title="Web Ontology Language">OWL</abbr>](http://www.w3.org
     :death_date rdfs:domain :Dead .
 
 In this way, it is possible to use a [semantic reasoner](http://en.wikipedia.org/wiki/Semantic_reasoner) to infer the reason for which a value is absent. For a live person, if the `death_date` property is absent, it is because live people cannot have a death date. For a dead person, if the `death_date` property is absent, it is because the death date is unknown. This approach is effective but inefficient, as it requires writing rules for each property.
+
+### Revisiting the independent candidate example
+
+We can use the schema strategy in the [independent candidate example](#markers-using-classes) above to disambiguate a candidate with no party affiliation from a candidate whose party affiliation is unknown. First, create a property `independent` whose possible values are `true` or `false`, which can be set on either the candidate or their candidacy. Then, using OWL, state that instances of the class `Nonpartisan` cannot have a value for the property `memberOf` that is a `Party` – in other words, that independent candidates cannot be members of parties:
+
+    # Partisanship is belonging to a party.
+    _:partisanship a owl:Restriction ;
+      owl:onProperty org:memberOf ;
+      owl:someValuesFrom :Party .
+
+    # Nonpartisanship is not belonging to any party.
+    _:nonpartisanship a owl:Class ;
+      owl:complementOf _:partisanship .
+
+    # Partisan people have a membership in a party, and have an "independent" property set to false.
+    :Partisan
+      owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+          foaf:Person
+          _:partisanship
+        ) .
+      ] , [
+        a owl:Class ;
+        owl:intersectionOf (
+          foaf:Person
+          [
+            a owl:Restriction ;
+            owl:onProperty :independent ;
+            owl:hasValue false .
+          ]
+        )
+      ] .
+
+    # Nonpartisan people have no memberships in any party, and have an "independent" property set to true.
+    :Nonpartisan
+      owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+          foaf:Person
+          _:nonpartisanship
+        ) .
+      ] , [
+        a owl:Class ;
+        owl:intersectionOf (
+          foaf:Person
+          [
+            a owl:Restriction ;
+            owl:onProperty :independent ;
+            owl:hasValue true .
+          ]
+        )
+      ] .
+
+    # A person cannot be both nonpartisan and partisan.
+    :Nonpartisan owl:disjointWith :Partisan .
+
+It is now possible, as before, to use a semantic reasoner to infer the reason for which a value is absent. For a partisan candidate, if no `memberOf` property maps the candidate to a party, it is because the party membership is unknown. For an independent candidate, if no `memberOf` property maps the candidate to a party, it is because independent candidates cannot be members of parties. In your data, you would state that a candidate belongs to the class `Nonpartisan`:
+
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#candidate-class-rdf">RDF</a></li>
+  <li><a href="#candidate-class-json">JSON</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="candidate-class-rdf">
+    <pre><code>ex:john rdf:type ex:Nonpartisan .</code></pre>
+  </div>
+  <div class="tab-pane" id="candidate-class-json">
+    <pre><code class="highlight" data-lang="json">{
+  "@id": "ex:john",
+  "@type": "ex:Nonpartisan"
+}</code></pre>
+  </div>
+</div>
+
+Or state that the property `independent` has the value `true` for a candidate:
+
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#candidate-property-rdf">RDF</a></li>
+  <li><a href="#candidate-property-json">JSON</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="candidate-property-rdf">
+    <pre><code>ex:john ex:independent true .</code></pre>
+  </div>
+  <div class="tab-pane" id="candidate-property-json">
+    <pre><code class="highlight" data-lang="json">{
+  "@id": "ex:john",
+  "ex:independent": true
+}</code></pre>
+  </div>
+</div>
