@@ -107,7 +107,7 @@ A less object-oriented approach to isolating the data about the sponsorship from
 
 However, this approach should be avoided, as it is more difficult to identify and collect the fields for the related object than the previous approach.
 
-<p class="note" id="note1">1. The <a href="http://www.w3.org/TR/owl2-overview/">Web Ontology Language (OWL)</a> defines an <code><a href="http://www.w3.org/TR/owl2-syntax/#Classes">owl:Thing</a></code> class, which is the superclass to all classes.</p>
+<p class="note" id="note1">1. The <a href="http://www.w3.org/TR/owl2-overview/">Web Ontology Language (OWL)</a> defines an <code><a href="http://www.w3.org/TR/owl2-syntax/#Classes">owl:Thing</a></code> class, which is the superclass to all classes. <a href="http://schema.org/">Schema.org</a> also defines a <a href="http://schema.org/Thing">Thing</a> class.</p>
 
 <h2 id="complexity">Remove unnecessary complexity</h2>
 
