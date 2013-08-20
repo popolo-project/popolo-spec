@@ -51,7 +51,7 @@ Until a unique, standard approach to language tagging emerges for JSON, to simpl
     "chat"@fr
     ```
 
-* [JSON-LD]((http://json-ld.org/spec/latest/json-ld/) offers [several ways](http://json-ld.org/spec/latest/json-ld/#string-internationalization) to indicate the language of a string, whether by:
+* [JSON-LD](http://json-ld.org/spec/latest/json-ld/) offers [several ways](http://json-ld.org/spec/latest/json-ld/#string-internationalization) to indicate the language of a string, whether by:
 
     * using a value object:
 
