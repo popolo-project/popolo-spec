@@ -18,7 +18,7 @@ This document collects some emerging design patterns for APIs for accessing legi
 
 <h2 id="internationalization">Support multiple languages</h2>
 
-### 1. Negotiate the client's preferred language
+### 1. Negotiate tsevahe client's preferred language
 
 Most APIs with multilingual support allow clients to specify which natural languages are preferred using the [Accept-Language](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4) HTTP header. For example, `Accept-Language: fr, en` means the client prefers French but will accept English. If no Accept-Language header is present, the API assumes that all languages are equally acceptable.
 
@@ -51,7 +51,7 @@ Until a unique, standard approach to language tagging emerges for JSON, to simpl
     "chat"@fr
     ```
 
-* [JSON-LD]((http://json-ld.org/spec/latest/json-ld/) offers [several ways](http://json-ld.org/spec/latest/json-ld/#string-internationalization) to indicate the language of a string, whether by:
+* [JSON-LD](http://json-ld.org/spec/latest/json-ld/) offers [several ways](http://json-ld.org/spec/latest/json-ld/#string-internationalization) to indicate the language of a string, whether by:
 
     * using a value object:
 
