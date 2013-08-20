@@ -77,11 +77,11 @@ Jump to a section below or start at the [beginning](/specs/).
 
 1. [Survey of existing specifications](/appendices/survey.html)
 1. [Inventory of terms from the survey](/appendices/terms.html)
-1. [Example conformant JSON documents](/appendices/examples.html)
-1. [Best practices for software components](/appendices/components.html)
-1. [Data model patterns](/appendices/data-patterns.html)
-1. [JSON serialization patterns](/appendices/json-patterns.html)
-1. [API design patterns](/appendices/api-patterns.html)
+1. [Example Popolo JSON documents](/appendices/examples.html)
+1. [Best practices for software components](/appendices/components.html) (document identifiers, database isolation)
+1. [Data model patterns](/appendices/data-patterns.html) (semantics, succintness, edge cases)
+1. [JSON serialization patterns](/appendices/json-patterns.html) (embedding, simplicity)
+1. [API design patterns](/appendices/api-patterns.html) (multilingual support, merging duplicates)
 
 <h2 id="participation">Participation</h2>
 
