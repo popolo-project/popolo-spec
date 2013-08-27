@@ -95,6 +95,7 @@ Questions? Contact [james@opennorth.ca](mailto:james@opennorth.ca).
 
 ## Implementation
 
-* [Larvae by Open Civic Data](https://github.com/opencivicdata/larvae): A Python package to create and validate civic data objects, underpinning the [Sunlight Foundation](http://sunlightfoundation.com/)'s work on government transparency at the local level.
+* [Pupa by Open Civic Data](https://github.com/opencivicdata/pupa): A Python package to create and validate civic data objects, underpinning the [Sunlight Foundation](http://sunlightfoundation.com/)'s work on government transparency at the local level.
 * [PopIt by mySociety](https://npmjs.org/package/popit-api): A Node.js package to make it simple "to start and maintain a public database of people, organisations and positions," part of mySociety's work on reusable software components.
+* [django-popolo by Openpolis](https://github.com/openpolis/django-popolo): A Django app that provides basic models and views for all classes in Popolo for use within a Django project or Openpolis' [REST API](https://github.com/openpolis/popolorest).
 * [Popolo Engine by Open North](https://github.com/opennorth/popolo-engine): A Ruby on Rails engine that provides basic models, controllers and views for all classes in Popolo.
