@@ -116,12 +116,12 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
     </tr>
     <tr id="schema:validFrom">
       <td>start date</td>
-      <td><code><a href="http://schema.org/startDate" title="http://schema.org/startDate">schema:validFrom</a></code></td>
+      <td><code><a href="http://schema.org/validFrom" title="http://schema.org/validFrom">schema:validFrom</a></code></td>
       <td>the date on which the relationship began</td>
     </tr>
     <tr id="schema:validThrough">
       <td>end date</td>
-      <td><code><a href="http://schema.org/endDate" title="http://schema.org/endDate">schema:validThrough</a></code></td>
+      <td><code><a href="http://schema.org/validThrough" title="http://schema.org/validThrough">schema:validThrough</a></code></td>
       <td>the date on which the relationship ended</td>
     </tr>
     <tr>
