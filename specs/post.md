@@ -113,14 +113,14 @@ According to the Organization ontology, either a person or an organization can h
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:postIn" title="http://www.w3.org/ns/org#postIn">org:postIn</a></code><a href="#note2"><sup>2</sup></a></td>
       <td>The organization in which the post is held</td>
     </tr>
-    <tr>
+    <tr id="schema:validFrom">
       <td>date of creation</td>
-      <td><em>none yet</em></td>
+      <td><code><a href="http://schema.org/validFrom" title="http://schema.org/validFrom">schema:validFrom</a></code></td>
       <td>A date of creation</td>
     </tr>
-    <tr>
+    <tr id="schema:validThrough">
       <td>date of elimination</td>
-      <td><em>none yet</em></td>
+      <td><code><a href="http://schema.org/validThrough" title="http://schema.org/validThrough">schema:validThrough</a></code></td>
       <td>A date of elimination</td>
     </tr>
     <tr>
@@ -148,7 +148,7 @@ A post cannot exist outside an organization. All posts <em class="rfc2119">must<
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
 * The value of the `role` property is a string, instead of an `org:Role`.
 * The term `organization_id` is used instead of `postIn` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
-* The terms `start_date` and `end_date` pair are used, to be consistent with the [Membership](/specs/membership.html) class.
+* The terms `start_date` and `end_date` are used instead of `validFrom` and `validThrough`, to be consistent with the [Membership](/specs/membership.html) class.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 
 <ul class="nav nav-tabs no-js">
