@@ -1,7 +1,10 @@
 {
   "Post": "http://www.w3.org/ns/org#Post",
   "label": "http://www.w3.org/2004/02/skos/core#prefLabel",
-  "role": "http://www.w3.org/ns/org#role",
+  "role": {
+    "@id": "http://www.w3.org/ns/org#role",
+    "@type": "id"
+  },
   "organization": {
     "@id": "http://www.w3.org/ns/org#postIn",
     "@type": "@id"

@@ -1,7 +1,10 @@
 {
   "Membership": "http://www.w3.org/ns/org#Membership",
   "label": "http://www.w3.org/2004/02/skos/core#prefLabel",
-  "role": "http://www.w3.org/ns/org#role",
+  "role": {
+    "@id": "http://www.w3.org/ns/org#role",
+    "@type": "id"
+  },
   "person": {
     "@id": "http://www.w3.org/ns/org#member",
     "@type": "@id"

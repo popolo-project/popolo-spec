@@ -8,7 +8,10 @@
   "identifier": "@value",
   "scheme": "@type",
   "identifiers": "http://www.w3.org/ns/org#identifier",
-  "classification": "http://www.w3.org/ns/org#classification",
+  "classification": {
+    "@id": "http://www.w3.org/ns/org#classification",
+    "@type": "@id"
+  },
   "parent": {
     "@id": "http://www.w3.org/ns/org#subOrganizationOf",
     "@type": "@id"
