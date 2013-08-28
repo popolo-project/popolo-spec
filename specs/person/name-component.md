@@ -66,17 +66,17 @@ In [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350), each component of
     </tr>
     <tr id="schema:additionalName">
       <td>additional name</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/additionalName">schema:additionalName</a></code></td>
+      <td><code><a href="http://schema.org/additionalName" title="http://schema.org/additionalName">schema:additionalName</a></code></td>
       <td>One or more secondary given names</td>
     </tr>
     <tr id="schema:honorificPrefix">
       <td>honorific prefix</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/honorificPrefix">schema:honorificPrefix</a></code><a href="#note1"><sup>1</sup></a></td>
+      <td><code><a href="http://schema.org/honorificPrefix" title="http://schema.org/honorificPrefix">schema:honorificPrefix</a></code><a href="#note1"><sup>1</sup></a></td>
       <td>One or more honorifics preceding a person's name</td>
     </tr>
     <tr id="schema:honorificSuffix">
       <td>honorific suffix</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/honorificSuffix">schema:honorificSuffix</a></code></td>
+      <td><code><a href="http://schema.org/honorificSuffix" title="http://schema.org/honorificSuffix">schema:honorificSuffix</a></code></td>
       <td>One or more honorifics following a person's name</td>
     </tr>
     <tr id="person:patronymicName">

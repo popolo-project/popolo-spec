@@ -121,7 +121,7 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
     </tr>
     <tr id="schema:foundingDate">
       <td>date of founding</td>
-      <td><code><a href="http://schema.org/Organization" title="http://schema.org/foundingDate">schema:foundingDate</a></code></td>
+      <td><code><a href="http://schema.org/foundingDate" title="http://schema.org/foundingDate">schema:foundingDate</a></code></td>
       <td>A date of founding</td>
     </tr>
     <tr>

@@ -124,7 +124,7 @@ With respect to the choice of terms:
     </tr>
     <tr id="schema:email">
       <td>email address<a href="#note1"><sup>1</sup></a></td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/email">schema:email</a></code><a href="#note2"><sup>2</sup></a></td>
+      <td><code><a href="http://schema.org/email" title="http://schema.org/email">schema:email</a></code><a href="#note2"><sup>2</sup></a></td>
       <td>A preferred email address</td>
     </tr>
     <tr id="foaf:gender">
@@ -134,17 +134,17 @@ With respect to the choice of terms:
     </tr>
     <tr id="schema:birthDate">
       <td>date of birth</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/birthDate">schema:birthDate</a></code><a href="#note3"><sup>3</sup></a></td>
+      <td><code><a href="http://schema.org/birthDate" title="http://schema.org/birthDate">schema:birthDate</a></code><a href="#note3"><sup>3</sup></a></td>
       <td>A date of birth</td>
     </tr>
     <tr id="schema:deathDate">
       <td>date of death</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/deathDate">schema:deathDate</a></code></td>
+      <td><code><a href="http://schema.org/deathDate" title="http://schema.org/deathDate">schema:deathDate</a></code></td>
       <td>A date of death</td>
     </tr>
     <tr id="schema:image">
       <td>head shot</td>
-      <td><code><a href="http://schema.org/Person" title="http://schema.org/image">schema:image</a></code><a href="#note4"><sup>4</sup></a></td>
+      <td><code><a href="http://schema.org/image" title="http://schema.org/image">schema:image</a></code><a href="#note4"><sup>4</sup></a></td>
       <td>A URL of a head shot</td>
     </tr>
     <tr id="bio:olb">
