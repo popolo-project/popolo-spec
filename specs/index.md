@@ -213,7 +213,7 @@ The following table defines the metadata properties and maps each term to an <ab
 
 The data specification defines two serializations: <abbr title="Resource Description Framework">RDF</abbr> and <abbr title="JavaScript Object Notation">JSON</abbr>. RDF is a technology for data modeling, with a variety of syntax notations and serialization formats, including [<abbr title="Extensible Markup Language">XML</abbr>](http://www.w3.org/TR/rdf-syntax-grammar/), JSON (via [JSON-LD]((http://json-ld.org/spec/latest/json-ld/)), <abbr title="HyperText Markup Language">HTML</abbr> (via [<abbr title="Resource Description Framework in Attributes">RDFa</abbr>](http://www.w3.org/TR/rdfa-primer/) or [RDFa Lite](http://www.w3.org/TR/rdfa-lite/)), and [<abbr title="Notation 3">N3</abbr>](http://en.wikipedia.org/wiki/Notation_3) (a superset of the simpler [Turtle](http://www.w3.org/TR/turtle/) and [N-Triples](http://www.w3.org/TR/n-triples/) formats). JSON is a text-based, language-independent interchange format for structured data, derived from the JavaScript scripting language.
 
-Given that the same RDF resource can be serialized in many different ways using [JSON-LD](http://json-ld.org/), [JSON Schema](http://json-schema.org/) (see next subsection) are provided to ensure all JSON serializations look alike, to maximize interoperability.
+Given that the same RDF resource can be serialized in many different ways using [JSON-LD](http://json-ld.org/), [JSON Schema](http://json-schema.org/) (see the following subsections) are provided to ensure all JSON serializations look alike, to maximize interoperability.
 
 Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>3</sup>](#note3) is <em class="rfc2119">recommended</em>.
 
@@ -221,28 +221,7 @@ Additional serialization details are given in the subdocuments in the [previous 
 
 <p class="note" id="note3">3. Consult the list of <a href="https://github.com/opennorth/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>. <a href="http://www.w3.org/XML/Schema.html">XML Schema</a> supports <a href="http://www.w3.org/TR/xmlschema-2/#truncatedformats">reduced dates</a> such as <a href="http://www.w3.org/TR/xmlschema-2/#gYear"><code>YYYY</code></a> and <a href="http://www.w3.org/TR/xmlschema-2/#gYearMonth"><code>YYYY-MM</code></a>.</p>
 
-<h2 id="metadata-properties">6.1. Metadata properties</h2>
-
-**JSON differences from other RDF serializations:**
-
-* Whereas other RDF serializations may have multiple modification times and may cite a variety of materials as sources, the JSON serialization <em class="rfc2119">must</em> serialize only the last modification time and cite only URIs.
-* The term `created_at` is used instead of `created`, due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
-* The term `updated_at` is used instead of `modified`, due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
-* The term `sources` is used instead of `source` and is serialized as an array of [link objects](#link).
-
-The following examples use a Person document to demonstrate the metadata properties.
-
-<ul class="nav nav-tabs no-js">
-  <li class="active"><a href="#metadata-json">JSON</a></li>
-  <li><a href="#metadata-rdf">RDF</a></li>
-</ul>
-
-<div class="tab-content no-js">
-  <div class="tab-pane active" id="metadata-json" data-url="/examples/metadata.json"></div>
-  <div class="tab-pane" id="metadata-rdf" data-url="/examples/metadata.ttl"></div>
-</div>
-
-<h2 id="schema-and-examples">6.2. Schema and examples</h2>
+<h2 id="schema-and-examples">6.1. Schema and examples</h2>
 
 As described in the [conformance](#conformance) section, JSON serializations <em class="rfc2119">must</em> validate against the JSON Schema (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) below. The terms use [snake case](http://en.wikipedia.org/wiki/Snake_case) (`birth_date`) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase) (`birthDate`), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
 
@@ -288,6 +267,27 @@ As described in the [conformance](#conformance) section, JSON serializations <em
     </tr>
   </tbody>
 </table>
+
+<h2 id="metadata-properties">6.2. Metadata properties</h2>
+
+**JSON differences from other RDF serializations:**
+
+* Whereas other RDF serializations may have multiple modification times and may cite a variety of materials as sources, the JSON serialization <em class="rfc2119">must</em> serialize only the last modification time and cite only URIs.
+* The term `created_at` is used instead of `created`, due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
+* The term `updated_at` is used instead of `modified`, due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
+* The term `sources` is used instead of `source` and is serialized as an array of [link objects](#link).
+
+The following examples use a Person document to demonstrate the metadata properties.
+
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#metadata-json">JSON</a></li>
+  <li><a href="#metadata-rdf">RDF</a></li>
+</ul>
+
+<div class="tab-content no-js">
+  <div class="tab-pane active" id="metadata-json" data-url="/examples/metadata.json"></div>
+  <div class="tab-pane" id="metadata-rdf" data-url="/examples/metadata.ttl"></div>
+</div>
 
 <h2 id="embedded-json-documents">6.3. Embedded JSON documents</h2>
 
