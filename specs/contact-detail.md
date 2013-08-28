@@ -84,8 +84,6 @@ The [survey of existing specifications](/appendices/survey.html) found that [RFC
 
 <h1 id="serialization">4. Serialization</h1>
 
-**JSON differences from other RDF serializations:**
-
 * Telephone number values <em class="rfc2119">should</em> be in [RFC 3966](http://tools.ietf.org/html/rfc3966) format, without the `tel:` prefix.
 
 <ul class="nav nav-tabs no-js">
