@@ -43,9 +43,13 @@ The Membership class should have properties for:
 
     >Chairman of the XYZ Party
 
-1. the time interval over which the relationship exists
+1. the date on which the relationship began
 
     >since 2000
+
+1. the date on which the relationship ended
+
+    >January 1, 2013
 
 1. the means of contacting the person who is a party to the relationship
 
@@ -61,6 +65,8 @@ The Membership class should have properties for:
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
 Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that only the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a rich membership model for describing the relation between people and organizations.
+
+Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, the `schema:validFrom` and `schema:validThrough` pair is used instead of `memberDuring`, an alternative [described](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.
 
 ## 2.1. Range restrictions
 
@@ -108,10 +114,15 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
       <td><em>none yet</em></td>
       <td>The post held by the person in the organization</td>
     </tr>
-    <tr id="org:memberDuring">
-      <td>time interval</td>
-      <td><code><a href="http://www.w3.org/TR/vocab-org/#org:memberDuring" title="http://www.w3.org/ns/org#memberDuring">org:memberDuring</a></code></td>
-      <td>the time interval over which the relationship exists</td>
+    <tr id="schema:validFrom">
+      <td>start date</td>
+      <td><code><a href="http://schema.org/startDate" title="http://schema.org/startDate">schema:validFrom</a></code></td>
+      <td>the date on which the relationship began</td>
+    </tr>
+    <tr id="schema:validThrough">
+      <td>end date</td>
+      <td><code><a href="http://schema.org/endDate" title="http://schema.org/endDate">schema:validThrough</a></code></td>
+      <td>the date on which the relationship ended</td>
     </tr>
     <tr>
       <td>contact detail</td>
@@ -136,9 +147,9 @@ A membership relation cannot exist without both a person and an organization. Al
 
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
 * The value of the `role` property is a string, instead of an `org:Role`.
+* The terms `start_date` and `end_date`[<sup>2</sup>](#note2) are used instead of `validFrom` and `validThrough`, for backwards compatibility.
 * The term `person_id` is used instead of `member` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
 * The term `organization_id` is used instead of `organization` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
-* Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, a simple `start_date` and `end_date`[<sup>2</sup>](#note2) pair is used instead of `memberDuring`, as [proposed](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 
 <p class="note" id="note2">2. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>
