@@ -1,0 +1,61 @@
+{
+  "Person": "http://www.w3.org/ns/person#Person",
+  "name": "http://xmlns.com/foaf/0.1/name",
+  "other_names": {
+    "@id": "http://www.w3.org/ns/opengov#otherName",
+    "@type": "@id"
+  },
+  "identifier": "@value",
+  "scheme": "@type",
+  "identifiers": "http://xmlns.com/foaf/0.1/nick",
+  "family_name": "http://xmlns.com/foaf/0.1/familyName",
+  "given_name": "http://xmlns.com/foaf/0.1/givenName",
+  "additional_name": "http://schema.org/additionalName",
+  "honorific_prefix": "http://schema.org/honorificPrefix",
+  "honorific_suffix": "http://schema.org/honorificSuffix",
+  "patronymic_name": "http://www.w3.org/ns/person#patronymicName",
+  "sort_name": "http://www.w3.org/2000/10/swap/pim/contact#sortName",
+  "email": {
+    "@id": "http://schema.org/email",
+    "@type": "@id"
+  },
+  "gender": "http://xmlns.com/foaf/0.1/gender",
+  "birth_date": {
+    "@id": "http://schema.org/birthDate",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "death_date": {
+    "@id": "http://schema.org/deathDate",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "image": {
+    "@id": "http://schema.org/image",
+    "@type": "@id"
+  },
+  "summary": "http://purl.org/vocab/bio/0.1/olb",
+  "biography": "http://purl.org/vocab/bio/0.1/biography",
+  "contact_details": {
+    "@id": "http://www.w3.org/ns/opengov#contactDetail",
+    "@type": "@id"
+  },
+  "links": {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "@type": "@id"
+  },
+  "memberships": {
+    "@id": "http://www.w3.org/ns/org#memberOf",
+    "@type": "@id"
+  },
+  "created_at": {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "updated_at": {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "sources": {
+    "@id": "http://purl.org/dc/terms/source",
+    "@type": "@id"
+  }
+}

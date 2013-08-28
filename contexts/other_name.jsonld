@@ -1,0 +1,13 @@
+{
+  "OtherName": "http://www.w3.org/ns/opengov#OtherName",
+  "name": "http://www.w3.org/2000/01/rdf-schema#label",
+  "start_date": {
+    "@id": "http://schema.org/validFrom",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "end_date": {
+    "@id": "http://schema.org/validThrough",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "note": "http://www.w3.org/2004/02/skos/core#note"
+}

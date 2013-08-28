@@ -1,0 +1,52 @@
+{
+  "Organization": "http://www.w3.org/ns/org#Organization",
+  "name": "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "other_names": {
+    "@id": "http://www.w3.org/ns/opengov#otherName",
+    "@type": "@id"
+  },
+  "identifier": "@value",
+  "scheme": "@type",
+  "identifiers": "http://www.w3.org/ns/org#identifier",
+  "classification": "http://www.w3.org/ns/org#classification",
+  "parent": {
+    "@id": "http://www.w3.org/ns/org#subOrganizationOf",
+    "@type": "@id"
+  },
+  "founding_date": {
+    "@id": "http://schema.org/foundingDate",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "dissolution_date": {
+    "@id": "http://www.w3.org/ns/opengov#dissolutionDate",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "contact_details": {
+    "@id": "http://www.w3.org/ns/opengov#contactDetail",
+    "@type": "@id"
+  },
+  "links": {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "@type": "@id"
+  },
+  "memberships": {
+    "@id": "http://www.w3.org/ns/org#hasMember",
+    "@type": "@id"
+  },
+  "posts": {
+    "@id": "http://www.w3.org/ns/org#hasPost",
+    "@type": "@id"
+  },
+  "created_at": {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "updated_at": {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "sources": {
+    "@id": "http://purl.org/dc/terms/source",
+    "@type": "@id"
+  }
+}

@@ -3,7 +3,7 @@ $('.tab-content.no-js div').each(function () {
       url = $this.data('url');
   if (url) {
     $.get(url, function (data) {
-      var json = url.indexOf('.json', url.length - 5) !== -1,
+      var json = url.indexOf('.json', url.length - 5) !== -1 || url.indexOf('.jsonld', url.length - 7) !== -1,
           html = '<a class="download-link" href="' + url + '">Download</a><pre>';
       if (json) {
         html += '<code class="language-json">';

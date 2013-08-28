@@ -154,12 +154,14 @@ A membership relation cannot exist without both a person and an organization. Al
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#membership-schema">JSON Schema</a></li>
+  <li><a href="#membership-context">JSON-LD context</a></li>
   <li class="active"><a href="#membership-json">JSON</a></li>
   <li><a href="#membership-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content no-js">
   <div class="tab-pane" id="membership-schema" data-url="/schemas/membership.json"></div>
+  <div class="tab-pane" id="membership-context" data-url="/contexts/membership.jsonld"></div>
   <div class="tab-pane active" id="membership-json" data-url="/examples/membership.json"></div>
   <div class="tab-pane" id="membership-rdf" data-url="/examples/membership.ttl"></div>
 </div>

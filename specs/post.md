@@ -153,12 +153,14 @@ A post cannot exist outside an organization. All posts <em class="rfc2119">must<
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#post-schema">JSON Schema</a></li>
+  <li><a href="#post-context">JSON-LD Context</a></li>
   <li class="active"><a href="#post-json">JSON</a></li>
   <li><a href="#post-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content no-js">
   <div class="tab-pane" id="post-schema" data-url="/schemas/post.json"></div>
+  <div class="tab-pane" id="post-context" data-url="/contexts/post.jsonld"></div>
   <div class="tab-pane active" id="post-json" data-url="/examples/post.json"></div>
   <div class="tab-pane" id="post-rdf" data-url="/examples/post.ttl"></div>
 </div>

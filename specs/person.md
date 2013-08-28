@@ -188,12 +188,14 @@ With respect to the choice of terms:
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#person-schema">JSON Schema</a></li>
+  <li><a href="#person-context">JSON-LD Context</a></li>
   <li class="active"><a href="#person-json">JSON</a></li>
   <li><a href="#person-rdf">RDF</a></li>
 </ul>
 
 <div class="tab-content no-js">
   <div class="tab-pane" id="person-schema" data-url="/schemas/person.json"></div>
+  <div class="tab-pane" id="person-context" data-url="/contexts/person.jsonld"></div>
   <div class="tab-pane active" id="person-json" data-url="/examples/person.json"></div>
   <div class="tab-pane" id="person-rdf" data-url="/examples/person.ttl"></div>
 </div>

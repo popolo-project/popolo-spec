@@ -1,0 +1,41 @@
+{
+  "Post": "http://www.w3.org/ns/org#Post",
+  "label": "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "role": "http://www.w3.org/ns/org#role",
+  "organization": {
+    "@id": "http://www.w3.org/ns/org#postIn",
+    "@type": "@id"
+  },
+  "start_date": {
+    "@id": "http://schema.org/validFrom",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "end_date": {
+    "@id": "http://schema.org/validThrough",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "contact_details": {
+    "@id": "http://www.w3.org/ns/opengov#contactDetail",
+    "@type": "@id"
+  },
+  "links": {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "@type": "@id"
+  },
+  "memberships": {
+    "@id": "http://www.w3.org/ns/opengov#heldThrough",
+    "@type": "@id"
+  },
+  "created_at": {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "updated_at": {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "sources": {
+    "@id": "http://purl.org/dc/terms/source",
+    "@type": "@id"
+  }
+}

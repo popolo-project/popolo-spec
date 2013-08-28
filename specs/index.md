@@ -176,7 +176,7 @@ The following diagram succinctly describes the relationships among the classes. 
 <img src="/img/diagram.png" width="687" height="84" alt="UML diagram">
 {% comment %}http://yuml.me/edit/730bfbbb{% endcomment %}
 
-## Metadata properties
+## 5.1. Metadata properties
 
 The following table defines the metadata properties and maps each term to an <abbr title="Resource Description Framework">RDF</abbr> <abbr title="uniform resource identifier">URI</abbr>[<sup>2</sup>](#note2):
 
@@ -221,7 +221,7 @@ Additional serialization details are given in the subdocuments in the [previous 
 
 <p class="note" id="note3">3. Consult the list of <a href="https://github.com/opennorth/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>. <a href="http://www.w3.org/XML/Schema.html">XML Schema</a> supports <a href="http://www.w3.org/TR/xmlschema-2/#truncatedformats">reduced dates</a> such as <a href="http://www.w3.org/TR/xmlschema-2/#gYear"><code>YYYY</code></a> and <a href="http://www.w3.org/TR/xmlschema-2/#gYearMonth"><code>YYYY-MM</code></a>.</p>
 
-## Metadata properties
+<h2 id="metadata-properties">6.1. Metadata properties</h2>
 
 **JSON differences from other RDF serializations:**
 
@@ -242,7 +242,7 @@ The following examples use a Person document to demonstrate the metadata propert
   <div class="tab-pane" id="metadata-rdf" data-url="/examples/metadata.ttl"></div>
 </div>
 
-<h2 id="schema-and-examples">6.1. Schema and examples</h2>
+<h2 id="schema-and-examples">6.2. Schema and examples</h2>
 
 As described in the [conformance](#conformance) section, JSON serializations <em class="rfc2119">must</em> validate against the JSON Schema (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) below. The terms use [snake case](http://en.wikipedia.org/wiki/Snake_case) (`birth_date`) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase) (`birthDate`), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
 
@@ -250,6 +250,7 @@ As described in the [conformance](#conformance) section, JSON serializations <em
   <thead>
     <tr>
       <th>JSON Schema</th>
+      <th>JSON-LD Context</th>
       <th>Sample JSON document</th>
       <th>Sample RDF document</th>
     </tr>
@@ -257,33 +258,38 @@ As described in the [conformance](#conformance) section, JSON serializations <em
   <tbody>
     <tr>
       <td><a href="/schemas/person.json">Person</a></td>
+      <td><a href="/contexts/person.jsonld">person.jsonld</a></td>
       <td><a href="/examples/person.json">person.json</a></td>
       <td><a href="/examples/person.ttl">person.ttl</a></td>
     </tr>
     <tr>
       <td><a href="/schemas/organization.json">Organization</a></td>
+      <td><a href="/contexts/organization.jsonld">organization.jsonld</a></td>
       <td><a href="/examples/organization.json">organization.json</a></td>
       <td><a href="/examples/organization.ttl">organization.ttl</a></td>
     </tr>
     <tr>
       <td><a href="/schemas/membership.json">Membership</a></td>
+      <td><a href="/contexts/membership.jsonld">membership.jsonld</a></td>
       <td><a href="/examples/membership.json">membership.json</a></td>
       <td><a href="/examples/membership.ttl">membership.ttl</a></td>
     </tr>
     <tr>
       <td><a href="/schemas/post.json">Post</a></td>
+      <td><a href="/contexts/post.jsonld">post.jsonld</a></td>
       <td><a href="/examples/post.json">post.json</a></td>
       <td><a href="/examples/post.ttl">post.ttl</a></td>
     </tr>
     <tr>
       <td><a href="/schemas/contact_detail.json">Contact Detail</a></td>
+      <td><a href="/contexts/contact_detail.jsonld">contact_detail.jsonld</a></td>
       <td><a href="/examples/contact_detail.json">contact_detail.json</a></td>
       <td><a href="/examples/contact_detail.ttl">contact_detail.ttl</a></td>
     </tr>
   </tbody>
 </table>
 
-<h2 id="embedded-json-documents">6.2. Embedded JSON documents</h2>
+<h2 id="embedded-json-documents">6.3. Embedded JSON documents</h2>
 
 When serializing to JSON, you have two options when relating entities, which you may use simultaneously:
 
@@ -324,19 +330,23 @@ At the risk of stating the obvious, you <em class="rfc2119">must not</em> embed 
   <div class="tab-pane" id="embedding-post" data-url="/examples/embedding-post.json"></div>
 </div>
 
-<h2 id="subschema">6.3. Subschema</h2>
+<h2 id="subschema">6.4. Subschema</h2>
 
 The JSON Schema above reuse the following subschema for specific properties.
 
-<h3 id="identifier">6.3.1. Identifier</h3>
+<h3 id="identifier">6.4.1. Identifier</h3>
 
-The Identifier class is necessary for JSON serialization, because, unlike RDF values, JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) to indicate an identifier's scheme. With respect to standard reuse, the [Organization ontology](http://www.w3.org/TR/vocab-org/), [<abbr title="Simple Knowledge Organization System">SKOS</abbr>](http://www.w3.org/TR/skos-reference/) and [<abbr title="eXtensible Business Reporting Language">XBRL</abbr>](http://en.wikipedia.org/wiki/XBRL) use the word `scheme` to refer to an identifier's scheme.
+With respect to standard reuse, the term `scheme` is used in the [Organization ontology](http://www.w3.org/TR/vocab-org/), [<abbr title="Simple Knowledge Organization System">SKOS</abbr>](http://www.w3.org/TR/skos-reference/) and [<abbr title="eXtensible Business Reporting Language">XBRL</abbr>](http://en.wikipedia.org/wiki/XBRL).
+
+**JSON differences from other RDF serializations:**
+
+* Unlike RDF values, JSON values do not have [user-defined datatypes](http://www.w3.org/TR/swbp-xsch-datatypes/) to indicate an identifier's scheme.
 
 <div class="tab-content no-js">
   <div class="tab-pane active" data-url="/schemas/identifier.json"></div>
 </div>
 
-<h3 id="link">6.3.2. Link</h3>
+<h3 id="link">6.4.2. Link</h3>
 
 With respect to standard reuse, `note` comes from [`skos:note`](http://www.w3.org/TR/skos-reference/#notes).
 
@@ -348,16 +358,23 @@ With respect to standard reuse, `note` comes from [`skos:note`](http://www.w3.or
   <div class="tab-pane active" data-url="/schemas/link.json"></div>
 </div>
 
-<h3 id="other-name">6.3.3 Other name</h3>
+<h3 id="other-name">6.4.3 Other name</h3>
 
 If a name object sets an `end_date` property, it represents a former name. With respect to standard reuse, the terms `start_date` and `end_date` are used in the [Participation ontology](http://vocab.org/participation/schema) and others, and `note` comes from [`skos:note`](http://www.w3.org/TR/skos-reference/#notes).
 
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#other-name-schema">JSON Schema</a></li>
+  <li><a href="#other-name-context">JSON-LD Context</a></li>
+</ul>
+
 <div class="tab-content no-js">
-  <div class="tab-pane active" data-url="/schemas/other_name.json"></div>
+  <div class="tab-pane active" id="other-name-schema" data-url="/schemas/other_name.json"></div>
+  <div class="tab-pane" id="other-name-context" data-url="/contexts/other_name.jsonld"></div>
 </div>
 
 <h1 id="history">7. Change history</h1>
 
+* 2013-08-28: Add JSON-LD contexts.
 * 2013-08-28: Use `schema:validFrom` and `schema:validThrough` instead of `org:memberDuring`.
 * 2013-07-08: Add a label property to the Membership class.
 * 2013-07-08: Add time of creation, time of modification, and source document metadata properties.

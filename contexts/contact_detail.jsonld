@@ -1,0 +1,19 @@
+{
+  "ContactDetail": "http://www.w3.org/ns/opengov#ContactDetail",
+  "label": "http://www.w3.org/2000/01/rdf-schema#label",
+  "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+  "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+  "note": "http://www.w3.org/2004/02/skos/core#note",
+  "created_at": {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "updated_at": {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "sources": {
+    "@id": "http://purl.org/dc/terms/source",
+    "@type": "@id"
+  }
+}
