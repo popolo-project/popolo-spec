@@ -64,9 +64,7 @@ The Membership class should have properties for:
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that only the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a rich membership model for describing the relation between people and organizations.
-
-Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, the `schema:validFrom` and `schema:validThrough` pair is used instead of `memberDuring`, an alternative [described](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.
+Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that only the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a rich membership model for describing the relation between people and organizations. Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, the `schema:validFrom` and `schema:validThrough` pair is used instead of `org:memberDuring`, an alternative [described](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.
 
 ## 2.1. Range restrictions
 

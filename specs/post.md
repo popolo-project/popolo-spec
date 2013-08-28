@@ -61,7 +61,7 @@ The Post class should have properties for:
 Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that:
 
 * Only the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a sufficiently rich model for describing organizational structure.
-* No vocabulary has properties for dates of creation and dates of elimination, with the exception of the Dublin Core property [`valid`](http://dublincore.org/documents/dcmi-terms/#terms-valid).
+* `schema:validFrom`, `schema:validThrough` and [`dct:valid`](http://dublincore.org/documents/dcmi-terms/#terms-valid) are the only properties for creation dates and elimination dates.
 
 ## 2.1. Changes to data model
 
