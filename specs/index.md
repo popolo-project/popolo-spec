@@ -268,6 +268,17 @@ As described in the [conformance](#conformance) section, JSON serializations <em
   </tbody>
 </table>
 
+A JSON-LD serialization differs from a plain JSON serialization in a few ways:
+
+* A JSON-LD serialization <em class="rfc2119">should</em> use the `@context`, `@type` and `@id` keywords.
+* The value of the `email` property of a `Person` <em class="rfc2119">should</em> be a ['mailto' URI](http://tools.ietf.org/html/rfc6068).
+* The value of the `role` property of a `Membership` or `Post` <em class="rfc2119">should</em> be either a URI or a blank node for a `org:Role`.
+* The value of the `classification` property of an `Organization` <em class="rfc2119">should</em> be a URI or a blank node for a `skos:Concept`.
+* The value of the `scheme` property of an `Identifier` <em class="rfc2119">should</em> be a [value type](http://json-ld.org/spec/latest/json-ld/#dfn-value-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
+* The value of the `type` property of a `ContactDetail` <em class="rfc2119">should</em> be a [node type](http://json-ld.org/spec/latest/json-ld/#dfn-node-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
+* The value of the `links` and `sources` properties <em class="rfc2119">should</em> be an array of URIs, not an array of [link objects](/specs/#link).
+* A JSON-LD serialization <em class="rfc2119">should</em> use the `@id`, `organization`, `parent`, `person` and `post` properties instead of the `id`, `organization_id`, `parent_id`, `person_id` and `post_id` properties.
+
 <h2 id="metadata-properties">6.2. Metadata properties</h2>
 
 **JSON differences from other RDF serializations:**
