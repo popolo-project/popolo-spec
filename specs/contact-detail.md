@@ -74,7 +74,7 @@ The [survey of existing specifications](/appendices/survey.html) found that [RFC
     </tr>
     <tr id="skos:note">
       <td>note</td>
-      <td><code><a href="http://www.w3.org/TR/skos-reference/#notes" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">skos:note</a></code></td>
+      <td><code><a href="http://www.w3.org/TR/skos-reference/#notes" title="http://www.w3.org/2004/02/skos/core#note">skos:note</a></code></td>
       <td>A note, e.g. for grouping contact details by physical location</td>
     </tr>
   </tbody>
