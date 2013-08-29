@@ -270,7 +270,7 @@ As described in the [conformance](#conformance) section, JSON serializations <em
 
 A JSON-LD serialization differs from a plain JSON serialization in a few ways:
 
-* A JSON-LD serialization <em class="rfc2119">should</em> use the `@context`, `@type` and `@id` keywords.
+* A JSON-LD serialization <em class="rfc2119">should</em> use the [`@context`](http://json-ld.org/spec/latest/json-ld/#the-context), [`@type`](http://json-ld.org/spec/latest/json-ld/#dfn-node-type) and [`@id`](http://json-ld.org/spec/latest/json-ld/#node-identifiers) [keywords](http://json-ld.org/spec/latest/json-ld/#dfn-keyword).
 * The value of the `email` property of a `Person` <em class="rfc2119">should</em> be a ['mailto' URI](http://tools.ietf.org/html/rfc6068).
 * The value of the `role` property of a `Membership` or `Post` <em class="rfc2119">should</em> be either a URI or a blank node for a `org:Role`.
 * The value of the `classification` property of an `Organization` <em class="rfc2119">should</em> be a URI or a blank node for a `skos:Concept`.
