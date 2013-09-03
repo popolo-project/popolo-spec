@@ -120,7 +120,7 @@
       "format": "date-time"
     },
     "sources": {
-      "description": "URLs to source documents about the person",
+      "description": "URLs to documents from which the person is derived",
       "type": "array",
       "items": {
         "$ref": "http://popoloproject.com/schemas/link.json#"

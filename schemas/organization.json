@@ -89,7 +89,7 @@
       "format": "date-time"
     },
     "sources": {
-      "description": "URLs to source documents about the organization",
+      "description": "URLs to documents from which the organization is derived",
       "type": "array",
       "items": {
         "$ref": "http://popoloproject.com/schemas/link.json#"

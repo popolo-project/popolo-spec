@@ -69,9 +69,9 @@ Each resource should have metadata properties for:
 
     >The electronic resource for Shakespeare was modified on June 15, 2005.
 
-1. references to sources
+1. references to sources of information from which the resource is derived
 
-    >e.g. a book, a website or other material.
+    >e.g. a book, a website or other reference material.
 
 The subdocuments in a [later section](#classes-and-properties) add more requirements.
 
@@ -202,7 +202,7 @@ The following table defines the metadata properties and maps each term to an <ab
     <tr id="dcterms:source">
       <td>source document</td>
       <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-source" title="http://purl.org/dc/terms/source">dcterms:source</a></code></td>
-      <td>A URL to, or a citation of, a source document</td>
+      <td>A URL to, or a citation of, a document from which the resource is derived</td>
     </tr>
   </tbody>
 </table>
