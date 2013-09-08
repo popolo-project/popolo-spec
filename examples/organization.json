@@ -29,6 +29,7 @@
   "parent_id": "holding-company-corp",
   "founding_date": "1950-01-01",
   "dissolution_date": "2000-01-01",
+  "image": "http://www.example.com/pub/photos/logo.gif",
   "contact_details": [
     {
       "label": "Toll-free number",

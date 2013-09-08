@@ -24,6 +24,10 @@
     "@id": "http://www.w3.org/ns/opengov#dissolutionDate",
     "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
   },
+  "image": {
+    "@id": "http://schema.org/image",
+    "@type": "@id"
+  },
   "contact_details": {
     "@id": "http://www.w3.org/ns/opengov#contactDetail",
     "@type": "@id"

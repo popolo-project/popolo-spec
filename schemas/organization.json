@@ -50,6 +50,11 @@
       "type": ["string", "null"],
       "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
     },
+    "image": {
+      "description": "A URL of an image",
+      "type": ["string", "null"],
+      "format": "uri"
+    },
     "contact_details": {
       "description": "Means of contacting the organization",
       "type": "array",

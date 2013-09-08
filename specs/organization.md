@@ -46,6 +46,10 @@ The Organization class should have properties for:
 
     >To determine whether an organization exists, e.g. in order to disable related functionality.
 
+1. image
+
+    >To identify the organization visually.
+
 1. the means of contacting the organization
 
     >1 Main Street  
@@ -128,6 +132,11 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
       <td>date of dissolution</td>
       <td><em>none yet</em><a href="#note3"><sup>3</sup></a></td>
       <td>A date of dissolution, termination, withdrawal, expiry, etc.</td>
+    </tr>
+    <tr id="schema:image">
+      <td>image</td>
+      <td><code><a href="http://schema.org/image" title="http://schema.org/image">schema:image</a></code></td>
+      <td>A URL of an image</td>
     </tr>
     <tr>
       <td>contact detail</td>

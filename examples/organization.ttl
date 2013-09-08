@@ -13,4 +13,5 @@
   org:classification [a skos:Concept; skos:prefLabel "Corporation"@en];
   org:subOrganizationOf <http://example.com/organizations/holding-company-corp.ttl>;
   schema:foundingDate "1950-01-01"^^xsd:date;
+  schema:image <http://www.example.com/pub/photos/logo.gif>;
   rdfs:seeAlso <http://en.wikipedia.org/wiki/Joe's_Diner_(placeholder_name)> .

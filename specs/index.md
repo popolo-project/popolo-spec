@@ -385,14 +385,15 @@ If a name object sets an `end_date` property, it represents a former name. With 
 
 <h1 id="history">7. Change history</h1>
 
+* 2013-09-08: Add an image property to the Organization class.
 * 2013-08-28: Add JSON-LD contexts.
 * 2013-08-28: Use `schema:validFrom` and `schema:validThrough` instead of `org:memberDuring`.
 * 2013-07-08: Add a label property to the Membership class.
 * 2013-07-08: Add time of creation, time of modification, and source document metadata properties.
 * 2013-06-20: Reorganize specification and implement feedback.
 * 2013-02-28: Add requirement for dates to be stored in UTC.
-* 2013-02-25: Add the conformance section, relax requirements with respect to MongoDB collection names.
-* 2013-02-16: Add a label property to the Post class, change the cardinality of the classification property on the Organization class, add NIEM and ORG to the survey, add an inventory of the terms in the survey.
+* 2013-02-25: Add conformance requirements. Relax requirements with respect to MongoDB collection names.
+* 2013-02-16: Add a label property to the Post class. Change the cardinality of the classification property of the Organization class.
 * 2013-02-01: First public working draft.
 
 [Browse all Git commits on GitHub](https://github.com/opennorth/popolo-spec/commits/gh-pages)
