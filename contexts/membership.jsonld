@@ -17,6 +17,10 @@
     "@id": "http://www.w3.org/ns/opengov#post",
     "@type": "@id"
   },
+  "on_behalf_of": {
+    "@id": "http://www.w3.org/ns/opengov#onBehalfOf",
+    "@type": "@id"
+  },
   "start_date": {
     "@id": "http://schema.org/validFrom",
     "@type": "http://www.w3.org/2001/XMLSchema#dateTime"

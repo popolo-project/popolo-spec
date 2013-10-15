@@ -39,9 +39,13 @@ The Membership class should have properties for:
 
     >XYZ Party
 
-1. The [post](/specs/post.html) held by the person in the organization
+1. the [post](/specs/post.html) held by the person in the organization
 
     >Chairman of the XYZ Party
+
+1. the [organization](/specs/organization.html) on whose behalf the person is a party to the relationship
+
+    >Member of the [W3C Open Government Community Group](http://www.w3.org/community/opengov/) on behalf of XYZ Inc.
 
 1. the date on which the relationship began
 
@@ -112,15 +116,20 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
       <td><em>none yet</em></td>
       <td>The post held by the person in the organization</td>
     </tr>
+    <tr>
+      <td>on behalf of</td>
+      <td><em>none yet</em></td>
+      <td>The organization on whose behalf the person is a party to the relationship</td>
+    </tr>
     <tr id="schema:validFrom">
       <td>start date</td>
       <td><code><a href="http://schema.org/validFrom" title="http://schema.org/validFrom">schema:validFrom</a></code></td>
-      <td>the date on which the relationship began</td>
+      <td>The date on which the relationship began</td>
     </tr>
     <tr id="schema:validThrough">
       <td>end date</td>
       <td><code><a href="http://schema.org/validThrough" title="http://schema.org/validThrough">schema:validThrough</a></code></td>
-      <td>the date on which the relationship ended</td>
+      <td>The date on which the relationship ended</td>
     </tr>
     <tr>
       <td>contact detail</td>
