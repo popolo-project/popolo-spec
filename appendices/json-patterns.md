@@ -224,7 +224,7 @@ To avoid misinterpretation, some implementations flag additional properties that
     {
       "name": "Mr. John Q. Public, Esq.",
       "extra": {
-        "+hair_colour": "brown"
+        "hair_colour": "brown"
       }
     }
     ```
