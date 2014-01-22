@@ -60,6 +60,10 @@ The Person class should have properties for:
 
     >To provide a long form biography.
 
+1. ethnicity
+
+    >
+
 1. the means of contacting the person
 
     >1 Main Street  

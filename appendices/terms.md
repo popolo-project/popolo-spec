@@ -74,6 +74,7 @@ id: data
       <td>date of death</td>
       <td>head shot</td>
       <td>biography</td>
+      <td>ethnicity</td>
       <td>external links</td>
     </tr>
   </thead>
@@ -87,6 +88,7 @@ id: data
       <td></td>
       <td><a href="http://xmlns.com/foaf/spec/#term_img">img</a></td>
       <td></td>
+      <td></td>
       <td><a href="http://xmlns.com/foaf/spec/#term_page">page</a></td>
     </tr>
     <tr>
@@ -99,6 +101,7 @@ id: data
       <td><a href="http://schema.org/Person">image</a></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row"><code>vcard</code></th>
@@ -108,6 +111,7 @@ id: data
       <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:bday">bday</a></td>
       <td><a href="http://tools.ietf.org/html/rfc6474#section-2.3">DEATHDATE</a></td>
       <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:photo">photo</a></td>
+      <td></td>
       <td></td>
       <td><a href="http://www.w3.org/Submission/vcard-rdf/#vcard:url">url</a></td>
     </tr>
@@ -120,6 +124,7 @@ id: data
       <td>see <code>schema</code></td>
       <td>see <code>schema</code></td>
       <td></td>
+      <td></td>
       <td>see <code>foaf</code></td>
     </tr>
     <tr>
@@ -130,6 +135,7 @@ id: data
       <td><a href="http://www.semanticdesktop.org/ontologies/nco/#birthDate">birthDate</a></td>
       <td></td>
       <td><a href="http://www.semanticdesktop.org/ontologies/nco/#photo">photo</a></td>
+      <td></td>
       <td></td>
       <td><a href="http://www.semanticdesktop.org/ontologies/nco/#url">url</a></td>
     </tr>
@@ -143,6 +149,7 @@ id: data
       <td><a href="http://tools.ietf.org/html/rfc2798#section-2.6">jpegPhoto</a></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row">CIQ</th>
@@ -153,6 +160,7 @@ id: data
       <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Date</a></td>
       <td></td>
       <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">FreeTextLines</a></td>
+      <td><a href="http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd">Ethnicity</a></td>
       <td></td>
     </tr>
     <tr>
@@ -164,6 +172,7 @@ id: data
       <td><abbr title="PersonDeathDate">DeathDate</abbr></td>
       <td><abbr title="PersonDigitalImage">DigitalImage</abbr></td>
       <td><abbr title="PersonDescriptionText">DescriptionText</abbr></td>
+      <td><abbr title="PersonEthnicity">PersonEthnicity</abbr></td>
       <td></td>
     </tr>
     <tr>
@@ -175,6 +184,7 @@ id: data
       <td></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">photos</a></td>
       <td></td>
+      <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">ethnicity</a></td>
       <td><a href="http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person">urls</a></td>
     </tr>
     <tr>
@@ -186,6 +196,7 @@ id: data
       <td></td>
       <td><a href="https://developers.facebook.com/docs/reference/api/user/">picture</a></td>
       <td><a href="https://developers.facebook.com/docs/reference/api/user/">bio</a></td>
+      <td></td>
       <td></td>
     </tr>
   </tbody>

@@ -26,6 +26,7 @@
   "image": "http://www.example.com/pub/photos/jqpublic.gif",
   "summary": "A hypothetical member of society deemed a 'common man'",
   "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+  "ethnicity": "white",
   "contact_details": [
     {
       "label": "Mobile number",
