@@ -103,9 +103,9 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
       <td><code><a href="http://www.w3.org/TR/skos-reference/#labels" title="http://www.w3.org/2004/02/skos/core#altLabel">skos:altLabel</a></code></td>
       <td>An alternate name, e.g. a trading or colloquial name</td>
     </tr>
-    <tr>
+    <tr id="opengov:otherName">
       <td>former name</td>
-      <td><em>none yet</em></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#otherName">opengov:otherName</a></code></td>
       <td>A former name, e.g. a pre-merger name</td>
     </tr>
     <tr id="org:identifier">
@@ -128,9 +128,9 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
       <td><code><a href="http://schema.org/foundingDate" title="http://schema.org/foundingDate">schema:foundingDate</a></code></td>
       <td>A date of founding</td>
     </tr>
-    <tr>
+    <tr id="opengov:dissolutionDate">
       <td>date of dissolution</td>
-      <td><em>none yet</em><a href="#note3"><sup>3</sup></a></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#dissolutionDate">opengov:dissolutionDate</a></code><a href="#note3"><sup>3</sup></a></td>
       <td>A date of dissolution, termination, withdrawal, expiry, etc.</td>
     </tr>
     <tr id="schema:image">
@@ -138,9 +138,9 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
       <td><code><a href="http://schema.org/image" title="http://schema.org/image">schema:image</a></code></td>
       <td>A URL of an image</td>
     </tr>
-    <tr>
+    <tr id="opengov:contactDetail">
       <td>contact detail</td>
-      <td><em>none yet</em></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</a></code></td>
       <td>A means of contacting the organization</td>
     </tr>
     <tr id="rdfs:seeAlso">

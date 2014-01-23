@@ -116,9 +116,9 @@ With respect to the choice of terms:
       <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-alternative" title="http://purl.org/dc/terms/alternative">dcterms:alternative</a></code></td>
       <td>An alternate name, such as a pseudonym</td>
     </tr>
-    <tr>
+    <tr id="opengov:otherName">
       <td>former name</td>
-      <td><em>none yet</em></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#otherName">opengov:otherName</a></code></td>
       <td>A former name, such as a maiden name</td>
     </tr>
     <tr id="foaf:nick">
@@ -161,9 +161,14 @@ With respect to the choice of terms:
       <td><code><a href="http://vocab.org/bio/0.1/biography.html" title="http://purl.org/vocab/bio/0.1/biography">bio:biography</a></code></td>
       <td>An extended account of a person's life</td>
     </tr>
-    <tr>
+    <tr id="opengov:ethnicity">
+      <td>ethnicity</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#ethnicity">opengov:ethnicity</a></code></td>
+      <td>An ethnicity</td>
+    </tr>
+    <tr id="opengov:contactDetail">
       <td>contact detail</td>
-      <td><em>none yet</em></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</a></code></td>
       <td>A means of contacting the person</td>
     </tr>
     <tr id="rdfs:seeAlso">

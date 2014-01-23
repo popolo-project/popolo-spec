@@ -111,14 +111,14 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:organization" title="http://www.w3.org/ns/org#organization">org:organization</a></code><a href="#note1"><sup>1</sup></a></td>
       <td>The organization that is a party to the relationship</td>
     </tr>
-    <tr>
+    <tr id="opengov:post">
       <td>post</td>
-      <td><em>none yet</em></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#post">opengov:post</a></code></td>
       <td>The post held by the person in the organization</td>
     </tr>
-    <tr>
+    <tr id="opengov:onBehalfOf">
       <td>on behalf of</td>
-      <td><em>none yet</em></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#onBehalfOf">opengov:onBehalfOf</a></code></td>
       <td>The organization on whose behalf the person is a party to the relationship</td>
     </tr>
     <tr id="schema:validFrom">
@@ -131,9 +131,9 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
       <td><code><a href="http://schema.org/validThrough" title="http://schema.org/validThrough">schema:validThrough</a></code></td>
       <td>The date on which the relationship ended</td>
     </tr>
-    <tr>
+    <tr id="opengov:contactDetail">
       <td>contact detail</td>
-      <td><em>none yet</em></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</a></code></td>
       <td>A means of contacting the person in the relationship</td>
     </tr>
     <tr id="rdfs:seeAlso">

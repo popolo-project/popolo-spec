@@ -123,9 +123,9 @@ According to the Organization ontology, either a person or an organization can h
       <td><code><a href="http://schema.org/validThrough" title="http://schema.org/validThrough">schema:validThrough</a></code></td>
       <td>A date of elimination</td>
     </tr>
-    <tr>
+    <tr id="opengov:contactDetail">
       <td>contact detail</td>
-      <td><em>none yet</em></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</a></code></td>
       <td>A means of contacting the holder of the post</td>
     </tr>
     <tr id="rdfs:seeAlso">
