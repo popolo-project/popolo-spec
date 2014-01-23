@@ -62,7 +62,7 @@ The Person class should have properties for:
 
 1. ethnicity
 
-    >
+    >The three ethnic groups of the [House of Peoples of Bosnia and Herzegovina](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina) must agree on a law for it to pass.
 
 1. the means of contacting the person
 
