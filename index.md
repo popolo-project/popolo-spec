@@ -86,7 +86,7 @@ Jump to a section below or start at the [beginning](/specs/).
 
 <h2 id="participation">Participation</h2>
 
-Participation is free and open to anyone. These documents are **Working Drafts**. Their governance will roughly follow the consensus-based [W3C process](http://www.w3.org/Consortium/Process/).
+Participation is free and open to anyone. These documents are **Working Drafts**. Their governance will roughly follow the consensus-based [W3C process](http://www.w3.org/community/about/agreements/).
 
 * Join the [W3C Open Government Community Group](http://www.w3.org/community/opengov/) and [subscribe to its mailing list](http://lists.w3.org/Archives/Public/public-opengov/) to discuss the project's development
 * Visit the [GitHub repository](https://github.com/opennorth/popolo-spec/tree/gh-pages), discuss [open issues](https://github.com/opennorth/popolo-spec/issues), and create pull requests
