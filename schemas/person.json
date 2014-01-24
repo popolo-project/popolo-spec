@@ -88,8 +88,8 @@
       "description": "An extended account of a person's life",
       "type": ["string", "null"]
     },
-    "ethnicity": {
-      "description": "An ethnicity",
+    "national_identity": {
+      "description": "A national identity",
       "type": ["string", "null"]
     },
     "contact_details": {

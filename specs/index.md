@@ -385,7 +385,7 @@ If a name object sets an `end_date` property, it represents a former name. With 
 
 <h1 id="history">7. Change history</h1>
 
-* 2014-01-23: Add `ethnicity` property to the Person class.
+* 2014-01-23: Add `national_identity` property to the Person class.
 * 2013-10-14: Add `onBehalfOf` property to the Membership class.
 * 2013-09-08: Add `image` property to the Organization class.
 * 2013-08-28: Add JSON-LD contexts.

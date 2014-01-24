@@ -34,7 +34,7 @@
   },
   "summary": "http://purl.org/vocab/bio/0.1/olb",
   "biography": "http://purl.org/vocab/bio/0.1/biography",
-  "ethnicity": "http://www.w3.org/ns/opengov#ethnicity",
+  "national_identity": "http://www.w3.org/ns/opengov#nationalIdentity",
   "contact_details": {
     "@id": "http://www.w3.org/ns/opengov#contactDetail",
     "@type": "@id"

@@ -60,9 +60,9 @@ The Person class should have properties for:
 
     >To provide a long form biography.
 
-1. ethnicity
+1. national identity
 
-    >The three ethnic groups of the [House of Peoples of Bosnia and Herzegovina](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina) must agree on a law for it to pass.
+    >Nine members of the [House of Peoples](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina) shall comprise a quorum, provided that at least three Bosniac, three Croat, and three Serb delegates are present.
 
 1. the means of contacting the person
 
@@ -161,10 +161,10 @@ With respect to the choice of terms:
       <td><code><a href="http://vocab.org/bio/0.1/biography.html" title="http://purl.org/vocab/bio/0.1/biography">bio:biography</a></code></td>
       <td>An extended account of a person's life</td>
     </tr>
-    <tr id="opengov:ethnicity">
-      <td>ethnicity</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#ethnicity">opengov:ethnicity</a></code></td>
-      <td>An ethnicity</td>
+    <tr id="opengov:nationalIdentity">
+      <td>national identity</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#nationalIdentity">opengov:nationalIdentity</a></code></td>
+      <td>A national identity</td>
     </tr>
     <tr id="opengov:contactDetail">
       <td>contact detail</td>
