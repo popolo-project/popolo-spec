@@ -1,13 +1,13 @@
 ---
 layout: class
 title: Person Name Components | The Popolo Project
-id: name-component
+id: person
 ---
 
 <ul class="breadcrumb">
-  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
-  <li><a href="/specs/#classes-and-properties">Classes and properties</a> <span class="divider">/</span></li>
-  <li><a href="/specs/person.html">Person</a> <span class="divider">/</span></li>
+  <li><a href="/specs/">Data Specification</a></li>
+  <li><a href="/specs/#classes-and-properties">Classes and properties</a></li>
+  <li><a href="/specs/person.html">Person</a></li>
   <li class="active">Name component</li>
 </ul>
 

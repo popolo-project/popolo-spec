@@ -5,8 +5,8 @@ id: contact-detail
 ---
 
 <ul class="breadcrumb">
-  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
-  <li><a href="/specs/#classes-and-properties">Classes and properties</a> <span class="divider">/</span></li>
+  <li><a href="/specs/">Data Specification</a></li>
+  <li><a href="/specs/#classes-and-properties">Classes and properties</a></li>
   <li class="active">Contact detail</li>
 </ul>
 
@@ -14,7 +14,7 @@ id: contact-detail
 
 It is impossible to predict the means by which people will be contacted: from mail and telephones to email and <abbr title="Voice over Internet Protocol">VoIP</abbr>. Some contact details are related to physical locations, like an office's postal address and fax number, while others are not, like a person's mobile number and email address. To support the widest variety of mediums in the widest range of contexts, the ContactDetail class should allow user-defined contact details.
 
-<div class="well well-example">
+<div class="well well-sm well-example">
   <p>A civil society organization has the phone number of a legislator; however, it doesn't know whether it is the capitol office number, the constituency office number or a mobile number. A suitable specification should be able to handle data at varying levels of precision.</p>
 </div>
 

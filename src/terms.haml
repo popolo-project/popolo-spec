@@ -1,33 +1,34 @@
-%table.table.table-striped.table-condensed
-  %thead
-    %tr
-      %th(scope="row") Term
-      - terms.each do |term|
-        %td= term
-  %tbody
-    - vocabularies.each do |vocabulary,entries|
+%div.table-responsive
+  %table.table.table-striped.table-hover.table-condensed
+    %thead
       %tr
-        %th(scope="row")
-          - if namespaces.include?(vocabulary)
-            %code= vocabulary
-          - else
-            = vocabulary
+        %th(scope="row") Term
         - terms.each do |term|
-          %td
-            - if entries[term]
-              - if entries[term]['term'].nil? && entries[term]['url'].nil?
-                = entries[term]['label']
-              - elsif entries[term]['url']
-                %a(href="#{entries[term]['url']}")
-                  - if entries[term]['label']
-                    %abbr(title="#{entries[term]['term']}")= entries[term]['label']
-                  - elsif entries[term]['term'].size > 19
-                    %abbr(title="#{entries[term]['term']}") #{entries[term]['term'][0...19]}…
-                  - else
-                    = entries[term]['term']
-              - elsif entries[term]['label']
-                %abbr(title="#{entries[term]['term']}")= entries[term]['label']
-              - elsif entries[term]['term'].size > 19
-                %abbr(title="#{entries[term]['term']}") #{entries[term]['term'][0...19]}…
-              - else
-                = entries[term]['term']
+          %td= term
+    %tbody
+      - vocabularies.each do |vocabulary,entries|
+        %tr
+          %th(scope="row")
+            - if namespaces.include?(vocabulary)
+              %code= vocabulary
+            - else
+              = vocabulary
+          - terms.each do |term|
+            %td
+              - if entries[term]
+                - if entries[term]['term'].nil? && entries[term]['url'].nil?
+                  = entries[term]['label']
+                - elsif entries[term]['url']
+                  %a(href="#{entries[term]['url']}")
+                    - if entries[term]['label']
+                      %abbr(title="#{entries[term]['term']}")= entries[term]['label']
+                    - elsif entries[term]['term'].size > 19
+                      %abbr(title="#{entries[term]['term']}") #{entries[term]['term'][0...19]}…
+                    - else
+                      = entries[term]['term']
+                - elsif entries[term]['label']
+                  %abbr(title="#{entries[term]['term']}")= entries[term]['label']
+                - elsif entries[term]['term'].size > 19
+                  %abbr(title="#{entries[term]['term']}") #{entries[term]['term'][0...19]}…
+                - else
+                  = entries[term]['term']

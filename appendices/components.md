@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Best Practices for Software Components | The Popolo Project
-id: components
+id: appendix
 ---
 {% include navigation.html %}
 
 <ul class="breadcrumb">
-  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
-  <li>Appendices <span class="divider">/</span></li>
+  <li><a href="/specs/">Data Specification</a></li>
+  <li>Appendices</li>
   <li class="active">Best practices for software components</li>
 </ul>
 
@@ -59,7 +59,7 @@ If two software components are to interoperate by allowing direct access to each
 * `people`
 * `posts`
 
-<div class="well well-example">
+<div class="well well-sm well-example">
   <p>A developer creates a platform for citizens to ask questions to legislators in public. The platform relies on a third-party data collection system to provide the legislator profiles. The platform is distributed as open source, and lets re-users choose a Popolo-compliant data collection system that best fits their process; for example, an organization with active volunteers may prefer a manual data entry system, whereas another with technical expertise may prefer a data scraping system.</p>
 
   <p>Unless all these systems use the same names for their database tables, the question-and-answer platform will need to add logic to test for known "in-the-wild" database table names used by various Popolo-compliant projects in order to interoperate with them.</p>

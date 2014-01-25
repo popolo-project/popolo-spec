@@ -1,13 +1,13 @@
 ---
 layout: default
 title: JSON Serialization Patterns | The Popolo Project
-id: json-patterns
+id: appendix
 ---
 {% include navigation.html %}
 
 <ul class="breadcrumb">
-  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
-  <li>Appendices <span class="divider">/</span></li>
+  <li><a href="/specs/">Data Specification</a></li>
+  <li>Appendices</li>
   <li class="active">JSON serialization patterns</li>
 </ul>
 

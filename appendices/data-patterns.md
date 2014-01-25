@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Data Model Patterns | The Popolo Project
-id: data-patterns
+id: appendix
 ---
 {% include navigation.html %}
 
 <ul class="breadcrumb">
-  <li><a href="/specs/">Data Specification</a> <span class="divider">/</span></li>
-  <li>Appendices <span class="divider">/</span></li>
+  <li><a href="/specs/">Data Specification</a></li>
+  <li>Appendices</li>
   <li class="active">Data model patterns</li>
 </ul>
 

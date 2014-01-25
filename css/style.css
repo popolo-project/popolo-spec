@@ -1,85 +1,9 @@
-.specification-page #specification>a,
-.specification-page #specification>a:hover,
-.specification-page #specification>a:focus,
-.contact-detail-page #contact-detail a,
-.contact-detail-page #contact-detail a:hover,
-.contact-detail-page #contact-detail a:focus,
-.area-page #area a,
-.area-page #area a:hover,
-.area-page #area a:focus,
-.document-page #document a,
-.document-page #document a:hover,
-.document-page #document a:focus,
-.event-page #event a,
-.event-page #event a:hover,
-.event-page #event a:focus,
-.membership-page #membership a,
-.membership-page #membership a:hover,
-.membership-page #membership a:focus,
-.name-component-page #person>a,
-.name-component-page #person>a:hover,
-.name-component-page #person>a:focus,
-.organization-page #organization a,
-.organization-page #organization a:hover,
-.organization-page #organization a:focus,
-.person-page #person>a,
-.person-page #person>a:hover,
-.person-page #person>a:focus,
-.post-page #post a,
-.post-page #post a:hover,
-.post-page #post a:focus,
-.examples-page #appendices>a,
-.examples-page #appendices>a:hover,
-.examples-page #appendices>a:focus,
-.data-patterns-page #appendices>a,
-.data-patterns-page #appendices>a:hover,
-.data-patterns-page #appendices>a:focus,
-.json-patterns-page #appendices>a,
-.json-patterns-page #appendices>a:hover,
-.json-patterns-page #appendices>a:focus,
-.api-patterns-page #appendices>a,
-.api-patterns-page #appendices>a:hover,
-.api-patterns-page #appendices>a:focus,
-.components-page #appendices>a,
-.components-page #appendices>a:hover,
-.components-page #appendices>a:focus {
-  color: #555555;
-  text-decoration: none;
-  background-color: #e5e5e5;
-  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-}
-
 pre {
   background-color: #f8f8ff;
 }
 
-blockquote p {
-  font-size: 14px;
-  line-height: 1.5em;
-}
-
 cite {
   font-style: italic;
-}
-
-table {
-  margin-bottom: 1em;
-}
-caption {
-  font-style: italic;
-  text-align: left;
-}
-th {
-  text-align: left;
-}
-th,
-td {
-  padding-right: 10px;
-}
-td {
-  vertical-align: top;
 }
 
 ol p {
@@ -90,6 +14,55 @@ footer {
   text-align: center;
 }
 
+.navbar {
+  margin-top: 1em;
+}
+
+.nav-tabs {
+  margin-bottom: 1em;
+}
+
+.note {
+  color: #999; /* .text-muted */
+  font-size: 85%; /* .small */
+  font-style: italic;
+}
+
+.well-white {
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+em.rfc2119 {
+  font-style: normal;
+  font-variant: small-caps;
+}
+
+/* Use case */
+.well-example {
+  position: relative;
+  padding-top: 40px;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.well-example:after {
+  content: "Use Case";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px 0 4px 0;
+  color: #999;
+}
+
+/* Homepage examples */
 #example-date {
   min-height: 50px;
   background: url(/img/nounproject/polling-place-14292.png) no-repeat 0 0;
@@ -106,54 +79,7 @@ footer {
   padding-left: 60px;
 }
 
-em.rfc2119 {
-  font-style: normal;
-  font-variant: small-caps;
-}
-
-.navbar {
-  padding-top: 1em;
-}
-
-.note {
-  color: #999999; /* .muted */
-  font-size: 85%; /* small */
-  font-style: italic;
-}
-
-.well-white {
-  background-color: #fff;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
-}
-
-.well-example {
-  position: relative;
-  padding-top: 40px;
-  padding-bottom: 9px;
-  background-color: #fff;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
-}
-
-.well-example:after {
-  content: "Use Case";
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: bold;
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  color: #9da0a4;
-  -webkit-border-radius: 4px 0 4px 0;
-     -moz-border-radius: 4px 0 4px 0;
-          border-radius: 4px 0 4px 0;
-}
-
+/* Download link */
 .tab-pane {
   position: relative;
 }
@@ -169,15 +95,59 @@ em.rfc2119 {
   border: 1px solid #ddd;
   color: #333;
 }
-.nav .disabled a:hover {
-  border-color: rgba(0,0,0,0);
+
+/* Tables */
+table {
+  margin-bottom: 1em;
+}
+caption {
+  font-style: italic;
+  text-align: left;
+}
+th,
+td {
+  padding-right: 10px;
+}
+td {
+  vertical-align: top;
 }
 
-/* To avoid line-wrapping.
-.tab-pane {
-  overflow-x: scroll;
+/* Override Bootstrap */
+blockquote { 
+  padding-top: 0; /* 10px */
+  padding-bottom: 0; /* 10px */
 }
-.tab-pane pre {
-  width: 100%;
+blockquote p {
+  font-size: 1em; /* 17.5px */
+  line-height: 1.5em; /* 1.25 */
 }
-*/
+
+/* Active navigation */
+.specification-page #specification>a,
+.specification-page #specification>a:hover,
+.specification-page #specification>a:focus,
+.contact-detail-page #contact-detail a,
+.contact-detail-page #contact-detail a:hover,
+.contact-detail-page #contact-detail a:focus,
+.membership-page #membership a,
+.membership-page #membership a:hover,
+.membership-page #membership a:focus,
+.organization-page #organization a,
+.organization-page #organization a:hover,
+.organization-page #organization a:focus,
+.person-page #person>a,
+.person-page #person>a:hover,
+.person-page #person>a:focus,
+.post-page #post a,
+.post-page #post a:hover,
+.post-page #post a:focus,
+.appendix-page #appendices>a,
+.appendix-page #appendices>a:hover,
+.appendix-page #appendices>a:focus {
+  color: #555555;
+  text-decoration: none;
+  background-color: #e5e5e5;
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}

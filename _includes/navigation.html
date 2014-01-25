@@ -1,30 +1,37 @@
-<div class="navbar">
-  <div class="navbar-inner">
-    <a class="brand" href="/">Popolo</a>
-    <ul class="nav">
+<div class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">Popolo</a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="nav">
+    <ul class="nav navbar-nav">
       <li id="specification" class="dropdown">
-        <a href="/specs/" class="dropdown-toggle" data-toggle="dropdown" data-target="#" role="button" id="person-button">
-          Specification
-          <b class="caret"></b>
+        <a href="/specs/" class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+          Specification <b class="caret"></b>
         </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="person-button">
-          <li><a tabindex="-1" href="/specs/#scope">Scope</a></li>
-          <li><a tabindex="-1" href="/specs/#conformance">Conformance</a></li>
-          <li><a tabindex="-1" href="/specs/#use-cases-and-requirements">Use cases &amp; requirements</a></li>
-          <li><a tabindex="-1" href="/specs/#standard-reuse">Standard reuse</a></li>
-          <li><a tabindex="-1" href="/specs/#classes-and-properties">Classes and properties</a></li>
-          <li><a tabindex="-1" href="/specs/#serialization">Serialization</a></li>
-          <li><a tabindex="-1" href="/specs/#history">Change history</a></li>
+        <ul class="dropdown-menu">
+          <li><a href="/specs/#scope">Scope</a></li>
+          <li><a href="/specs/#conformance">Conformance</a></li>
+          <li><a href="/specs/#use-cases-and-requirements">Use cases &amp; requirements</a></li>
+          <li><a href="/specs/#standard-reuse">Standard reuse</a></li>
+          <li><a href="/specs/#classes-and-properties">Classes and properties</a></li>
+          <li><a href="/specs/#serialization">Serialization</a></li>
+          <li><a href="/specs/#history">Change history</a></li>
         </ul>
       </li>
       <li id="person" class="dropdown">
-        <a href="/specs/person.html" class="dropdown-toggle" data-toggle="dropdown" data-target="#" role="button" id="person-button">
-          Person
-          <b class="caret"></b>
+        <a href="/specs/person.html" class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+          Person <b class="caret"></b>
         </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="person-button">
-          <li><a tabindex="-1" href="/specs/person.html">Person</a></li>
-          <li><a tabindex="-1" href="/specs/person/name-component.html">Name Component</a></li>
+        <ul class="dropdown-menu">
+          <li><a href="/specs/person.html">Person</a></li>
+          <li><a href="/specs/person/name-component.html">Name Component</a></li>
         </ul>
       </li>
       <li id="organization"><a href="/specs/organization.html">Organization</a></li>
@@ -32,18 +39,17 @@
       <li id="post"><a href="/specs/post.html">Post</a></li>
       <li id="contact-detail"><a href="/specs/contact-detail.html">Contact Detail</a></li>
       <li id="appendices" class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" id="appendices-button">
-          Appendices
-          <b class="caret"></b>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Appendices <b class="caret"></b>
         </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="appendices-button">
-          <li><a tabindex="-1" href="/appendices/survey.html">Survey of existing specifications</a></li>
-          <li><a tabindex="-1" href="/appendices/terms.html">Inventory of terms from survey</a></li>
-          <li><a tabindex="-1" href="/appendices/examples.html">Examples JSON documents</a></li>
-          <li><a tabindex="-1" href="/appendices/components.html">Best practices for software components</a></li>
-          <li><a tabindex="-1" href="/appendices/data-patterns.html">Data model patterns</a></li>
-          <li><a tabindex="-1" href="/appendices/json-patterns.html">JSON serialization patterns</a></li>
-          <li><a tabindex="-1" href="/appendices/api-patterns.html">API design patterns</a></li>
+        <ul class="dropdown-menu">
+          <li><a href="/appendices/survey.html">Survey of existing specifications</a></li>
+          <li><a href="/appendices/terms.html">Inventory of terms from survey</a></li>
+          <li><a href="/appendices/examples.html">Examples JSON documents</a></li>
+          <li><a href="/appendices/components.html">Best practices for software components</a></li>
+          <li><a href="/appendices/data-patterns.html">Data model patterns</a></li>
+          <li><a href="/appendices/json-patterns.html">JSON serialization patterns</a></li>
+          <li><a href="/appendices/api-patterns.html">API design patterns</a></li>
         </ul>
       </li>
     </ul>
