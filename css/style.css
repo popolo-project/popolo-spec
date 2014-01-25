@@ -106,7 +106,7 @@ caption {
 }
 th,
 td {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 td {
   vertical-align: top;
@@ -116,6 +116,7 @@ td {
 blockquote { 
   padding-top: 0; /* 10px */
   padding-bottom: 0; /* 10px */
+  padding-right: 0; /* 20px */
 }
 blockquote p {
   font-size: 1em; /* 17.5px */

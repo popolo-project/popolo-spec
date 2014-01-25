@@ -80,7 +80,6 @@ The subdocuments in a [later section](#classes-and-properties) add more requirem
 Following a [survey of existing specifications](/appendices/survey.html), the data specification reuses terms from:
 
 <table>
-  <caption>Suitable existing standards for people and organizations</caption>
   <thead>
     <tr>
       <th>Publisher</th>
@@ -160,7 +159,7 @@ The structure of each subdocument is:
 
 <dl>
   <dt>1. Use cases &amp; requirements</dt>
-  <dd>Provide a motivation for the class and its properties</dd>
+  <dd>Provides a motivation for the class and its properties</dd>
   <dt>2. Standard reuse</dt>
   <dd>Evaluates and selects existing specifications for reuse</dd>
   <dt>3. Classes and properties</dt>
@@ -213,7 +212,16 @@ The following table defines the metadata properties and maps each term to an <ab
 
 The data specification defines two serializations: <abbr title="Resource Description Framework">RDF</abbr> and <abbr title="JavaScript Object Notation">JSON</abbr>. RDF is a technology for data modeling, with a variety of syntax notations and serialization formats, including [<abbr title="Extensible Markup Language">XML</abbr>](http://www.w3.org/TR/rdf-syntax-grammar/), JSON (via [JSON-LD]((http://json-ld.org/spec/latest/json-ld/)), <abbr title="HyperText Markup Language">HTML</abbr> (via [<abbr title="Resource Description Framework in Attributes">RDFa</abbr>](http://www.w3.org/TR/rdfa-primer/) or [RDFa Lite](http://www.w3.org/TR/rdfa-lite/)), and [<abbr title="Notation 3">N3</abbr>](http://en.wikipedia.org/wiki/Notation_3) (a superset of the simpler [Turtle](http://www.w3.org/TR/turtle/) and [N-Triples](http://www.w3.org/TR/n-triples/) formats). JSON is a text-based, language-independent interchange format for structured data, derived from the JavaScript scripting language.
 
-Given that the same RDF resource can be serialized in many different ways using [JSON-LD](http://json-ld.org/), [JSON Schema](http://json-schema.org/) (see the following subsections) are provided to ensure all JSON serializations look alike, to maximize interoperability.
+Given that the same RDF resource can be serialized in many different ways using [JSON-LD](http://json-ld.org/), [JSON Schema](http://json-schema.org/) are provided [below](#schema-and-examples) to ensure all JSON serializations look alike, to maximize interoperability. A JSON-LD serialization will nonetheless differ from a plain JSON serialization in a few ways:
+
+* A JSON-LD serialization <em class="rfc2119">should</em> use the [`@context`](http://json-ld.org/spec/latest/json-ld/#the-context), [`@type`](http://json-ld.org/spec/latest/json-ld/#dfn-node-type) and [`@id`](http://json-ld.org/spec/latest/json-ld/#node-identifiers) [keywords](http://json-ld.org/spec/latest/json-ld/#dfn-keyword).
+* The value of the `email` property of a `Person` <em class="rfc2119">should</em> be a ['mailto' URI](http://tools.ietf.org/html/rfc6068).
+* The value of the `role` property of a `Membership` or `Post` <em class="rfc2119">should</em> be a URI or blank node for a `org:Role`.
+* The value of the `classification` property of an `Organization` <em class="rfc2119">should</em> be a URI or blank node for a `skos:Concept`.
+* The value of the `type` property of a `ContactDetail` <em class="rfc2119">should</em> be a [node type](http://json-ld.org/spec/latest/json-ld/#dfn-node-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
+* The value of the `scheme` property of an `Identifier` <em class="rfc2119">should</em> be a [value type](http://json-ld.org/spec/latest/json-ld/#dfn-value-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
+* The value of the `links` and `sources` properties <em class="rfc2119">should</em> be an array of URIs, not an array of [link objects](/specs/#link).
+* A JSON-LD serialization <em class="rfc2119">should</em> use the `@id`, `on_behalf_of`, `organization`, `parent`, `person` and `post` properties instead of `id`, `on_behalf_of_id`, `organization_id`, `parent_id`, `person_id` and `post_id`.
 
 Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>3</sup>](#note3) is <em class="rfc2119">recommended</em>.
 
@@ -221,7 +229,7 @@ Additional serialization details are given in the subdocuments in the [previous 
 
 <p class="note" id="note3">3. Consult the list of <a href="https://github.com/opennorth/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>. <a href="http://www.w3.org/XML/Schema.html">XML Schema</a> supports <a href="http://www.w3.org/TR/xmlschema-2/#truncatedformats">reduced dates</a> such as <a href="http://www.w3.org/TR/xmlschema-2/#gYear"><code>YYYY</code></a> and <a href="http://www.w3.org/TR/xmlschema-2/#gYearMonth"><code>YYYY-MM</code></a>.</p>
 
-<h2 id="schema-and-examples">6.1. Schema and examples</h2>
+<h2 id="schema-and-examples">6.1. JSON schema and examples</h2>
 
 As described in the [conformance](#conformance) section, JSON serializations <em class="rfc2119">must</em> validate against the JSON Schema (draft [v3](http://tools.ietf.org/html/draft-zyp-json-schema-03)) below. The terms use [snake case](http://en.wikipedia.org/wiki/Snake_case) (`birth_date`) instead of [camel case](http://en.wikipedia.org/wiki/CamelCase) (`birthDate`), due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
 
@@ -268,18 +276,7 @@ As described in the [conformance](#conformance) section, JSON serializations <em
   </tbody>
 </table>
 
-A JSON-LD serialization differs from a plain JSON serialization in a few ways:
-
-* A JSON-LD serialization <em class="rfc2119">should</em> use the [`@context`](http://json-ld.org/spec/latest/json-ld/#the-context), [`@type`](http://json-ld.org/spec/latest/json-ld/#dfn-node-type) and [`@id`](http://json-ld.org/spec/latest/json-ld/#node-identifiers) [keywords](http://json-ld.org/spec/latest/json-ld/#dfn-keyword).
-* The value of the `email` property of a `Person` <em class="rfc2119">should</em> be a ['mailto' URI](http://tools.ietf.org/html/rfc6068).
-* The value of the `role` property of a `Membership` or `Post` <em class="rfc2119">should</em> be either a URI or a blank node for a `org:Role`.
-* The value of the `classification` property of an `Organization` <em class="rfc2119">should</em> be a URI or a blank node for a `skos:Concept`.
-* The value of the `scheme` property of an `Identifier` <em class="rfc2119">should</em> be a [value type](http://json-ld.org/spec/latest/json-ld/#dfn-value-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
-* The value of the `type` property of a `ContactDetail` <em class="rfc2119">should</em> be a [node type](http://json-ld.org/spec/latest/json-ld/#dfn-node-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
-* The value of the `links` and `sources` properties <em class="rfc2119">should</em> be an array of URIs, not an array of [link objects](/specs/#link).
-* A JSON-LD serialization <em class="rfc2119">should</em> use the `@id`, `organization`, `parent`, `person` and `post` properties instead of the `id`, `organization_id`, `parent_id`, `person_id` and `post_id` properties.
-
-<h2 id="metadata-properties">6.2. Metadata properties</h2>
+<h2 id="metadata-properties">6.2. Metadata serialization</h2>
 
 **JSON differences from other RDF serializations:**
 
@@ -305,6 +302,7 @@ The following examples use a Person document to demonstrate the metadata propert
 When serializing to JSON, you have two options when relating entities, which you may use simultaneously:
 
 1. Link organizations, people, posts and memberships with the properties:
+    * `on_behalf_of_id`
     * `organization_id`
     * `person_id`
     * `post_id`
@@ -312,6 +310,7 @@ When serializing to JSON, you have two options when relating entities, which you
 
 2. Embed an entity's relations on the entity's document with the properties:
     * `memberships`
+    * `on_behalf_of`
     * `organization`
     * `person`
     * `post`
@@ -320,9 +319,9 @@ When serializing to JSON, you have two options when relating entities, which you
 
 The first option is straight-forward and is used in the examples in the subdocuments above.
 
-To embed an organization's posts on its Organization document, add a plural `posts` property to that document, whose value is an array of Post documents. Since the `organization_id` property on each Post subdocument is redundant with the `id` property on the Organization document, you <em class="rfc2119">may</em> remove the `organization_id` property from each subdocument.
+To embed an organization's posts on its Organization document, add a plural `posts` property to that document, whose value is an array of Post documents. Since the `organization_id` property on each Post subdocument is redundant with the `id` property on the Organization document, you <em class="rfc2119">may</em> omit the `organization_id` property from each subdocument.
 
-For the inverse relation, i.e. to embed a post's organization on its Post document, add a singular `organization` property to that document, whose value is the Organization document. You <em class="rfc2119">may</em> remove the `organization_id` property from the Post document, since it is redundant with the `id` property on the Organization document.
+For the inverse relation, i.e. to embed a post's organization on its Post document, add a singular `organization` property to that document, whose value is the Organization document. You <em class="rfc2119">may</em> omit the `organization_id` property from the Post document, since it is redundant with the `id` property on the Organization document.
 
 At the risk of stating the obvious, you <em class="rfc2119">must not</em> embed an entity in another unless the two are related. You <em class="rfc2119">may</em> embed to any depth, but you <em class="rfc2119">must not</em> embed recursively, e.g. embed an organization in a post in an organization.
 
@@ -341,7 +340,7 @@ At the risk of stating the obvious, you <em class="rfc2119">must not</em> embed 
   <div class="tab-pane" id="embedding-post" data-url="/examples/embedding-post.json"></div>
 </div>
 
-<h2 id="subschema">6.4. Subschema</h2>
+<h2 id="subschema">6.4. JSON subschema</h2>
 
 The JSON Schema above reuse the following subschema for specific properties.
 
@@ -385,9 +384,9 @@ If a name object sets an `end_date` property, it represents a former name. With 
 
 <h1 id="history">7. Change history</h1>
 
-* 2014-01-23: Add `national_identity` property to the Person class.
-* 2013-10-14: Add `onBehalfOf` property to the Membership class.
-* 2013-09-08: Add `image` property to the Organization class.
+* 2014-01-23: Add a national identity property to the Person class.
+* 2013-10-14: Add a property to the Membership class for the organization on whose behalf the person is a party to the relationship.
+* 2013-09-08: Add an image property to the Organization class.
 * 2013-08-28: Add JSON-LD contexts.
 * 2013-08-28: Use `schema:validFrom` and `schema:validThrough` instead of `org:memberDuring`.
 * 2013-07-08: Add a label property to the Membership class.

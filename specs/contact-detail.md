@@ -43,7 +43,6 @@ The [survey of existing specifications](/appendices/survey.html) found that [RFC
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
 <table>
-  <caption>Definitions and mappings of classes and properties</caption>
   <thead>
     <tr>
       <th width="130">Term</th>

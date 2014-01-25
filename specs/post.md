@@ -10,8 +10,6 @@ id: post
   <li class="active">Post</li>
 </ul>
 
-[No one size fits all](http://www.w3.org/TR/vocab-org/#reporting_structure) in representing the relationship between people and organizations.
-
 In some cases, it is relevant to represent the organizational structure independently of the people within that structure; for example, it is relevant to represent the position of the Member of Parliament for Avalon even when no one holds that position. A *post* is such a position that exists independently of the person holding it.
 
 A post should not be confused with a *role*, which describes a function that a person can fulfill. For example, people in different organizations can all fulfill the role of CEO, but only one person can hold the post of CEO at Apple Inc. Indeed, the post of the MP for Avalon could be described as having the role of MP.
@@ -84,7 +82,6 @@ According to the Organization ontology, either a person or an organization can h
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
 <table>
-  <caption>Definitions and mappings of classes and properties</caption>
   <thead>
     <tr>
       <th width="130">Term</th>
@@ -141,7 +138,7 @@ According to the Organization ontology, either a person or an organization can h
 
 <h1 id="serialization">4. Serialization</h1>
 
-A post cannot exist outside an organization. All posts <em class="rfc2119">must</em> therefore assign a value to either `organization_id` or `organization`.
+A post cannot exist outside an organization. All posts <em class="rfc2119">must</em> assign a value to either `organization_id` or `organization`.
 
 **JSON differences from other RDF serializations:**
 

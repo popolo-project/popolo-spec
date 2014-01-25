@@ -79,7 +79,6 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
 <table>
-  <caption>Definitions and mappings of classes and properties</caption>
   <thead>
     <tr>
       <th width="130">Term</th>
@@ -111,7 +110,7 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
     <tr id="org:identifier">
       <td>identifier</td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:identifier" title="http://www.w3.org/ns/org#identifier">org:identifier</a></code></td>
-      <td>An issued identifier, e.g. a <abbr title="Data Universal Numbering System">DUNS</abbr> number, <abbr title="Global Location Number">GLN</abbr>, <abbr title="Taxpayer Identification Number">TIN</abbr>, etc.</td>
+      <td>An issued identifier, e.g. a <abbr title="Data Universal Numbering System">DUNS</abbr> number, <abbr title="Global Location Number">GLN</abbr>, etc.</td>
     </tr>
     <tr id="org:classification">
       <td>classification</td>
@@ -131,7 +130,7 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
     <tr id="opengov:dissolutionDate">
       <td>date of dissolution</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#dissolutionDate">opengov:dissolutionDate</a></code><a href="#note3"><sup>3</sup></a></td>
-      <td>A date of dissolution, termination, withdrawal, expiry, etc.</td>
+      <td>A date of dissolution, termination, expiry, etc.</td>
     </tr>
     <tr id="schema:image">
       <td>image</td>

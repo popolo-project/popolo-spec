@@ -92,7 +92,6 @@ With respect to the choice of terms:
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
 <table>
-  <caption>Definitions and mappings of classes and properties</caption>
   <thead>
     <tr>
       <th width="130">Term</th>
@@ -189,7 +188,7 @@ With respect to the choice of terms:
 **JSON differences from other RDF serializations:**
 
 * The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of [name objects](/specs/#other-name).
-* The term `identifiers` is used instead of `identifier` and is serialized as an array of [identifier objects](/specs/#identifier).
+* The term `identifiers` is used instead of `nick` and is serialized as an array of [identifier objects](/specs/#identifier).
 * The term `summary`[<sup>5</sup>](#note5) is used instead of `olb`, because abbreviations are avoided.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 

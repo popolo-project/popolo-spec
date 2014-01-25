@@ -77,7 +77,6 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
 <table>
-  <caption>Definitions and mappings of classes and properties</caption>
   <thead>
     <tr>
       <th width="130">Term</th>
@@ -148,13 +147,13 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
 
 <h1 id="serialization">4. Serialization</h1>
 
-A membership relation cannot exist without both a person and an organization. All memberships <em class="rfc2119">must</em> therefore assign values to either `person_id` or `person` and to either `organization_id` or `organization`.
+A membership relation cannot exist without both a person and an organization. All memberships <em class="rfc2119">must</em> assign values to either `person_id` or `person` and to either `organization_id` or `organization`.
 
 **JSON differences from other RDF serializations:**
 
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
 * The value of the `role` property is a string, instead of an `org:Role`.
-* The terms `start_date` and `end_date`[<sup>2</sup>](#note2) are used instead of `validFrom` and `validThrough`, for backwards compatibility.
+* The terms `start_date` and `end_date`[<sup>2</sup>](#note2) are used instead of `validFrom` and `validThrough`, for backwards compatibility and for better semantics.
 * The term `person_id` is used instead of `member` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
 * The term `organization_id` is used instead of `organization` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).

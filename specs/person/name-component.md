@@ -45,7 +45,6 @@ In [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350), each component of
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
 <table>
-  <caption>Definitions and mappings of classes and properties</caption>
   <thead>
     <tr>
       <th width="130">Term</th>
