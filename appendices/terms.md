@@ -28,48 +28,64 @@ id: data
       <td>
         <a href='http://xmlns.com/foaf/0.1/'>http://xmlns.com/foaf/0.1/</a>
       </td>
+    </tr>
+    <tr>
       <td>
         <code>schema</code>
       </td>
       <td>
         <a href='http://schema.org/'>http://schema.org/</a>
       </td>
+    </tr>
+    <tr>
       <td>
         <code>org</code>
       </td>
       <td>
         <a href='http://www.w3.org/ns/org#'>http://www.w3.org/ns/org#</a>
       </td>
+    </tr>
+    <tr>
       <td>
         <code>skos</code>
       </td>
       <td>
         <a href='http://www.w3.org/2004/02/skos/core#'>http://www.w3.org/2004/02/skos/core#</a>
       </td>
+    </tr>
+    <tr>
       <td>
         <code>vcard</code>
       </td>
       <td>
         <a href='http://www.w3.org/2006/vcard/ns#'>http://www.w3.org/2006/vcard/ns#</a>
       </td>
+    </tr>
+    <tr>
       <td>
         <code>person</code>
       </td>
       <td>
         <a href='http://www.w3.org/ns/person#'>http://www.w3.org/ns/person#</a>
       </td>
+    </tr>
+    <tr>
       <td>
         <code>locn</code>
       </td>
       <td>
         <a href='http://www.w3.org/ns/locn#'>http://www.w3.org/ns/locn#</a>
       </td>
+    </tr>
+    <tr>
       <td>
         <code>nco</code>
       </td>
       <td>
         <a href='http://www.semanticdesktop.org/ontologies/nco/#'>http://www.semanticdesktop.org/ontologies/nco/#</a>
       </td>
+    </tr>
+    <tr>
       <td>
         <code>nie</code>
       </td>
