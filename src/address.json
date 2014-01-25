@@ -1,0 +1,104 @@
+{
+  "schema": {
+    "Address": {
+      "term": "PostalAddress",
+      "url": "http://schema.org/PostalAddress"
+    },
+    "address type": {
+      "term": "contactType",
+      "url": "http://schema.org/contactType"
+    },
+    "telephone": {
+      "term": "telephone",
+      "url": "http://schema.org/telephone"
+    }
+  },
+  "vcard": {
+    "Address": {
+      "term": "Address",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e1126"
+    },
+    "address type": {
+      "term": "rdf:type",
+      "url": "http://www.w3.org/TR/rdf-schema/#ch_type"
+    },
+    "telephone": {
+      "term": "hasTelephone",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e491"
+    }
+  },
+  "locn": {
+    "Address": {
+      "term": "Address",
+      "url": "http://philarcher.org/isa/locn-v1.00.html#locn:Address"
+    },
+    "postal address": {
+      "term": "fullAddress",
+      "url": "http://philarcher.org/isa/locn-v1.00.html#locn:fullAddress"
+    }
+  },
+  "nco": {
+    "Address": {
+      "term": "PostalAddress",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#PostalAddress"
+    }
+  },
+  "LDAP": {
+    "postal address": {
+      "term": "postalAddress",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.23"
+    },
+    "telephone": {
+      "term": "telephoneNumber",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.35"
+    }
+  },
+  "CIQ": {
+    "Address": {
+      "term": "Address",
+      "url": "http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716059"
+    },
+    "postal address": {
+      "term": "FreeTextAddress",
+      "url": "http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716059"
+    },
+    "telephone": {
+      "term": "ContactNumber",
+      "url": "http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533305"
+    }
+  },
+  "NIEM": {
+    "Address": {
+      "term": "AddressType"
+    },
+    "address type": {
+      "term": "LocationCategory"
+    },
+    "postal address": {
+      "term": "AddressRepresentation",
+      "label": "Representation"
+    },
+    "telephone": {
+      "term": "ContactTelephoneNumber",
+      "label": "TelephoneNumber"
+    }
+  },
+  "OpenSocial": {
+    "Address": {
+      "term": "Address",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Address"
+    },
+    "address type": {
+      "term": "type",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Address"
+    },
+    "postal address": {
+      "term": "formatted",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Address"
+    },
+    "telephone": {
+      "term": "phoneNumbers",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Address"
+    }
+  }
+}

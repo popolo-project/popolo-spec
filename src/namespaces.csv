@@ -1,0 +1,10 @@
+Prefix,Namespace
+foaf,http://xmlns.com/foaf/0.1/
+schema,http://schema.org/
+org,http://www.w3.org/ns/org#
+skos,http://www.w3.org/2004/02/skos/core#
+vcard,http://www.w3.org/2006/vcard/ns#
+person,http://www.w3.org/ns/person#
+locn,http://www.w3.org/ns/locn#
+nco,http://www.semanticdesktop.org/ontologies/nco/#
+nie,http://www.semanticdesktop.org/ontologies/nie/#

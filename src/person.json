@@ -1,0 +1,484 @@
+{
+  "foaf": {
+    "Person": {
+      "term": "Person",
+      "url": "http://xmlns.com/foaf/spec/#term_Person"
+    },
+    "email address": {
+      "term": "mbox",
+      "url": "http://xmlns.com/foaf/spec/#term_mbox"
+    },
+    "gender": {
+      "term": "gender",
+      "url": "http://xmlns.com/foaf/spec/#term_gender"
+    },
+    "date of birth": {
+      "term": "birthday",
+      "url": "http://xmlns.com/foaf/spec/#term_birthday"
+    },
+    "head shot": {
+      "term": "img",
+      "url": "http://xmlns.com/foaf/spec/#term_img"
+    },
+    "external links": {
+      "term": "page",
+      "url": "http://xmlns.com/foaf/spec/#term_page"
+    },
+    "name": {
+      "term": "name",
+      "url": "http://xmlns.com/foaf/spec/#term_name"
+    },
+    "alternate name": {
+      "term": "nick",
+      "url": "http://xmlns.com/foaf/spec/#term_nick"
+    },
+    "family name": {
+      "term": "familyName",
+      "url": "http://xmlns.com/foaf/spec/#term_familyName"
+    },
+    "given name": {
+      "term": "givenName",
+      "url": "http://xmlns.com/foaf/spec/#term_givenName"
+    },
+    "honorific prefix": {
+      "term": "title",
+      "url": "http://xmlns.com/foaf/spec/#term_title"
+    }
+  },
+  "schema": {
+    "Person": {
+      "term": "Person",
+      "url": "http://schema.org/Person"
+    },
+    "email address": {
+      "term": "email",
+      "url": "http://schema.org/email"
+    },
+    "gender": {
+      "term": "gender",
+      "url": "http://schema.org/gender"
+    },
+    "date of birth": {
+      "term": "birthDate",
+      "url": "http://schema.org/birthDate"
+    },
+    "date of death": {
+      "term": "deathDate",
+      "url": "http://schema.org/deathDate"
+    },
+    "head shot": {
+      "term": "image",
+      "url": "http://schema.org/image"
+    },
+    "name": {
+      "term": "name",
+      "url": "http://schema.org/"
+    },
+    "family name": {
+      "term": "familyName",
+      "url": "http://schema.org/familyName"
+    },
+    "given name": {
+      "term": "givenName",
+      "url": "http://schema.org/givenName"
+    },
+    "additional name": {
+      "term": "additionalName",
+      "url": "http://schema.org/additionalName"
+    },
+    "honorific prefix": {
+      "term": "honorificPrefix",
+      "url": "http://schema.org/honorificPrefix"
+    },
+    "honorific suffix": {
+      "term": "honorificSuffix",
+      "url": "http://schema.org/honorificSuffix"
+    }
+  },
+  "vcard": {
+    "Person": {
+      "term": "Individual",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e1539"
+    },
+    "email address": {
+      "term": "hasEmail",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e164"
+    },
+    "gender": {
+      "term": "hasGender",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e200"
+    },
+    "date of birth": {
+      "term": "bday",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e695"
+    },
+    "date of death": {
+      "term": "DEATHDATE",
+      "url": "http://tools.ietf.org/html/rfc6474#section-2.3"
+    },
+    "head shot": {
+      "term": "hasPhoto",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e396"
+    },
+    "external links": {
+      "term": "hasUrl",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e527"
+    },
+    "name": {
+      "term": "fn",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e777"
+    },
+    "alternate name": {
+      "term": "nickname",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e912"
+    },
+    "family name": {
+      "term": "family-name",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e764"
+    },
+    "given name": {
+      "term": "given-name",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e790"
+    },
+    "additional name": {
+      "term": "additional-name",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e668"
+    },
+    "honorific prefix": {
+      "term": "honorific-prefix",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e804"
+    },
+    "honorific suffix": {
+      "term": "honorific-suffix",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e817"
+    }
+  },
+  "person": {
+    "Person": {
+      "term": "Person",
+      "url": "http://www.w3.org/ns/person#Person"
+    },
+    "email address": {
+      "label": "see <code>schema</code>"
+    },
+    "gender": {
+      "label": "see <code>schema</code>"
+    },
+    "date of birth": {
+      "label": "see <code>schema</code>"
+    },
+    "date of death": {
+      "label": "see <code>schema</code>"
+    },
+    "head shot": {
+      "label": "see <code>schema</code>"
+    },
+    "external links": {
+      "label": "see <code>foaf</code>"
+    },
+    "name": {
+      "label": "see <code>foaf</code>"
+    },
+    "alternate name": {
+      "term": "alternative",
+      "url": "http://dublincore.org/documents/dcmi-terms/#terms-alternative"
+    },
+    "former name": {
+      "term": "birthName",
+      "url": "http://www.w3.org/ns/person#birthName"
+    },
+    "family name": {
+      "label": "see <code>foaf</code>"
+    },
+    "given name": {
+      "label": "see <code>foaf</code>"
+    },
+    "additional name": {
+      "label": "see <code>schema</code>"
+    },
+    "honorific prefix": {
+      "label": "see <code>schema</code>"
+    },
+    "honorific suffix": {
+      "label": "see <code>schema</code>"
+    }
+  },
+  "nco": {
+    "Person": {
+      "term": "PersonContact",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#PersonContact"
+    },
+    "email address": {
+      "term": "hasEmailAddress",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#hasEmailAddress"
+    },
+    "gender": {
+      "term": "gender",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#gender"
+    },
+    "date of birth": {
+      "term": "birthDate",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#birthDate"
+    },
+    "head shot": {
+      "term": "photo",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#photo"
+    },
+    "external links": {
+      "term": "url",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#url"
+    },
+    "name": {
+      "term": "fullname",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#fullname"
+    },
+    "alternate name": {
+      "term": "nickname",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#nickname"
+    },
+    "family name": {
+      "term": "nameFamily",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#nameFamily"
+    },
+    "given name": {
+      "term": "nameGiven",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#nameGiven"
+    },
+    "additional name": {
+      "term": "nameAdditional",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#nameAdditional"
+    },
+    "honorific prefix": {
+      "term": "nameHonorificPrefix",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#nameHonorificPrefix"
+    },
+    "honorific suffix": {
+      "term": "nameHonorificSuffix",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#nameHonorificSuffix"
+    }
+  },
+  "LDAP": {
+    "Person": {
+      "term": "person",
+      "url": "http://tools.ietf.org/html/rfc4519#section-3.12"
+    },
+    "email address": {
+      "term": "mail",
+      "url": "http://tools.ietf.org/html/rfc4524#section-2.16"
+    },
+    "head shot": {
+      "term": "jpegPhoto",
+      "url": "http://tools.ietf.org/html/rfc2798#section-2.6"
+    },
+    "name": {
+      "term": "cn",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.3"
+    },
+    "family name": {
+      "term": "sn",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.32"
+    },
+    "given name": {
+      "term": "givenName",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.12"
+    },
+    "additional name": {
+      "term": "initials",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.14"
+    },
+    "honorific prefix": {
+      "term": "personalTitle",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.21"
+    },
+    "honorific suffix": {
+      "term": "generationQuantifier",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.11"
+    }
+  },
+  "CIQ": {
+    "Person": {
+      "term": "Party",
+      "url": "http://docs.oasis-open.org/ciq/v3.0/xPRL/specs/ciq-xprl-specs.html#_Toc213421948"
+    },
+    "email address": {
+      "term": "ElectronicAddressIdentifier",
+      "url": "http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533305"
+    },
+    "gender": {
+      "term": "Gender",
+      "url": "http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd"
+    },
+    "date of birth": {
+      "term": "BirthDateTime",
+      "url": "http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533303"
+    },
+    "date of death": {
+      "term": "Date",
+      "url": "http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd"
+    },
+    "biography": {
+      "term": "FreeTextLines",
+      "url": "http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd"
+    },
+    "name": {
+      "term": "PartyName",
+      "url": "http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716020"
+    }
+  },
+  "NIEM": {
+    "Person": {
+      "term": "PersonType"
+    },
+    "email address": {
+      "term": "ContactEmailID"
+    },
+    "gender": {
+      "term": "PersonSex",
+      "label": "Sex"
+    },
+    "date of birth": {
+      "term": "PersonBirthDate",
+      "label": "BirthDate"
+    },
+    "date of death": {
+      "term": "PersonDeathDate",
+      "label": "DeathDate"
+    },
+    "head shot": {
+      "term": "PersonDigitalImage",
+      "label": "DigitalImage"
+    },
+    "biography": {
+      "term": "PersonDescriptionText",
+      "label": "DescriptionText"
+    },
+    "name": {
+      "term": "PersonFullName",
+      "label": "FullName"
+    },
+    "alternate name": {
+      "term": "PersonAlternateName",
+      "label": "AlternateName"
+    },
+    "former name": {
+      "term": "PersonMaidenName",
+      "label": "MaidenName"
+    },
+    "family name": {
+      "term": "PersonSurName",
+      "label": "SurName"
+    },
+    "given name": {
+      "term": "PersonGivenName",
+      "label": "GivenName"
+    },
+    "additional name": {
+      "term": "PersonMiddleName",
+      "label": "MiddleName"
+    },
+    "honorific prefix": {
+      "term": "PersonNamePrefixText",
+      "label": "NamePrefixText"
+    },
+    "honorific suffix": {
+      "term": "PersonNameSuffixText",
+      "label": "NameSuffixText"
+    }
+  },
+  "OpenSocial": {
+    "Person": {
+      "term": "Person",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
+    },
+    "email address": {
+      "term": "emails",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
+    },
+    "gender": {
+      "term": "gender",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
+    },
+    "date of birth": {
+      "term": "birthday",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
+    },
+    "head shot": {
+      "term": "photos",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
+    },
+    "external links": {
+      "term": "urls",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
+    },
+    "name": {
+      "term": "displayName",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
+    },
+    "alternate name": {
+      "term": "nickname",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
+    },
+    "former name": {
+      "term": "alternateNames",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
+    },
+    "family name": {
+      "term": "familyName",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Name"
+    },
+    "given name": {
+      "term": "givenName",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Name"
+    },
+    "additional name": {
+      "term": "middleName",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Name"
+    },
+    "honorific prefix": {
+      "term": "honorificPrefix",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Name"
+    },
+    "honorific suffix": {
+      "term": "honorificSuffix",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Name"
+    }
+  },
+  "Facebook": {
+    "Person": {
+      "term": "User",
+      "url": "https://developers.facebook.com/docs/reference/api/user/"
+    },
+    "email address": {
+      "term": "email",
+      "url": "https://developers.facebook.com/docs/reference/api/user/"
+    },
+    "gender": {
+      "term": "gender",
+      "url": "https://developers.facebook.com/docs/reference/api/user/"
+    },
+    "date of birth": {
+      "term": "birthday",
+      "url": "https://developers.facebook.com/docs/reference/api/user/"
+    },
+    "head shot": {
+      "term": "picture",
+      "url": "https://developers.facebook.com/docs/reference/api/user/"
+    },
+    "biography": {
+      "term": "bio",
+      "url": "https://developers.facebook.com/docs/reference/api/user/"
+    },
+    "name": {
+      "term": "name",
+      "url": "https://developers.facebook.com/docs/reference/api/user/"
+    },
+    "family name": {
+      "term": "last_name",
+      "url": "https://developers.facebook.com/docs/reference/api/user/"
+    },
+    "given name": {
+      "term": "first_name",
+      "url": "https://developers.facebook.com/docs/reference/api/user/"
+    }
+  }
+}

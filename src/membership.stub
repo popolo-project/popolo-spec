@@ -1,0 +1,37 @@
+  "": {
+    "Membership": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "label": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "role": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "person": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "organization": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "start date": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "end date": {
+      "term": "",
+      "url": "",
+      "label": ""
+    }
+  },

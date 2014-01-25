@@ -1,0 +1,28 @@
+{
+  "org": {
+    "Membership": {
+      "term": "Membership",
+      "url": "http://www.w3.org/TR/vocab-org/#org:Membership"
+    },
+    "role": {
+      "term": "role",
+      "url": "http://www.w3.org/TR/vocab-org/#org:role"
+    },
+    "person": {
+      "term": "person",
+      "url": "http://www.w3.org/TR/vocab-org/#org:person"
+    },
+    "organization": {
+      "term": "organization",
+      "url": "http://www.w3.org/TR/vocab-org/#org:organization"
+    },
+    "start date": {
+      "term": "memberDuring",
+      "url": "http://www.w3.org/TR/vocab-org/#org:memberDuring"
+    },
+    "end date": {
+      "term": "memberDuring",
+      "url": "http://www.w3.org/TR/vocab-org/#org:memberDuring"
+    }
+  }
+}

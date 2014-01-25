@@ -1,0 +1,216 @@
+{
+  "foaf": {
+    "Organization": {
+      "term": "Organization",
+      "url": "http://xmlns.com/foaf/spec/#term_Organization"
+    },
+    "name": {
+      "term": "name",
+      "url": "http://xmlns.com/foaf/spec/#term_name"
+    },
+    "alternate name": {
+      "term": "nick",
+      "url": "http://xmlns.com/foaf/spec/#term_nick"
+    },
+    "child organization": {
+      "term": "member",
+      "url": "http://xmlns.com/foaf/spec/#term_member"
+    },
+    "founding date": {
+      "term": "birthday",
+      "url": "http://xmlns.com/foaf/spec/#term_"
+    }
+  },
+  "schema": {
+    "Organization": {
+      "term": "Organization",
+      "url": "http://schema.org/Organization"
+    },
+    "name": {
+      "term": "name",
+      "url": "http://schema.org/name"
+    },
+    "alternate name": {
+      "term": "legalName",
+      "url": "http://schema.org/legalName"
+    },
+    "identifier": {
+      "term": "duns",
+      "url": "http://schema.org/duns"
+    },
+    "classification": {
+      "term": "naics",
+      "url": "http://schema.org/naics"
+    },
+    "child organization": {
+      "term": "member",
+      "url": "http://schema.org/member"
+    },
+    "founding date": {
+      "term": "foundingDate",
+      "url": "http://schema.org/foundingDate"
+    }
+  },
+  "org": {
+    "Organization": {
+      "term": "Organization",
+      "url": "http://www.w3.org/TR/vocab-org/#org:Organization"
+    },
+    "name": {
+      "term": "skos:prefLabel",
+      "url": "http://www.w3.org/TR/skos-reference/#labels"
+    },
+    "alternate name": {
+      "term": "skos:altLabel",
+      "url": "http://www.w3.org/TR/skos-reference/#labels"
+    },
+    "identifier": {
+      "term": "identifier",
+      "url": "http://www.w3.org/TR/vocab-org/#org:identifier"
+    },
+    "classification": {
+      "term": "classification",
+      "url": "http://www.w3.org/TR/vocab-org/#org:classification"
+    },
+    "child organization": {
+      "term": "hasSubOrganization",
+      "url": "http://www.w3.org/TR/vocab-org/#org:hasSubOrganization"
+    },
+    "founding date": {
+      "label": "see <code>foaf</code>"
+    }
+  },
+  "vcard": {
+    "Organization": {
+      "term": "Organization",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e1877"
+    },
+    "name": {
+      "term": "organization-name",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e939"
+    },
+    "alternate name": {
+      "term": "nickname",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e912"
+    },
+    "identifier": {
+      "term": "hasUID",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e516"
+    },
+    "founding date": {
+      "term": "bday",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e695"
+    },
+    "dissolution date": {
+      "term": "DEATHDATE",
+      "url": "http://tools.ietf.org/html/rfc6474#section-2.3"
+    }
+  },
+  "nco": {
+    "Organization": {
+      "term": "OrganizationContact",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#OrganizationContact"
+    },
+    "name": {
+      "term": "fullname",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#fullname"
+    },
+    "alternate name": {
+      "term": "nickname",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#nickname"
+    },
+    "identifier": {
+      "term": "nie:identifier",
+      "url": "http://www.semanticdesktop.org/ontologies/nie/#identifier"
+    },
+    "founding date": {
+      "term": "birthDate",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#birthDate"
+    }
+  },
+  "LDAP": {
+    "Organization": {
+      "term": "organization",
+      "url": "http://tools.ietf.org/html/rfc4519#section-3.8"
+    },
+    "name": {
+      "term": "o",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.19"
+    },
+    "identifier": {
+      "term": "uniqueIdentifier",
+      "url": "http://tools.ietf.org/html/rfc4524#section-2.24"
+    },
+    "classification": {
+      "term": "businessCategory",
+      "url": "http://tools.ietf.org/html/rfc4524#section-2.1"
+    },
+    "child organization": {
+      "term": "member",
+      "url": "http://tools.ietf.org/html/rfc4524#section-2.17"
+    }
+  },
+  "CIQ": {
+    "Organization": {
+      "term": "Party",
+      "url": "http://docs.oasis-open.org/ciq/v3.0/xPRL/specs/ciq-xprl-specs.html#_Toc213421948"
+    },
+    "name": {
+      "term": "PartyName",
+      "url": "http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc207716020"
+    },
+    "identifier": {
+      "term": "Identifier",
+      "url": "http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd"
+    },
+    "classification": {
+      "term": "Type",
+      "url": "http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd"
+    },
+    "child organization": {
+      "term": "Relationship",
+      "url": "http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533310"
+    },
+    "founding date": {
+      "term": "Date",
+      "url": "http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd"
+    },
+    "dissolution date": {
+      "term": "Date",
+      "url": "http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd"
+    }
+  },
+  "NIEM": {
+    "Organization": {
+      "term": "OrganizationType"
+    },
+    "name": {
+      "term": "OrganizationName",
+      "label": "Name"
+    },
+    "alternate name": {
+      "term": "OrganizationDoingBusinessAsName",
+      "label": "DoingBusinessAsName"
+    },
+    "identifier": {
+      "term": "OrganizationIdentification",
+      "label": "Identification"
+    },
+    "classification": {
+      "term": "OrganizationCategory",
+      "label": "Category"
+    },
+    "child organization": {
+      "term": "OrganizationParent",
+      "label": "Parent"
+    },
+    "founding date": {
+      "term": "OrganizationEstablishedDate",
+      "label": "EstablishedDate"
+    },
+    "dissolution date": {
+      "term": "OrganizationTerminationDate",
+      "label": "TerminationDate"
+    }
+  }
+}

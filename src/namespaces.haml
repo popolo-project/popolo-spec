@@ -1,0 +1,12 @@
+%table
+  %thead
+    %tr
+      - headers.each do |header|
+        %th= header
+  %tbody
+    %tr
+      - namespaces.each do |prefix,namespace|
+        %td
+          %code= prefix
+        %td
+          %a(href=namespace)= namespace

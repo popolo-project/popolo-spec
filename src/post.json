@@ -1,0 +1,94 @@
+{
+  "org": {
+    "Post": {
+      "term": "Post",
+      "url": "http://www.w3.org/TR/vocab-org/#org:Post"
+    },
+    "label": {
+      "term": "skos:prefLabel",
+      "url": "http://www.w3.org/TR/skos-reference/#labels"
+    },
+    "role": {
+      "term": "role",
+      "url": "http://www.w3.org/TR/vocab-org/#org:role"
+    },
+    "organization": {
+      "term": "postIn",
+      "url": "http://www.w3.org/TR/vocab-org/#org:postIn"
+    },
+    "person": {
+      "term": "heldBy",
+      "url": "http://www.w3.org/TR/vocab-org/#org:heldBy"
+    }
+  },
+  "nco": {
+    "Post": {
+      "term": "Affiliation",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#Affiliation"
+    },
+    "label": {
+      "term": "title",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#title"
+    },
+    "role": {
+      "term": "role",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#role"
+    },
+    "organization": {
+      "term": "org",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#org"
+    }
+  },
+  "LDAP": {
+    "Post": {
+      "term": "organizationalRole",
+      "url": "http://tools.ietf.org/html/rfc4519#section-3.10"
+    },
+    "label": {
+      "term": "cn",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.3"
+    },
+    "role": {
+      "term": "title",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.38"
+    },
+    "organization": {
+      "term": "o",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.20"
+    },
+    "person": {
+      "term": "roleOccupant",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.28"
+    }
+  },
+  "NIEM": {
+    "Post": {
+      "term": "PersonEmploymentAssociationType"
+    },
+    "role": {
+      "term": "EmployeePositionName",
+      "label": "PositionName"
+    },
+    "organization": {
+      "term": "Employer"
+    },
+    "person": {
+      "term": "EmployeeReference",
+      "label": "Reference"
+    }
+  },
+  "PMF": {
+    "Post": {
+      "term": "Role"
+    },
+    "role": {
+      "term": "role_name"
+    },
+    "organization": {
+      "term": "primary_object"
+    },
+    "person": {
+      "term": "related_object"
+    }
+  }
+}

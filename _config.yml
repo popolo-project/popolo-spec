@@ -1,5 +1,9 @@
 markdown: redcarpet
 exclude:
+- src
 - CNAME
 - Gemfile
 - Gemfile.lock
+- Rakefile
+- README.md
+- VERSION

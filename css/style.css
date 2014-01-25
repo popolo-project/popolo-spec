@@ -90,35 +90,6 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 1199px) {
-  table.table-terms {
-    width: auto;
-    max-width: none;
-  }
-  table.table-widest {
-    width: auto;
-    max-width: none;
-  }
-  table.table-widest th {
-    width: 80px;
-  }
-}
-@media (min-width: 1200px) {
-  table.table-terms {
-    width: auto;
-    max-width: none;
-  }
-  table.table-terms th {
-    width: 80px;
-  }
-  table.table-terms td {
-    width: 123px;
-  }
-}
-table.table-widest td {
-  width: 9em;
-}
-
 #example-date {
   min-height: 50px;
   background: url(/img/nounproject/polling-place-14292.png) no-repeat 0 0;
