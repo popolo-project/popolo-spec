@@ -73,8 +73,7 @@
       "term": "Employer"
     },
     "person": {
-      "term": "EmployeeReference",
-      "label": "Reference"
+      "term": "EmployeeReference"
     }
   },
   "PMF": {

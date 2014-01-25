@@ -1,4 +1,4 @@
-%div.table-responsive
+%div(class="table-responsive#{' table-auto' if terms.size <= 6}")
   %table.table.table-striped.table-hover.table-condensed
     %thead
       %tr
@@ -22,13 +22,13 @@
                   %a(href="#{entries[term]['url']}")
                     - if entries[term]['label']
                       %abbr(title="#{entries[term]['term']}")= entries[term]['label']
-                    - elsif entries[term]['term'].size > 19
-                      %abbr(title="#{entries[term]['term']}") #{entries[term]['term'][0...19]}…
+                    - elsif entries[term]['term'].size > 15
+                      %abbr(title="#{entries[term]['term']}") #{entries[term]['term'][0...15]}…
                     - else
                       = entries[term]['term']
                 - elsif entries[term]['label']
                   %abbr(title="#{entries[term]['term']}")= entries[term]['label']
-                - elsif entries[term]['term'].size > 19
-                  %abbr(title="#{entries[term]['term']}") #{entries[term]['term'][0...19]}…
+                - elsif entries[term]['term'].size > 15
+                  %abbr(title="#{entries[term]['term']}") #{entries[term]['term'][0...15]}…
                 - else
                   = entries[term]['term']

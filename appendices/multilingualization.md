@@ -1,6 +1,6 @@
 ---
 layout: default
-title: API Design Patterns | The Popolo Project
+title: Multilingualization | The Popolo Project
 id: appendix
 ---
 {% include navigation.html %}
@@ -8,27 +8,20 @@ id: appendix
 <ul class="breadcrumb">
   <li><a href="/specs/">Data Specification</a></li>
   <li>Appendices</li>
-  <li class="active">API design patterns</li>
+  <li class="active">Multilingualization</li>
 </ul>
 
-This document collects some emerging design patterns for APIs for accessing legislative information. If you are developing your own API, you may benefit from reading the different solutions to the use cases and requirements discussed below.
-
-* [Support multiple languages](#internationalization)
-* [Merge duplicates](#duplicates)
-
-<h2 id="internationalization">Support multiple languages</h2>
-
-### 1. Negotiate the client's preferred language
+## 1. Negotiate the client's preferred language
 
 Most APIs with multilingual support allow clients to specify which natural languages are preferred using the [Accept-Language](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4) HTTP header. For example, `Accept-Language: fr, en` means the client prefers French but will accept English. If no Accept-Language header is present, the API assumes that all languages are equally acceptable.
 
-### 2. Respond with content in a preferred language
+## 2. Respond with content in a preferred language
 
 As demonstrated in the following subsection, in all except <abbr title="JavaScript Object Notation">JSON</abbr> formats, it is easy for an API to respond with content in all available languages and for clients to parse the content consistently, because there is a unique, standard approach to language tagging in those formats.
 
 Until a unique, standard approach to language tagging emerges for JSON, to simplify the JSON response, if no Accept-Language header is present, the API should respond with content in the single, default language. If an Accept-Language header is present, it should respond with content in a preferred language where possible, and use the default language otherwise.
 
-### 3. Indicate the language of a string
+## 3. Indicate the language of a string
 
 * <abbr title="Extensible Markup Language">XML</abbr> uses the [`xml:lang`](http://www.w3.org/TR/REC-rdf-syntax/#section-Syntax-languages) attribute, for example:
 
@@ -96,11 +89,3 @@ Until a unique, standard approach to language tagging emerges for JSON, to simpl
           "label_fr": "chat"
         }
         ```
-
-<h2 id="duplicates">Merge duplicates</h2>
-
-Many systems support merging documents to remove duplicates. [Billy](https://github.com/sunlightlabs/billy/) has [Merge-o-Matic (MoM)](https://github.com/sunlightlabs/billy/wiki/Merge-o-matic) which adds an `all_ids` field on all documents. The "winner" of a merge adds the loser's ID to its `all_ids`. Billy can therefore support lookups using old IDs.
-
-<div class="well well-sm well-example">
-  A legislative information system creates a record (ID 1) for the legislator William Doe, by scraping information from the legislature's website. Users of the system's API learn to associate the unique identifier 1 with William Doe. The following month, William Doe asks the legislature's IT department to change his name on the website to "Bill Doe", his preferred name. The legislative information system creates a record (ID 101) for the legislator Bill Doe, not realizing it is the same person as William Doe. API users learn to associate the unique identifier 101 with Bill Doe. A week later, administrators notice the duplication and remove one of the two records, using the method described above, such that lookups using the deleted identifier still resolve to an appropriate record, requiring no change on the part of API users.
-</div>

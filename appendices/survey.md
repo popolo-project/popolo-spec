@@ -13,7 +13,7 @@ id: appendix
 
 Existing specifications can be found through:
 
-* [Linked Open Vocabularies](http://lov.okfn.org/) by the [Open Knowledge Foundation](http://okfn.org/) allows you to search and explore over 350 RDF vocabularies by theme and term.
+* [Linked Open Vocabularies](http://lov.okfn.org/) by the [Open Knowledge Foundation](http://okfn.org/) allows you to search over 350 RDF vocabularies by theme and term.
 * The [Interoperability Solutions for European Public Administrations (ISA)](http://ec.europa.eu/isa/) programme of the [European Commission](http://ec.europa.eu/) lists [semantic assets](https://joinup.ec.europa.eu/catalogue/all) (domain models, ontologies, thesauruses and code lists) from more than [20 onlne repositories](https://joinup.ec.europa.eu/catalogue/repository).
 * Various ontology search engines exist, including [Watson](http://watson.kmi.open.ac.uk/), [Swoogle](http://swoogle.umbc.edu/) and [FalconS](http://ws.nju.edu.cn/falcons/).
 
@@ -27,7 +27,7 @@ Existing specifications can be found through:
 
 ***
 
-# The Friend of a Friend Project <span class="label">Person</span> <span class="label">Organization</span>
+# The Friend of a Friend Project
 
 [FOAF](http://xmlns.com/foaf/spec/) is among the [most referenced](http://lov.okfn.org/dataset/lov/details/vocabulary_foaf.html) and oldest linked open vocabularies. It is [managed more in the style of an open source project](http://xmlns.com/foaf/spec/#sec-standards) than as a standard. It is unclear whether contributing to the project would be productive; Dan Brickley is the only editor, and his focus is on [Schema.org](http://schema.org/).
 
@@ -47,7 +47,7 @@ Existing specifications can be found through:
 
 ***
 
-# Schema.org <span class="label">Person</span> <span class="label">Organization</span> <span class="label">Address</span>
+# Schema.org
 
 [Schema.org](http://schema.org/) allows webmasters to provide structured data to search providers using HTML markup. Google, Yahoo! and Bing announced Schema.org in 2011. Contributions are made through the [W3C Web Schemas Task Force](http://www.w3.org/2001/sw/interest/webschema.html), part of the [W3C Semantic Web Interest Group](http://www.w3.org/2001/sw/interest/).
 
@@ -72,7 +72,7 @@ Existing specifications can be found through:
 
 ***
 
-<h1 id="w3c">World Wide Web Consortium <span class="label">Organization</span></h1>
+<h1 id="w3c">World Wide Web Consortium</h1>
 
 [W3C](http://www.w3.org/) is the main international standards organization for the World Wide Web. It is not incorporated. Member organizations and invited experts from the public produce most of W3C's deliverables. Invited experts do not pay [fees](http://www.w3.org/Consortium/fees). It follows a [consensus-based process](http://www.w3.org/2005/10/Process-20051014/).
 
@@ -88,7 +88,7 @@ Deliverables of past working groups of interest are the [Simple Knowledge Organi
 
 * [`org:Organization`](http://www.w3.org/TR/vocab-org/#org:Organization) has no properties for dissolution dates.
 * `org:Organization` uses [`skos:altLabel`](http://www.w3.org/TR/2009/REC-skos-reference-20090818/#labels) for alternate names instead of [`foaf:nick`](http://xmlns.com/foaf/spec/#term_nick).
-* `org:Organization` uses [`org:hasSubOrganization`](http://www.w3.org/TR/vocab-org/#org:hasSubOrganization), [`org:subOrganizationOf`](http://www.w3.org/TR/vocab-org/#org:subOrganizationOf) and [`org:transitiveSubOrganizationOf`](http://www.w3.org/TR/vocab-org/#org:transitiveSubOrganizationOf) instead of [`foaf:member`](http://xmlns.com/foaf/spec/#term_member).
+* `org:Organization` uses [`org:hasSubOrganization`](http://www.w3.org/TR/vocab-org/#org:hasSubOrganization), [`org:subOrganizationOf`](http://www.w3.org/TR/vocab-org/#org:subOrganizationOf) and [`org:transitiveSubOrganizationOf`](http://www.w3.org/TR/vocab-org/#org:transitiveSubOrganizationOf).
 * SKOS' [concept schemes](http://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes) and [semantic relations](http://www.w3.org/TR/2009/REC-skos-reference-20090818/#semantic-relations) can be used to define controlled vocabularies, like classification schemes.
 * The [lexical labels](http://www.w3.org/TR/2009/REC-skos-reference-20090818/#labels) `skos:prefLabel`, `skos:altLabel` and `skos:hiddenLabel` are sub-properties of and are preferred to [`rdfs:label`](http://www.w3.org/TR/rdf-schema/#ch_label).
 * [`skos:notation`](http://www.w3.org/TR/2009/REC-skos-reference-20090818/#notations) and the [documentation properties](http://www.w3.org/TR/2009/REC-skos-reference-20090818/#labels) `skos:note` and `skos:definition` are available for general use.
@@ -105,7 +105,7 @@ Deliverables of past working groups of interest are the [Simple Knowledge Organi
 
 ***
 
-# Internet Engineering Task Force <span class="label">Person</span> <span class="label">Organization</span> <span class="label">Address</span>
+# Internet Engineering Task Force
 
 [IETF](http://www.ietf.org/) is a volunteer-run Internet standards organization. It cooperates closely with the W3C, ISO and IEC standards bodies. Its [RFC 6350](http://tools.ietf.org/html/rfc6350) (vCard 4.0), [RFC 4519](https://tools.ietf.org/html/rfc4519) and [RFC 4524](http://tools.ietf.org/html/rfc4524) (LDAP) are of interest. IANA maintains a [registry of vCard elements](http://www.iana.org/assignments/vcard-elements/vcard-elements.xml). An [RDF encoding](http://www.w3.org/TR/vcard-rdf/) of vCard 4.0 exists.
 
@@ -124,7 +124,7 @@ Deliverables of past working groups of interest are the [Simple Knowledge Organi
 
 ***
 
-# European Commission <span class="label">Person</span> <span class="label">Address</span>
+# European Commission
 
 The European Commission's [Interoperability Solutions for European Public Administrations (ISA)](http://ec.europa.eu/isa/) programme completed three vocabularies. Its Business Core Vocabulary evolved into the W3C [Registered Organization Vocabulary](https://dvcs.w3.org/hg/gld/raw-file/default/legal/index.html). The [Person Core Vocabulary](http://philarcher.org/isa/person-v1.00.html) and [Location Core Vocabulary](http://philarcher.org/isa/locn-v1.00.html) are moving into W3C namespaces.
 
@@ -143,7 +143,7 @@ The European Commission's [Interoperability Solutions for European Public Admini
 
 ***
 
-# Organization for the Advancement of Structured Information Standards <span class="label">Person</span> <span class="label">Organization</span> <span class="label">Address</span>
+# Organization for the Advancement of Structured Information Standards
 
 [OASIS](https://www.oasis-open.org/) is a not-for-profit consortium that develops open standards for information technology. It is a member-run organization. The public may participate by sending comments. Its [LegalXML Member Section](http://www.legalxml.org/) is very active, its [eGov Member Section](http://www.oasis-egov.org/) less so.
 
@@ -168,7 +168,7 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 
 ***
 
-# National Information Exchange Model <span class="label">Person</span> <span class="label">Organization</span> <span class="label">Address</span>
+# National Information Exchange Model
 
 [NIEM](https://www.niem.gov/) was initiated as a joint venture between the U.S. Department of Homeland Security and the U.S. Department of Justice with outreach to other departments and agencies. Its goal is to allow for national-level interoperable information sharing and data exchange. Several specializations of the NIEM Core schema exist.
 
@@ -199,9 +199,9 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 
 ***
 
-# OpenSocial <span class="label">Person</span> <span class="label">Address</span>
+# OpenSocial
 
-[OpenSocial](http://opensocial.org/) <span class="label">non-RDF</span> defines an open social application platform. LinkedIn, MySpace, Ning, Orkut and hi5 were early adopters after its launch in 2007. It is now independent from Google, and is increasing adoption among domain-specific social networks and enterprise vendors.
+[OpenSocial](http://opensocial.org/) <span class="label label-default">non-RDF</span> defines an open social application platform. LinkedIn, MySpace, Ning, Orkut and hi5 were early adopters after its launch in 2007. It is now independent from Google, and is increasing adoption among domain-specific social networks and enterprise vendors.
 
 * [Mailing list](https://groups.google.com/forum/?fromgroups=#!forum/opensocial-and-gadgets-spec)
 * [Issue tracker](https://code.google.com/p/opensocial-resources/issues/list)
@@ -238,12 +238,12 @@ The [BIO vocabulary](http://vocab.org/bio/0.1/.html) adds properties for biograp
 The following vocabularies have inspired or been adopted by the above:
 
 * The [IPTC](http://www.iptc.org/) [rNews](http://dev.iptc.org/rNews) standard is reviewed in the Schema.org section.
-* [Portable Contacts](http://portablecontacts.net/) <span class="label">non-RDF</span> is reviewed in the OpenSocial section. Google [shut down](http://googledevelopers.blogspot.ca/2012/04/changes-to-deprecation-policies-and-api.html) its [Portable Contacts API](https://developers.google.com/google-apps/contacts/poco/).
+* [Portable Contacts](http://portablecontacts.net/) <span class="label label-default">non-RDF</span> is reviewed in the OpenSocial section. Google [shut down](http://googledevelopers.blogspot.ca/2012/04/changes-to-deprecation-policies-and-api.html) its [Portable Contacts API](https://developers.google.com/google-apps/contacts/poco/).
 
 The following vocabularies have not seen widepread adoption beyond their authors:
 
-* [Freebase](http://schemas.freebaseapps.com/) <span class="label">non-RDF</span> and [DBPedia](http://wiki.dbpedia.org/Ontology) have large, wiki-based, potentially unstable ontologies.
-* The [Facebook](https://developers.facebook.com/docs/reference/api/) <span class="label">non-RDF</span> [`User`](https://developers.facebook.com/docs/reference/api/user/) has no properties for honorific prefixes, honorific suffixes, alternate names, death dates or external links.
+* [Freebase](http://schemas.freebaseapps.com/) <span class="label label-default">non-RDF</span> and [DBPedia](http://wiki.dbpedia.org/Ontology) have large, wiki-based, potentially unstable ontologies.
+* The [Facebook](https://developers.facebook.com/docs/reference/api/) <span class="label label-default">non-RDF</span> [`User`](https://developers.facebook.com/docs/reference/api/user/) has no properties for honorific prefixes, honorific suffixes, alternate names, death dates or external links.
 * [OpenCalais](http://www.opencalais.com/documentation/calais-web-service-api/api-metadata/entity-index-and-definitions) defines classes relevant to its extraction service, which are too narrow for this project. 
 * The [Participation ontology](http://vocab.org/participation/schema) [`participation:Role`](http://vocab.org/participation/schema#term-Role) class is a cross between [`org:Membership`](http://www.w3.org/TR/vocab-org/#class--membership) and [`org:Role`](http://www.w3.org/TR/vocab-org/#class--role).
 * [oeGOV](http://oegov.org/) uses a large set of classes instead of properties like [`org:classification`](http://www.w3.org/TR/vocab-org/#org:classification) or [`org:identifier`](http://www.w3.org/TR/vocab-org/#org:identifier).
@@ -251,7 +251,7 @@ The following vocabularies have not seen widepread adoption beyond their authors
 
 The following are not appropriate to the scope of this project:
 
-* [Akoma Ntoso](http://www.akomantoso.org/) <span class="label">non-RDF</span> has no person or organization vocabulary.
+* [Akoma Ntoso](http://www.akomantoso.org/) <span class="label label-default">non-RDF</span> has no person or organization vocabulary.
 
 The following were not reviewed and are likely inappropriate:
 

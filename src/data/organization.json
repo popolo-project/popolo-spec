@@ -189,8 +189,7 @@
       "label": "Name"
     },
     "alternate name": {
-      "term": "OrganizationDoingBusinessAsName",
-      "label": "DoingBusinessAsName"
+      "term": "OrganizationDoingBusinessAsName"
     },
     "identifier": {
       "term": "OrganizationIdentification",

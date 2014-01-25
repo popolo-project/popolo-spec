@@ -75,8 +75,7 @@
       "term": "LocationCategory"
     },
     "postal address": {
-      "term": "AddressRepresentation",
-      "label": "Representation"
+      "term": "AddressRepresentation"
     },
     "telephone": {
       "term": "ContactTelephoneNumber",
