@@ -80,7 +80,7 @@ The [survey of existing specifications](/appendices/survey.html) found that [RFC
   </tbody>
 </table>
 
-<p class="note" id="note1">1. The <a href="http://www.w3.org/Submission/vcard-rdf/#Param">W3C Member Submission on Representing vCard Objects in RDF</a> and the <a href="http://www.w3.org/TR/vcard-rdf/#Code_Sets">vCard Ontology</a> use <code>rdf:type</code> to indicate the type of address or telephone number.</p>
+<p class="note" id="note1">1. The <a href="http://www.w3.org/TR/vcard-rdf/#Code_Sets">vCard Ontology</a> uses <code>rdf:type</code> to indicate the type of address or telephone number.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 

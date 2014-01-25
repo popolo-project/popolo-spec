@@ -107,7 +107,7 @@ Deliverables of past working groups of interest are the [Simple Knowledge Organi
 
 # Internet Engineering Task Force <span class="label">Person</span> <span class="label">Organization</span> <span class="label">Address</span>
 
-[IETF](http://www.ietf.org/) is a volunteer-run Internet standards organization. It cooperates closely with the W3C, ISO and IEC standards bodies. Its [RFC 6350](http://tools.ietf.org/html/rfc6350) (vCard 4.0), [RFC 4519](https://tools.ietf.org/html/rfc4519) and [RFC 4524](http://tools.ietf.org/html/rfc4524) (LDAP) are of interest. IANA maintains a [registry of vCard elements](http://www.iana.org/assignments/vcard-elements/vcard-elements.xml). An [RDF encoding](http://www.w3.org/Submission/vcard-rdf/) of [vCard 3.0](http://tools.ietf.org/html/rfc2426) exists. An RDF encoding of vCard 4.0 is [in progress](http://www.w3.org/wiki/RepresentingVCardinRDFOWL).
+[IETF](http://www.ietf.org/) is a volunteer-run Internet standards organization. It cooperates closely with the W3C, ISO and IEC standards bodies. Its [RFC 6350](http://tools.ietf.org/html/rfc6350) (vCard 4.0), [RFC 4519](https://tools.ietf.org/html/rfc4519) and [RFC 4524](http://tools.ietf.org/html/rfc4524) (LDAP) are of interest. IANA maintains a [registry of vCard elements](http://www.iana.org/assignments/vcard-elements/vcard-elements.xml). An [RDF encoding](http://www.w3.org/TR/vcard-rdf/) of vCard 4.0 exists.
 
 ## Review
 
