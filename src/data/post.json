@@ -89,5 +89,16 @@
     "person": {
       "term": "related_object"
     }
+  },
+  "PML": {
+    "Post": {
+      "term": "function"
+    },
+    "label": {
+      "term": "label"
+    },
+    "organization": {
+      "term": "category"
+    }
   }
 }

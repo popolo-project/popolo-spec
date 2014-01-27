@@ -237,5 +237,25 @@
     "dissolution date": {
       "term": "hasGroupEndDate"
     }
+  },
+  "PML": {
+    "Organization": {
+      "term": "unit"
+    },
+    "name": {
+      "term": "label"
+    },
+    "identifier": {
+      "term": "identifier"
+    },
+    "classification": {
+      "term": "type"
+    },
+    "founding date": {
+      "term": "startDate"
+    },
+    "dissolution date": {
+      "term": "endDate"
+    }
   }
 }

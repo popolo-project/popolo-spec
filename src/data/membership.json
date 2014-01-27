@@ -44,5 +44,22 @@
     "end date": {
       "term": "hasMembershipEndDate"
     }
+  },
+  "PML": {
+    "Membership": {
+      "term": "function"
+    },
+    "organization": {
+      "term": "categoryIDs"
+    },
+    "post": {
+      "term": "functionID"
+    },
+    "start date": {
+      "term": "startDate"
+    },
+    "end date": {
+      "term": "endDate"
+    }
   }
 }

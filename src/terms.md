@@ -11,6 +11,8 @@ id: data
   <li class="active">Inventory of terms from survey</li>
 </ul>
 
+* The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `sources`, `externalLinks`, `startDate` and `endDate` across classes.
+
 # Namespaces
 
 &namespaces
@@ -24,14 +26,19 @@ id: data
 # Organization
 
 * Schema.org adds a new property for each identifier scheme, e.g. `duns`, `globalLocationNumber`, `taxID` and `vatID`, and each classification scheme, e.g. `isicV4` and `naics`.
+* In PML Schema, organizational hierarchies can have a maximum depth of five.
 
 &organization
 
 # Membership
 
+* In PML Schema, memberships are embedded on `person` objects.
+
 &membership
 
 # Post
+
+* PML Schema has the properties `startDate` and `endDate` for the dates of creation and elimination.
 
 &post
 

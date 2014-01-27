@@ -547,5 +547,19 @@
     "honorific prefix": {
       "term": "hasTitleOfAddress"
     }
+  },
+  "PML": {
+    "Person": {
+      "term": "person"
+    },
+    "identifier": {
+      "term": "identifier"
+    },
+    "external links": {
+      "term": "externalLinks"
+    },
+    "name": {
+      "term": "label"
+    }
   }
 }

@@ -60,6 +60,7 @@ task :default do
       'role',
       'person',
       'organization',
+      'post',
       'start date',
       'end date',
     ],

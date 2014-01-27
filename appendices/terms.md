@@ -11,6 +11,8 @@ id: data
   <li class="active">Inventory of terms from survey</li>
 </ul>
 
+* The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `sources`, `externalLinks`, `startDate` and `endDate` across classes.
+
 # Namespaces
 
 <table>
@@ -901,6 +903,49 @@ id: data
         <td>
         </td>
       </tr>
+      <tr>
+        <th scope='row'>
+          PML
+        </th>
+        <td>
+          person
+        </td>
+        <td>
+          identifier
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          externalLinks
+        </td>
+        <td>
+          label
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -909,6 +954,7 @@ id: data
 # Organization
 
 * Schema.org adds a new property for each identifier scheme, e.g. `duns`, `globalLocationNumber`, `taxID` and `vatID`, and each classification scheme, e.g. `isicV4` and `naics`.
+* In PML Schema, organizational hierarchies can have a maximum depth of five.
 
 <div class='table-responsive'>
   <table class='table table-striped table-hover table-condensed'>
@@ -1255,6 +1301,33 @@ id: data
           hasGroupEndDate
         </td>
       </tr>
+      <tr>
+        <th scope='row'>
+          PML
+        </th>
+        <td>
+          unit
+        </td>
+        <td>
+          label
+        </td>
+        <td>
+        </td>
+        <td>
+          identifier
+        </td>
+        <td>
+          type
+        </td>
+        <td>
+        </td>
+        <td>
+          startDate
+        </td>
+        <td>
+          endDate
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -1262,7 +1335,9 @@ id: data
 
 # Membership
 
-<div class='table-responsive table-auto'>
+* In PML Schema, memberships are embedded on `person` objects.
+
+<div class='table-responsive'>
   <table class='table table-striped table-hover table-condensed'>
     <thead>
       <tr>
@@ -1271,6 +1346,7 @@ id: data
         <td>role</td>
         <td>person</td>
         <td>organization</td>
+        <td>post</td>
         <td>start date</td>
         <td>end date</td>
       </tr>
@@ -1301,6 +1377,8 @@ id: data
           </a>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://www.w3.org/TR/vocab-org/#org:memberDuring'>
             memberDuring
           </a>
@@ -1328,10 +1406,36 @@ id: data
           <abbr title='hasMembershipGroup'>hasMembershipGr…</abbr>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='hasMembershipStartDate'>hasMembershipSt…</abbr>
         </td>
         <td>
           <abbr title='hasMembershipEndDate'>hasMembershipEn…</abbr>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          PML
+        </th>
+        <td>
+          function
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          categoryIDs
+        </td>
+        <td>
+          functionID
+        </td>
+        <td>
+          startDate
+        </td>
+        <td>
+          endDate
         </td>
       </tr>
     </tbody>
@@ -1340,6 +1444,8 @@ id: data
 
 
 # Post
+
+* PML Schema has the properties `startDate` and `endDate` for the dates of creation and elimination.
 
 <div class='table-responsive table-auto'>
   <table class='table table-striped table-hover table-condensed'>
@@ -1477,6 +1583,24 @@ id: data
         </td>
         <td>
           related_object
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          PML
+        </th>
+        <td>
+          function
+        </td>
+        <td>
+          label
+        </td>
+        <td>
+        </td>
+        <td>
+          category
+        </td>
+        <td>
         </td>
       </tr>
     </tbody>
