@@ -8,3 +8,4 @@ person,http://www.w3.org/ns/person#
 locn,http://www.w3.org/ns/locn#
 nco,http://www.semanticdesktop.org/ontologies/nco/#
 nie,http://www.semanticdesktop.org/ontologies/nie/#
+ad,http://schemas.talis.com/2005/address/schema#

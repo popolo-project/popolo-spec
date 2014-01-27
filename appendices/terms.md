@@ -93,6 +93,14 @@ id: data
         <a href='http://www.semanticdesktop.org/ontologies/nie/#'>http://www.semanticdesktop.org/ontologies/nie/#</a>
       </td>
     </tr>
+    <tr>
+      <td>
+        <code>ad</code>
+      </td>
+      <td>
+        <a href='http://schemas.talis.com/2005/address/schema#'>http://schemas.talis.com/2005/address/schema#</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -107,6 +115,7 @@ id: data
       <tr>
         <th scope='row'>Term</th>
         <td>Person</td>
+        <td>identifier</td>
         <td>email address</td>
         <td>gender</td>
         <td>date of birth</td>
@@ -132,6 +141,11 @@ id: data
         <td>
           <a href='http://xmlns.com/foaf/spec/#term_Person'>
             Person
+          </a>
+        </td>
+        <td>
+          <a href='http://xmlns.com/foaf/spec/#term_nick'>
+            nick
           </a>
         </td>
         <td>
@@ -205,6 +219,11 @@ id: data
           </a>
         </td>
         <td>
+          <a href='http://schema.org/duns'>
+            duns
+          </a>
+        </td>
+        <td>
           <a href='http://schema.org/email'>
             email
           </a>
@@ -275,6 +294,11 @@ id: data
         <td>
           <a href='http://www.w3.org/TR/vcard-rdf/#d4e1539'>
             Individual
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/TR/vcard-rdf/#d4e516'>
+            hasUID
           </a>
         </td>
         <td>
@@ -357,6 +381,8 @@ id: data
           </a>
         </td>
         <td>
+        </td>
+        <td>
           see <code>schema</code>
         </td>
         <td>
@@ -412,6 +438,11 @@ id: data
         <td>
           <a href='http://www.semanticdesktop.org/ontologies/nco/#PersonContact'>
             PersonContact
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/nco/#contactUID'>
+            contactUID
           </a>
         </td>
         <td>
@@ -491,6 +522,11 @@ id: data
           </a>
         </td>
         <td>
+          <a href='http://tools.ietf.org/html/rfc4524#section-2.24'>
+            <abbr title='uniqueIdentifier'>uniqueIdentifie…</abbr>
+          </a>
+        </td>
+        <td>
           <a href='http://tools.ietf.org/html/rfc4524#section-2.16'>
             mail
           </a>
@@ -555,6 +591,11 @@ id: data
           </a>
         </td>
         <td>
+          <a href='http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd'>
+            Identifier
+          </a>
+        </td>
+        <td>
           <a href='http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533305'>
             <abbr title='ElectronicAddressIdentifier'>ElectronicAddre…</abbr>
           </a>
@@ -611,6 +652,9 @@ id: data
           PersonType
         </td>
         <td>
+          <abbr title='PersonOtherIdentification'>PersonOtherIden…</abbr>
+        </td>
+        <td>
           ContactEmailID
         </td>
         <td>
@@ -662,6 +706,11 @@ id: data
         <td>
           <a href='http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person'>
             Person
+          </a>
+        </td>
+        <td>
+          <a href='http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person'>
+            orgIdentifier
           </a>
         </td>
         <td>
@@ -745,6 +794,11 @@ id: data
         </td>
         <td>
           <a href='https://developers.facebook.com/docs/reference/api/user/'>
+            third_party_id
+          </a>
+        </td>
+        <td>
+          <a href='https://developers.facebook.com/docs/reference/api/user/'>
             email
           </a>
         </td>
@@ -794,6 +848,55 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Cornell
+        </th>
+        <td>
+          Person
+        </td>
+        <td>
+          hasIdentifier
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          hasDateOfBirth
+        </td>
+        <td>
+          hasDateOfDeath
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          hasHomepage
+        </td>
+        <td>
+          hasName
+        </td>
+        <td>
+          hasNickname
+        </td>
+        <td>
+        </td>
+        <td>
+          hasLastName
+        </td>
+        <td>
+          hasFirstName
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='hasTitleOfAddress'>hasTitleOfAddre…</abbr>
         </td>
         <td>
         </td>
@@ -1123,6 +1226,35 @@ id: data
           <abbr title='OrganizationTerminationDate'>TerminationDate</abbr>
         </td>
       </tr>
+      <tr>
+        <th scope='row'>
+          Cornell
+        </th>
+        <td>
+          Group
+        </td>
+        <td>
+          hasName
+        </td>
+        <td>
+          hasAltName
+        </td>
+        <td>
+          hasAcronym
+        </td>
+        <td>
+          hasGroupTopic
+        </td>
+        <td>
+          
+        </td>
+        <td>
+          <abbr title='hasGroupStartDate'>hasGroupStartDa…</abbr>
+        </td>
+        <td>
+          hasGroupEndDate
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -1177,6 +1309,29 @@ id: data
           <a href='http://www.w3.org/TR/vocab-org/#org:memberDuring'>
             memberDuring
           </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Cornell
+        </th>
+        <td>
+          Membership
+        </td>
+        <td>
+          hasMemberRole
+        </td>
+        <td>
+          hasMember
+        </td>
+        <td>
+          <abbr title='hasMembershipGroup'>hasMembershipGr…</abbr>
+        </td>
+        <td>
+          <abbr title='hasMembershipStartDate'>hasMembershipSt…</abbr>
+        </td>
+        <td>
+          <abbr title='hasMembershipEndDate'>hasMembershipEn…</abbr>
         </td>
       </tr>
     </tbody>
@@ -1423,6 +1578,22 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>ad</code>
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://schemas.talis.com/2005/address/schema#tel'>
+            tel
+          </a>
         </td>
       </tr>
       <tr>

@@ -4,7 +4,7 @@
       "url": "",
       "label": ""
     },
-    "identifiers": {
+    "identifier": {
       "term": "",
       "url": "",
       "label": ""
@@ -93,5 +93,5 @@
       "term": "",
       "url": "",
       "label": ""
-    },
+    }
   },

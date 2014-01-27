@@ -24,5 +24,25 @@
       "term": "memberDuring",
       "url": "http://www.w3.org/TR/vocab-org/#org:memberDuring"
     }
+  },
+  "Cornell": {
+    "Membership": {
+      "term": "Membership"
+    },
+    "role": {
+      "term": "hasMemberRole"
+    },
+    "person": {
+      "term": "hasMember"
+    },
+    "organization": {
+      "term": "hasMembershipGroup"
+    },
+    "start date": {
+      "term": "hasMembershipStartDate"
+    },
+    "end date": {
+      "term": "hasMembershipEndDate"
+    }
   }
 }

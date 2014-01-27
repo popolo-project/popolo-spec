@@ -4,6 +4,10 @@
       "term": "Person",
       "url": "http://xmlns.com/foaf/spec/#term_Person"
     },
+    "identifier": {
+      "term": "nick",
+      "url": "http://xmlns.com/foaf/spec/#term_nick"
+    },
     "email address": {
       "term": "mbox",
       "url": "http://xmlns.com/foaf/spec/#term_mbox"
@@ -49,6 +53,10 @@
     "Person": {
       "term": "Person",
       "url": "http://schema.org/Person"
+    },
+    "identifier": {
+      "term": "duns",
+      "url": "http://schema.org/duns"
     },
     "email address": {
       "term": "email",
@@ -99,6 +107,10 @@
     "Person": {
       "term": "Individual",
       "url": "http://www.w3.org/TR/vcard-rdf/#d4e1539"
+    },
+    "identifier": {
+      "term": "hasUID",
+      "url": "http://www.w3.org/TR/vcard-rdf/#d4e516"
     },
     "email address": {
       "term": "hasEmail",
@@ -208,6 +220,10 @@
       "term": "PersonContact",
       "url": "http://www.semanticdesktop.org/ontologies/nco/#PersonContact"
     },
+    "identifier": {
+      "term": "contactUID",
+      "url": "http://www.semanticdesktop.org/ontologies/nco/#contactUID"
+    },
     "email address": {
       "term": "hasEmailAddress",
       "url": "http://www.semanticdesktop.org/ontologies/nco/#hasEmailAddress"
@@ -262,6 +278,10 @@
       "term": "person",
       "url": "http://tools.ietf.org/html/rfc4519#section-3.12"
     },
+    "identifier": {
+      "term": "uniqueIdentifier",
+      "url": "http://tools.ietf.org/html/rfc4524#section-2.24"
+    },
     "email address": {
       "term": "mail",
       "url": "http://tools.ietf.org/html/rfc4524#section-2.16"
@@ -300,6 +320,10 @@
       "term": "Party",
       "url": "http://docs.oasis-open.org/ciq/v3.0/xPRL/specs/ciq-xprl-specs.html#_Toc213421948"
     },
+    "identifier": {
+      "term": "Identifier",
+      "url": "http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd"
+    },
     "email address": {
       "term": "ElectronicAddressIdentifier",
       "url": "http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533305"
@@ -328,6 +352,9 @@
   "NIEM": {
     "Person": {
       "term": "PersonType"
+    },
+    "identifier": {
+      "term": "PersonOtherIdentification"
     },
     "email address": {
       "term": "ContactEmailID"
@@ -390,6 +417,10 @@
       "term": "Person",
       "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
     },
+    "identifier": {
+      "term": "orgIdentifier",
+      "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
+    },
     "email address": {
       "term": "emails",
       "url": "http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person"
@@ -448,6 +479,10 @@
       "term": "User",
       "url": "https://developers.facebook.com/docs/reference/api/user/"
     },
+    "identifier": {
+      "term": "third_party_id",
+      "url": "https://developers.facebook.com/docs/reference/api/user/"
+    },
     "email address": {
       "term": "email",
       "url": "https://developers.facebook.com/docs/reference/api/user/"
@@ -479,6 +514,38 @@
     "given name": {
       "term": "first_name",
       "url": "https://developers.facebook.com/docs/reference/api/user/"
+    }
+  },
+  "Cornell": {
+    "Person": {
+      "term": "Person"
+    },
+    "identifier": {
+      "term": "hasIdentifier"
+    },
+    "date of birth": {
+      "term": "hasDateOfBirth"
+    },
+    "date of death": {
+      "term": "hasDateOfDeath"
+    },
+    "external links": {
+      "term": "hasHomepage"
+    },
+    "name": {
+      "term": "hasName"
+    },
+    "alternate name": {
+      "term": "hasNickname"
+    },
+    "family name": {
+      "term": "hasLastName"
+    },
+    "given name": {
+      "term": "hasFirstName"
+    },
+    "honorific prefix": {
+      "term": "hasTitleOfAddress"
     }
   }
 }

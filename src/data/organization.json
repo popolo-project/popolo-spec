@@ -211,5 +211,31 @@
       "term": "OrganizationTerminationDate",
       "label": "TerminationDate"
     }
+  },
+  "Cornell": {
+    "Organization": {
+      "term": "Group"
+    },
+    "name": {
+      "term": "hasName"
+    },
+    "alternate name": {
+      "term": "hasAltName"
+    },
+    "identifier": {
+      "term": "hasAcronym"
+    },
+    "classification": {
+      "term": "hasGroupTopic"
+    },
+    "child organization": {
+      "term": ""
+    },
+    "founding date": {
+      "term": "hasGroupStartDate"
+    },
+    "dissolution date": {
+      "term": "hasGroupEndDate"
+    }
   }
 }

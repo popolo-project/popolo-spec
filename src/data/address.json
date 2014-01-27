@@ -43,6 +43,12 @@
       "url": "http://www.semanticdesktop.org/ontologies/nco/#PostalAddress"
     }
   },
+  "ad": {
+    "telephone": {
+      "term": "tel",
+      "url": "http://schemas.talis.com/2005/address/schema#tel"
+    }
+  },
   "LDAP": {
     "postal address": {
       "term": "postalAddress",

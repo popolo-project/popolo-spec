@@ -23,7 +23,7 @@ task :default do
   {
     person: [
       'Person',
-      # 'identifiers',
+      'identifier',
       'email address',
       'gender',
       'date of birth',
