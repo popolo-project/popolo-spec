@@ -12,7 +12,7 @@ id: post
 
 In some cases, it is relevant to represent the organizational structure independently of the people within that structure; for example, it is relevant to represent the position of the Member of Parliament for Avalon even when no one holds that position. A *post* is such a position that exists independently of the person holding it.
 
-A post should not be confused with a *role*, which describes a function that a person can fulfill. For example, people in different organizations can all fulfill the role of CEO, but only one person can hold the post of CEO at Apple Inc. Indeed, the post of the MP for Avalon could be described as having the role of MP.
+A post should not be confused with a *role*, which describes a function that a person can fulfill. For example, many people fulfill the *role* of “CEO” in different organizations, but only one person holds the *post* of “CEO at Apple Inc.” Indeed, the post of the MP for Avalon could be described as having the role of MP.
 
 According to this data specification, a [person](/specs/person.html) holds a post in an [organization](/specs/organization.html) through their [membership](/specs/membership.html) in that organization, as illustrated by the class diagram below.
 
