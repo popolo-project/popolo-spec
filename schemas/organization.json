@@ -11,8 +11,7 @@
     },
     "name": {
       "description": "A primary name, e.g. a legally recognized name",
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "other_names": {
       "description": "Alternate or former names",
