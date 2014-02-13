@@ -52,7 +52,7 @@
       "type": ["string", "null"]
     },
     "sort_name": {
-      "description": "A name to use in an lexicographically ordered list",
+      "description": "A name to use in a lexicographically ordered list",
       "type": ["string", "null"]
     },
     "email": {

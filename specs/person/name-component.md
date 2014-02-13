@@ -86,7 +86,7 @@ In [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350), each component of
     <tr id="con:sortName">
       <td>sort name</td>
       <td><code><a href="http://www.w3.org/2000/10/swap/pim/contact#sortName" title="http://www.w3.org/2000/10/swap/pim/contact#sortName">con:sortName</a></code><a href="#note2"><sup>2</sup></a></td>
-      <td>A name to use in an lexicographically ordered list</td>
+      <td>A name to use in a lexicographically ordered list</td>
     </tr>
   </tbody>
 </table>
