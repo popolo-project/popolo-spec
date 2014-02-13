@@ -11,7 +11,7 @@
     },
     "label": {
       "description": "A label describing the post",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "role": {
       "description": "The function that the holder of the post fulfills",

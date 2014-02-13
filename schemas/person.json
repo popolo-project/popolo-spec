@@ -11,7 +11,7 @@
     },
     "name": {
       "description": "A person's preferred full name",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "other_names": {
       "description": "Alternate or former names",
