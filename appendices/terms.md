@@ -1582,6 +1582,9 @@ id: data
           </a>
         </td>
         <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:hasWorkRole'>
+            hasWorkRole
+          </a>
         </td>
         <td>
           <a href='http://dev.poderopedia.com/documentation/index#poder:personParticipant'>

@@ -30,6 +30,10 @@
       "term": "Connection",
       "url": "http://dev.poderopedia.com/documentation/index#poder:Connection"
     },
+    "role": {
+      "term": "hasWorkRole",
+      "url": "http://dev.poderopedia.com/documentation/index#poder:hasWorkRole"
+    },
     "person": {
       "term": "personParticipant",
       "url": "http://dev.poderopedia.com/documentation/index#poder:personParticipant"
