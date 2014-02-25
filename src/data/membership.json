@@ -25,6 +25,28 @@
       "url": "http://www.w3.org/TR/vocab-org/#org:memberDuring"
     }
   },
+  "poder": {
+    "Membership": {
+      "term": "Connection",
+      "url": "http://dev.poderopedia.com/documentation/index#poder:Connection"
+    },
+    "person": {
+      "term": "personParticipant",
+      "url": "http://dev.poderopedia.com/documentation/index#poder:personParticipant"
+    },
+    "organization": {
+      "term": "organizationParticipant",
+      "url": "http://dev.poderopedia.com/documentation/index#poder:organizationParticipant"
+    },
+    "start date": {
+      "term": "connectionStartDate",
+      "url": "http://dev.poderopedia.com/documentation/index#poder:connectionStartDate"
+    },
+    "end date": {
+      "term": "connectionEndDate",
+      "url": "http://dev.poderopedia.com/documentation/index#poder:connectionEndDate"
+    }
+  },
   "Cornell": {
     "Membership": {
       "term": "Membership"

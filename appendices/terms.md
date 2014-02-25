@@ -103,6 +103,14 @@ id: data
         <a href='http://schemas.talis.com/2005/address/schema#'>http://schemas.talis.com/2005/address/schema#</a>
       </td>
     </tr>
+    <tr>
+      <td>
+        <code>poder</code>
+      </td>
+      <td>
+        <a href='http://dev.poderopedia.com/vocab/'>http://dev.poderopedia.com/vocab/</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -123,6 +131,7 @@ id: data
         <td>date of birth</td>
         <td>date of death</td>
         <td>head shot</td>
+        <td>one-line biography</td>
         <td>biography</td>
         <td>external links</td>
         <td>name</td>
@@ -171,6 +180,8 @@ id: data
           <a href='http://xmlns.com/foaf/spec/#term_img'>
             img
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -255,6 +266,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://schema.org/'>
             name
           </a>
@@ -331,6 +344,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://www.w3.org/TR/vcard-rdf/#d4e527'>
             hasUrl
           </a>
@@ -398,6 +413,8 @@ id: data
         </td>
         <td>
           see <code>schema</code>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -472,6 +489,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://www.semanticdesktop.org/ontologies/nco/#url'>
             url
           </a>
@@ -516,6 +535,86 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
+          <code>poder</code>
+        </th>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#foaf:Person'>
+            foaf:Person
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://xmlns.com/foaf/spec/#term_mbox'>
+            foaf:mbox
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:hasGender'>
+            hasGender
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#bio:birth'>
+            bio:birth
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#bio:death'>
+            bio:death
+          </a>
+        </td>
+        <td>
+          <a href='http://xmlns.com/foaf/spec/#term_img'>
+            foaf:img
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:hasShortBiography'>
+            <abbr title='hasShortBiography'>hasShortBiograp…</abbr>
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:hasLongBiography'>
+            <abbr title='hasLongBiography'>hasLongBiograph…</abbr>
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:hasUrl'>
+            hasUrl
+          </a>
+        </td>
+        <td>
+          <a href='http://xmlns.com/foaf/spec/#term_name'>
+            foaf:name
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:alias'>
+            alias
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://xmlns.com/foaf/spec/#term_familyName'>
+            foaf:familyName
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#foaf:givenName'>
+            foaf:givenName
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           LDAP
         </th>
         <td>
@@ -543,6 +642,8 @@ id: data
           <a href='http://tools.ietf.org/html/rfc2798#section-2.6'>
             jpegPhoto
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -620,6 +721,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd'>
             FreeTextLines
           </a>
@@ -670,6 +773,8 @@ id: data
         </td>
         <td>
           <abbr title='PersonDigitalImage'>DigitalImage</abbr>
+        </td>
+        <td>
         </td>
         <td>
           <abbr title='PersonDescriptionText'>DescriptionText</abbr>
@@ -736,6 +841,8 @@ id: data
           <a href='http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#Person'>
             photos
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -822,6 +929,8 @@ id: data
           </a>
         </td>
         <td>
+        </td>
+        <td>
           <a href='https://developers.facebook.com/docs/reference/api/user/'>
             bio
           </a>
@@ -879,6 +988,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           hasHomepage
         </td>
         <td>
@@ -912,6 +1023,8 @@ id: data
         </td>
         <td>
           identifier
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -969,6 +1082,7 @@ id: data
         <td>child organization</td>
         <td>founding date</td>
         <td>dissolution date</td>
+        <td>image</td>
       </tr>
     </thead>
     <tbody>
@@ -1004,6 +1118,8 @@ id: data
           <a href='http://xmlns.com/foaf/spec/#term_'>
             birthday
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -1049,6 +1165,8 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -1086,6 +1204,8 @@ id: data
         </td>
         <td>
           see <code>foaf</code>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -1128,6 +1248,8 @@ id: data
             DEATHDATE
           </a>
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -1164,6 +1286,58 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>poder</code>
+        </th>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#foaf:Organization'>
+            <abbr title='foaf:Organization'>foaf:Organizati…</abbr>
+          </a>
+        </td>
+        <td>
+          <a href='http://xmlns.com/foaf/spec/#term_name'>
+            foaf:name
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:alias'>
+            alias
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:hasTaxId'>
+            hasTaxId
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:hasMainSector'>
+            hasMainSector
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:subsidiaryCompanyOf'>
+            <abbr title='subsidiaryCompanyOf'>subsidiaryCompa…</abbr>
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#bio:birth'>
+            bio:birth
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#bio:death'>
+            bio:death
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:hasLogo'>
+            hasLogo
+          </a>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -1195,6 +1369,8 @@ id: data
           <a href='http://tools.ietf.org/html/rfc4524#section-2.17'>
             member
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -1242,6 +1418,8 @@ id: data
             Date
           </a>
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -1271,6 +1449,8 @@ id: data
         <td>
           <abbr title='OrganizationTerminationDate'>TerminationDate</abbr>
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -1292,13 +1472,14 @@ id: data
           hasGroupTopic
         </td>
         <td>
-          
         </td>
         <td>
           <abbr title='hasGroupStartDate'>hasGroupStartDa…</abbr>
         </td>
         <td>
           hasGroupEndDate
+        </td>
+        <td>
         </td>
       </tr>
       <tr>
@@ -1326,6 +1507,8 @@ id: data
         </td>
         <td>
           endDate
+        </td>
+        <td>
         </td>
       </tr>
     </tbody>
@@ -1386,6 +1569,40 @@ id: data
         <td>
           <a href='http://www.w3.org/TR/vocab-org/#org:memberDuring'>
             memberDuring
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>poder</code>
+        </th>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:Connection'>
+            Connection
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:personParticipant'>
+            <abbr title='personParticipant'>personParticipa…</abbr>
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:organizationParticipant'>
+            <abbr title='organizationParticipant'>organizationPar…</abbr>
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:connectionStartDate'>
+            <abbr title='connectionStartDate'>connectionStart…</abbr>
+          </a>
+        </td>
+        <td>
+          <a href='http://dev.poderopedia.com/documentation/index#poder:connectionEndDate'>
+            <abbr title='connectionEndDate'>connectionEndDa…</abbr>
           </a>
         </td>
       </tr>

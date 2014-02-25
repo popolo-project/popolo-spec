@@ -29,7 +29,7 @@ task :default do
       'date of birth',
       'date of death',
       'head shot',
-      # 'one-line biography',
+      'one-line biography',
       'biography',
       # 'national identity',
       'external links',
@@ -52,7 +52,7 @@ task :default do
       'child organization',
       'founding date',
       'dissolution date',
-      # 'image',
+      'image',
     ],
     membership: [
       'Membership',

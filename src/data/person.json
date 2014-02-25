@@ -273,6 +273,60 @@
       "url": "http://www.semanticdesktop.org/ontologies/nco/#nameHonorificSuffix"
     }
   },
+  "poder": {
+    "Person": {
+      "term": "foaf:Person",
+      "url": "http://dev.poderopedia.com/documentation/index#foaf:Person"
+    },
+    "email address": {
+      "term": "foaf:mbox",
+      "url": "http://xmlns.com/foaf/spec/#term_mbox"
+    },
+    "gender": {
+      "term": "hasGender",
+      "url": "http://dev.poderopedia.com/documentation/index#poder:hasGender"
+    },
+    "date of birth": {
+      "term": "bio:birth",
+      "url": "http://dev.poderopedia.com/documentation/index#bio:birth"
+    },
+    "date of death": {
+      "term": "bio:death",
+      "url": "http://dev.poderopedia.com/documentation/index#bio:death"
+    },
+    "head shot": {
+      "term": "foaf:img",
+      "url": "http://xmlns.com/foaf/spec/#term_img"
+    },
+    "one-line biography": {
+      "term": "hasShortBiography",
+      "url": "http://dev.poderopedia.com/documentation/index#poder:hasShortBiography"
+    },
+    "biography": {
+      "term": "hasLongBiography",
+      "url": "http://dev.poderopedia.com/documentation/index#poder:hasLongBiography"
+    },
+    "external links": {
+      "term": "hasUrl",
+      "url": "http://dev.poderopedia.com/documentation/index#poder:hasUrl"
+    },
+    "name": {
+      "term": "foaf:name",
+      "url": "http://xmlns.com/foaf/spec/#term_name"
+    },
+    "alternate name": {
+      "term": "alias",
+      "url": "http://dev.poderopedia.com/documentation/index#poder:alias"
+    },
+    "family name": {
+      "term": "foaf:familyName",
+      "url": "http://xmlns.com/foaf/spec/#term_familyName"
+    },
+    "given name": {
+      "term": "foaf:givenName",
+      "url": "http://dev.poderopedia.com/documentation/index#foaf:givenName"
+    }
+  },
   "LDAP": {
     "Person": {
       "term": "person",
