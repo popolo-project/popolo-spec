@@ -166,6 +166,18 @@
       "url": "http://dev.poderopedia.com/documentation/index#poder:hasLogo"
     }
   },
+  "oparl": {
+    "Organization": {
+      "term": "OParlBody",
+      "url": "http://oparl.org/schema/1.0/OParlBody"
+    },
+    "name": {
+      "term": "name"
+    },
+    "identifier": {
+      "term": "id"
+    }
+  },
   "LDAP": {
     "Organization": {
       "term": "organization",

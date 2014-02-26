@@ -111,6 +111,14 @@ id: data
         <a href='http://dev.poderopedia.com/vocab/'>http://dev.poderopedia.com/vocab/</a>
       </td>
     </tr>
+    <tr>
+      <td>
+        <code>oparl</code>
+      </td>
+      <td>
+        <a href='http://oparl.org/schema/1.0/'>http://oparl.org/schema/1.0/</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -609,6 +617,56 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>oparl</code>
+        </th>
+        <td>
+          <a href='http://oparl.org/schema/1.0/OParlPerson'>
+            OParlPerson
+          </a>
+        </td>
+        <td>
+          id
+        </td>
+        <td>
+          email
+        </td>
+        <td>
+          sex
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          last_name
+        </td>
+        <td>
+          first_name
+        </td>
+        <td>
+        </td>
+        <td>
+          academic_title
         </td>
         <td>
         </td>
@@ -1337,6 +1395,34 @@ id: data
           <a href='http://dev.poderopedia.com/documentation/index#poder:hasLogo'>
             hasLogo
           </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>oparl</code>
+        </th>
+        <td>
+          <a href='http://oparl.org/schema/1.0/OParlBody'>
+            OParlBody
+          </a>
+        </td>
+        <td>
+          name
+        </td>
+        <td>
+        </td>
+        <td>
+          id
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
       </tr>
       <tr>

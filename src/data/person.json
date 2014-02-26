@@ -327,6 +327,30 @@
       "url": "http://dev.poderopedia.com/documentation/index#foaf:givenName"
     }
   },
+  "oparl": {
+    "Person": {
+      "term": "OParlPerson",
+      "url": "http://oparl.org/schema/1.0/OParlPerson"
+    },
+    "identifier": {
+      "term": "id"
+    },
+    "email address": {
+      "term": "email"
+    },
+    "gender": {
+      "term": "sex"
+    },
+    "family name": {
+      "term": "last_name"
+    },
+    "given name": {
+      "term": "first_name"
+    },
+    "honorific prefix": {
+      "term": "academic_title"
+    }
+  },
   "LDAP": {
     "Person": {
       "term": "person",
