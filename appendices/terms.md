@@ -463,34 +463,34 @@ id: data
           <code>nco</code>
         </th>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#PersonContact'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#PersonContact'>
             PersonContact
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#contactUID'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#contactUID'>
             contactUID
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#hasEmailAddress'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#hasEmailAddress'>
             hasEmailAddress
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#gender'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#gender'>
             gender
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#birthDate'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#birthDate'>
             birthDate
           </a>
         </td>
         <td>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#photo'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#photo'>
             photo
           </a>
         </td>
@@ -499,44 +499,44 @@ id: data
         <td>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#url'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#url'>
             url
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#fullname'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#fullname'>
             fullname
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#nickname'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nickname'>
             nickname
           </a>
         </td>
         <td>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#nameFamily'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameFamily'>
             nameFamily
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#nameGiven'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameGiven'>
             nameGiven
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#nameAdditional'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameAdditional'>
             nameAdditional
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#nameHonorificPrefix'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameHonorificPrefix'>
             <abbr title='nameHonorificPrefix'>nameHonorificPr…</abbr>
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#nameHonorificSuffix'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameHonorificSuffix'>
             <abbr title='nameHonorificSuffix'>nameHonorificSu…</abbr>
           </a>
         </td>
@@ -1224,6 +1224,9 @@ id: data
         <td>
         </td>
         <td>
+          <a href='http://schema.org/image'>
+            image
+          </a>
         </td>
       </tr>
       <tr>
@@ -1307,6 +1310,9 @@ id: data
           </a>
         </td>
         <td>
+          <a href='http://www.w3.org/TR/vcard-rdf/#d4e396'>
+            hasPhoto
+          </a>
         </td>
       </tr>
       <tr>
@@ -1314,17 +1320,17 @@ id: data
           <code>nco</code>
         </th>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#OrganizationContact'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#OrganizationContact'>
             <abbr title='OrganizationContact'>OrganizationCon…</abbr>
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#fullname'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#fullname'>
             fullname
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#nickname'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nickname'>
             nickname
           </a>
         </td>
@@ -1338,13 +1344,16 @@ id: data
         <td>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#birthDate'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#birthDate'>
             birthDate
           </a>
         </td>
         <td>
         </td>
         <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#photo'>
+            photo
+          </a>
         </td>
       </tr>
       <tr>
@@ -1801,22 +1810,22 @@ id: data
           <code>nco</code>
         </th>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#Affiliation'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#Affiliation'>
             Affiliation
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#title'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#title'>
             title
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#role'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#role'>
             role
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#org'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#org'>
             org
           </a>
         </td>
@@ -1999,7 +2008,7 @@ id: data
           <code>nco</code>
         </th>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nco/#PostalAddress'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#PostalAddress'>
             PostalAddress
           </a>
         </td>

@@ -221,7 +221,7 @@ Its [OASIS Customer Information Quality (CIQ)](http://docs.oasis-open.org/ciq/v3
 
 <h1 id="nepomuk">NEPOMUK Social Semantic Desktop</h1>
 
-An apparently abandoned project of the [Open Semantic Collaboration Architecture Foundation](http://www.oscaf.org/). Its [Personal Information Model (PIMO) Ontology](http://www.semanticdesktop.org/ontologies/pimo/) has no properties for names, emails, genders, birth dates, death dates or external links. Its [NEPOMUK Contact Ontology (NCO)](http://www.semanticdesktop.org/ontologies/nco/), on the other hand, is of interest.
+An apparently abandoned project of the [Open Semantic Collaboration Architecture Foundation](http://www.oscaf.org/). Its [Personal Information Model (PIMO) Ontology](http://www.semanticdesktop.org/ontologies/pimo/) has no properties for names, emails, genders, birth dates, death dates or external links. Its [NEPOMUK Contact Ontology (NCO)](http://www.semanticdesktop.org/ontologies/2007/03/22/nco/), on the other hand, is of interest.
 
 ## Review
 

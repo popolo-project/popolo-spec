@@ -218,59 +218,59 @@
   "nco": {
     "Person": {
       "term": "PersonContact",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#PersonContact"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#PersonContact"
     },
     "identifier": {
       "term": "contactUID",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#contactUID"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#contactUID"
     },
     "email address": {
       "term": "hasEmailAddress",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#hasEmailAddress"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#hasEmailAddress"
     },
     "gender": {
       "term": "gender",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#gender"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#gender"
     },
     "date of birth": {
       "term": "birthDate",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#birthDate"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#birthDate"
     },
     "head shot": {
       "term": "photo",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#photo"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#photo"
     },
     "external links": {
       "term": "url",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#url"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#url"
     },
     "name": {
       "term": "fullname",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#fullname"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#fullname"
     },
     "alternate name": {
       "term": "nickname",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#nickname"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nickname"
     },
     "family name": {
       "term": "nameFamily",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#nameFamily"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameFamily"
     },
     "given name": {
       "term": "nameGiven",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#nameGiven"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameGiven"
     },
     "additional name": {
       "term": "nameAdditional",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#nameAdditional"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameAdditional"
     },
     "honorific prefix": {
       "term": "nameHonorificPrefix",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#nameHonorificPrefix"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameHonorificPrefix"
     },
     "honorific suffix": {
       "term": "nameHonorificSuffix",
-      "url": "http://www.semanticdesktop.org/ontologies/nco/#nameHonorificSuffix"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameHonorificSuffix"
     }
   },
   "poder": {
