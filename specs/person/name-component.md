@@ -29,7 +29,7 @@ The Person class should have properties for:
 
 Many specifications use the same terms for name components, including [<abbr title="Friend of a Friend">FOAF</abbr>](http://xmlns.com/foaf/spec/), [Schema.org](http://schema.org/Person), [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350#section-6.2.2) and [OpenSocial](http://opensocial-resources.googlecode.com/svn/spec/trunk/Social-Data.xml#rfc.section.3.11). FOAF and Schema.org terms are reused, given their breadth of adoption.
 
-The [survey of existing specifications](/appendices/survey.html) found few terms for sort keys; `sortName` was chosen, which is under consideration for FOAF. The [Person Core Vocabulary](http://philarcher.org/isa/person-v1.00.html) adds a [`patronymicName`](http://philarcher.org/isa/person-v1.00.html#person:patronymicName) component:
+The [survey of existing specifications](/appendices/survey.html) found few terms for sort keys; `sortName` was chosen, which is under consideration for FOAF. The [Person Core Vocabulary](http://www.w3.org/ns/person) adds a [`patronymicName`](http://www.w3.org/ns/person#patronymicName) component:
 
 >Patronymic names are important in some countries. Iceland does not have a concept of family name in the way that many other European countries do. In Bulgaria and Russia, patronymic names are in every day usage.
 
@@ -80,7 +80,7 @@ In [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350), each component of
     </tr>
     <tr id="person:patronymicName">
       <td>patronymic name</td>
-      <td><code><a href="http://philarcher.org/isa/person-v1.00.html#person:patronymicName" title="http://www.w3.org/ns/person#patronymicName">person:patronymicName</a></code></td>
+      <td><code><a href="http://www.w3.org/ns/person#patronymicName" title="http://www.w3.org/ns/person#patronymicName">person:patronymicName</a></code></td>
       <td>One or more patronymic names</td>
     </tr>
     <tr id="con:sortName">

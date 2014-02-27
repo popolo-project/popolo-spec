@@ -86,7 +86,7 @@ Briefly, the [survey of existing specifications](/appendices/survey.html) conclu
 With respect to the choice of terms:
 
 * Many specifications use the same terms, including [<abbr title="Friend of a Friend">FOAF</abbr>](http://xmlns.com/foaf/spec/), [Schema.org](http://schema.org/Person) and [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350#section-6.2.2). FOAF and Schema.org terms are reused, given their breadth of adoption.
-* The [Person Core Vocabulary](http://philarcher.org/isa/person-v1.00.html#dcterms:alternative) uses `dcterms:alternative` for alternate names; vCard 4.0 instead can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred.
+* `dcterms:alternative` can be used for alternate names; vCard 4.0 instead can set a [`PREF`](http://tools.ietf.org/html/rfc6350#section-5.3) parameter on names, to make one name preferred.
 * `foaf:nick` is frequently used for abbreviations, including <abbr title="Internet Relay Chat">IRC</abbr> nicknames, and is therefore used for issued identifiers.
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
@@ -102,7 +102,7 @@ With respect to the choice of terms:
   <tbody>
     <tr id="person:Person">
       <td><strong>Person</strong></td>
-      <td><code><a href="http://philarcher.org/isa/person-v1.00.html#person:Person" title="http://www.w3.org/ns/person#Person">person:Person</a></code></td>
+      <td><code><a href="http://www.w3.org/ns/person#Person" title="http://www.w3.org/ns/person#Person">person:Person</a></code></td>
       <td>A real person, alive or dead</td>
     </tr>
     <tr id="foaf:name">

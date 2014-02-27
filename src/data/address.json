@@ -30,11 +30,11 @@
   "locn": {
     "Address": {
       "term": "Address",
-      "url": "http://philarcher.org/isa/locn-v1.00.html#locn:Address"
+      "url": "http://www.w3.org/ns/locn#locn:Address"
     },
     "postal address": {
       "term": "fullAddress",
-      "url": "http://philarcher.org/isa/locn-v1.00.html#locn:fullAddress"
+      "url": "http://www.w3.org/ns/locn#locn:fullAddress"
     }
   },
   "nco": {

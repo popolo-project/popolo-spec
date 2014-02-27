@@ -1989,14 +1989,14 @@ id: data
           <code>locn</code>
         </th>
         <td>
-          <a href='http://philarcher.org/isa/locn-v1.00.html#locn:Address'>
+          <a href='http://www.w3.org/ns/locn#locn:Address'>
             Address
           </a>
         </td>
         <td>
         </td>
         <td>
-          <a href='http://philarcher.org/isa/locn-v1.00.html#locn:fullAddress'>
+          <a href='http://www.w3.org/ns/locn#locn:fullAddress'>
             fullAddress
           </a>
         </td>

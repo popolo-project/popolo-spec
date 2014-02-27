@@ -128,13 +128,13 @@ Deliverables of past working groups of interest are the [Simple Knowledge Organi
 
 # European Commission
 
-The European Commission's [Interoperability Solutions for European Public Administrations (ISA)](http://ec.europa.eu/isa/) programme completed three vocabularies. Its Business Core Vocabulary evolved into the W3C [Registered Organization Vocabulary](https://dvcs.w3.org/hg/gld/raw-file/default/legal/index.html). The [Person Core Vocabulary](http://philarcher.org/isa/person-v1.00.html) and [Location Core Vocabulary](http://philarcher.org/isa/locn-v1.00.html) are moving into W3C namespaces.
+The European Commission's [Interoperability Solutions for European Public Administrations (ISA)](http://ec.europa.eu/isa/) programme completed three vocabularies. Its Business Core Vocabulary evolved into the W3C [Registered Organization Vocabulary](https://dvcs.w3.org/hg/gld/raw-file/default/legal/index.html). The [Person Core Vocabulary](http://www.w3.org/ns/person#) and [Location Core Vocabulary](http://www.w3.org/ns/locn#) are now in W3C namespaces.
 
 ## Review
 
-* [`person:patronymicName`](http://philarcher.org/isa/person-v1.00.html#person:patronymicName) is unique to this vocabulary and solves an internationalization issue.
-* [`person:birthName`](http://philarcher.org/isa/person-v1.00.html#person:birthName) covers one type of former name.
-* [`locn:Address`](http://philarcher.org/isa/locn-v1.00.html#locn:Address) has no property for address types or telephone numbers.
+* [`person:patronymicName`](http://www.w3.org/ns/person#patronymicName) is unique to this vocabulary and solves an internationalization issue.
+* [`person:birthName`](http://www.w3.org/ns/person#birthName) covers one type of former name.
+* [`locn:Address`](http://www.w3.org/ns/locn#locn:Address) has no property for address types or telephone numbers.
 * `locn:Address` is INSPIRE conformant.
 
 ## Links

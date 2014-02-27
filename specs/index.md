@@ -100,7 +100,7 @@ Following a [survey of existing specifications](/appendices/survey.html), the da
     </tr>
     <tr>
       <td><abbr title="Interoperability Solutions for European Public Administrations">ISA</abbr></td>
-      <td><a href="http://philarcher.org/isa/person-v1.00.html">Person Core Vocabulary</a></td>
+      <td><a href="http://www.w3.org/ns/person">Person Core Vocabulary</a></td>
       <td><code>person</code></td>
     </tr>
     <tr>
