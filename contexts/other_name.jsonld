@@ -1,6 +1,12 @@
 {
   "OtherName": "http://www.w3.org/ns/opengov#OtherName",
   "name": "http://www.w3.org/2000/01/rdf-schema#label",
+  "family_name": "http://xmlns.com/foaf/0.1/familyName",
+  "given_name": "http://xmlns.com/foaf/0.1/givenName",
+  "additional_name": "http://schema.org/additionalName",
+  "honorific_prefix": "http://schema.org/honorificPrefix",
+  "honorific_suffix": "http://schema.org/honorificSuffix",
+  "patronymic_name": "http://www.w3.org/ns/person#patronymicName",
   "start_date": {
     "@id": "http://schema.org/validFrom",
     "@type": "http://www.w3.org/2001/XMLSchema#dateTime"

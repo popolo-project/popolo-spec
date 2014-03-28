@@ -384,6 +384,7 @@ If a name object sets an `end_date` property, it represents a former name. With 
 
 <h1 id="history">7. Change history</h1>
 
+* 2014-03-28: Add name component properties to `opengov:OtherName`.
 * 2014-02-10: `name` and `label` are no longer required properties in the JSON Schema.
 * 2014-01-23: Add a national identity property to the Person class.
 * 2013-10-14: Add a property to the Membership class for the organization on whose behalf the person is a party to the relationship.

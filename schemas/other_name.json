@@ -10,6 +10,30 @@
       "type": "string",
       "required": true
     },
+    "family_name": {
+      "description": "One or more family names",
+      "type": ["string", "null"]
+    },
+    "given_name": {
+      "description": "One or more primary given names",
+      "type": ["string", "null"]
+    },
+    "additional_name": {
+      "description": "One or more secondary given names",
+      "type": ["string", "null"]
+    },
+    "honorific_prefix": {
+      "description": "One or more honorifics preceding a person's name",
+      "type": ["string", "null"]
+    },
+    "honorific_suffix": {
+      "description": "One or more honorifics following a person's name",
+      "type": ["string", "null"]
+    },
+    "patronymic_name": {
+      "description": "One or more patronymic names",
+      "type": ["string", "null"]
+    },
     "start_date": {
       "description": "The date on which the name was adopted",
       "type": ["string", "null"],
