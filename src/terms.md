@@ -48,3 +48,27 @@ id: data
 * LDAP adds properties like [homePostalAddress](http://tools.ietf.org/html/rfc4524#section-2.13) to disambiguate between different address types.
 
 &address
+
+# Vote event
+
+* Canada has at least three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
+* Only PML Schema has properties for the time at which the vote ends: `endDate` and `endTime`.
+
+&voteevent
+
+# Count
+
+* The [Cornell Legal Information Institute Legislative Metadata Project](http://blog.law.cornell.edu/metasausage/downloads-and-related-information/) has explicit properties for counts: `hasYeaTally`, `hasNayTally` and `hasNoVoteTally`.
+* Canada has explicit properties for counts on its votes list page: `TotalYeas`, `TotalNays` and `TotalPaired`.
+* [Spain](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones) has explicit properties for counts: `Presentes`, `AFavor`, `EnContra`, `Abstenciones` and `NoVotan`.
+* The [US House](http://clerk.house.gov/legislative/legvotes.html) has explicit properties for counts: `yea-total`, `nay-total`, `present-total` and `not-voting-total`.
+* The [US Senate](http://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_113_2.htm) has explicit properties for counts: `yeas`, `nays`, `present` and `absent`.
+
+&count
+
+# Vote
+
+* Canada has explicit properties for options on its vote detail page: `Yea`, `Nay` and `Paired`.
+* [Germany](http://www.bundestag.de/bundestag/plenum/abstimmung/liste/2014/) has explicit properties for options: `ja`, `nein`, `Enthaltung`, `ungültig` and `nichtabgegeben`.
+
+&vote

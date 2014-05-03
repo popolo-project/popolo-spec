@@ -1,0 +1,24 @@
+{
+  "Akoma Ntoso": {
+    "Count": {
+      "term": "count"
+    },
+    "option": {
+      "term": "refersTo"
+    },
+    "value": {
+      "term": "value"
+    }
+  },
+  "Canada (Hansard)": {
+    "Count": {
+      "term": "DivisionType"
+    },
+    "option": {
+      "term": "Type"
+    },
+    "value": {
+      "term": "Total"
+    }
+  }
+}

@@ -79,6 +79,29 @@ task :default do
       'postal address',
       'telephone',
     ],
+    voteevent: [
+      'Vote event',
+      'identifiers',
+      'motion',
+      'start time',
+      # 'end time',
+      'counts',
+      'votes',
+    ],
+    count: [
+      'Count',
+      'option',
+      'value',
+    ],
+    vote: [
+      'Vote',
+      'person',
+      'organization',
+      'option',
+      'role',
+      # 'weight',
+      # 'pair',
+    ],
   }.each do |klass,terms|
     vocabularies = JSON.load(File.read(path('src', 'data', "#{klass}.json")))
     vocabularies.each do |vocabulary,entries|

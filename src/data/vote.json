@@ -1,0 +1,99 @@
+{
+  "PML": {
+    "Vote": {
+      "term": "vote"
+    },
+    "person": {
+      "term": "voterID"
+    },
+    "option": {
+      "term": "option"
+    }
+  },
+  "Akoma Ntoso": {
+    "Vote": {
+      "term": "voteAtts"
+    },
+    "person": {
+      "term": "by"
+    },
+    "option": {
+      "term": "choice"
+    },
+    "role": {
+      "term": "as"
+    }
+  },
+  "Canada (Hansard)": {
+    "person": {
+      "term": "Affiliation"
+    },
+    "option": {
+      "term": "Type"
+    }
+  },
+  "Canada (vote detail)": {
+    "Vote": {
+      "term": "RecordedVote"
+    },
+    "person": {
+      "term": "Participant"
+    },
+    "organization": {
+      "term": "Party"
+    }
+  },
+  "Germany": {
+    "person": {
+      "term": "Bezeichnung"
+    },
+    "organization": {
+      "term": "Fraktion/Gruppe"
+    }
+  },
+  "Spain": {
+    "Vote": {
+      "term": "Votacion"
+    },
+    "person": {
+      "term": "Diputado"
+    },
+    "organization": {
+      "term": "Grupo"
+    },
+    "option": {
+      "term": "Voto"
+    }
+  },
+  "US (House)": {
+    "Vote": {
+      "term": "recorded-vote"
+    },
+    "person": {
+      "term": "legislator"
+    },
+    "organization": {
+      "term": "party"
+    },
+    "option": {
+      "term": "vote"
+    },
+    "role": {
+      "term": "role"
+    }
+  },
+  "US (Senate)": {
+    "Vote": {
+      "term": "member"
+    },
+    "person": {
+      "term": "member_full"
+    },
+    "organization": {
+      "term": "party"
+    },
+    "option": {
+      "term": "vote_cast"
+    }
+  }
+}

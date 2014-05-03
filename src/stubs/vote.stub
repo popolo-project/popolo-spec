@@ -1,0 +1,37 @@
+  "": {
+    "Vote": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "person": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "organization": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "option": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "role": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "weight": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "pair": {
+      "term": "",
+      "url": "",
+      "label": ""
+    }
+  },

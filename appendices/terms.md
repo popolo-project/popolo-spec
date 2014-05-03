@@ -2122,3 +2122,438 @@ id: data
   </table>
 </div>
 
+
+# Vote event
+
+* Canada has at least three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
+* Only PML Schema has properties for the time at which the vote ends: `endDate` and `endTime`.
+
+<div class='table-responsive table-auto'>
+  <table class='table table-striped table-hover table-condensed'>
+    <thead>
+      <tr>
+        <th scope='row'>Term</th>
+        <td>Vote event</td>
+        <td>identifiers</td>
+        <td>motion</td>
+        <td>start time</td>
+        <td>counts</td>
+        <td>votes</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope='row'>
+          PML
+        </th>
+        <td>
+          voteEvent
+        </td>
+        <td>
+          identifier
+        </td>
+        <td>
+          label
+        </td>
+        <td>
+          startDate, startTime
+        </td>
+        <td>
+        </td>
+        <td>
+          options
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Akoma Ntoso
+        </th>
+        <td>
+          voting
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Cornell
+        </th>
+        <td>
+          Vote
+        </td>
+        <td>
+          hasVoteID
+        </td>
+        <td>
+        </td>
+        <td>
+          hasVoteDate
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Canada (Hansard)
+        </th>
+        <td>
+          Division
+        </td>
+        <td>
+          DivisionNumber
+        </td>
+        <td>
+          <abbr title='SubjectOfBusiness'>SubjectOfBusine…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Canada (vote list)
+        </th>
+        <td>
+          Vote
+        </td>
+        <td>
+          number
+        </td>
+        <td>
+          Description
+        </td>
+        <td>
+          date
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Canada (vote detail)
+        </th>
+        <td>
+          Vote
+        </td>
+        <td>
+        </td>
+        <td>
+          Context
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Spain
+        </th>
+        <td>
+          Resultado
+        </td>
+        <td>
+          NumeroVotacion
+        </td>
+        <td>
+          TextoExpediente
+        </td>
+        <td>
+          Fecha
+        </td>
+        <td>
+          Totales
+        </td>
+        <td>
+          Votaciones
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          US (House)
+        </th>
+        <td>
+          rollcall-vote
+        </td>
+        <td>
+          rollcall-num
+        </td>
+        <td>
+          vote-question
+        </td>
+        <td>
+          action-date, action-time
+        </td>
+        <td>
+          vote-totals
+        </td>
+        <td>
+          vote-data
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          US (Senate)
+        </th>
+        <td>
+          roll_call_vote
+        </td>
+        <td>
+          vote_number
+        </td>
+        <td>
+          question
+        </td>
+        <td>
+          vote_date
+        </td>
+        <td>
+          count
+        </td>
+        <td>
+          members
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+# Count
+
+* The [Cornell Legal Information Institute Legislative Metadata Project](http://blog.law.cornell.edu/metasausage/downloads-and-related-information/) has explicit properties for counts: `hasYeaTally`, `hasNayTally` and `hasNoVoteTally`.
+* Canada has explicit properties for counts on its votes list page: `TotalYeas`, `TotalNays` and `TotalPaired`.
+* [Spain](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones) has explicit properties for counts: `Presentes`, `AFavor`, `EnContra`, `Abstenciones` and `NoVotan`.
+* The [US House](http://clerk.house.gov/legislative/legvotes.html) has explicit properties for counts: `yea-total`, `nay-total`, `present-total` and `not-voting-total`.
+* The [US Senate](http://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_113_2.htm) has explicit properties for counts: `yeas`, `nays`, `present` and `absent`.
+
+<div class='table-responsive table-auto'>
+  <table class='table table-striped table-hover table-condensed'>
+    <thead>
+      <tr>
+        <th scope='row'>Term</th>
+        <td>Count</td>
+        <td>option</td>
+        <td>value</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope='row'>
+          Akoma Ntoso
+        </th>
+        <td>
+          count
+        </td>
+        <td>
+          refersTo
+        </td>
+        <td>
+          value
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Canada (Hansard)
+        </th>
+        <td>
+          DivisionType
+        </td>
+        <td>
+          Type
+        </td>
+        <td>
+          Total
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+# Vote
+
+* Canada has explicit properties for options on its vote detail page: `Yea`, `Nay` and `Paired`.
+* [Germany](http://www.bundestag.de/bundestag/plenum/abstimmung/liste/2014/) has explicit properties for options: `ja`, `nein`, `Enthaltung`, `ungültig` and `nichtabgegeben`.
+
+<div class='table-responsive table-auto'>
+  <table class='table table-striped table-hover table-condensed'>
+    <thead>
+      <tr>
+        <th scope='row'>Term</th>
+        <td>Vote</td>
+        <td>person</td>
+        <td>organization</td>
+        <td>option</td>
+        <td>role</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope='row'>
+          PML
+        </th>
+        <td>
+          vote
+        </td>
+        <td>
+          voterID
+        </td>
+        <td>
+        </td>
+        <td>
+          option
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Akoma Ntoso
+        </th>
+        <td>
+          voteAtts
+        </td>
+        <td>
+          by
+        </td>
+        <td>
+        </td>
+        <td>
+          choice
+        </td>
+        <td>
+          as
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Canada (Hansard)
+        </th>
+        <td>
+        </td>
+        <td>
+          Affiliation
+        </td>
+        <td>
+        </td>
+        <td>
+          Type
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Canada (vote detail)
+        </th>
+        <td>
+          RecordedVote
+        </td>
+        <td>
+          Participant
+        </td>
+        <td>
+          Party
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Germany
+        </th>
+        <td>
+        </td>
+        <td>
+          Bezeichnung
+        </td>
+        <td>
+          Fraktion/Gruppe
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Spain
+        </th>
+        <td>
+          Votacion
+        </td>
+        <td>
+          Diputado
+        </td>
+        <td>
+          Grupo
+        </td>
+        <td>
+          Voto
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          US (House)
+        </th>
+        <td>
+          recorded-vote
+        </td>
+        <td>
+          legislator
+        </td>
+        <td>
+          party
+        </td>
+        <td>
+          vote
+        </td>
+        <td>
+          role
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          US (Senate)
+        </th>
+        <td>
+          member
+        </td>
+        <td>
+          member_full
+        </td>
+        <td>
+          party
+        </td>
+        <td>
+          vote_cast
+        </td>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
