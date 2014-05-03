@@ -1,4 +1,9 @@
 {
+  "schema": {
+    "start time": {
+      "term": "http://schema.org/startDate"
+    }
+  },
   "PML": {
     "Vote event": {
       "term": "voteEvent"
