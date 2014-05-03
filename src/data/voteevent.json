@@ -124,5 +124,13 @@
     "votes": {
       "term": "members"
     }
+  },
+  "Toronto": {
+    "motion": {
+      "term": "Agenda Item #"
+    },
+    "start time": {
+      "term": "Date/Time"
+    }
   }
 }

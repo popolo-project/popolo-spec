@@ -95,5 +95,10 @@
     "option": {
       "term": "vote_cast"
     }
+  },
+  "Toronto": {
+    "option": {
+      "term": "Vote"
+    }
   }
 }

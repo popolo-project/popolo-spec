@@ -2125,8 +2125,9 @@ id: data
 
 # Vote event
 
-* Canada has at least three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * Only PML Schema has properties for the time at which the vote ends: `endDate` and `endTime`.
+* Canada has at least three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
+* [Toronto](http://app.toronto.ca/tmmis/getAdminReport.do?function=prepareMemberVoteReport) publishes reports for each voter.
 
 <div class='table-responsive table-auto'>
   <table class='table table-striped table-hover table-condensed'>
@@ -2329,6 +2330,25 @@ id: data
         </td>
         <td>
           members
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Toronto
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          Agenda Item #
+        </td>
+        <td>
+          Date/Time
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
       </tr>
     </tbody>
@@ -2549,6 +2569,22 @@ id: data
         </td>
         <td>
           vote_cast
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Toronto
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          Vote
         </td>
         <td>
         </td>
