@@ -81,7 +81,7 @@ Jump to a section below or start at the [beginning](/specs/).
 1. [Handling duplicates](/appendices/handling-duplicates.html)
 1. [Survey of existing specifications](/appendices/survey.html)
 1. [Inventory of terms from the survey](/appendices/terms.html)
-1. [Data model patterns](/appendices/data-patterns.html) (semantics, succintness, edge cases)
+1. [Data model patterns](/appendices/data-patterns.html) (semantics, succinctness, edge cases)
 1. [JSON serialization patterns](/appendices/json-patterns.html) (embedding, simplicity)
 1. [Best practices for software components](/appendices/components.html) (document identifiers, database isolation)
 
