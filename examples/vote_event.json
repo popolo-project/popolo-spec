@@ -1,0 +1,28 @@
+{
+  "identifiers": [
+    {
+      "identifier": "42"
+    }
+  ],
+  "motion": {
+    "text": "That the House do now proceed to the Orders of the Day."
+  },
+  "startDate": "2013-01-01T12:30:00Z",
+  "endDate": "2013-01-01T12:45:00Z",
+  "counts": [
+    {
+      "option": "Yes",
+      "value": "128"
+    },
+    {
+      "option": "No",
+      "value": "145"
+    }
+  ],
+  "votes": [
+    {
+      "person_id": "john-q-public",
+      "option": "Yes"
+    }
+  ]
+}

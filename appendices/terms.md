@@ -2154,7 +2154,9 @@ id: data
         <td>
         </td>
         <td>
-          <abbr title='http://schema.org/startDate'>http://schema.o…</abbr>
+          <a href='http://schema.org/startDate'>
+            startDate
+          </a>
         </td>
         <td>
         </td>

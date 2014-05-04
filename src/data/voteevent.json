@@ -1,7 +1,8 @@
 {
   "schema": {
     "start time": {
-      "term": "http://schema.org/startDate"
+      "term": "startDate",
+      "url": "http://schema.org/startDate"
     }
   },
   "PML": {
