@@ -1,0 +1,139 @@
+{
+  "PML": {
+    "context": {
+      "term": "calendarObjectID"
+    },
+    "mover": {
+      "term": "contributorID"
+    },
+    "text": {
+      "term": "label"
+    },
+    "subject": {
+      "term": "proceedingsObjectID"
+    }
+  },
+  "AkomaNtoso": {
+    "organization": {
+      "term": "organization"
+    },
+    "context": {
+      "term": "session"
+    },
+    "text": {
+      "term": "refersTo"
+    },
+    "requirements": {
+      "term": "quorum"
+    },
+    "result": {
+      "term": "outcome"
+    }
+  },
+  "Cornell": {
+    "text": {
+      "term": "hasDocument"
+    },
+    "subject": {
+      "term": "hasRelatedDocument"
+    },
+    "result": {
+      "term": "hasOutcome"
+    }
+  },
+  "Canada (vote list)": {
+    "context": {
+      "term": "parliament, session, sitting"
+    },
+    "text": {
+      "term": "Description"
+    },
+    "subject": {
+      "term": "RelatedBill"
+    },
+    "result": {
+      "term": "Decision"
+    }
+  },
+  "Canada (vote detail)": {
+    "mover": {
+      "term": "Sponsor"
+    },
+    "text": {
+      "term": "Context"
+    },
+    "subject": {
+      "term": "RelatedBill"
+    },
+    "result": {
+      "term": "Decision"
+    }
+  },
+  "Germany": {
+    "context": {
+      "term": "Wahlperiode, Sitzungnr"
+    }
+  },
+  "Spain": {
+    "context": {
+      "term": "Sesion"
+    },
+    "text": {
+      "term": "TextoExpediente"
+    },
+    "result": {
+      "term": "Asentimiento"
+    }
+  },
+  "US (House)": {
+    "organization": {
+      "term": "chamber"
+    },
+    "context": {
+      "term": "congress, session"
+    },
+    "text": {
+      "term": "vote-question"
+    },
+    "subject": {
+      "term": "legis-num"
+    },
+    "requirements": {
+      "term": "vote-type"
+    },
+    "result": {
+      "term": "vote-result"
+    }
+  },
+  "US (Senate)": {
+    "context": {
+      "term": "congress, session"
+    },
+    "text": {
+      "term": "title, vote_title"
+    },
+    "subject": {
+      "term": "document, amendment"
+    },
+    "requirements": {
+      "term": "majority_requirement"
+    },
+    "result": {
+      "term": "result, vote_result"
+    }
+  },
+  "Toronto": {
+    "organization": {
+      "term": "Committee"
+    },
+    "subject": {
+      "term": "Agenda Item #"
+    },
+    "requirements": {
+      "term": "Vote Description"
+    },
+    "result": {
+      "term": "Result"
+    }
+  }
+}

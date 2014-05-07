@@ -2123,10 +2123,263 @@ id: data
 </div>
 
 
+* Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
+
+# Motion
+
+<div class='table-responsive'>
+  <table class='table table-striped table-hover table-condensed'>
+    <thead>
+      <tr>
+        <th scope='row'>Term</th>
+        <td>organization</td>
+        <td>context</td>
+        <td>mover</td>
+        <td>text</td>
+        <td>subject</td>
+        <td>requirements</td>
+        <td>result</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope='row'>
+          PML
+        </th>
+        <td>
+        </td>
+        <td>
+          <abbr title='calendarObjectID'>calendarObjectI…</abbr>
+        </td>
+        <td>
+          contributorID
+        </td>
+        <td>
+          label
+        </td>
+        <td>
+          <abbr title='proceedingsObjectID'>proceedingsObje…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          AkomaNtoso
+        </th>
+        <td>
+          organization
+        </td>
+        <td>
+          session
+        </td>
+        <td>
+        </td>
+        <td>
+          refersTo
+        </td>
+        <td>
+        </td>
+        <td>
+          quorum
+        </td>
+        <td>
+          outcome
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Cornell
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          hasDocument
+        </td>
+        <td>
+          <abbr title='hasRelatedDocument'>hasRelatedDocum…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          hasOutcome
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Canada (vote list)
+        </th>
+        <td>
+        </td>
+        <td>
+          <abbr title='parliament, session, sitting'>parliament, ses…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          Description
+        </td>
+        <td>
+          RelatedBill
+        </td>
+        <td>
+        </td>
+        <td>
+          Decision
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Canada (vote detail)
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          Sponsor
+        </td>
+        <td>
+          Context
+        </td>
+        <td>
+          RelatedBill
+        </td>
+        <td>
+        </td>
+        <td>
+          Decision
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Germany
+        </th>
+        <td>
+        </td>
+        <td>
+          <abbr title='Wahlperiode, Sitzungnr'>Wahlperiode, Si…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Spain
+        </th>
+        <td>
+        </td>
+        <td>
+          Sesion
+        </td>
+        <td>
+        </td>
+        <td>
+          TextoExpediente
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          Asentimiento
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          US (House)
+        </th>
+        <td>
+          chamber
+        </td>
+        <td>
+          <abbr title='congress, session'>congress, sessi…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          vote-question
+        </td>
+        <td>
+          legis-num
+        </td>
+        <td>
+          vote-type
+        </td>
+        <td>
+          vote-result
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          US (Senate)
+        </th>
+        <td>
+        </td>
+        <td>
+          <abbr title='congress, session'>congress, sessi…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='title, vote_title'>title, vote_tit…</abbr>
+        </td>
+        <td>
+          <abbr title='document, amendment'>document, amend…</abbr>
+        </td>
+        <td>
+          <abbr title='majority_requirement'>majority_requir…</abbr>
+        </td>
+        <td>
+          <abbr title='result, vote_result'>result, vote_re…</abbr>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Toronto
+        </th>
+        <td>
+          Committee
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          Agenda Item #
+        </td>
+        <td>
+          <abbr title='Vote Description'>Vote Descriptio…</abbr>
+        </td>
+        <td>
+          Result
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
 # Vote event
 
 * Only PML Schema has properties for the time at which the vote ends: `endDate` and `endTime`.
-* Canada has at least three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
+* Canada has three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * [Toronto](http://app.toronto.ca/tmmis/getAdminReport.do?function=prepareMemberVoteReport) publishes reports for each voter.
 
 <div class='table-responsive table-auto'>
