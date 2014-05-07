@@ -1,6 +1,7 @@
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix time: <http://www.w3.org/2006/time#> .
+@prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 <http://example.com/memberships/593.ttl>
   a org:Membership;
@@ -8,13 +9,6 @@
   org:role [a org:Role; skos:prefLabel "Kitchen assistant"@en];
   org:member <http://example.com/people/john-q-public.ttl>;
   org:organization <http://example.com/organizations/abc-inc.ttl>;
-  org:memberDuring [
-    a time:Interval;
-    time:hasBeginning [
-      time:inXSDDateTime "1970-01"^^xsd:gYearMonth
-    ];
-    time:hasEnd [
-      time:inXSDDateTime "1971-12-31"^^xsd:date
-    ]
-  ];
+  schema:validFrom "1970-01"^^xsd:gYearMonth;
+  schema:validThrough "1971-12-31"^^xsd:date;
   rdfs:seeAlso <http://example.com/abc-inc/staff> .
