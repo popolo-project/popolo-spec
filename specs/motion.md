@@ -45,11 +45,7 @@ The Motion class should have properties for:
 
 1. the date on which the motion was proposed
 
-    >January 1, 2013 at 12:15pm
-
-1. the date on which the motion was resolved
-
-    >January 1, 2013 at 12:45pm
+    >January 1, 2013
 
 1. the requirements for the motion to be adopted
 
@@ -109,15 +105,10 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-subject" title="http://purl.org/dc/terms/subject">dcterms:subject</a></code></td>
       <td>the subject of the motion</td>
     </tr>
-    <tr id="opengov:proposalDate">
+    <tr id="dcterms:date">
       <td>proposal date</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#proposalDate">opengov:proposalDate</a></code></td>
+      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-date" title="http://purl.org/dc/terms/date">dcterms:date</a></code></td>
       <td>the date on which the motion was proposed</td>
-    </tr>
-    <tr id="opengov:resolutionDate">
-      <td>resolution date</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#resolutionDate">opengov:resolutionDate</a></code></td>
-      <td>the date on which the motion was resolved</td>
     </tr>
     <tr id="opengov:requirements">
       <td>requirements</td>
