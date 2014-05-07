@@ -1,38 +1,62 @@
   "": {
     "Motion": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     },
     "organization": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     },
     "context": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     },
     "mover": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     },
     "seconder": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     },
     "text": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     },
     "subject": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     },
     "proposal date": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     },
     "resolution date": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     },
     "requirements": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     },
     "result": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     },
     "vote events": {
-      "term": ""
+      "term": "",
+      "url": "",
+      "label": ""
     }
   },

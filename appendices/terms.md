@@ -33,6 +33,14 @@ id: data
     </tr>
     <tr>
       <td>
+        <code>dcterms</code>
+      </td>
+      <td>
+        <a href='http://purl.org/dc/terms/'>http://purl.org/dc/terms/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <code>schema</code>
       </td>
       <td>
@@ -2142,6 +2150,65 @@ id: data
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <th scope='row'>
+          <code>dcterms</code>
+        </th>
+        <td>
+          <a href='http://purl.org/dc/terms/publisher'>
+            publisher
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/creator'>
+            creator
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/subject'>
+            subject
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>schema</code>
+        </th>
+        <td>
+          <a href='http://schema.org/publisher'>
+            publisher
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://schema.org/creator'>
+            creator
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/text'>
+            text
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/about'>
+            about
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
       <tr>
         <th scope='row'>
           PML

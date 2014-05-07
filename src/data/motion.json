@@ -1,4 +1,36 @@
 {
+  "dcterms": {
+    "organization": {
+      "term": "publisher",
+      "url": "http://purl.org/dc/terms/publisher"
+    },
+    "mover": {
+      "term": "creator",
+      "url": "http://purl.org/dc/terms/creator"
+    },
+    "subject": {
+      "term": "subject",
+      "url": "http://purl.org/dc/terms/subject"
+    }
+  },
+  "schema": {
+    "organization": {
+      "term": "publisher",
+      "url": "http://schema.org/publisher"
+    },
+    "mover": {
+      "term": "creator",
+      "url": "http://schema.org/creator"
+    },
+    "text": {
+      "term": "text",
+      "url": "http://schema.org/text"
+    },
+    "subject": {
+      "term": "about",
+      "url": "http://schema.org/about"
+    }
+  },
   "PML": {
     "context": {
       "term": "calendarObjectID"
