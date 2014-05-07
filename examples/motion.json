@@ -1,0 +1,17 @@
+{
+  "organization_id": "house-of-commons",
+  "context": {
+    "parliament": 41,
+    "session": 2,
+    "sitting": 36
+  },
+  "mover_id": "john-doe",
+  "seconder_id": "jane-roe",
+  "text": "That the Bill is to be read a second time.",
+  "subject_id": "bill-84",
+  "proposal_date": "2013-01-01T12:15:00Z",
+  "resolution_date": "2013-01-01T12:45:00Z",
+  "requirements": "two-thirds majority",
+  "result": "pass",
+  "vote_event": "vote-42",
+}

@@ -53,12 +53,12 @@ Few specifications exist for vote events, and few legislatures publish vote data
     </tr>
   </thead>
   <tbody>
-    <tr id="opengov:Vote event">
+    <tr id="opengov:VoteEvent">
       <td>Vote event</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#VoteEvent">opengov:VoteEvent</a></code></td>
       <td>An event at which people's votes are recorded</td>
     </tr>
-    <tr id="opengov:identifiers">
+    <tr id="opengov:identifier">
       <td>identifier</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#identifier">opengov:identifier</a></code></td>
       <td>An issued identifier, e.g. a sequential number</td>
