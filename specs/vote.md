@@ -89,7 +89,7 @@ Few specifications exist for individual votes, and few legislatures publish vote
     <tr id="opengov:weight">
       <td>weight</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#weight">opengov:weight</a></code></td>
-      <td>the weight of the voter's vote</td>
+      <td>the weight of the voter's vote<a href="#note2"><sup>2</sup></a></td>
     </tr>
     <tr id="opengov:pair">
       <td>pair</td>
@@ -99,10 +99,12 @@ Few specifications exist for individual votes, and few legislatures publish vote
   </tbody>
 </table>
 
+* The `person` property <em class="rfc2119">must not</em> be used if an organization is voting.
 * The `organization` property <em class="rfc2119">must not</em> be used if a person is voting.
-* Pairing agreements exist outside vote events and may not be respected. The `pair` property <em class="rfc2119">must not</em> be used unless the pairing agreement is respected.
+* "Pairing" refers to a reciprocal agreement between two voters by which a voter abstains if the other is unable to vote. However, a voter may not honor the agreement. The agreement is not in effect if both voters are able to vote. The `pair` property <em class="rfc2119">must not</em> be used unless the agreement is honored and in effect.
 
 <p class="note" id="note1">1. For example, `"absent"` and `"not voting"` are valid values of the `option` property.</p>
+<p class="note" id="note2">2. The default value for a vote's weight is `1`.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 
@@ -119,3 +121,13 @@ Few specifications exist for individual votes, and few legislatures publish vote
   <div class="tab-pane active" id="vote-json" data-url="/examples/vote.json"></div>
   <div class="tab-pane" id="vote-rdf" data-url="/examples/vote.ttl"></div>
 </div>
+
+<h1 id="code-lists">5. Code lists</h1>
+
+## Option
+
+Implementations <em class="rfc2119">may</em> use values from outside this list to reflect the diversity of voting options.
+
+* `yes`
+* `no`
+* `abstain`

@@ -74,3 +74,13 @@ Few specifications exist for vote totals, and few legislatures publish vote data
   <div class="tab-pane active" id="count-json" data-url="/examples/count.json"></div>
   <div class="tab-pane" id="count-rdf" data-url="/examples/count.ttl"></div>
 </div>
+
+<h1 id="code-lists">5. Code lists</h1>
+
+## Option
+
+Implementations <em class="rfc2119">may</em> use values from outside this list to reflect the diversity of voting options.
+
+* `yes`
+* `no`
+* `abstain`

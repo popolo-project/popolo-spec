@@ -136,3 +136,12 @@ The ranges of the `context` and `subject` properties are not specified, as they 
   <div class="tab-pane active" id="motion-json" data-url="/examples/motion.json"></div>
   <div class="tab-pane" id="motion-rdf" data-url="/examples/motion.ttl"></div>
 </div>
+
+<h1 id="code-lists">5. Code lists</h1>
+
+## Result
+
+Implementations <em class="rfc2119">may</em> use values from outside this list to reflect the diversity of results.
+
+* `pass`
+* `fail`

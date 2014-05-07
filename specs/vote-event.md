@@ -92,8 +92,9 @@ Few specifications exist for vote events, and few legislatures publish vote data
 </table>
 
 * The vote totals <em class="rfc2119">may</em> exclude the options that have no effect on the result, such as abstentions.
+* The vote totals <em class="rfc2119">may</em> not include all distinct options from the individual votes.
+* The vote totals <em class="rfc2119">should</em> agree with the individual votes.
 * The individual votes <em class="rfc2119">may</em> not include all present voters.
-* The vote totals <em class="rfc2119">may</em> disagree with the individual votes.
 
 <h1 id="serialization">4. Serialization</h1>
 
