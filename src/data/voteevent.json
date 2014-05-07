@@ -12,9 +12,6 @@
     "identifiers": {
       "term": "identifier"
     },
-    "motion": {
-      "term": "label"
-    },
     "start time": {
       "label": "startDate, startTime"
     },
@@ -33,6 +30,9 @@
     },
     "identifiers": {
       "term": "hasVoteID"
+    },
+    "motion": {
+      "term": "hasDocument"
     },
     "start time": {
       "term": "hasVoteDate"
@@ -56,9 +56,6 @@
     "identifiers": {
       "term": "number"
     },
-    "motion": {
-      "term": "Description"
-    },
     "start time": {
       "term": "date"
     }
@@ -66,10 +63,10 @@
   "Canada (vote detail)": {
     "Vote event": {
       "term": "Vote"
-    },
-    "motion": {
-      "term": "Context"
     }
+  },
+  "Germany": {
+    "identifiers": "Abstimmnr"
   },
   "Spain": {
     "Vote event": {
@@ -77,9 +74,6 @@
     },
     "identifiers": {
       "term": "NumeroVotacion"
-    },
-    "motion": {
-      "term": "TextoExpediente"
     },
     "start time": {
       "term": "Fecha"
@@ -98,9 +92,6 @@
     "identifiers": {
       "term": "rollcall-num"
     },
-    "motion": {
-      "term": "vote-question"
-    },
     "start time": {
       "label": "action-date, action-time"
     },
@@ -118,23 +109,17 @@
     "identifiers": {
       "term": "vote_number"
     },
-    "motion": {
-      "term": "question"
-    },
     "start time": {
       "term": "vote_date"
     },
     "counts": {
-      "term": "count"
+      "term": "vote_tally, count"
     },
     "votes": {
       "term": "members"
     }
   },
   "Toronto": {
-    "motion": {
-      "term": "Agenda Item #"
-    },
     "start time": {
       "term": "Date/Time"
     }

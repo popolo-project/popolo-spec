@@ -2174,7 +2174,6 @@ id: data
           identifier
         </td>
         <td>
-          label
         </td>
         <td>
           startDate, startTime
@@ -2214,6 +2213,7 @@ id: data
           hasVoteID
         </td>
         <td>
+          hasDocument
         </td>
         <td>
           hasVoteDate
@@ -2254,7 +2254,6 @@ id: data
           number
         </td>
         <td>
-          Description
         </td>
         <td>
           date
@@ -2274,7 +2273,24 @@ id: data
         <td>
         </td>
         <td>
-          Context
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Germany
+        </th>
+        <td>
+        </td>
+        <td>
+          
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2294,7 +2310,6 @@ id: data
           NumeroVotacion
         </td>
         <td>
-          TextoExpediente
         </td>
         <td>
           Fecha
@@ -2317,7 +2332,6 @@ id: data
           rollcall-num
         </td>
         <td>
-          vote-question
         </td>
         <td>
           action-date, action-time
@@ -2340,13 +2354,12 @@ id: data
           vote_number
         </td>
         <td>
-          question
         </td>
         <td>
           vote_date
         </td>
         <td>
-          count
+          <abbr title='vote_tally, count'>vote_tally, cou…</abbr>
         </td>
         <td>
           members
@@ -2361,7 +2374,6 @@ id: data
         <td>
         </td>
         <td>
-          Agenda Item #
         </td>
         <td>
           Date/Time
