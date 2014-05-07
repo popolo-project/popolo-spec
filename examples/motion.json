@@ -5,8 +5,7 @@
     "session": 2,
     "sitting": 36
   },
-  "mover_id": "john-doe",
-  "seconder_id": "jane-roe",
+  "creator_id": "john-doe",
   "text": "That the Bill is to be read a second time.",
   "subject_id": "bill-84",
   "date": "2013-01-01",

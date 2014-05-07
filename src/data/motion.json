@@ -4,7 +4,7 @@
       "term": "publisher",
       "url": "http://purl.org/dc/terms/publisher"
     },
-    "mover": {
+    "creator": {
       "term": "creator",
       "url": "http://purl.org/dc/terms/creator"
     },
@@ -18,7 +18,7 @@
       "term": "publisher",
       "url": "http://schema.org/publisher"
     },
-    "mover": {
+    "creator": {
       "term": "creator",
       "url": "http://schema.org/creator"
     },
@@ -35,7 +35,7 @@
     "context": {
       "term": "calendarObjectID"
     },
-    "mover": {
+    "creator": {
       "term": "contributorID"
     },
     "text": {
@@ -88,7 +88,7 @@
     }
   },
   "Canada (vote detail)": {
-    "mover": {
+    "creator": {
       "term": "Sponsor"
     },
     "text": {

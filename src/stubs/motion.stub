@@ -14,12 +14,7 @@
       "url": "",
       "label": ""
     },
-    "mover": {
-      "term": "",
-      "url": "",
-      "label": ""
-    },
-    "seconder": {
+    "creator": {
       "term": "",
       "url": "",
       "label": ""
@@ -34,12 +29,7 @@
       "url": "",
       "label": ""
     },
-    "proposal date": {
-      "term": "",
-      "url": "",
-      "label": ""
-    },
-    "resolution date": {
+    "date": {
       "term": "",
       "url": "",
       "label": ""

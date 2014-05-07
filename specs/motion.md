@@ -30,10 +30,6 @@ The Motion class should have properties for:
 
     >John Doe
 
-1. the [person](/specs/person.html) who seconded the motion
-
-    >Jane Roe
-
 1. the transcript or text of the motion
 
     >That the House do now proceed to the Orders of the Day.
@@ -85,15 +81,10 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#context">opengov:context</a></code></td>
       <td>the legislative context in which the motion is proposed</td>
     </tr>
-    <tr id="opengov:mover">
-      <td>mover</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#mover">opengov:mover</a></code></td>
+    <tr id="dcterms:creator">
+      <td>creator</td>
+      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-creator" title="http://purl.org/dc/terms/creator">dcterms:creator</a></code></td>
       <td>the person who proposed the motion</td>
-    </tr>
-    <tr id="opengov:seconder">
-      <td>seconder</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#seconder">opengov:seconder</a></code></td>
-      <td>the person who seconded the motion</td>
     </tr>
     <tr id="schema:text">
       <td>text</td>
