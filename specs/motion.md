@@ -43,7 +43,7 @@ The Motion class should have properties for:
 
     >January 1, 2013
 
-1. the requirements for the motion to be adopted
+1. the requirements for the motion to be agreed to
 
     >two-thirds majority
 
