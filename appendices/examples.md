@@ -22,6 +22,8 @@ This document provides more complex examples than [the samples given in the spec
   1. [Change in party affiliation](#party-affiliation)
   1. [A previously held post](#previous-post)
   1. [A post held by more than one person simultaneously](#simultaneous-post)
+1. [Vote events](#vote-events)
+  1. [A vote by a political party](#party-vote)
 
 <h1 id="contact-details">1. Contact details</h1>
 
@@ -251,5 +253,20 @@ Jane Q. Citizen, a person, and her memberships:
       "start_date": "2011-01-01"
     }
   ]
+}
+```
+
+<h1 id="vote-events">3. Vote events</h1>
+
+<h2 id="party-vote">3.1. A vote by a political party</h2>
+
+In the House of Representatives of New Zealand, the parties cast the votes, not the members:
+
+```json
+{
+  "vote_event_id": "vote-21",
+  "organization_id": "national-party",
+  "option": "yes",
+  "weight": 59
 }
 ```

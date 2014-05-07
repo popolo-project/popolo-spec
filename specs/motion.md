@@ -37,6 +37,7 @@ The Motion class should have properties for:
 1. the subject of the motion
 
     >e.g. a bill, an amendment, a motion, etc.
+
     >Alice subscribes to receive an email alert when a vote about a bill passes.
 
 1. the date on which the motion was proposed

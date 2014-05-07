@@ -21,8 +21,11 @@ A vote is one person's vote in a vote event.
 1. the [person](/specs/person.html) who is voting
 
     >Alice uses voting records to identify voting blocs.
+
     >Bob subscribes to receive an email alert when John Q. Public votes.
+
     >Carol tracks which members of the government vote with the opposition.
+
     >Dave checks how political parties voted on an important bill.
 
 1. the [organization](/specs/organization.html) that is voting
@@ -36,6 +39,7 @@ A vote is one person's vote in a vote event.
 1. the voter's role in the event
 
     >In the House of Commons of the United Kingdom, the tellers are the members who count the votes.
+
     >Eve analyzes the chair's behavior on tie votes.
 
 1. the weight of the voter's vote
