@@ -90,12 +90,12 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:Membership" title="http://www.w3.org/ns/org#Membership">org:Membership</a></code></td>
       <td>A relationship between a person and an organization</td>
     </tr>
-    <tr id="skos:prefLabel2">
+    <tr id="skos:prefLabel">
       <td>label</td>
       <td><code><a href="http://www.w3.org/TR/skos-reference/#labels" title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
       <td>A label describing the membership</td>
     </tr>
-    <tr id="org:role-Membership">
+    <tr id="org:role">
       <td>role</td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:role" title="http://www.w3.org/ns/org#role">org:role</a></code></td>
       <td>The role that the person fulfills in the organization</td>

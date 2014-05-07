@@ -92,7 +92,7 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:Organization" title="http://www.w3.org/ns/org#Organization">org:Organization</a></code><a href="#note1"><sup>1</sup></a></td>
       <td>A group with a common purpose or reason for existence that goes beyond the set of people belonging to it, e.g. a social, commercial or political structure</td>
     </tr>
-    <tr id="skos:prefLabel1">
+    <tr id="skos:prefLabel">
       <td>name</td>
       <td><code><a href="http://www.w3.org/TR/skos-reference/#labels" title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
       <td>A primary name, e.g. a legally recognized name</td>
