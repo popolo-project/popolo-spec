@@ -14,11 +14,18 @@ A vote is one person's vote in a vote event.
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
-1. the person who is voting
+1. [vote event](/specs/vote-event.html)
 
-    >John Q. Public
+    >Vote No. 42
 
-1. the organization that is voting
+1. the [person](/specs/person.html) who is voting
+
+    >Alice uses voting records to identify voting blocs.
+    >Bob subscribes to receive an email alert when John Q. Public votes.
+    >Carol tracks which members of the government vote with the opposition.
+    >Dave checks how political parties voted on an important bill.
+
+1. the [organization](/specs/organization.html) that is voting
 
     >In the House of Representatives of New Zealand, the parties cast the votes, not the members.
 
@@ -29,12 +36,13 @@ A vote is one person's vote in a vote event.
 1. the voter's role in the event
 
     >In the House of Commons of the United Kingdom, the tellers are the members who count the votes.
+    >Eve analyzes the chair's behavior on tie votes.
 
 1. the weight of the voter's vote
 
     >In the House of Representatives of New Zealand, the weight of a party's vote is equal to the number of members of the party.
 
-1. the person with whom the voter is paired
+1. the [person](/specs/person.html) with whom the voter is paired
 
     >[In some legislatures](http://en.wikipedia.org/wiki/Pair_%28parliamentary_convention%29), two members from opposing parties may agree to abstain when one member is unable to vote.
 
@@ -66,12 +74,12 @@ Few specifications exist for individual votes, and few legislatures publish vote
     <tr id="opengov:organization">
       <td>organization</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#organization">opengov:organization</a></code></td>
-      <td>the organization that is voting<a href="#note1"><sup>1</sup></a></td>
+      <td>the organization that is voting</td>
     </tr>
     <tr id="opengov:option">
       <td>option</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#option">opengov:option</a></code></td>
-      <td>the option chosen by the voter</td>
+      <td>the option chosen by the voter, whether actively or passively<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="opengov:role">
       <td>role</td>
@@ -91,9 +99,10 @@ Few specifications exist for individual votes, and few legislatures publish vote
   </tbody>
 </table>
 
-Please see the [Vote event](/specs/vote-event.html) document.
+* The `organization` property <em class="rfc2119">must not</em> be used if a person is voting.
+* Pairing agreements exist outside vote events and may not be respected. The `pair` property <em class="rfc2119">must not</em> be used unless the pairing agreement is respected.
 
-<p class="note" id="note1">1. This property <em class="rfc2119">must not</em> be used if a person is voting.</p>
+<p class="note" id="note1">1. For example, `"absent"` and `"not voting"` are valid values of the `option` property.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 

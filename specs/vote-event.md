@@ -18,7 +18,7 @@ A vote event is an event at which people's votes are recorded.
 
     >Vote No. 42
 
-1. the motion on which people are voting
+1. the [motion](/specs/motion.html) on which people are voting
 
     >That the House do now proceed to the Orders of the Day.
 
@@ -30,11 +30,11 @@ A vote event is an event at which people's votes are recorded.
 
     >January 1, 2013 at 12:45pm
 
-1. the vote totals
+1. the [vote totals](/specs/count.html)
 
     >Yeas: 128, Nays: 145
 
-1. the individual votes
+1. the [individual votes](/specs/vote.html)
 
     >John Doe cast a vote in favor of the motion.
 
@@ -91,7 +91,9 @@ Few specifications exist for vote events, and few legislatures publish vote data
   </tbody>
 </table>
 
-Please see the [Motion](/specs/motion.html), [Vote count](/specs/count.html) and [Vote](/specs/vote.html) documents.
+* The vote totals <em class="rfc2119">may</em> exclude the options that have no effect on the result, such as abstentions.
+* The individual votes <em class="rfc2119">may</em> not include all present voters.
+* The vote totals <em class="rfc2119">may</em> disagree with the individual votes.
 
 <h1 id="serialization">4. Serialization</h1>
 

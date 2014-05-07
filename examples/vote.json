@@ -1,4 +1,5 @@
 {
+  "vote_event_id": "vote-42",
   "person_id": "john-q-public",
   "option": "Abstain",
   "role": "chair",
