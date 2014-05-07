@@ -40,7 +40,7 @@ A vote event is an event at which people's votes are recorded.
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Few specifications exist for vote events, and few legislatures publish vote data in a machine-readable format. The [inventory or terms](/appendices/terms.html) shows little agreement between specifications.
+Few specifications exist for vote events, and few legislatures publish vote data in a machine-readable format. The [inventory of terms](/appendices/terms.html) shows little agreement between specifications.
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
