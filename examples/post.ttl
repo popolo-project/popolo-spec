@@ -3,6 +3,7 @@
 <http://example.com/posts/abc-inc-chef.ttl>
   a org:Post;
   skos:prefLabel "Chef at Joe's Diner"@en;
+  skos:altLabel "Cook"@en;
   org:role [a org:Role; skos:prefLabel "Chef"@en];
   org:postIn <http://example.com/organizations/abc-inc.ttl>;
   rdfs:seeAlso <http://example.com/abc-inc/staff> .

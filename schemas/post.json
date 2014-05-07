@@ -13,6 +13,13 @@
       "description": "A label describing the post",
       "type": ["string", "null"]
     },
+    "other_label": {
+      "description": "An alternate label",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "role": {
       "description": "The function that the holder of the post fulfills",
       "type": ["string", "null"]
