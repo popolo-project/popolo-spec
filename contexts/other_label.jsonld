@@ -1,0 +1,5 @@
+{
+  "OtherLabel": "http://www.w3.org/ns/opengov#OtherLabel",
+  "label": "http://www.w3.org/2004/02/skos/core#altLabel",
+  "note": "http://www.w3.org/2004/02/skos/core#note"
+}

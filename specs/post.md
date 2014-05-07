@@ -27,6 +27,10 @@ The Post class should have properties for:
 
     >Member of Parliament for Avalon
 
+1. alternate labels
+
+    >"CEO" is an abbreviation of "Chief Executive Officer".
+
 1. the function that the holder of the post fulfills
 
     >Member of Parliament
@@ -100,6 +104,11 @@ According to the Organization ontology, either a person or an organization can h
       <td><code><a href="http://www.w3.org/TR/skos-reference/#labels" title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
       <td>A label describing the post</td>
     </tr>
+    <tr id="skos:altLabel">
+      <td>alternate label</td>
+      <td><code><a href="http://www.w3.org/TR/skos-reference/#labels" title="http://www.w3.org/2004/02/skos/core#altLabel">skos:altLabel</a></code></td>
+      <td>An alternate label, such as an abbreviation</td>
+    </tr>
     <tr id="org:role">
       <td>role<a href="#note1"><sup>1</sup></a></td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:role" title="http://www.w3.org/ns/org#role">org:role</a></code></td>
@@ -143,6 +152,8 @@ A post cannot exist outside an organization. All posts <em class="rfc2119">must<
 **JSON differences from other RDF serializations:**
 
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
+* The term `other_labels` is used instead of `altLabel` to be consistent with other classes.
+* The alternate label property's value is an array of [label objects](/specs/#other-label).
 * The value of the `role` property is a string, instead of an `org:Role`.
 * The term `organization_id` is used instead of `postIn` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
 * The terms `start_date` and `end_date` are used instead of `validFrom` and `validThrough`, to be consistent with the [Membership](/specs/membership.html) class.

@@ -382,8 +382,21 @@ If a name object sets an `end_date` property, it represents a former name. With 
   <div class="tab-pane" id="other-name-context" data-url="/contexts/other_name.jsonld"></div>
 </div>
 
+<h3 id="other-label">6.4.3 Other label</h3>
+
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#other-label-schema">JSON Schema</a></li>
+  <li><a href="#other-label-context">JSON-LD Context</a></li>
+</ul>
+
+<div class="tab-content no-js">
+  <div class="tab-pane active" id="other-label-schema" data-url="/schemas/other_label.json"></div>
+  <div class="tab-pane" id="other-label-context" data-url="/contexts/other_label.jsonld"></div>
+</div>
+
 <h1 id="history">7. Change history</h1>
 
+* 2014-05-07: Add an alternate label property to the Post class.
 * 2014-05-06: Add Motion, VoteEvent, Count and Vote classes.
 * 2014-03-28: Add name component properties to `opengov:OtherName`.
 * 2014-02-10: `name` and `label` are no longer required properties in the JSON Schema.
