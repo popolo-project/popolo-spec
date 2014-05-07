@@ -95,12 +95,12 @@ According to the Organization ontology, either a person or an organization can h
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:Post" title="http://www.w3.org/ns/org#Post">org:Post</a></code></td>
       <td>A position that exists independent of the person holding it</td>
     </tr>
-    <tr id="skos:prefLabel2">
+    <tr id="skos:prefLabel">
       <td>label</td>
       <td><code><a href="http://www.w3.org/TR/skos-reference/#labels" title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></code></td>
       <td>A label describing the post</td>
     </tr>
-    <tr id="org:role-Post">
+    <tr id="org:role">
       <td>role<a href="#note1"><sup>1</sup></a></td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:role" title="http://www.w3.org/ns/org#role">org:role</a></code></td>
       <td>The function that the holder of the post fulfills</td>
