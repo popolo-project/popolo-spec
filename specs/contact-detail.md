@@ -36,6 +36,14 @@ The ContactDetail class should have properties for:
 
     >e.g. for grouping contact details by physical location.
 
+1. the date from which the contact detail is valid
+
+    >A member of parliament is changing address as of next month.
+
+1. the date from which the contact detail is no longer valid
+
+    >Three years ago, an MP's office shared an address with a business whose owner the MP presently claims not to know.
+
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
 The [survey of existing specifications](/appendices/survey.html) found that [RFC 6350 (vCard 4.0)](http://tools.ietf.org/html/rfc6350), with its RDF mappings, is the only vocabulary to meet all [requirements](#use-cases-and-requirements). Few specification allow for the ad hoc definition of contact details. Ultimately, only the data model – consisting of RDF, RDF Schema, and <abbr title="Simple Knowledge Organization System">SKOS</abbr> terms – was reused.
@@ -75,6 +83,16 @@ The [survey of existing specifications](/appendices/survey.html) found that [RFC
       <td>note</td>
       <td><code><a href="http://www.w3.org/TR/skos-reference/#notes" title="http://www.w3.org/2004/02/skos/core#note">skos:note</a></code></td>
       <td>A note, e.g. for grouping contact details by physical location</td>
+    </tr>
+    <tr id="schema:validFrom">
+      <td>valid from</td>
+      <td><code><a href="http://schema.org/validFrom" title="http://schema.org/validFrom">schema:validFrom</a></code></td>
+      <td>The date from which the contact detail is valid</td>
+    </tr>
+    <tr id="schema:validThrough">
+      <td>valid through</td>
+      <td><code><a href="http://schema.org/validThrough" title="http://schema.org/validThrough">schema:validThrough</a></code></td>
+      <td>The date from which the contact detail is no longer valid</td>
     </tr>
   </tbody>
 </table>

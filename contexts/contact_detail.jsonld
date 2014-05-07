@@ -4,6 +4,14 @@
   "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
   "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
   "note": "http://www.w3.org/2004/02/skos/core#note",
+  "valid_from": {
+    "@id": "http://schema.org/validFrom",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "valid_through": {
+    "@id": "http://schema.org/validThrough",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
   "created_at": {
     "@id": "http://purl.org/dc/terms/created",
     "@type": "http://www.w3.org/2001/XMLSchema#dateTime"

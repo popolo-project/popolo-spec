@@ -1,7 +1,10 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
 <http://example.com/contact_details/example.ttl>
   a vcard:Voice;
   rdfs:label "Phone number";
   rdf:value "+1-555-555-0199;ext=555";
-  skos:note "Capitol Hill"@en .
+  skos:note "Capitol Hill"@en;
+  schema:validFrom "1970-01"^^xsd:gYearMonth;
+  schema:validThrough "1971-12-31"^^xsd:date .

@@ -23,6 +23,16 @@
       "description": "A note, e.g. for grouping contact details by physical location",
       "type": ["string", "null"]
     },
+    "valid_from": {
+      "description": "The date from which the contact detail is valid",
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+    },
+    "valid_through": {
+      "description": "The date from which the contact detail is no longer valid",
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+    },
     "created_at": {
       "description": "The time at which the resource was created",
       "type": ["string", "null"],
