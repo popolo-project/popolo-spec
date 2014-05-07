@@ -13,11 +13,11 @@
       "description": "A label describing the post",
       "type": ["string", "null"]
     },
-    "other_labels": {
-      "description": "Alternate labels",
+    "other_label": {
+      "description": "An alternate label",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/other_label.json#"
+        "type": "string"
       }
     },
     "role": {

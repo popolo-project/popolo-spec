@@ -1,12 +1,7 @@
 {
   "id": "abc-inc-chef",
   "label": "Chef at Joe's Diner",
-  "other_labels": [
-    {
-      "label": "Cook",
-      "note": "familiar"
-    }
-  ],
+  "other_label": ["Cook"],
   "role": "Chef",
   "organization_id": "abc-inc",
   "start_date": "1950",

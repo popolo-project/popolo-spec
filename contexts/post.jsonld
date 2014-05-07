@@ -1,10 +1,7 @@
 {
   "Post": "http://www.w3.org/ns/org#Post",
   "label": "http://www.w3.org/2004/02/skos/core#prefLabel",
-  "other_labels": {
-    "@id": "http://www.w3.org/ns/opengov#otherLabel",
-    "@type": "@id"
-  },
+  "other_label": "http://www.w3.org/2004/02/skos/core#altLabel",
   "role": {
     "@id": "http://www.w3.org/ns/org#role",
     "@type": "@id"

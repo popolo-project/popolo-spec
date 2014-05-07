@@ -152,8 +152,7 @@ A post cannot exist outside an organization. All posts <em class="rfc2119">must<
 **JSON differences from other RDF serializations:**
 
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
-* The term `other_labels` is used instead of `altLabel` to be consistent with other classes.
-* The alternate label property's value is an array of [label objects](/specs/#other-label).
+* The term `other_label` is used instead of `altLabel` to be consistent with other classes using `other_names`.
 * The value of the `role` property is a string, instead of an `org:Role`.
 * The term `organization_id` is used instead of `postIn` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
 * The terms `start_date` and `end_date` are used instead of `validFrom` and `validThrough`, to be consistent with the [Membership](/specs/membership.html) class.
