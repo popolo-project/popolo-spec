@@ -70,52 +70,52 @@ Few specifications exist for motions, and few legislatures publish motions in a 
     <tr id="opengov:Motion">
       <td>Motion</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#Motion">opengov:Motion</a></code></td>
-      <td>a formal step to introduce a matter for consideration by a group</td>
+      <td>A formal step to introduce a matter for consideration by a group</td>
     </tr>
     <tr id="opengov:organization">
       <td>organization</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#organization">opengov:organization</a></code></td>
-      <td>the organization in which the motion is proposed</td>
+      <td>The organization in which the motion is proposed</td>
     </tr>
     <tr id="opengov:context">
       <td>context</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#context">opengov:context</a></code></td>
-      <td>the legislative context in which the motion is proposed</td>
+      <td>The legislative context in which the motion is proposed</td>
     </tr>
     <tr id="dcterms:creator">
       <td>creator</td>
       <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-creator" title="http://purl.org/dc/terms/creator">dcterms:creator</a></code></td>
-      <td>the person who proposed the motion</td>
+      <td>The person who proposed the motion</td>
     </tr>
     <tr id="schema:text">
       <td>text</td>
       <td><code><a href="http://schema.org/text" title="http://schema.org/text">schema:text</a></code></td>
-      <td>the transcript or text of the motion</td>
+      <td>The transcript or text of the motion</td>
     </tr>
     <tr id="dcterms:subject">
       <td>subject</td>
       <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-subject" title="http://purl.org/dc/terms/subject">dcterms:subject</a></code></td>
-      <td>the subject of the motion</td>
+      <td>The subject of the motion</td>
     </tr>
     <tr id="dcterms:date">
       <td>proposal date</td>
       <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-date" title="http://purl.org/dc/terms/date">dcterms:date</a></code></td>
-      <td>the date on which the motion was proposed</td>
+      <td>The date on which the motion was proposed</td>
     </tr>
     <tr id="opengov:requirements">
       <td>requirements</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#requirements">opengov:requirements</a></code></td>
-      <td>the requirements for the motion to be adopted</td>
+      <td>The requirements for the motion to be adopted</td>
     </tr>
     <tr id="opengov:result">
       <td>result</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#result">opengov:result</a></code></td>
-      <td>the result of the motion</td>
+      <td>The result of the motion</td>
     </tr>
     <tr id="opengov:voteEvent">
       <td>vote event</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#voteEvent">opengov:voteEvent</a></code></td>
-      <td>an event at which people vote on the motion</td>
+      <td>An event at which people vote on the motion</td>
     </tr>
   </tbody>
 </table>

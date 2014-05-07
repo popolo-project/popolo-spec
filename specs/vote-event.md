@@ -71,22 +71,22 @@ Few specifications exist for vote events, and few legislatures publish vote data
     <tr id="schema:startDate">
       <td>start time</td>
       <td><code><a href="http://schema.org/startDate" title="http://schema.org/startDate">schema:startDate</a></code></td>
-      <td>the time at which the event begins</td>
+      <td>The time at which the event begins</td>
     </tr>
     <tr id="schema:endDate">
       <td>end time</td>
       <td><code><a href="http://schema.org/endDate" title="http://schema.org/endDate">schema:endDate</a></code></td>
-      <td>the time at which the event ends</td>
+      <td>The time at which the event ends</td>
     </tr>
     <tr id="opengov:count">
       <td>count</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#count">opengov:count</a></code></td>
-      <td>the number of votes for one option</td>
+      <td>The number of votes for one option</td>
     </tr>
     <tr id="opengov:vote">
       <td>vote</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#vote">opengov:vote</a></code></td>
-      <td>one person's vote</td>
+      <td>One person's vote</td>
     </tr>
   </tbody>
 </table>

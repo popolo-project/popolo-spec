@@ -68,37 +68,37 @@ Few specifications exist for individual votes, and few legislatures publish vote
     <tr id="opengov:Vote">
       <td>Vote</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#Vote">opengov:Vote</a></code></td>
-      <td>a voter's vote in a vote event</td>
+      <td>A voter's vote in a vote event</td>
     </tr>
     <tr id="opengov:person">
       <td>person</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#person">opengov:person</a></code></td>
-      <td>the person who is voting</td>
+      <td>The person who is voting</td>
     </tr>
     <tr id="opengov:organization">
       <td>organization</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#organization">opengov:organization</a></code></td>
-      <td>the organization that is voting</td>
+      <td>The organization that is voting</td>
     </tr>
     <tr id="opengov:option">
       <td>option</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#option">opengov:option</a></code></td>
-      <td>the option chosen by the voter, whether actively or passively<a href="#note1"><sup>1</sup></a></td>
+      <td>The option chosen by the voter, whether actively or passively<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="opengov:role">
       <td>role</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#role">opengov:role</a></code></td>
-      <td>the voter's role in the event</td>
+      <td>The voter's role in the event</td>
     </tr>
     <tr id="opengov:weight">
       <td>weight</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#weight">opengov:weight</a></code></td>
-      <td>the weight of the voter's vote<a href="#note2"><sup>2</sup></a></td>
+      <td>The weight of the voter's vote<a href="#note2"><sup>2</sup></a></td>
     </tr>
     <tr id="opengov:pair">
       <td>pair</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#pair">opengov:pair</a></code></td>
-      <td>a person with whom the voter is paired</td>
+      <td>A person with whom the voter is paired</td>
     </tr>
   </tbody>
 </table>

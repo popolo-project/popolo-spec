@@ -44,17 +44,17 @@ Few specifications exist for vote totals, and few legislatures publish vote data
     <tr id="opengov:Count">
       <td>Count</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#Count">opengov:Count</a></code></td>
-      <td>the number of votes for an option in a vote event</td>
+      <td>The number of votes for an option in a vote event</td>
     </tr>
     <tr id="opengov:option">
       <td>option</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#option">opengov:option</a></code></td>
-      <td>an option in a vote event</td>
+      <td>An option in a vote event</td>
     </tr>
     <tr id="opengov:value">
       <td>value</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#value">opengov:value</a></code></td>
-      <td>the number of votes for the option</td>
+      <td>The number of votes for the option</td>
     </tr>
   </tbody>
 </table>
