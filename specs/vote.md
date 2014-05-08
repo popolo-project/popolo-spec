@@ -68,6 +68,11 @@ Few specifications exist for individual votes, and few legislatures publish vote
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#Vote">opengov:Vote</a></code></td>
       <td>A voter's vote in a vote event</td>
     </tr>
+    <tr id="opengov:voteEvent">
+      <td>vote event</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#voteEvent">opengov:voteEvent</a></code></td>
+      <td>The vote event</td>
+    </tr>
     <tr id="opengov:voter">
       <td>voter</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#voter">opengov:voter</a></code></td>

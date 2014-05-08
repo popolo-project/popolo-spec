@@ -46,9 +46,14 @@ Few specifications exist for vote totals, and few legislatures publish vote data
       <td>No <code>rdf:type</code></td>
       <td>The number of votes for an option in a vote event</td>
     </tr>
+    <tr id="opengov:voteEvent">
+      <td>vote event</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#voteEvent">opengov:voteEvent</a></code></td>
+      <td>The vote event</td>
+    </tr>
     <tr id="rdf:type">
       <td>option</td>
-      <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></code><a href="#note1"><sup>1</sup></a></td>
+      <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></code></td>
       <td>An option in a vote event</td>
     </tr>
     <tr id="rdf:value">
