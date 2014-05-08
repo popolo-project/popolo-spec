@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix opengov: <http://www.w3.org/ns/opengov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+<http://example.com/motions/example.ttl>
+  a opengov:Motion;
+  opengov:organization <http://example.com/organizations/house-of-commons.ttl>;
+  opengov:context ;
+  dcterms:creator <http://example.com/people/john-doe.ttl>;
+  schema:text "That the Bill is to be read a second time.";
+  dcterms:subject <http://example.com/bills/bill-84.ttl>;
+  dcterms:date "2013-01-01"^^dcterms:W3CDTF;
+  opengov:requirements [a opengov:TwoThirdsMajority];
+  opengov:result [a opengov:Pass];
+  opengov:voteEvent <http://example.com/vote_events/vote-42.ttl>.

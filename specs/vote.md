@@ -73,9 +73,9 @@ Few specifications exist for individual votes, and few legislatures publish vote
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#voteEvent">opengov:voteEvent</a></code></td>
       <td>The vote event</td>
     </tr>
-    <tr id="opengov:voter">
+    <tr id="schema:agent">
       <td>voter</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#voter">opengov:voter</a></code></td>
+      <td><code><a href="http://schema.org/agent" title="http://schema.org/agent">schema:agent</a></code></td>
       <td>The [person](/specs/person.html) or [organization](/specs/organization.html) that is voting</td>
     </tr>
     <tr id="opengov:option">

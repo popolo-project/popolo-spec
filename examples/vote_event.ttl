@@ -1,0 +1,23 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix opengov: <http://www.w3.org/ns/opengov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+<http://example.com/vote_events/example.ttl>
+  a opengov:VoteEvent;
+  opengov:motion [
+    a opengov:Motion;
+    schema:text "That the House do now proceed to the Orders of the Day."
+  ];
+  schema:startDate "2013-01-01T12:30Z"^^dcterms:W3CDTF;
+  schema:endDate "2013-01-01T12:45Z"^^dcterms:W3CDTF;
+  opengov:count [
+    a opengov:YesCount;
+    rdf:value 128
+  ], [
+    a opengov:NoCount;
+    rdf:value 145
+  ];
+  opengov:vote [
+    a opengov:YesVote;
+    schema:agent <http://example.com/people/john-q-public.ttl>
+  ] .
