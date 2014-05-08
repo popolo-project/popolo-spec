@@ -70,14 +70,14 @@ Few specifications exist for individual votes, and few legislatures publish vote
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#Vote">opengov:Vote</a></code></td>
       <td>A voter's vote in a vote event</td>
     </tr>
-    <tr id="opengov:person">
+    <tr id="opengov:voter">
       <td>person</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#person">opengov:person</a></code></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#voter">opengov:voter</a></code></td>
       <td>The person who is voting</td>
     </tr>
-    <tr id="opengov:organization">
+    <tr id="opengov:voter">
       <td>organization</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#organization">opengov:organization</a></code></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#voter">opengov:voter</a></code></td>
       <td>The organization that is voting</td>
     </tr>
     <tr id="opengov:option">
@@ -105,7 +105,7 @@ Few specifications exist for individual votes, and few legislatures publish vote
 
 * The `person` property <em class="rfc2119">must not</em> be used if an organization is voting.
 * The `organization` property <em class="rfc2119">must not</em> be used if a person is voting.
-* "Pairing" refers to a reciprocal agreement between two voters by which a voter abstains if the other is unable to vote. However, a voter may not honor the agreement. The agreement is not in effect if both voters are able to vote. The `pair` property <em class="rfc2119">must not</em> be used unless the agreement is honored and in effect.
+* "Pairing" generally refers to a reciprocal agreement between two voters by which a voter abstains if the other is unable to vote. The pairing agreement is not always in force and respected; for example, if both voters are voting or if a voter breaks the agreement. The `pair` property <em class="rfc2119">must not</em> be used unless a pairing agreement is, in fact, respected.
 
 <p class="note" id="note1">1. For example, `"absent"` and `"not voting"` are valid values of the `option` property.</p>
 <p class="note" id="note2">2. The default value for a vote's weight is `1`.</p>
