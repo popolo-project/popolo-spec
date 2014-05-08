@@ -1,8 +1,12 @@
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix opengov: <http://www.w3.org/ns/opengov#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 <http://example.com/organizations/abc-inc.ttl>
   a org:Organization;
   skos:prefLabel "ABC, Inc."@en;
@@ -12,6 +16,13 @@
   org:identifier "US0123456789"^^ex:isin;
   org:classification [a skos:Concept; skos:prefLabel "Corporation"@en];
   org:subOrganizationOf <http://example.com/organizations/holding-company-corp.ttl>;
-  schema:foundingDate "1950-01-01"^^xsd:date;
+  schema:foundingDate "1950-01-01"^^dcterms:W3CDTF;
+  opengov:dissolutionDate "2000-01-01"^^dcterms:W3CDTF;
   schema:image <http://www.example.com/pub/photos/logo.gif>;
+  opengov:contactDetail [
+    a vcard:Voice;
+    rdfs:label "Toll-free number";
+    rdf:value "+1-800-555-0199";
+    skos:note "9am to 5pm weekdays"
+  ];
   rdfs:seeAlso <http://en.wikipedia.org/wiki/Joe's_Diner_(placeholder_name)> .

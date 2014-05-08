@@ -1,6 +1,6 @@
-@prefix person: <http://www.w3.org/ns/person#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix person: <http://www.w3.org/ns/person#> .
 <http://example.com/people/john-q-public.ttl>
   a person:Person;
   foaf:name "Mr. John Q. Public Esq.";

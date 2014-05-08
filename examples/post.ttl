@@ -1,9 +1,19 @@
+@prefix opengov: <http://www.w3.org/ns/opengov#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 <http://example.com/posts/abc-inc-chef.ttl>
   a org:Post;
   skos:prefLabel "Chef at Joe's Diner"@en;
   skos:altLabel "Cook"@en;
   org:role [a org:Role; skos:prefLabel "Chef"@en];
   org:postIn <http://example.com/organizations/abc-inc.ttl>;
+  opengov:contactDetail [
+    a vcard:Voice;
+    rdfs:label "Take-out and delivery";
+    rdf:value "+1-800-555-0199";
+    skos:note "12pm to midnight"
+  ];
   rdfs:seeAlso <http://example.com/abc-inc/staff> .

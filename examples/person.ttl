@@ -1,20 +1,29 @@
-@prefix person: <http://www.w3.org/ns/person#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ex: <http://example.org/> .
-@prefix schema: <http://schema.org/> .
-@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix opengov: <http://www.w3.org/ns/opengov#> .
+@prefix person: <http://www.w3.org/ns/person#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 <http://example.com/people/john-q-public.ttl>
   a person:Person;
   foaf:name "Mr. John Q. Public Esq.";
   foaf:nick "046454286"^^ex:sin;
   schema:email <mailto:jqpublic@xyz.example.com>;
   foaf:gender "male";
-  schema:birthDate "1920-01"^^xsd:gYearMonth;
-  schema:deathDate "2010-01-01"^^xsd:date;
+  schema:birthDate "1920-01"^^dcterms:W3CDTF;
+  schema:deathDate "2010-01-01"^^dcterms:W3CDTF;
   schema:image <http://www.example.com/pub/photos/jqpublic.gif>;
   bio:olb "A hypothetical member of society deemed a 'common man'";
   bio:biography "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...";
+  opengov:nationalIdentity "Scottish";
+  opengov:contactDetail [
+    a vcard:Cell;
+    rdfs:label "Mobile number";
+    rdf:value "+1-555-555-0100";
+    skos:note "Free evenings and weekends"
+  ];
   rdfs:seeAlso <http://en.wikipedia.org/wiki/John_Q._Public> .

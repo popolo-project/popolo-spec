@@ -1,14 +1,24 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix opengov: <http://www.w3.org/ns/opengov#> .
 @prefix org: <http://www.w3.org/ns/org#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix time: <http://www.w3.org/2006/time#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 <http://example.com/memberships/593.ttl>
   a org:Membership;
   skos:prefLabel "Kitchen assistant at Joe's Diner"@en;
   org:role [a org:Role; skos:prefLabel "Kitchen assistant"@en];
   org:member <http://example.com/people/john-q-public.ttl>;
   org:organization <http://example.com/organizations/abc-inc.ttl>;
-  schema:validFrom "1970-01"^^xsd:gYearMonth;
-  schema:validUntil "1971-12-31"^^xsd:date;
+  opengov:post <http://example.com/posts/abc-inc-kitchen-assistant>;
+  schema:validFrom "1970-01"^^dcterms:W3CDTF;
+  schema:validUntil "1971-12-31"^^dcterms:W3CDTF;
+  opengov:contactDetail [
+    a vcard:Voice;
+    rdfs:label "Take-out and delivery";
+    rdf:value "+1-800-555-0199";
+    skos:note "12pm to midnight"
+  ];
   rdfs:seeAlso <http://example.com/abc-inc/staff> .

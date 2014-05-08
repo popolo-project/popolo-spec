@@ -223,7 +223,7 @@ Given that the same RDF resource can be serialized in many different ways using 
 * The value of the `links` and `sources` properties <em class="rfc2119">should</em> be an array of URIs, not an array of [link objects](/specs/#link).
 * A JSON-LD serialization <em class="rfc2119">should</em> use the `@id`, `on_behalf_of`, `organization`, `parent`, `person` and `post` properties instead of `id`, `on_behalf_of_id`, `organization_id`, `parent_id`, `person_id` and `post_id`.
 
-Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>3</sup>](#note3) is <em class="rfc2119">recommended</em>.
+Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>3</sup>](#note3) is <em class="rfc2119">recommended</em>. In RDF, the [`dcterms:W3CDTF`](http://www.w3.org/TR/NOTE-datetime) datatype is <em class="rfc2119">recommended</em>.
 
 Additional serialization details are given in the subdocuments in the [previous section](#classes-and-properties).
 

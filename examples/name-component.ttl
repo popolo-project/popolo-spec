@@ -1,7 +1,7 @@
-@prefix person: <http://www.w3.org/ns/person#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix schema: <http://schema.org/> .
 @prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix person: <http://www.w3.org/ns/person#> .
+@prefix schema: <http://schema.org/> .
 <http://example.com/people/john-q-public.ttl>
   a person:Person;
   foaf:name "Mr. John Q. Public Esq.";
