@@ -9,11 +9,11 @@
   "patronymic_name": "http://www.w3.org/ns/person#patronymicName",
   "start_date": {
     "@id": "http://schema.org/validFrom",
-    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "end_date": {
     "@id": "http://schema.org/validUntil",
-    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "note": "http://www.w3.org/2004/02/skos/core#note"
 }

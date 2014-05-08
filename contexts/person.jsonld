@@ -22,11 +22,11 @@
   "gender": "http://xmlns.com/foaf/0.1/gender",
   "birth_date": {
     "@id": "http://schema.org/birthDate",
-    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "death_date": {
     "@id": "http://schema.org/deathDate",
-    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "image": {
     "@id": "http://schema.org/image",
@@ -49,11 +49,11 @@
   },
   "created_at": {
     "@id": "http://purl.org/dc/terms/created",
-    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "updated_at": {
     "@id": "http://purl.org/dc/terms/modified",
-    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "sources": {
     "@id": "http://purl.org/dc/terms/source",

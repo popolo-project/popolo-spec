@@ -221,7 +221,6 @@ Given that the same RDF resource can be serialized in many different ways using 
 * The value of the `type` property of a `ContactDetail` <em class="rfc2119">should</em> be a [node type](http://json-ld.org/spec/latest/json-ld/#dfn-node-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
 * The value of the `scheme` property of an `Identifier` <em class="rfc2119">should</em> be a [value type](http://json-ld.org/spec/latest/json-ld/#dfn-value-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
 * The value of the `links` and `sources` properties <em class="rfc2119">should</em> be an array of URIs, not an array of [link objects](/specs/#link).
-* All date properties are type coerced to `xsd:dateTime`, unless `@type` is overridden.
 * A JSON-LD serialization <em class="rfc2119">should</em> use the `@id`, `on_behalf_of`, `organization`, `parent`, `person` and `post` properties instead of `id`, `on_behalf_of_id`, `organization_id`, `parent_id`, `person_id` and `post_id`.
 
 Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>3</sup>](#note3) is <em class="rfc2119">recommended</em>.

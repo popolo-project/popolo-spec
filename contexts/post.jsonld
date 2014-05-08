@@ -12,11 +12,11 @@
   },
   "start_date": {
     "@id": "http://schema.org/validFrom",
-    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "end_date": {
     "@id": "http://schema.org/validUntil",
-    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "contact_details": {
     "@id": "http://www.w3.org/ns/opengov#contactDetail",
@@ -32,11 +32,11 @@
   },
   "created_at": {
     "@id": "http://purl.org/dc/terms/created",
-    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "updated_at": {
     "@id": "http://purl.org/dc/terms/modified",
-    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "sources": {
     "@id": "http://purl.org/dc/terms/source",
