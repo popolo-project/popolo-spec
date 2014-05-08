@@ -32,8 +32,8 @@
   "image": "http://www.example.com/pub/photos/logo.gif",
   "contact_details": [
     {
-      "label": "Toll-free number",
       "type": "voice",
+      "label": "Toll-free number",
       "value": "+1-800-555-0199",
       "note": "9am to 5pm weekdays"
     }

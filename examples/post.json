@@ -8,8 +8,8 @@
   "end_date": "2010",
   "contact_details": [
     {
-      "label": "Take-out and delivery",
       "type": "voice",
+      "label": "Take-out and delivery",
       "value": "+1-800-555-0199",
       "note": "12pm to midnight"
     }

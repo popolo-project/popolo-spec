@@ -29,8 +29,8 @@
   "national_identity": "Scottish",
   "contact_details": [
     {
-      "label": "Mobile number",
       "type": "cell",
+      "label": "Mobile number",
       "value": "+1-555-555-0100",
       "note": "Free evenings and weekends"
     }
