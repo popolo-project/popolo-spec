@@ -1,6 +1,6 @@
 {
   "vote_event_id": "vote-42",
-  "person_id": "john-q-public",
+  "voter_id": "john-q-public",
   "option": "paired",
   "role": "chair",
   "pair_id": "joe-bloggs"

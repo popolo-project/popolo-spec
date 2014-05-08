@@ -260,12 +260,15 @@ Jane Q. Citizen, a person, and her memberships:
 
 <h2 id="party-vote">3.1. A vote by a political party</h2>
 
-In the House of Representatives of New Zealand, the parties cast the votes, not the members:
+In the [House of Representatives of New Zealand](http://www.parliament.nz/en-nz/features/00NZPHomeNews20121019a1/conscience-votes), the parties regularly cast the votes, not the members. As such, the `voter` property must override the `@type`:
 
 ```json
 {
   "vote_event_id": "vote-21",
-  "organization_id": "national-party",
+  "voter": {
+    "@type": "Organization",
+    "id": "national-party"
+  },
   "option": "yes",
   "weight": 59
 }

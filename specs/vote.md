@@ -10,7 +10,7 @@ id: vote
   <li class="active">Vote</li>
 </ul>
 
-A vote is one person's vote in a vote event.
+A vote is one voter's vote in a vote event.
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
@@ -18,7 +18,7 @@ A vote is one person's vote in a vote event.
 
     >Vote No. 42
 
-1. the [person](/specs/person.html) who is voting
+1. voter
 
     >Alice uses voting records to identify voting blocs.
 
@@ -28,9 +28,7 @@ A vote is one person's vote in a vote event.
 
     >Dave checks how political parties voted on an important bill.
 
-1. the [organization](/specs/organization.html) that is voting
-
-    >In the House of Representatives of New Zealand, the parties cast the votes, not the members.
+    >In the [House of Representatives of New Zealand](http://www.parliament.nz/en-nz/features/00NZPHomeNews20121019a1/conscience-votes), the parties regularly cast the votes, not the members.
 
 1. the option chosen by the voter
 
@@ -71,14 +69,9 @@ Few specifications exist for individual votes, and few legislatures publish vote
       <td>A voter's vote in a vote event</td>
     </tr>
     <tr id="opengov:voter">
-      <td>person</td>
+      <td>voter</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#voter">opengov:voter</a></code></td>
-      <td>The person who is voting</td>
-    </tr>
-    <tr id="opengov:voter">
-      <td>organization</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#voter">opengov:voter</a></code></td>
-      <td>The organization that is voting</td>
+      <td>The [person](/specs/person.html) or [organization](/specs/organization.html) that is voting</td>
     </tr>
     <tr id="opengov:option">
       <td>option</td>
@@ -103,14 +96,16 @@ Few specifications exist for individual votes, and few legislatures publish vote
   </tbody>
 </table>
 
-* The `person` property <em class="rfc2119">must not</em> be used if an organization is voting.
-* The `organization` property <em class="rfc2119">must not</em> be used if a person is voting.
-* "Pairing" generally refers to a reciprocal agreement between two voters by which a voter abstains if the other is unable to vote. The pairing agreement is not always in force and respected; for example, if both voters are voting or if a voter breaks the agreement. The `pair` property <em class="rfc2119">must not</em> be used unless a pairing agreement is, in fact, respected.
+"Pairing" generally refers to a reciprocal agreement between two voters by which a voter abstains if the other is unable to vote. The pairing agreement is not always in force and respected; for example, if both voters are voting or if a voter breaks the agreement. The `pair` property <em class="rfc2119">must not</em> be used unless a pairing agreement is, in fact, respected.
 
 <p class="note" id="note1">1. For example, `"absent"` and `"not voting"` are valid values of the `option` property.</p>
 <p class="note" id="note2">2. The default value for a vote's weight is `1`.</p>
 
 <h1 id="serialization">4. Serialization</h1>
+
+**JSON differences from other RDF serializations:**
+
+* The value of the `voter_id` property refers to a [person](/specs/person.html).
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#vote-schema">JSON Schema</a></li>
