@@ -5,9 +5,9 @@
     "@id": "http://www.w3.org/ns/opengov#otherName",
     "@type": "@id"
   },
+  "identifiers": "http://www.w3.org/ns/org#identifier",
   "identifier": "@value",
   "scheme": "@type",
-  "identifiers": "http://www.w3.org/ns/org#identifier",
   "classification": {
     "@id": "http://www.w3.org/ns/org#classification",
     "@type": "@id"

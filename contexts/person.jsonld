@@ -5,9 +5,9 @@
     "@id": "http://www.w3.org/ns/opengov#otherName",
     "@type": "@id"
   },
+  "identifiers": "http://xmlns.com/foaf/0.1/nick",
   "identifier": "@value",
   "scheme": "@type",
-  "identifiers": "http://xmlns.com/foaf/0.1/nick",
   "family_name": "http://xmlns.com/foaf/0.1/familyName",
   "given_name": "http://xmlns.com/foaf/0.1/givenName",
   "additional_name": "http://schema.org/additionalName",
