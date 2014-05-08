@@ -2771,13 +2771,31 @@ id: data
       <tr>
         <th scope='row'>Term</th>
         <td>Vote</td>
-        <td>person</td>
-        <td>organization</td>
+        <td>voter</td>
+        <td>party</td>
         <td>option</td>
         <td>role</td>
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <th scope='row'>
+          <code>schema</code>
+        </th>
+        <td>
+        </td>
+        <td>
+          <a href='http://schema.org/agent'>
+            agent
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
       <tr>
         <th scope='row'>
           PML

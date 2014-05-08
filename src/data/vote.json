@@ -1,9 +1,15 @@
 {
+  "schema": {
+    "voter": {
+      "term": "agent",
+      "url": "http://schema.org/agent"
+    }
+  },
   "PML": {
     "Vote": {
       "term": "vote"
     },
-    "person": {
+    "voter": {
       "term": "voterID"
     },
     "option": {
@@ -14,7 +20,7 @@
     "Vote": {
       "term": "voteAtts"
     },
-    "person": {
+    "voter": {
       "term": "by"
     },
     "option": {
@@ -25,7 +31,7 @@
     }
   },
   "Canada (Hansard)": {
-    "person": {
+    "voter": {
       "term": "Affiliation"
     },
     "option": {
@@ -36,18 +42,18 @@
     "Vote": {
       "term": "RecordedVote"
     },
-    "person": {
+    "voter": {
       "term": "Participant"
     },
-    "organization": {
+    "party": {
       "term": "Party"
     }
   },
   "Germany": {
-    "person": {
+    "voter": {
       "term": "Bezeichnung"
     },
-    "organization": {
+    "party": {
       "term": "Fraktion/Gruppe"
     }
   },
@@ -55,10 +61,10 @@
     "Vote": {
       "term": "Votacion"
     },
-    "person": {
+    "voter": {
       "term": "Diputado"
     },
-    "organization": {
+    "party": {
       "term": "Grupo"
     },
     "option": {
@@ -69,10 +75,10 @@
     "Vote": {
       "term": "recorded-vote"
     },
-    "person": {
+    "voter": {
       "term": "legislator"
     },
-    "organization": {
+    "party": {
       "term": "party"
     },
     "option": {
@@ -86,10 +92,10 @@
     "Vote": {
       "term": "member"
     },
-    "person": {
+    "voter": {
       "term": "member_full"
     },
-    "organization": {
+    "party": {
       "term": "party"
     },
     "option": {
