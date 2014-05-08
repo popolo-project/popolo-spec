@@ -9,7 +9,7 @@
     "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
   },
   "valid_through": {
-    "@id": "http://schema.org/validThrough",
+    "@id": "http://schema.org/validUntil",
     "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
   },
   "created_at": {

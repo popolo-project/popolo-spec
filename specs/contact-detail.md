@@ -89,9 +89,9 @@ The [survey of existing specifications](/appendices/survey.html) found that [RFC
       <td><code><a href="http://schema.org/validFrom" title="http://schema.org/validFrom">schema:validFrom</a></code></td>
       <td>The date from which the contact detail is valid</td>
     </tr>
-    <tr id="schema:validThrough">
-      <td>valid through</td>
-      <td><code><a href="http://schema.org/validThrough" title="http://schema.org/validThrough">schema:validThrough</a></code></td>
+    <tr id="schema:validUntil">
+      <td>valid until</td>
+      <td><code><a href="http://schema.org/validUntil" title="http://schema.org/validUntil">schema:validUntil</a></code></td>
       <td>The date from which the contact detail is no longer valid</td>
     </tr>
   </tbody>

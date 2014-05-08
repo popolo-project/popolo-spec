@@ -7,4 +7,4 @@
   rdf:value "+1-555-555-0199;ext=555";
   skos:note "Capitol Hill"@en;
   schema:validFrom "1970-01"^^xsd:gYearMonth;
-  schema:validThrough "1971-12-31"^^xsd:date .
+  schema:validUntil "1971-12-31"^^xsd:date .

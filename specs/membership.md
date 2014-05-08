@@ -68,7 +68,7 @@ The Membership class should have properties for:
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that only the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a rich membership model for describing the relation between people and organizations. Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, the `schema:validFrom` and `schema:validThrough` pair is used instead of `org:memberDuring`, an alternative [described](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.
+Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that only the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a rich membership model for describing the relation between people and organizations. Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, the `schema:validFrom` and `schema:validUntil` pair is used instead of `org:memberDuring`, an alternative [described](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.
 
 ## 2.1. Range restrictions
 
@@ -125,9 +125,9 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
       <td><code><a href="http://schema.org/validFrom" title="http://schema.org/validFrom">schema:validFrom</a></code></td>
       <td>The date on which the relationship began</td>
     </tr>
-    <tr id="schema:validThrough">
+    <tr id="schema:validUntil">
       <td>end date</td>
-      <td><code><a href="http://schema.org/validThrough" title="http://schema.org/validThrough">schema:validThrough</a></code></td>
+      <td><code><a href="http://schema.org/validUntil" title="http://schema.org/validUntil">schema:validUntil</a></code></td>
       <td>The date on which the relationship ended</td>
     </tr>
     <tr id="opengov:contactDetail">
@@ -153,7 +153,7 @@ A membership relation cannot exist without both a person and an organization. Al
 
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
 * The value of the `role` property is a string, instead of an `org:Role`.
-* The terms `start_date` and `end_date`[<sup>2</sup>](#note2) are used instead of `validFrom` and `validThrough`, for backwards compatibility and for better semantics.
+* The terms `start_date` and `end_date`[<sup>2</sup>](#note2) are used instead of `validFrom` and `validUntil`, for backwards compatibility and for better semantics.
 * The term `person_id` is used instead of `member` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
 * The term `organization_id` is used instead of `organization` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).

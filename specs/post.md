@@ -63,7 +63,7 @@ The Post class should have properties for:
 Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that:
 
 * Only the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a sufficiently rich model for describing organizational structure.
-* `schema:validFrom`, `schema:validThrough` and [`dct:valid`](http://dublincore.org/documents/dcmi-terms/#terms-valid) are the only properties for creation dates and elimination dates.
+* `schema:validFrom`, `schema:validUntil` and [`dct:valid`](http://dublincore.org/documents/dcmi-terms/#terms-valid) are the only properties for creation dates and elimination dates.
 
 ## 2.1. Changes to data model
 
@@ -124,9 +124,9 @@ According to the Organization ontology, either a person or an organization can h
       <td><code><a href="http://schema.org/validFrom" title="http://schema.org/validFrom">schema:validFrom</a></code></td>
       <td>A date of creation</td>
     </tr>
-    <tr id="schema:validThrough">
+    <tr id="schema:validUntil">
       <td>date of elimination</td>
-      <td><code><a href="http://schema.org/validThrough" title="http://schema.org/validThrough">schema:validThrough</a></code></td>
+      <td><code><a href="http://schema.org/validUntil" title="http://schema.org/validUntil">schema:validUntil</a></code></td>
       <td>A date of elimination</td>
     </tr>
     <tr id="opengov:contactDetail">
@@ -155,7 +155,7 @@ A post cannot exist outside an organization. All posts <em class="rfc2119">must<
 * The term `other_label` is used instead of `altLabel` to be consistent with other classes using `other_names`.
 * The value of the `role` property is a string, instead of an `org:Role`.
 * The term `organization_id` is used instead of `postIn` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
-* The terms `start_date` and `end_date` are used instead of `validFrom` and `validThrough`, to be consistent with the [Membership](/specs/membership.html) class.
+* The terms `start_date` and `end_date` are used instead of `validFrom` and `validUntil`, to be consistent with the [Membership](/specs/membership.html) class.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 
 <ul class="nav nav-tabs no-js">
