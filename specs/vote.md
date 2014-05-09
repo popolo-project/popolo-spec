@@ -50,7 +50,7 @@ A vote is one voter's vote in a vote event.
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Few specifications exist for individual votes, and few legislatures publish vote data in a machine-readable format. The [inventory of terms](/appendices/terms.html) shows little agreement between specifications.
+Few specifications exist for individual votes, and few legislatures publish vote data in a machine-readable format. Schema.org and Parliamentary Metadata Language terms are retained from the [inventory of terms](/appendices/terms.html#Vote).
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
