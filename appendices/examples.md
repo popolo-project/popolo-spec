@@ -267,7 +267,7 @@ The government coalition, an organization, and its memberships:
 {
   "name": "Government",
   "founding_date": "2011-01-01",
-  "dissolution_date": "2012-12-31"
+  "dissolution_date": "2012-12-31",
   "memberships": [
     {
       "member": {
