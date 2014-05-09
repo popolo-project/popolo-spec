@@ -16,6 +16,7 @@ oparl,http://oparl.org/schema/1.0/
 org,http://www.w3.org/ns/org#
 person,http://www.w3.org/ns/person#
 poder,http://dev.poderopedia.com/vocab/
+ptop,http://www.ontotext.com/protontop#
 schema,http://schema.org/
 skos,http://www.w3.org/2004/02/skos/core#
 spatial,http://geovocab.org/spatial#

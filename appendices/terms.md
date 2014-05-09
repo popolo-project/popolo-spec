@@ -161,6 +161,14 @@ id: data
     </tr>
     <tr>
       <td>
+        <code>ptop</code>
+      </td>
+      <td>
+        <a href='http://www.ontotext.com/protontop#'>http://www.ontotext.com/protontop#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <code>schema</code>
       </td>
       <td>
@@ -1905,7 +1913,7 @@ id: data
 
 * PML Schema has the properties `startDate` and `endDate` for the dates of creation and elimination.
 
-<div class='table-responsive table-auto'>
+<div class='table-responsive'>
   <table class='table table-striped table-hover table-condensed'>
     <thead>
       <tr>
@@ -1915,9 +1923,36 @@ id: data
         <td>role</td>
         <td>organization</td>
         <td>person</td>
+        <td>date of creation</td>
+        <td>date of elimination</td>
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <th scope='row'>
+          <code>schema</code>
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://schema.org/validFrom'>
+            validFrom
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/validUntil'>
+            validUntil
+          </a>
+        </td>
+      </tr>
       <tr>
         <th scope='row'>
           <code>org</code>
@@ -1947,6 +1982,10 @@ id: data
             heldBy
           </a>
         </td>
+        <td>
+        </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -1973,6 +2012,44 @@ id: data
           </a>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>ptop</code>
+        </th>
+        <td>
+          <a href='http://www.ontotext.com/protontop#JobPosition'>
+            JobPosition
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.ontotext.com/protontop#withinOrganization'>
+            <abbr title='withinOrganization'>withinOrganizat…</abbr>
+          </a>
+        </td>
+        <td>
+          <a href='http://www.ontotext.com/protontop#holder'>
+            holder
+          </a>
+        </td>
+        <td>
+          <a href='http://www.ontotext.com/protontop#heldFrom'>
+            heldFrom
+          </a>
+        </td>
+        <td>
+          <a href='http://www.ontotext.com/protontop#heldTo'>
+            heldTo
+          </a>
         </td>
       </tr>
       <tr>
@@ -2004,6 +2081,10 @@ id: data
             roleOccupant
           </a>
         </td>
+        <td>
+        </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -2022,6 +2103,10 @@ id: data
         </td>
         <td>
           <abbr title='EmployeeReference'>EmployeeReferen…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
       </tr>
       <tr>
@@ -2042,6 +2127,10 @@ id: data
         <td>
           related_object
         </td>
+        <td>
+        </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -2057,6 +2146,10 @@ id: data
         </td>
         <td>
           category
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>

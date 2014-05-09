@@ -70,8 +70,8 @@ task :default do
       'role',
       'organization',
       'person',
-      # 'date of creation',
-      # 'date of elimination',
+      'date of creation',
+      'date of elimination',
     ],
     address: [
       'Address',
