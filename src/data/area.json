@@ -1,0 +1,134 @@
+{
+  "schema": {
+    "Area": {
+      "term": "Place",
+      "url": "http://schema.org/Place"
+    },
+    "name": {
+      "term": "name",
+      "url": "http://schema.org/name"
+    },
+    "parent_id": {
+      "term": "containedIn",
+      "url": "http://schema.org/containedIn"
+    },
+    "geometry": {
+      "term": "geo",
+      "url": "http://schema.org/geo"
+    }
+  },
+  "gadm": {
+    "Area": {
+      "label": "see <code>spatial</code>"
+    },
+    "name": {
+      "term": "name",
+      "url": "http://gadm.geovocab.org/ontology#name"
+    },
+    "identifier": {
+      "term": "has_code",
+      "url": "http://gadm.geovocab.org/ontology#has_code"
+    },
+    "classification": {
+      "term": "type",
+      "url": "http://gadm.geovocab.org/ontology#type"
+    },
+    "parent_id": {
+      "label": "see <code>spatial</code>"
+    }
+  },
+  "geo": {
+    "Area": {
+      "term": "SpatialThing",
+      "url": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "geometry": {
+      "term": "location",
+      "url": "http://www.w3.org/2003/01/geo/wgs84_pos#location"
+    }
+  },
+  "geom": {
+    "geometry": {
+      "term": "geometry",
+      "url": "http://geovocab.org/geometry#geometry"
+    }
+  },
+  "geop": {
+    "Area": {
+      "term": "area",
+      "url": "http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/area"
+    },
+    "name": {
+      "term": "nameOfficial",
+      "url": "http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/nameOfficial"
+    },
+    "identifier": {
+      "term": "hasCode",
+      "url": "http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/hasCode"
+    }
+  },
+  "geonames": {
+    "Area": {
+      "term": "Feature",
+      "url": "http://www.geonames.org/ontology#Feature"
+    },
+    "name": {
+      "term": "name",
+      "url": "http://www.geonames.org/ontology#name"
+    },
+    "identifier": {
+      "term": "geonamesID",
+      "url": "http://www.geonames.org/ontology#geonamesID"
+    },
+    "classification": {
+      "term": "featureClass",
+      "url": "http://www.geonames.org/ontology#featureClass"
+    },
+    "parent_id": {
+      "term": "parentFeature",
+      "url": "http://www.geonames.org/ontology#parentFeature"
+    }
+  },
+  "geosparql": {
+    "Area": {
+      "term": "Feature",
+      "url": "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "parent_id": {
+      "term": "within",
+      "url": "http://www.opengis.net/ont/geosparql#within"
+    },
+    "geometry": {
+      "term": "hasGeometry",
+      "url": "http://www.opengis.net/ont/geosparql#hasGeometry"
+    }
+  },
+  "locn": {
+    "Area": {
+      "term": "Location",
+      "url": "http://www.w3.org/ns/locn#Location"
+    },
+    "name": {
+      "term": "geographicName",
+      "url": "http://www.w3.org/ns/locn#geographicName"
+    },
+    "identifier": {
+      "term": "geographicIdentifier",
+      "url": "http://www.w3.org/ns/locn#geographicIdentifier"
+    },
+    "geometry": {
+      "term": "geometry",
+      "url": "http://www.w3.org/ns/locn#geometry"
+    }
+  },
+  "spatial": {
+    "Area": {
+      "term": "Feature",
+      "url": "http://geovocab.org/spatial#Feature"
+    },
+    "parent_id": {
+      "term": "PP",
+      "url": "http://geovocab.org/spatial#PP"
+    }
+  }
+}

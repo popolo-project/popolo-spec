@@ -79,6 +79,14 @@ task :default do
       'postal address',
       'telephone',
     ],
+    area: [
+      'Area',
+      'name',
+      'identifier',
+      'classification',
+      'parent_id',
+      'geometry',
+    ],
     motion: [
       # 'Motion',
       'organization',

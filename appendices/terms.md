@@ -25,10 +25,18 @@ id: data
   <tbody>
     <tr>
       <td>
-        <code>foaf</code>
+        <code>ad</code>
       </td>
       <td>
-        <a href='http://xmlns.com/foaf/0.1/'>http://xmlns.com/foaf/0.1/</a>
+        <a href='http://schemas.talis.com/2005/address/schema#'>http://schemas.talis.com/2005/address/schema#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>con</code>
+      </td>
+      <td>
+        <a href='http://www.w3.org/2000/10/swap/pim/contact#'>http://www.w3.org/2000/10/swap/pim/contact#</a>
       </td>
     </tr>
     <tr>
@@ -41,42 +49,58 @@ id: data
     </tr>
     <tr>
       <td>
-        <code>schema</code>
+        <code>foaf</code>
       </td>
       <td>
-        <a href='http://schema.org/'>http://schema.org/</a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>org</code>
-      </td>
-      <td>
-        <a href='http://www.w3.org/ns/org#'>http://www.w3.org/ns/org#</a>
+        <a href='http://xmlns.com/foaf/0.1/'>http://xmlns.com/foaf/0.1/</a>
       </td>
     </tr>
     <tr>
       <td>
-        <code>skos</code>
+        <code>gadm</code>
       </td>
       <td>
-        <a href='http://www.w3.org/2004/02/skos/core#'>http://www.w3.org/2004/02/skos/core#</a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>vcard</code>
-      </td>
-      <td>
-        <a href='http://www.w3.org/2006/vcard/ns#'>http://www.w3.org/2006/vcard/ns#</a>
+        <a href='http://gadm.geovocab.org/ontology#'>http://gadm.geovocab.org/ontology#</a>
       </td>
     </tr>
     <tr>
       <td>
-        <code>person</code>
+        <code>geo</code>
       </td>
       <td>
-        <a href='http://www.w3.org/ns/person#'>http://www.w3.org/ns/person#</a>
+        <a href='http://www.w3.org/2003/01/geo/wgs84_pos#'>http://www.w3.org/2003/01/geo/wgs84_pos#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>geom</code>
+      </td>
+      <td>
+        <a href='http://geovocab.org/geometry#'>http://geovocab.org/geometry#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>geop</code>
+      </td>
+      <td>
+        <a href='http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/'>http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>geosparql</code>
+      </td>
+      <td>
+        <a href='http://www.opengis.net/ont/geosparql#'>http://www.opengis.net/ont/geosparql#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>gn</code>
+      </td>
+      <td>
+        <a href='http://www.geonames.org/ontology#'>http://www.geonames.org/ontology#</a>
       </td>
     </tr>
     <tr>
@@ -105,18 +129,26 @@ id: data
     </tr>
     <tr>
       <td>
-        <code>ad</code>
+        <code>oparl</code>
       </td>
       <td>
-        <a href='http://schemas.talis.com/2005/address/schema#'>http://schemas.talis.com/2005/address/schema#</a>
+        <a href='http://oparl.org/schema/1.0/'>http://oparl.org/schema/1.0/</a>
       </td>
     </tr>
     <tr>
       <td>
-        <code>con</code>
+        <code>org</code>
       </td>
       <td>
-        <a href='http://www.w3.org/2000/10/swap/pim/contact#'>http://www.w3.org/2000/10/swap/pim/contact#</a>
+        <a href='http://www.w3.org/ns/org#'>http://www.w3.org/ns/org#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>person</code>
+      </td>
+      <td>
+        <a href='http://www.w3.org/ns/person#'>http://www.w3.org/ns/person#</a>
       </td>
     </tr>
     <tr>
@@ -129,10 +161,34 @@ id: data
     </tr>
     <tr>
       <td>
-        <code>oparl</code>
+        <code>schema</code>
       </td>
       <td>
-        <a href='http://oparl.org/schema/1.0/'>http://oparl.org/schema/1.0/</a>
+        <a href='http://schema.org/'>http://schema.org/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>skos</code>
+      </td>
+      <td>
+        <a href='http://www.w3.org/2004/02/skos/core#'>http://www.w3.org/2004/02/skos/core#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>spatial</code>
+      </td>
+      <td>
+        <a href='http://geovocab.org/spatial#'>http://geovocab.org/spatial#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>vcard</code>
+      </td>
+      <td>
+        <a href='http://www.w3.org/2006/vcard/ns#'>http://www.w3.org/2006/vcard/ns#</a>
       </td>
     </tr>
   </tbody>
@@ -2210,9 +2266,269 @@ id: data
 </div>
 
 
-* Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
+# Area
+
+* Schema.org adds a new property for each identifier scheme, e.g. `globalLocationNumber`, and each classification scheme, e.g. `isicV4`.
+* FAO adds a new property for each identifier scheme, e.g. `codeDBPediaID`.
+
+<div class='table-responsive table-auto'>
+  <table class='table table-striped table-hover table-condensed'>
+    <thead>
+      <tr>
+        <th scope='row'>Term</th>
+        <td>Area</td>
+        <td>name</td>
+        <td>identifier</td>
+        <td>classification</td>
+        <td>parent_id</td>
+        <td>geometry</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope='row'>
+          <code>schema</code>
+        </th>
+        <td>
+          <a href='http://schema.org/Place'>
+            Place
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/name'>
+            name
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://schema.org/containedIn'>
+            containedIn
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/geo'>
+            geo
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>gadm</code>
+        </th>
+        <td>
+          see <code>spatial</code>
+        </td>
+        <td>
+          <a href='http://gadm.geovocab.org/ontology#name'>
+            name
+          </a>
+        </td>
+        <td>
+          <a href='http://gadm.geovocab.org/ontology#has_code'>
+            has_code
+          </a>
+        </td>
+        <td>
+          <a href='http://gadm.geovocab.org/ontology#type'>
+            type
+          </a>
+        </td>
+        <td>
+          see <code>spatial</code>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>geo</code>
+        </th>
+        <td>
+          <a href='http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing'>
+            SpatialThing
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2003/01/geo/wgs84_pos#location'>
+            location
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>geom</code>
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://geovocab.org/geometry#geometry'>
+            geometry
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>geop</code>
+        </th>
+        <td>
+          <a href='http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/area'>
+            area
+          </a>
+        </td>
+        <td>
+          <a href='http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/nameOfficial'>
+            nameOfficial
+          </a>
+        </td>
+        <td>
+          <a href='http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/hasCode'>
+            hasCode
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          geonames
+        </th>
+        <td>
+          <a href='http://www.geonames.org/ontology#Feature'>
+            Feature
+          </a>
+        </td>
+        <td>
+          <a href='http://www.geonames.org/ontology#name'>
+            name
+          </a>
+        </td>
+        <td>
+          <a href='http://www.geonames.org/ontology#geonamesID'>
+            geonamesID
+          </a>
+        </td>
+        <td>
+          <a href='http://www.geonames.org/ontology#featureClass'>
+            featureClass
+          </a>
+        </td>
+        <td>
+          <a href='http://www.geonames.org/ontology#parentFeature'>
+            parentFeature
+          </a>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>geosparql</code>
+        </th>
+        <td>
+          <a href='http://www.opengis.net/ont/geosparql#Feature'>
+            Feature
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.opengis.net/ont/geosparql#within'>
+            within
+          </a>
+        </td>
+        <td>
+          <a href='http://www.opengis.net/ont/geosparql#hasGeometry'>
+            hasGeometry
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>locn</code>
+        </th>
+        <td>
+          <a href='http://www.w3.org/ns/locn#Location'>
+            Location
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/ns/locn#geographicName'>
+            geographicName
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/ns/locn#geographicIdentifier'>
+            <abbr title='geographicIdentifier'>geographicIdent…</abbr>
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.w3.org/ns/locn#geometry'>
+            geometry
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>spatial</code>
+        </th>
+        <td>
+          <a href='http://geovocab.org/spatial#Feature'>
+            Feature
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://geovocab.org/spatial#PP'>
+            PP
+          </a>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 # Motion
+
+* Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 
 <div class='table-responsive'>
   <table class='table table-striped table-hover table-condensed'>

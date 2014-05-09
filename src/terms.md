@@ -49,9 +49,16 @@ id: data
 
 &address
 
-* Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
+# Area
+
+* Schema.org adds a new property for each identifier scheme, e.g. `globalLocationNumber`, and each classification scheme, e.g. `isicV4`.
+* FAO adds a new property for each identifier scheme, e.g. `codeDBPediaID`.
+
+&area
 
 # Motion
+
+* Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 
 &motion
 
