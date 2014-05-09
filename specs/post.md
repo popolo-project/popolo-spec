@@ -39,6 +39,10 @@ The Post class should have properties for:
 
     >House of Commons
 
+1. the [geographic area](/specs/area.html) to which the post is related
+
+    >Avalon
+
 1. date of creation
 
     >The Canadian federal electoral district of Westmount—Ville Marie was established in 1996, thereby creating the post of Member of Parliament for Westmount—Ville Marie.
@@ -118,6 +122,11 @@ According to the Organization ontology, either a person or an organization can h
       <td>organization</td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:postIn" title="http://www.w3.org/ns/org#postIn">org:postIn</a></code><a href="#note2"><sup>2</sup></a></td>
       <td>The organization in which the post is held</td>
+    </tr>
+    <tr id="opengov:area">
+      <td>geographic area</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#area">opengov:area</a></code></td>
+      <td>The geographic area to which the post is related</td>
     </tr>
     <tr id="schema:validFrom">
       <td>date of creation</td>

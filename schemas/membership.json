@@ -33,6 +33,14 @@
       "description": "The organization that is a party to the relationship",
       "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
+    "post_id": {
+      "description": "The ID of the post held by the person in the organization through this membership",
+      "type": ["string", "null"]
+    },
+    "post": {
+      "description": "The post held by the person in the organization through this membership",
+      "$ref": "http://popoloproject.com/schemas/post.json#"
+    },
     "on_behalf_of_id": {
       "description": "The ID of the organization on whose behalf the person is a party to the relationship",
       "type": ["string", "null"]
@@ -41,13 +49,13 @@
       "description": "The organization on whose behalf the person is a party to the relationship",
       "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
-    "post_id": {
-      "description": "The ID of the post held by the person in the organization through this membership",
+    "area_id": {
+      "description": "The ID of the geographic area to which this organization is related",
       "type": ["string", "null"]
     },
-    "post": {
-      "description": "The post held by the person in the organization through this membership",
-      "$ref": "http://popoloproject.com/schemas/post.json#"
+    "area": {
+      "description": "The geographic area to which this organization is related",
+      "$ref": "http://popoloproject.com/schemas/area.json#"
     },
     "start_date": {
       "description": "The date on which the relationship began",

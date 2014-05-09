@@ -38,6 +38,10 @@ The Organization class should have properties for:
 
     >The Standing Committee on Finance is part of the House of Commons.
 
+1. the [geographic area](/specs/area.html) to which the organization is related
+
+    >Parliament of the United Kingdom
+
 1. date of founding
 
     >To provide historical detail.
@@ -121,6 +125,11 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
       <td>parent organization</td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:subOrganizationOf" title="http://www.w3.org/ns/org#subOrganizationOf">org:subOrganizationOf</a></code><a href="#note2"><sup>2</sup></a></td>
       <td>The organization that contains this organization</td>
+    </tr>
+    <tr id="opengov:area">
+      <td>geographic area</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#area">opengov:area</a></code></td>
+      <td>The geographic area to which the organization is related</td>
     </tr>
     <tr id="schema:foundingDate">
       <td>date of founding</td>

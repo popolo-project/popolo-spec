@@ -16,6 +16,10 @@
     "@id": "http://www.w3.org/ns/org#subOrganizationOf",
     "@type": "@id"
   },
+  "area": {
+    "@id": "http://www.w3.org/ns/opengov#area",
+    "@type": "@id"
+  },
   "founding_date": {
     "@id": "http://schema.org/foundingDate",
     "@type": "http://purl.org/dc/terms/W3CDTF"

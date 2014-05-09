@@ -10,6 +10,10 @@
     "@id": "http://www.w3.org/ns/org#postIn",
     "@type": "@id"
   },
+  "area": {
+    "@id": "http://www.w3.org/ns/opengov#area",
+    "@type": "@id"
+  },
   "start_date": {
     "@id": "http://schema.org/validFrom",
     "@type": "http://purl.org/dc/terms/W3CDTF"

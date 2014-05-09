@@ -32,6 +32,14 @@
       "description": "The organization in which the post is held",
       "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
+    "area_id": {
+      "description": "The ID of the geographic area to which this organization is related",
+      "type": ["string", "null"]
+    },
+    "area": {
+      "description": "The geographic area to which this organization is related",
+      "$ref": "http://popoloproject.com/schemas/area.json#"
+    },
     "start_date": {
       "description": "The date on which the post was created",
       "type": ["string", "null"],

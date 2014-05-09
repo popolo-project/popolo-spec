@@ -47,6 +47,10 @@ The Membership class should have properties for:
 
     >Member of the [W3C Open Government Community Group](http://www.w3.org/community/opengov/) on behalf of XYZ Inc.
 
+1. the [geographic area](/specs/area.html) to which the membership is related
+
+    >Member of Parliament for Avalon
+
 1. the date on which the relationship began
 
     >since 2000
@@ -119,6 +123,11 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
       <td>on behalf of</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#onBehalfOf">opengov:onBehalfOf</a></code></td>
       <td>The organization on whose behalf the person is a party to the relationship</td>
+    </tr>
+    <tr id="opengov:area">
+      <td>geographic area</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#area">opengov:area</a></code></td>
+      <td>The geographic area to which the membership is related</td>
     </tr>
     <tr id="schema:validFrom">
       <td>start date</td>
