@@ -10,6 +10,6 @@
   schema:text "That the Bill is to be read a second time.";
   dcterms:subject <http://example.com/bills/bill-84.ttl>;
   dcterms:date "2013-01-01"^^dcterms:W3CDTF;
-  opengov:requirements [a opengov:TwoThirdsMajority];
-  opengov:result [a opengov:Pass];
+  opengov:requirements "two-thirds majority";
+  opengov:result "pass";
   opengov:voteEvent <http://example.com/vote_events/vote-42.ttl>.

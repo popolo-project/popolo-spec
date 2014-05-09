@@ -78,9 +78,9 @@ Few specifications exist for individual votes, and few legislatures publish vote
       <td><code><a href="http://schema.org/agent" title="http://schema.org/agent">schema:agent</a></code></td>
       <td>The [person](/specs/person.html) or [organization](/specs/organization.html) that is voting</td>
     </tr>
-    <tr id="opengov:option">
+    <tr id="schema:option">
       <td>option</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#option">opengov:option</a></code></td>
+      <td><code><a href="http://schema.org/option" title="http://schema.org/option">schema:option</a></code></td>
       <td>The option chosen by the voter, whether actively or passively<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="opengov:role">

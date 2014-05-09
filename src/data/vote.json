@@ -1,8 +1,16 @@
 {
   "schema": {
+    "Vote": {
+      "term": "ChooseAction",
+      "url": "http://schema.org/ChooseAction"
+    },
     "voter": {
       "term": "agent",
       "url": "http://schema.org/agent"
+    },
+    "option": {
+      "term": "option",
+      "url": "http://schema.org/option"
     }
   },
   "PML": {

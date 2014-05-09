@@ -18,6 +18,7 @@
     rdf:value 145
   ];
   opengov:vote [
-    a opengov:YesVote;
+    a opengov:Vote;
     schema:agent <http://example.com/people/john-q-public.ttl>
+    schema:option "yes"
   ] .

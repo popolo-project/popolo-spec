@@ -1,7 +1,8 @@
 @prefix opengov: <http://www.w3.org/ns/opengov#> .
 <http://example.com/votes/example.ttl>
-  a opengov:PairedVote;
+  a opengov:Vote;
   opengov:voteEvent <http://example.com/vote_events/vote-42.ttl>;
   schema:agent <http://example.com/people/john-q-public.ttl>;
-  opengov:role [a org:Role; skos:prefLabel "Chair"@en];
+  schema:option "paired";
+  opengov:role "chair";
   opengov:pair <http://example.com/people/joe-bloggs.ttl> .

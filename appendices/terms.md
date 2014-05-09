@@ -2783,6 +2783,9 @@ id: data
           <code>schema</code>
         </th>
         <td>
+          <a href='http://schema.org/ChooseAction'>
+            ChooseAction
+          </a>
         </td>
         <td>
           <a href='http://schema.org/agent'>
@@ -2792,6 +2795,9 @@ id: data
         <td>
         </td>
         <td>
+          <a href='http://schema.org/option'>
+            option
+          </a>
         </td>
         <td>
         </td>
