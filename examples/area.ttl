@@ -1,0 +1,9 @@
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix schema: <http://schema.org/> .
+<http://example.com/areas/example.ttl>
+  a gn:Feature;
+  schema:name "Boston Ward 1";
+  locn:geographicIdentifier "ocd-division/country:us/state:ma/place:boston/ward:1";
+  gn:featureClass "ward";
+  schema:containedIn <http://example.com/areas/boston.ttl> .

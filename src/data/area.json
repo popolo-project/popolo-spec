@@ -67,7 +67,7 @@
       "url": "http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/hasCode"
     }
   },
-  "geonames": {
+  "gn": {
     "Area": {
       "term": "Feature",
       "url": "http://www.geonames.org/ontology#Feature"

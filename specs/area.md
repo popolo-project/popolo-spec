@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: class
 title: Area | The Popolo Project
 id: area
 ---
-{% include navigation.html %}
 
 <ul class="breadcrumb">
   <li><a href="/specs/">Data Specification</a></li>
@@ -11,4 +10,99 @@ id: area
   <li class="active">Area</li>
 </ul>
 
-_Coming soon: [See issue #21](https://github.com/opennorth/popolo-spec/issues/21)_
+An area is a geographic area whose geometry may change over time.
+
+<h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
+
+1. name
+
+    >Boston Ward 1
+
+1. identifier
+
+    >`ocd-division/country:us/state:ma/place:boston/ward:1`
+
+1. classification
+
+    >ward
+
+1. parent area
+
+    >Boston
+
+1. geometry
+
+    >e.g. [GeoJSON](http://geojson.org/), [KML](https://developers.google.com/kml/documentation/), [GML](http://en.wikipedia.org/wiki/Geography_Markup_Language)
+
+<h1 id="standard-reuse">2. Standard reuse</h1>
+
+Schema.org, GeoNames, and ISA Programme Location Core Vocabulary terms are retained from the [inventory of terms](/appendices/terms.html#Area).
+
+<h1 id="classes-and-properties">3. Classes and properties</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th width="130">Term</th>
+      <th>Mapping</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="gn:Feature">
+      <td>area</td>
+      <td><code><a href="http://www.geonames.org/ontology/documentation.html" title="http://www.geonames.org/ontology#Feature">gn:Feature</a></code></td>
+      <td>A geographic area whose geometry may change over time</td>
+    </tr>
+    <tr id="schema:name">
+      <td>name</td>
+      <td><code><a href="http://schema.org/name" title="http://schema.org/name">schema:name</a></code></td>
+      <td>An area's official name</td>
+    </tr>
+    <tr id="locn:geographicIdentifier">
+      <td>identifier</td>
+      <td><code><a href="http://www.w3.org/ns/locn#geographicIdentifier" title="http://www.w3.org/ns/locn#geographicIdentifier">locn:geographicIdentifier</a></code></td>
+      <td>An issued identifier, e.g. an <a href="https://github.com/opencivicdata/ocd-division-ids/#readme">Open Civic Data Division Identifier</a></td>
+    </tr>
+    <tr id="gn:featureClass">
+      <td>classification</td>
+      <td><code><a href="http://www.geonames.org/ontology/documentation.html" title="http://www.geonames.org/ontology#featureClass">gn:featureClass</a></code></td>
+      <td>The area's primary category, e.g. province, city, ward, etc.</td>
+    </tr>
+    <tr id="schema:containedIn">
+      <td>parent area</td>
+      <td><code><a href="http://schema.org/containedIn" title="http://schema.org/containedIn">schema:containedIn</a></code></td>
+      <td>The area that contains this area</td>
+    </tr>
+    <tr id="schema:geo">
+      <td>geometry</td>
+      <td><code><a href="http://schema.org/geo" title="http://schema.org/geo">schema:geo</a></code></td>
+      <td>An area's geometry</td>
+    </tr>
+  </tbody>
+</table>
+
+The use of <a href="https://github.com/opencivicdata/ocd-division-ids/#readme">Open Civic Data Division Identifiers</a> is <em class="rfc2119">recommended</em>. The value of the `geometry` property <em class="rfc2119">may</em> be any geometry encoding.
+
+<h1 id="serialization">4. Serialization</h1>
+
+**JSON differences from other RDF serializations:**
+
+* The term `identifier` is used instead of `geographicIdentifier`, to be consistent with [identifier objects](/specs/#identifier).
+* The term `classification` is used instead of `featureClass`, to be consistent with the [Organization](/specs/organization.html) class.
+* The term `parent_id` is used instead of `containedIn`, to be consistent with the [Organization](/specs/organization.html) class.
+* The term `geometry` is used instead of `geo`, because abbreviations are avoided.
+
+<ul class="nav nav-tabs no-js">
+  <li><a href="#area-schema">JSON Schema</a></li>
+  <li><a href="#area-context">JSON-LD Context</a></li>
+  <li class="active"><a href="#area-json">JSON</a></li>
+  <li><a href="#area-rdf">RDF</a></li>
+</ul>
+
+<div class="tab-content no-js">
+  <div class="tab-pane" id="area-schema" data-url="/schemas/area.json"></div>
+  <div class="tab-pane" id="area-context" data-url="/contexts/area.jsonld"></div>
+  <div class="tab-pane active" id="area-json" data-url="/examples/area.json"></div>
+  <div class="tab-pane" id="area-rdf" data-url="/examples/area.ttl"></div>
+</div>
