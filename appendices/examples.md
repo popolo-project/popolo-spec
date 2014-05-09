@@ -259,29 +259,50 @@ Jane Q. Citizen, a person, and her memberships:
 
 <h2 id="party-coalition">2.6. A party in a coalition</h2>
 
-**Scenario:** The XYZ Party and ABC Party are members of the government coalition.
+**Scenario:** The XYZ Party, Rhinoceros Party and Political Party are members of a government coalition which lasted one term from January 1, 2011 to December 31, 2012. The Rhinoceros Party left the coalition on March 15, 2011, but was replaced by the Party-All-The-Time Party to avoid the coalition dissolving prematurely.
 
 The government coalition, an organization, and its memberships:
 
 ```json
 {
   "name": "Government",
+  "founding_date": "2011-01-01",
+  "dissolution_date": "2012-12-31"
   "memberships": [
     {
       "member": {
         "@type": "Organization",
-        "id": "xyz-party"
+        "id": "xyz-party",
+        "start_date": "2011-01-01"
       }
     },
     {
       "member": {
         "@type": "Organization",
-        "id": "abc-party"
+        "id": "rhinoceros-party",
+        "start_date": "2011-01-01",
+        "end_date": "2011-03-15"
+      }
+    },
+    {
+      "member": {
+        "@type": "Organization",
+        "id": "political-party",
+        "start_date": "2011-01-01"
+      }
+    },
+    {
+      "member": {
+        "@type": "Organization",
+        "id": "party-all-the-time-party",
+        "start_date": "2011-03-16"
       }
     }
   ]
 }
 ```
+
+Note that the memberships are assumed to have ended when the coalition dissolved.
 
 <h1 id="vote-events">3. Vote events</h1>
 

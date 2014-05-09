@@ -385,9 +385,9 @@ If a name object sets an `end_date` property, it represents a former name. With 
 <h1 id="history">7. Change history</h1>
 
 * 2014-05-09: Add a member property to the Membership class, to relate organizations to organizations.
-* 2014-05-08: Add a geographic area property to the Membership, Organization, and Post classes.
+* 2014-05-08: Add an Area class and a geographic area property to the Membership, Organization, and Post classes.
 * 2014-05-08: Use `schema:validUntil` instead of `schema:validThrough`, for a meaning common to UK and US English.
-* 2014-05-07: Add valid from and valid through properties to the ContactDetail class.
+* 2014-05-07: Add valid from and valid until properties to the ContactDetail class.
 * 2014-05-07: Add an alternate label property to the Post class.
 * 2014-05-06: Add Motion, VoteEvent, Count and Vote classes.
 * 2014-03-28: Add name component properties to `opengov:OtherName`.
