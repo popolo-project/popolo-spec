@@ -2413,7 +2413,7 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
-          geonames
+          <code>gn</code>
         </th>
         <td>
           <a href='http://www.geonames.org/ontology#Feature'>
