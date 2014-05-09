@@ -124,6 +124,10 @@ The ranges of the `context` and `subject` properties are not specified, as they 
 
 <h1 id="serialization">4. Serialization</h1>
 
+**JSON differences from other RDF serializations:**
+
+* The term `organization` is used instead of `publisher`, to be consistent with the name of the [Organization](/specs/organization.html) class.
+
 <ul class="nav nav-tabs no-js">
   <li><a href="#motion-schema">JSON Schema</a></li>
   <li><a href="#motion-context">JSON-LD Context</a></li>

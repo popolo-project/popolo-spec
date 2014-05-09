@@ -110,6 +110,7 @@ Few specifications exist for individual votes, and few legislatures publish vote
 
 **JSON differences from other RDF serializations:**
 
+* The term `voter` is used instead of `agent`, to avoid jargon.
 * The value of the `voter_id` property refers to a [person](/specs/person.html).
 
 <ul class="nav nav-tabs no-js">
