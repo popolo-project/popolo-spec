@@ -72,9 +72,9 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#Motion">opengov:Motion</a></code></td>
       <td>A formal step to introduce a matter for consideration by a group</td>
     </tr>
-    <tr id="opengov:organization">
+    <tr id="schema:publisher">
       <td>organization</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#organization">opengov:organization</a></code></td>
+      <td><code><a href="http://schema.org/text" title="http://schema.org/publisher">schema:publisher</a></code></td>
       <td>The organization in which the motion is proposed</td>
     </tr>
     <tr id="opengov:context">
@@ -82,9 +82,9 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#context">opengov:context</a></code></td>
       <td>The legislative context in which the motion is proposed</td>
     </tr>
-    <tr id="dcterms:creator">
+    <tr id="schema:creator">
       <td>creator</td>
-      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-creator" title="http://purl.org/dc/terms/creator">dcterms:creator</a></code></td>
+      <td><code><a href="http://schema.org/text" title="http://schema.org/creator">schema:creator</a></code></td>
       <td>The person who proposed the motion</td>
     </tr>
     <tr id="schema:text">
