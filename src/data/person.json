@@ -273,6 +273,48 @@
       "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameHonorificSuffix"
     }
   },
+  "con": {
+    "Person": {
+      "term": "Person",
+      "url": "http://www.w3.org/2000/10/swap/pim/contact#Person"
+    },
+    "email address": {
+      "term": "mailbox",
+      "url": "http://www.w3.org/2000/10/swap/pim/contact#mailbox"
+    },
+    "date of birth": {
+      "term": "birthday",
+      "url": "http://www.w3.org/2000/10/swap/pim/contact#birthday"
+    },
+    "external links": {
+      "term": "webPage",
+      "url": "http://www.w3.org/2000/10/swap/pim/contact#webPage"
+    },
+    "name": {
+      "term": "fullName",
+      "url": "http://www.w3.org/2000/10/swap/pim/contact#fullName"
+    },
+    "family name": {
+      "term": "familyName",
+      "url": "http://www.w3.org/2000/10/swap/pim/contact#familyName"
+    },
+    "given name": {
+      "term": "givenName",
+      "url": "http://www.w3.org/2000/10/swap/pim/contact#givenName"
+    },
+    "additional name": {
+      "term": "middleName",
+      "url": "http://www.w3.org/2000/10/swap/pim/contact#middleName"
+    },
+    "honorific prefix": {
+      "term": "personalTitle",
+      "url": "http://www.w3.org/2000/10/swap/pim/contact#personalTitle"
+    },
+    "honorific suffix": {
+      "term": "personalSuffix",
+      "url": "http://www.w3.org/2000/10/swap/pim/contact#personalSuffix"
+    }
+  },
   "poder": {
     "Person": {
       "term": "foaf:Person",

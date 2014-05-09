@@ -113,6 +113,14 @@ id: data
     </tr>
     <tr>
       <td>
+        <code>con</code>
+      </td>
+      <td>
+        <a href='http://www.w3.org/2000/10/swap/pim/contact#'>http://www.w3.org/2000/10/swap/pim/contact#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <code>poder</code>
       </td>
       <td>
@@ -546,6 +554,77 @@ id: data
         <td>
           <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameHonorificSuffix'>
             <abbr title='nameHonorificSuffix'>nameHonorificSu…</abbr>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>con</code>
+        </th>
+        <td>
+          <a href='http://www.w3.org/2000/10/swap/pim/contact#Person'>
+            Person
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2000/10/swap/pim/contact#mailbox'>
+            mailbox
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2000/10/swap/pim/contact#birthday'>
+            birthday
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2000/10/swap/pim/contact#webPage'>
+            webPage
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2000/10/swap/pim/contact#fullName'>
+            fullName
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2000/10/swap/pim/contact#familyName'>
+            familyName
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2000/10/swap/pim/contact#givenName'>
+            givenName
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2000/10/swap/pim/contact#middleName'>
+            middleName
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2000/10/swap/pim/contact#personalTitle'>
+            personalTitle
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2000/10/swap/pim/contact#personalSuffix'>
+            personalSuffix
           </a>
         </td>
       </tr>

@@ -10,5 +10,6 @@ locn,http://www.w3.org/ns/locn#
 nco,http://www.semanticdesktop.org/ontologies/nco/#
 nie,http://www.semanticdesktop.org/ontologies/nie/#
 ad,http://schemas.talis.com/2005/address/schema#
+con,http://www.w3.org/2000/10/swap/pim/contact#
 poder,http://dev.poderopedia.com/vocab/
 oparl,http://oparl.org/schema/1.0/
