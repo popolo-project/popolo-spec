@@ -5,6 +5,10 @@
     "@id": "http://www.w3.org/ns/org#role",
     "@type": "@id"
   },
+  "member": {
+    "@id": "http://www.w3.org/ns/org#member",
+    "@type": "@id"
+  },
   "person": {
     "@id": "http://www.w3.org/ns/org#member",
     "@type": "@id"

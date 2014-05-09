@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-03/schema#",
   "id": "http://popoloproject.com/schemas/membership.json#",
   "title": "Membership",
-  "description": "A relationship between a person and an organization",
+  "description": "A relationship between a member and an organization",
   "type": "object",
   "properties": {
     "id": {
@@ -14,47 +14,51 @@
       "type": ["string", "null"]
     },
     "role": {
-      "description": "The role that the person fulfills in the organization",
+      "description": "The role that the member fulfills in the organization",
       "type": ["string", "null"]
     },
+    "member": {
+      "description": "The person or organization that is a member of the organization",
+      "type": ["object"]
+    },
     "person_id": {
-      "description": "The ID of the person who is a party to the relationship",
+      "description": "The ID of the person who is a member of the organization",
       "type": ["string", "null"]
     },
     "person": {
-      "description": "The person who is a party to the relationship",
+      "description": "The person who is a member of the organization",
       "$ref": "http://popoloproject.com/schemas/person.json#"
     },
     "organization_id": {
-      "description": "The ID of the organization that is a party to the relationship",
+      "description": "The ID of the organization in which the person or organization is a member",
       "type": ["string", "null"]
     },
     "organization": {
-      "description": "The organization that is a party to the relationship",
+      "description": "The organization in which the person or organization is a member",
       "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
     "post_id": {
-      "description": "The ID of the post held by the person in the organization through this membership",
+      "description": "The ID of the post held by the member in the organization through this membership",
       "type": ["string", "null"]
     },
     "post": {
-      "description": "The post held by the person in the organization through this membership",
+      "description": "The post held by the member in the organization through this membership",
       "$ref": "http://popoloproject.com/schemas/post.json#"
     },
     "on_behalf_of_id": {
-      "description": "The ID of the organization on whose behalf the person is a party to the relationship",
+      "description": "The ID of the organization on whose behalf the person is a member of the organization",
       "type": ["string", "null"]
     },
     "on_behalf_of": {
-      "description": "The organization on whose behalf the person is a party to the relationship",
+      "description": "The organization on whose behalf the person is a member of the organization",
       "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
     "area_id": {
-      "description": "The ID of the geographic area to which this organization is related",
+      "description": "The ID of the geographic area to which this membership is related",
       "type": ["string", "null"]
     },
     "area": {
-      "description": "The geographic area to which this organization is related",
+      "description": "The geographic area to which this membership is related",
       "$ref": "http://popoloproject.com/schemas/area.json#"
     },
     "start_date": {
@@ -68,7 +72,7 @@
       "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
     },
     "contact_details": {
-      "description": "Means of contacting the person who is a party to the relationship",
+      "description": "Means of contacting the member of the organization",
       "type": "array",
       "items": {
         "$ref": "http://popoloproject.com/schemas/contact_detail.json#"

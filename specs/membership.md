@@ -27,23 +27,23 @@ The Membership class should have properties for:
 
     >Chairman of the XYZ Party
 
-1. the role that the person fulfills in the organization
+1. the role that the member fulfills in the organization
 
     >Chairman
 
-1. the [person](/specs/person.html) who is a party to the relationship
+1. the [person](/specs/person.html) (or organization) that is a member of the organization
 
     >John Doe
 
-1. the [organization](/specs/organization.html) that is a party to the relationship
+1. the [organization](/specs/organization.html) in which the person (or organization) is a member
 
     >XYZ Party
 
-1. the [post](/specs/post.html) held by the person in the organization
+1. the [post](/specs/post.html) held by the member in the organization
 
     >Chairman of the XYZ Party
 
-1. the [organization](/specs/organization.html) on whose behalf the person is a party to the relationship
+1. the [organization](/specs/organization.html) on whose behalf the person is a member of the organization
 
     >Member of the [W3C Open Government Community Group](http://www.w3.org/community/opengov/) on behalf of XYZ Inc.
 
@@ -59,7 +59,7 @@ The Membership class should have properties for:
 
     >January 1, 2013
 
-1. the means of contacting the person who is a party to the relationship
+1. the means of contacting the member of the organization
 
     >1 Main Street  
     Anytown, USA  
@@ -73,10 +73,6 @@ The Membership class should have properties for:
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
 Briefly, the [survey of existing specifications](/appendices/survey.html) concludes that only the [Organization ontology](http://www.w3.org/TR/vocab-org/) offers a rich membership model for describing the relation between people and organizations. Given the [complex encoding](http://www.w3.org/TR/owl-time/) of time intervals in RDF, the `schema:validFrom` and `schema:validUntil` pair is used instead of `org:memberDuring`, an alternative [described](http://www.epimorphics.com/web/wiki/organization-ontology-second-draft) by the original developers of the Organization ontology.
-
-## 2.1. Range restrictions
-
-According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), either a person or an organization can be a member of an organization; in this data specification, only a person can be a member of an organization.
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
@@ -92,7 +88,7 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
     <tr id="org:Membership">
       <td><strong>Membership</strong></td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:Membership" title="http://www.w3.org/ns/org#Membership">org:Membership</a></code></td>
-      <td>A relationship between a person and an organization</td>
+      <td>A relationship between a member and an organization</td>
     </tr>
     <tr id="skos:prefLabel">
       <td>label</td>
@@ -102,27 +98,27 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
     <tr id="org:role">
       <td>role</td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:role" title="http://www.w3.org/ns/org#role">org:role</a></code></td>
-      <td>The role that the person fulfills in the organization</td>
+      <td>The role that the member fulfills in the organization</td>
     </tr>
     <tr id="org:member">
-      <td>person</td>
+      <td>member</td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:member" title="http://www.w3.org/ns/org#member">org:member</a></code><a href="#note1"><sup>1</sup></a></td>
-      <td>The person who is a party to the relationship</td>
+      <td>The person or organization that is a member of the organization</td>
     </tr>
     <tr id="org:organization">
       <td>organization</td>
       <td><code><a href="http://www.w3.org/TR/vocab-org/#org:organization" title="http://www.w3.org/ns/org#organization">org:organization</a></code><a href="#note1"><sup>1</sup></a></td>
-      <td>The organization that is a party to the relationship</td>
+      <td>The organization in which the person or organization is a member</td>
     </tr>
     <tr id="opengov:post">
       <td>post</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#post">opengov:post</a></code></td>
-      <td>The post held by the person in the organization</td>
+      <td>The post held by the member in the organization</td>
     </tr>
     <tr id="opengov:onBehalfOf">
       <td>on behalf of</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#onBehalfOf">opengov:onBehalfOf</a></code></td>
-      <td>The organization on whose behalf the person is a party to the relationship</td>
+      <td>The organization on whose behalf the person is a member of the organization</td>
     </tr>
     <tr id="opengov:area">
       <td>geographic area</td>
@@ -142,7 +138,7 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
     <tr id="opengov:contactDetail">
       <td>contact detail</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</a></code></td>
-      <td>A means of contacting the person in the relationship</td>
+      <td>A means of contacting the member of the organization</td>
     </tr>
     <tr id="rdfs:seeAlso">
       <td>external links</td>
@@ -156,15 +152,14 @@ According to the [Organization ontology](http://www.w3.org/TR/vocab-org/), eithe
 
 <h1 id="serialization">4. Serialization</h1>
 
-A membership relation cannot exist without both a person and an organization. All memberships <em class="rfc2119">must</em> assign values to either `person_id` or `person` and to either `organization_id` or `organization`.
+A membership relation cannot exist without both a member and an organization. All memberships <em class="rfc2119">must</em> assign values to either `member`, `person`, or `person_id` and to either `organization` or `organization_id`.
 
 **JSON differences from other RDF serializations:**
 
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
 * The value of the `role` property is a string, instead of an `org:Role`.
+* The term `person` or `person_id` is used in the common case or relating a person to an organization. The term `member` may be used to relate either a person or an organization to an organization ([see an example](/appendices/examples.html#party-coalition)).
 * The terms `start_date` and `end_date`[<sup>2</sup>](#note2) are used instead of `validFrom` and `validUntil`, for backwards compatibility and for better semantics.
-* The term `person_id` is used instead of `member` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
-* The term `organization_id` is used instead of `organization` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 
 <p class="note" id="note2">2. With respect to reuse, the terms <code>start_date</code> and <code>end_date</code> are used in the <a href="http://vocab.org/participation/schema">Participation ontology</a> and others.</p>

@@ -22,6 +22,7 @@ This document provides more complex examples than [the samples given in the spec
   1. [Change in party affiliation](#party-affiliation)
   1. [A previously held post](#previous-post)
   1. [A post held by more than one person simultaneously](#simultaneous-post)
+  1. [A party within a coalition](#party-coalition)
 1. [Vote events](#vote-events)
   1. [A vote by a political party](#party-vote)
 
@@ -251,6 +252,32 @@ Jane Q. Citizen, a person, and her memberships:
       "organization_id": "house-of-commons",
       "post_id": "mp-avalon",
       "start_date": "2011-01-01"
+    }
+  ]
+}
+```
+
+<h2 id="party-coalition">2.6. A party in a coalition</h2>
+
+**Scenario:** The XYZ Party and ABC Party are members of the government coalition.
+
+The government coalition, an organization, and its memberships:
+
+```json
+{
+  "name": "Government",
+  "memberships": [
+    {
+      "member": {
+        "@type": "Organization",
+        "id": "xyz-party"
+      }
+    },
+    {
+      "member": {
+        "@type": "Organization",
+        "id": "abc-party"
+      }
     }
   ]
 }

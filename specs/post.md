@@ -163,7 +163,7 @@ A post cannot exist outside an organization. All posts <em class="rfc2119">must<
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
 * The term `other_label` is used instead of `altLabel` to be consistent with other classes using `other_names`.
 * The value of the `role` property is a string, instead of an `org:Role`.
-* The term `organization_id` is used instead of `postIn` to conform to <abbr title="object-relational mapper">ORM</abbr> conventions.
+* The term `organization_id` is used instead of `postIn` to be consistent with the [Membership](/specs/membership.html) class.
 * The terms `start_date` and `end_date` are used instead of `validFrom` and `validUntil`, to be consistent with the [Membership](/specs/membership.html) class.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 

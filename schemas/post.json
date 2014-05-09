@@ -33,11 +33,11 @@
       "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
     "area_id": {
-      "description": "The ID of the geographic area to which this organization is related",
+      "description": "The ID of the geographic area to which this post is related",
       "type": ["string", "null"]
     },
     "area": {
-      "description": "The geographic area to which this organization is related",
+      "description": "The geographic area to which this post is related",
       "$ref": "http://popoloproject.com/schemas/area.json#"
     },
     "start_date": {
