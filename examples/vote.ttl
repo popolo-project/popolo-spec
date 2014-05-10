@@ -4,5 +4,6 @@
   opengov:voteEvent <http://example.com/vote_events/vote-42.ttl>;
   schema:agent <http://example.com/people/john-q-public.ttl>;
   schema:option "paired";
+  opengov:party <http://example.com/organizations/xyz-party.ttl>;
   opengov:role "chair";
   opengov:pair <http://example.com/people/joe-bloggs.ttl> .

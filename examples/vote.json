@@ -2,6 +2,7 @@
   "vote_event_id": "vote-42",
   "voter_id": "john-q-public",
   "option": "paired",
+  "party": "xyz-party",
   "role": "chair",
   "pair_id": "joe-bloggs"
 }

@@ -20,23 +20,25 @@ A vote is one voter's vote in a vote event.
 
 1. voter
 
+    >In the [House of Representatives of New Zealand](http://www.parliament.nz/en-nz/features/00NZPHomeNews20121019a1/conscience-votes), the parties regularly cast the votes, not the members.
+
     >Alice uses voting records to identify voting blocs.
 
     >Bob subscribes to receive an email alert when John Q. Public votes.
-
-    >Carol tracks which members of the government vote with the opposition.
-
-    >Dave checks how political parties voted on an important bill.
-
-    >In the [House of Representatives of New Zealand](http://www.parliament.nz/en-nz/features/00NZPHomeNews20121019a1/conscience-votes), the parties regularly cast the votes, not the members.
 
 1. the option chosen by the voter
 
     >e.g. yes, no, or abstain.
 
+1. the voter's political party
+
+    >Carol tracks which members of the government vote with the opposition.
+
+    >Dave checks how political parties voted on an important bill.
+
 1. the voter's role in the event
 
-    >In the House of Commons of the United Kingdom, the tellers are the members who count the votes.
+    >In the House of Commons of the United Kingdom, the [tellers](/appendices/examples.html#tellers) are the members who count the votes.
 
     >Eve analyzes the chair's behavior on tie votes.
 
@@ -44,9 +46,9 @@ A vote is one voter's vote in a vote event.
 
     >In the House of Representatives of New Zealand, the weight of a party's vote is equal to the number of members of the party.
 
-1. the [person](/specs/person.html) with whom the voter is paired
+1. the [person](/specs/person.html) with whom the voter is [paired](http://en.wikipedia.org/wiki/Pair_%28parliamentary_convention%29)
 
-    >[In some legislatures](http://en.wikipedia.org/wiki/Pair_%28parliamentary_convention%29), two members from opposing parties may agree to abstain when one member is unable to vote.
+    >In some legislatures, two members from opposing parties may agree to abstain when one member is unable to vote.
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
@@ -82,6 +84,11 @@ Few specifications exist for individual votes, and few legislatures publish vote
       <td>option</td>
       <td><code><a href="http://schema.org/option" title="http://schema.org/option">schema:option</a></code></td>
       <td>The option chosen by the voter, whether actively or passively<a href="#note1"><sup>1</sup></a></td>
+    </tr>
+    <tr id="opengov:party">
+      <td>political party</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#party">opengov:party</a></code></td>
+      <td>The voter's political party</td>
     </tr>
     <tr id="opengov:role">
       <td>role</td>
