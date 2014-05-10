@@ -110,8 +110,8 @@ Few specifications exist for individual votes, and few legislatures publish vote
 
 "Pairing" generally refers to a reciprocal agreement between two voters by which a voter abstains if the other is unable to vote. The pairing agreement is not always in force and respected; for example, if both voters are voting or if a voter breaks the agreement. The `pair` property <em class="rfc2119">must not</em> be used unless a pairing agreement is, in fact, respected.
 
-<p class="note" id="note1">1. For example, `"absent"` and `"not voting"` are valid values of the `option` property.</p>
-<p class="note" id="note2">2. The default value for a vote's weight is `1`.</p>
+<p class="note" id="note1">1. For example, <code>"absent"</code> and <code>"not voting"</code> are valid values of the <code>option</code> property.</p>
+<p class="note" id="note2">2. The default value for a vote's weight is <code>1</code>.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 
