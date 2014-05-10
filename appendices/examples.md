@@ -25,6 +25,7 @@ This document provides more complex examples than [the samples given in the spec
   1. [A party within a coalition](#party-coalition)
 1. [Vote events](#vote-events)
   1. [A vote by a political party](#party-vote)
+  1. [A vote with tellers](#tellers)
 
 <h1 id="contact-details">1. Contact details</h1>
 
@@ -308,7 +309,9 @@ Note that the memberships are assumed to have ended when the coalition dissolved
 
 <h2 id="party-vote">3.1. A vote by a political party</h2>
 
-In the [House of Representatives of New Zealand](http://www.parliament.nz/en-nz/features/00NZPHomeNews20121019a1/conscience-votes), the parties regularly cast the votes, not the members. As such, the `voter` property must override the `@type`:
+**Scenario:** In the [House of Representatives of New Zealand](http://www.parliament.nz/en-nz/features/00NZPHomeNews20121019a1/conscience-votes), the parties regularly cast the votes, not the members.
+
+As such, the `voter` property must override the `@type`:
 
 ```json
 {
@@ -319,5 +322,19 @@ In the [House of Representatives of New Zealand](http://www.parliament.nz/en-nz/
   },
   "option": "yes",
   "weight": 59
+}
+```
+
+<h2 id="party-vote">3.2. A vote with tellers</h2>
+
+**Scenario:** In the House of Commons of the United Kingdom, and in other Westminster systems, [tellers](http://www.parliament.uk/site-information/glossary/tellers/) count the votes. There are typically two tellers for each voting option, which one teller a member of the government and the other a member of the opposition. Tellers either do not vote, vote according to the option they are counting, or vote to preserve unanimity. In any case, the options chosen by tellers is rarely recorded.
+
+Since we do not know the option chosen by the teller, the `option` property is omitted:
+
+```json
+{
+  "vote_event_id": "vote-84",
+  "voter": "john-q-public",
+  "role": "yes teller"
 }
 ```
