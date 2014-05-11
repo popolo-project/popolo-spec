@@ -2567,7 +2567,7 @@ id: data
           <code>locn</code>
         </th>
         <td>
-          <a href='http://www.w3.org/ns/locn#Location'>
+          <a href='http://purl.org/dc/terms/Location'>
             Location
           </a>
         </td>
@@ -2577,8 +2577,8 @@ id: data
           </a>
         </td>
         <td>
-          <a href='http://www.w3.org/ns/locn#geographicIdentifier'>
-            <abbr title='geographicIdentifier'>geographicIdent…</abbr>
+          <a href='http://www.w3.org/2000/01/rdf-schema#seeAlso'>
+            seeAlso
           </a>
         </td>
         <td>
