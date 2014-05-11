@@ -1,5 +1,12 @@
 {
   "ContactDetail": "http://www.w3.org/ns/opengov#ContactDetail",
+  "text": "http://www.w3.org/2006/vcard/ns#Text",
+  "voice": "http://www.w3.org/2006/vcard/ns#Voice",
+  "fax": "http://www.w3.org/2006/vcard/ns#Fax",
+  "cell": "http://www.w3.org/2006/vcard/ns#Cell",
+  "video": "http://www.w3.org/2006/vcard/ns#Video",
+  "pager": "http://www.w3.org/2006/vcard/ns#Pager",
+  "textphone": "http://www.w3.org/2006/vcard/ns#TextPhone",
   "label": "http://www.w3.org/2000/01/rdf-schema#label",
   "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
   "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
