@@ -66,27 +66,27 @@ Few specifications exist for vote events, and few legislatures publish vote data
     <tr id="opengov:motion">
       <td>motion</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#motion">opengov:motion</a></code></td>
-      <td>The motion being decided by the vote</td>
+      <td>The motion being decided</td>
     </tr>
     <tr id="schema:startDate">
-      <td>start time</td>
+      <td>start date</td>
       <td><code><a href="http://schema.org/startDate" title="http://schema.org/startDate">schema:startDate</a></code></td>
       <td>The time at which the event begins</td>
     </tr>
     <tr id="schema:endDate">
-      <td>end time</td>
+      <td>end date</td>
       <td><code><a href="http://schema.org/endDate" title="http://schema.org/endDate">schema:endDate</a></code></td>
       <td>The time at which the event ends</td>
     </tr>
     <tr id="opengov:count">
       <td>count</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#count">opengov:count</a></code></td>
-      <td>The number of votes for one option</td>
+      <td>The number of votes for an option</td>
     </tr>
     <tr id="opengov:vote">
       <td>vote</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#vote">opengov:vote</a></code></td>
-      <td>One person's vote</td>
+      <td>A voter's vote</td>
     </tr>
   </tbody>
 </table>
@@ -100,7 +100,7 @@ Few specifications exist for vote events, and few legislatures publish vote data
 
 **JSON differences from other RDF serializations:**
 
-* The term `identifiers` is serialized as an array of [identifier objects](/specs/#identifier).
+* The term `identifier` is used instead of `notation`, to be consistent with [identifier objects](/specs/#identifier).
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#vote-event-schema">JSON Schema</a></li>

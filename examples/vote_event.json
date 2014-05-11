@@ -1,9 +1,5 @@
 {
-  "identifiers": [
-    {
-      "identifier": "42"
-    }
-  ],
+  "identifier": "42",
   "motion": {
     "text": "That the House do now proceed to the Orders of the Day."
   },

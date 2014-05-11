@@ -4,6 +4,7 @@
 @prefix schema: <http://schema.org/> .
 <http://example.com/vote_events/example.ttl>
   a opengov:VoteEvent;
+  skos:notation "42";
   opengov:motion [
     a opengov:Motion;
     schema:text "That the House do now proceed to the Orders of the Day."
