@@ -218,6 +218,7 @@ Given that the same RDF resource can be serialized in many different ways using 
 * The value of the `email` property of a `Person` <em class="rfc2119">should</em> be a ['mailto' URI](http://tools.ietf.org/html/rfc6068).
 * The value of the `role` property of a `Membership` or `Post` <em class="rfc2119">should</em> be a URI or blank node for a `org:Role`.
 * The value of the `classification` property of an `Organization` <em class="rfc2119">should</em> be a URI or blank node for a `skos:Concept`.
+* The value of the `classification` property of an `Area` <em class="rfc2119">should</em> be a URI or blank node for a `gn:Code`, which is a subclass of `skos:Concept`.
 * The value of the `type` property of a `ContactDetail` <em class="rfc2119">should</em> be a [node type](http://json-ld.org/spec/latest/json-ld/#dfn-node-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
 * The value of the `scheme` property of an `Identifier` <em class="rfc2119">should</em> be a [value type](http://json-ld.org/spec/latest/json-ld/#dfn-value-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
 * The value of the `links` and `sources` properties <em class="rfc2119">should</em> be an array of URIs, not an array of [link objects](/specs/#link).

@@ -106,15 +106,15 @@
   "locn": {
     "Area": {
       "term": "Location",
-      "url": "http://www.w3.org/ns/locn#Location"
+      "url": "http://purl.org/dc/terms/Location"
     },
     "name": {
       "term": "geographicName",
       "url": "http://www.w3.org/ns/locn#geographicName"
     },
     "identifier": {
-      "term": "geographicIdentifier",
-      "url": "http://www.w3.org/ns/locn#geographicIdentifier"
+      "term": "seeAlso",
+      "url": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
     "geometry": {
       "term": "geometry",

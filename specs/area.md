@@ -59,14 +59,14 @@ Schema.org, GeoNames, and ISA Programme Location Core Vocabulary terms are retai
       <td><code><a href="http://schema.org/name" title="http://schema.org/name">schema:name</a></code></td>
       <td>A primary name</td>
     </tr>
-    <tr id="locn:geographicIdentifier">
+    <tr id="skos:notation">
       <td>identifier</td>
-      <td><code><a href="http://www.w3.org/ns/locn#geographicIdentifier" title="http://www.w3.org/ns/locn#geographicIdentifier">locn:geographicIdentifier</a></code></td>
+      <td><code><a href="http://www.w3.org/2009/08/skos-reference/skos.html#notation" title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a></code></td>
       <td>An issued identifier, e.g. an <a href="https://github.com/opencivicdata/ocd-division-ids/#readme">Open Civic Data Division Identifier</a></td>
     </tr>
-    <tr id="gn:featureClass">
+    <tr id="gn:featureCode">
       <td>classification</td>
-      <td><code><a href="http://www.geonames.org/ontology/documentation.html" title="http://www.geonames.org/ontology#featureClass">gn:featureClass</a></code></td>
+      <td><code><a href="http://www.geonames.org/ontology/documentation.html" title="http://www.geonames.org/ontology#featureCode">gn:featureCode</a></code></td>
       <td>An area category, e.g. city</td>
     </tr>
     <tr id="schema:containedIn">
@@ -74,9 +74,9 @@ Schema.org, GeoNames, and ISA Programme Location Core Vocabulary terms are retai
       <td><code><a href="http://schema.org/containedIn" title="http://schema.org/containedIn">schema:containedIn</a></code></td>
       <td>The area that contains this area</td>
     </tr>
-    <tr id="schema:geo">
+    <tr id="locn:geometry">
       <td>geometry</td>
-      <td><code><a href="http://schema.org/geo" title="http://schema.org/geo">schema:geo</a></code></td>
+      <td><code><a href="http://www.w3.org/ns/locn#locn:geometry" title="http://www.w3.org/ns/locn#geometry">locn:geometry</a></code></td>
       <td>A geometry</td>
     </tr>
   </tbody>
@@ -88,10 +88,9 @@ The use of <a href="https://github.com/opencivicdata/ocd-division-ids/#readme">O
 
 **JSON differences from other RDF serializations:**
 
-* The term `identifier` is used instead of `geographicIdentifier`, to be consistent with [identifier objects](/specs/#identifier).
-* The term `classification` is used instead of `featureClass`, to be consistent with the [Organization](/specs/organization.html) class.
+* The term `identifier` is used instead of `notation`, to be consistent with [identifier objects](/specs/#identifier).
+* The term `classification` is used instead of `featureCode`, to be consistent with the [Organization](/specs/organization.html) class.
 * The term `parent_id` is used instead of `containedIn`, to be consistent with the [Organization](/specs/organization.html) class.
-* The term `geometry` is used instead of `geo`, because abbreviations are avoided.
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#area-schema">JSON Schema</a></li>

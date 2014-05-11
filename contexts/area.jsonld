@@ -1,0 +1,29 @@
+{
+  "Area": "http://www.geonames.org/ontology#Feature",
+  "name": "http://schema.org/name",
+  "identifier": "http://www.w3.org/2004/02/skos/core#notation",
+  "classification": {
+    "@id": "http://www.geonames.org/ontology#featureCode",
+    "@type": "@id"
+  },
+  "parent": {
+    "@id": "http://schema.org/containedIn",
+    "@type": "@id"
+  },
+  "geometry": {
+    "@id": "http://www.w3.org/ns/locn#geometry",
+    "@type": "@id"
+  },
+  "created_at": {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": "http://purl.org/dc/terms/W3CDTF"
+  },
+  "updated_at": {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": "http://purl.org/dc/terms/W3CDTF"
+  },
+  "sources": {
+    "@id": "http://purl.org/dc/terms/source",
+    "@type": "@id"
+  }
+}
