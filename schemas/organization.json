@@ -77,7 +77,7 @@
       }
     },
     "memberships": {
-      "description": "The relationships to which the organization is a party",
+      "description": "Memberships",
       "type": "array",
       "items": {
         "$ref": "http://popoloproject.com/schemas/membership.json#"
