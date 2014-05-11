@@ -1,0 +1,36 @@
+{
+  "VoteEvent": "http://www.w3.org/ns/opengov#VoteEvent",
+  "identifier": "http://www.w3.org/2004/02/skos/core#notation",
+  "motion": {
+    "@id": "http://www.w3.org/ns/opengov#motion",
+    "@type": "@id"
+  },
+  "start_date": {
+    "@id": "http://schema.org/startDate",
+    "@type": "http://purl.org/dc/terms/W3CDTF"
+  },
+  "end_date": {
+    "@id": "http://schema.org/endDate",
+    "@type": "http://purl.org/dc/terms/W3CDTF"
+  },
+  "counts": {
+    "@id": "http://www.w3.org/ns/opengov#count",
+    "@type": "@id"
+  },
+  "votes": {
+    "@id": "http://www.w3.org/ns/opengov#vote",
+    "@type": "@id"
+  },
+  "created_at": {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": "http://purl.org/dc/terms/W3CDTF"
+  },
+  "updated_at": {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": "http://purl.org/dc/terms/W3CDTF"
+  },
+  "sources": {
+    "@id": "http://purl.org/dc/terms/source",
+    "@type": "@id"
+  }
+}

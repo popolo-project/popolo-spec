@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://popoloproject.com/schemas/vote_event.json#",
+  "title": "Vote event",
+  "description": "An event at which people's votes are recorded",
+  "type": "object",
+  "properties": {
+    "identifier": {
+      "description": "An issued identifier",
+      "type": ["string", "null"]
+    },
+    "motion_id": {
+      "description": "The ID of the motion being decided",
+      "type": ["string", "null"]
+    },
+    "motion": {
+      "description": "The motion being decided",
+      "$ref": "http://popoloproject.com/schemas/motion.json#"
+    },
+    "start_date": {
+      "description": "The time at which the event begins",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "end_date": {
+      "description": "The time at which the event ends",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "counts": {
+      "description": "The number of votes for options",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/count.json#"
+      }
+    },
+    "votes": {
+      "description": "Voters' votes",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/vote.json#"
+      }
+    },
+    "created_at": {
+      "description": "The time at which the resource was created",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "description": "The time at which the resource was last modified",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "sources": {
+      "description": "URLs to documents from which the area is derived",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/link.json#"
+      }
+    }
+  }
+}
