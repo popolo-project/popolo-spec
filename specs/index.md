@@ -22,7 +22,7 @@ The data specification will define terms (classes and properties) to describe an
   </dd>
   <dt>Membership</dt>
   <dd>
-    <div>A relationship between a person and an organization</div>
+    <div>A relationship between a member and an organization</div>
     <p class="note">e.g. member of the XYZ Party</p>
   </dd>
   <dt>Post</dt>
@@ -34,6 +34,31 @@ The data specification will define terms (classes and properties) to describe an
   <dd>
     <div>A means of contacting a person, organization or post</div>
     <p class="note">e.g. a telephone number, email address, postal address, Twitter account, etc.</p>
+  </dd>
+  <dt>Area</dt>
+  <dd>
+    <div>A geographic area whose geometry may change over time</div>
+    <p class="note">e.g. a country, city, ward, etc.</p>
+  </dd>
+  <dt>Motion</dt>
+  <dd>
+    <div>A formal step to introduce a matter for consideration by an organization</div>
+    <p class="note">e.g. "That the House do now proceed to the Orders of the Day."</p>
+  </dd>
+  <dt>Vote Event</dt>
+  <dd>
+    <div>An event at which people's votes are recorded</div>
+    <p class="note">e.g. a vote to pass a bill</p>
+  </dd>
+  <dt>Count</dt>
+  <dd>
+    <div>The number of votes for an option in a vote event</div>
+    <p class="note">e.g. 128 votes in favor of passage</p>
+  </dd>
+  <dt>Vote</dt>
+  <dd>
+    <div>A voter's vote in a vote event</div>
+    <p class="note">e.g. John Q. Public voted in favor of passage</p>
   </dd>
 </dl>
 
@@ -149,11 +174,19 @@ The subdocuments in the [next section](#classes-and-properties) describe specifi
 
 Each of the following subdocuments describes a class and its properties:
 
-1. [Person](/specs/person.html): [Name Component](/specs/person/name-component.html)
-1. [Organization](/specs/organization.html)
-1. [Membership](/specs/membership.html)
-1. [Post](/specs/post.html)
-1. [Contact Detail](/specs/contact-detail.html)
+* People and organizations
+  * [Person](/specs/person.html): [Name Component](/specs/person/name-component.html)
+  * [Organization](/specs/organization.html)
+  * [Membership](/specs/membership.html)
+  * [Post](/specs/post.html)
+  * [Contact Detail](/specs/contact-detail.html)
+* Geography
+  * [Area](/specs/contact-detail.html)
+* Motions and voting
+  * [Motion](/specs/motion.html)
+  * [Vote Event](/specs/vote-event.html)
+  * [Count](/specs/count.html)
+  * [Vote](/specs/vote.html)
 
 The structure of each subdocument is:
 
@@ -222,7 +255,7 @@ Given that the same RDF resource can be serialized in many different ways using 
 * The value of the `type` property of a `ContactDetail` <em class="rfc2119">should</em> be a [node type](http://json-ld.org/spec/latest/json-ld/#dfn-node-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
 * The value of the `scheme` property of an `Identifier` <em class="rfc2119">should</em> be a [value type](http://json-ld.org/spec/latest/json-ld/#dfn-value-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
 * The value of the `links` and `sources` properties <em class="rfc2119">should</em> be an array of URIs, not an array of [link objects](/specs/#link).
-* A JSON-LD serialization <em class="rfc2119">should</em> use the `@id`, `on_behalf_of`, `organization`, `parent`, `person` and `post` properties instead of `id`, `on_behalf_of_id`, `organization_id`, `parent_id`, `person_id` and `post_id`.
+* A JSON-LD serialization <em class="rfc2119">should</em> use the `@id`, `on_behalf_of`, `organization`, `parent`, `person`, `post`, `area`, and `vote_event` properties instead of `id`, `on_behalf_of_id`, `organization_id`, `parent_id`, `person_id`, `post_id`, `area_id`, and `vote_event_id`.
 
 Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>3</sup>](#note3) is <em class="rfc2119">recommended</em>. In RDF, the [`dcterms:W3CDTF`](http://www.w3.org/TR/NOTE-datetime) datatype is <em class="rfc2119">recommended</em>.
 
@@ -274,6 +307,36 @@ As described in the [conformance](#conformance) section, JSON serializations <em
       <td><a href="/examples/contact_detail.json">contact_detail.json</a></td>
       <td><a href="/examples/contact_detail.ttl">contact_detail.ttl</a></td>
     </tr>
+    <tr>
+      <td><a href="/schemas/area.json">Area</a></td>
+      <td><a href="/contexts/area.jsonld">area.jsonld</a></td>
+      <td><a href="/examples/area.json">area.json</a></td>
+      <td><a href="/examples/area.ttl">area.ttl</a></td>
+    </tr>
+    <tr>
+      <td><a href="/schemas/motion.json">Motion</a></td>
+      <td><a href="/contexts/motion.jsonld">motion.jsonld</a></td>
+      <td><a href="/examples/motion.json">motion.json</a></td>
+      <td><a href="/examples/motion.ttl">motion.ttl</a></td>
+    </tr>
+    <tr>
+      <td><a href="/schemas/vote_event.json">Vote Event</a></td>
+      <td><a href="/contexts/vote_event.jsonld">vote_event.jsonld</a></td>
+      <td><a href="/examples/vote_event.json">vote_event.json</a></td>
+      <td><a href="/examples/vote_event.ttl">vote_event.ttl</a></td>
+    </tr>
+    <tr>
+      <td><a href="/schemas/count.json">Count</a></td>
+      <td><a href="/contexts/count.jsonld">count.jsonld</a></td>
+      <td><a href="/examples/count.json">count.json</a></td>
+      <td><a href="/examples/count.ttl">count.ttl</a></td>
+    </tr>
+    <tr>
+      <td><a href="/schemas/vote.json">Vote</a></td>
+      <td><a href="/contexts/vote.jsonld">vote.jsonld</a></td>
+      <td><a href="/examples/vote.json">vote.json</a></td>
+      <td><a href="/examples/vote.ttl">vote.ttl</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -302,12 +365,14 @@ The following examples use a Person document to demonstrate the metadata propert
 
 When serializing to JSON, you have two options when relating entities, which you may use simultaneously:
 
-1. Link organizations, people, posts and memberships with the properties:
+1. Link entities with the properties:
     * `on_behalf_of_id`
     * `organization_id`
     * `person_id`
     * `post_id`
     * `parent_id`
+    * `area_id`
+    * `vote_event_id`
 
 2. Embed an entity's relations on the entity's document with the properties:
     * `memberships`
@@ -317,6 +382,8 @@ When serializing to JSON, you have two options when relating entities, which you
     * `post`
     * `posts`
     * `parent`
+    * `area`
+    * `vote_event`
 
 The first option is straight-forward and is used in the examples in the subdocuments above.
 

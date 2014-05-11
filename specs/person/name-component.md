@@ -1,7 +1,7 @@
 ---
 layout: class
 title: Person Name Components | The Popolo Project
-id: person
+id: name-component
 ---
 
 <ul class="breadcrumb">

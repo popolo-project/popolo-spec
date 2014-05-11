@@ -70,7 +70,7 @@ Few specifications exist for motions, and few legislatures publish motions in a 
     <tr id="opengov:Motion">
       <td>Motion</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#Motion">opengov:Motion</a></code></td>
-      <td>A formal step to introduce a matter for consideration by a group</td>
+      <td>A formal step to introduce a matter for consideration by an organization</td>
     </tr>
     <tr id="schema:publisher">
       <td>organization</td>

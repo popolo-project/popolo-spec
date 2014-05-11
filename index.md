@@ -57,16 +57,19 @@ Jump to a section below or start at the [beginning](/specs/).
 1. [Use cases & requirements](/specs/#use-cases-and-requirements)
 1. [Standard reuse](/specs/#standard-reuse)
 1. [Classes and properties](/specs/#classes-and-properties)
-    1. [Person](/specs/person.html): [Name Component](/specs/person/name-component.html)
-    1. [Organization](/specs/organization.html)
-    1. [Membership](/specs/membership.html)
-    1. [Post](/specs/post.html)
-    1. [Contact Detail](/specs/contact-detail.html)
-{% comment %}
-    1. [Area](/specs/area.html)
-    1. [Event](/specs/event.html)
-    1. [Document](/specs/document.html)
-{% endcomment %}
+    1. People and organizations
+        1. [Person](/specs/person.html): [Name Component](/specs/person/name-component.html)
+        1. [Organization](/specs/organization.html)
+        1. [Membership](/specs/membership.html)
+        1. [Post](/specs/post.html)
+        1. [Contact Detail](/specs/contact-detail.html)
+    1. Geography
+        1. [Area](/specs/area.html)
+    1. Motions and voting
+        1. [Motion](/specs/motion.html)
+        1. [Vote Event](/specs/vote-event.html)
+        1. [Count](/specs/count.html)
+        1. [Vote](/specs/vote.html)
 1. [Serialization](/specs/#serialization)
     1. [JSON schema and examples](/specs/#schema-and-examples)
     1. [Metadata serialization](/specs/#metadata-properties)

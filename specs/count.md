@@ -49,7 +49,7 @@ Few specifications exist for vote totals, and few legislatures publish vote data
     <tr id="opengov:voteEvent">
       <td>vote event</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#voteEvent">opengov:voteEvent</a></code></td>
-      <td>The vote event</td>
+      <td>A vote event</td>
     </tr>
     <tr id="rdf:type">
       <td>option</td>
@@ -59,7 +59,7 @@ Few specifications exist for vote totals, and few legislatures publish vote data
     <tr id="rdf:value">
       <td>value</td>
       <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_value" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">rdf:value</a></code></td>
-      <td>The number of votes for the option</td>
+      <td>The number of votes for an option</td>
     </tr>
   </tbody>
 </table>
