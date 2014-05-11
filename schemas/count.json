@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://popoloproject.com/schemas/count.json#",
+  "title": "Count",
+  "description": "The number of votes for an option in a vote event",
+  "type": "object",
+  "properties": {
+    "vote_event_id": {
+      "description": "The ID of a vote event",
+      "type": ["string", "null"]
+    },
+    "vote_event": {
+      "description": "A vote event",
+      "$ref": "http://popoloproject.com/schemas/vote_event.json#"
+    },
+    "option": {
+      "description": "An option in a vote event",
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "description": "The number of votes for an option",
+      "type": "string",
+      "required": true
+    }
+  }
+}
