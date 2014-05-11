@@ -95,7 +95,7 @@ task :default do
       'text',
       'subject',
       # 'date',
-      'requirements',
+      'requirement',
       'result',
       # 'vote events',
     ],

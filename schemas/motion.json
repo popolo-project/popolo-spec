@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://popoloproject.com/schemas/motion.json#",
+  "title": "Motion",
+  "description": "A formal step to introduce a matter for consideration by an organization",
+  "type": "object",
+  "properties": {
+    "organization_id": {
+      "description": "The ID of the organization in which the motion is proposed",
+      "type": ["string", "null"]
+    },
+    "organization": {
+      "description": "The organization in which the motion is proposed",
+      "$ref": "http://popoloproject.com/schemas/organization.json#"
+    },
+    "context_id": {
+      "description": "The ID of the legislative context in which the motion is proposed",
+      "type": ["string", "null"]
+    },
+    "context": {
+      "description": "The legislative context in which the motion is proposed",
+      "type": ["object", "null"]
+    },
+    "creator_id": {
+      "description": "The ID of the person who proposed the motion",
+      "type": ["string", "null"]
+    },
+    "creator": {
+      "description": "The person who proposed the motion",
+      "$ref": "http://popoloproject.com/schemas/person.json#"
+    },
+    "text": {
+      "description": "The transcript or text of the motion",
+      "type": ["string", "null"]
+    },
+    "subject_id": {
+      "description": "The ID of the subject of the motion",
+      "type": ["string", "null"]
+    },
+    "subject": {
+      "description": "The subject of the motion",
+      "type": ["object", "null"]
+    },
+    "date": {
+      "description": "The date on which the motion was proposed",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "requirement": {
+      "description": "The requirement for the motion to be adopted",
+      "type": ["string", "null"]
+    },
+    "result": {
+      "description": "The result of the motion",
+      "type": ["string", "null"]
+    },
+    "vote_events": {
+      "description": "Events at which people vote on the motion",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/vote_event.json#"
+      }
+    },
+    "created_at": {
+      "description": "The time at which the resource was created",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "description": "The time at which the resource was last modified",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "sources": {
+      "description": "URLs to documents from which the motion is derived",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/link.json#"
+      }
+    }
+  }
+}

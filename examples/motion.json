@@ -9,7 +9,7 @@
   "text": "That the Bill is to be read a second time.",
   "subject_id": "bill-84",
   "date": "2013-01-01",
-  "requirements": "two-thirds majority",
+  "requirement": "two-thirds majority",
   "result": "pass",
   "vote_event_id": ["vote-42"],
 }

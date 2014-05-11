@@ -44,7 +44,7 @@ The Motion class should have properties for:
 
     >January 1, 2013
 
-1. the requirements for the motion to be agreed to
+1. the requirement for the motion to be agreed to
 
     >two-thirds majority
 
@@ -74,7 +74,7 @@ Few specifications exist for motions, and few legislatures publish motions in a 
     </tr>
     <tr id="schema:publisher">
       <td>organization</td>
-      <td><code><a href="http://schema.org/text" title="http://schema.org/publisher">schema:publisher</a></code></td>
+      <td><code><a href="http://schema.org/publisher" title="http://schema.org/publisher">schema:publisher</a></code></td>
       <td>The organization in which the motion is proposed</td>
     </tr>
     <tr id="opengov:context">
@@ -102,10 +102,10 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-date" title="http://purl.org/dc/terms/date">dcterms:date</a></code></td>
       <td>The date on which the motion was proposed</td>
     </tr>
-    <tr id="opengov:requirements">
-      <td>requirements</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#requirements">opengov:requirements</a></code></td>
-      <td>The requirements for the motion to be adopted</td>
+    <tr id="opengov:requirement">
+      <td>requirement</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#requirement">opengov:requirement</a></code></td>
+      <td>The requirement for the motion to be adopted</td>
     </tr>
     <tr id="opengov:result">
       <td>result</td>

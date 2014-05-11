@@ -2633,7 +2633,7 @@ id: data
         <td>creator</td>
         <td>text</td>
         <td>subject</td>
-        <td>requirements</td>
+        <td>requirement</td>
         <td>result</td>
       </tr>
     </thead>

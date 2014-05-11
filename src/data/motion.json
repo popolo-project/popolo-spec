@@ -55,7 +55,7 @@
     "text": {
       "term": "refersTo"
     },
-    "requirements": {
+    "requirement": {
       "term": "quorum"
     },
     "result": {
@@ -130,7 +130,7 @@
     "subject": {
       "term": "legis-num"
     },
-    "requirements": {
+    "requirement": {
       "term": "vote-type"
     },
     "result": {
@@ -147,7 +147,7 @@
     "subject": {
       "term": "document, amendment"
     },
-    "requirements": {
+    "requirement": {
       "term": "majority_requirement"
     },
     "result": {
@@ -161,7 +161,7 @@
     "subject": {
       "term": "Agenda Item #"
     },
-    "requirements": {
+    "requirement": {
       "term": "Vote Description"
     },
     "result": {
