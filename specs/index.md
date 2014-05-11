@@ -249,13 +249,13 @@ Given that the same RDF resource can be serialized in many different ways using 
 
 * A JSON-LD serialization <em class="rfc2119">should</em> use the [`@context`](http://json-ld.org/spec/latest/json-ld/#the-context), [`@type`](http://json-ld.org/spec/latest/json-ld/#dfn-node-type) and [`@id`](http://json-ld.org/spec/latest/json-ld/#node-identifiers) [keywords](http://json-ld.org/spec/latest/json-ld/#dfn-keyword).
 * The value of the `email` property of a `Person` <em class="rfc2119">should</em> be a ['mailto' URI](http://tools.ietf.org/html/rfc6068).
-* The value of the `role` property of a `Membership` or `Post` <em class="rfc2119">should</em> be a URI or blank node for a `org:Role`.
+* The value of the `role` property of a `Membership`, `Post`, or `Vote` <em class="rfc2119">should</em> be a URI or blank node for a `org:Role`.
 * The value of the `classification` property of an `Organization` <em class="rfc2119">should</em> be a URI or blank node for a `skos:Concept`.
 * The value of the `classification` property of an `Area` <em class="rfc2119">should</em> be a URI or blank node for a `gn:Code`, which is a subclass of `skos:Concept`.
 * The value of the `type` property of a `ContactDetail` <em class="rfc2119">should</em> be a [node type](http://json-ld.org/spec/latest/json-ld/#dfn-node-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
 * The value of the `scheme` property of an `Identifier` <em class="rfc2119">should</em> be a [value type](http://json-ld.org/spec/latest/json-ld/#dfn-value-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
 * The value of the `links` and `sources` properties <em class="rfc2119">should</em> be an array of URIs, not an array of [link objects](/specs/#link).
-* A JSON-LD serialization <em class="rfc2119">should</em> use the `@id`, `on_behalf_of`, `organization`, `parent`, `person`, `post`, `area`, and `vote_event` properties instead of `id`, `on_behalf_of_id`, `organization_id`, `parent_id`, `person_id`, `post_id`, `area_id`, and `vote_event_id`.
+* A JSON-LD serialization <em class="rfc2119">should</em> use the `@id`, `area`, `on_behalf_of`, `organization`, `pair`, `parent`, `party`, `person`, `post`, `vote_event`, and `voter` properties instead of `id`, `area_id`, `on_behalf_of_id`, `organization_id`, `pair_id`, `parent_id`, `party_id`, `person_id`, `post_id`, `vote_event_id`, and `voter_id`.
 
 Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>3</sup>](#note3) is <em class="rfc2119">recommended</em>. In RDF, the [`dcterms:W3CDTF`](http://www.w3.org/TR/NOTE-datetime) datatype is <em class="rfc2119">recommended</em>.
 
@@ -366,24 +366,33 @@ The following examples use a Person document to demonstrate the metadata propert
 When serializing to JSON, you have two options when relating entities, which you may use simultaneously:
 
 1. Link entities with the properties:
+    * `area_id`
     * `on_behalf_of_id`
     * `organization_id`
+    * `pair_id`
+    * `parent_id`
+    * `party_id`
     * `person_id`
     * `post_id`
-    * `parent_id`
-    * `area_id`
     * `vote_event_id`
+    * `voter_id`
 
 2. Embed an entity's relations on the entity's document with the properties:
+    * `area`
+    * `counts`
     * `memberships`
     * `on_behalf_of`
     * `organization`
+    * `pair`
+    * `parent`
+    * `party`
     * `person`
     * `post`
     * `posts`
-    * `parent`
-    * `area`
     * `vote_event`
+    * `vote_events`
+    * `votes`
+    * `voter`
 
 The first option is straight-forward and is used in the examples in the subdocuments above.
 
