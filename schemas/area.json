@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://popoloproject.com/schemas/area.json#",
+  "title": "Area",
+  "description": "A geographic area whose geometry may change over time",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "A primary name",
+      "type": ["string", "null"]
+    },
+    "identifier": {
+      "description": "An issued identifier",
+      "type": ["string", "null"]
+    },
+    "classification": {
+      "description": "An area category, e.g. city",
+      "type": ["string", "null"]
+    },
+    "parent_id": {
+      "description": "The ID of the area that contains this area",
+      "type": ["string", "null"]
+    },
+    "parent": {
+      "description": "The area that contains this area",
+      "$ref": "http://popoloproject.com/schemas/area.json#"
+    },
+    "geometry": {
+      "description": "A geometry",
+      "type": ["object", "null"]
+    },
+    "created_at": {
+      "description": "The time at which the resource was created",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "description": "The time at which the resource was last modified",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "sources": {
+      "description": "URLs to documents from which the area is derived",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/link.json#"
+      }
+    }
+  }
+}

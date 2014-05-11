@@ -50,14 +50,14 @@ Schema.org, GeoNames, and ISA Programme Location Core Vocabulary terms are retai
   </thead>
   <tbody>
     <tr id="gn:Feature">
-      <td>area</td>
+      <td>Area</td>
       <td><code><a href="http://www.geonames.org/ontology/documentation.html" title="http://www.geonames.org/ontology#Feature">gn:Feature</a></code></td>
       <td>A geographic area whose geometry may change over time</td>
     </tr>
     <tr id="schema:name">
       <td>name</td>
       <td><code><a href="http://schema.org/name" title="http://schema.org/name">schema:name</a></code></td>
-      <td>An area's official name</td>
+      <td>A primary name</td>
     </tr>
     <tr id="locn:geographicIdentifier">
       <td>identifier</td>
@@ -67,7 +67,7 @@ Schema.org, GeoNames, and ISA Programme Location Core Vocabulary terms are retai
     <tr id="gn:featureClass">
       <td>classification</td>
       <td><code><a href="http://www.geonames.org/ontology/documentation.html" title="http://www.geonames.org/ontology#featureClass">gn:featureClass</a></code></td>
-      <td>The area's primary category, e.g. province, city, ward, etc.</td>
+      <td>An area category, e.g. city</td>
     </tr>
     <tr id="schema:containedIn">
       <td>parent area</td>
@@ -77,7 +77,7 @@ Schema.org, GeoNames, and ISA Programme Location Core Vocabulary terms are retai
     <tr id="schema:geo">
       <td>geometry</td>
       <td><code><a href="http://schema.org/geo" title="http://schema.org/geo">schema:geo</a></code></td>
-      <td>An area's geometry</td>
+      <td>A geometry</td>
     </tr>
   </tbody>
 </table>
