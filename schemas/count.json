@@ -20,7 +20,7 @@
     },
     "value": {
       "description": "The number of votes for an option",
-      "type": "string",
+      "type": "integer",
       "required": true
     }
   }
