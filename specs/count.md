@@ -66,6 +66,10 @@ Few specifications exist for vote totals, and few legislatures publish vote data
 
 <h1 id="serialization">4. Serialization</h1>
 
+**JSON differences from other RDF serializations:**
+
+* The term `option` is used instead of `type`, to be consistent with the [Vote](/specs/vote.html) class.
+
 <ul class="nav nav-tabs no-js">
   <li><a href="#count-schema">JSON Schema</a></li>
   <li><a href="#count-context">JSON-LD Context</a></li>
@@ -89,3 +93,4 @@ Implementations <em class="rfc2119">may</em> use values from outside this list t
 * `yes`
 * `no`
 * `abstain`
+* `paired`

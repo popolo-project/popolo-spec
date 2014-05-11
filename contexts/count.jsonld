@@ -3,6 +3,7 @@
   "yes": "http://www.w3.org/ns/opengov#YesCount",
   "no": "http://www.w3.org/ns/opengov#NoCount",
   "abstain": "http://www.w3.org/ns/opengov#AbstainCount",
+  "paired": "http://www.w3.org/ns/opengov#PairedCount",
   "vote_event": {
     "@id": "http://www.w3.org/ns/opengov#voteEvent",
     "@type": "@id"
