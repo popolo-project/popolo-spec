@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://popoloproject.com/schemas/vote.json#",
+  "title": "Vote",
+  "description": "A voter's vote in a vote event",
+  "type": "object",
+  "properties": {
+    "vote_event_id": {
+      "description": "The ID of a vote event",
+      "type": ["string", "null"]
+    },
+    "vote_event": {
+      "description": "A vote event",
+      "$ref": "http://popoloproject.com/schemas/vote_event.json#"
+    },
+    "voter_id": {
+      "description": "The ID of the person or organization that is voting",
+      "type": ["string", "null"]
+    },
+    "voter": {
+      "description": "The person or organization that is voting",
+      "type": ["object", "null"]
+    },
+    "option": {
+      "description": "The option chosen by the voter, whether actively or passively",
+      "type": ["string", "null"]
+    },
+    "party_id": {
+      "description": "The ID of the voter's political party",
+      "type": ["string", "null"]
+    },
+    "party": {
+      "description": "The voter's political party",
+      "$ref": "http://popoloproject.com/schemas/organization.json#"
+    },
+    "role": {
+      "description": "The voter's role in the event",
+      "type": ["string", "null"]
+    },
+    "weight": {
+      "description": "The weight of the voter's vote",
+      "type": ["integer", "null"]
+    },
+    "pair_id": {
+      "description": "The ID of the person with whom the voter is paired",
+      "type": ["string", "null"]
+    },
+    "pair": {
+      "description": "The person with whom the voter is paired",
+      "$ref": "http://popoloproject.com/schemas/person.json#"
+    }
+  }
+}
