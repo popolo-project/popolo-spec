@@ -52,7 +52,7 @@
       "format": "date-time"
     },
     "sources": {
-      "description": "URLs to documents from which the area is derived",
+      "description": "URLs to documents from which the vote event is derived",
       "type": "array",
       "items": {
         "$ref": "http://popoloproject.com/schemas/link.json#"
