@@ -5,5 +5,5 @@
   schema:agent <http://example.com/people/john-q-public.ttl>;
   schema:option "paired";
   opengov:party <http://example.com/organizations/xyz-party.ttl>;
-  opengov:role "chair";
+  opengov:role [a org:Role; skos:prefLabel "Chair"@en];
   opengov:pair <http://example.com/people/joe-bloggs.ttl> .

@@ -73,7 +73,7 @@ Few specifications exist for individual votes, and few legislatures publish vote
     <tr id="opengov:voteEvent">
       <td>vote event</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#voteEvent">opengov:voteEvent</a></code></td>
-      <td>The vote event</td>
+      <td>A vote event</td>
     </tr>
     <tr id="schema:agent">
       <td>voter</td>
@@ -103,7 +103,7 @@ Few specifications exist for individual votes, and few legislatures publish vote
     <tr id="opengov:pair">
       <td>pair</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#pair">opengov:pair</a></code></td>
-      <td>A person with whom the voter is paired</td>
+      <td>The person with whom the voter is paired</td>
     </tr>
   </tbody>
 </table>
@@ -118,7 +118,7 @@ Few specifications exist for individual votes, and few legislatures publish vote
 **JSON differences from other RDF serializations:**
 
 * The term `voter` is used instead of `agent`, to avoid jargon.
-* The value of the `voter_id` property refers to a [person](/specs/person.html).
+* The value of the `role` property is a string, instead of an `org:Role`.
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#vote-schema">JSON Schema</a></li>
@@ -143,3 +143,4 @@ Implementations <em class="rfc2119">may</em> use values from outside this list t
 * `yes`
 * `no`
 * `abstain`
+* `paired`
