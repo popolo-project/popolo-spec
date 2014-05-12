@@ -54,7 +54,7 @@ The Motion class should have properties for:
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Few specifications exist for motions, and few legislatures publish motions in a machine-readable format. In many, the only specified or recorded motions are those with a single [vote event](specs/vote-event.html). However, a single motion may have multiple vote events; for example, a voice vote followed by a recorded vote. Dublin Core, Schema.org, and Akoma Ntoso terms are retained from the [inventory of terms](/appendices/terms.html#Motion).
+Few specifications exist for motions, and few legislatures publish motions in a machine-readable format. In many, the only specified or recorded motions are those with a single [vote event](/specs/vote-event.html). However, a single motion may have multiple vote events; for example, a voice vote followed by a recorded vote. Dublin Core, Schema.org, and Akoma Ntoso terms are retained from the [inventory of terms](/appendices/terms.html#Motion).
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
