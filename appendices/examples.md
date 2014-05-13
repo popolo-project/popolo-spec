@@ -335,7 +335,7 @@ As such, the `voter` property must override the `@type`:
 
 >The Standing Orders are silent on the question of a broken pair, which occurs when a paired Member votes. Still, agreements to pair are private arrangements between Members and not matters in which the Speaker or the House can intervene.
 
-For brevity, the following vote event example includes only the paired votes. In this case, the pairs are not known; if the pairs were known, a `pair_id` or `pair` property could indicate the voter's pair.
+For brevity, the following vote event example includes only the paired votes. In this case, the pairs are not known; if the pairs were known, a `pair_id` or `pair` property could indicate each voter's pair.
 
 ```json
 {
