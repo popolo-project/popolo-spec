@@ -354,7 +354,7 @@ Erskine May also describes:
 
 >The Speaker has deprecated as ‘unparliamentary’ the practice of voting in both lobbies as a demonstration of a ‘third’ position.
 
-For brevity, the following example vote event includes only the votes of Peter Temple-Morris, who voted twice.
+For brevity, the following vote event example includes only the votes of Peter Temple-Morris, who voted twice.
 
 ```json
 {
