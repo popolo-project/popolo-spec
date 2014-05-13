@@ -340,7 +340,7 @@ Since we do not know the option chosen by the teller in this scenario, the `opti
 }
 ```
 
-<h2 id="tellers">3.3. A voter votes twice</h2>
+<h2 id="voting-twice">3.3. A voter votes twice</h2>
 
 **Scenario:** In the House of Commons of the United Kingdom, an MP may vote twice in the same vote event. For example, a House of Commons [factsheet](http://www.parliament.uk/documents/commons-information-office/p09.pdf) describes:
 
