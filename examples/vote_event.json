@@ -8,11 +8,11 @@
   "counts": [
     {
       "option": "yes",
-      "value": "128"
+      "value": 128
     },
     {
       "option": "no",
-      "value": "145"
+      "value": 145
     }
   ],
   "votes": [
