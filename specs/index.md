@@ -208,7 +208,7 @@ The following diagram succinctly describes the relationships among the classes. 
 <img src="/img/diagram.png" width="687" height="84" alt="UML diagram">
 {% comment %}http://yuml.me/edit/730bfbbb{% endcomment %}
 
-## 5.1. Metadata properties
+<h2 id="metadata-properties">5.1. Metadata properties</h2>
 
 The following table defines the metadata properties and maps each term to an <abbr title="Resource Description Framework">RDF</abbr> <abbr title="uniform resource identifier">URI</abbr>[<sup>2</sup>](#note2):
 
