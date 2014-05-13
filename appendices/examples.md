@@ -26,6 +26,7 @@ This document provides more complex examples than [the samples given in the spec
 1. [Vote events](#vote-events)
   1. [A vote by a political party](#party-vote)
   1. [A vote with tellers](#tellers)
+  1. [A voter votes twice](#voting-twice)
 
 <h1 id="contact-details">1. Contact details</h1>
 
@@ -334,7 +335,54 @@ Since we do not know the option chosen by the teller in this scenario, the `opti
 ```json
 {
   "vote_event_id": "vote-84",
-  "voter": "john-q-public",
+  "voter_id": "john-q-public",
   "role": "yes teller"
+}
+```
+
+<h2 id="tellers">3.3. A voter votes twice</h2>
+
+**Scenario:** In the House of Commons of the United Kingdom, an MP may vote twice in the same vote event. For example, a House of Commons [factsheet](http://www.parliament.uk/documents/commons-information-office/p09.pdf) describes:
+
+>A Member who has voted by error may, if he or she has time, cross over to the other lobby and vote again, hence nullifying the effect of his or her original vote, though of course this procedure does not allow him actually to register a vote in favour of the proposition on which he made the first mistake. 
+
+For brevity, the following example vote event includes only the votes of Peter Temple-Morris, who voted twice.
+
+```json
+{
+  "identifier": "Division No. 50",
+  "motion": {
+    "text": "That the Bill be now read the Third time."
+  },
+  "start_date": "1997-07-08T18:56+01:00",
+  "counts": [
+    {
+      "option": "yes",
+      "value": 350
+    },
+    {
+      "option": "no",
+      "value": 138
+    }
+  ],
+  "votes": [
+    {
+      "voter": {
+        "name": "Peter Temple-Morris"
+      },
+      "option": "yes"
+    },
+    {
+      "voter": {
+        "name": "Peter Temple-Morris"
+      },
+      "option": "no"
+    }
+  ],
+  "sources": [
+    {
+      "url": "http://www.publications.parliament.uk/pa/cm199798/cmhansrd/vo970708/debtext/70708-19.htm"
+    }
+  ]
 }
 ```
