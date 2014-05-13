@@ -42,6 +42,8 @@ A vote is one voter's vote in a vote event.
 
     >Eve analyzes the chair's behavior on tie votes.
 
+    >Frank identifies vote events in which majority MPs volunteered as "no" tellers in order to record the minority MPs in opposition to a motion.
+
 1. the weight of the voter's vote
 
     >In the House of Representatives of New Zealand, the weight of a party's vote is equal to the number of members of the party.
