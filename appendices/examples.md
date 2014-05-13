@@ -346,6 +346,14 @@ Since we do not know the option chosen by the teller in this scenario, the `opti
 
 >A Member who has voted by error may, if he or she has time, cross over to the other lobby and vote again, hence nullifying the effect of his or her original vote, though of course this procedure does not allow him actually to register a vote in favour of the proposition on which he made the first mistake. 
 
+[_Erskine May: Parliamentary Practice_](http://en.wikipedia.org/wiki/Erskine_May:_Parliamentary_Practice) adds:
+
+>Members who have voted in both lobbies in the same division have been allowed on the following day to state as a matter of personal explanation in which lobby they intended to vote, and the numbers of the division have been directed to be corrected accordingly.
+
+Erskine May also describes:
+
+>The Speaker has deprecated as ‘unparliamentary’ the practice of voting in both lobbies as a demonstration of a ‘third’ position.
+
 For brevity, the following example vote event includes only the votes of Peter Temple-Morris, who voted twice.
 
 ```json
