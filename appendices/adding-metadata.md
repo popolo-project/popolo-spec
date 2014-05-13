@@ -27,3 +27,5 @@ It is recommended to reuse terms defined by the [Dublin Core Metadata Initiative
   * A description brief enough to include in a tweet
 * [issued](http://dublincore.org/documents/dcmi-terms/#terms-issued)
   * The date of formal issuance or publication of the resource
+* [identifier](http://dublincore.org/documents/dcmi-terms/#terms-identifier)
+  * Any time you have a formal identifier for a resource

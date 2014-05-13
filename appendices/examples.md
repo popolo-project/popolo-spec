@@ -314,6 +314,8 @@ Note that the memberships are assumed to have ended when the coalition dissolved
 
 **Scenario:** In the Scotting Parliament, on June 12, 2002, Brian Monteith proposes an amendment to a motion by Mike Watson. The amendment goes to a vote and fails, but the original motion passes without a vote.
 
+Note that the `identifier` and `title` properties are not defined by Popolo for the Motion class. They are terms reused from the [DCMI Metadata Terms](http://dublincore.org/documents/dcmi-terms/). See the [adding metadata](/appendices/adding-metadata.html) appendix for guidance.
+
 ```json
 {
   "organization": {
