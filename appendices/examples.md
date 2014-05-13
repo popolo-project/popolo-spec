@@ -325,7 +325,7 @@ As such, the `voter` property must override the `@type`:
 }
 ```
 
-<h2 id="party-vote">3.2. A vote with tellers</h2>
+<h2 id="tellers">3.2. A vote with tellers</h2>
 
 **Scenario:** In the House of Commons of the United Kingdom, and in other Westminster systems, [tellers](http://www.parliament.uk/site-information/glossary/tellers/) count the votes. There are typically two tellers for each voting option, which one teller a member of the government and the other a member of the opposition. Tellers either do not vote, vote according to the option they are counting, or vote to preserve unanimity. In any case, the options chosen by tellers is rarely recorded.
 
