@@ -40,9 +40,9 @@ A vote is one voter's vote in a vote event.
 
     >In the House of Commons of the United Kingdom, the [tellers](/appendices/examples.html#tellers) are the members who count the votes.
 
-    >Eve analyzes the chair's behavior on tie votes.
+    >Majority MPs may volunteer as "no" tellers in order to record the minority MPs in opposition to a motion.
 
-    >Frank identifies vote events in which majority MPs volunteered as "no" tellers in order to record the minority MPs in opposition to a motion.
+    >Eve analyzes the chair's behavior on tie votes.
 
 1. the weight of the voter's vote
 
