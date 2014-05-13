@@ -327,7 +327,7 @@ As such, the `voter` property must override the `@type`:
 }
 ```
 
-<h2 id="paired-vote">3.1. A paired vote</h2>
+<h2 id="paired-vote">3.2. A paired vote</h2>
 
 **Scenario:** "Pairing" generally refers to a reciprocal agreement between two voters by which a voter abstains if the other is unable to vote. It may not be known which two members form a pair. The House of Commons of Canada describes:
 
@@ -386,6 +386,7 @@ For brevity, the following vote event example includes only the paired votes. In
     }
   ]
 }
+```
 
 <h2 id="tellers">3.3. A vote with tellers</h2>
 
