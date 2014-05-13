@@ -1,6 +1,6 @@
 {
   "VoteEvent": "http://www.w3.org/ns/opengov#VoteEvent",
-  "identifier": "http://www.w3.org/2004/02/skos/core#notation",
+  "identifier": "http://purl.org/dc/terms/identifier",
   "motion": {
     "@id": "http://www.w3.org/ns/opengov#motion",
     "@type": "@id"

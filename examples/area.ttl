@@ -1,9 +1,10 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 <http://example.com/areas/example.ttl>
   a gn:Feature;
   schema:name "Boston Ward 1";
-  skos:notation "ocd-division/country:us/state:ma/place:boston/ward:1";
+  dcterms:identifier "ocd-division/country:us/state:ma/place:boston/ward:1";
   gn:featureCode [a gn:Code; skos:prefLabel "Corporation"@en];
   schema:containedIn <http://example.com/areas/boston.ttl> .

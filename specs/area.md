@@ -59,9 +59,9 @@ Schema.org, GeoNames, and ISA Programme Location Core Vocabulary terms are retai
       <td><code><a href="http://schema.org/name" title="http://schema.org/name">schema:name</a></code></td>
       <td>A primary name</td>
     </tr>
-    <tr id="skos:notation">
+    <tr id="dcterms:identifier">
       <td>identifier</td>
-      <td><code><a href="http://www.w3.org/2009/08/skos-reference/skos.html#notation" title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a></code></td>
+      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-identifier" title="http://purl.org/dc/terms/identifier">dcterms:identifier</a></code></td>
       <td>An issued identifier, e.g. an <a href="https://github.com/opencivicdata/ocd-division-ids/#readme">Open Civic Data Division Identifier</a></td>
     </tr>
     <tr id="gn:featureCode">
