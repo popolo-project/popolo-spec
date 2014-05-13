@@ -24,6 +24,7 @@ This document provides more complex examples than [the samples given in the spec
   1. [A post held by more than one person simultaneously](#simultaneous-post)
   1. [A party within a coalition](#party-coalition)
 1. [Vote events](#vote-events)
+  1. [An amendment to a motion](#vote-amendment)
   1. [A vote by a political party](#party-vote)
   1. [A paired vote](#paired-vote)
   1. [A vote with tellers](#tellers)
@@ -309,7 +310,69 @@ Note that the memberships are assumed to have ended when the coalition dissolved
 
 <h1 id="vote-events">3. Vote events</h1>
 
-<h2 id="party-vote">3.1. A vote by a political party</h2>
+<h2 id="vote-amendment">3.1. An amendment to a motion</h2>
+
+**Scenario:** In the Scotting Parliament, on June 12, 2002, Brian Monteith proposes an amendment to a motion by Mike Watson. The amendment goes to a vote and fails, but the original motion passes without a vote.
+
+```json
+{
+  "organization": {
+    "name": "Scottish Parliament"
+  },
+  "creator": {
+    "name": "Brian Monteith"
+  },
+  "identifier": "S1M-3192.2",
+  "text": "Insert at end: 'and believes that the Executive should aim to ensure that all Scottish schools have a full-time equivalent physical education teacher.'",
+  "date": "2002-06-12",
+  "result": "fail",
+  "vote_events": [
+    {
+      "date": "2002-06-12",
+      "counts": [
+        {
+          "option": "yes",
+          "value": 17
+        },
+        {
+          "option": "no",
+          "value": 69
+        },
+        {
+          "option": "abstain",
+          "value": 27
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "http://www.scottish.parliament.uk/parliamentarybusiness/28862.aspx?r=4383&mode=html"
+    }
+  ],
+  "subject": {
+    "@type": "Motion",
+    "organization": {
+      "name": "Scottish Parliament"
+    },
+    "creator": {
+      "name": "Mike Watson"
+    },
+    "identifier": "S1M-3192",
+    "title": "Value of Participation in Sport in Increasing the Quality of Life",
+    "text": "That the Parliament recognises the value of sport to the quality of life in Scotland and the importance of the role it plays in developing the health and well-being of the nation; welcomes the commitment of the Executive and sportscotland to work with governing bodies, local authorities and all other partners to widen participation in sport at all levels, and encourages all those with an interest in sport to contribute to the current review of sport 21, the strategy for sport in Scotland.",
+    "date": "2002-06-11",
+    "result": "pass",
+    "sources": [
+      {
+        "url": "http://archive.scottish.parliament.uk/business/businessBulletin/bb-02/bb-06-11f.htm"
+      }
+    ]
+  }
+}
+```
+
+<h2 id="party-vote">3.2. A vote by a political party</h2>
 
 **Scenario:** In the [House of Representatives of New Zealand](http://www.parliament.nz/en-nz/features/00NZPHomeNews20121019a1/conscience-votes), the parties regularly cast the votes, not the members.
 
@@ -327,7 +390,7 @@ As such, the `voter` property must override the `@type`:
 }
 ```
 
-<h2 id="paired-vote">3.2. A paired vote</h2>
+<h2 id="paired-vote">3.3. A paired vote</h2>
 
 **Scenario:** "Pairing" generally refers to a reciprocal agreement between two voters by which a voter abstains if the other is unable to vote. It may not be known which two members form a pair. The House of Commons of Canada describes:
 
@@ -388,7 +451,7 @@ For brevity, the following vote event example includes only the paired votes. In
 }
 ```
 
-<h2 id="tellers">3.3. A vote with tellers</h2>
+<h2 id="tellers">3.4. A vote with tellers</h2>
 
 **Scenario:** In the House of Commons of the United Kingdom, and in other Westminster systems, [tellers](http://www.parliament.uk/site-information/glossary/tellers/) count the votes. There are typically two tellers for each voting option, with one teller a member of the government and the other a member of the opposition. Tellers either do not vote, vote according to the option they are counting, or vote to preserve unanimity. In any case, the options chosen by tellers may not recorded.
 
@@ -402,7 +465,7 @@ Since we do not know the option chosen by the teller in this scenario, the `opti
 }
 ```
 
-<h2 id="voting-twice">3.4. A voter votes twice</h2>
+<h2 id="voting-twice">3.5. A voter votes twice</h2>
 
 **Scenario:** In the House of Commons of the United Kingdom, an MP may vote twice in the same vote event. For example, a House of Commons [factsheet](http://www.parliament.uk/documents/commons-information-office/p09.pdf) describes:
 
