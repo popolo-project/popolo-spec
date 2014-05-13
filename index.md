@@ -81,6 +81,7 @@ Jump to a section below or start at the [beginning](/specs/).
 
 1. [Example Popolo JSON documents](/appendices/examples.html)
 1. [Multilingualization](/appendices/multilingualization.html)
+1. [Adding metadata](/appendices/adding-metadata.html)
 1. [Handling duplicates](/appendices/handling-duplicates.html)
 1. [Survey of existing specifications](/appendices/survey.html)
 1. [Inventory of terms from the survey](/appendices/terms.html)
