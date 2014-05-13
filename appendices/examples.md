@@ -25,6 +25,7 @@ This document provides more complex examples than [the samples given in the spec
   1. [A party within a coalition](#party-coalition)
 1. [Vote events](#vote-events)
   1. [A vote by a political party](#party-vote)
+  1. [A paired vote](#paired-vote)
   1. [A vote with tellers](#tellers)
   1. [A voter votes twice](#voting-twice)
 
@@ -326,7 +327,67 @@ As such, the `voter` property must override the `@type`:
 }
 ```
 
-<h2 id="tellers">3.2. A vote with tellers</h2>
+<h2 id="paired-vote">3.1. A paired vote</h2>
+
+**Scenario:** "Pairing" generally refers to a reciprocal agreement between two voters by which a voter abstains if the other is unable to vote. It may not be known which two members form a pair. The House of Commons of Canada describes:
+
+>Pairing is a practice whereby the party Whips arrange for two Members from opposite sides of the House to agree that they will abstain from voting on a particular occasion to permit one or both to be absent from the House. In this way, their votes are effectively neutralized and the relative strength of their parties in the House maintains its balance.
+
+>The Standing Orders are silent on the question of a broken pair, which occurs when a paired Member votes. Still, agreements to pair are private arrangements between Members and not matters in which the Speaker or the House can intervene.
+
+For brevity, the following vote event example includes only the paired votes. In this case, the pairs are not known; if the pairs were known, a `pair_id` or `pair` property could indicate the voter's pair.
+
+```json
+{
+  "identifier": "17",
+  "motion": {
+    "text": "That the House call on the government to take the appropriate measures to sell the 11,000 acres of arable land back to the families and farmers whose land was expropriated to build the Mirabel Airport."
+  },
+  "start_date": "2005-02-22",
+  "counts": [
+    {
+      "option": "yes",
+      "value": 157
+    },
+    {
+      "option": "no",
+      "value": 118
+    }
+  ],
+  "votes": [
+    {
+      "voter": {
+        "name": "Gérard Asselin"
+      },
+      "option": "paired"
+    },
+    {
+      "voter": {
+        "name": "Claudette Bradshaw"
+      },
+      "option": "paired"
+    },
+    {
+      "voter": {
+        "name": "Brenda Chamberlain"
+      },
+      "option": "paired"
+    },
+    {
+      "voter": {
+        "name": "Roger Gaudet"
+      },
+      "option": "paired"
+    }
+  ],
+  "sources": [
+    {
+      "url": "http://www.parl.gc.ca/HouseChamberBusiness/ChamberVoteDetail.aspx?Parl=38&Ses=1&Vote=6"
+    }
+  ]
+}
+
+<h2 id="tellers">3.3. A vote with tellers</h2>
 
 **Scenario:** In the House of Commons of the United Kingdom, and in other Westminster systems, [tellers](http://www.parliament.uk/site-information/glossary/tellers/) count the votes. There are typically two tellers for each voting option, with one teller a member of the government and the other a member of the opposition. Tellers either do not vote, vote according to the option they are counting, or vote to preserve unanimity. In any case, the options chosen by tellers may not recorded.
 
@@ -340,7 +401,7 @@ Since we do not know the option chosen by the teller in this scenario, the `opti
 }
 ```
 
-<h2 id="voting-twice">3.3. A voter votes twice</h2>
+<h2 id="voting-twice">3.4. A voter votes twice</h2>
 
 **Scenario:** In the House of Commons of the United Kingdom, an MP may vote twice in the same vote event. For example, a House of Commons [factsheet](http://www.parliament.uk/documents/commons-information-office/p09.pdf) describes:
 
@@ -358,7 +419,7 @@ For brevity, the following vote event example includes only the votes of Peter T
 
 ```json
 {
-  "identifier": "Division No. 50",
+  "identifier": "50",
   "motion": {
     "text": "That the Bill be now read the Third time."
   },

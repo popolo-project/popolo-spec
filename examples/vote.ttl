@@ -3,7 +3,6 @@
   a opengov:Vote;
   opengov:voteEvent <http://example.com/vote_events/vote-42.ttl>;
   schema:agent <http://example.com/people/john-q-public.ttl>;
-  schema:option "paired";
+  schema:option "yes";
   opengov:party <http://example.com/organizations/xyz-party.ttl>;
-  opengov:role [a org:Role; skos:prefLabel "Chair"@en];
-  opengov:pair <http://example.com/people/joe-bloggs.ttl> .
+  opengov:role [a org:Role; skos:prefLabel "Chair"@en] .
