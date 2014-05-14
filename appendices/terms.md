@@ -2632,7 +2632,10 @@ id: data
         <td>context</td>
         <td>creator</td>
         <td>text</td>
-        <td>subject</td>
+        <td>references</td>
+        <td>proposal date</td>
+        <td>publication date</td>
+        <td>resolution date</td>
         <td>requirement</td>
         <td>result</td>
       </tr>
@@ -2657,8 +2660,23 @@ id: data
         <td>
         </td>
         <td>
-          <a href='http://purl.org/dc/terms/subject'>
-            subject
+          <a href='http://purl.org/dc/terms/references'>
+            references
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/dateSubmitted'>
+            dateSubmitted
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/issued'>
+            issued
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/dateAccepted'>
+            dateAccepted
           </a>
         </td>
         <td>
@@ -2695,6 +2713,15 @@ id: data
         <td>
         </td>
         <td>
+          <a href='http://schema.org/datePublished'>
+            datePublished
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
       </tr>
       <tr>
@@ -2719,6 +2746,12 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -2734,6 +2767,13 @@ id: data
         </td>
         <td>
           refersTo
+        </td>
+        <td>
+        </td>
+        <td>
+          date
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2761,6 +2801,15 @@ id: data
           <abbr title='hasRelatedDocument'>hasRelatedDocum…</abbr>
         </td>
         <td>
+          <abbr title='hasDateIntroduced'>hasDateIntroduc…</abbr>
+        </td>
+        <td>
+          <abbr title='hasDateOfPublication'>hasDateOfPublic…</abbr>
+        </td>
+        <td>
+          hasDateEnacted
+        </td>
+        <td>
         </td>
         <td>
           hasOutcome
@@ -2782,6 +2831,12 @@ id: data
         </td>
         <td>
           RelatedBill
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2809,6 +2864,12 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
           Decision
         </td>
       </tr>
@@ -2820,6 +2881,12 @@ id: data
         </td>
         <td>
           <abbr title='Wahlperiode, Sitzungnr'>Wahlperiode, Si…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2851,6 +2918,12 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
           Asentimiento
         </td>
       </tr>
@@ -2871,6 +2944,12 @@ id: data
         </td>
         <td>
           legis-num
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
           vote-type
@@ -2897,6 +2976,12 @@ id: data
           <abbr title='document, amendment'>document, amend…</abbr>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
           <abbr title='majority_requirement'>majority_requir…</abbr>
         </td>
         <td>
@@ -2918,6 +3003,12 @@ id: data
         </td>
         <td>
           Agenda Item #
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
           <abbr title='Vote Description'>Vote Descriptio…</abbr>

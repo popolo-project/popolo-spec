@@ -24,12 +24,17 @@
       "url": "",
       "label": ""
     },
-    "subject": {
+    "references": {
       "term": "",
       "url": "",
       "label": ""
     },
-    "date": {
+    "proposal date": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "publication date": {
       "term": "",
       "url": "",
       "label": ""
