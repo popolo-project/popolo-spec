@@ -15,12 +15,12 @@
     "@type": "@id"
   },
   "text": "http://schema.org/text",
-  "subject": {
-    "@id": "http://purl.org/dc/terms/subject",
+  "object": {
+    "@id": "http://purl.org/dc/terms/references",
     "@type": "@id"
   },
   "date": {
-    "@id": "http://purl.org/dc/terms/date",
+    "@id": "http://purl.org/dc/terms/dateSubmitted",
     "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "requirement": {

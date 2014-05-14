@@ -33,12 +33,12 @@
       "description": "The transcript or text of the motion",
       "type": ["string", "null"]
     },
-    "subject_id": {
-      "description": "The ID of the subject of the motion",
+    "object_id": {
+      "description": "The ID of a resource that the motion specifically references",
       "type": ["string", "null"]
     },
-    "subject": {
-      "description": "The subject of the motion",
+    "object": {
+      "description": "A resource that the motion specifically references",
       "type": ["object", "null"]
     },
     "date": {

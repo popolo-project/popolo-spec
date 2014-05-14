@@ -7,7 +7,7 @@
   },
   "creator_id": "john-doe",
   "text": "That the Bill is to be read a second time.",
-  "subject_id": "bill-84",
+  "object_id": "bill-84",
   "date": "2013-01-01",
   "requirement": "two-thirds majority",
   "result": "pass",

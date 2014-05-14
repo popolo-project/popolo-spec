@@ -38,10 +38,6 @@
       "term": "text",
       "url": "http://schema.org/text"
     },
-    "references": {
-      "term": "about",
-      "url": "http://schema.org/about"
-    },
     "publication date": {
       "term": "datePublished",
       "url": "http://schema.org/datePublished"

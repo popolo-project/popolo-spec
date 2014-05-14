@@ -34,7 +34,7 @@ The Motion class should have properties for:
 
     >That the House do now proceed to the Orders of the Day.
 
-1. the subject of the motion
+1. a resource that the motion specifically references
 
     >e.g. a bill, an amendment, a motion, etc.
 
@@ -92,14 +92,14 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="http://schema.org/text" title="http://schema.org/text">schema:text</a></code></td>
       <td>The transcript or text of the motion</td>
     </tr>
-    <tr id="dcterms:subject">
-      <td>subject</td>
-      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-subject" title="http://purl.org/dc/terms/subject">dcterms:subject</a></code></td>
-      <td>The subject of the motion</td>
+    <tr id="dcterms:references">
+      <td>object</td>
+      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-references" title="http://purl.org/dc/terms/references">dcterms:references</a></code></td>
+      <td>A resource that the motion specifically references</td>
     </tr>
-    <tr id="dcterms:date">
+    <tr id="dcterms:dateSubmitted">
       <td>proposal date</td>
-      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-date" title="http://purl.org/dc/terms/date">dcterms:date</a></code></td>
+      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-dateSubmitted" title="http://purl.org/dc/terms/dateSubmitted">dcterms:dateSubmitted</a></code></td>
       <td>The date on which the motion was proposed</td>
     </tr>
     <tr id="opengov:requirement">
@@ -120,13 +120,14 @@ Few specifications exist for motions, and few legislatures publish motions in a 
   </tbody>
 </table>
 
-The ranges of the `context` and `subject` properties are not specified, as they vary greatly across jurisdictions.
+The ranges of the `context` and `references` properties are not specified, as they vary greatly across jurisdictions.
 
 <h1 id="serialization">4. Serialization</h1>
 
 **JSON differences from other RDF serializations:**
 
 * The term `organization` is used instead of `publisher`, to be consistent with the name of the [Organization](/specs/organization.html) class.
+* The term `object` is used instead of `references`, because terms in Popolo are nouns, not verbs.
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#motion-schema">JSON Schema</a></li>

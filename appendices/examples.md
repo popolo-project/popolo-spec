@@ -353,7 +353,7 @@ Note that the `identifier` and `title` properties are not defined by Popolo for 
       "url": "http://www.scottish.parliament.uk/parliamentarybusiness/28862.aspx?r=4383&mode=html"
     }
   ],
-  "subject": {
+  "object": {
     "@type": "Motion",
     "organization": {
       "name": "Scottish Parliament"
