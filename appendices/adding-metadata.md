@@ -34,4 +34,4 @@ The W3C [Simple Knowledge Organization System](http://www.w3.org/TR/skos-referen
 
 * [prefLabel and altLabel](http://www.w3.org/TR/skos-reference/#labels), renamed to `label` and `alternative_label` in the JSON serialization of Popolo classes
 * [note](http://www.w3.org/TR/skos-reference/#notes), which is one of many [documentation properties](http://www.w3.org/TR/skos-reference/#notes)
-* [notation](http://www.w3.org/TR/skos-reference/#notations), although Dublin Core's `identifier` is preferred in most cases
+* [notation](http://www.w3.org/TR/skos-reference/#notations), although Dublin Core's `identifier` is generally preferred
