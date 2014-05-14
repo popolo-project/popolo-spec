@@ -29,3 +29,9 @@ It is recommended to reuse terms defined by the [Dublin Core Metadata Initiative
   * The date of formal issuance or publication of the resource
 * [identifier](http://dublincore.org/documents/dcmi-terms/#terms-identifier)
   * Any time you have a formal identifier for a resource
+
+The W3C [Simple Knowledge Organization System](http://www.w3.org/TR/skos-reference/) also provides generic metadata terms, including:
+
+* [prefLabel and altLabel](http://www.w3.org/TR/skos-reference/#labels), renamed to `label` and `alternative_label` in the JSON serialization of Popolo classes
+* [note](http://www.w3.org/TR/skos-reference/#notes), which is one of many [documentation properties](http://www.w3.org/TR/skos-reference/#notes)
+* [notation](http://www.w3.org/TR/skos-reference/#notations), although Dublin Core's `identifier` is preferred in most cases
