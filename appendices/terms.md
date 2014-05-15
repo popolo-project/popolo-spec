@@ -2614,6 +2614,27 @@ id: data
         <td>
         </td>
       </tr>
+      <tr>
+        <th scope='row'>
+          GML
+        </th>
+        <td>
+          Feature
+        </td>
+        <td>
+          name
+        </td>
+        <td>
+          id
+        </td>
+        <td>
+          featureType
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -2706,9 +2727,6 @@ id: data
           </a>
         </td>
         <td>
-          <a href='http://schema.org/about'>
-            about
-          </a>
         </td>
         <td>
         </td>

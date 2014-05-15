@@ -130,5 +130,19 @@
       "term": "PP",
       "url": "http://geovocab.org/spatial#PP"
     }
+  },
+  "GML": {
+    "Area": {
+      "term": "Feature"
+    },
+    "name": {
+      "term": "name"
+    },
+    "identifier": {
+      "term": "id"
+    },
+    "classification": {
+      "term": "featureType"
+    }
   }
 }
