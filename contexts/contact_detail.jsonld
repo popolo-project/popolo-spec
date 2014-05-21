@@ -15,7 +15,7 @@
     "@id": "http://schema.org/validFrom",
     "@type": "http://purl.org/dc/terms/W3CDTF"
   },
-  "valid_through": {
+  "valid_until": {
     "@id": "http://schema.org/validUntil",
     "@type": "http://purl.org/dc/terms/W3CDTF"
   },

@@ -28,7 +28,7 @@
       "type": ["string", "null"],
       "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
     },
-    "valid_through": {
+    "valid_until": {
       "description": "The date from which the contact detail is no longer valid",
       "type": ["string", "null"],
       "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"

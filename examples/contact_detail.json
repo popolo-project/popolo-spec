@@ -4,5 +4,5 @@
   "value": "+1-555-555-0199;ext=555",
   "note": "Capitol Hill",
   "valid_from": "1970-01",
-  "valid_through": "1971-12-31"
+  "valid_until": "1971-12-31"
 }
