@@ -145,4 +145,6 @@ Implementations <em class="rfc2119">may</em> use values from outside this list t
 * `yes`
 * `no`
 * `abstain`
+* `absent`
+* `not voting`
 * `paired`
