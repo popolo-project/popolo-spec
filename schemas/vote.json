@@ -5,6 +5,10 @@
   "description": "A voter's vote in a vote event",
   "type": "object",
   "properties": {
+    "id": {
+      "description": "The vote's unique identifier",
+      "type": ["string", "null"]
+    },
     "vote_event_id": {
       "description": "The ID of a vote event",
       "type": ["string", "null"]

@@ -5,6 +5,10 @@
   "description": "A formal step to introduce a matter for consideration by an organization",
   "type": "object",
   "properties": {
+    "id": {
+      "description": "The motion's unique identifier",
+      "type": ["string", "null"]
+    },
     "organization_id": {
       "description": "The ID of the organization in which the motion is proposed",
       "type": ["string", "null"]

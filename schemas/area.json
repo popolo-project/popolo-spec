@@ -5,6 +5,10 @@
   "description": "A geographic area whose geometry may change over time",
   "type": "object",
   "properties": {
+    "id": {
+      "description": "The area's unique identifier",
+      "type": ["string", "null"]
+    },
     "name": {
       "description": "A primary name",
       "type": ["string", "null"]
