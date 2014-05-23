@@ -93,7 +93,7 @@ task :default do
       'context',
       'creator',
       'text',
-      'references',
+      'object',
       'proposal date',
       'publication date',
       'resolution date',

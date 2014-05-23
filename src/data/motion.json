@@ -8,7 +8,7 @@
       "term": "creator",
       "url": "http://purl.org/dc/terms/creator"
     },
-    "references": {
+    "object": {
       "term": "references",
       "url": "http://purl.org/dc/terms/references"
     },
@@ -53,7 +53,7 @@
     "text": {
       "term": "label"
     },
-    "references": {
+    "object": {
       "term": "proceedingsObjectID"
     }
   },
@@ -81,7 +81,7 @@
     "text": {
       "term": "hasDocument"
     },
-    "references": {
+    "object": {
       "term": "hasRelatedDocument"
     },
     "proposal date": {
@@ -104,7 +104,7 @@
     "text": {
       "term": "Description"
     },
-    "references": {
+    "object": {
       "term": "RelatedBill"
     },
     "result": {
@@ -118,7 +118,7 @@
     "text": {
       "term": "Context"
     },
-    "references": {
+    "object": {
       "term": "RelatedBill"
     },
     "result": {
@@ -151,7 +151,7 @@
     "text": {
       "term": "vote-question"
     },
-    "references": {
+    "object": {
       "term": "legis-num"
     },
     "requirement": {
@@ -168,7 +168,7 @@
     "text": {
       "term": "title, vote_title"
     },
-    "references": {
+    "object": {
       "term": "document, amendment"
     },
     "requirement": {
@@ -182,7 +182,7 @@
     "organization": {
       "term": "Committee"
     },
-    "references": {
+    "object": {
       "term": "Agenda Item #"
     },
     "requirement": {

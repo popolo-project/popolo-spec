@@ -2653,7 +2653,7 @@ id: data
         <td>context</td>
         <td>creator</td>
         <td>text</td>
-        <td>references</td>
+        <td>object</td>
         <td>proposal date</td>
         <td>publication date</td>
         <td>resolution date</td>
