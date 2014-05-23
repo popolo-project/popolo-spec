@@ -14,10 +14,6 @@ A vote count is the number of votes for one option in a vote event.
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
-1. [vote event](/specs/vote-event.html)
-
-    >Vote No. 42
-
 1. option
 
     >e.g. yes, no, or abstain.
@@ -45,11 +41,6 @@ Few specifications exist for vote totals, and few legislatures publish vote data
       <td>Count</td>
       <td>No <code>rdf:type</code></td>
       <td>The number of votes for an option in a vote event</td>
-    </tr>
-    <tr id="opengov:voteEvent">
-      <td>vote event</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#voteEvent">opengov:voteEvent</a></code></td>
-      <td>A vote event</td>
     </tr>
     <tr id="rdf:type">
       <td>option</td>
