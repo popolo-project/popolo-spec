@@ -120,7 +120,7 @@ Few specifications exist for motions, and few legislatures publish motions in a 
   </tbody>
 </table>
 
-The ranges of the `context` and `references` properties are not specified, as they vary greatly across jurisdictions.
+The ranges of the `context` and `object` properties are not specified, as they vary greatly across jurisdictions.
 
 <h1 id="serialization">4. Serialization</h1>
 

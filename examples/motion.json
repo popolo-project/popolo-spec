@@ -11,5 +11,5 @@
   "date": "2013-01-01",
   "requirement": "two-thirds majority",
   "result": "pass",
-  "vote_event_id": ["vote-42"],
+  "vote_events": ["vote-42"],
 }
