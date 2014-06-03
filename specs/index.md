@@ -33,7 +33,7 @@ The data specification will define terms (classes and properties) to describe an
   <dt>Contact Detail</dt>
   <dd>
     <div>A means of contacting a person, organization or post</div>
-    <p class="note">e.g. a telephone number, email address, postal address, Twitter account, etc.</p>
+    <p class="note">e.g. a telephone number, email address, postal address, contact form, etc.</p>
   </dd>
   <dt>Area</dt>
   <dd>

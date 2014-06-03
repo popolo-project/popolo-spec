@@ -30,7 +30,7 @@ The ContactDetail class should have properties for:
 
 1. value
 
-    >e.g. a postal address, mobile number, email address, Twitter account, etc.
+    >e.g. a postal address, mobile number, email address, contact form, etc.
 
 1. note
 
@@ -142,7 +142,7 @@ Implementations <em class="rfc2119">may</em> use values from outside the followi
     </tr>
     <tr>
       <td><code>url</code></td>
-      <td>A URL to a contact form, Twitter profile, etc.</td>
+      <td>A URL to a contact form, etc.</td>
     </tr>
   </tbody>
 </table>
