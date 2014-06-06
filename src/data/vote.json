@@ -53,7 +53,7 @@
     "voter": {
       "term": "Participant"
     },
-    "caucus": {
+    "group": {
       "term": "Party"
     }
   },
@@ -61,7 +61,7 @@
     "voter": {
       "term": "Bezeichnung"
     },
-    "caucus": {
+    "group": {
       "term": "Fraktion/Gruppe"
     }
   },
@@ -72,7 +72,7 @@
     "voter": {
       "term": "Diputado"
     },
-    "caucus": {
+    "group": {
       "term": "Grupo"
     },
     "option": {
@@ -86,7 +86,7 @@
     "voter": {
       "term": "legislator"
     },
-    "caucus": {
+    "group": {
       "term": "party"
     },
     "option": {
@@ -103,7 +103,7 @@
     "voter": {
       "term": "member_full"
     },
-    "caucus": {
+    "group": {
       "term": "party"
     },
     "option": {

@@ -29,12 +29,12 @@
       "description": "The option chosen by the voter, whether actively or passively",
       "type": ["string", "null"]
     },
-    "caucus_id": {
-      "description": "The ID of the voter's primary political caucus, group, or party",
+    "group_id": {
+      "description": "The ID of the voter's primary political group",
       "type": ["string", "null"]
     },
-    "caucus": {
-      "description": "The voter's primary political caucus, group, or party",
+    "group": {
+      "description": "The voter's primary political group",
       "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
     "role": {

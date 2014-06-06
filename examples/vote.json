@@ -2,6 +2,6 @@
   "vote_event_id": "vote-42",
   "voter_id": "john-q-public",
   "option": "yes",
-  "caucus_id": "xyz-party",
+  "group_id": "xyz-party",
   "role": "chair"
 }

@@ -30,7 +30,7 @@ A vote is one voter's vote in a vote event.
 
     >e.g. yes, no, or abstain.
 
-1. the voter's primary political caucus, group, or party
+1. the voter's primary [political group](http://en.wikipedia.org/wiki/Parliamentary_group)
 
     >Carol tracks which members of the government vote with the opposition.
 
@@ -46,7 +46,7 @@ A vote is one voter's vote in a vote event.
 
 1. the weight of the voter's vote
 
-    >In the House of Representatives of New Zealand, the weight of a caucus's vote is equal to the number of members of the caucus.
+    >In the House of Representatives of New Zealand, the weight of a party's vote is equal to the number of members of the party.
 
 1. the [person](/specs/person.html) with whom the voter is [paired](http://en.wikipedia.org/wiki/Pair_%28parliamentary_convention%29)
 
@@ -87,10 +87,10 @@ Few specifications exist for individual votes, and few legislatures publish vote
       <td><code><a href="http://schema.org/option" title="http://schema.org/option">schema:option</a></code></td>
       <td>The option chosen by the voter, whether actively or passively<a href="#note1"><sup>1</sup></a></td>
     </tr>
-    <tr id="opengov:caucus">
+    <tr id="opengov:group">
       <td>political group</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#caucus">opengov:caucus</a></code></td>
-      <td>The voter's primary political caucus, group, or party</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#group">opengov:group</a></code></td>
+      <td>The voter's primary political group<a href="#note2"><sup>2</sup></a></td>
     </tr>
     <tr id="opengov:role">
       <td>role</td>
@@ -100,7 +100,7 @@ Few specifications exist for individual votes, and few legislatures publish vote
     <tr id="opengov:weight">
       <td>weight</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#weight">opengov:weight</a></code></td>
-      <td>The weight of the voter's vote<a href="#note2"><sup>2</sup></a></td>
+      <td>The weight of the voter's vote<a href="#note3"><sup>3</sup></a></td>
     </tr>
     <tr id="opengov:pair">
       <td>pair</td>
@@ -113,7 +113,8 @@ Few specifications exist for individual votes, and few legislatures publish vote
 "Pairing" generally refers to a reciprocal agreement between two voters by which a voter abstains if the other is unable to vote. The pairing agreement is not always in force and respected; for example, if both voters are voting or if a voter breaks the agreement. The `pair` property <em class="rfc2119">must not</em> be used unless a pairing agreement is, in fact, respected.
 
 <p class="note" id="note1">1. For example, <code>"absent"</code> and <code>"not voting"</code> are valid values of the <code>option</code> property.</p>
-<p class="note" id="note2">2. The default value for a vote's weight is <code>1</code>.</p>
+<p class="note" id="note2">2. Countries have various names for these groups, including "caucus" (Australia, Canada, Nepal, New Zealand, South Africa, United States), "fraction" (Belgium, Germany, Netherlands, Switzerland), "club" (Austria), or "group" (Finland, Italy, Romania).</p>
+<p class="note" id="note3">3. The default value for a vote's weight is <code>1</code>.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 
