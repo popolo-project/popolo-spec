@@ -4,5 +4,5 @@
   opengov:voteEvent <http://example.com/vote_events/vote-42.ttl>;
   schema:agent <http://example.com/people/john-q-public.ttl>;
   schema:option "yes";
-  opengov:party <http://example.com/organizations/xyz-party.ttl>;
+  opengov:caucus <http://example.com/organizations/xyz-party.ttl>;
   opengov:role [a org:Role; skos:prefLabel "Chair"@en] .

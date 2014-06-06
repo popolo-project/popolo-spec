@@ -30,7 +30,7 @@ A vote is one voter's vote in a vote event.
 
     >e.g. yes, no, or abstain.
 
-1. the voter's political party
+1. the voter's primary political caucus, group, or party
 
     >Carol tracks which members of the government vote with the opposition.
 
@@ -46,7 +46,7 @@ A vote is one voter's vote in a vote event.
 
 1. the weight of the voter's vote
 
-    >In the House of Representatives of New Zealand, the weight of a party's vote is equal to the number of members of the party.
+    >In the House of Representatives of New Zealand, the weight of a caucus's vote is equal to the number of members of the caucus.
 
 1. the [person](/specs/person.html) with whom the voter is [paired](http://en.wikipedia.org/wiki/Pair_%28parliamentary_convention%29)
 
@@ -87,10 +87,10 @@ Few specifications exist for individual votes, and few legislatures publish vote
       <td><code><a href="http://schema.org/option" title="http://schema.org/option">schema:option</a></code></td>
       <td>The option chosen by the voter, whether actively or passively<a href="#note1"><sup>1</sup></a></td>
     </tr>
-    <tr id="opengov:party">
-      <td>political party</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#party">opengov:party</a></code></td>
-      <td>The voter's political party</td>
+    <tr id="opengov:caucus">
+      <td>political group</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#caucus">opengov:caucus</a></code></td>
+      <td>The voter's primary political caucus, group, or party</td>
     </tr>
     <tr id="opengov:role">
       <td>role</td>

@@ -118,7 +118,7 @@ task :default do
     vote: [
       'Vote',
       'voter',
-      'party',
+      'caucus',
       'option',
       'role',
       # 'weight',

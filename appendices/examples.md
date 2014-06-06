@@ -26,7 +26,7 @@ This document provides more complex examples than [the samples given in the spec
 1. [Motions](#motions)
   1. [An amendment to a motion](#motion-amendment)
 1. [Vote events](#vote-events)
-  1. [A vote by a political party](#party-vote)
+  1. [A vote by a political caucus](#party-vote)
   1. [A paired vote](#paired-vote)
   1. [A vote with tellers](#tellers)
   1. [A voter votes twice](#voting-twice)
@@ -377,7 +377,7 @@ Note that the `identifier` and `title` properties are not defined by Popolo for 
 
 <h1 id="vote-events">4. Vote events</h1>
 
-<h2 id="party-vote">4.1. A vote by a political party</h2>
+<h2 id="party-vote">4.1. A vote by a political caucus</h2>
 
 **Scenario:** In the [House of Representatives of New Zealand](http://www.parliament.nz/en-nz/features/00NZPHomeNews20121019a1/conscience-votes), the parties regularly cast the votes, not the members.
 

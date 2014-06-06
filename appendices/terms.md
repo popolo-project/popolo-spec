@@ -3369,7 +3369,7 @@ id: data
         <th scope='row'>Term</th>
         <td>Vote</td>
         <td>voter</td>
-        <td>party</td>
+        <td>caucus</td>
         <td>option</td>
         <td>role</td>
       </tr>

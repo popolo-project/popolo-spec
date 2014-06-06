@@ -9,8 +9,8 @@
     "@type": "@id"
   },
   "option": "http://schema.org/option",
-  "party": {
-    "@id": "http://www.w3.org/ns/opengov#party",
+  "caucus": {
+    "@id": "http://www.w3.org/ns/opengov#caucus",
     "@type": "@id"
   },
   "role": {
