@@ -65,6 +65,14 @@
       "term": "Fraktion/Gruppe"
     }
   },
+  "Hong Kong": {
+    "voter": {
+      "term": "member"
+    },
+    "option": {
+      "term": "vote"
+    }
+  },
   "Spain": {
     "Vote": {
       "term": "Votacion"

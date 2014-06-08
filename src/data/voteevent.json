@@ -68,6 +68,23 @@
   "Germany": {
     "identifiers": "Abstimmnr"
   },
+  "Hong Kong": {
+    "Vote event": {
+      "term": "vote"
+    },
+    "identifiers": {
+      "term": "number"
+    },
+    "start time": {
+      "term": "vote-date, vote-time"
+    },
+    "counts": {
+      "term": "vote-summary"
+    },
+    "votes": {
+      "term": "individual-votes"
+    }
+  },
   "Spain": {
     "Vote event": {
       "term": "Resultado"

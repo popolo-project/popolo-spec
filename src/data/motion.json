@@ -130,6 +130,17 @@
       "term": "Wahlperiode, Sitzungnr"
     }
   },
+  "Hong Kong": {
+    "creator": {
+      "term": "mover"
+    },
+    "text": {
+      "term": "motion"
+    },
+    "result": {
+      "term": "result"
+    }
+  },
   "Spain": {
     "context": {
       "term": "Sesion"
