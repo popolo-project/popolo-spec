@@ -83,12 +83,12 @@ Few specifications exist for vote events, and few legislatures publish vote data
     <tr id="opengov:organization">
       <td>organization</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#organization">opengov:organization</a></code></td>
-      <td>The organization whose members are voting</td>
+      <td>The organization whose members are voting<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="schema:superEvent">
       <td>context</td>
       <td><code><a href="#" title="http://schema.org/superEvent">schema:superEvent</a></code></td>
-      <td>The legislative context in which the vote event occurs</td>
+      <td>The legislative context in which the vote event occurs<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="schema:startDate">
       <td>start date</td>
@@ -103,7 +103,7 @@ Few specifications exist for vote events, and few legislatures publish vote data
     <tr id="opengov:result">
       <td>result</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#result">opengov:result</a></code></td>
-      <td>The result of the vote event<a href="#note1"><sup>1</sup></a></td>
+      <td>The result of the vote event<a href="#note2"><sup>2</sup></a></td>
     </tr>
     <tr id="opengov:count">
       <td>count</td>

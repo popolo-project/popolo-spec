@@ -36,7 +36,9 @@ The Motion class should have properties for:
 
 1. classification
 
-    >e.g. adjournment, allocation of time, business, carry-over, closure, etc.
+    >e.g. [adjournment](http://www.parliament.uk/site-information/glossary/adjournment-motion/), [allocation of time](http://www.parliament.uk/site-information/glossary/allocation-of-time-motion/), [business](http://www.parliament.uk/site-information/glossary/business-motion/), [carry-over](http://www.parliament.uk/site-information/glossary/carry-over-motions-bills/),  [closure](http://www.parliament.uk/site-information/glossary/closure-motion/), [dilatory](http://www.parliament.uk/site-information/glossary/dilatory-motion/), [programme](http://www.parliament.uk/site-information/glossary/programme-motion/), etc.
+
+    >Bob distinguishes routine from non-routine motions.
 
 1. a resource that the motion specifically references
 
