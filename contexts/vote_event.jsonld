@@ -10,7 +10,7 @@
     "@type": "@id"
   },
   "context": {
-    "@id": "http://www.w3.org/ns/opengov#context",
+    "@id": "http://schema.org/superEvent",
     "@type": "@id"
   },
   "start_date": {
