@@ -43,7 +43,7 @@
     },
     "weight": {
       "description": "The weight of the voter's vote",
-      "type": ["integer", "null"]
+      "type": ["number", "null"]
     },
     "pair_id": {
       "description": "The ID of the person with whom the voter is paired",
