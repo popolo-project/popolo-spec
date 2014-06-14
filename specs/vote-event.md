@@ -22,6 +22,14 @@ A vote event is an event at which people's votes are recorded.
 
     >That the House do now proceed to the Orders of the Day.
 
+1. the [organization](/specs/organization.html) whose members are voting
+
+    >House of Commons
+
+1. the legislative context in which the vote event occurs
+
+    >Sitting No. 36 of the 2nd Session of the 41st Parliament
+
 1. the time at which the event begins
 
     >January 1, 2013 at 12:30pm
@@ -72,6 +80,16 @@ Few specifications exist for vote events, and few legislatures publish vote data
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#motion">opengov:motion</a></code></td>
       <td>The motion being decided</td>
     </tr>
+    <tr id="opengov:organization">
+      <td>organization</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#organization">opengov:organization</a></code></td>
+      <td>The organization whose members are voting</td>
+    </tr>
+    <tr id="opengov:context">
+      <td>context</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#context">opengov:context</a></code></td>
+      <td>The legislative context in which the vote event occurs</td>
+    </tr>
     <tr id="schema:startDate">
       <td>start date</td>
       <td><code><a href="http://schema.org/startDate" title="http://schema.org/startDate">schema:startDate</a></code></td>
@@ -105,7 +123,8 @@ Few specifications exist for vote events, and few legislatures publish vote data
 * The vote totals <em class="rfc2119">should</em> agree with the individual votes.
 * The individual votes <em class="rfc2119">may</em> not include all present voters.
 
-<p class="note" id="note1">1. If a motion has multiple vote events, it is relevant to communicate the result of each event.</p>
+<p class="note" id="note1">1. If an implementation uses the <a href="/specs/motion.html">Motion</a> class, it is not necessary to repeat the <code>organization</code> and <code>context</code> properties on the motion's vote events.</p>
+<p class="note" id="note2">2. If a motion has multiple vote events, it is relevant to communicate the result of each event.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 

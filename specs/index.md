@@ -467,7 +467,8 @@ If a name object sets an `end_date` property, it represents a former name. With 
 
 <h1 id="history">7. Change history</h1>
 
-* 2014-06-15: Add a result property to the VoteEvent class.
+* 2014-06-14: Add organization and context properties to the VoteEvent class.
+* 2014-06-14: Add a result property to the VoteEvent class.
 * 2014-06-06: Rename the property `party` to `group` in the Vote class.
 * 2014-05-09: Add a member property to the Membership class, to relate organizations to organizations.
 * 2014-05-08: Add an Area class and a geographic area property to the Membership, Organization, and Post classes.

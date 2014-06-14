@@ -3,6 +3,12 @@
   "motion": {
     "text": "That the House do now proceed to the Orders of the Day."
   },
+  "organization_id": "house-of-commons",
+  "context": {
+    "parliament": 41,
+    "session": 2,
+    "sitting": 36
+  },
   "start_date": "2013-01-01T12:30Z",
   "end_date": "2013-01-01T12:45Z",
   "result": "pass",

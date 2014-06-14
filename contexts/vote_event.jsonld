@@ -5,6 +5,14 @@
     "@id": "http://www.w3.org/ns/opengov#motion",
     "@type": "@id"
   },
+  "organization": {
+    "@id": "http://www.w3.org/ns/opengov#organization",
+    "@type": "@id"
+  },
+  "context": {
+    "@id": "http://www.w3.org/ns/opengov#context",
+    "@type": "@id"
+  },
   "start_date": {
     "@id": "http://schema.org/startDate",
     "@type": "http://purl.org/dc/terms/W3CDTF"

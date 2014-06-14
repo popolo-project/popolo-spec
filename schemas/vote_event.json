@@ -21,6 +21,22 @@
       "description": "The motion being decided",
       "$ref": "http://popoloproject.com/schemas/motion.json#"
     },
+    "organization_id": {
+      "description": "The ID of the organization whose members are voting",
+      "type": ["string", "null"]
+    },
+    "organization": {
+      "description": "The organization whose members are voting",
+      "$ref": "http://popoloproject.com/schemas/organization.json#"
+    },
+    "context_id": {
+      "description": "The ID of the legislative context in which the vote occurs",
+      "type": ["string", "null"]
+    },
+    "context": {
+      "description": "The legislative context in which the vote occurs",
+      "type": ["object", "null"]
+    },
     "start_date": {
       "description": "The time at which the event begins",
       "type": ["string", "null"],
