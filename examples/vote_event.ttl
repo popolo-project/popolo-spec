@@ -11,6 +11,7 @@
   ];
   schema:startDate "2013-01-01T12:30Z"^^dcterms:W3CDTF;
   schema:endDate "2013-01-01T12:45Z"^^dcterms:W3CDTF;
+  opengov:result "pass";
   opengov:count [
     a opengov:YesCount;
     rdf:value 128

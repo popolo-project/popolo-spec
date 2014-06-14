@@ -30,6 +30,10 @@ A vote event is an event at which people's votes are recorded.
 
     >January 1, 2013 at 12:45pm
 
+1. the result of the vote event
+
+    >The ayes have it.
+
 1. the [vote totals](/specs/count.html)
 
     >Yeas: 128, Nays: 145
@@ -78,6 +82,11 @@ Few specifications exist for vote events, and few legislatures publish vote data
       <td><code><a href="http://schema.org/endDate" title="http://schema.org/endDate">schema:endDate</a></code></td>
       <td>The time at which the event ends</td>
     </tr>
+    <tr id="opengov:result">
+      <td>result</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#result">opengov:result</a></code></td>
+      <td>The result of the vote event<a href="#note1"><sup>1</sup></a></td>
+    </tr>
     <tr id="opengov:count">
       <td>count</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#count">opengov:count</a></code></td>
@@ -95,6 +104,8 @@ Few specifications exist for vote events, and few legislatures publish vote data
 * The vote totals <em class="rfc2119">may</em> not include all distinct options from the individual votes.
 * The vote totals <em class="rfc2119">should</em> agree with the individual votes.
 * The individual votes <em class="rfc2119">may</em> not include all present voters.
+
+<p class="note" id="note1">1. If a motion has multiple vote events, it is relevant to communicate the result of each event.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 
@@ -115,3 +126,12 @@ Few specifications exist for vote events, and few legislatures publish vote data
   <div class="tab-pane active" id="vote-event-json" data-url="/examples/vote_event.json"></div>
   <div class="tab-pane" id="vote-event-rdf" data-url="/examples/vote_event.ttl"></div>
 </div>
+
+<h1 id="code-lists">5. Code lists</h1>
+
+## Result
+
+Implementations <em class="rfc2119">may</em> use values from outside this list to reflect the diversity of results.
+
+* `pass`
+* `fail`

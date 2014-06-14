@@ -5,6 +5,7 @@
   },
   "start_date": "2013-01-01T12:30Z",
   "end_date": "2013-01-01T12:45Z",
+  "result": "pass",
   "counts": [
     {
       "option": "yes",

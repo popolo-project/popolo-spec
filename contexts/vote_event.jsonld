@@ -13,6 +13,10 @@
     "@id": "http://schema.org/endDate",
     "@type": "http://purl.org/dc/terms/W3CDTF"
   },
+  "result": {
+    "@id": "http://www.w3.org/ns/opengov#result",
+    "@type": "@id"
+  },
   "counts": {
     "@id": "http://www.w3.org/ns/opengov#count",
     "@type": "@id"
