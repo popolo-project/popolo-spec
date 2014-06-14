@@ -90,6 +90,7 @@ The use of <a href="https://github.com/opencivicdata/ocd-division-ids/#readme">O
 
 * The term `identifier` is used instead of `notation`, to be consistent with [identifier objects](/specs/#identifier).
 * The term `classification` is used instead of `featureCode`, to be consistent with the [Organization](/specs/organization.html) class.
+* The value of the `classification` property is a string, instead of a `gn:Code`.
 * The term `parent_id` is used instead of `containedIn`, to be consistent with the [Organization](/specs/organization.html) class.
 
 <ul class="nav nav-tabs no-js">

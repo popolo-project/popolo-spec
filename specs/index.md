@@ -467,6 +467,7 @@ If a name object sets an `end_date` property, it represents a former name. With 
 
 <h1 id="history">7. Change history</h1>
 
+* 2014-06-14: Add a classification property to the Motion class.
 * 2014-06-14: Add organization and context properties to the VoteEvent class.
 * 2014-06-14: Add a result property to the VoteEvent class.
 * 2014-06-06: Rename the property `party` to `group` in the Vote class.

@@ -37,6 +37,10 @@
       "description": "The transcript or text of the motion",
       "type": ["string", "null"]
     },
+    "classification": {
+      "description": "A motion category, e.g. adjournment",
+      "type": ["string", "null"]
+    },
     "object_id": {
       "description": "The ID of a resource that the motion specifically references",
       "type": ["string", "null"]

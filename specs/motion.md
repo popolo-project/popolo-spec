@@ -34,6 +34,10 @@ The Motion class should have properties for:
 
     >That the House do now proceed to the Orders of the Day.
 
+1. classification
+
+    >e.g. adjournment, allocation of time, business, carry-over, closure, etc.
+
 1. a resource that the motion specifically references
 
     >e.g. a bill, an amendment, a motion, etc.
@@ -92,6 +96,11 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="http://schema.org/text" title="http://schema.org/text">schema:text</a></code></td>
       <td>The transcript or text of the motion</td>
     </tr>
+    <tr id="opengov:classification">
+      <td>classification</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#classification">opengov:classification</a></code></td>
+      <td>A motion category, e.g. adjournment</td>
+    </tr>
     <tr id="dcterms:references">
       <td>object</td>
       <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-references" title="http://purl.org/dc/terms/references">dcterms:references</a></code></td>
@@ -127,6 +136,7 @@ The ranges of the `context` and `object` properties are not specified, as they v
 **JSON differences from other RDF serializations:**
 
 * The term `organization` is used instead of `publisher`, to be consistent with the name of the [Organization](/specs/organization.html) class.
+* The value of the `classification` property is a string, instead of a `skos:Concept`.
 * The term `object` is used instead of `references`, because terms in Popolo are nouns, not verbs.
 
 <ul class="nav nav-tabs no-js">

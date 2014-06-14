@@ -15,6 +15,10 @@
     "@type": "@id"
   },
   "text": "http://schema.org/text",
+  "classification": {
+    "@id": "http://www.w3.org/ns/opengov#classification",
+    "@type": "@id"
+  },
   "object": {
     "@id": "http://purl.org/dc/terms/references",
     "@type": "@id"
