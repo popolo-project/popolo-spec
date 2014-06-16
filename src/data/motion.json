@@ -198,6 +198,29 @@
       "term": "affairVotes"
     }
   },
+  "Toronto": {
+    "Motion": {
+      "label": "<i>motion</i>"
+    },
+    "context": {
+      "label": "<i>meeting</i>"
+    },
+    "organization": {
+      "term": "Committee"
+    },
+    "classification": {
+      "term": "Motion Type"
+    },
+    "object": {
+      "term": "Agenda Item #"
+    },
+    "requirement": {
+      "term": "Vote Description"
+    },
+    "result": {
+      "term": "Result"
+    }
+  },
   "US (House)": {
     "organization": {
       "term": "chamber"
@@ -233,20 +256,6 @@
     },
     "result": {
       "term": "result, vote_result"
-    }
-  },
-  "Toronto": {
-    "organization": {
-      "term": "Committee"
-    },
-    "object": {
-      "term": "Agenda Item #"
-    },
-    "requirement": {
-      "term": "Vote Description"
-    },
-    "result": {
-      "term": "Result"
     }
   }
 }

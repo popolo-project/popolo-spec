@@ -3165,6 +3165,48 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
+          Toronto
+        </th>
+        <td>
+          <i>motion</i>
+        </td>
+        <td>
+          Committee
+        </td>
+        <td>
+          <i>meeting</i>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          Motion Type
+        </td>
+        <td>
+          Agenda Item #
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='Vote Description'>Vote Descriptio…</abbr>
+        </td>
+        <td>
+          Result
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           US (House)
         </th>
         <td>
@@ -3240,45 +3282,6 @@ id: data
         </td>
         <td>
           <abbr title='result, vote_result'>result, vote_re…</abbr>
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          Toronto
-        </th>
-        <td>
-        </td>
-        <td>
-          Committee
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          Agenda Item #
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          <abbr title='Vote Description'>Vote Descriptio…</abbr>
-        </td>
-        <td>
-          Result
         </td>
         <td>
         </td>
@@ -3412,26 +3415,26 @@ id: data
           Brazil
         </th>
         <td>
-          votação
+          <i>votação</i>
         </td>
         <td>
-          <code>NUMVOT</code>
+          NUMVOT
         </td>
         <td>
-          <code>TEXORDIA</code>
+          TEXORDIA
         </td>
         <td>
         </td>
         <td>
         </td>
         <td>
-          hora final
+          <i>hora final</i>
         </td>
         <td>
-          total de votos
+          <i>total de votos</i>
         </td>
         <td>
-          detalhe
+          <i>detalhe</i>
         </td>
       </tr>
       <tr>
@@ -3509,9 +3512,10 @@ id: data
           Germany
         </th>
         <td>
+          <i>Namentliche Abstimmungen</i>
         </td>
         <td>
-          
+          Abstimmnr
         </td>
         <td>
         </td>
@@ -3608,6 +3612,29 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
+          Toronto
+        </th>
+        <td>
+          <i>recorded vote</i>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          Date/Time
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           US (House)
         </th>
         <td>
@@ -3656,28 +3683,6 @@ id: data
         </td>
         <td>
           members
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          Toronto
-        </th>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          Date/Time
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
         </td>
       </tr>
     </tbody>
@@ -3755,7 +3760,7 @@ id: data
 <h1 id="Vote">Vote</h1>
 
 * Canada has explicit properties for options on its vote detail page: `Yea`, `Nay` and `Paired`.
-* [Germany](http://www.bundestag.de/bundestag/plenum/abstimmung/liste/2014/) has explicit properties for options: `ja`, `nein`, `Enthaltung`, `ungültig` and `nichtabgegeben`.
+* [Germany](http://www.bundestag.de/bundestag/plenum/abstimmung/2014) has explicit properties for options: `ja`, `nein`, `Enthaltung`, `ungültig` and `nichtabgegeben`.
 * Brazil has both [DBF files](http://www.camara.leg.br/internet/votacao/listavotacao5404.asp) and [fixed-width text files without headers](http://www.camara.leg.br/internet/plenario/result/votacao/downlvnv54.htm) that follow [a schema](http://www.camara.leg.br/internet/plenario/result/votacao/Layout_ArquivosTXT_presencas_vota%C3%A7%C3%A3o_exportados.pdf).
 
 <div class='table-responsive table-auto'>
@@ -3844,19 +3849,19 @@ id: data
           Brazil
         </th>
         <td>
-          voto
+          <i>voto</i>
         </td>
         <td>
-          <code>NOME_PAR</code>
+          NOME_PAR
         </td>
         <td>
-          <code>ESTADO</code>
+          ESTADO
         </td>
         <td>
-          <code>PARTIDO</code>
+          PARTIDO
         </td>
         <td>
-          <code>VOTO</code>
+          VOTO
         </td>
         <td>
         </td>
@@ -3891,6 +3896,7 @@ id: data
           Participant
         </td>
         <td>
+          Constituency
         </td>
         <td>
           Party
@@ -3964,19 +3970,39 @@ id: data
           Switzerland
         </th>
         <td>
-          <code>councillorVote</code>
+          councillorVote
         </td>
         <td>
-          councillor
+          <i>councillor</i>
         </td>
         <td>
-          canton
+          <i>canton</i>
         </td>
         <td>
-          faction
+          <i>faction</i>
         </td>
         <td>
-          <code>decision</code>
+          decision
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Toronto
+        </th>
+        <td>
+          <i>vote</i>
+        </td>
+        <td>
+          <i>member</i>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          Vote
         </td>
         <td>
         </td>
@@ -4014,30 +4040,13 @@ id: data
           member_full
         </td>
         <td>
+          state
         </td>
         <td>
           party
         </td>
         <td>
           vote_cast
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          Toronto
-        </th>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          Vote
         </td>
         <td>
         </td>

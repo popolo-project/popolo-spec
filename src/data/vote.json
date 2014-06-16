@@ -40,19 +40,19 @@
   },
   "Brazil": {
     "Vote": {
-      "term": "voto"
+      "label": "<i>voto</i>"
     },
     "voter": {
-      "label": "<code>NOME_PAR</code>"
+      "term": "NOME_PAR"
     },
     "area": {
-      "label": "<code>ESTADO</code>"
+      "term": "ESTADO"
     },
     "group": {
-      "label": "<code>PARTIDO</code>"
+      "term": "PARTIDO"
     },
     "option": {
-      "label": "<code>VOTO</code>"
+      "term": "VOTO"
     }
   },
   "Canada (Hansard)": {
@@ -69,6 +69,9 @@
     },
     "voter": {
       "term": "Participant"
+    },
+    "area": {
+      "term": "Constituency"
     },
     "group": {
       "term": "Party"
@@ -106,19 +109,30 @@
   },
   "Switzerland": {
     "Vote": {
-      "label": "<code>councillorVote</code>"
+      "term": "councillorVote"
     },
     "voter": {
-      "term": "councillor"
+      "label": "<i>councillor</i>"
     },
     "area": {
-      "term": "canton"
+      "label": "<i>canton</i>"
     },
     "group": {
-      "term": "faction"
+      "label": "<i>faction</i>"
     },
     "option": {
-      "label": "<code>decision</code>"
+      "term": "decision"
+    }
+  },
+  "Toronto": {
+    "Vote": {
+      "label": "<i>vote</i>"
+    },
+    "voter": {
+      "label": "<i>member</i>"
+    },
+    "option": {
+      "term": "Vote"
     }
   },
   "US (House)": {
@@ -145,16 +159,14 @@
     "voter": {
       "term": "member_full"
     },
+    "area": {
+      "term": "state"
+    },
     "group": {
       "term": "party"
     },
     "option": {
       "term": "vote_cast"
-    }
-  },
-  "Toronto": {
-    "option": {
-      "term": "Vote"
     }
   }
 }

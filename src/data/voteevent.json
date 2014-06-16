@@ -43,22 +43,22 @@
   },
   "Brazil": {
     "Vote event": {
-      "term": "votação"
+      "label": "<i>votação</i>"
     },
     "identifier": {
-      "label": "<code>NUMVOT</code>"
+      "term": "NUMVOT"
     },
     "title": {
-      "label": "<code>TEXORDIA</code>"
+      "term": "TEXORDIA"
     },
     "end time": {
-      "term": "hora final"
+      "label": "<i>hora final</i>"
     },
     "counts": {
-      "term": "total de votos"
+      "label": "<i>total de votos</i>"
     },
     "votes": {
-      "term": "detalhe"
+      "label": "<i>detalhe</i>"
     }
   },
   "Canada (Hansard)": {
@@ -89,7 +89,12 @@
     }
   },
   "Germany": {
-    "identifier": "Abstimmnr"
+    "Vote event": {
+      "label": "<i>Namentliche Abstimmungen</i>"
+    },
+    "identifier": {
+      "term": "Abstimmnr"
+    }
   },
   "Hong Kong": {
     "Vote event": {
@@ -148,6 +153,14 @@
       "term": "councillorVotes"
     }
   },
+  "Toronto": {
+    "Vote event": {
+      "label": "<i>recorded vote</i>"
+    },
+    "start time": {
+      "term": "Date/Time"
+    }
+  },
   "US (House)": {
     "Vote event": {
       "term": "rollcall-vote"
@@ -180,11 +193,6 @@
     },
     "votes": {
       "term": "members"
-    }
-  },
-  "Toronto": {
-    "start time": {
-      "term": "Date/Time"
     }
   }
 }
