@@ -2643,6 +2643,7 @@ id: data
 <h1 id="Motion">Motion</h1>
 
 * Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
+* Switzerland offers an [API](http://ws.parlament.ch/) and [bulk downloads](http://www.parlament.ch/f/wahlen-abstimmungen/abstimmungen-im-parlament/Pages/abstimmung-nr-xml.aspx).
 
 <div class='table-responsive'>
   <table class='table table-striped table-hover table-condensed'>
@@ -2654,13 +2655,16 @@ id: data
         <td>context</td>
         <td>creator</td>
         <td>title</td>
+        <td>description</td>
         <td>text</td>
+        <td>classification</td>
         <td>object</td>
         <td>proposal date</td>
         <td>publication date</td>
         <td>resolution date</td>
         <td>requirement</td>
         <td>result</td>
+        <td>vote events</td>
       </tr>
     </thead>
     <tbody>
@@ -2681,6 +2685,10 @@ id: data
           <a href='http://purl.org/dc/terms/creator'>
             creator
           </a>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2710,6 +2718,8 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -2732,6 +2742,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://schema.org/text'>
             text
           </a>
@@ -2741,9 +2753,13 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://schema.org/datePublished'>
             datePublished
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2769,10 +2785,16 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           label
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='proceedingsObjectID'>proceedingsObje…</abbr>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2802,7 +2824,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           refersTo
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2818,6 +2844,8 @@ id: data
         </td>
         <td>
           outcome
+        </td>
+        <td>
         </td>
       </tr>
       <tr>
@@ -2835,7 +2863,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           hasDocument
+        </td>
+        <td>
         </td>
         <td>
           <abbr title='hasRelatedDocument'>hasRelatedDocum…</abbr>
@@ -2853,6 +2885,8 @@ id: data
         </td>
         <td>
           hasOutcome
+        </td>
+        <td>
         </td>
       </tr>
       <tr>
@@ -2886,6 +2920,12 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -2903,7 +2943,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           Description
+        </td>
+        <td>
         </td>
         <td>
           RelatedBill
@@ -2918,6 +2962,8 @@ id: data
         </td>
         <td>
           Decision
+        </td>
+        <td>
         </td>
       </tr>
       <tr>
@@ -2936,7 +2982,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           Context
+        </td>
+        <td>
         </td>
         <td>
           RelatedBill
@@ -2952,6 +3002,8 @@ id: data
         <td>
           Decision
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -2963,6 +3015,12 @@ id: data
         </td>
         <td>
           <abbr title='Wahlperiode, Sitzungnr'>Wahlperiode, Si…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2999,7 +3057,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           motion
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3014,6 +3076,8 @@ id: data
         <td>
           result
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3025,6 +3089,8 @@ id: data
         </td>
         <td>
           Sesion
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3044,7 +3110,57 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           Asentimiento
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Switzerland
+        </th>
+        <td>
+          Affair
+        </td>
+        <td>
+          council
+        </td>
+        <td>
+          session
+        </td>
+        <td>
+          author
+        </td>
+        <td>
+          title
+        </td>
+        <td>
+          description
+        </td>
+        <td>
+          text
+        </td>
+        <td>
+          affairType
+        </td>
+        <td>
+        </td>
+        <td>
+          handling
+        </td>
+        <td>
+          deposit
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          affairVotes
         </td>
       </tr>
       <tr>
@@ -3064,7 +3180,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           vote-question
+        </td>
+        <td>
         </td>
         <td>
           legis-num
@@ -3080,6 +3200,8 @@ id: data
         </td>
         <td>
           vote-result
+        </td>
+        <td>
         </td>
       </tr>
       <tr>
@@ -3098,7 +3220,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='title, vote_title'>title, vote_tit…</abbr>
+        </td>
+        <td>
         </td>
         <td>
           <abbr title='document, amendment'>document, amend…</abbr>
@@ -3115,6 +3241,8 @@ id: data
         <td>
           <abbr title='result, vote_result'>result, vote_re…</abbr>
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3124,6 +3252,10 @@ id: data
         </td>
         <td>
           Committee
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3148,6 +3280,8 @@ id: data
         <td>
           Result
         </td>
+        <td>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -3156,9 +3290,9 @@ id: data
 
 <h1 id="VoteEvent">Vote event</h1>
 
-* Only PML Schema has properties for the time at which the vote ends: `endDate` and `endTime`.
 * Canada has three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * [Toronto](http://app.toronto.ca/tmmis/getAdminReport.do?function=prepareMemberVoteReport) publishes reports for each voter.
+* Switzerland has the properties `meaningYes` and `meaningNo` for the meaning of voting "Yes" or "No".
 
 <div class='table-responsive'>
   <table class='table table-striped table-hover table-condensed'>
@@ -3218,6 +3352,7 @@ id: data
           startDate, startTime
         </td>
         <td>
+          <abbr title='endDate, endTime'>endDate, endTim…</abbr>
         </td>
         <td>
         </td>
@@ -3445,6 +3580,34 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
+          Switzerland
+        </th>
+        <td>
+          affairVote
+        </td>
+        <td>
+          <abbr title='registrationNumber'>registrationNum…</abbr>
+        </td>
+        <td>
+          divisionText
+        </td>
+        <td>
+          submissionText
+        </td>
+        <td>
+          date
+        </td>
+        <td>
+        </td>
+        <td>
+          totalVotes
+        </td>
+        <td>
+          councillorVotes
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           US (House)
         </th>
         <td>
@@ -3568,6 +3731,20 @@ id: data
         </td>
         <td>
           Total
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Switzerland
+        </th>
+        <td>
+          totalVote
+        </td>
+        <td>
+          type
+        </td>
+        <td>
+          count
         </td>
       </tr>
     </tbody>
@@ -3778,6 +3955,28 @@ id: data
         </td>
         <td>
           Voto
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Switzerland
+        </th>
+        <td>
+          <code>councillorVote</code>
+        </td>
+        <td>
+          councillor
+        </td>
+        <td>
+          canton
+        </td>
+        <td>
+          faction
+        </td>
+        <td>
+          <code>decision</code>
         </td>
         <td>
         </td>
