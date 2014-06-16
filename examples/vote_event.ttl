@@ -13,7 +13,7 @@
   schema:superEvent <http://example.com/sittings/sitting-36.ttl>;
   schema:startDate "2013-01-01T12:30Z"^^dcterms:W3CDTF;
   schema:endDate "2013-01-01T12:45Z"^^dcterms:W3CDTF;
-  opengov:result "pass";
+  opengov:result "fail";
   opengov:count [
     a opengov:YesCount;
     rdf:value 128
