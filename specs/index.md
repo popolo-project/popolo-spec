@@ -257,7 +257,7 @@ Given that the same RDF resource can be serialized in many different ways using 
 * The value of the `requirement` property of a `Motion` <em class="rfc2119">should</em> be a URI or blank node for a `opengov:Requirement`.
 * The value of the `result` property of a `Motion` <em class="rfc2119">should</em> be a URI or blank node for a `opengov:Result`.
 * The value of the `links` and `sources` properties <em class="rfc2119">should</em> be an array of URIs, not an array of [link objects](/specs/#link).
-* A JSON-LD serialization <em class="rfc2119">should</em> use the `@id`, `area`, `context`, `group`, `on_behalf_of`, `organization`, `pair`, `parent`, `person`, `post`, `object`, `vote_event`, and `voter` properties instead of `id`, `area_id`, `context_id`, `group_id`, `on_behalf_of_id`, `organization_id`, `pair_id`, `parent_id`, `person_id`, `post_id`, `object_id`, `vote_event_id`, and `voter_id`.
+* A JSON-LD serialization <em class="rfc2119">should</em> use the `@id`, `area`, `context`, `group`, `on_behalf_of`, `organization`, `pair`, `parent`, `person`, `post`, `vote_event`, and `voter` properties instead of `id`, `area_id`, `context_id`, `group_id`, `on_behalf_of_id`, `organization_id`, `pair_id`, `parent_id`, `person_id`, `post_id`, `vote_event_id`, and `voter_id`.
 
 Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Universal Time">UTC</abbr>. To allow for imprecise dates, the use of [ISO 8601:2004](http://www.iso.org/iso/catalogue_detail?csnumber=40874) reduced dates[<sup>3</sup>](#note3) is <em class="rfc2119">recommended</em>. In RDF, the [`dcterms:W3CDTF`](http://www.w3.org/TR/NOTE-datetime) datatype is <em class="rfc2119">recommended</em>.
 
@@ -377,7 +377,6 @@ When serializing to JSON, you have two options when relating entities, which you
     * `parent_id`
     * `person_id`
     * `post_id`
-    * `object_id`
     * `vote_event_id`
     * `voter_id`
 
@@ -386,6 +385,7 @@ When serializing to JSON, you have two options when relating entities, which you
     * `context`
     * `counts`
     * `group`
+    * `member`
     * `memberships`
     * `on_behalf_of`
     * `organization`
@@ -467,6 +467,7 @@ If a name object sets an `end_date` property, it represents a former name. With 
 
 <h1 id="history">7. Change history</h1>
 
+* 2014-06-16: Remove the `object_id` property from the Motion class' JSON Schema.
 * 2014-06-14: Add a classification property to the Motion class.
 * 2014-06-14: Add organization and context properties to the VoteEvent class.
 * 2014-06-14: Add a result property to the VoteEvent class.

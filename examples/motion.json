@@ -8,7 +8,10 @@
   "creator_id": "john-doe",
   "text": "That the Bill is to be read a second time.",
   "classification": "Second reading",
-  "object_id": "bill-84",
+  "object": {
+    "@type": "Bill",
+    "id": "bill-84"
+  },
   "date": "2013-01-01",
   "requirement": "two-thirds majority",
   "result": "pass",
