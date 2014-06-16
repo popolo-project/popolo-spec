@@ -118,10 +118,11 @@ Few specifications exist for vote events, and few legislatures publish vote data
   </tbody>
 </table>
 
-* The vote totals <em class="rfc2119">may</em> exclude the options that have no effect on the result, such as abstentions.
-* The vote totals <em class="rfc2119">may</em> not include all distinct options from the individual votes.
+The range of the `context` property is not specified, as it varies greatly across jurisdictions.
+
+* The [vote totals](/specs/count.html) <em class="rfc2119">may</em> not include all distinct options from the individual votes, in particular the options that have no effect on the result such as abstentions.
+* The [individual votes](/specs/vote.html) <em class="rfc2119">may</em> not include all present voters.
 * The vote totals <em class="rfc2119">should</em> agree with the individual votes.
-* The individual votes <em class="rfc2119">may</em> not include all present voters.
 
 <p class="note" id="note1">1. If an implementation uses the <a href="/specs/motion.html">Motion</a> class, it is not necessary to repeat the <code>organization</code> and <code>context</code> properties on the motion's vote events.</p>
 <p class="note" id="note2">2. If a motion has multiple vote events, it is relevant to communicate the result of each event.</p>
