@@ -3512,7 +3512,7 @@ id: data
           Germany
         </th>
         <td>
-          <i>Namentliche Abstimmungen</i>
+          <abbr title='Namentliche Abstimmungen'><i>Namentliche Abs…</i></abbr>
         </td>
         <td>
           Abstimmnr

@@ -17,8 +17,8 @@
             %td
               - if entries[term]
                 - if entries[term]['term'].nil? && entries[term]['url'].nil?
-                  - if entries[term]['label'][/(>)?([^<>]+?)(<)?/, 2].size > 15
-                    %abbr(title="#{entries[term]['label']}") #{entries[term]['label'].sub(/(>)?([^<>]{15})[^<>]+?(<)?/, '\1\2\3')}…
+                  - if entries[term]['label'][/>([^<>]+)<\//] && $1.size > 15
+                    %abbr(title="#{$1}") #{entries[term]['label'].sub(/>([^<>]{15})[^<>]+<\//, '>\1…</')}
                   - else
                     = entries[term]['label']
                 - elsif entries[term]['url']
