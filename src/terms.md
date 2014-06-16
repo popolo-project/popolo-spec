@@ -59,14 +59,15 @@ id: data
 <h1 id="Motion">Motion</h1>
 
 * Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
+* Switzerland offers an [API](http://ws.parlament.ch/) and [bulk downloads](http://www.parlament.ch/f/wahlen-abstimmungen/abstimmungen-im-parlament/Pages/abstimmung-nr-xml.aspx).
 
 &motion
 
 <h1 id="VoteEvent">Vote event</h1>
 
-* Only PML Schema has properties for the time at which the vote ends: `endDate` and `endTime`.
 * Canada has three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * [Toronto](http://app.toronto.ca/tmmis/getAdminReport.do?function=prepareMemberVoteReport) publishes reports for each voter.
+* Switzerland has the properties `meaningYes` and `meaningNo` for the meaning of voting "Yes" or "No".
 
 &voteevent
 
@@ -85,5 +86,6 @@ id: data
 
 * Canada has explicit properties for options on its vote detail page: `Yea`, `Nay` and `Paired`.
 * [Germany](http://www.bundestag.de/bundestag/plenum/abstimmung/liste/2014/) has explicit properties for options: `ja`, `nein`, `Enthaltung`, `ungültig` and `nichtabgegeben`.
+* Brazil has both [DBF files](http://www.camara.leg.br/internet/votacao/listavotacao5404.asp) and [fixed-width text files without headers](http://www.camara.leg.br/internet/plenario/result/votacao/downlvnv54.htm) that follow [a schema](http://www.camara.leg.br/internet/plenario/result/votacao/Layout_ArquivosTXT_presencas_vota%C3%A7%C3%A3o_exportados.pdf).
 
 &vote

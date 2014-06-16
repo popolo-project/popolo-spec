@@ -4,7 +4,12 @@
       "url": "",
       "label": ""
     },
-    "identifiers": {
+    "identifier": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "title": {
       "term": "",
       "url": "",
       "label": ""

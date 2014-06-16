@@ -9,11 +9,14 @@
     "Vote event": {
       "term": "voteEvent"
     },
-    "identifiers": {
+    "identifier": {
       "term": "identifier"
     },
     "start time": {
       "label": "startDate, startTime"
+    },
+    "end time": {
+      "term": "endDate, endTime"
     },
     "votes": {
       "term": "options"
@@ -28,7 +31,7 @@
     "Vote event": {
       "term": "Vote"
     },
-    "identifiers": {
+    "identifier": {
       "term": "hasVoteID"
     },
     "motion": {
@@ -38,11 +41,31 @@
       "term": "hasVoteDate"
     }
   },
+  "Brazil": {
+    "Vote event": {
+      "term": "votação"
+    },
+    "identifier": {
+      "label": "<code>NUMVOT</code>"
+    },
+    "title": {
+      "label": "<code>TEXORDIA</code>"
+    },
+    "end time": {
+      "term": "hora final"
+    },
+    "counts": {
+      "term": "total de votos"
+    },
+    "votes": {
+      "term": "detalhe"
+    }
+  },
   "Canada (Hansard)": {
     "Vote event": {
       "term": "Division"
     },
-    "identifiers": {
+    "identifier": {
       "term": "DivisionNumber"
     },
     "motion": {
@@ -53,7 +76,7 @@
     "Vote event": {
       "term": "Vote"
     },
-    "identifiers": {
+    "identifier": {
       "term": "number"
     },
     "start time": {
@@ -66,13 +89,13 @@
     }
   },
   "Germany": {
-    "identifiers": "Abstimmnr"
+    "identifier": "Abstimmnr"
   },
   "Hong Kong": {
     "Vote event": {
       "term": "vote"
     },
-    "identifiers": {
+    "identifier": {
       "term": "number"
     },
     "start time": {
@@ -89,7 +112,7 @@
     "Vote event": {
       "term": "Resultado"
     },
-    "identifiers": {
+    "identifier": {
       "term": "NumeroVotacion"
     },
     "start time": {
@@ -102,11 +125,34 @@
       "term": "Votaciones"
     }
   },
+  "Switzerland": {
+    "Vote event": {
+      "term": "affairVote"
+    },
+    "identifier": {
+      "term": "registrationNumber"
+    },
+    "title": {
+      "term": "divisionText"
+    },
+    "motion": {
+      "term": "submissionText"
+    },
+    "start time": {
+      "term": "date"
+    },
+    "counts": {
+      "term": "totalVotes"
+    },
+    "votes": {
+      "term": "councillorVotes"
+    }
+  },
   "US (House)": {
     "Vote event": {
       "term": "rollcall-vote"
     },
-    "identifiers": {
+    "identifier": {
       "term": "rollcall-num"
     },
     "start time": {
@@ -123,7 +169,7 @@
     "Vote event": {
       "term": "roll_call_vote"
     },
-    "identifiers": {
+    "identifier": {
       "term": "vote_number"
     },
     "start time": {

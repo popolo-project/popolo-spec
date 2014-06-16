@@ -38,6 +38,23 @@
       "term": "as"
     }
   },
+  "Brazil": {
+    "Vote": {
+      "term": "voto"
+    },
+    "voter": {
+      "label": "<code>NOME_PAR</code>"
+    },
+    "area": {
+      "label": "<code>ESTADO</code>"
+    },
+    "group": {
+      "label": "<code>PARTIDO</code>"
+    },
+    "option": {
+      "label": "<code>VOTO</code>"
+    }
+  },
   "Canada (Hansard)": {
     "voter": {
       "term": "Affiliation"
@@ -85,6 +102,23 @@
     },
     "option": {
       "term": "Voto"
+    }
+  },
+  "Switzerland": {
+    "Vote": {
+      "label": "<code>councillorVote</code>"
+    },
+    "voter": {
+      "term": "councillor"
+    },
+    "area": {
+      "term": "canton"
+    },
+    "group": {
+      "term": "faction"
+    },
+    "option": {
+      "label": "<code>decision</code>"
     }
   },
   "US (House)": {

@@ -2649,9 +2649,11 @@ id: data
     <thead>
       <tr>
         <th scope='row'>Term</th>
+        <td>Motion</td>
         <td>organization</td>
         <td>context</td>
         <td>creator</td>
+        <td>title</td>
         <td>text</td>
         <td>object</td>
         <td>proposal date</td>
@@ -2667,6 +2669,8 @@ id: data
           <code>dcterms</code>
         </th>
         <td>
+        </td>
+        <td>
           <a href='http://purl.org/dc/terms/publisher'>
             publisher
           </a>
@@ -2677,6 +2681,8 @@ id: data
           <a href='http://purl.org/dc/terms/creator'>
             creator
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2710,6 +2716,8 @@ id: data
           <code>schema</code>
         </th>
         <td>
+        </td>
+        <td>
           <a href='http://schema.org/publisher'>
             publisher
           </a>
@@ -2720,6 +2728,8 @@ id: data
           <a href='http://schema.org/creator'>
             creator
           </a>
+        </td>
+        <td>
         </td>
         <td>
           <a href='http://schema.org/text'>
@@ -2749,10 +2759,14 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='calendarObjectID'>calendarObjectI…</abbr>
         </td>
         <td>
           contributorID
+        </td>
+        <td>
         </td>
         <td>
           label
@@ -2776,10 +2790,14 @@ id: data
           AkomaNtoso
         </th>
         <td>
+        </td>
+        <td>
           organization
         </td>
         <td>
           session
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2813,6 +2831,10 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
           hasDocument
         </td>
         <td>
@@ -2835,12 +2857,48 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
+          Brazil
+        </th>
+        <td>
+          proposição
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='sessão legislativa'>sessão legislat…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          nome
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           Canada (vote list)
         </th>
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='parliament, session, sitting'>parliament, ses…</abbr>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2871,7 +2929,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           Sponsor
+        </td>
+        <td>
         </td>
         <td>
           Context
@@ -2898,7 +2960,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='Wahlperiode, Sitzungnr'>Wahlperiode, Si…</abbr>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2926,7 +2992,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           mover
+        </td>
+        <td>
         </td>
         <td>
           motion
@@ -2952,7 +3022,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           Sesion
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2978,10 +3052,14 @@ id: data
           US (House)
         </th>
         <td>
+        </td>
+        <td>
           chamber
         </td>
         <td>
           <abbr title='congress, session'>congress, sessi…</abbr>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3011,7 +3089,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='congress, session'>congress, sessi…</abbr>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3039,7 +3121,11 @@ id: data
           Toronto
         </th>
         <td>
+        </td>
+        <td>
           Committee
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3074,15 +3160,17 @@ id: data
 * Canada has three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * [Toronto](http://app.toronto.ca/tmmis/getAdminReport.do?function=prepareMemberVoteReport) publishes reports for each voter.
 
-<div class='table-responsive table-auto'>
+<div class='table-responsive'>
   <table class='table table-striped table-hover table-condensed'>
     <thead>
       <tr>
         <th scope='row'>Term</th>
         <td>Vote event</td>
-        <td>identifiers</td>
+        <td>identifier</td>
+        <td>title</td>
         <td>motion</td>
         <td>start time</td>
+        <td>end time</td>
         <td>counts</td>
         <td>votes</td>
       </tr>
@@ -3099,9 +3187,13 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://schema.org/startDate'>
             startDate
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3121,7 +3213,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           startDate, startTime
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3146,6 +3242,10 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3158,6 +3258,8 @@ id: data
           hasVoteID
         </td>
         <td>
+        </td>
+        <td>
           hasDocument
         </td>
         <td>
@@ -3166,6 +3268,35 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Brazil
+        </th>
+        <td>
+          votação
+        </td>
+        <td>
+          <code>NUMVOT</code>
+        </td>
+        <td>
+          <code>TEXORDIA</code>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          hora final
+        </td>
+        <td>
+          total de votos
+        </td>
+        <td>
+          detalhe
         </td>
       </tr>
       <tr>
@@ -3179,7 +3310,11 @@ id: data
           DivisionNumber
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='SubjectOfBusiness'>SubjectOfBusine…</abbr>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3201,7 +3336,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           date
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3214,6 +3353,10 @@ id: data
         </th>
         <td>
           Vote
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3243,6 +3386,10 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3257,7 +3404,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='vote-date, vote-time'>vote-date, vote…</abbr>
+        </td>
+        <td>
         </td>
         <td>
           vote-summary
@@ -3279,7 +3430,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           Fecha
+        </td>
+        <td>
         </td>
         <td>
           Totales
@@ -3301,7 +3456,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           action-date, action-time
+        </td>
+        <td>
         </td>
         <td>
           vote-totals
@@ -3323,7 +3482,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           vote_date
+        </td>
+        <td>
         </td>
         <td>
           <abbr title='vote_tally, count'>vote_tally, cou…</abbr>
@@ -3343,7 +3506,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           Date/Time
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3412,6 +3579,7 @@ id: data
 
 * Canada has explicit properties for options on its vote detail page: `Yea`, `Nay` and `Paired`.
 * [Germany](http://www.bundestag.de/bundestag/plenum/abstimmung/liste/2014/) has explicit properties for options: `ja`, `nein`, `Enthaltung`, `ungültig` and `nichtabgegeben`.
+* Brazil has both [DBF files](http://www.camara.leg.br/internet/votacao/listavotacao5404.asp) and [fixed-width text files without headers](http://www.camara.leg.br/internet/plenario/result/votacao/downlvnv54.htm) that follow [a schema](http://www.camara.leg.br/internet/plenario/result/votacao/Layout_ArquivosTXT_presencas_vota%C3%A7%C3%A3o_exportados.pdf).
 
 <div class='table-responsive table-auto'>
   <table class='table table-striped table-hover table-condensed'>
@@ -3420,6 +3588,7 @@ id: data
         <th scope='row'>Term</th>
         <td>Vote</td>
         <td>voter</td>
+        <td>area</td>
         <td>group</td>
         <td>option</td>
         <td>role</td>
@@ -3439,6 +3608,8 @@ id: data
           <a href='http://schema.org/agent'>
             agent
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3463,6 +3634,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           option
         </td>
         <td>
@@ -3481,10 +3654,34 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           choice
         </td>
         <td>
           as
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Brazil
+        </th>
+        <td>
+          voto
+        </td>
+        <td>
+          <code>NOME_PAR</code>
+        </td>
+        <td>
+          <code>ESTADO</code>
+        </td>
+        <td>
+          <code>PARTIDO</code>
+        </td>
+        <td>
+          <code>VOTO</code>
+        </td>
+        <td>
         </td>
       </tr>
       <tr>
@@ -3495,6 +3692,8 @@ id: data
         </td>
         <td>
           Affiliation
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3515,6 +3714,8 @@ id: data
           Participant
         </td>
         <td>
+        </td>
+        <td>
           Party
         </td>
         <td>
@@ -3530,6 +3731,8 @@ id: data
         </td>
         <td>
           Bezeichnung
+        </td>
+        <td>
         </td>
         <td>
           Fraktion/Gruppe
@@ -3551,6 +3754,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           vote
         </td>
         <td>
@@ -3565,6 +3770,8 @@ id: data
         </td>
         <td>
           Diputado
+        </td>
+        <td>
         </td>
         <td>
           Grupo
@@ -3584,6 +3791,8 @@ id: data
         </td>
         <td>
           legislator
+        </td>
+        <td>
         </td>
         <td>
           party
@@ -3606,6 +3815,8 @@ id: data
           member_full
         </td>
         <td>
+        </td>
+        <td>
           party
         </td>
         <td>
@@ -3618,6 +3829,8 @@ id: data
         <th scope='row'>
           Toronto
         </th>
+        <td>
+        </td>
         <td>
         </td>
         <td>

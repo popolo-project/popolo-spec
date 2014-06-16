@@ -20,5 +20,16 @@
     "value": {
       "term": "Total"
     }
+  },
+  "Switzerland": {
+    "Count": {
+      "term": "totalVote"
+    },
+    "option": {
+      "term": "type"
+    },
+    "value": {
+      "term": "count"
+    }
   }
 }

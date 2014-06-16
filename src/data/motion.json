@@ -97,6 +97,17 @@
       "term": "hasOutcome"
     }
   },
+  "Brazil": {
+    "Motion": {
+      "term": "proposição"
+    },
+    "title": {
+      "term": "nome"
+    },
+    "context": {
+      "term": "sessão legislativa"
+    }
+  },
   "Canada (vote list)": {
     "context": {
       "term": "parliament, session, sitting"
@@ -150,6 +161,41 @@
     },
     "result": {
       "term": "Asentimiento"
+    }
+  },
+  "Switzerland": {
+    "Motion": {
+      "term": "Affair"
+    },
+    "organization": {
+      "term": "council"
+    },
+    "context": {
+      "term": "session"
+    },
+    "creator": {
+      "term": "author"
+    },
+    "title": {
+      "term": "title"
+    },
+    "description": {
+      "term": "description"
+    },
+    "text": {
+      "term": "text"
+    },
+    "classification": {
+      "term": "affairType"
+    },
+    "proposal date": {
+      "term": "handling"
+    },
+    "publication date": {
+      "term": "deposit"
+    },
+    "vote events": {
+      "term": "affairVotes"
     }
   },
   "US (House)": {
