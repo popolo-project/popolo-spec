@@ -77,6 +77,14 @@
       "term": "Party"
     }
   },
+  "Czech Republic": {
+    "voter": {
+      "term": "id_poslanec"
+    },
+    "option": {
+      "term": "vysledek"
+    }
+  },
   "Germany": {
     "voter": {
       "term": "Bezeichnung"

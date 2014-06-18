@@ -136,6 +136,23 @@
       "term": "Decision"
     }
   },
+  "Czech Republic": {
+    "organization": {
+      "term": "id_organ"
+    },
+    "context": {
+      "term": "schuze"
+    },
+    "object": {
+      "term": "bod"
+    },
+    "requirement": {
+      "term": "kvorum"
+    },
+    "result": {
+      "term": "vysledek"
+    }
+  },
   "Germany": {
     "context": {
       "term": "Wahlperiode, Sitzungnr"

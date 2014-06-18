@@ -66,6 +66,7 @@ id: data
 <h1 id="VoteEvent">Vote event</h1>
 
 * Canada has three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
+* [Czech Republic](http://www.psp.cz/sqw/hp.sqw?k=1300) records repeat votes, along with the person requesting the repeat.
 * [Toronto](http://app.toronto.ca/tmmis/getAdminReport.do?function=prepareMemberVoteReport) publishes reports for each voter.
 * Switzerland has the properties `meaningYes` and `meaningNo` for the meaning of voting "Yes" or "No".
 
@@ -75,6 +76,7 @@ id: data
 
 * The [Cornell Legal Information Institute Legislative Metadata Project](http://blog.law.cornell.edu/metasausage/downloads-and-related-information/) has explicit properties for counts: `hasYeaTally`, `hasNayTally` and `hasNoVoteTally`.
 * Canada has explicit properties for counts on its votes list page: `TotalYeas`, `TotalNays` and `TotalPaired`.
+* Czech Republic has explicit properties for counts: `pro`, `proti`, `zdrzel` and `nehlasoval`.
 * [Hong Kong](http://www.legco.gov.hk/general/english/open-legco/open-data.html) has explicit properties for counts: `present-count`, `yes-count`, `no-count`, and `abstain-count`.
 * [Spain](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones) has explicit properties for counts: `Presentes`, `AFavor`, `EnContra`, `Abstenciones` and `NoVotan`.
 * The [US House](http://clerk.house.gov/legislative/legvotes.html) has explicit properties for counts: `yea-total`, `nay-total`, `present-total` and `not-voting-total`.

@@ -88,6 +88,17 @@
       "term": "Vote"
     }
   },
+  "Czech Republic": {
+    "identifier": {
+      "term": "cislo"
+    },
+    "title": {
+      "term": "nazev_dlouhy"
+    },
+    "start time": {
+      "term": "datum, čas"
+    }
+  },
   "Germany": {
     "Vote event": {
       "label": "<i>Namentliche Abstimmungen</i>"
