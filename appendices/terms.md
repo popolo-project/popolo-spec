@@ -2643,6 +2643,7 @@ id: data
 <h1 id="Motion">Motion</h1>
 
 * Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
+* [Czech Republic](http://www.psp.cz/sqw/hp.sqw?k=1300) publishes data on motions declared confusing.
 * Switzerland offers an [API](http://ws.parlament.ch/) and [bulk downloads](http://www.parlament.ch/f/wahlen-abstimmungen/abstimmungen-im-parlament/Pages/abstimmung-nr-xml.aspx).
 
 <div class='table-responsive'>
@@ -3334,7 +3335,7 @@ id: data
 <h1 id="VoteEvent">Vote event</h1>
 
 * Canada has three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
-* [Czech Republic](http://www.psp.cz/sqw/hp.sqw?k=1300) records repeat votes, along with the person requesting the repeat.
+* Czech Republic records repeat votes, along with the person requesting the repeat.
 * [Toronto](http://app.toronto.ca/tmmis/getAdminReport.do?function=prepareMemberVoteReport) publishes reports for each voter.
 * Switzerland has the properties `meaningYes` and `meaningNo` for the meaning of voting "Yes" or "No".
 
