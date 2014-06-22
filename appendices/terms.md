@@ -2644,6 +2644,7 @@ id: data
 
 * Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * [Czech Republic](http://www.psp.cz/sqw/hp.sqw?k=1300) publishes data on motions declared confusing.
+* [Sweden](http://data.riksdagen.se/Data/Voteringar/) classifies motions as `sakfrågan` or `motivfrågan`.
 * Switzerland offers an [API](http://ws.parlament.ch/) and [bulk downloads](http://www.parlament.ch/f/wahlen-abstimmungen/abstimmungen-im-parlament/Pages/abstimmung-nr-xml.aspx).
 
 <div class='table-responsive'>
@@ -3160,6 +3161,45 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
+          Sweden
+        </th>
+        <td>
+          <abbr title='&lt;i&gt;Förslagspunkt&lt;/i&gt;'><i>Förslagspunk…</abbr>
+        </td>
+        <td>
+          beteckning
+        </td>
+        <td>
+          rm
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          avser
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           Switzerland
         </th>
         <td>
@@ -3650,6 +3690,31 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
+          Sweden
+        </th>
+        <td>
+          votering
+        </td>
+        <td>
+          votering_id
+        </td>
+        <td>
+        </td>
+        <td>
+          punkt
+        </td>
+        <td>
+          datum
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           Switzerland
         </th>
         <td>
@@ -3759,6 +3824,7 @@ id: data
 <h1 id="Count">Count</h1>
 
 * The [Cornell Legal Information Institute Legislative Metadata Project](http://blog.law.cornell.edu/metasausage/downloads-and-related-information/) has explicit properties for counts: `hasYeaTally`, `hasNayTally` and `hasNoVoteTally`.
+* [Bulgaria](http://www.parliament.bg/bg/plenaryst) has explicit properties for counts: `За`, `Против`, `Въздържали` and `се Гласували`.
 * Canada has explicit properties for counts on its votes list page: `TotalYeas`, `TotalNays` and `TotalPaired`.
 * Czech Republic has explicit properties for counts: `pro`, `proti`, `zdrzel` and `nehlasoval`.
 * [Hong Kong](http://www.legco.gov.hk/general/english/open-legco/open-data.html) has explicit properties for counts: `present-count`, `yes-count`, `no-count`, and `abstain-count`.
@@ -4047,6 +4113,27 @@ id: data
         </td>
         <td>
           Voto
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Sweden
+        </th>
+        <td>
+        </td>
+        <td>
+          namn
+        </td>
+        <td>
+          valkrets
+        </td>
+        <td>
+          parti
+        </td>
+        <td>
+          rost
         </td>
         <td>
         </td>
