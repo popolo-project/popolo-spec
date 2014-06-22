@@ -141,6 +141,20 @@
       "term": "Votaciones"
     }
   },
+  "Sweden": {
+    "Vote event": {
+      "term": "votering"
+    },
+    "identifier": {
+      "term": "votering_id"
+    },
+    "motion": {
+      "term": "punkt"
+    },
+    "start time": {
+      "term": "datum"
+    }
+  },
   "Switzerland": {
     "Vote event": {
       "term": "affairVote"

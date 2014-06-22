@@ -126,7 +126,7 @@ The [individual votes](/specs/vote.html) <em class="rfc2119">may</em> not includ
 
 The vote totals <em class="rfc2119">should</em> agree with the individual votes.
 
-<p class="note" id="note1">1. If an implementation uses the <a href="/specs/motion.html">Motion</a> class, it is not necessary to repeat the <code>organization</code> and <code>context</code> properties on the motion's vote events.</p>
+<p class="note" id="note1">1. If an implementation uses the <a href="/specs/motion.html">Motion</a> class, it is not necessary to repeat the <code>organization</code> and <code>context</code> properties on the motion's vote events, unless they differ. For example, a committee may consider a legislature's motion, such as in the [Riksdag](http://en.wikipedia.org/wiki/Riksdag).</p>
 <p class="note" id="note2">2. If a motion has multiple vote events, it is relevant to communicate the result of each event.</p>
 
 <h1 id="serialization">4. Serialization</h1>

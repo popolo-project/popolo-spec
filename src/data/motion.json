@@ -180,6 +180,20 @@
       "term": "Asentimiento"
     }
   },
+  "Sweden": {
+    "Motion": {
+      "term": "<i>Förslagspunkt</i>"
+    },
+    "organization": {
+      "term": "beteckning"
+    },
+    "context": {
+      "term": "rm"
+    },
+    "classification": {
+      "term": "avser"
+    }
+  },
   "Switzerland": {
     "Motion": {
       "term": "Affair"

@@ -115,6 +115,20 @@
       "term": "Voto"
     }
   },
+  "Sweden": {
+    "voter": {
+      "term": "namn"
+    },
+    "area": {
+      "term": "valkrets"
+    },
+    "group": {
+      "term": "parti"
+    },
+    "option": {
+      "term": "rost"
+    }
+  },
   "Switzerland": {
     "Vote": {
       "term": "councillorVote"
