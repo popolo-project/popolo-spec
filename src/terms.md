@@ -82,7 +82,7 @@ id: data
 * [Bulgaria](http://www.parliament.bg/bg/plenaryst) has explicit properties for counts: `За`, `Против`, `Въздържали` and `се Гласували`.
 * Canada has explicit properties for counts on its votes list page: `TotalYeas`, `TotalNays` and `TotalPaired`.
 * Czech Republic has explicit properties for counts: `pro`, `proti`, `zdrzel` and `nehlasoval`.
-* [Hong Kong](http://www.legco.gov.hk/general/english/open-legco/open-data.html) has explicit properties for counts: `present-count`, `yes-count`, `no-count`, and `abstain-count`.
+* [Hong Kong](http://www.legco.gov.hk/general/english/open-legco/open-data.html) has explicit properties for counts (`present-count`, `yes-count`, `no-count`, and `abstain-count`) and for groups (`functional-constituency` and `geographical-constituency`).
 * [Spain](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones) has explicit properties for counts: `Presentes`, `AFavor`, `EnContra`, `Abstenciones` and `NoVotan`.
 * The US House has explicit properties for counts: `yea-total`, `nay-total`, `present-total` and `not-voting-total`.
 * The US Senate has explicit properties for counts: `yeas`, `nays`, `present` and `absent`.

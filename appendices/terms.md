@@ -3863,7 +3863,7 @@ id: data
 * [Bulgaria](http://www.parliament.bg/bg/plenaryst) has explicit properties for counts: `За`, `Против`, `Въздържали` and `се Гласували`.
 * Canada has explicit properties for counts on its votes list page: `TotalYeas`, `TotalNays` and `TotalPaired`.
 * Czech Republic has explicit properties for counts: `pro`, `proti`, `zdrzel` and `nehlasoval`.
-* [Hong Kong](http://www.legco.gov.hk/general/english/open-legco/open-data.html) has explicit properties for counts: `present-count`, `yes-count`, `no-count`, and `abstain-count`.
+* [Hong Kong](http://www.legco.gov.hk/general/english/open-legco/open-data.html) has explicit properties for counts (`present-count`, `yes-count`, `no-count`, and `abstain-count`) and for groups (`functional-constituency` and `geographical-constituency`).
 * [Spain](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones) has explicit properties for counts: `Presentes`, `AFavor`, `EnContra`, `Abstenciones` and `NoVotan`.
 * The US House has explicit properties for counts: `yea-total`, `nay-total`, `present-total` and `not-voting-total`.
 * The US Senate has explicit properties for counts: `yeas`, `nays`, `present` and `absent`.
@@ -3876,6 +3876,7 @@ id: data
         <td>Count</td>
         <td>option</td>
         <td>value</td>
+        <td>group</td>
       </tr>
     </thead>
     <tbody>
@@ -3892,6 +3893,22 @@ id: data
         <td>
           value
         </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Bulgaria
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          ПГ
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3906,6 +3923,8 @@ id: data
         <td>
           Total
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3919,6 +3938,22 @@ id: data
         </td>
         <td>
           count
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          US House
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          party
         </td>
       </tr>
     </tbody>

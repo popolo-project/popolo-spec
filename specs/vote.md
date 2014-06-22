@@ -87,9 +87,9 @@ Few specifications exist for individual votes, and few legislatures publish vote
       <td><code><a href="http://schema.org/option" title="http://schema.org/option">schema:option</a></code></td>
       <td>The option chosen by the voter, whether actively or passively<a href="#note1"><sup>1</sup></a></td>
     </tr>
-    <tr id="opengov:group">
+    <tr id="opengov:political_group">
       <td>political group</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#group">opengov:group</a></code></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#political_group">opengov:political_group</a></code></td>
       <td>The voter's primary political group<a href="#note2"><sup>2</sup></a></td>
     </tr>
     <tr id="opengov:role">

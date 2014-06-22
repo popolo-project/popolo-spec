@@ -19,7 +19,7 @@
     },
     "member": {
       "description": "The person or organization that is a member of the organization",
-      "type": ["object"]
+      "type": ["object", "null"]
     },
     "person_id": {
       "description": "The ID of the person who is a member of the organization",

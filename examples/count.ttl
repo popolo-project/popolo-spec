@@ -2,4 +2,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 <http://example.com/counts/example.ttl>
   a opengov:YesCount;
-  rdf:value 128 .
+  rdf:value 128;
+  opengov:group [
+    foaf:name "Bosniak"
+  ] .

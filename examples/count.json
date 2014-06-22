@@ -1,4 +1,7 @@
 {
   "option": "yes",
-  "value": 128
+  "value": 128,
+  "group": {
+    "name": "Bosniak"
+  }
 }

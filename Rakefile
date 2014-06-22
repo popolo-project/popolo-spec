@@ -119,6 +119,7 @@ task :default do
       'Count',
       'option',
       'value',
+      'group',
     ],
     vote: [
       'Vote',

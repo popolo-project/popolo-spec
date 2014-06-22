@@ -22,6 +22,12 @@ A vote count is the number of votes for one option in a vote event.
 
     >128
 
+1. a group of voters
+
+    >The Bosniak, Croat, and Serb groups within the [House of Peoples](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina) must each have a majority for a motion to pass.
+    >The functional and geographical constituencies within the [Legislative Council of Hong Kong](http://en.wikipedia.org/wiki/Legislative_Council_of_Hong_Kong) must each have a majority for a motion to pass.
+    >A majority of Democratic Party members voted for a motion, and a majority of Republican Party members voted against the motion.
+
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
 Few specifications exist for vote totals, and few legislatures publish vote data in a machine-readable format. Akoma Ntoso and basic RDF terms are retained from the [inventory of terms](/appendices/terms.html#Count).
@@ -52,8 +58,15 @@ Few specifications exist for vote totals, and few legislatures publish vote data
       <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_value" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">rdf:value</a></code></td>
       <td>The number of votes for an option</td>
     </tr>
+    <tr id="opengov:group">
+      <td>group</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#group">opengov:group</a></code></td>
+      <td>A group of voters</td>
+    </tr>
   </tbody>
 </table>
+
+For political groups, the range of the `group` property will be an [organization](/specs/organization.html). For ethnic groups, as in the [House of Peoples](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina), it will be an object (a <a href="http://xmlns.com/foaf/spec/#term_Group" title="http://xmlns.com/foaf/0.1/Group">foaf:Group</a>) with a `name` (a <a href="http://xmlns.com/foaf/spec/#term_name" title="http://xmlns.com/foaf/0.1/name">foaf:name</a>).
 
 <h1 id="serialization">4. Serialization</h1>
 

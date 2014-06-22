@@ -62,7 +62,7 @@ The Person class should have properties for:
 
 1. national identity
 
-    >Nine members of the [House of Peoples](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina) shall comprise a quorum, provided that at least three Bosniac, three Croat, and three Serb delegates are present.
+    >Nine members of the [House of Peoples](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina) shall comprise a quorum, provided that at least three Bosniak, three Croat, and three Serb delegates are present.
 
 1. the means of contacting the person
 

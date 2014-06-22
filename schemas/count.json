@@ -14,6 +14,14 @@
       "description": "The number of votes for an option",
       "type": "integer",
       "required": true
+    },
+    "group_id": {
+      "description": "The ID of a group of voters",
+      "type": ["string", "null"]
+    },
+    "group": {
+      "description": "A group of voters",
+      "type": ["object", "null"]
     }
   }
 }

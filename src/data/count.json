@@ -10,6 +10,11 @@
       "term": "value"
     }
   },
+  "Bulgaria": {
+    "group": {
+      "term": "ПГ"
+    }
+  },
   "Canada (Hansard)": {
     "Count": {
       "term": "DivisionType"
@@ -30,6 +35,11 @@
     },
     "value": {
       "term": "count"
+    }
+  },
+  "US House": {
+    "group": {
+      "term": "party"
     }
   }
 }
