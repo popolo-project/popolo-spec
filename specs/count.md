@@ -26,7 +26,7 @@ A vote count is the number of votes for one option in a vote event.
 
     >The Bosniak, Croat, and Serb groups within the [House of Peoples](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina) must each have a majority for a motion to pass.
 
-    >The functional and geographical constituencies within the [Legislative Council of Hong Kong](http://en.wikipedia.org/wiki/Legislative_Council_of_Hong_Kong) must each have a majority for a motion to pass.
+    >The functional and geographical constituencies within the [Legislative Council of Hong Kong](http://en.wikipedia.org/wiki/Legislative_Council_of_Hong_Kong) must each have a majority.
 
     >A majority of Democratic Party members voted for a motion, and a majority of Republican Party members voted against the motion.
 
