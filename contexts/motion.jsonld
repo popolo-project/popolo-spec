@@ -6,8 +6,8 @@
     "@id": "http://schema.org/publisher",
     "@type": "@id"
   },
-  "context": {
-    "@id": "http://www.w3.org/ns/opengov#context",
+  "session": {
+    "@id": "http://www.w3.org/ns/opengov#session",
     "@type": "@id"
   },
   "creator": {

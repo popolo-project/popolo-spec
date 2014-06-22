@@ -10,7 +10,6 @@
     schema:text "That the House do now proceed to the Orders of the Day."
   ];
   opengov:organization <http://example.com/organizations/house-of-commons.ttl>;
-  schema:superEvent <http://example.com/sittings/sitting-36.ttl>;
   schema:startDate "2013-01-01T12:30Z"^^dcterms:W3CDTF;
   schema:endDate "2013-01-01T12:45Z"^^dcterms:W3CDTF;
   opengov:result "fail";

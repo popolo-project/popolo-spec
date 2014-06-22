@@ -17,12 +17,12 @@
       "description": "The organization in which the motion is proposed",
       "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
-    "context_id": {
-      "description": "The ID of the legislative context in which the motion is proposed",
+    "session_id": {
+      "description": "The ID of the legislative session in which the motion is proposed",
       "type": ["string", "null"]
     },
-    "context": {
-      "description": "The legislative context in which the motion is proposed",
+    "session": {
+      "description": "The legislative session in which the motion is proposed",
       "type": ["object", "null"]
     },
     "creator_id": {

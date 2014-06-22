@@ -29,12 +29,12 @@
       "description": "The organization whose members are voting",
       "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
-    "context_id": {
-      "description": "The ID of the legislative context in which the vote occurs",
+    "session_id": {
+      "description": "The ID of the legislative session in which the vote occurs",
       "type": ["string", "null"]
     },
-    "context": {
-      "description": "The legislative context in which the vote occurs",
+    "session": {
+      "description": "The legislative session in which the vote occurs",
       "type": ["object", "null"]
     },
     "start_date": {

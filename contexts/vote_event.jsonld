@@ -9,7 +9,7 @@
     "@id": "http://www.w3.org/ns/opengov#organization",
     "@type": "@id"
   },
-  "context": {
+  "session": {
     "@id": "http://schema.org/superEvent",
     "@type": "@id"
   },

@@ -22,9 +22,9 @@ The Motion class should have properties for:
 
     >House of Commons
 
-1. the legislative context in which the motion is proposed
+1. the legislative session in which the motion is proposed
 
-    >Sitting No. 36 of the 2nd Session of the 41st Parliament
+    >2nd Session of the 41st Parliament
 
 1. the [person](/specs/person.html) who proposed the motion
 
@@ -83,10 +83,10 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="http://schema.org/publisher" title="http://schema.org/publisher">schema:publisher</a></code></td>
       <td>The organization in which the motion is proposed</td>
     </tr>
-    <tr id="opengov:context">
-      <td>context</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#context">opengov:context</a></code></td>
-      <td>The legislative context in which the motion is proposed</td>
+    <tr id="opengov:session">
+      <td>session</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#session">opengov:session</a></code></td>
+      <td>The legislative session in which the motion is proposed</td>
     </tr>
     <tr id="schema:creator">
       <td>creator</td>
@@ -131,7 +131,7 @@ Few specifications exist for motions, and few legislatures publish motions in a 
   </tbody>
 </table>
 
-The ranges of the `context` and `object` properties are not specified, as they vary greatly across jurisdictions.
+The range of the `session` property is not yet specified. The range of the `object` property is not specified, as it varies greatly across jurisdictions.
 
 <h1 id="serialization">4. Serialization</h1>
 

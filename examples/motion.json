@@ -1,10 +1,5 @@
 {
   "organization_id": "house-of-commons",
-  "context": {
-    "parliament": 41,
-    "session": 2,
-    "sitting": 36
-  },
   "creator_id": "john-doe",
   "text": "That the Bill is to be read a second time.",
   "classification": "Second reading",

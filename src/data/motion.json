@@ -44,7 +44,7 @@
     }
   },
   "PML": {
-    "context": {
+    "session": {
       "term": "calendarObjectID"
     },
     "creator": {
@@ -61,7 +61,7 @@
     "organization": {
       "term": "organization"
     },
-    "context": {
+    "session": {
       "term": "session"
     },
     "text": {
@@ -99,18 +99,18 @@
   },
   "Brazil": {
     "Motion": {
-      "term": "proposição"
+      "label": "<i>proposição</i>"
     },
     "title": {
-      "term": "nome"
+      "label": "<i>nome</i>"
     },
-    "context": {
-      "term": "sessão legislativa"
+    "session": {
+      "label": "<i>sessão legislativa</i>"
     }
   },
   "Canada (vote list)": {
-    "context": {
-      "term": "parliament, session, sitting"
+    "session": {
+      "term": "session"
     },
     "text": {
       "term": "Description"
@@ -140,7 +140,7 @@
     "organization": {
       "term": "id_organ"
     },
-    "context": {
+    "session": {
       "term": "schuze"
     },
     "object": {
@@ -154,8 +154,8 @@
     }
   },
   "Germany": {
-    "context": {
-      "term": "Wahlperiode, Sitzungnr"
+    "session": {
+      "term": "Sitzungnr"
     }
   },
   "Hong Kong": {
@@ -170,7 +170,7 @@
     }
   },
   "Spain": {
-    "context": {
+    "session": {
       "term": "Sesion"
     },
     "text": {
@@ -182,12 +182,12 @@
   },
   "Sweden": {
     "Motion": {
-      "term": "<i>Förslagspunkt</i>"
+      "label": "<i>Förslagspunkt</i>"
     },
     "organization": {
       "term": "beteckning"
     },
-    "context": {
+    "session": {
       "term": "rm"
     },
     "classification": {
@@ -201,7 +201,7 @@
     "organization": {
       "term": "council"
     },
-    "context": {
+    "session": {
       "term": "session"
     },
     "creator": {
@@ -233,9 +233,6 @@
     "Motion": {
       "label": "<i>motion</i>"
     },
-    "context": {
-      "label": "<i>meeting</i>"
-    },
     "organization": {
       "term": "Committee"
     },
@@ -256,8 +253,8 @@
     "organization": {
       "term": "chamber"
     },
-    "context": {
-      "term": "congress, session"
+    "session": {
+      "term": "session"
     },
     "text": {
       "term": "vote-question"
@@ -273,8 +270,8 @@
     }
   },
   "US (Senate)": {
-    "context": {
-      "term": "congress, session"
+    "session": {
+      "term": "session"
     },
     "text": {
       "term": "title, vote_title"

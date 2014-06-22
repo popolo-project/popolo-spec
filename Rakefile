@@ -90,7 +90,7 @@ task :default do
     motion: [
       'Motion',
       'organization',
-      'context',
+      'session',
       'creator',
       'title',
       'description',
@@ -109,6 +109,7 @@ task :default do
       'identifier',
       'title',
       'motion',
+      'session',
       'start time',
       'end time',
       'counts',

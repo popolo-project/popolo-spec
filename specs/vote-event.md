@@ -26,9 +26,9 @@ A vote event is an event at which people's votes are recorded.
 
     >House of Commons
 
-1. the legislative context in which the vote event occurs
+1. the legislative session in which the vote event occurs
 
-    >Sitting No. 36 of the 2nd Session of the 41st Parliament
+    >2nd Session of the 41st Parliament
 
 1. the time at which the event begins
 
@@ -86,9 +86,9 @@ Few specifications exist for vote events, and few legislatures publish vote data
       <td>The organization whose members are voting<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="schema:superEvent">
-      <td>context</td>
+      <td>session</td>
       <td><code><a href="#" title="http://schema.org/superEvent">schema:superEvent</a></code></td>
-      <td>The legislative context in which the vote event occurs<a href="#note1"><sup>1</sup></a></td>
+      <td>The legislative session in which the vote event occurs<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="schema:startDate">
       <td>start date</td>
@@ -118,7 +118,7 @@ Few specifications exist for vote events, and few legislatures publish vote data
   </tbody>
 </table>
 
-The range of the `context` property is not specified, as it varies greatly across jurisdictions.
+The range of the `session` property is not yet specified.
 
 The [vote totals](/specs/count.html) <em class="rfc2119">may</em> not include all options from individual votes, in particular options that have no effect on the result.
 
@@ -126,7 +126,7 @@ The [individual votes](/specs/vote.html) <em class="rfc2119">may</em> not includ
 
 The vote totals <em class="rfc2119">should</em> agree with the individual votes.
 
-<p class="note" id="note1">1. If an implementation uses the <a href="/specs/motion.html">Motion</a> class, it is not necessary to repeat the <code>organization</code> and <code>context</code> properties on the motion's vote events, unless they differ. For example, a committee may consider a legislature's motion, such as in the [Riksdag](http://en.wikipedia.org/wiki/Riksdag).</p>
+<p class="note" id="note1">1. If an implementation uses the <a href="/specs/motion.html">Motion</a> class, it is not necessary to repeat the <code>organization</code> and <code>session</code> properties on the motion's vote events, unless they differ. For example, a committee may consider a legislature's motion, such as in the [Riksdag](http://en.wikipedia.org/wiki/Riksdag).</p>
 <p class="note" id="note2">2. If a motion has multiple vote events, it is relevant to communicate the result of each event.</p>
 
 <h1 id="serialization">4. Serialization</h1>
