@@ -41,10 +41,6 @@
       "description": "A motion category, e.g. adjournment",
       "type": ["string", "null"]
     },
-    "object": {
-      "description": "A resource that the motion specifically references",
-      "type": ["object", "null"]
-    },
     "date": {
       "description": "The date on which the motion was proposed",
       "type": ["string", "null"],

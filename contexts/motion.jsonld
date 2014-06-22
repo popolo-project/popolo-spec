@@ -19,10 +19,6 @@
     "@id": "http://www.w3.org/ns/opengov#classification",
     "@type": "@id"
   },
-  "object": {
-    "@id": "http://purl.org/dc/terms/references",
-    "@type": "@id"
-  },
   "date": {
     "@id": "http://purl.org/dc/terms/dateSubmitted",
     "@type": "http://purl.org/dc/terms/W3CDTF"

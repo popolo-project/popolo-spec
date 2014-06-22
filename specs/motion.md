@@ -40,12 +40,6 @@ The Motion class should have properties for:
 
     >Bob distinguishes routine from non-routine motions.
 
-1. a resource that the motion specifically references
-
-    >e.g. a bill, an amendment, a motion, etc.
-
-    >Alice subscribes to receive an email alert when a vote about a bill passes.
-
 1. the date on which the motion was proposed
 
     >January 1, 2013
@@ -103,11 +97,6 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#classification">opengov:classification</a></code></td>
       <td>A motion category, e.g. adjournment</td>
     </tr>
-    <tr id="dcterms:references">
-      <td>object</td>
-      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-references" title="http://purl.org/dc/terms/references">dcterms:references</a></code></td>
-      <td>A resource that the motion specifically references</td>
-    </tr>
     <tr id="dcterms:dateSubmitted">
       <td>proposal date</td>
       <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-dateSubmitted" title="http://purl.org/dc/terms/dateSubmitted">dcterms:dateSubmitted</a></code></td>
@@ -131,7 +120,7 @@ Few specifications exist for motions, and few legislatures publish motions in a 
   </tbody>
 </table>
 
-The range of the `session` property is not yet specified. The range of the `object` property is not specified, as it varies greatly across jurisdictions.
+The range of the `session` property is not yet specified.
 
 <h1 id="serialization">4. Serialization</h1>
 
@@ -139,7 +128,6 @@ The range of the `session` property is not yet specified. The range of the `obje
 
 * The term `organization` is used instead of `publisher`, to be consistent with the name of the [Organization](/specs/organization.html) class.
 * The value of the `classification` property is a string, instead of a `skos:Concept`.
-* The term `object` is used instead of `references`, because terms in Popolo are nouns, not verbs.
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#motion-schema">JSON Schema</a></li>

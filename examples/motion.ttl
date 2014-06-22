@@ -9,7 +9,6 @@
   schema:creator <http://example.com/people/john-doe.ttl>;
   schema:text "That the Bill is to be read a second time.";
   opengov:classification [a skos:Concept; skos:prefLabel "Second reading"@en];
-  dcterms:references <http://example.com/bills/bill-84.ttl>;
   dcterms:dateSubmitted "2013-01-01"^^dcterms:W3CDTF;
   opengov:requirement "two-thirds majority";
   opengov:result "pass";
