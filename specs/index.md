@@ -466,6 +466,8 @@ If a name object sets an `end_date` property, it represents a former name. With 
 
 <h3 id="group-result">6.4.4 Group result</h3>
 
+For political groups, the range of the `group` property will be an [organization](/specs/organization.html). For ethnic groups, as in the [House of Peoples](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina), it will be an object (a <a href="http://xmlns.com/foaf/spec/#term_Group" title="http://xmlns.com/foaf/0.1/Group">foaf:Group</a>) with a `name` (a <a href="http://xmlns.com/foaf/spec/#term_name" title="http://xmlns.com/foaf/0.1/name">foaf:name</a>).
+
 <ul class="nav nav-tabs no-js">
   <li class="active"><a href="#group-result-schema">JSON Schema</a></li>
   <li><a href="#group-result-context">JSON-LD Context</a></li>
