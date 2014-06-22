@@ -1,0 +1,11 @@
+{
+  "GroupResult": "http://www.w3.org/ns/opengov#GroupResult",
+  "group": {
+    "@id": "http://www.w3.org/ns/opengov#group",
+    "@type": "@id"
+  },
+  "result": {
+    "@id": "http://www.w3.org/ns/opengov#result",
+    "@type": "@id"
+  }
+}

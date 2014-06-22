@@ -4,24 +4,67 @@
 @prefix schema: <http://schema.org/> .
 <http://example.com/vote_events/example.ttl>
   a opengov:VoteEvent;
-  dcterms:identifier "42";
+  dcterms:identifier "1";
   opengov:motion [
     a opengov:Motion;
-    schema:text "That the House do now proceed to the Orders of the Day."
+    schema:text "根據《立法會（權力及特權）條例》動議的議案"
   ];
-  opengov:organization <http://example.com/organizations/house-of-commons.ttl>;
-  schema:startDate "2013-01-01T12:30Z"^^dcterms:W3CDTF;
-  schema:endDate "2013-01-01T12:45Z"^^dcterms:W3CDTF;
+  opengov:organization <http://example.com/organizations/legislative-council-of-hong-kong.ttl>;
+  schema:startDate "2013-10-09T18:53:09Z"^^dcterms:W3CDTF;
+  schema:endDate "2013-10-09T17:57:10Z"^^dcterms:W3CDTF;
   opengov:result "fail";
+  opengov:group_result [
+    a opengov:GroupResult;
+    opengov:group [
+      foaf:name "Functional constituencies"
+    ];
+    opengov:result "fail"
+  ], [
+    a opengov:GroupResult;
+    opengov:group [
+      foaf:name "Geographical constituencies"
+    ];
+    opengov:result "pass"
+  ];
   opengov:count [
     a opengov:YesCount;
-    rdf:value 128
+    rdf:value 9;
+    opengov:group [
+      foaf:name "Functional constituencies"
+    ]
   ], [
     a opengov:NoCount;
-    rdf:value 145
+    rdf:value 24;
+    opengov:group [
+      foaf:name "Functional constituencies"
+    ]
+  ], [
+    a opengov:AbstainCount;
+    rdf:value 1;
+    opengov:group [
+      foaf:name "Functional constituencies"
+    ]
+  ], [
+    a opengov:YesCount;
+    rdf:value 19;
+    opengov:group [
+      foaf:name "Geographical constituencies"
+    ]
+  ], [
+    a opengov:NoCount;
+    rdf:value 15;
+    opengov:group [
+      foaf:name "Geographical constituencies"
+    ]
+  ], [
+    a opengov:AbstainCount;
+    rdf:value 0;
+    opengov:group [
+      foaf:name "Geographical constituencies"
+    ]
   ];
   opengov:vote [
     a opengov:Vote;
-    schema:agent <http://example.com/people/john-q-public.ttl>
+    schema:agent <http://example.com/people/albert-ho.ttl>
     schema:option "yes"
   ] .

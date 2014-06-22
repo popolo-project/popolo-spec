@@ -465,8 +465,21 @@ If a name object sets an `end_date` property, it represents a former name. With 
   <div class="tab-pane" id="other-name-context" data-url="/contexts/other_name.jsonld"></div>
 </div>
 
+<h3 id="group-result">6.4.4 Group result</h3>
+
+<ul class="nav nav-tabs no-js">
+  <li class="active"><a href="#group-result-schema">JSON Schema</a></li>
+  <li><a href="#group-result-context">JSON-LD Context</a></li>
+</ul>
+
+<div class="tab-content no-js">
+  <div class="tab-pane active" id="group-result-schema" data-url="/schemas/group_result.json"></div>
+  <div class="tab-pane" id="group-result-context" data-url="/contexts/group_result.jsonld"></div>
+</div>
+
 <h1 id="history">7. Change history</h1>
 
+* 2014-06-22: Add a group result property to the VoteEvent class.
 * 2014-06-22: Add a group property to the Count class.
 * 2014-06-22: Replace the context property with a session property in the VoteEvent class.
 * 2014-06-16: Remove the `object_id` property from the Motion class' JSON Schema.

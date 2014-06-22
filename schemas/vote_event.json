@@ -51,6 +51,13 @@
       "description": "The result of the vote event",
       "type": ["string", "null"]
     },
+    "group_results": {
+      "description": "The result of the vote event within groups of voters",
+      "type": "array",
+      "items": {
+        "$ref": "http://popoloproject.com/schemas/group_result.json#"
+      }
+    },
     "counts": {
       "description": "The number of votes for options",
       "type": "array",

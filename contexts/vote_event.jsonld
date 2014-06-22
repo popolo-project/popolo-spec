@@ -25,6 +25,10 @@
     "@id": "http://www.w3.org/ns/opengov#result",
     "@type": "@id"
   },
+  "group_results": {
+    "@id": "http://www.w3.org/ns/opengov#group_result",
+    "@type": "@id"
+  },
   "counts": {
     "@id": "http://www.w3.org/ns/opengov#count",
     "@type": "@id"

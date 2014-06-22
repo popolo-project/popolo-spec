@@ -42,6 +42,10 @@ A vote event is an event at which people's votes are recorded.
 
     >The ayes have it.
 
+1. the [result of the vote event within groups of voters](/specs/#group-result)
+
+    >Within the [Legislative Council of Hong Kong](http://en.wikipedia.org/wiki/Legislative_Council_of_Hong_Kong), the motion was passed by the functional constituencies but negatived by the geographical constituencies.
+
 1. the [vote totals](/specs/count.html)
 
     >Yeas: 128, Nays: 145
@@ -105,6 +109,11 @@ Few specifications exist for vote events, and few legislatures publish vote data
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#result">opengov:result</a></code></td>
       <td>The result of the vote event<a href="#note2"><sup>2</sup></a></td>
     </tr>
+    <tr id="opengov:group_result">
+      <td>group result</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#group_result">opengov:group_result</a></code></td>
+      <td>The result of the vote event within groups of voters</td>
+    </tr>
     <tr id="opengov:count">
       <td>count</td>
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#count">opengov:count</a></code></td>
@@ -119,6 +128,8 @@ Few specifications exist for vote events, and few legislatures publish vote data
 </table>
 
 The range of the `session` property is not yet specified.
+
+The [group results](/specs/#group-result) <em class="rfc2119">should not</em> be reported if the group results have no impact on the overall result of the vote event: for example, results by party.
 
 The [vote totals](/specs/count.html) <em class="rfc2119">may</em> not include all options from individual votes, in particular options that have no effect on the result.
 

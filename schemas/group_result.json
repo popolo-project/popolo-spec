@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://popoloproject.com/schemas/group_result.json#",
+  "title": "Group result",
+  "description": "A result of a vote event within a group of voters",
+  "type": "object",
+  "properties": {
+    "group_id": {
+      "description": "The ID of a group of voters",
+      "type": ["string", "null"]
+    },
+    "group": {
+      "description": "A group of voters",
+      "type": ["object", "null"]
+    },
+    "result": {
+      "description": "The result of the vote event within a group of voters",
+      "type": "string",
+      "required": true
+    }
+  }
+}

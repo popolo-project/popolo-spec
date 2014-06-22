@@ -1,25 +1,73 @@
 {
-  "identifier": "42",
+  "identifier": "1",
   "motion": {
-    "text": "That the House do now proceed to the Orders of the Day."
+    "text": "根據《立法會（權力及特權）條例》動議的議案"
   },
-  "organization_id": "house-of-commons",
-  "start_date": "2013-01-01T12:30Z",
-  "end_date": "2013-01-01T12:45Z",
+  "organization_id": "legislative-council-of-hong-kong",
+  "start_date": "2013-10-09T18:53:09Z",
+  "end_date": "2013-10-09T17:57:10Z",
   "result": "fail",
+  "group_results": [
+    {
+      "group": {
+        "name": "Functional constituencies"
+        },
+      "result": "fail"
+    },
+    {
+      "group": {
+        "name": "Geographical constituencies"
+        },
+      "result": "pass"
+    }
+  ],
   "counts": [
     {
       "option": "yes",
-      "value": 128
+      "value": 9,
+      "group": {
+        "name": "Functional constituencies"
+      }
     },
     {
       "option": "no",
-      "value": 145
+      "value": 24,
+      "group": {
+        "name": "Functional constituencies"
+      }
+    },
+    {
+      "option": "abstain",
+      "value": 1,
+      "group": {
+        "name": "Functional constituencies"
+      }
+    },
+    {
+      "option": "yes",
+      "value": 19,
+      "group": {
+        "name": "Geographical constituencies"
+      }
+    },
+    {
+      "option": "no",
+      "value": 15,
+      "group": {
+        "name": "Geographical constituencies"
+      }
+    },
+    {
+      "option": "abstain",
+      "value": 0,
+      "group": {
+        "name": "Geographical constituencies"
+      }
     }
   ],
   "votes": [
     {
-      "voter_id": "john-q-public",
+      "voter_id": "albert-ho",
       "option": "yes"
     }
   ]
