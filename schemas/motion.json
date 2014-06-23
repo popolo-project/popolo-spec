@@ -17,11 +17,11 @@
       "description": "The organization in which the motion is proposed",
       "$ref": "http://popoloproject.com/schemas/organization.json#"
     },
-    "session_id": {
+    "legislative_session_id": {
       "description": "The ID of the legislative session in which the motion is proposed",
       "type": ["string", "null"]
     },
-    "session": {
+    "legislative_session": {
       "description": "The legislative session in which the motion is proposed",
       "type": ["object", "null"]
     },

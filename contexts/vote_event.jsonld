@@ -9,7 +9,7 @@
     "@id": "http://www.w3.org/ns/opengov#organization",
     "@type": "@id"
   },
-  "session": {
+  "legislative_session": {
     "@id": "http://schema.org/superEvent",
     "@type": "@id"
   },

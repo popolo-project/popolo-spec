@@ -77,9 +77,9 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="http://schema.org/publisher" title="http://schema.org/publisher">schema:publisher</a></code></td>
       <td>The organization in which the motion is proposed</td>
     </tr>
-    <tr id="opengov:session">
-      <td>session</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#session">opengov:session</a></code></td>
+    <tr id="opengov:legislative_session">
+      <td>legislative_session</td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#legislative_session">opengov:legislative_session</a></code></td>
       <td>The legislative session in which the motion is proposed</td>
     </tr>
     <tr id="schema:creator">
@@ -120,7 +120,7 @@ Few specifications exist for motions, and few legislatures publish motions in a 
   </tbody>
 </table>
 
-The range of the `session` property is not yet specified.
+The range of the legislative session property is not yet specified.
 
 <h1 id="serialization">4. Serialization</h1>
 
