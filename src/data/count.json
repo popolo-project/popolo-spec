@@ -26,6 +26,14 @@
       "term": "Total"
     }
   },
+  "Ireland": {
+    "value": {
+      "term": "number"
+    },
+    "group": {
+      "term": "party"
+    }
+  },
   "Switzerland": {
     "Count": {
       "term": "totalVote"

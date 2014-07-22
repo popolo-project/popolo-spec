@@ -85,6 +85,14 @@
       "term": "vysledek"
     }
   },
+  "Georgia": {
+    "voter": {
+      "term": "member"
+    },
+    "option": {
+      "term": "vote"
+    }
+  },
   "Germany": {
     "voter": {
       "term": "Bezeichnung"
@@ -99,6 +107,45 @@
     },
     "option": {
       "term": "vote"
+    }
+  },
+  "Ireland": {
+    "voter": {
+      "term": "member"
+    },
+    "group": {
+      "term": "party"
+    }
+  },
+  "Norway (CSV)": {
+    "voter": {
+      "term": "Navn"
+    },
+    "area": {
+      "term": "Fylke"
+    },
+    "group": {
+      "term": "Parti"
+    },
+    "option": {
+      "term": "Votering"
+    }
+  },
+  "Norway (XML)": {
+    "Vote": {
+      "term": "representant_voteringsresultat"
+    },
+    "voter": {
+      "term": "representant"
+    },
+    "area": {
+      "term": "fylke"
+    },
+    "group": {
+      "term": "parti"
+    },
+    "option": {
+      "term": "votering"
     }
   },
   "Spain": {

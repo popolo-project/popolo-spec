@@ -99,6 +99,14 @@
       "term": "datum, čas"
     }
   },
+  "Georgia": {
+    "Vote event": {
+      "term": "session_x"
+    },
+    "start time": {
+      "term": "date"
+    }
+  },
   "Germany": {
     "Vote event": {
       "label": "<i>Namentliche Abstimmungen</i>"
@@ -122,6 +130,28 @@
     },
     "votes": {
       "term": "individual-votes"
+    }
+  },
+  "Ireland": {
+    "identifier": {
+      "term": "votenumber"
+    }
+  },
+  "Norway (XML)": {
+    "Vote event": {
+      "term": "sak_votering"
+    },
+    "identifier": {
+      "term": "dagsorden_sak_nummer"
+    },
+    "motion": {
+      "term": "votering_tema"
+    },
+    "start time": {
+      "term": "votering_tid"
+    },
+    "votes": {
+      "term": "voteringsresultat_liste"
     }
   },
   "Spain": {

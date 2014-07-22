@@ -60,6 +60,8 @@ id: data
 
 * Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * [Czech Republic](http://www.psp.cz/sqw/hp.sqw?k=1300) publishes data on motions declared confusing.
+* [Ireland](http://oireachtasdebates.oireachtas.ie/debates%20authoring/debateswebpack.nsf/%28votesasxmlDail%29?openview&count=-1) doesn't distinguish between motions and vote events.
+* Norway publishes voting records as [CSV](https://data.stortinget.no/bygger/votering?pr=59583&dt=Table&vo=5092) and [XML](http://data.stortinget.no/eksport).
 * [Sweden](http://data.riksdagen.se/Data/Voteringar/) classifies motions as `sakfrågan` or `motivfrågan`. "rm" is an abbreviation of "Riksmöte".
 * Switzerland offers an [API](http://ws.parlament.ch/) and [bulk downloads](http://www.parlament.ch/f/wahlen-abstimmungen/abstimmungen-im-parlament/Pages/abstimmung-nr-xml.aspx).
 * Canada, [Germany](http://www.bundestag.de/bundestag/plenum/abstimmung/2014), the [US House](http://clerk.house.gov/legislative/legvotes.html) and the [US Senate](http://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_113_2.htm) have terms for the session's legislature: `parliament`, `Wahlperiode`, `congress` and `congress`, respectively.
@@ -82,7 +84,10 @@ id: data
 * [Bulgaria](http://www.parliament.bg/bg/plenaryst) has explicit properties for counts: `За`, `Против`, `Въздържали` and `се Гласували`.
 * Canada has explicit properties for counts on its votes list page: `TotalYeas`, `TotalNays` and `TotalPaired`.
 * Czech Republic has explicit properties for counts: `pro`, `proti`, `zdrzel` and `nehlasoval`.
+* Georgia has explicit properties for counts: `yes_votes`, `no_votes`, `abstain_votes` and `absent`.
 * [Hong Kong](http://www.legco.gov.hk/general/english/open-legco/open-data.html) has explicit properties for counts (`present-count`, `yes-count`, `no-count`, and `abstain-count`) and for groups (`functional-constituency` and `geographical-constituency`).
+* Ireland has explicit properties for options: `membersvotedyes`, `membersvotedno` and `membersabsent`.
+* Norway has explicit properties for counts: `antall_for`, `antall_ikke_tilstede` and `antall_mot`.
 * [Spain](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones) has explicit properties for counts: `Presentes`, `AFavor`, `EnContra`, `Abstenciones` and `NoVotan`.
 * The US House has explicit properties for counts: `yea-total`, `nay-total`, `present-total` and `not-voting-total`.
 * The US Senate has explicit properties for counts: `yeas`, `nays`, `present` and `absent`.
@@ -91,8 +96,10 @@ id: data
 
 <h1 id="Vote">Vote</h1>
 
+* Brazil has both [DBF files](http://www.camara.leg.br/internet/votacao/listavotacao5404.asp) and [fixed-width text files without headers](http://www.camara.leg.br/internet/plenario/result/votacao/downlvnv54.htm) that follow [a schema](http://www.camara.leg.br/internet/plenario/result/votacao/Layout_ArquivosTXT_presencas_vota%C3%A7%C3%A3o_exportados.pdf).
 * Canada has explicit properties for options on its vote detail page: `Yea`, `Nay` and `Paired`.
 * Germany has explicit properties for options: `ja`, `nein`, `Enthaltung`, `ungültig` and `nichtabgegeben`.
-* Brazil has both [DBF files](http://www.camara.leg.br/internet/votacao/listavotacao5404.asp) and [fixed-width text files without headers](http://www.camara.leg.br/internet/plenario/result/votacao/downlvnv54.htm) that follow [a schema](http://www.camara.leg.br/internet/plenario/result/votacao/Layout_ArquivosTXT_presencas_vota%C3%A7%C3%A3o_exportados.pdf).
+* Ireland has explicit properties for options: `membersvotedyes`, `membersvotedno` and `membersabsent`.
+* Norway occasionally has explicit properties for options: `For` and `Mot`.
 
 &vote

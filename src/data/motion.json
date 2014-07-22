@@ -153,6 +153,11 @@
       "term": "vysledek"
     }
   },
+  "Ireland": {
+    "vote events": {
+      "term": "sessions"
+    }
+  },
   "Germany": {
     "session": {
       "term": "Sitzungnr"
@@ -167,6 +172,37 @@
     },
     "result": {
       "term": "result"
+    }
+  },
+  "Ireland": {
+    "Motion": {
+      "term": "vote"
+    },
+    "organization": {
+      "term": "forum"
+    },
+    "session": {
+      "term": "dailnumber"
+    },
+    "title": {
+      "term": "votetitle"
+    },
+    "classification": {
+      "term": "category"
+    },
+    "text": {
+      "term": "votetext"
+    },
+    "proposal date": {
+      "term": "votedatetime"
+    }
+  },
+  "Norway (XML)": {
+    "result": {
+      "term": "vedtatt"
+    },
+    "vote events": {
+      "term": "sak_votering_liste"
     }
   },
   "Spain": {

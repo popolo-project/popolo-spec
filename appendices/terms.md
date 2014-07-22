@@ -2644,6 +2644,114 @@ id: data
 
 * Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * [Czech Republic](http://www.psp.cz/sqw/hp.sqw?k=1300) publishes data on motions declared confusing.
+* [Ireland](http://oireachtasdebates.oireachtas.ie/debates%20authoring/debateswebpack.nsf/%28votesasxmlDail%29?openview<div class='table-responsive table-auto'>
+  <table class='table table-striped table-hover table-condensed'>
+    <thead>
+      <tr>
+        <th scope='row'>Term</th>
+        <td>Count</td>
+        <td>option</td>
+        <td>value</td>
+        <td>group</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope='row'>
+          Akoma Ntoso
+        </th>
+        <td>
+          count
+        </td>
+        <td>
+          refersTo
+        </td>
+        <td>
+          value
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Bulgaria
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          ПГ
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Canada (Hansard)
+        </th>
+        <td>
+          DivisionType
+        </td>
+        <td>
+          Type
+        </td>
+        <td>
+          Total
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Ireland
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          number
+        </td>
+        <td>
+          party
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Switzerland
+        </th>
+        <td>
+          totalVote
+        </td>
+        <td>
+          type
+        </td>
+        <td>
+          count
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          US House
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          party
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+=-1) doesn't distinguish between motions and vote events.
+* Norway publishes voting records as [CSV](https://data.stortinget.no/bygger/votering?pr=59583&dt=Table&vo=5092) and [XML](http://data.stortinget.no/eksport).
 * [Sweden](http://data.riksdagen.se/Data/Voteringar/) classifies motions as `sakfrågan` or `motivfrågan`. "rm" is an abbreviation of "Riksmöte".
 * Switzerland offers an [API](http://ws.parlament.ch/) and [bulk downloads](http://www.parlament.ch/f/wahlen-abstimmungen/abstimmungen-im-parlament/Pages/abstimmung-nr-xml.aspx).
 * Canada, [Germany](http://www.bundestag.de/bundestag/plenum/abstimmung/2014), the [US House](http://clerk.house.gov/legislative/legvotes.html) and the [US Senate](http://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_113_2.htm) have terms for the session's legislature: `parliament`, `Wahlperiode`, `congress` and `congress`, respectively.
@@ -3051,6 +3159,48 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
+          Ireland
+        </th>
+        <td>
+          vote
+        </td>
+        <td>
+          forum
+        </td>
+        <td>
+          dailnumber
+        </td>
+        <td>
+        </td>
+        <td>
+          votetitle
+        </td>
+        <td>
+        </td>
+        <td>
+          votetext
+        </td>
+        <td>
+          category
+        </td>
+        <td>
+        </td>
+        <td>
+          votedatetime
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           Germany
         </th>
         <td>
@@ -3121,6 +3271,43 @@ id: data
           result
         </td>
         <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Norway (XML)
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          vedtatt
+        </td>
+        <td>
+          <abbr title='sak_votering_liste'>sak_votering_li…</abbr>
         </td>
       </tr>
       <tr>
@@ -3635,6 +3822,31 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
+          Georgia
+        </th>
+        <td>
+          session_x
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          date
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           Germany
         </th>
         <td>
@@ -3684,6 +3896,58 @@ id: data
         </td>
         <td>
           <abbr title='individual-votes'>individual-vote…</abbr>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Ireland
+        </th>
+        <td>
+        </td>
+        <td>
+          votenumber
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Norway (XML)
+        </th>
+        <td>
+          sak_votering
+        </td>
+        <td>
+          <abbr title='dagsorden_sak_nummer'>dagsorden_sak_n…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          votering_tema
+        </td>
+        <td>
+        </td>
+        <td>
+          votering_tid
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='voteringsresultat_liste'>voteringsresult…</abbr>
         </td>
       </tr>
       <tr>
@@ -3863,109 +4127,23 @@ id: data
 * [Bulgaria](http://www.parliament.bg/bg/plenaryst) has explicit properties for counts: `За`, `Против`, `Въздържали` and `се Гласували`.
 * Canada has explicit properties for counts on its votes list page: `TotalYeas`, `TotalNays` and `TotalPaired`.
 * Czech Republic has explicit properties for counts: `pro`, `proti`, `zdrzel` and `nehlasoval`.
+* Georgia has explicit properties for counts: `yes_votes`, `no_votes`, `abstain_votes` and `absent`.
 * [Hong Kong](http://www.legco.gov.hk/general/english/open-legco/open-data.html) has explicit properties for counts (`present-count`, `yes-count`, `no-count`, and `abstain-count`) and for groups (`functional-constituency` and `geographical-constituency`).
+* Ireland has explicit properties for options: `membersvotedyes`, `membersvotedno` and `membersabsent`.
+* Norway has explicit properties for counts: `antall_for`, `antall_ikke_tilstede` and `antall_mot`.
 * [Spain](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones) has explicit properties for counts: `Presentes`, `AFavor`, `EnContra`, `Abstenciones` and `NoVotan`.
 * The US House has explicit properties for counts: `yea-total`, `nay-total`, `present-total` and `not-voting-total`.
 * The US Senate has explicit properties for counts: `yeas`, `nays`, `present` and `absent`.
 
-<div class='table-responsive table-auto'>
-  <table class='table table-striped table-hover table-condensed'>
-    <thead>
-      <tr>
-        <th scope='row'>Term</th>
-        <td>Count</td>
-        <td>option</td>
-        <td>value</td>
-        <td>group</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope='row'>
-          Akoma Ntoso
-        </th>
-        <td>
-          count
-        </td>
-        <td>
-          refersTo
-        </td>
-        <td>
-          value
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          Bulgaria
-        </th>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          ПГ
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          Canada (Hansard)
-        </th>
-        <td>
-          DivisionType
-        </td>
-        <td>
-          Type
-        </td>
-        <td>
-          Total
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          Switzerland
-        </th>
-        <td>
-          totalVote
-        </td>
-        <td>
-          type
-        </td>
-        <td>
-          count
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          US House
-        </th>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          party
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
+&count
 
 <h1 id="Vote">Vote</h1>
 
+* Brazil has both [DBF files](http://www.camara.leg.br/internet/votacao/listavotacao5404.asp) and [fixed-width text files without headers](http://www.camara.leg.br/internet/plenario/result/votacao/downlvnv54.htm) that follow [a schema](http://www.camara.leg.br/internet/plenario/result/votacao/Layout_ArquivosTXT_presencas_vota%C3%A7%C3%A3o_exportados.pdf).
 * Canada has explicit properties for options on its vote detail page: `Yea`, `Nay` and `Paired`.
 * Germany has explicit properties for options: `ja`, `nein`, `Enthaltung`, `ungültig` and `nichtabgegeben`.
-* Brazil has both [DBF files](http://www.camara.leg.br/internet/votacao/listavotacao5404.asp) and [fixed-width text files without headers](http://www.camara.leg.br/internet/plenario/result/votacao/downlvnv54.htm) that follow [a schema](http://www.camara.leg.br/internet/plenario/result/votacao/Layout_ArquivosTXT_presencas_vota%C3%A7%C3%A3o_exportados.pdf).
+* Ireland has explicit properties for options: `membersvotedyes`, `membersvotedno` and `membersabsent`.
+* Norway occasionally has explicit properties for options: `For` and `Mot`.
 
 <div class='table-responsive table-auto'>
   <table class='table table-striped table-hover table-condensed'>
@@ -4131,6 +4309,25 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
+          Georgia
+        </th>
+        <td>
+        </td>
+        <td>
+          member
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          vote
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           Germany
         </th>
         <td>
@@ -4163,6 +4360,68 @@ id: data
         </td>
         <td>
           vote
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Ireland
+        </th>
+        <td>
+        </td>
+        <td>
+          member
+        </td>
+        <td>
+        </td>
+        <td>
+          party
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Norway (CSV)
+        </th>
+        <td>
+        </td>
+        <td>
+          Navn
+        </td>
+        <td>
+          Fylke
+        </td>
+        <td>
+          Parti
+        </td>
+        <td>
+          Votering
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Norway (XML)
+        </th>
+        <td>
+          <abbr title='representant_voteringsresultat'>representant_vo…</abbr>
+        </td>
+        <td>
+          representant
+        </td>
+        <td>
+          fylke
+        </td>
+        <td>
+          parti
+        </td>
+        <td>
+          votering
         </td>
         <td>
         </td>
