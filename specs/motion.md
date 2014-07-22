@@ -77,9 +77,9 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="http://schema.org/publisher" title="http://schema.org/publisher">schema:publisher</a></code></td>
       <td>The organization in which the motion is proposed</td>
     </tr>
-    <tr id="opengov:legislative_session">
+    <tr id="opengov:legislativeSession">
       <td>legislative_session</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#legislative_session">opengov:legislative_session</a></code></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#legislativeSession">opengov:legislativeSession</a></code></td>
       <td>The legislative session in which the motion is proposed</td>
     </tr>
     <tr id="schema:creator">
@@ -128,6 +128,7 @@ The range of the legislative session property is not yet specified.
 
 * The term `organization` is used instead of `publisher`, to be consistent with the name of the [Organization](/specs/organization.html) class.
 * The value of the `classification` property is a string, instead of a `skos:Concept`.
+* The term `date` is used instead of `dateSubmitted`, for clarity.
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#motion-schema">JSON Schema</a></li>

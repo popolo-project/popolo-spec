@@ -13,7 +13,7 @@
   schema:startDate "2013-10-09T18:53:09Z"^^dcterms:W3CDTF;
   schema:endDate "2013-10-09T17:57:10Z"^^dcterms:W3CDTF;
   opengov:result "fail";
-  opengov:group_result [
+  opengov:groupResult [
     a opengov:GroupResult;
     opengov:group [
       foaf:name "Functional constituencies"

@@ -109,9 +109,9 @@ Few specifications exist for vote events, and few legislatures publish vote data
       <td><code><a href="#" title="http://www.w3.org/ns/opengov#result">opengov:result</a></code></td>
       <td>The result of the vote event<a href="#note2"><sup>2</sup></a></td>
     </tr>
-    <tr id="opengov:group_result">
+    <tr id="opengov:groupResult">
       <td>group result</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#group_result">opengov:group_result</a></code></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#groupResult">opengov:groupResult</a></code></td>
       <td>The result of the vote event within groups of voters</td>
     </tr>
     <tr id="opengov:count">
@@ -145,6 +145,7 @@ The vote totals <em class="rfc2119">should</em> agree with the individual votes.
 **JSON differences from other RDF serializations:**
 
 * The term `identifier` is used instead of `notation`, to be consistent with [identifier objects](/specs/#identifier).
+* The term `legislative_session` is used instead of `superEvent`, for clarity.
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#vote-event-schema">JSON Schema</a></li>

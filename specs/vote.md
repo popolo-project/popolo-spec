@@ -80,16 +80,16 @@ Few specifications exist for individual votes, and few legislatures publish vote
     <tr id="schema:agent">
       <td>voter</td>
       <td><code><a href="http://schema.org/agent" title="http://schema.org/agent">schema:agent</a></code></td>
-      <td>The [person](/specs/person.html) or [organization](/specs/organization.html) that is voting</td>
+      <td>The <a href="/specs/person.html">person</a> or <a href="/specs/organization.html">organization</a> that is voting</td>
     </tr>
     <tr id="schema:option">
       <td>option</td>
       <td><code><a href="http://schema.org/option" title="http://schema.org/option">schema:option</a></code></td>
       <td>The option chosen by the voter, whether actively or passively<a href="#note1"><sup>1</sup></a></td>
     </tr>
-    <tr id="opengov:political_group">
+    <tr id="opengov:politicalGroup">
       <td>political group</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#political_group">opengov:political_group</a></code></td>
+      <td><code><a href="#" title="http://www.w3.org/ns/opengov#politicalGroup">opengov:politicalGroup</a></code></td>
       <td>The voter's primary political group<a href="#note2"><sup>2</sup></a></td>
     </tr>
     <tr id="opengov:role">
@@ -120,8 +120,9 @@ Few specifications exist for individual votes, and few legislatures publish vote
 
 **JSON differences from other RDF serializations:**
 
-* The term `voter` is used instead of `agent`, to avoid jargon.
+* The term `voter` is used instead of `agent`, for clarity.
 * The value of the `role` property is a string, instead of an `org:Role`.
+* The term `group` is used instead of `politicalGroup`, to be consistent with the [Count](/specs/count.html) class.
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#vote-schema">JSON Schema</a></li>

@@ -7,7 +7,7 @@
     "@type": "@id"
   },
   "legislative_session": {
-    "@id": "http://www.w3.org/ns/opengov#legislative_session",
+    "@id": "http://www.w3.org/ns/opengov#legislativeSession",
     "@type": "@id"
   },
   "creator": {

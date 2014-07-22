@@ -10,7 +10,7 @@
   },
   "option": "http://schema.org/option",
   "group": {
-    "@id": "http://www.w3.org/ns/opengov#political_group",
+    "@id": "http://www.w3.org/ns/opengov#politicalGroup",
     "@type": "@id"
   },
   "role": {
