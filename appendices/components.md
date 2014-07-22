@@ -50,14 +50,19 @@ Reusable software components implementing the data specification may want to iso
 
 If two software components are to interoperate by allowing direct access to each others' database (as opposed to offering an API), those databases must agree on the names of their tables. The names must be among the following (optionally prefixed with `popolo_`):
 
+* `areas`
 * `contact_details`
+* `counts`
 * `identifiers`
 * `links`
 * `memberships`
+* `motions`
 * `organizations`
 * `other_names`
 * `people`
 * `posts`
+* `vote_events`
+* `votes`
 
 <div class="well well-sm well-example">
   <p>A developer creates a platform for citizens to ask questions to legislators in public. The platform relies on a third-party data collection system to provide the legislator profiles. The platform is distributed as open source, and lets re-users choose a Popolo-compliant data collection system that best fits their process; for example, an organization with active volunteers may prefer a manual data entry system, whereas another with technical expertise may prefer a data scraping system.</p>
