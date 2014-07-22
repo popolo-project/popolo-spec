@@ -2644,113 +2644,7 @@ id: data
 
 * Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * [Czech Republic](http://www.psp.cz/sqw/hp.sqw?k=1300) publishes data on motions declared confusing.
-* [Ireland](http://oireachtasdebates.oireachtas.ie/debates%20authoring/debateswebpack.nsf/%28votesasxmlDail%29?openview<div class='table-responsive table-auto'>
-  <table class='table table-striped table-hover table-condensed'>
-    <thead>
-      <tr>
-        <th scope='row'>Term</th>
-        <td>Count</td>
-        <td>option</td>
-        <td>value</td>
-        <td>group</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope='row'>
-          Akoma Ntoso
-        </th>
-        <td>
-          count
-        </td>
-        <td>
-          refersTo
-        </td>
-        <td>
-          value
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          Bulgaria
-        </th>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          ПГ
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          Canada (Hansard)
-        </th>
-        <td>
-          DivisionType
-        </td>
-        <td>
-          Type
-        </td>
-        <td>
-          Total
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          Ireland
-        </th>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          number
-        </td>
-        <td>
-          party
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          Switzerland
-        </th>
-        <td>
-          totalVote
-        </td>
-        <td>
-          type
-        </td>
-        <td>
-          count
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          US House
-        </th>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          party
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-=-1) doesn't distinguish between motions and vote events.
+* [Ireland](http://oireachtasdebates.oireachtas.ie/debates%20authoring/debateswebpack.nsf/%28votesasxmlDail%29?openview&amp;count=-1) doesn't distinguish between motions and vote events.
 * Norway publishes voting records as [CSV](https://data.stortinget.no/bygger/votering?pr=59583&dt=Table&vo=5092) and [XML](http://data.stortinget.no/eksport).
 * [Sweden](http://data.riksdagen.se/Data/Voteringar/) classifies motions as `sakfrågan` or `motivfrågan`. "rm" is an abbreviation of "Riksmöte".
 * Switzerland offers an [API](http://ws.parlament.ch/) and [bulk downloads](http://www.parlament.ch/f/wahlen-abstimmungen/abstimmungen-im-parlament/Pages/abstimmung-nr-xml.aspx).
@@ -4135,7 +4029,113 @@ id: data
 * The US House has explicit properties for counts: `yea-total`, `nay-total`, `present-total` and `not-voting-total`.
 * The US Senate has explicit properties for counts: `yeas`, `nays`, `present` and `absent`.
 
-&count
+<div class='table-responsive table-auto'>
+  <table class='table table-striped table-hover table-condensed'>
+    <thead>
+      <tr>
+        <th scope='row'>Term</th>
+        <td>Count</td>
+        <td>option</td>
+        <td>value</td>
+        <td>group</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope='row'>
+          Akoma Ntoso
+        </th>
+        <td>
+          count
+        </td>
+        <td>
+          refersTo
+        </td>
+        <td>
+          value
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Bulgaria
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          ПГ
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Canada (Hansard)
+        </th>
+        <td>
+          DivisionType
+        </td>
+        <td>
+          Type
+        </td>
+        <td>
+          Total
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Ireland
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          number
+        </td>
+        <td>
+          party
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Switzerland
+        </th>
+        <td>
+          totalVote
+        </td>
+        <td>
+          type
+        </td>
+        <td>
+          count
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          US House
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          party
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 <h1 id="Vote">Vote</h1>
 
