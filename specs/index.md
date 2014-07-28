@@ -405,6 +405,8 @@ To embed an organization's posts on its Organization document, add a plural `pos
 
 For the inverse relation, i.e. to embed a post's organization on its Post document, add a singular `organization` property to that document, whose value is the Organization document. You <em class="rfc2119">may</em> omit the `organization_id` property from the Post document, since it is redundant with the `id` property on the Organization document.
 
+In the case of an organization's memberships, an organization may both have members and be a member of other organizations. As such, the `organization_id` property <em class="rfc2119">should</em> be present on each subdocument, to avoid ambiguity.
+
 At the risk of stating the obvious, you <em class="rfc2119">must not</em> embed an entity in another unless the two are related. You <em class="rfc2119">may</em> embed to any depth, but you <em class="rfc2119">must not</em> embed recursively, e.g. embed an organization in a post in an organization.
 
 <ul class="nav nav-tabs no-js">
