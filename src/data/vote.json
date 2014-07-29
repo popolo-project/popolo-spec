@@ -117,6 +117,20 @@
       "term": "party"
     }
   },
+  "Italy": {
+    "Vote": {
+      "term": "voto",
+      "url": "http://dati.camera.it/ocd/reference_document/#voto"
+    },
+    "voter": {
+      "term": "rif_deputato",
+      "url": "http://dati.camera.it/ocd/reference_document/#rif_deputato"
+    },
+    "group": {
+      "term": "rif_gruppoParlamentare",
+      "url": "http://dati.camera.it/ocd/reference_document/#rif_gruppoParlamentare"
+    }
+  },
   "Norway (CSV)": {
     "voter": {
       "term": "Navn"

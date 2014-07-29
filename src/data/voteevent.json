@@ -137,6 +137,12 @@
       "term": "votenumber"
     }
   },
+  "Italy": {
+    "Vote event": {
+      "term": "votazione",
+      "url": "http://dati.camera.it/ocd/reference_document/#votazione"
+    }
+  },
   "Norway (XML)": {
     "Vote event": {
       "term": "sak_votering"

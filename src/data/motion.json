@@ -153,7 +153,7 @@
       "term": "vysledek"
     }
   },
-  "Ireland": {
+  "Georgia": {
     "vote events": {
       "term": "sessions"
     }
@@ -195,6 +195,16 @@
     },
     "proposal date": {
       "term": "votedatetime"
+    }
+  },
+  "Italy": {
+    "session": {
+      "term": "rif_seduta",
+      "url": "http://dati.camera.it/ocd/reference_document/#rif_seduta"
+    },
+    "result": {
+      "term": "approvato",
+      "url": "http://dati.camera.it/ocd/reference_document/#approvato"
     }
   },
   "Norway (XML)": {

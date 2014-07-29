@@ -12,6 +12,7 @@ gn,http://www.geonames.org/ontology#
 locn,http://www.w3.org/ns/locn#
 nco,http://www.semanticdesktop.org/ontologies/nco/#
 nie,http://www.semanticdesktop.org/ontologies/nie/#
+ocd,http://dati.camera.it/ocd/
 oparl,http://oparl.org/schema/1.0/
 org,http://www.w3.org/ns/org#
 person,http://www.w3.org/ns/person#
