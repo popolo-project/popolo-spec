@@ -129,6 +129,14 @@ id: data
     </tr>
     <tr>
       <td>
+        <code>ocd</code>
+      </td>
+      <td>
+        <a href='http://dati.camera.it/ocd/'>http://dati.camera.it/ocd/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <code>oparl</code>
       </td>
       <td>
@@ -2644,7 +2652,8 @@ id: data
 
 * Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * [Czech Republic](http://www.psp.cz/sqw/hp.sqw?k=1300) publishes data on motions declared confusing.
-* [Ireland](http://oireachtasdebates.oireachtas.ie/debates%20authoring/debateswebpack.nsf/%28votesasxmlDail%29?openview&amp;count=-1) doesn't distinguish between motions and vote events.
+* [Ireland](http://oireachtasdebates.oireachtas.ie/debates%20authoring/debateswebpack.nsf/%28votesasxmlDail%29?openview) doesn't distinguish between motions and vote events.
+* [Italy](http://dati.camera.it/ocd/reference_document/) doesn't define a Motion class, but we list the properties shared with the VoteEvent class.
 * Norway publishes voting records as [CSV](https://data.stortinget.no/bygger/votering?pr=59583&dt=Table&vo=5092) and [XML](http://data.stortinget.no/eksport).
 * [Sweden](http://data.riksdagen.se/Data/Voteringar/) classifies motions as `sakfrågan` or `motivfrågan`. "rm" is an abbreviation of "Riksmöte".
 * Switzerland offers an [API](http://ws.parlament.ch/) and [bulk downloads](http://www.parlament.ch/f/wahlen-abstimmungen/abstimmungen-im-parlament/Pages/abstimmung-nr-xml.aspx).
@@ -3053,34 +3062,9 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
-          Ireland
+          Georgia
         </th>
         <td>
-          vote
-        </td>
-        <td>
-          forum
-        </td>
-        <td>
-          dailnumber
-        </td>
-        <td>
-        </td>
-        <td>
-          votetitle
-        </td>
-        <td>
-        </td>
-        <td>
-          votetext
-        </td>
-        <td>
-          category
-        </td>
-        <td>
-        </td>
-        <td>
-          votedatetime
         </td>
         <td>
         </td>
@@ -3091,6 +3075,25 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          sessions
         </td>
       </tr>
       <tr>
@@ -3163,6 +3166,89 @@ id: data
         </td>
         <td>
           result
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Ireland
+        </th>
+        <td>
+          vote
+        </td>
+        <td>
+          forum
+        </td>
+        <td>
+          dailnumber
+        </td>
+        <td>
+        </td>
+        <td>
+          votetitle
+        </td>
+        <td>
+        </td>
+        <td>
+          votetext
+        </td>
+        <td>
+          category
+        </td>
+        <td>
+        </td>
+        <td>
+          votedatetime
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Italy
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://dati.camera.it/ocd/reference_document/#rif_seduta'>
+            rif_seduta
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://dati.camera.it/ocd/reference_document/#approvato'>
+            approvato
+          </a>
         </td>
         <td>
         </td>
@@ -3818,6 +3904,32 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
+          Italy
+        </th>
+        <td>
+          <a href='http://dati.camera.it/ocd/reference_document/#votazione'>
+            votazione
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           Norway (XML)
         </th>
         <td>
@@ -4021,9 +4133,10 @@ id: data
 * [Bulgaria](http://www.parliament.bg/bg/plenaryst) has explicit properties for counts: `За`, `Против`, `Въздържали` and `се Гласували`.
 * Canada has explicit properties for counts on its votes list page: `TotalYeas`, `TotalNays` and `TotalPaired`.
 * Czech Republic has explicit properties for counts: `pro`, `proti`, `zdrzel` and `nehlasoval`.
-* Georgia has explicit properties for counts: `yes_votes`, `no_votes`, `abstain_votes` and `absent`.
+* [Georgia](http://votes.parliament.ge/en/api/v1) has explicit properties for counts: `yes_votes`, `no_votes`, `abstain_votes` and `absent`.
 * [Hong Kong](http://www.legco.gov.hk/general/english/open-legco/open-data.html) has explicit properties for counts (`present-count`, `yes-count`, `no-count`, and `abstain-count`) and for groups (`functional-constituency` and `geographical-constituency`).
 * Ireland has explicit properties for options: `membersvotedyes`, `membersvotedno` and `membersabsent`.
+* Italy has explicit properties for counts: [`favorevoli`](http://dati.camera.it/ocd/reference_document/#favorevoli), [`contrari`](http://dati.camera.it/ocd/reference_document/#contrari), [`astenuti`](http://dati.camera.it/ocd/reference_document/#astenuti), [`votanti`](http://dati.camera.it/ocd/reference_document/#votanti) and [`presenti`](http://dati.camera.it/ocd/reference_document/#presenti).
 * Norway has explicit properties for counts: `antall_for`, `antall_ikke_tilstede` and `antall_mot`.
 * [Spain](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones) has explicit properties for counts: `Presentes`, `AFavor`, `EnContra`, `Abstenciones` and `NoVotan`.
 * The US House has explicit properties for counts: `yea-total`, `nay-total`, `present-total` and `not-voting-total`.
@@ -4377,6 +4490,32 @@ id: data
         </td>
         <td>
           party
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Italy
+        </th>
+        <td>
+          <a href='http://dati.camera.it/ocd/reference_document/#voto'>
+            voto
+          </a>
+        </td>
+        <td>
+          <a href='http://dati.camera.it/ocd/reference_document/#rif_deputato'>
+            rif_deputato
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://dati.camera.it/ocd/reference_document/#rif_gruppoParlamentare'>
+            <abbr title='rif_gruppoParlamentare'>rif_gruppoParla…</abbr>
+          </a>
         </td>
         <td>
         </td>
