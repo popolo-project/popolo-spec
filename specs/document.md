@@ -3,7 +3,6 @@ layout: default
 title: Document | The Popolo Project
 id: document
 ---
-{% include navigation.html %}
 
 <ul class="breadcrumb">
   <li><a href="/specs/">Data Specification</a></li>
