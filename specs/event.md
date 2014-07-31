@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: class
 title: Event | The Popolo Project
 id: event
 ---
