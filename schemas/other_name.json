@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/other_name.json#",
+  "id": "http://www.popoloproject.com/schemas/other_name.json#",
   "title": "Other name",
   "description": "An alternate or former name",
   "type": "object",

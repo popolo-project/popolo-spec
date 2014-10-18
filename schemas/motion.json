@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/motion.json#",
+  "id": "http://www.popoloproject.com/schemas/motion.json#",
   "title": "Motion",
   "description": "A formal step to introduce a matter for consideration by an organization",
   "type": "object",
@@ -15,7 +15,7 @@
     },
     "organization": {
       "description": "The organization in which the motion is proposed",
-      "$ref": "http://popoloproject.com/schemas/organization.json#"
+      "$ref": "http://www.popoloproject.com/schemas/organization.json#"
     },
     "legislative_session_id": {
       "description": "The ID of the legislative session in which the motion is proposed",
@@ -31,7 +31,7 @@
     },
     "creator": {
       "description": "The person who proposed the motion",
-      "$ref": "http://popoloproject.com/schemas/person.json#"
+      "$ref": "http://www.popoloproject.com/schemas/person.json#"
     },
     "text": {
       "description": "The transcript or text of the motion",
@@ -58,7 +58,7 @@
       "description": "Events at which people vote on the motion",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/vote_event.json#"
+        "$ref": "http://www.popoloproject.com/schemas/vote_event.json#"
       }
     },
     "created_at": {
@@ -75,7 +75,7 @@
       "description": "URLs to documents from which the motion is derived",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     }
   }

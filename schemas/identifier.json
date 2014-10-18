@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/identifier.json#",
+  "id": "http://www.popoloproject.com/schemas/identifier.json#",
   "title": "Identifier",
   "description": "An issued identifier",
   "type": "object",

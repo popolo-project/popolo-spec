@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/vote.json#",
+  "id": "http://www.popoloproject.com/schemas/vote.json#",
   "title": "Vote",
   "description": "A voter's vote in a vote event",
   "type": "object",
@@ -15,7 +15,7 @@
     },
     "vote_event": {
       "description": "A vote event",
-      "$ref": "http://popoloproject.com/schemas/vote_event.json#"
+      "$ref": "http://www.popoloproject.com/schemas/vote_event.json#"
     },
     "voter_id": {
       "description": "The ID of the person or organization that is voting",
@@ -35,7 +35,7 @@
     },
     "group": {
       "description": "The voter's primary political group",
-      "$ref": "http://popoloproject.com/schemas/organization.json#"
+      "$ref": "http://www.popoloproject.com/schemas/organization.json#"
     },
     "role": {
       "description": "The voter's role in the event",
@@ -51,7 +51,7 @@
     },
     "pair": {
       "description": "The person with whom the voter is paired",
-      "$ref": "http://popoloproject.com/schemas/person.json#"
+      "$ref": "http://www.popoloproject.com/schemas/person.json#"
     }
   }
 }

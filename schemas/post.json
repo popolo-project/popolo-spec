@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/post.json#",
+  "id": "http://www.popoloproject.com/schemas/post.json#",
   "title": "Post",
   "description": "A position that exists independent of the person holding it",
   "type": "object",
@@ -30,7 +30,7 @@
     },
     "organization": {
       "description": "The organization in which the post is held",
-      "$ref": "http://popoloproject.com/schemas/organization.json#"
+      "$ref": "http://www.popoloproject.com/schemas/organization.json#"
     },
     "area_id": {
       "description": "The ID of the geographic area to which this post is related",
@@ -38,7 +38,7 @@
     },
     "area": {
       "description": "The geographic area to which this post is related",
-      "$ref": "http://popoloproject.com/schemas/area.json#"
+      "$ref": "http://www.popoloproject.com/schemas/area.json#"
     },
     "start_date": {
       "description": "The date on which the post was created",
@@ -54,21 +54,21 @@
       "description": "Means of contacting the holder of the post",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/contact_detail.json#"
+        "$ref": "http://www.popoloproject.com/schemas/contact_detail.json#"
       }
     },
     "links": {
       "description": "URLs to documents about the post",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     },
     "memberships": {
       "description": "The memberships through which people hold the post in the organization",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/membership.json#"
+        "$ref": "http://www.popoloproject.com/schemas/membership.json#"
       }
     },
     "created_at": {
@@ -85,7 +85,7 @@
       "description": "URLs to documents from which the post is derived",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     }
   }

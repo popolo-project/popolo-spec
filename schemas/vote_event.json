@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/vote_event.json#",
+  "id": "http://www.popoloproject.com/schemas/vote_event.json#",
   "title": "Vote event",
   "description": "An event at which people's votes are recorded",
   "type": "object",
@@ -19,7 +19,7 @@
     },
     "motion": {
       "description": "The motion being decided",
-      "$ref": "http://popoloproject.com/schemas/motion.json#"
+      "$ref": "http://www.popoloproject.com/schemas/motion.json#"
     },
     "organization_id": {
       "description": "The ID of the organization whose members are voting",
@@ -27,7 +27,7 @@
     },
     "organization": {
       "description": "The organization whose members are voting",
-      "$ref": "http://popoloproject.com/schemas/organization.json#"
+      "$ref": "http://www.popoloproject.com/schemas/organization.json#"
     },
     "legislative_session_id": {
       "description": "The ID of the legislative session in which the vote occurs",
@@ -55,21 +55,21 @@
       "description": "The result of the vote event within groups of voters",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/group_result.json#"
+        "$ref": "http://www.popoloproject.com/schemas/group_result.json#"
       }
     },
     "counts": {
       "description": "The number of votes for options",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/count.json#"
+        "$ref": "http://www.popoloproject.com/schemas/count.json#"
       }
     },
     "votes": {
       "description": "Voters' votes",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/vote.json#"
+        "$ref": "http://www.popoloproject.com/schemas/vote.json#"
       }
     },
     "created_at": {
@@ -86,7 +86,7 @@
       "description": "URLs to documents from which the vote event is derived",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     }
   }

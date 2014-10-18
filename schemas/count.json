@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/count.json#",
+  "id": "http://www.popoloproject.com/schemas/count.json#",
   "title": "Count",
   "description": "The number of votes for an option in a vote event",
   "type": "object",

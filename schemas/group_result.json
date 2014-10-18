@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/group_result.json#",
+  "id": "http://www.popoloproject.com/schemas/group_result.json#",
   "title": "Group result",
   "description": "A result of a vote event within a group of voters",
   "type": "object",

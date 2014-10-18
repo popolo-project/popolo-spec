@@ -2,7 +2,7 @@
 
 This project's goal is to author, through community consensus, international open government data specifications relating to the legislative branch of government, so that civil society can spend less time transforming data and more time applying it to the problems they face. A related goal is to make it easier for civic developers to create government transparency, monitoring and engagement websites, by developing reusable open source components that implement the specifications. Although the data specification is designed primarily for open government use cases, many other use cases are supported.
 
-[Read the specification at popoloproject.com](http://popoloproject.com/)
+[Read the specification at popoloproject.com](http://www.popoloproject.com/)
 
 ## Participation
 

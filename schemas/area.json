@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/area.json#",
+  "id": "http://www.popoloproject.com/schemas/area.json#",
   "title": "Area",
   "description": "A geographic area whose geometry may change over time",
   "type": "object",
@@ -27,7 +27,7 @@
     },
     "parent": {
       "description": "The area that contains this area",
-      "$ref": "http://popoloproject.com/schemas/area.json#"
+      "$ref": "http://www.popoloproject.com/schemas/area.json#"
     },
     "geometry": {
       "description": "A geometry",
@@ -47,7 +47,7 @@
       "description": "URLs to documents from which the area is derived",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     }
   }

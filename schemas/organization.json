@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/organization.json#",
+  "id": "http://www.popoloproject.com/schemas/organization.json#",
   "title": "Organization",
   "description": "A group with a common purpose or reason for existence that goes beyond the set of people belonging to it",
   "type": "object",
@@ -17,14 +17,14 @@
       "description": "Alternate or former names",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/other_name.json#"
+        "$ref": "http://www.popoloproject.com/schemas/other_name.json#"
       }
     },
     "identifiers": {
       "description": "Issued identifiers",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/identifier.json#"
+        "$ref": "http://www.popoloproject.com/schemas/identifier.json#"
       }
     },
     "classification": {
@@ -37,7 +37,7 @@
     },
     "parent": {
       "description": "The organization that contains this organization",
-      "$ref": "http://popoloproject.com/schemas/organization.json#"
+      "$ref": "http://www.popoloproject.com/schemas/organization.json#"
     },
     "area_id": {
       "description": "The ID of the geographic area to which this organization is related",
@@ -45,7 +45,7 @@
     },
     "area": {
       "description": "The geographic area to which this organization is related",
-      "$ref": "http://popoloproject.com/schemas/area.json#"
+      "$ref": "http://www.popoloproject.com/schemas/area.json#"
     },
     "founding_date": {
       "description": "A date of founding",
@@ -66,28 +66,28 @@
       "description": "Means of contacting the organization",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/contact_detail.json#"
+        "$ref": "http://www.popoloproject.com/schemas/contact_detail.json#"
       }
     },
     "links": {
       "description": "URLs to documents about the organization",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     },
     "memberships": {
       "description": "Memberships",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/membership.json#"
+        "$ref": "http://www.popoloproject.com/schemas/membership.json#"
       }
     },
     "posts": {
       "description": "Posts within the organization",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/post.json#"
+        "$ref": "http://www.popoloproject.com/schemas/post.json#"
       }
     },
     "created_at": {
@@ -104,7 +104,7 @@
       "description": "URLs to documents from which the organization is derived",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     }
   }

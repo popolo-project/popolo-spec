@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/contact_detail.json#",
+  "id": "http://www.popoloproject.com/schemas/contact_detail.json#",
   "title": "Contact detail",
   "description": "A means of contacting an entity",
   "type": "object",
@@ -47,7 +47,7 @@
       "description": "URLs to documents from which the contact detail is derived",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     }
   }

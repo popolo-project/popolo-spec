@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/membership.json#",
+  "id": "http://www.popoloproject.com/schemas/membership.json#",
   "title": "Membership",
   "description": "A relationship between a member and an organization",
   "type": "object",
@@ -27,7 +27,7 @@
     },
     "person": {
       "description": "The person who is a member of the organization",
-      "$ref": "http://popoloproject.com/schemas/person.json#"
+      "$ref": "http://www.popoloproject.com/schemas/person.json#"
     },
     "organization_id": {
       "description": "The ID of the organization in which the person or organization is a member",
@@ -35,7 +35,7 @@
     },
     "organization": {
       "description": "The organization in which the person or organization is a member",
-      "$ref": "http://popoloproject.com/schemas/organization.json#"
+      "$ref": "http://www.popoloproject.com/schemas/organization.json#"
     },
     "post_id": {
       "description": "The ID of the post held by the member in the organization through this membership",
@@ -43,7 +43,7 @@
     },
     "post": {
       "description": "The post held by the member in the organization through this membership",
-      "$ref": "http://popoloproject.com/schemas/post.json#"
+      "$ref": "http://www.popoloproject.com/schemas/post.json#"
     },
     "on_behalf_of_id": {
       "description": "The ID of the organization on whose behalf the person is a member of the organization",
@@ -51,7 +51,7 @@
     },
     "on_behalf_of": {
       "description": "The organization on whose behalf the person is a member of the organization",
-      "$ref": "http://popoloproject.com/schemas/organization.json#"
+      "$ref": "http://www.popoloproject.com/schemas/organization.json#"
     },
     "area_id": {
       "description": "The ID of the geographic area to which this membership is related",
@@ -59,7 +59,7 @@
     },
     "area": {
       "description": "The geographic area to which this membership is related",
-      "$ref": "http://popoloproject.com/schemas/area.json#"
+      "$ref": "http://www.popoloproject.com/schemas/area.json#"
     },
     "start_date": {
       "description": "The date on which the relationship began",
@@ -75,14 +75,14 @@
       "description": "Means of contacting the member of the organization",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/contact_detail.json#"
+        "$ref": "http://www.popoloproject.com/schemas/contact_detail.json#"
       }
     },
     "links": {
       "description": "URLs to documents about the membership",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     },
     "created_at": {
@@ -99,7 +99,7 @@
       "description": "URLs to documents from which the membership is derived",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema#",
-  "id": "http://popoloproject.com/schemas/person.json#",
+  "id": "http://www.popoloproject.com/schemas/person.json#",
   "title": "Person",
   "description": "A real person, alive or dead",
   "type": "object",
@@ -17,14 +17,14 @@
       "description": "Alternate or former names",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/other_name.json#"
+        "$ref": "http://www.popoloproject.com/schemas/other_name.json#"
       }
     },
     "identifiers": {
       "description": "Issued identifiers",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/identifier.json#"
+        "$ref": "http://www.popoloproject.com/schemas/identifier.json#"
       }
     },
     "family_name": {
@@ -95,21 +95,21 @@
       "description": "Means of contacting the person",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/contact_detail.json#"
+        "$ref": "http://www.popoloproject.com/schemas/contact_detail.json#"
       }
     },
     "links": {
       "description": "URLs to documents about the person",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     },
     "memberships": {
       "description": "Memberships",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/membership.json#"
+        "$ref": "http://www.popoloproject.com/schemas/membership.json#"
       }
     },
     "created_at": {
@@ -126,7 +126,7 @@
       "description": "URLs to documents from which the person is derived",
       "type": "array",
       "items": {
-        "$ref": "http://popoloproject.com/schemas/link.json#"
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
       }
     }
   }
