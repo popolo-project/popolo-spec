@@ -24,3 +24,6 @@ $('.nav-tabs.no-js li:not(.disabled) a').click(function (e) {
 $('.highlight').each(function () {
   hljs.highlightBlock(this);
 });
+$(function () {
+  $('a[data-toggle="tooltip"]').tooltip();
+});

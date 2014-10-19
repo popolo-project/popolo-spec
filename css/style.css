@@ -62,21 +62,17 @@ em.rfc2119 {
   color: #999;
 }
 
-/* Homepage examples */
-#example-date {
-  min-height: 50px;
-  background: url(/img/nounproject/polling-place-14292.png) no-repeat 0 0;
-  padding-left: 60px;
+/* Homepage */
+#contents {
+  padding: 0 0 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
-#example-contact {
-  min-height: 50px;
-  background: url(/img/nounproject/telephone-127.png) no-repeat 6px 0;
-  padding-left: 60px;
-}
-#example-sponsor {
-  min-height: 50px;
-  background: url(/img/nounproject/document-17380.png) no-repeat 0 0;
-  padding-left: 60px;
+#adoption img,
+#reuse img {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 /* Download link */

@@ -104,7 +104,7 @@ The subdocuments in a [later section](#classes-and-properties) add more requirem
 
 Following a [survey of existing specifications](/appendices/survey.html), the data specification reuses terms from:
 
-<table>
+<table class="table table-condensed">
   <thead>
     <tr>
       <th>Publisher</th>
@@ -114,28 +114,48 @@ Following a [survey of existing specifications](/appendices/survey.html), the da
   </thead>
   <tbody>
     <tr>
+      <td></td>
+      <td><a href="http://vocab.org/bio/0.1/.html">BIO: A vocabulary for biographical information</a></td>
+      <td><code>bio</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
+      <td><a href="http://www.w3.org/2000/10/swap/pim/contact">Contact: Utility concepts for everyday life</a></td>
+      <td><code>con</code></td>
+    </tr>
+    <tr>
       <td><abbr title="Dublic Core Metadata Initiative">DCMI</abbr></td>
-      <td><a href="http://dublincore.org/documents/dcmi-terms/">Metadata Terms</a></td>
+      <td><a href="http://dublincore.org/documents/dcmi-terms/">DCMI Metadata Terms</a></td>
       <td><code>dcterms</code></td>
     </tr>
     <tr>
-      <td><abbr title="Internet Engineering Task Force">IETF</abbr></td>
-      <td><a href="http://tools.ietf.org/html/rfc6350">vCard 4.0</a></td>
-      <td><code>vcard</code></td>
+      <td></td>
+      <td><a href="http://xmlns.com/foaf/spec/">FOAF Vocabulary Specification</a></td>
+      <td><code>foaf</code></td>
+    </tr>
+    <tr>
+      <td>GeoNames</td>
+      <td><a href="http://www.geonames.org/ontology/documentation.html">GeoNames Ontology</a></td>
+      <td><code>gn</code></td>
     </tr>
     <tr>
       <td><abbr title="Interoperability Solutions for European Public Administrations">ISA</abbr></td>
-      <td><a href="http://www.w3.org/ns/person">Person Core Vocabulary</a></td>
+      <td><a href="http://www.w3.org/ns/locn">ISA Programme Location Core Vocabulary</a></td>
+      <td><code>locn</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
+      <td><a href="http://www.w3.org/TR/vocab-org/">The Organization Ontology</a></td>
+      <td><code>org</code></td>
+    </tr>
+    <tr>
+      <td><abbr title="Interoperability Solutions for European Public Administrations">ISA</abbr></td>
+      <td><a href="http://www.w3.org/ns/person">ISA Programme Person Core Vocabulary</a></td>
       <td><code>person</code></td>
     </tr>
     <tr>
       <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
-      <td><a href="http://www.w3.org/TR/vocab-org/">Organization ontology (ORG)</a></td>
-      <td><code>org</code></td>
-    </tr>
-    <tr>
-      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
-      <td><a href="http://www.w3.org/TR/rdf-schema/">RDF Schema (RDFS)</a></td>
+      <td><a href="http://www.w3.org/TR/rdf-schema/">RDF Schema</a></td>
       <td><code>rdfs</code></td>
     </tr>
     <tr>
@@ -145,23 +165,13 @@ Following a [survey of existing specifications](/appendices/survey.html), the da
     </tr>
     <tr>
       <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
-      <td><a href="http://www.w3.org/TR/skos-reference/">Simple Knowledge Organization System (SKOS)</a></td>
+      <td><a href="http://www.w3.org/TR/skos-reference/">SKOS Simple Knowledge Organization System</a></td>
       <td><code>skos</code></td>
     </tr>
     <tr>
-      <td><abbr title="World Wide Web Consortium">W3C</abbr></td>
-      <td><a href="http://www.w3.org/2000/10/swap/pim/contact">Contact: Utility concepts for everyday life</a></td>
-      <td><code>con</code></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><a href="http://vocab.org/bio/0.1/.html">BIO vocabulary</a></td>
-      <td><code>bio</code></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><a href="http://vocab.org/bio/0.1/.html">Friend of a Friend (FOAF)</a></td>
-      <td><code>foaf</code></td>
+      <td><abbr title="Internet Engineering Task Force">IETF</abbr></td>
+      <td><a href="http://tools.ietf.org/html/rfc6350">vCard Format Specification</a></td>
+      <td><code>vcard</code></td>
     </tr>
   </tbody>
 </table>
