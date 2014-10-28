@@ -492,6 +492,7 @@ For political groups, the range of the `group` property will be an [organization
 
 <h1 id="history">7. Change history</h1>
 
+* 2014-10-28: A Membership need not have an organization if it has a post.
 * 2014-06-22: Remove the object property from the Motion class.
 * 2014-06-22: Add a group result property to the VoteEvent class.
 * 2014-06-22: Add a group property to the Count class.

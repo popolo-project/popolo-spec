@@ -22,7 +22,8 @@ This document provides more complex examples than [the samples given in the spec
   1. [Change in party affiliation](#party-affiliation)
   1. [A previously held post](#previous-post)
   1. [A post held by more than one person simultaneously](#simultaneous-post)
-  1. [A party within a coalition](#party-coalition)
+  1. [A party in a coalition](#party-coalition)
+  1. [A candidate in an election](#electoral-candidate)
 1. [Motions](#motions)
   1. [An amendment to a motion](#motion-amendment)
 1. [Vote events](#vote-events)
@@ -308,6 +309,33 @@ The government coalition, an organization, and its memberships:
 ```
 
 Note that the memberships are assumed to have ended when the coalition dissolved.
+
+<h2 id="electoral-candidate">2.7. A candidate in an election</h2>
+
+**Scenario:** Bob Loblaw is a candidate for Member of Parliament for St Helens South and Whiston.
+
+Bob's candidacy can be expressed as a membership with a post but without an organization (because Bob is not a Member of Parliament). The post and its memberships:
+
+```
+{
+  "organization_id": "house-of-commons",
+  "label": "Member of Parliament for St Helens South and Whiston",
+  "role": "Member of Parliament",
+  "area": {
+    "identifier": "http://mapit.mysociety.org/area/65732",
+    "id": "mapit:65732",
+    "name": "St Helens South and Whiston"
+  },
+  "memberships": [
+    {
+      person_id: "bob-loblaw",
+      role: "Candidate"
+    }
+  ]
+}
+
+
+```
 
 <h1 id="motions">4. Motions</h1>
 

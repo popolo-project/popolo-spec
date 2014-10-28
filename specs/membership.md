@@ -152,7 +152,7 @@ Briefly, the [survey of existing specifications](/appendices/survey.html) conclu
 
 <h1 id="serialization">4. Serialization</h1>
 
-A membership relation cannot exist without both a member and an organization. All memberships <em class="rfc2119">must</em> assign values to either `member`, `person`, or `person_id` and to either `organization` or `organization_id`.
+A membership relation cannot exist without both a member and an organization. All memberships <em class="rfc2119">must</em> assign values to either `member`, `person`, or `person_id` and to either `organization`, `organization_id`, `post` or `post_id`.
 
 **JSON differences from other RDF serializations:**
 
