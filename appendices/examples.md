@@ -316,7 +316,7 @@ Note that the memberships are assumed to have ended when the coalition dissolved
 
 Bob's candidacy can be expressed as a membership with a post but without an organization (because Bob is not a Member of Parliament). The post and its memberships:
 
-```
+```json
 {
   "organization_id": "house-of-commons",
   "label": "Member of Parliament for St Helens South and Whiston",
@@ -333,8 +333,6 @@ Bob's candidacy can be expressed as a membership with a post but without an orga
     }
   ]
 }
-
-
 ```
 
 <h1 id="motions">4. Motions</h1>
