@@ -162,12 +162,12 @@ With respect to the choice of terms:
     </tr>
     <tr id="opengov:nationalIdentity">
       <td>national identity</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#nationalIdentity">opengov:nationalIdentity</a></code></td>
+      <td><code><a href="http://www.w3.org/ns/opengov#nationalIdentity" title="http://www.w3.org/ns/opengov#nationalIdentity">opengov:nationalIdentity</a></code></td>
       <td>A national identity</td>
     </tr>
     <tr id="opengov:contactDetail">
       <td>contact detail</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</a></code></td>
+      <td><code><a href="http://www.w3.org/ns/opengov#contactDetail" title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</a></code></td>
       <td>A means of contacting the person</td>
     </tr>
     <tr id="rdfs:seeAlso">
