@@ -108,7 +108,7 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
     </tr>
     <tr id="opengov:otherName">
       <td>former name</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#otherName">opengov:otherName</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#otherName">opengov:otherName</code></td>
       <td>A former name, e.g. a pre-merger name</td>
     </tr>
     <tr id="org:identifier">
@@ -128,7 +128,7 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
     </tr>
     <tr id="opengov:area">
       <td>geographic area</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#area">opengov:area</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#area">opengov:area</code></td>
       <td>The geographic area to which the organization is related</td>
     </tr>
     <tr id="schema:foundingDate">
@@ -138,7 +138,7 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
     </tr>
     <tr id="opengov:dissolutionDate">
       <td>date of dissolution</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#dissolutionDate">opengov:dissolutionDate</a></code><a href="#note3"><sup>3</sup></a></td>
+      <td><code title="http://www.w3.org/ns/opengov#dissolutionDate">opengov:dissolutionDate</code><a href="#note3"><sup>3</sup></a></td>
       <td>A date of dissolution, termination, expiry, etc.</td>
     </tr>
     <tr id="schema:image">
@@ -148,7 +148,7 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
     </tr>
     <tr id="opengov:contactDetail">
       <td>contact detail</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</code></td>
       <td>A means of contacting the organization</td>
     </tr>
     <tr id="rdfs:seeAlso">

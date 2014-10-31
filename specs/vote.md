@@ -69,12 +69,12 @@ Few specifications exist for individual votes, and few legislatures publish vote
   <tbody>
     <tr id="opengov:Vote">
       <td>Vote</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#Vote">opengov:Vote</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#Vote">opengov:Vote</code></td>
       <td>A voter's vote in a vote event</td>
     </tr>
     <tr id="opengov:voteEvent">
       <td>vote event</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#voteEvent">opengov:voteEvent</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#voteEvent">opengov:voteEvent</code></td>
       <td>A vote event</td>
     </tr>
     <tr id="schema:agent">
@@ -89,22 +89,22 @@ Few specifications exist for individual votes, and few legislatures publish vote
     </tr>
     <tr id="opengov:politicalGroup">
       <td>political group</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#politicalGroup">opengov:politicalGroup</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#politicalGroup">opengov:politicalGroup</code></td>
       <td>The voter's primary political group<a href="#note2"><sup>2</sup></a></td>
     </tr>
     <tr id="opengov:role">
       <td>role</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#role">opengov:role</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#role">opengov:role</code></td>
       <td>The voter's role in the event</td>
     </tr>
     <tr id="opengov:weight">
       <td>weight</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#weight">opengov:weight</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#weight">opengov:weight</code></td>
       <td>The weight of the voter's vote<a href="#note3"><sup>3</sup></a></td>
     </tr>
     <tr id="opengov:pair">
       <td>pair</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#pair">opengov:pair</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#pair">opengov:pair</code></td>
       <td>The person with whom the voter is paired</td>
     </tr>
   </tbody>

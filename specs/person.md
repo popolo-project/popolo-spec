@@ -117,7 +117,7 @@ With respect to the choice of terms:
     </tr>
     <tr id="opengov:otherName">
       <td>former name</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#otherName">opengov:otherName</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#otherName">opengov:otherName</code></td>
       <td>A former name, such as a maiden name</td>
     </tr>
     <tr id="foaf:nick">
@@ -162,12 +162,12 @@ With respect to the choice of terms:
     </tr>
     <tr id="opengov:nationalIdentity">
       <td>national identity</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#nationalIdentity">opengov:nationalIdentity</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#nationalIdentity">opengov:nationalIdentity</code></td>
       <td>A national identity</td>
     </tr>
     <tr id="opengov:contactDetail">
       <td>contact detail</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</code></td>
       <td>A means of contacting the person</td>
     </tr>
     <tr id="rdfs:seeAlso">

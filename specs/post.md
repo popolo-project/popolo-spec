@@ -125,7 +125,7 @@ According to the Organization ontology, either a person or an organization can h
     </tr>
     <tr id="opengov:area">
       <td>geographic area</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#area">opengov:area</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#area">opengov:area</code></td>
       <td>The geographic area to which the post is related</td>
     </tr>
     <tr id="schema:validFrom">
@@ -140,7 +140,7 @@ According to the Organization ontology, either a person or an organization can h
     </tr>
     <tr id="opengov:contactDetail">
       <td>contact detail</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</code></td>
       <td>A means of contacting the holder of the post</td>
     </tr>
     <tr id="rdfs:seeAlso">

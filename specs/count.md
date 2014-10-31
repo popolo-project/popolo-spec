@@ -62,7 +62,7 @@ Few specifications exist for vote totals, and few legislatures publish vote data
     </tr>
     <tr id="opengov:group">
       <td>group</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#group">opengov:group</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#group">opengov:group</code></td>
       <td>A group of voters</td>
     </tr>
   </tbody>

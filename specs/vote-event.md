@@ -71,7 +71,7 @@ Few specifications exist for vote events, and few legislatures publish vote data
   <tbody>
     <tr id="opengov:VoteEvent">
       <td>Vote event</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#VoteEvent">opengov:VoteEvent</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#VoteEvent">opengov:VoteEvent</code></td>
       <td>An event at which people's votes are recorded</td>
     </tr>
     <tr id="dcterms:identifier">
@@ -81,17 +81,17 @@ Few specifications exist for vote events, and few legislatures publish vote data
     </tr>
     <tr id="opengov:motion">
       <td>motion</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#motion">opengov:motion</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#motion">opengov:motion</code></td>
       <td>The motion being decided</td>
     </tr>
     <tr id="opengov:organization">
       <td>organization</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#organization">opengov:organization</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#organization">opengov:organization</code></td>
       <td>The organization whose members are voting<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="schema:superEvent">
       <td>legislative session</td>
-      <td><code><a href="#" title="http://schema.org/superEvent">schema:superEvent</a></code></td>
+      <td><code title="http://schema.org/superEvent">schema:superEvent</code></td>
       <td>The legislative session in which the vote event occurs<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="schema:startDate">
@@ -106,22 +106,22 @@ Few specifications exist for vote events, and few legislatures publish vote data
     </tr>
     <tr id="opengov:result">
       <td>result</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#result">opengov:result</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#result">opengov:result</code></td>
       <td>The result of the vote event<a href="#note2"><sup>2</sup></a></td>
     </tr>
     <tr id="opengov:groupResult">
       <td>group result</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#groupResult">opengov:groupResult</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#groupResult">opengov:groupResult</code></td>
       <td>The result of the vote event within groups of voters</td>
     </tr>
     <tr id="opengov:count">
       <td>count</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#count">opengov:count</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#count">opengov:count</code></td>
       <td>The number of votes for an option</td>
     </tr>
     <tr id="opengov:vote">
       <td>vote</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#vote">opengov:vote</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#vote">opengov:vote</code></td>
       <td>A voter's vote</td>
     </tr>
   </tbody>

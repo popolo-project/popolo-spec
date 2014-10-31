@@ -112,17 +112,17 @@ Briefly, the [survey of existing specifications](/appendices/survey.html) conclu
     </tr>
     <tr id="opengov:post">
       <td>post</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#post">opengov:post</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#post">opengov:post</code></td>
       <td>The post held by the member in the organization</td>
     </tr>
     <tr id="opengov:onBehalfOf">
       <td>on behalf of</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#onBehalfOf">opengov:onBehalfOf</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#onBehalfOf">opengov:onBehalfOf</code></td>
       <td>The organization on whose behalf the person is a member of the organization</td>
     </tr>
     <tr id="opengov:area">
       <td>geographic area</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#area">opengov:area</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#area">opengov:area</code></td>
       <td>The geographic area to which the membership is related</td>
     </tr>
     <tr id="schema:validFrom">
@@ -137,7 +137,7 @@ Briefly, the [survey of existing specifications](/appendices/survey.html) conclu
     </tr>
     <tr id="opengov:contactDetail">
       <td>contact detail</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#contactDetail">opengov:contactDetail</code></td>
       <td>A means of contacting the member of the organization</td>
     </tr>
     <tr id="rdfs:seeAlso">

@@ -69,7 +69,7 @@ Few specifications exist for motions, and few legislatures publish motions in a 
   <tbody>
     <tr id="opengov:Motion">
       <td>Motion</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#Motion">opengov:Motion</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#Motion">opengov:Motion</code></td>
       <td>A formal step to introduce a matter for consideration by an organization</td>
     </tr>
     <tr id="schema:publisher">
@@ -79,7 +79,7 @@ Few specifications exist for motions, and few legislatures publish motions in a 
     </tr>
     <tr id="opengov:legislativeSession">
       <td>legislative_session</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#legislativeSession">opengov:legislativeSession</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#legislativeSession">opengov:legislativeSession</code></td>
       <td>The legislative session in which the motion is proposed</td>
     </tr>
     <tr id="schema:creator">
@@ -94,7 +94,7 @@ Few specifications exist for motions, and few legislatures publish motions in a 
     </tr>
     <tr id="opengov:classification">
       <td>classification</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#classification">opengov:classification</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#classification">opengov:classification</code></td>
       <td>A motion category, e.g. adjournment</td>
     </tr>
     <tr id="dcterms:dateSubmitted">
@@ -104,17 +104,17 @@ Few specifications exist for motions, and few legislatures publish motions in a 
     </tr>
     <tr id="opengov:requirement">
       <td>requirement</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#requirement">opengov:requirement</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#requirement">opengov:requirement</code></td>
       <td>The requirement for the motion to be adopted</td>
     </tr>
     <tr id="opengov:result">
       <td>result</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#result">opengov:result</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#result">opengov:result</code></td>
       <td>The result of the motion</td>
     </tr>
     <tr id="opengov:voteEvent">
       <td>vote event</td>
-      <td><code><a href="#" title="http://www.w3.org/ns/opengov#voteEvent">opengov:voteEvent</a></code></td>
+      <td><code title="http://www.w3.org/ns/opengov#voteEvent">opengov:voteEvent</code></td>
       <td>An event at which people vote on the motion</td>
     </tr>
   </tbody>
