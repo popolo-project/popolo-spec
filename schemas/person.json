@@ -106,7 +106,7 @@
       }
     },
     "memberships": {
-      "description": "Memberships",
+      "description": "The person's memberships",
       "type": "array",
       "items": {
         "$ref": "http://www.popoloproject.com/schemas/membership.json#"
