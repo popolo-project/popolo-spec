@@ -146,3 +146,17 @@ task :default do
     f.write(template)
   end
 end
+
+desc 'Count terms'
+task :size do
+  class_size = 0
+  properties = Hash.new(0)
+  Dir['schemas/*'].each do |file|
+    class_size += 1
+    JSON.load(File.read(file))['properties'].each do |property,_|
+      properties[property] += 1
+    end
+  end
+  puts "Classes: #{class_size}"
+  puts "Properties: #{properties.values.reduce(:+)} (#{properties.size} unique)"
+end
