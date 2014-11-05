@@ -150,13 +150,20 @@ end
 desc 'Count terms'
 task :size do
   class_size = 0
+  top_level_class_size = 0
   properties = Hash.new(0)
   Dir['schemas/*'].each do |file|
-    class_size += 1
-    JSON.load(File.read(file))['properties'].each do |property,_|
-      properties[property] += 1
+    json = JSON.load(File.read(file))
+    if json
+      class_size += 1
+      if json['properties']['id']
+        top_level_class_size += 1
+      end
+      json['properties'].each do |property,_|
+        properties[property] += 1
+      end
     end
   end
-  puts "Classes: #{class_size}"
+  puts "Classes: #{class_size} (#{top_level_class_size} top-level)"
   puts "Properties: #{properties.values.reduce(:+)} (#{properties.size} unique)"
 end
