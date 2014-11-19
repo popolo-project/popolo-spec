@@ -78,7 +78,7 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td>The organization in which the motion is proposed</td>
     </tr>
     <tr id="opengov:legislativeSession">
-      <td>legislative_session</td>
+      <td>legislative session</td>
       <td><code title="http://www.w3.org/ns/opengov#legislativeSession">opengov:legislativeSession</code></td>
       <td>The legislative session in which the motion is proposed</td>
     </tr>
