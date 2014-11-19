@@ -13,7 +13,7 @@
       "term": "identifier"
     },
     "start time": {
-      "label": "startDate, startTime"
+      "term": "startDate, startTime"
     },
     "end time": {
       "term": "endDate, endTime"
@@ -230,7 +230,7 @@
       "term": "rollcall-num"
     },
     "start time": {
-      "label": "action-date, action-time"
+      "term": "action-date, action-time"
     },
     "counts": {
       "term": "vote-totals"

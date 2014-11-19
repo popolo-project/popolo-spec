@@ -11,8 +11,6 @@ id: data
   <li class="active">Inventory of terms from survey</li>
 </ul>
 
-* The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `sources`, `externalLinks`, `startDate` and `endDate` across classes.
-
 # Namespaces
 
 <table>
@@ -211,7 +209,27 @@ id: data
 </table>
 
 
-<h1 id="Person">Person</h1>
+# Classes
+
+* People and organizations
+  * [Person](#Person)
+  * [Organization](#Organization)
+  * [Membership](#Membership)
+  * [Post](#Post)
+  * [Address](#Address)
+* Motions and voting
+  * [Motion](#Motion)
+  * [Vote event](#VoteEvent)
+  * [Count](#Count)
+  * [Vote](#Vote)
+* Geography
+  * [Area](#Area)
+* Works
+  * [Speech](#Speech)
+
+* The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `sources`, `externalLinks`, `startDate` and `endDate` across classes.
+
+<h2 id="Person">Person</h2>
 
 * vCard's terms are from the [RDF encoding](http://www.w3.org/TR/vcard-rdf/) of vCard 4.0, except for `DEATHDATE` which is from [RFC 6474](http://tools.ietf.org/html/rfc6474).
 
@@ -1281,7 +1299,7 @@ id: data
 </div>
 
 
-<h1 id="Organization">Organization</h1>
+<h2 id="Organization">Organization</h2>
 
 * Schema.org adds a new property for each identifier scheme, e.g. `duns`, `globalLocationNumber`, `taxID` and `vatID`, and each classification scheme, e.g. `isicV4` and `naics`.
 * In PML Schema, organizational hierarchies can have a maximum depth of five.
@@ -1770,7 +1788,7 @@ id: data
 </div>
 
 
-<h1 id="Membership">Membership</h1>
+<h2 id="Membership">Membership</h2>
 
 * In PML Schema, memberships are embedded on `person` objects.
 
@@ -1917,7 +1935,7 @@ id: data
 </div>
 
 
-<h1 id="Post">Post</h1>
+<h2 id="Post">Post</h2>
 
 * PML Schema has the properties `startDate` and `endDate` for the dates of creation and elimination.
 
@@ -2167,7 +2185,7 @@ id: data
 </div>
 
 
-<h1 id="Address">Address</h1>
+<h2 id="Address">Address</h2>
 
 * To disambiguate between different telephone types, Schema.org adds [faxNumber](http://schema.org/PostalAddress), LDAP adds [mobile](http://tools.ietf.org/html/rfc4524#section-2.18), [pager](http://tools.ietf.org/html/rfc4524#section-2.20) and [facsimileTelephoneNumber](http://tools.ietf.org/html/rfc4519#section-2.10) and NIEM adds `ContactFaxNumber`, `ContactMobileTelephoneNumber` and `ContactPagerNumber`.
 * LDAP adds properties like [homePostalAddress](http://tools.ietf.org/html/rfc4524#section-2.13) to disambiguate between different address types.
@@ -2367,288 +2385,7 @@ id: data
 </div>
 
 
-<h1 id="Area">Area</h1>
-
-* Schema.org adds a new property for each identifier scheme, e.g. `globalLocationNumber`, and each classification scheme, e.g. `isicV4`.
-* FAO adds a new property for each identifier scheme, e.g. `codeDBPediaID`.
-
-<div class='table-responsive table-auto'>
-  <table class='table table-striped table-hover table-condensed'>
-    <thead>
-      <tr>
-        <th scope='row'>Term</th>
-        <td>Area</td>
-        <td>name</td>
-        <td>identifier</td>
-        <td>classification</td>
-        <td>parent_id</td>
-        <td>geometry</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope='row'>
-          <code>schema</code>
-        </th>
-        <td>
-          <a href='http://schema.org/Place'>
-            Place
-          </a>
-        </td>
-        <td>
-          <a href='http://schema.org/name'>
-            name
-          </a>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          <a href='http://schema.org/containedIn'>
-            containedIn
-          </a>
-        </td>
-        <td>
-          <a href='http://schema.org/geo'>
-            geo
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          <code>gadm</code>
-        </th>
-        <td>
-          see <code>spatial</code>
-        </td>
-        <td>
-          <a href='http://gadm.geovocab.org/ontology#name'>
-            name
-          </a>
-        </td>
-        <td>
-          <a href='http://gadm.geovocab.org/ontology#has_code'>
-            has_code
-          </a>
-        </td>
-        <td>
-          <a href='http://gadm.geovocab.org/ontology#type'>
-            type
-          </a>
-        </td>
-        <td>
-          see <code>spatial</code>
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          <code>geo</code>
-        </th>
-        <td>
-          <a href='http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing'>
-            SpatialThing
-          </a>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          <a href='http://www.w3.org/2003/01/geo/wgs84_pos#location'>
-            location
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          <code>geom</code>
-        </th>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          <a href='http://geovocab.org/geometry#geometry'>
-            geometry
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          <code>geop</code>
-        </th>
-        <td>
-          <a href='http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/area'>
-            area
-          </a>
-        </td>
-        <td>
-          <a href='http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/nameOfficial'>
-            nameOfficial
-          </a>
-        </td>
-        <td>
-          <a href='http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/hasCode'>
-            hasCode
-          </a>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          <code>gn</code>
-        </th>
-        <td>
-          <a href='http://www.geonames.org/ontology#Feature'>
-            Feature
-          </a>
-        </td>
-        <td>
-          <a href='http://www.geonames.org/ontology#name'>
-            name
-          </a>
-        </td>
-        <td>
-          <a href='http://www.geonames.org/ontology#geonamesID'>
-            geonamesID
-          </a>
-        </td>
-        <td>
-          <a href='http://www.geonames.org/ontology#featureClass'>
-            featureClass
-          </a>
-        </td>
-        <td>
-          <a href='http://www.geonames.org/ontology#parentFeature'>
-            parentFeature
-          </a>
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          <code>geosparql</code>
-        </th>
-        <td>
-          <a href='http://www.opengis.net/ont/geosparql#Feature'>
-            Feature
-          </a>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          <a href='http://www.opengis.net/ont/geosparql#within'>
-            within
-          </a>
-        </td>
-        <td>
-          <a href='http://www.opengis.net/ont/geosparql#hasGeometry'>
-            hasGeometry
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          <code>locn</code>
-        </th>
-        <td>
-          <a href='http://purl.org/dc/terms/Location'>
-            Location
-          </a>
-        </td>
-        <td>
-          <a href='http://www.w3.org/ns/locn#geographicName'>
-            geographicName
-          </a>
-        </td>
-        <td>
-          <a href='http://www.w3.org/2000/01/rdf-schema#seeAlso'>
-            seeAlso
-          </a>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          <a href='http://www.w3.org/ns/locn#geometry'>
-            geometry
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          <code>spatial</code>
-        </th>
-        <td>
-          <a href='http://geovocab.org/spatial#Feature'>
-            Feature
-          </a>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          <a href='http://geovocab.org/spatial#PP'>
-            PP
-          </a>
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          GML
-        </th>
-        <td>
-          Feature
-        </td>
-        <td>
-          name
-        </td>
-        <td>
-          id
-        </td>
-        <td>
-          featureType
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-<h1 id="Motion">Motion</h1>
+<h2 id="Motion">Motion</h2>
 
 * Canada has two ways of expressing motions: from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * [Czech Republic](http://www.psp.cz/sqw/hp.sqw?k=1300) publishes data on motions declared confusing.
@@ -3540,7 +3277,7 @@ id: data
 </div>
 
 
-<h1 id="VoteEvent">Vote event</h1>
+<h2 id="VoteEvent">Vote event</h2>
 
 * Canada has three ways of expressing votes: in the [Hansard](http://www.parl.gc.ca/HouseChamberBusiness/ChamberSittings.aspx?View=H&Language=E), from the [votes list page](http://www.parl.gc.ca/housechamberbusiness/Chambervotelist.aspx?Language=E) and from the vote detail page.
 * Czech Republic records repeat votes, along with the person requesting the repeat.
@@ -3607,7 +3344,7 @@ id: data
         <td>
         </td>
         <td>
-          startDate, startTime
+          <abbr title='startDate, startTime'>startDate, star…</abbr>
         </td>
         <td>
           <abbr title='endDate, endTime'>endDate, endTim…</abbr>
@@ -4083,7 +3820,7 @@ id: data
         <td>
         </td>
         <td>
-          action-date, action-time
+          <abbr title='action-date, action-time'>action-date, ac…</abbr>
         </td>
         <td>
         </td>
@@ -4127,7 +3864,7 @@ id: data
 </div>
 
 
-<h1 id="Count">Count</h1>
+<h2 id="Count">Count</h2>
 
 * The [Cornell Legal Information Institute Legislative Metadata Project](http://blog.law.cornell.edu/metasausage/downloads-and-related-information/) has explicit properties for counts: `hasYeaTally`, `hasNayTally` and `hasNoVoteTally`.
 * [Bulgaria](http://www.parliament.bg/bg/plenaryst) has explicit properties for counts: `За`, `Против`, `Въздържали` and `се Гласували`.
@@ -4250,7 +3987,7 @@ id: data
 </div>
 
 
-<h1 id="Vote">Vote</h1>
+<h2 id="Vote">Vote</h2>
 
 * Brazil has both [DBF files](http://www.camara.leg.br/internet/votacao/listavotacao5404.asp) and [fixed-width text files without headers](http://www.camara.leg.br/internet/plenario/result/votacao/downlvnv54.htm) that follow [a schema](http://www.camara.leg.br/internet/plenario/result/votacao/Layout_ArquivosTXT_presencas_vota%C3%A7%C3%A3o_exportados.pdf).
 * Canada has explicit properties for options on its vote detail page: `Yea`, `Nay` and `Paired`.
@@ -4691,6 +4428,698 @@ id: data
           vote_cast
         </td>
         <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<h2 id="Area">Area</h2>
+
+* Schema.org adds a new property for each identifier scheme, e.g. `globalLocationNumber`, and each classification scheme, e.g. `isicV4`.
+* FAO adds a new property for each identifier scheme, e.g. `codeDBPediaID`.
+
+<div class='table-responsive table-auto'>
+  <table class='table table-striped table-hover table-condensed'>
+    <thead>
+      <tr>
+        <th scope='row'>Term</th>
+        <td>Area</td>
+        <td>name</td>
+        <td>identifier</td>
+        <td>classification</td>
+        <td>parent_id</td>
+        <td>geometry</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope='row'>
+          <code>schema</code>
+        </th>
+        <td>
+          <a href='http://schema.org/Place'>
+            Place
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/name'>
+            name
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://schema.org/containedIn'>
+            containedIn
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/geo'>
+            geo
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>gadm</code>
+        </th>
+        <td>
+          see <code>spatial</code>
+        </td>
+        <td>
+          <a href='http://gadm.geovocab.org/ontology#name'>
+            name
+          </a>
+        </td>
+        <td>
+          <a href='http://gadm.geovocab.org/ontology#has_code'>
+            has_code
+          </a>
+        </td>
+        <td>
+          <a href='http://gadm.geovocab.org/ontology#type'>
+            type
+          </a>
+        </td>
+        <td>
+          see <code>spatial</code>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>geo</code>
+        </th>
+        <td>
+          <a href='http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing'>
+            SpatialThing
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2003/01/geo/wgs84_pos#location'>
+            location
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>geom</code>
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://geovocab.org/geometry#geometry'>
+            geometry
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>geop</code>
+        </th>
+        <td>
+          <a href='http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/area'>
+            area
+          </a>
+        </td>
+        <td>
+          <a href='http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/nameOfficial'>
+            nameOfficial
+          </a>
+        </td>
+        <td>
+          <a href='http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/hasCode'>
+            hasCode
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>gn</code>
+        </th>
+        <td>
+          <a href='http://www.geonames.org/ontology#Feature'>
+            Feature
+          </a>
+        </td>
+        <td>
+          <a href='http://www.geonames.org/ontology#name'>
+            name
+          </a>
+        </td>
+        <td>
+          <a href='http://www.geonames.org/ontology#geonamesID'>
+            geonamesID
+          </a>
+        </td>
+        <td>
+          <a href='http://www.geonames.org/ontology#featureClass'>
+            featureClass
+          </a>
+        </td>
+        <td>
+          <a href='http://www.geonames.org/ontology#parentFeature'>
+            parentFeature
+          </a>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>geosparql</code>
+        </th>
+        <td>
+          <a href='http://www.opengis.net/ont/geosparql#Feature'>
+            Feature
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.opengis.net/ont/geosparql#within'>
+            within
+          </a>
+        </td>
+        <td>
+          <a href='http://www.opengis.net/ont/geosparql#hasGeometry'>
+            hasGeometry
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>locn</code>
+        </th>
+        <td>
+          <a href='http://purl.org/dc/terms/Location'>
+            Location
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/ns/locn#geographicName'>
+            geographicName
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2000/01/rdf-schema#seeAlso'>
+            seeAlso
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.w3.org/ns/locn#geometry'>
+            geometry
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>spatial</code>
+        </th>
+        <td>
+          <a href='http://geovocab.org/spatial#Feature'>
+            Feature
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://geovocab.org/spatial#PP'>
+            PP
+          </a>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          GML
+        </th>
+        <td>
+          Feature
+        </td>
+        <td>
+          name
+        </td>
+        <td>
+          id
+        </td>
+        <td>
+          featureType
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<h2 id="Speech">Speech</h2>
+
+* The Akoma Ntoso terms are from [`speechAtts`](http://examples.akomantoso.org/categorical.html#speechAttsAG), [`show`](http://examples.akomantoso.org/categorical.html#showAG) and [`ANcontainers`](http://examples.akomantoso.org/categorical.html#ANcontainersEG).
+
+<div class='table-responsive'>
+  <table class='table table-striped table-hover table-condensed'>
+    <thead>
+      <tr>
+        <th scope='row'>Term</th>
+        <td>Speech</td>
+        <td>speaker</td>
+        <td>speaker label</td>
+        <td>addressee</td>
+        <td>text</td>
+        <td>audio</td>
+        <td>start time</td>
+        <td>end time</td>
+        <td>role</td>
+        <td>classification</td>
+        <td>position</td>
+        <td>title</td>
+        <td>collection</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope='row'>
+          <code>dcterms</code>
+        </th>
+        <td>
+          <a href='http://purl.org/dc/dcmitype/Text'>
+            Text
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/creator'>
+            creator
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/audience'>
+            audience
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/created'>
+            created
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href=''>
+            
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/title'>
+            title
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/isPartOf'>
+            isPartOf
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>schema</code>
+        </th>
+        <td>
+          <a href='http://schema.org/CreativeWork'>
+            CreativeWork
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/creator'>
+            creator
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/alternateName'>
+            alternateName
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/audience'>
+            audience
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/text'>
+            text
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/audio'>
+            audio
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/dateCreated'>
+            dateCreated
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://schema.org/additionalType'>
+            additionalType
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/position'>
+            position
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/title'>
+            title
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/isPartOf'>
+            isPartOf
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>ocd</code>
+        </th>
+        <td>
+          <a href='http://dati.camera.it/ocd/intervento'>
+            intervento
+          </a>
+        </td>
+        <td>
+          <a href='http://dati.camera.it/ocd/rif_deputato'>
+            rif_deputato
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          PML
+        </th>
+        <td>
+          contribution
+        </td>
+        <td>
+          contributorID
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          label
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='startDate, startTime'>startDate, star…</abbr>
+        </td>
+        <td>
+          <abbr title='endDate, endTime'>endDate, endTim…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          type
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='proceedingsObject'>proceedingsObje…</abbr>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          AkomaNtoso
+        </th>
+        <td>
+        </td>
+        <td>
+          by
+        </td>
+        <td>
+          <abbr title='from, showAs, shortForm'>from, showAs, s…</abbr>
+        </td>
+        <td>
+          to
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          startTime
+        </td>
+        <td>
+          endTime
+        </td>
+        <td>
+          as
+        </td>
+        <td>
+          <abbr title='speech, question, answer, scene, narrative, summary, other'>speech, questio…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='num, heading, subheading'>num, heading, s…</abbr>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Canada (Hansard)
+        </th>
+        <td>
+          Intervention
+        </td>
+        <td>
+          PersonSpeaking
+        </td>
+        <td>
+          Affiliation
+        </td>
+        <td>
+        </td>
+        <td>
+          Content
+        </td>
+        <td>
+        </td>
+        <td>
+          Timestamp
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          Type
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          
+        </th>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+        <td>
+          <a href=''>
+            <abbr title=''></abbr>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          SayIt
+        </th>
+        <td>
+          Speech
+        </td>
+        <td>
+          speaker
+        </td>
+        <td>
+          speaker_display
+        </td>
+        <td>
+        </td>
+        <td>
+          text
+        </td>
+        <td>
+          audio
+        </td>
+        <td>
+          <abbr title='start_date, start_time'>start_date, sta…</abbr>
+        </td>
+        <td>
+          <abbr title='end_date, end_time'>end_date, end_t…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          type
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='num, heading, subheading'>num, heading, s…</abbr>
+        </td>
+        <td>
+          section
         </td>
       </tr>
     </tbody>

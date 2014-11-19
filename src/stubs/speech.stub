@@ -1,0 +1,62 @@
+  "": {
+    "Speech": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "speaker": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "addressee": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "text": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "audio": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "start time": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "end time": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "role": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "classification": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "position": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "title": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "collection": {
+      "term": "",
+      "url": "",
+      "label": ""
+    }
+  },
