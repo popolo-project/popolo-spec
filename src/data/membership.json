@@ -4,6 +4,10 @@
       "term": "Membership",
       "url": "http://www.w3.org/TR/vocab-org/#org:Membership"
     },
+    "label": {
+      "term": "skos:prefLabel",
+      "url": "http://www.w3.org/TR/skos-reference/#labels"
+    },
     "role": {
       "term": "role",
       "url": "http://www.w3.org/TR/vocab-org/#org:role"
@@ -74,6 +78,9 @@
   "PML": {
     "Membership": {
       "term": "function"
+    },
+    "label": {
+      "term": "label"
     },
     "organization": {
       "term": "categoryIDs"

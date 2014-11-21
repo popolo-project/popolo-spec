@@ -18,6 +18,10 @@
       "term": "skos:prefLabel",
       "url": "http://www.w3.org/TR/skos-reference/#labels"
     },
+    "alternate label": {
+      "term": "skos:altLabel",
+      "url": "http://www.w3.org/TR/skos-reference/#labels"
+    },
     "role": {
       "term": "role",
       "url": "http://www.w3.org/TR/vocab-org/#org:role"

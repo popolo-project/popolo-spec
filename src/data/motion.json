@@ -44,7 +44,7 @@
     }
   },
   "PML": {
-    "session": {
+    "legislative session": {
       "term": "calendarObjectID"
     },
     "creator": {
@@ -61,7 +61,7 @@
     "organization": {
       "term": "organization"
     },
-    "session": {
+    "legislative session": {
       "term": "session"
     },
     "text": {
@@ -104,12 +104,12 @@
     "title": {
       "label": "<i>nome</i>"
     },
-    "session": {
+    "legislative session": {
       "label": "<i>sessão legislativa</i>"
     }
   },
   "Canada (vote list)": {
-    "session": {
+    "legislative session": {
       "term": "session"
     },
     "text": {
@@ -140,7 +140,7 @@
     "organization": {
       "term": "id_organ"
     },
-    "session": {
+    "legislative session": {
       "term": "schuze"
     },
     "object": {
@@ -159,7 +159,7 @@
     }
   },
   "Germany": {
-    "session": {
+    "legislative session": {
       "term": "Sitzungnr"
     }
   },
@@ -181,7 +181,7 @@
     "organization": {
       "term": "forum"
     },
-    "session": {
+    "legislative session": {
       "term": "dailnumber"
     },
     "title": {
@@ -198,7 +198,7 @@
     }
   },
   "Italy": {
-    "session": {
+    "legislative session": {
       "term": "rif_seduta",
       "url": "http://dati.camera.it/ocd/reference_document/#rif_seduta"
     },
@@ -216,7 +216,7 @@
     }
   },
   "Spain": {
-    "session": {
+    "legislative session": {
       "term": "Sesion"
     },
     "text": {
@@ -233,7 +233,7 @@
     "organization": {
       "term": "beteckning"
     },
-    "session": {
+    "legislative session": {
       "term": "rm"
     },
     "classification": {
@@ -247,7 +247,7 @@
     "organization": {
       "term": "council"
     },
-    "session": {
+    "legislative session": {
       "term": "session"
     },
     "creator": {
@@ -299,7 +299,7 @@
     "organization": {
       "term": "chamber"
     },
-    "session": {
+    "legislative session": {
       "term": "session"
     },
     "text": {
@@ -316,7 +316,7 @@
     }
   },
   "US (Senate)": {
-    "session": {
+    "legislative session": {
       "term": "session"
     },
     "text": {

@@ -9,6 +9,16 @@
       "url": "",
       "label": ""
     },
+    "role": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "label": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
     "addressee": {
       "term": "",
       "url": "",
@@ -34,7 +44,7 @@
       "url": "",
       "label": ""
     },
-    "role": {
+    "title": {
       "term": "",
       "url": "",
       "label": ""
@@ -44,17 +54,27 @@
       "url": "",
       "label": ""
     },
+    "keywords": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "language": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
     "position": {
       "term": "",
       "url": "",
       "label": ""
     },
-    "title": {
+    "event": {
       "term": "",
       "url": "",
       "label": ""
     },
-    "collection": {
+    "group": {
       "term": "",
       "url": "",
       "label": ""

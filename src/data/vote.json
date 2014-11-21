@@ -48,7 +48,7 @@
     "area": {
       "term": "ESTADO"
     },
-    "group": {
+    "political group": {
       "term": "PARTIDO"
     },
     "option": {
@@ -73,7 +73,7 @@
     "area": {
       "term": "Constituency"
     },
-    "group": {
+    "political group": {
       "term": "Party"
     }
   },
@@ -97,7 +97,7 @@
     "voter": {
       "term": "Bezeichnung"
     },
-    "group": {
+    "political group": {
       "term": "Fraktion/Gruppe"
     }
   },
@@ -113,7 +113,7 @@
     "voter": {
       "term": "member"
     },
-    "group": {
+    "political group": {
       "term": "party"
     }
   },
@@ -126,7 +126,7 @@
       "term": "rif_deputato",
       "url": "http://dati.camera.it/ocd/reference_document/#rif_deputato"
     },
-    "group": {
+    "political group": {
       "term": "rif_gruppoParlamentare",
       "url": "http://dati.camera.it/ocd/reference_document/#rif_gruppoParlamentare"
     }
@@ -138,7 +138,7 @@
     "area": {
       "term": "Fylke"
     },
-    "group": {
+    "political group": {
       "term": "Parti"
     },
     "option": {
@@ -155,7 +155,7 @@
     "area": {
       "term": "fylke"
     },
-    "group": {
+    "political group": {
       "term": "parti"
     },
     "option": {
@@ -169,7 +169,7 @@
     "voter": {
       "term": "Diputado"
     },
-    "group": {
+    "political group": {
       "term": "Grupo"
     },
     "option": {
@@ -183,7 +183,7 @@
     "area": {
       "term": "valkrets"
     },
-    "group": {
+    "political group": {
       "term": "parti"
     },
     "option": {
@@ -200,7 +200,7 @@
     "area": {
       "label": "<i>canton</i>"
     },
-    "group": {
+    "political group": {
       "label": "<i>faction</i>"
     },
     "option": {
@@ -225,7 +225,7 @@
     "voter": {
       "term": "legislator"
     },
-    "group": {
+    "political group": {
       "term": "party"
     },
     "option": {
@@ -245,7 +245,7 @@
     "area": {
       "term": "state"
     },
-    "group": {
+    "political group": {
       "term": "party"
     },
     "option": {

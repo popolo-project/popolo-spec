@@ -16,15 +16,23 @@
       "term": "created",
       "url": "http://purl.org/dc/terms/created"
     },
-    "classification": {
-      "term": "type",
-      "url": "http://purl.org/dc/terms/type"
-    },
     "title": {
       "term": "title",
       "url": "http://purl.org/dc/terms/title"
     },
-    "collection": {
+    "classification": {
+      "term": "type",
+      "url": "http://purl.org/dc/terms/type"
+    },
+    "keywords": {
+      "term": "subject",
+      "url": "http://purl.org/dc/terms/subject"
+    },
+    "language": {
+      "term": "language",
+      "url": "http://purl.org/dc/terms/language"
+    },
+    "group": {
       "term": "isPartOf",
       "url": "http://purl.org/dc/terms/isPartOf"
     }
@@ -38,7 +46,7 @@
       "term": "creator",
       "url": "http://schema.org/creator"
     },
-    "speaker label": {
+    "label": {
       "term": "alternateName",
       "url": "http://schema.org/alternateName"
     },
@@ -58,19 +66,27 @@
       "term": "dateCreated",
       "url": "http://schema.org/dateCreated"
     },
+    "title": {
+      "term": "title",
+      "url": "http://schema.org/title"
+    },
     "classification": {
       "term": "additionalType",
       "url": "http://schema.org/additionalType"
+    },
+    "language": {
+      "term": "inLanguage",
+      "url": "http://schema.org/inLanguage"
     },
     "position": {
       "term": "position",
       "url": "http://schema.org/position"
     },
-    "title": {
-      "term": "title",
-      "url": "http://schema.org/title"
+    "keywords": {
+      "term": "keywords",
+      "url": "http://schema.org/keywords"
     },
-    "collection": {
+    "group": {
       "term": "isPartOf",
       "url": "http://schema.org/isPartOf"
     }
@@ -104,7 +120,13 @@
     "classification": {
       "term": "type"
     },
-    "collection": {
+    "keywords": {
+      "term": "category"
+    },
+    "language": {
+      "term": "lang"
+    },
+    "group": {
       "term": "proceedingsObject"
     }
   },
@@ -112,7 +134,10 @@
     "speaker": {
       "term": "by"
     },
-    "speaker label": {
+    "role": {
+      "term": "as"
+    },
+    "label": {
       "term": "from, showAs, shortForm"
     },
     "addressee": {
@@ -124,14 +149,14 @@
     "end time": {
       "term": "endTime"
     },
-    "role": {
-      "term": "as"
+    "title": {
+      "term": "num, heading, subheading"
     },
     "classification": {
       "term": "speech, question, answer, scene, narrative, summary, other"
     },
-    "title": {
-      "term": "num, heading, subheading"
+    "language": {
+      "term": "lang"
     }
   },
   "Canada (Hansard)": {
@@ -141,7 +166,7 @@
     "speaker": {
       "term": "PersonSpeaking"
     },
-    "speaker label": {
+    "label": {
       "term": "Affiliation"
     },
     "text": {
@@ -152,6 +177,9 @@
     },
     "classification": {
       "term": "Type"
+    },
+    "language": {
+      "term": "language"
     }
   },
   "SayIt": {
@@ -161,7 +189,7 @@
     "speaker": {
       "term": "speaker"
     },
-    "speaker label": {
+    "label": {
       "term": "speaker_display"
     },
     "text": {
@@ -176,13 +204,19 @@
     "end time": {
       "term": "end_date, end_time"
     },
-    "classification": {
-      "term": "type"
-    },
     "title": {
       "term": "num, heading, subheading"
     },
-    "collection": {
+    "classification": {
+      "term": "type"
+    },
+    "keywords": {
+      "term": "tags"
+    },
+    "event": {
+      "term": "event"
+    },
+    "group": {
       "term": "section"
     }
   }

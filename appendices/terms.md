@@ -1798,6 +1798,7 @@ id: data
       <tr>
         <th scope='row'>Term</th>
         <td>Membership</td>
+        <td>label</td>
         <td>role</td>
         <td>person</td>
         <td>organization</td>
@@ -1814,6 +1815,11 @@ id: data
         <td>
           <a href='http://www.w3.org/TR/vocab-org/#org:Membership'>
             Membership
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/TR/skos-reference/#labels'>
+            skos:prefLabel
           </a>
         </td>
         <td>
@@ -1854,6 +1860,8 @@ id: data
           </a>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://dev.poderopedia.com/documentation/index#poder:hasWorkRole'>
             hasWorkRole
           </a>
@@ -1889,6 +1897,8 @@ id: data
           Membership
         </td>
         <td>
+        </td>
+        <td>
           hasMemberRole
         </td>
         <td>
@@ -1912,6 +1922,9 @@ id: data
         </th>
         <td>
           function
+        </td>
+        <td>
+          label
         </td>
         <td>
         </td>
@@ -1946,6 +1959,7 @@ id: data
         <th scope='row'>Term</th>
         <td>Post</td>
         <td>label</td>
+        <td>alternate label</td>
         <td>role</td>
         <td>organization</td>
         <td>person</td>
@@ -1958,6 +1972,8 @@ id: data
         <th scope='row'>
           <code>schema</code>
         </th>
+        <td>
+        </td>
         <td>
         </td>
         <td>
@@ -1991,6 +2007,11 @@ id: data
         <td>
           <a href='http://www.w3.org/TR/skos-reference/#labels'>
             skos:prefLabel
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/TR/skos-reference/#labels'>
+            skos:altLabel
           </a>
         </td>
         <td>
@@ -2028,6 +2049,8 @@ id: data
           </a>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#role'>
             role
           </a>
@@ -2052,6 +2075,8 @@ id: data
           <a href='http://www.ontotext.com/protontop#JobPosition'>
             JobPosition
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2093,6 +2118,8 @@ id: data
           </a>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://tools.ietf.org/html/rfc4519#section-2.38'>
             title
           </a>
@@ -2122,6 +2149,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='EmployeePositionName'>PositionName</abbr>
         </td>
         <td>
@@ -2141,6 +2170,8 @@ id: data
         </th>
         <td>
           Role
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2167,6 +2198,8 @@ id: data
         </td>
         <td>
           label
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2404,7 +2437,7 @@ id: data
         <th scope='row'>Term</th>
         <td>Motion</td>
         <td>organization</td>
-        <td>session</td>
+        <td>legislative session</td>
         <td>creator</td>
         <td>title</td>
         <td>description</td>
@@ -3293,7 +3326,6 @@ id: data
         <td>identifier</td>
         <td>title</td>
         <td>motion</td>
-        <td>session</td>
         <td>start time</td>
         <td>end time</td>
         <td>counts</td>
@@ -3305,8 +3337,6 @@ id: data
         <th scope='row'>
           <code>schema</code>
         </th>
-        <td>
-        </td>
         <td>
         </td>
         <td>
@@ -3336,8 +3366,6 @@ id: data
         </td>
         <td>
           identifier
-        </td>
-        <td>
         </td>
         <td>
         </td>
@@ -3376,8 +3404,6 @@ id: data
         </td>
         <td>
         </td>
-        <td>
-        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3393,8 +3419,6 @@ id: data
         </td>
         <td>
           hasDocument
-        </td>
-        <td>
         </td>
         <td>
           hasVoteDate
@@ -3418,8 +3442,6 @@ id: data
         </td>
         <td>
           TEXORDIA
-        </td>
-        <td>
         </td>
         <td>
         </td>
@@ -3458,8 +3480,6 @@ id: data
         </td>
         <td>
         </td>
-        <td>
-        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3470,8 +3490,6 @@ id: data
         </td>
         <td>
           number
-        </td>
-        <td>
         </td>
         <td>
         </td>
@@ -3508,8 +3526,6 @@ id: data
         </td>
         <td>
         </td>
-        <td>
-        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3522,8 +3538,6 @@ id: data
         </td>
         <td>
           nazev_dlouhy
-        </td>
-        <td>
         </td>
         <td>
         </td>
@@ -3543,8 +3557,6 @@ id: data
         </th>
         <td>
           session_x
-        </td>
-        <td>
         </td>
         <td>
         </td>
@@ -3584,8 +3596,6 @@ id: data
         </td>
         <td>
         </td>
-        <td>
-        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3596,8 +3606,6 @@ id: data
         </td>
         <td>
           number
-        </td>
-        <td>
         </td>
         <td>
         </td>
@@ -3636,8 +3644,6 @@ id: data
         </td>
         <td>
         </td>
-        <td>
-        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3647,8 +3653,6 @@ id: data
           <a href='http://dati.camera.it/ocd/reference_document/#votazione'>
             votazione
           </a>
-        </td>
-        <td>
         </td>
         <td>
         </td>
@@ -3681,8 +3685,6 @@ id: data
           votering_tema
         </td>
         <td>
-        </td>
-        <td>
           votering_tid
         </td>
         <td>
@@ -3702,8 +3704,6 @@ id: data
         </td>
         <td>
           NumeroVotacion
-        </td>
-        <td>
         </td>
         <td>
         </td>
@@ -3737,8 +3737,6 @@ id: data
           punkt
         </td>
         <td>
-        </td>
-        <td>
           datum
         </td>
         <td>
@@ -3765,8 +3763,6 @@ id: data
           submissionText
         </td>
         <td>
-        </td>
-        <td>
           date
         </td>
         <td>
@@ -3784,8 +3780,6 @@ id: data
         </th>
         <td>
           <i>recorded vote</i>
-        </td>
-        <td>
         </td>
         <td>
         </td>
@@ -3818,8 +3812,6 @@ id: data
         <td>
         </td>
         <td>
-        </td>
-        <td>
           <abbr title='action-date, action-time'>action-date, ac…</abbr>
         </td>
         <td>
@@ -3840,8 +3832,6 @@ id: data
         </td>
         <td>
           vote_number
-        </td>
-        <td>
         </td>
         <td>
         </td>
@@ -4002,10 +3992,10 @@ id: data
         <th scope='row'>Term</th>
         <td>Vote</td>
         <td>voter</td>
-        <td>area</td>
-        <td>group</td>
         <td>option</td>
+        <td>political group</td>
         <td>role</td>
+        <td>area</td>
       </tr>
     </thead>
     <tbody>
@@ -4024,13 +4014,13 @@ id: data
           </a>
         </td>
         <td>
-        </td>
-        <td>
-        </td>
-        <td>
           <a href='http://schema.org/option'>
             option
           </a>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -4046,11 +4036,11 @@ id: data
           voterID
         </td>
         <td>
-        </td>
-        <td>
-        </td>
-        <td>
           option
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -4066,14 +4056,14 @@ id: data
           by
         </td>
         <td>
-        </td>
-        <td>
-        </td>
-        <td>
           choice
         </td>
         <td>
+        </td>
+        <td>
           as
+        </td>
+        <td>
         </td>
       </tr>
       <tr>
@@ -4087,15 +4077,15 @@ id: data
           NOME_PAR
         </td>
         <td>
-          ESTADO
+          VOTO
         </td>
         <td>
           PARTIDO
         </td>
         <td>
-          VOTO
         </td>
         <td>
+          ESTADO
         </td>
       </tr>
       <tr>
@@ -4108,11 +4098,11 @@ id: data
           Affiliation
         </td>
         <td>
-        </td>
-        <td>
-        </td>
-        <td>
           Type
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -4128,7 +4118,6 @@ id: data
           Participant
         </td>
         <td>
-          Constituency
         </td>
         <td>
           Party
@@ -4136,6 +4125,7 @@ id: data
         <td>
         </td>
         <td>
+          Constituency
         </td>
       </tr>
       <tr>
@@ -4148,11 +4138,11 @@ id: data
           id_poslanec
         </td>
         <td>
-        </td>
-        <td>
-        </td>
-        <td>
           vysledek
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -4167,11 +4157,11 @@ id: data
           member
         </td>
         <td>
-        </td>
-        <td>
-        </td>
-        <td>
           vote
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -4205,11 +4195,11 @@ id: data
           member
         </td>
         <td>
-        </td>
-        <td>
-        </td>
-        <td>
           vote
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -4269,15 +4259,15 @@ id: data
           Navn
         </td>
         <td>
-          Fylke
+          Votering
         </td>
         <td>
           Parti
         </td>
         <td>
-          Votering
         </td>
         <td>
+          Fylke
         </td>
       </tr>
       <tr>
@@ -4291,15 +4281,15 @@ id: data
           representant
         </td>
         <td>
-          fylke
+          votering
         </td>
         <td>
           parti
         </td>
         <td>
-          votering
         </td>
         <td>
+          fylke
         </td>
       </tr>
       <tr>
@@ -4313,12 +4303,12 @@ id: data
           Diputado
         </td>
         <td>
+          Voto
         </td>
         <td>
           Grupo
         </td>
         <td>
-          Voto
         </td>
         <td>
         </td>
@@ -4333,15 +4323,15 @@ id: data
           namn
         </td>
         <td>
-          valkrets
+          rost
         </td>
         <td>
           parti
         </td>
         <td>
-          rost
         </td>
         <td>
+          valkrets
         </td>
       </tr>
       <tr>
@@ -4355,15 +4345,15 @@ id: data
           <i>councillor</i>
         </td>
         <td>
-          <i>canton</i>
+          decision
         </td>
         <td>
           <i>faction</i>
         </td>
         <td>
-          decision
         </td>
         <td>
+          <i>canton</i>
         </td>
       </tr>
       <tr>
@@ -4377,11 +4367,11 @@ id: data
           <i>member</i>
         </td>
         <td>
-        </td>
-        <td>
-        </td>
-        <td>
           Vote
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -4397,15 +4387,15 @@ id: data
           legislator
         </td>
         <td>
+          vote
         </td>
         <td>
           party
         </td>
         <td>
-          vote
+          role
         </td>
         <td>
-          role
         </td>
       </tr>
       <tr>
@@ -4419,15 +4409,15 @@ id: data
           member_full
         </td>
         <td>
-          state
+          vote_cast
         </td>
         <td>
           party
         </td>
         <td>
-          vote_cast
         </td>
         <td>
+          state
         </td>
       </tr>
     </tbody>
@@ -4449,7 +4439,7 @@ id: data
         <td>name</td>
         <td>identifier</td>
         <td>classification</td>
-        <td>parent_id</td>
+        <td>parent area</td>
         <td>geometry</td>
       </tr>
     </thead>
@@ -4727,17 +4717,20 @@ id: data
         <th scope='row'>Term</th>
         <td>Speech</td>
         <td>speaker</td>
-        <td>speaker label</td>
+        <td>role</td>
+        <td>label</td>
         <td>addressee</td>
         <td>text</td>
         <td>audio</td>
         <td>start time</td>
         <td>end time</td>
-        <td>role</td>
-        <td>classification</td>
-        <td>position</td>
         <td>title</td>
-        <td>collection</td>
+        <td>classification</td>
+        <td>keywords</td>
+        <td>language</td>
+        <td>position</td>
+        <td>event</td>
+        <td>group</td>
       </tr>
     </thead>
     <tbody>
@@ -4758,6 +4751,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://purl.org/dc/terms/audience'>
             audience
           </a>
@@ -4774,24 +4769,28 @@ id: data
         <td>
         </td>
         <td>
-          <a href=''>
-            
-          </a>
-        </td>
-        <td>
-          <a href=''>
-            
-          </a>
-        </td>
-        <td>
-          <a href=''>
-            
-          </a>
-        </td>
-        <td>
           <a href='http://purl.org/dc/terms/title'>
             title
           </a>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/type'>
+            type
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/subject'>
+            subject
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/language'>
+            language
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
           <a href='http://purl.org/dc/terms/isPartOf'>
@@ -4812,6 +4811,8 @@ id: data
           <a href='http://schema.org/creator'>
             creator
           </a>
+        </td>
+        <td>
         </td>
         <td>
           <a href='http://schema.org/alternateName'>
@@ -4841,10 +4842,23 @@ id: data
         <td>
         </td>
         <td>
+          <a href='http://schema.org/title'>
+            title
+          </a>
         </td>
         <td>
           <a href='http://schema.org/additionalType'>
             additionalType
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/keywords'>
+            keywords
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/inLanguage'>
+            inLanguage
           </a>
         </td>
         <td>
@@ -4853,9 +4867,6 @@ id: data
           </a>
         </td>
         <td>
-          <a href='http://schema.org/title'>
-            title
-          </a>
         </td>
         <td>
           <a href='http://schema.org/isPartOf'>
@@ -4899,6 +4910,12 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -4909,6 +4926,8 @@ id: data
         </td>
         <td>
           contributorID
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -4931,6 +4950,12 @@ id: data
           type
         </td>
         <td>
+          category
+        </td>
+        <td>
+          lang
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -4946,6 +4971,9 @@ id: data
         </td>
         <td>
           by
+        </td>
+        <td>
+          as
         </td>
         <td>
           <abbr title='from, showAs, shortForm'>from, showAs, s…</abbr>
@@ -4964,7 +4992,7 @@ id: data
           endTime
         </td>
         <td>
-          as
+          <abbr title='num, heading, subheading'>num, heading, s…</abbr>
         </td>
         <td>
           <abbr title='speech, question, answer, scene, narrative, summary, other'>speech, questio…</abbr>
@@ -4972,7 +5000,11 @@ id: data
         <td>
         </td>
         <td>
-          <abbr title='num, heading, subheading'>num, heading, s…</abbr>
+          lang
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -4986,6 +5018,8 @@ id: data
         </td>
         <td>
           PersonSpeaking
+        </td>
+        <td>
         </td>
         <td>
           Affiliation
@@ -5010,75 +5044,13 @@ id: data
         <td>
         </td>
         <td>
-        </td>
-        <td>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          
-        </th>
-        <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
-        </td>
-        <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
+          language
         </td>
         <td>
         </td>
         <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
         </td>
         <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
-        </td>
-        <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
-        </td>
-        <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
-        </td>
-        <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
-        </td>
-        <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
-        </td>
-        <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
-        </td>
-        <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
-        </td>
-        <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
-        </td>
-        <td>
-          <a href=''>
-            <abbr title=''></abbr>
-          </a>
         </td>
       </tr>
       <tr>
@@ -5090,6 +5062,8 @@ id: data
         </td>
         <td>
           speaker
+        </td>
+        <td>
         </td>
         <td>
           speaker_display
@@ -5109,14 +5083,20 @@ id: data
           <abbr title='end_date, end_time'>end_date, end_t…</abbr>
         </td>
         <td>
+          <abbr title='num, heading, subheading'>num, heading, s…</abbr>
         </td>
         <td>
           type
         </td>
         <td>
+          tags
         </td>
         <td>
-          <abbr title='num, heading, subheading'>num, heading, s…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          event
         </td>
         <td>
           section

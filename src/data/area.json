@@ -8,7 +8,7 @@
       "term": "name",
       "url": "http://schema.org/name"
     },
-    "parent_id": {
+    "parent area": {
       "term": "containedIn",
       "url": "http://schema.org/containedIn"
     },
@@ -33,7 +33,7 @@
       "term": "type",
       "url": "http://gadm.geovocab.org/ontology#type"
     },
-    "parent_id": {
+    "parent area": {
       "label": "see <code>spatial</code>"
     }
   },
@@ -84,7 +84,7 @@
       "term": "featureClass",
       "url": "http://www.geonames.org/ontology#featureClass"
     },
-    "parent_id": {
+    "parent area": {
       "term": "parentFeature",
       "url": "http://www.geonames.org/ontology#parentFeature"
     }
@@ -94,7 +94,7 @@
       "term": "Feature",
       "url": "http://www.opengis.net/ont/geosparql#Feature"
     },
-    "parent_id": {
+    "parent area": {
       "term": "within",
       "url": "http://www.opengis.net/ont/geosparql#within"
     },
@@ -126,7 +126,7 @@
       "term": "Feature",
       "url": "http://geovocab.org/spatial#Feature"
     },
-    "parent_id": {
+    "parent area": {
       "term": "PP",
       "url": "http://geovocab.org/spatial#PP"
     }
