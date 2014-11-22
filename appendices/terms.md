@@ -3351,6 +3351,9 @@ id: data
           </a>
         </td>
         <td>
+          <a href='http://schema.org/endDate'>
+            endDate
+          </a>
         </td>
         <td>
         </td>

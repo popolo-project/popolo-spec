@@ -3,6 +3,10 @@
     "start time": {
       "term": "startDate",
       "url": "http://schema.org/startDate"
+    },
+    "end time": {
+      "term": "endDate",
+      "url": "http://schema.org/endDate"
     }
   },
   "PML": {
