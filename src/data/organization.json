@@ -42,6 +42,10 @@
       "term": "naics",
       "url": "http://schema.org/naics"
     },
+    "parent organization": {
+      "term": "memberOf",
+      "url": "http://schema.org/memberOf"
+    },
     "child organization": {
       "term": "member",
       "url": "http://schema.org/member"
@@ -75,6 +79,10 @@
     "classification": {
       "term": "classification",
       "url": "http://www.w3.org/TR/vocab-org/#org:classification"
+    },
+    "parent organization": {
+      "term": "subOrganizationOf",
+      "url": "http://www.w3.org/TR/vocab-org/#org:subOrganizationOf"
     },
     "child organization": {
       "term": "hasSubOrganization",
@@ -161,7 +169,7 @@
       "term": "hasMainSector",
       "url": "http://dev.poderopedia.com/documentation/index#poder:hasMainSector"
     },
-    "child organization": {
+    "parent organization": {
       "term": "subsidiaryCompanyOf",
       "url": "http://dev.poderopedia.com/documentation/index#poder:subsidiaryCompanyOf"
     },
@@ -209,7 +217,7 @@
     },
     "child organization": {
       "term": "member",
-      "url": "http://tools.ietf.org/html/rfc4524#section-2.17"
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.17"
     }
   },
   "CIQ": {
@@ -228,6 +236,10 @@
     "classification": {
       "term": "Type",
       "url": "http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd"
+    },
+    "parent organization": {
+      "term": "Relationship",
+      "url": "http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533310"
     },
     "child organization": {
       "term": "Relationship",
@@ -261,7 +273,7 @@
       "term": "OrganizationCategory",
       "label": "Category"
     },
-    "child organization": {
+    "parent organization": {
       "term": "OrganizationParent",
       "label": "Parent"
     },

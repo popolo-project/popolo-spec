@@ -1314,6 +1314,7 @@ id: data
         <td>alternate name</td>
         <td>identifier</td>
         <td>classification</td>
+        <td>parent organization</td>
         <td>child organization</td>
         <td>founding date</td>
         <td>dissolution date</td>
@@ -1339,6 +1340,8 @@ id: data
           <a href='http://xmlns.com/foaf/spec/#term_nick'>
             nick
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -1389,6 +1392,11 @@ id: data
           </a>
         </td>
         <td>
+          <a href='http://schema.org/memberOf'>
+            memberOf
+          </a>
+        </td>
+        <td>
           <a href='http://schema.org/member'>
             member
           </a>
@@ -1436,6 +1444,11 @@ id: data
           </a>
         </td>
         <td>
+          <a href='http://www.w3.org/TR/vocab-org/#org:subOrganizationOf'>
+            <abbr title='subOrganizationOf'>subOrganization…</abbr>
+          </a>
+        </td>
+        <td>
           <a href='http://www.w3.org/TR/vocab-org/#org:hasSubOrganization'>
             <abbr title='hasSubOrganization'>hasSubOrganizat…</abbr>
           </a>
@@ -1471,6 +1484,8 @@ id: data
           <a href='http://www.w3.org/TR/vcard-rdf/#d4e516'>
             hasUID
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -1515,6 +1530,8 @@ id: data
           <a href='http://www.semanticdesktop.org/ontologies/nie/#identifier'>
             nie:identifier
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -1568,6 +1585,8 @@ id: data
           </a>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://dev.poderopedia.com/documentation/index#bio:birth'>
             bio:birth
           </a>
@@ -1610,6 +1629,8 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -1638,7 +1659,9 @@ id: data
           </a>
         </td>
         <td>
-          <a href='http://tools.ietf.org/html/rfc4524#section-2.17'>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc4519#section-2.17'>
             member
           </a>
         </td>
@@ -1673,6 +1696,11 @@ id: data
         <td>
           <a href='http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd'>
             Type
+          </a>
+        </td>
+        <td>
+          <a href='http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html#_Toc193533310'>
+            Relationship
           </a>
         </td>
         <td>
@@ -1716,6 +1744,8 @@ id: data
           <abbr title='OrganizationParent'>Parent</abbr>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='OrganizationEstablishedDate'>EstablishedDate</abbr>
         </td>
         <td>
@@ -1746,6 +1776,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='hasGroupStartDate'>hasGroupStartDa…</abbr>
         </td>
         <td>
@@ -1771,6 +1803,8 @@ id: data
         </td>
         <td>
           type
+        </td>
+        <td>
         </td>
         <td>
         </td>

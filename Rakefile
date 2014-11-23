@@ -49,6 +49,7 @@ task :default do
       # 'former name',
       'identifier',
       'classification',
+      'parent organization',
       'child organization',
       # 'geographic area',
       'founding date',
