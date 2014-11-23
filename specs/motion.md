@@ -54,7 +54,7 @@ The Motion class should have properties for:
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Few specifications exist for motions, and few legislatures publish motions in a machine-readable format. In many, the only specified or recorded motions are those with a single [vote event](/specs/vote-event.html). However, a single motion may have multiple vote events; for example, a voice vote followed by a recorded vote. Dublin Core, Schema.org, and Akoma Ntoso terms are retained from the [inventory of terms](/appendices/terms.html#Motion).
+Few specifications exist for motions, and few legislatures publish motions in a machine-readable format. In many, the only specified or recorded motions are those with a single [vote event](/specs/vote-event.html). However, a single motion may have multiple vote events; for example, a voice vote followed by a recorded vote. Dublin Core, Schema.org, and Parliamentary Metadata Language terms are retained from the [inventory of terms](/appendices/terms.html#Motion).
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
@@ -92,9 +92,9 @@ Few specifications exist for motions, and few legislatures publish motions in a 
       <td><code><a href="http://schema.org/text" title="http://schema.org/text">schema:text</a></code></td>
       <td>The transcript or text of the motion</td>
     </tr>
-    <tr id="opengov:classification">
+    <tr id="schema:additionalType">
       <td>classification</td>
-      <td><code title="http://www.w3.org/ns/opengov#classification">opengov:classification</code></td>
+      <td><code><a href="http://schema.org/additionalType" title="http://schema.org/additionalType">schema:additionalType</a></code></td>
       <td>A motion category, e.g. adjournment</td>
     </tr>
     <tr id="dcterms:dateSubmitted">
@@ -120,13 +120,12 @@ Few specifications exist for motions, and few legislatures publish motions in a 
   </tbody>
 </table>
 
-The range of the legislative session property is not yet specified.
-
 <h1 id="serialization">4. Serialization</h1>
 
 **JSON differences from other RDF serializations:**
 
-* The term `organization` is used instead of `publisher`, to be consistent with the name of the [Organization](/specs/organization.html) class.
+* The term `organization` is used instead of `publisher`, to be consistent with the [Membership](/specs/membership.html) class.
+* The term `classification` is used instead of `additionalType`, to be consistent with the [Organization](/specs/organization.html) class.
 * The value of the `classification` property is a string, instead of a `skos:Concept`.
 * The term `date` is used instead of `dateSubmitted`, for clarity.
 
