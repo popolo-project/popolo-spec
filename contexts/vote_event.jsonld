@@ -1,16 +1,16 @@
 {
   "VoteEvent": "http://www.w3.org/ns/opengov#VoteEvent",
-  "identifier": "http://purl.org/dc/terms/identifier",
-  "motion": {
-    "@id": "http://www.w3.org/ns/opengov#motion",
-    "@type": "@id"
-  },
   "organization": {
     "@id": "http://www.w3.org/ns/opengov#organization",
     "@type": "@id"
   },
   "legislative_session": {
     "@id": "http://schema.org/superEvent",
+    "@type": "@id"
+  },
+  "identifier": "http://purl.org/dc/terms/identifier",
+  "motion": {
+    "@id": "http://www.w3.org/ns/opengov#motion",
     "@type": "@id"
   },
   "start_date": {

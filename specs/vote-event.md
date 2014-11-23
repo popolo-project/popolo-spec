@@ -14,14 +14,6 @@ A vote event is an event at which people's votes are recorded.
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
-1. identifiers
-
-    >Vote No. 42
-
-1. the [motion](/specs/motion.html) on which people are voting
-
-    >That the House do now proceed to the Orders of the Day.
-
 1. the [organization](/specs/organization.html) whose members are voting
 
     >House of Commons
@@ -29,6 +21,14 @@ A vote event is an event at which people's votes are recorded.
 1. the legislative session in which the vote event occurs
 
     >2nd Session of the 41st Parliament
+
+1. identifiers
+
+    >Vote No. 42
+
+1. the [motion](/specs/motion.html) on which people are voting
+
+    >That the House do now proceed to the Orders of the Day.
 
 1. the time at which the event begins
 
@@ -74,16 +74,6 @@ Few specifications exist for vote events, and few legislatures publish vote data
       <td><code title="http://www.w3.org/ns/opengov#VoteEvent">opengov:VoteEvent</code></td>
       <td>An event at which people's votes are recorded</td>
     </tr>
-    <tr id="dcterms:identifier">
-      <td>identifier</td>
-      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-identifier" title="http://purl.org/dc/terms/identifier">dcterms:identifier</a></code></td>
-      <td>An issued identifier, e.g. a sequential number</td>
-    </tr>
-    <tr id="opengov:motion">
-      <td>motion</td>
-      <td><code title="http://www.w3.org/ns/opengov#motion">opengov:motion</code></td>
-      <td>The motion being decided</td>
-    </tr>
     <tr id="schema:organizer">
       <td>organization</td>
       <td><code title="http://schema.org/organizer">schema:organizer</code></td>
@@ -93,6 +83,16 @@ Few specifications exist for vote events, and few legislatures publish vote data
       <td>legislative session</td>
       <td><code title="http://schema.org/superEvent">schema:superEvent</code></td>
       <td>The legislative session in which the vote event occurs<a href="#note1"><sup>1</sup></a></td>
+    </tr>
+    <tr id="dcterms:identifier">
+      <td>identifier</td>
+      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-identifier" title="http://purl.org/dc/terms/identifier">dcterms:identifier</a></code></td>
+      <td>An issued identifier, e.g. a sequential number</td>
+    </tr>
+    <tr id="opengov:motion">
+      <td>motion</td>
+      <td><code title="http://www.w3.org/ns/opengov#motion">opengov:motion</code></td>
+      <td>The motion being decided</td>
     </tr>
     <tr id="schema:startDate">
       <td>start date</td>

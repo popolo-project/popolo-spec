@@ -1,9 +1,9 @@
 {
+  "organization_id": "legislative-council-of-hong-kong",
   "identifier": "1",
   "motion": {
     "text": "根據《立法會（權力及特權）條例》動議的議案"
   },
-  "organization_id": "legislative-council-of-hong-kong",
   "start_date": "2013-10-09T18:53:09Z",
   "end_date": "2013-10-09T17:57:10Z",
   "result": "fail",
