@@ -79,6 +79,8 @@ The [Organization ontology](http://www.w3.org/TR/vocab-org/)'s data model is uns
 
 * the date on which the person currently holding a post started holding it
 
+    >Barack Obama assumed office January 20, 2009.
+
 Within the Organization ontology, there is also significant overlap in responsibility between the Membership and Post classes, leading to confusion as to when one, the other, or both is required or recommended for a particular use case.
 
 According to the Organization ontology, people hold posts directly; in order to resolve the above issues, in this data specification, people hold posts indirectly through memberships. Therefore, the properties `org:heldBy` and `org:holds` <em class="rfc2119">should not</em> be used.
@@ -151,7 +153,7 @@ According to the Organization ontology, either a person or an organization can h
   </tbody>
 </table>
 
-<p class="note" id="note1">1. The <code>role</code> property appears on both the Post and Membership classes, as there are uses cases where you will have no posts (e.g. describing club membership) and others where you will have no memberships (e.g. describing organizational structure). If your use case requires both classes, you may have the same information in two places, a minor redundancy.</p>
+<p class="note" id="note1">1. The <code>role</code> property appears on both the Post and Membership classes, as there are uses cases where you will have no posts (e.g. describing club membership) and others where you will have no memberships (e.g. describing organizational structure).</p>
 <p class="note" id="note2">2. The Organization ontology defines the inverse property <code>org:hasPost</code>.</p>
 
 <h1 id="serialization">4. Serialization</h1>
@@ -163,7 +165,7 @@ A post cannot exist outside an organization. All posts <em class="rfc2119">must<
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
 * The term `other_label` is used instead of `altLabel` to be consistent with other classes using `other_names`.
 * The value of the `role` property is a string, instead of an `org:Role`.
-* The term `organization_id` is used instead of `postIn` to be consistent with the [Membership](/specs/membership.html) class.
+* The term `organization` is used instead of `postIn` to be consistent with the [Membership](/specs/membership.html) class.
 * The terms `start_date` and `end_date` are used instead of `validFrom` and `validUntil`, to be consistent with the [Membership](/specs/membership.html) class.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 

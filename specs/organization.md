@@ -159,7 +159,7 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
   </tbody>
 </table>
 
-<p class="note" id="note1">1. According to <a href="http://www.epimorphics.com/web/wiki/organization-ontology-first-draft">a developer blog</a>, the United Kingdom <a href="http://www.w3.org/TR/vocab-org/#acknowledgements">chose</a> the spelling "organization", despite the common usage of the "s" spelling in British English, because it is the spelling that is acceptable to all versions of English. American English uses a "z", whereas both "z" and "s" spellings are correct in British English. The "z" spelling is preferred by the <abbr title="Oxford English Dictionary">OED</abbr>.</p>
+<p class="note" id="note1">1. According to <a href="http://www.epimorphics.com/web/wiki/organization-ontology-first-draft">a developer blog</a>, the United Kingdom <a href="http://www.w3.org/TR/vocab-org/#acknowledgements">chose</a> the spelling "organization", despite the common usage of the "s" spelling in British English, because the spelling is acceptable to all versions of English. American English uses a "z", whereas both "z" and "s" spellings are correct in British English. The "z" spelling is preferred by the <abbr title="Oxford English Dictionary">OED</abbr>.</p>
 <p class="note" id="note2">2. The Organization ontology defines the inverse property <code>org:hasSubOrganization</code>.</p>
 <p class="note" id="note3">3. <code>vcard:deathDate</code> could have been used for date of dissolution, but <code>deathDate</code> is an unusual term for an organization.</p>
 
@@ -169,7 +169,7 @@ The Organization ontology has a section on [organizational classification](organ
 
 >If the classification is not intrinsic to the organization but simply some way to group organizations, for example as part of a directory, then `org:classification` should be used. If the classification is a reflection of the intrinsic nature of the organization and affects other properties then the sub-class approach should be used. For example, only charities have charity numbers so it would be better to represent a charity as a sub-class of `org:FormalOrganization` rather than via a taxonomic labelling.
 
-In general, subclasses should only be used if the benefits outweigh the complexity. It is of no use to create the classes `Partnership`, `LimitedCompany`, `UnlimitedCompany`, etc. if all these classes behave the same way in your use case. It is simpler to use the `classification` property in that case.
+In general, subclasses should only be used if the benefits outweigh the complexity. It is of no use to create the classes `Partnership`, `LimitedCompany`, etc. if they behave the same way in your use case. It is simpler to use the `classification` property in that case.
 
 <h1 id="serialization">4. Serialization</h1>
 
@@ -179,8 +179,7 @@ In general, subclasses should only be used if the benefits outweigh the complexi
 * The former name and alternate name properties are serialized as a single `other_names` property, whose value is an array of [name objects](/specs/#other-name).
 * The term `identifiers` is used instead of `identifier` and is serialized as an array of [identifier objects](/specs/#identifier).
 * The value of the `classification` property is a string, instead of a `skos:Concept`.
-* The term `parent_id`[<sup>4</sup>](#note4) is used instead of `subOrganizationOf`, due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
-* A new `dissolution_date` term is used for the date of dissolution, for which there is no RDF term.
+* The term `parent`[<sup>4</sup>](#note4) is used instead of `subOrganizationOf`, due to its popularity among <abbr title="object-relational mapper">ORM</abbr>s.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 
 <p class="note" id="note4">4. With respect to reuse, <a href="https://github.com/benedikt/mongoid-tree">mongoid-tree</a>, <a href="https://github.com/collectiveidea/awesome_nested_set/tree/master/lib/awesome_nested_set">awesome_nested_set</a> and <a href="https://github.com/amerine/acts_as_tree">acts_as_tree</a> use <code>parent_id</code>.</p>

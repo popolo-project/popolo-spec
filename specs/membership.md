@@ -158,7 +158,7 @@ A membership relation cannot exist without both a member and an organization. Al
 
 * The term `label` is used instead of `prefLabel`, to be consistent with the [ContactDetail](/specs/contact-detail.html) class.
 * The value of the `role` property is a string, instead of an `org:Role`.
-* The term `person` or `person_id` is used in the common case or relating a person to an organization. The term `member` may be used to relate either a person or an organization to an organization ([see an example](/appendices/examples.html#party-coalition)).
+* The term `person` or `person_id` is used in the common case of relating a person to an organization. The term `member` may be used to relate either a person or an organization to an organization ([see an example](/appendices/examples.html#party-coalition)).
 * The terms `start_date` and `end_date`[<sup>2</sup>](#note2) are used instead of `validFrom` and `validUntil`, for backwards compatibility and for better semantics.
 * The term `links` is used instead of `seeAlso` and is serialized as an array of [link objects](/specs/#link).
 

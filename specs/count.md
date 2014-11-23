@@ -32,7 +32,7 @@ A vote count is the number of votes for one option in a vote event.
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Few specifications exist for vote totals, and few legislatures publish vote data in a machine-readable format. Akoma Ntoso and basic RDF terms are retained from the [inventory of terms](/appendices/terms.html#Count).
+Few specifications exist for vote totals, and few legislatures publish vote data in a machine-readable format. Basic RDF terms are retained from the [inventory of terms](/appendices/terms.html#Count).
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
@@ -68,7 +68,7 @@ Few specifications exist for vote totals, and few legislatures publish vote data
   </tbody>
 </table>
 
-For political groups, the range of the `group` property will be an [organization](/specs/organization.html). For ethnic groups, as in the [House of Peoples](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina), it will be an object (a <a href="http://xmlns.com/foaf/spec/#term_Group" title="http://xmlns.com/foaf/0.1/Group">foaf:Group</a>) with a `name` (a <a href="http://xmlns.com/foaf/spec/#term_name" title="http://xmlns.com/foaf/0.1/name">foaf:name</a>).
+For political groups, the range of the `group` property will be an [organization](/specs/organization.html). For ethnic groups, as in the [House of Peoples](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina), it will be a <a href="http://xmlns.com/foaf/spec/#term_Group" title="http://xmlns.com/foaf/0.1/Group">foaf:Group</a> with a <a href="http://xmlns.com/foaf/spec/#term_name" title="http://xmlns.com/foaf/0.1/name">foaf:name</a>.
 
 <h1 id="serialization">4. Serialization</h1>
 
