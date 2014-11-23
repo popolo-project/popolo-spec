@@ -36,7 +36,7 @@ An area is a geographic area whose geometry may change over time.
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Schema.org, GeoNames, and ISA Programme Location Core Vocabulary terms are retained from the [inventory of terms](/appendices/terms.html#Area).
+Dublin Core, GeoNames and ISA Programme Location Core Vocabulary terms are retained from the [inventory of terms](/appendices/terms.html#Area).
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
@@ -54,9 +54,9 @@ Schema.org, GeoNames, and ISA Programme Location Core Vocabulary terms are retai
       <td><code><a href="http://www.geonames.org/ontology/documentation.html" title="http://www.geonames.org/ontology#Feature">gn:Feature</a></code></td>
       <td>A geographic area whose geometry may change over time</td>
     </tr>
-    <tr id="schema:name">
+    <tr id="gn:name">
       <td>name</td>
-      <td><code><a href="http://schema.org/name" title="http://schema.org/name">schema:name</a></code></td>
+      <td><code><a href="http://www.geonames.org/ontology/documentation.html" title="http://www.geonames.org/ontology#name">gn:name</a></code></td>
       <td>A primary name</td>
     </tr>
     <tr id="dcterms:identifier">
@@ -69,9 +69,9 @@ Schema.org, GeoNames, and ISA Programme Location Core Vocabulary terms are retai
       <td><code><a href="http://www.geonames.org/ontology/documentation.html" title="http://www.geonames.org/ontology#featureCode">gn:featureCode</a></code></td>
       <td>An area category, e.g. city</td>
     </tr>
-    <tr id="schema:containedIn">
+    <tr id="gn:parentFeature">
       <td>parent area</td>
-      <td><code><a href="http://schema.org/containedIn" title="http://schema.org/containedIn">schema:containedIn</a></code></td>
+      <td><code><a href="http://www.geonames.org/ontology/documentation.html" title="http://www.geonames.org/ontology#parentFeature">gn:parentFeature</a></code></td>
       <td>The area that contains this area</td>
     </tr>
     <tr id="locn:geometry">
@@ -88,10 +88,9 @@ The use of <a href="https://github.com/opencivicdata/ocd-division-ids/#readme">O
 
 **JSON differences from other RDF serializations:**
 
-* The term `identifier` is used instead of `notation`, to be consistent with [identifier objects](/specs/#identifier).
 * The term `classification` is used instead of `featureCode`, to be consistent with the [Organization](/specs/organization.html) class.
 * The value of the `classification` property is a string, instead of a `gn:Code`.
-* The term `parent_id` is used instead of `containedIn`, to be consistent with the [Organization](/specs/organization.html) class.
+* The term `parent` is used instead of `containedIn`, to be consistent with the [Organization](/specs/organization.html) class.
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#area-schema">JSON Schema</a></li>
