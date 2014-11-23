@@ -56,7 +56,7 @@ A vote event is an event at which people's votes are recorded.
 
 <h1 id="standard-reuse">2. Standard reuse</h1>
 
-Few specifications exist for vote events, and few legislatures publish vote data in a machine-readable format. Schema.org and Parliamentary Metadata Language terms are retained from the [inventory of terms](/appendices/terms.html#VoteEvent).
+Few specifications exist for vote events, and few legislatures publish vote data in a machine-readable format. Dublin Core, Schema.org, and Parliamentary Metadata Language terms are retained from the [inventory of terms](/appendices/terms.html#VoteEvent).
 
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
@@ -76,12 +76,12 @@ Few specifications exist for vote events, and few legislatures publish vote data
     </tr>
     <tr id="schema:organizer">
       <td>organization</td>
-      <td><code title="http://schema.org/organizer">schema:organizer</code></td>
+      <td><code><a href="http://schema.org/organizer" title="http://schema.org/organizer">schema:organizer</a></code></td>
       <td>The organization whose members are voting<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="schema:superEvent">
       <td>legislative session</td>
-      <td><code title="http://schema.org/superEvent">schema:superEvent</code></td>
+      <td><code><a href="http://schema.org/superEvent" title="http://schema.org/superEvent">schema:superEvent</a></code></td>
       <td>The legislative session in which the vote event occurs<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="dcterms:identifier">
@@ -127,24 +127,16 @@ Few specifications exist for vote events, and few legislatures publish vote data
   </tbody>
 </table>
 
-The range of the legislative session property is not yet specified.
+The vote totals <em class="rfc2119">should</em> agree with the individual votes. The [vote totals](/specs/count.html) <em class="rfc2119">may</em> not include all options from individual votes, and the [individual votes](/specs/vote.html) <em class="rfc2119">may</em> not include all present voters, in particular if the options chosen that have no effect on the result, e.g. abstentions.
 
-The [group results](/specs/#group-result) <em class="rfc2119">should not</em> be reported if the group results have no impact on the overall result of the vote event: for example, results by party.
-
-The [vote totals](/specs/count.html) <em class="rfc2119">may</em> not include all options from individual votes, in particular options that have no effect on the result.
-
-The [individual votes](/specs/vote.html) <em class="rfc2119">may</em> not include all present voters.
-
-The vote totals <em class="rfc2119">should</em> agree with the individual votes.
-
-<p class="note" id="note1">1. If an implementation uses the <a href="/specs/motion.html">Motion</a> class, it is not necessary to repeat the <code>organization</code> and <code>legislative_session</code> properties on the motion's vote events, unless they differ. For example, a committee may consider a legislature's motion, such as in the [Riksdag](http://en.wikipedia.org/wiki/Riksdag).</p>
+<p class="note" id="note1">1. If an implementation uses the <a href="/specs/motion.html">Motion</a> class, it is not necessary to repeat the <code>organization</code> and <code>legislative_session</code> properties on the motion's vote events, unless they differ; for example, a committee may consider a legislature's motion, such as in the <a href="http://en.wikipedia.org/wiki/Riksdag">Riksdag</a>.</p>
 <p class="note" id="note2">2. If a motion has multiple vote events, it is relevant to communicate the result of each event.</p>
 
 <h1 id="serialization">4. Serialization</h1>
 
 **JSON differences from other RDF serializations:**
 
-* The term `identifier` is used instead of `notation`, to be consistent with [identifier objects](/specs/#identifier).
+* The term `organization` is used instead of `organizer`, to be consistent with the [Membership](/specs/membership.html) class.
 * The term `legislative_session` is used instead of `superEvent`, for clarity.
 
 <ul class="nav nav-tabs no-js">
