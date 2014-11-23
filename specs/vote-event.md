@@ -84,9 +84,9 @@ Few specifications exist for vote events, and few legislatures publish vote data
       <td><code title="http://www.w3.org/ns/opengov#motion">opengov:motion</code></td>
       <td>The motion being decided</td>
     </tr>
-    <tr id="opengov:organization">
+    <tr id="schema:organizer">
       <td>organization</td>
-      <td><code title="http://www.w3.org/ns/opengov#organization">opengov:organization</code></td>
+      <td><code title="http://schema.org/organizer">schema:organizer</code></td>
       <td>The organization whose members are voting<a href="#note1"><sup>1</sup></a></td>
     </tr>
     <tr id="schema:superEvent">

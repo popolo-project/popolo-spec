@@ -19,12 +19,27 @@
       "url": "",
       "label": ""
     },
+    "organization": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "legislative session": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
     "start time": {
       "term": "",
       "url": "",
       "label": ""
     },
     "end time": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "result": {
       "term": "",
       "url": "",
       "label": ""

@@ -78,6 +78,9 @@
     }
   },
   "Cornell": {
+    "organization": {
+      "term": "hasChamber, hasCommittee"
+    },
     "text": {
       "term": "hasDocument"
     },
@@ -101,11 +104,11 @@
     "Motion": {
       "label": "<i>proposição</i>"
     },
-    "title": {
-      "label": "<i>nome</i>"
-    },
     "legislative session": {
       "label": "<i>sessão legislativa</i>"
+    },
+    "title": {
+      "label": "<i>nome</i>"
     }
   },
   "Canada (vote list)": {
@@ -187,11 +190,11 @@
     "title": {
       "term": "votetitle"
     },
-    "classification": {
-      "term": "category"
-    },
     "text": {
       "term": "votetext"
+    },
+    "classification": {
+      "term": "category"
     },
     "proposal date": {
       "term": "votedatetime"
@@ -228,7 +231,7 @@
   },
   "Sweden": {
     "Motion": {
-      "label": "<i>Förslagspunkt</i>"
+      "label": "<i>förslagspunkt</i>"
     },
     "organization": {
       "term": "beteckning"
@@ -300,27 +303,50 @@
       "term": "chamber"
     },
     "legislative session": {
-      "term": "session"
+      "term": "congress, session"
+    },
+    "title": {
+      "term": "vote-question"
     },
     "text": {
-      "term": "vote-question"
+      "term": "vote-desc"
+    },
+    "classification": {
+      "term": "vote-type"
     },
     "object": {
       "term": "legis-num"
-    },
-    "requirement": {
-      "term": "vote-type"
     },
     "result": {
       "term": "vote-result"
     }
   },
-  "US (Senate)": {
+  "US (Senate list)": {
     "legislative session": {
-      "term": "session"
+      "term": "congress, session"
+    },
+    "title": {
+      "term": "question"
     },
     "text": {
-      "term": "title, vote_title"
+      "term": "title"
+    },
+    "object": {
+      "term": "issue"
+    },
+    "result": {
+      "term": "result"
+    }
+   },
+  "US (Senate detail)": {
+    "legislative session": {
+      "term": "congress, session"
+    },
+    "title": {
+      "term": "question"
+    },
+    "text": {
+      "term": "vote_title"
     },
     "object": {
       "term": "document, amendment"
@@ -329,7 +355,7 @@
       "term": "majority_requirement"
     },
     "result": {
-      "term": "result, vote_result"
+      "term": "vote_result"
     }
   }
 }

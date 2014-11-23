@@ -2640,6 +2640,7 @@ id: data
         <td>
         </td>
         <td>
+          <abbr title='hasChamber, hasCommittee'>hasChamber, has…</abbr>
         </td>
         <td>
         </td>
@@ -3103,7 +3104,7 @@ id: data
           Sweden
         </th>
         <td>
-          <i>Förslagspunkt</i>
+          <i>förslagspunkt</i>
         </td>
         <td>
           beteckning
@@ -3234,11 +3235,7 @@ id: data
           chamber
         </td>
         <td>
-          session
-        </td>
-        <td>
-        </td>
-        <td>
+          <abbr title='congress, session'>congress, sessi…</abbr>
         </td>
         <td>
         </td>
@@ -3246,6 +3243,12 @@ id: data
           vote-question
         </td>
         <td>
+        </td>
+        <td>
+          vote-desc
+        </td>
+        <td>
+          vote-type
         </td>
         <td>
           legis-num
@@ -3257,7 +3260,6 @@ id: data
         <td>
         </td>
         <td>
-          vote-type
         </td>
         <td>
           vote-result
@@ -3267,14 +3269,29 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
-          US (Senate)
+          US (Senate list)
         </th>
         <td>
         </td>
         <td>
         </td>
         <td>
-          session
+          <abbr title='congress, session'>congress, sessi…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          question
+        </td>
+        <td>
+        </td>
+        <td>
+          title
+        </td>
+        <td>
+        </td>
+        <td>
+          issue
         </td>
         <td>
         </td>
@@ -3283,7 +3300,33 @@ id: data
         <td>
         </td>
         <td>
-          <abbr title='title, vote_title'>title, vote_tit…</abbr>
+        </td>
+        <td>
+          result
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          US (Senate detail)
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='congress, session'>congress, sessi…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+          question
+        </td>
+        <td>
+        </td>
+        <td>
+          vote_title
         </td>
         <td>
         </td>
@@ -3300,7 +3343,7 @@ id: data
           <abbr title='majority_requirement'>majority_requir…</abbr>
         </td>
         <td>
-          <abbr title='result, vote_result'>result, vote_re…</abbr>
+          vote_result
         </td>
         <td>
         </td>
@@ -3323,11 +3366,14 @@ id: data
       <tr>
         <th scope='row'>Term</th>
         <td>Vote event</td>
+        <td>organization</td>
+        <td>legislative session</td>
         <td>identifier</td>
         <td>title</td>
         <td>motion</td>
         <td>start time</td>
         <td>end time</td>
+        <td>result</td>
         <td>counts</td>
         <td>votes</td>
       </tr>
@@ -3340,8 +3386,24 @@ id: data
         <td>
         </td>
         <td>
+          <a href='http://schema.org/organizer'>
+            organizer
+          </a>
         </td>
         <td>
+          <a href='http://schema.org/superEvent'>
+            superEvent
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/name'>
+            name
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/description'>
+            description
+          </a>
         </td>
         <td>
         </td>
@@ -3359,6 +3421,8 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3368,9 +3432,14 @@ id: data
           voteEvent
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
           identifier
         </td>
         <td>
+          label
         </td>
         <td>
         </td>
@@ -3379,6 +3448,8 @@ id: data
         </td>
         <td>
           <abbr title='endDate, endTime'>endDate, endTim…</abbr>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3394,14 +3465,26 @@ id: data
           voting
         </td>
         <td>
+          <i>organization</i>
+        </td>
+        <td>
+          <i>session</i>
+        </td>
+        <td>
+          id
         </td>
         <td>
         </td>
         <td>
         </td>
         <td>
+          <i>timeInterval</i>
         </td>
         <td>
+          <i>timeInterval</i>
+        </td>
+        <td>
+          outcome
         </td>
         <td>
         </td>
@@ -3416,6 +3499,11 @@ id: data
           Vote
         </td>
         <td>
+          <abbr title='hasChamber, hasCommittee'>hasChamber, has…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
           hasVoteID
         </td>
         <td>
@@ -3424,9 +3512,13 @@ id: data
           hasDocument
         </td>
         <td>
-          hasVoteDate
+          hasStartDate
         </td>
         <td>
+          hasEndDate
+        </td>
+        <td>
+          hasOutcome
         </td>
         <td>
         </td>
@@ -3441,17 +3533,26 @@ id: data
           <i>votação</i>
         </td>
         <td>
+        </td>
+        <td>
+          <abbr title='sessão legislativa'><i>sessão legislat…</i></abbr>
+        </td>
+        <td>
           NUMVOT
         </td>
         <td>
           TEXORDIA
         </td>
         <td>
+          <abbr title='nome da proposição'><i>nome da proposi…</i></abbr>
         </td>
         <td>
+          DATAVOT
         </td>
         <td>
-          <i>hora final</i>
+          <i>data final</i>, <i>hora final</i>
+        </td>
+        <td>
         </td>
         <td>
           <i>total de votos</i>
@@ -3468,12 +3569,18 @@ id: data
           Division
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
           DivisionNumber
         </td>
         <td>
         </td>
         <td>
           <abbr title='SubjectOfBusiness'>SubjectOfBusine…</abbr>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3492,9 +3599,15 @@ id: data
           Vote
         </td>
         <td>
+        </td>
+        <td>
+          session
+        </td>
+        <td>
           number
         </td>
         <td>
+          description
         </td>
         <td>
         </td>
@@ -3502,6 +3615,9 @@ id: data
           date
         </td>
         <td>
+        </td>
+        <td>
+          Decision
         </td>
         <td>
         </td>
@@ -3522,8 +3638,16 @@ id: data
         <td>
         </td>
         <td>
+          Context
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          Decision
         </td>
         <td>
         </td>
@@ -3537,6 +3661,12 @@ id: data
         <td>
         </td>
         <td>
+          id_organ
+        </td>
+        <td>
+          schuze
+        </td>
+        <td>
           cislo
         </td>
         <td>
@@ -3548,6 +3678,9 @@ id: data
           datum, čas
         </td>
         <td>
+        </td>
+        <td>
+          vysledek
         </td>
         <td>
         </td>
@@ -3568,7 +3701,13 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
           date
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3585,7 +3724,14 @@ id: data
           <abbr title='Namentliche Abstimmungen'><i>Namentliche Abs…</i></abbr>
         </td>
         <td>
+        </td>
+        <td>
+          Sitzungnr
+        </td>
+        <td>
           Abstimmnr
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3608,6 +3754,10 @@ id: data
           vote
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
           number
         </td>
         <td>
@@ -3618,6 +3768,9 @@ id: data
           <abbr title='vote-date, vote-time'>vote-date, vote…</abbr>
         </td>
         <td>
+        </td>
+        <td>
+          result
         </td>
         <td>
           vote-summary
@@ -3633,7 +3786,15 @@ id: data
         <td>
         </td>
         <td>
+          forum
+        </td>
+        <td>
+          dailnumber
+        </td>
+        <td>
           votenumber
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3660,12 +3821,24 @@ id: data
         <td>
         </td>
         <td>
+          <a href='http://dati.camera.it/ocd/reference_document/#rif_seduta'>
+            rif_seduta
+          </a>
         </td>
         <td>
         </td>
         <td>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://dati.camera.it/ocd/reference_document/#approvato'>
+            approvato
+          </a>
         </td>
         <td>
         </td>
@@ -3678,6 +3851,10 @@ id: data
         </th>
         <td>
           sak_votering
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
           <abbr title='dagsorden_sak_nummer'>dagsorden_sak_n…</abbr>
@@ -3693,6 +3870,9 @@ id: data
         <td>
         </td>
         <td>
+          vedtatt
+        </td>
+        <td>
         </td>
         <td>
           <abbr title='voteringsresultat_liste'>voteringsresult…</abbr>
@@ -3704,6 +3884,11 @@ id: data
         </th>
         <td>
           Resultado
+        </td>
+        <td>
+        </td>
+        <td>
+          Sesion
         </td>
         <td>
           NumeroVotacion
@@ -3718,6 +3903,9 @@ id: data
         <td>
         </td>
         <td>
+          Asentimiento
+        </td>
+        <td>
           Totales
         </td>
         <td>
@@ -3730,6 +3918,12 @@ id: data
         </th>
         <td>
           votering
+        </td>
+        <td>
+          beteckning
+        </td>
+        <td>
+          rm
         </td>
         <td>
           votering_id
@@ -3748,6 +3942,8 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -3755,6 +3951,12 @@ id: data
         </th>
         <td>
           affairVote
+        </td>
+        <td>
+          council
+        </td>
+        <td>
+          session
         </td>
         <td>
           <abbr title='registrationNumber'>registrationNum…</abbr>
@@ -3767,6 +3969,8 @@ id: data
         </td>
         <td>
           date
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3785,6 +3989,11 @@ id: data
           <i>recorded vote</i>
         </td>
         <td>
+          Committee
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3794,6 +4003,9 @@ id: data
           Date/Time
         </td>
         <td>
+        </td>
+        <td>
+          Result
         </td>
         <td>
         </td>
@@ -3808,9 +4020,16 @@ id: data
           rollcall-vote
         </td>
         <td>
+          chamber
+        </td>
+        <td>
+          <abbr title='congress, session'>congress, sessi…</abbr>
+        </td>
+        <td>
           rollcall-num
         </td>
         <td>
+          vote-desc
         </td>
         <td>
         </td>
@@ -3818,6 +4037,9 @@ id: data
           <abbr title='action-date, action-time'>action-date, ac…</abbr>
         </td>
         <td>
+        </td>
+        <td>
+          vote-result
         </td>
         <td>
           vote-totals
@@ -3828,15 +4050,21 @@ id: data
       </tr>
       <tr>
         <th scope='row'>
-          US (Senate)
+          US (Senate list)
         </th>
         <td>
-          roll_call_vote
+          vote
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='congress, session'>congress, sessi…</abbr>
         </td>
         <td>
           vote_number
         </td>
         <td>
+          title
         </td>
         <td>
         </td>
@@ -3846,7 +4074,44 @@ id: data
         <td>
         </td>
         <td>
-          <abbr title='vote_tally, count'>vote_tally, cou…</abbr>
+          result
+        </td>
+        <td>
+          vote_tally
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          US (Senate detail)
+        </th>
+        <td>
+          roll_call_vote
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='congress, session'>congress, sessi…</abbr>
+        </td>
+        <td>
+          vote_number
+        </td>
+        <td>
+          vote_title
+        </td>
+        <td>
+        </td>
+        <td>
+          vote_date
+        </td>
+        <td>
+        </td>
+        <td>
+          vote_result
+        </td>
+        <td>
+          count
         </td>
         <td>
           members
@@ -3860,6 +4125,7 @@ id: data
 <h2 id="Count">Count</h2>
 
 * The [Cornell Legal Information Institute Legislative Metadata Project](http://blog.law.cornell.edu/metasausage/downloads-and-related-information/) has explicit properties for counts: `hasYeaTally`, `hasNayTally` and `hasNoVoteTally`.
+* [Brazil](http://www.camara.leg.br/internet/plenario/result/votacao/Layout_ArquivosTXT_presencas_vota%C3%A7%C3%A3o_exportados.pdf) has explicit columns for counts: `SIM`, `NÃO`, `ABSTENÇÃO`, `OBSTRUÇÃO` and `BRANCO`.
 * [Bulgaria](http://www.parliament.bg/bg/plenaryst) has explicit properties for counts: `За`, `Против`, `Въздържали` and `се Гласували`.
 * Canada has explicit properties for counts on its votes list page: `TotalYeas`, `TotalNays` and `TotalPaired`.
 * Czech Republic has explicit properties for counts: `pro`, `proti`, `zdrzel` and `nehlasoval`.
