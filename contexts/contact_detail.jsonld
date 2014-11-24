@@ -1,5 +1,4 @@
 {
-  "ContactDetail": "http://www.w3.org/ns/opengov#ContactDetail",
   "text": "http://www.w3.org/2006/vcard/ns#Text",
   "voice": "http://www.w3.org/2006/vcard/ns#Voice",
   "fax": "http://www.w3.org/2006/vcard/ns#Fax",

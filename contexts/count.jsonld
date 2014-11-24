@@ -1,5 +1,4 @@
 {
-  "Count": "http://www.w3.org/ns/opengov#Count",
   "yes": "http://www.w3.org/ns/opengov#YesCount",
   "no": "http://www.w3.org/ns/opengov#NoCount",
   "abstain": "http://www.w3.org/ns/opengov#AbstainCount",
