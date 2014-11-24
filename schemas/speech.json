@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://www.popoloproject.com/schemas/speech.json#",
+  "title": "Speech",
+  "description": "A speech, a scene, a narrative, or another part of a transcript",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The speech's unique identifier",
+      "type": ["string", "null"]
+    },
+    "creator_id": {
+      "description": "The ID of the person who is speaking",
+      "type": ["string", "null"]
+    },
+    "creator": {
+      "description": "The person who is speaking",
+      "$ref": "http://www.popoloproject.com/schemas/person.json#"
+    },
+    "role": {
+      "description": "The speaker's role while speaking",
+      "type": ["string", "null"]
+    },
+    "attribution_text": {
+      "description": "The text identifying the speaker",
+      "type": ["string", "null"]
+    },
+    "audience_id": {
+      "description": "The ID of the person to whom the speaker is speaking",
+      "type": ["string", "null"]
+    },
+    "audience": {
+      "description": "The person to whom the speaker is speaking",
+      "$ref": "http://www.popoloproject.com/schemas/person.json#"
+    },
+    "text": {
+      "description": "The transcript or text of the speech",
+      "type": ["string", "null"]
+    },
+    "audio": {
+      "description": "The audio recording of the speech",
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "date": {
+      "description": "The time at which the speech is spoken",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "title": {
+      "description": "A name given to the speech",
+      "type": ["string", "null"]
+    },
+    "classification": {
+      "description": "The category of a part of a transcript",
+      "type": ["string", "null"]
+    },
+    "position": {
+      "description": "The position of the speech within a transcript",
+      "type": ["integer", "null"]
+    },
+    "event_id": {
+      "description": "The ID of the event at which the speech is spoken",
+      "type": ["string", "null"]
+    },
+    "event": {
+      "description": "The event at which the speech is spoken",
+      "type": ["object", "null"]
+    },
+    "created_at": {
+      "description": "The time at which the resource was created",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "description": "The time at which the resource was last modified",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "sources": {
+      "description": "URLs to documents from which the resource is derived",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
+      }
+    }
+  }
+}

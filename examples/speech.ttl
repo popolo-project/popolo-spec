@@ -1,0 +1,17 @@
+@prefix bf: <http://bibframe.org/vocab/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix odrs: <http://schema.theodi.org/odrs#> .
+@prefix opengov: <http://www.w3.org/ns/opengov#> .
+@prefix schema: <http://schema.org/> .
+<http://example.com/speeches/example.ttl>
+  a opengov:Speech;
+  schema:creator <http://example.com/people/noel-kinsella.ttl>;
+  opengov:role [a org:Role; skos:prefLabel "Speaker"@en];
+  odrs:attributionText "Mr. Speaker";
+  schema:text "On Tuesday, March 4, Senator ...";
+  schema:audio <http://example.com/audio/2014-03-25-ruling.ogg>;
+  dcterms:date "2014-03-25T17:00:00Z"^^dcterms:W3CDTF;
+  schema:title "Speaker's Ruling - Motion 55";
+  schema:additionalType [a skos:Concept; skos:prefLabel "Speaker's Ruling"@en];
+  schema:position 42;
+  bf:event <http://example.com/events/P41-S2-S43.ttl> .

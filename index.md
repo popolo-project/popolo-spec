@@ -28,6 +28,11 @@ title: The Popolo Project
     <ul>
       <li><a href="/specs/area.html">Area</a></li>
     </ul>
+
+    <h2>Works</h2>
+    <ul>
+      <li><a href="/specs/speech.html">Speech</a></li>
+    </ul>
   </div>
   <div class="col-sm-6">
     <h2><a href="/specs/">Specification</a></h2>

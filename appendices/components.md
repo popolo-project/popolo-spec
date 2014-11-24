@@ -62,6 +62,8 @@ If two software components are to interoperate by allowing direct access to each
 * `other_names`
 * `people`
 * `posts`
+* `sources`
+* `speeches`
 * `vote_events`
 * `votes`
 
