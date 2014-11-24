@@ -1,15 +1,14 @@
-@prefix ex: <http://example.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix opengov: <http://www.w3.org/ns/opengov#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 <http://example.com/motions/example.ttl>
   a opengov:Motion;
   schema:publisher <http://example.com/organizations/house-of-commons.ttl>;
   schema:creator <http://example.com/people/john-doe.ttl>;
   schema:text "That the Bill is to be read a second time.";
-  opengov:classification [a skos:Concept; skos:prefLabel "Second reading"@en];
-  dcterms:dateSubmitted "2013-01-01"^^dcterms:W3CDTF;
+  schema:additionalType [a skos:Concept; skos:prefLabel "Second reading"@en];
+  dcterms:dateSubmitted "2013-01-01T12:00:00Z"^^dcterms:W3CDTF;
   opengov:requirement "two-thirds majority";
   opengov:result "pass";
   opengov:voteEvent <http://example.com/vote_events/vote-42.ttl> .

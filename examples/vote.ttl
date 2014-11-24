@@ -1,4 +1,7 @@
 @prefix opengov: <http://www.w3.org/ns/opengov#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 <http://example.com/votes/example.ttl>
   a opengov:Vote;
   opengov:voteEvent <http://example.com/vote_events/vote-42.ttl>;
