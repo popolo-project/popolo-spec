@@ -1,7 +1,7 @@
 {
   "VoteEvent": "http://www.w3.org/ns/opengov#VoteEvent",
   "organization": {
-    "@id": "http://www.w3.org/ns/opengov#organization",
+    "@id": "http://schema.org/organizer",
     "@type": "@id"
   },
   "legislative_session": {

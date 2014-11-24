@@ -16,7 +16,7 @@
   },
   "text": "http://schema.org/text",
   "classification": {
-    "@id": "http://www.w3.org/ns/opengov#classification",
+    "@id": "http://schema.org/additionalType",
     "@type": "@id"
   },
   "date": {
