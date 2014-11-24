@@ -56,6 +56,10 @@ The Motion class should have properties for:
 
 Few specifications exist for motions, and few legislatures publish motions in a machine-readable format. In many, the only specified or recorded motions are those with a single [vote event](/specs/vote-event.html). However, a single motion may have multiple vote events; for example, a voice vote followed by a recorded vote. Dublin Core, Schema.org, and Parliamentary Metadata Language terms are retained from the [inventory of terms](/appendices/terms.html#Motion).
 
+## 2.1. Range restrictions
+
+Either a person or an organization can create a [CreativeWork](http://schema.org/CreativeWork). A Motion is a subclass of CreativeWork, and only a person can create a Motion.
+
 <h1 id="classes-and-properties">3. Classes and properties</h1>
 
 <table>
