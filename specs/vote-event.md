@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Vote Event | The Popolo Project
+title: Vote event | The Popolo Project
 id: vote-event
 ---
 
@@ -13,6 +13,8 @@ id: vote-event
 A vote event is an event at which people's votes are recorded.
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
+
+The Vote Event class should have properties for:
 
 1. the [organization](/specs/organization.html) whose members are voting
 

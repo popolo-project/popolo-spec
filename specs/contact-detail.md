@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Contact Detail | The Popolo Project
+title: Contact detail | The Popolo Project
 id: contact-detail
 ---
 
@@ -12,13 +12,13 @@ id: contact-detail
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
-It is impossible to predict the means by which people will be contacted: from mail and telephones to email and <abbr title="Voice over Internet Protocol">VoIP</abbr>. Some contact details are related to physical locations, like an office's postal address and fax number, while others are not, like a person's mobile number and email address. To support the widest variety of mediums in the widest range of contexts, the ContactDetail class should allow user-defined contact details.
+It is impossible to predict the means by which people will be contacted: from mail and telephones to email and <abbr title="Voice over Internet Protocol">VoIP</abbr>. Some contact details are related to physical locations, like an office's postal address and fax number, while others are not, like a person's mobile number and email address. To support the widest variety of mediums in the widest range of contexts, the Contact detail class should allow user-defined contact details.
 
 <div class="well well-sm well-example">
   <p>A civil society organization has the phone number of a legislator; however, it doesn't know whether it is the capitol office number, the constituency office number or a mobile number. A suitable specification should be able to handle data at varying levels of precision.</p>
 </div>
 
-The ContactDetail class should have properties for:
+The Contact detail class should have properties for:
 
 1. label
 
@@ -60,7 +60,7 @@ The [survey of existing specifications](/appendices/survey.html) found that [RFC
   </thead>
   <tbody>
     <tr>
-      <td><strong>ContactDetail</strong></td>
+      <td><strong>Contact detail</strong></td>
       <td>No <code>rdf:type</code></td>
       <td>A means of contacting an entity</td>
     </tr>

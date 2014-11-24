@@ -14,6 +14,8 @@ A vote count is the number of votes for one option in a vote event.
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
+The Count class should have properties for:
+
 1. option
 
     >e.g. yes, no, or abstain.

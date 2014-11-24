@@ -30,7 +30,7 @@ The data specification will define terms (classes and properties) to describe an
     <div>A position in an organization that exists independently of the person holding it</div>
     <p class="note">e.g. Member of Parliament for Avalon</p>
   </dd>
-  <dt>Contact Detail</dt>
+  <dt>Contact detail</dt>
   <dd>
     <div>A means of contacting a person, organization or post</div>
     <p class="note">e.g. a telephone number, email address, postal address, contact form, etc.</p>
@@ -40,7 +40,7 @@ The data specification will define terms (classes and properties) to describe an
     <div>A formal step to introduce a matter for consideration by an organization</div>
     <p class="note">e.g. "That the House do now proceed to the Orders of the Day."</p>
   </dd>
-  <dt>Vote Event</dt>
+  <dt>Vote event</dt>
   <dd>
     <div>An event at which people's votes are recorded</div>
     <p class="note">e.g. a vote to pass a bill</p>
@@ -200,14 +200,14 @@ The subdocuments in the [next section](#classes-and-properties) describe specifi
 Each of the following subdocuments describes a class and its properties:
 
 * People and organizations
-  * [Person](/specs/person.html): [Name Component](/specs/person/name-component.html)
+  * [Person](/specs/person.html): [Name component](/specs/person/name-component.html)
   * [Organization](/specs/organization.html)
   * [Membership](/specs/membership.html)
   * [Post](/specs/post.html)
-  * [Contact Detail](/specs/contact-detail.html)
+  * [Contact detail](/specs/contact-detail.html)
 * Motions and voting
   * [Motion](/specs/motion.html)
-  * [Vote Event](/specs/vote-event.html)
+  * [Vote event](/specs/vote-event.html)
   * [Count](/specs/count.html)
   * [Vote](/specs/vote.html)
 * Geography
@@ -402,7 +402,7 @@ As described in the [conformance](#conformance) section, JSON serializations <em
       <td><a href="/examples/post.ttl">post.ttl</a></td>
     </tr>
     <tr>
-      <td><a href="/schemas/contact_detail.json">Contact Detail</a></td>
+      <td><a href="/schemas/contact_detail.json">Contact detail</a></td>
       <td><a href="/contexts/contact_detail.jsonld">contact_detail.jsonld</a></td>
       <td><a href="/examples/contact_detail.json">contact_detail.json</a></td>
       <td><a href="/examples/contact_detail.ttl">contact_detail.ttl</a></td>
@@ -414,7 +414,7 @@ As described in the [conformance](#conformance) section, JSON serializations <em
       <td><a href="/examples/motion.ttl">motion.ttl</a></td>
     </tr>
     <tr>
-      <td><a href="/schemas/vote_event.json">Vote Event</a></td>
+      <td><a href="/schemas/vote_event.json">Vote event</a></td>
       <td><a href="/contexts/vote_event.jsonld">vote_event.jsonld</a></td>
       <td><a href="/examples/vote_event.json">vote_event.json</a></td>
       <td><a href="/examples/vote_event.ttl">vote_event.ttl</a></td>

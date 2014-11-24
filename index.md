@@ -13,13 +13,13 @@ title: The Popolo Project
       <li><a href="/specs/organization.html">Organization</a></li>
       <li><a href="/specs/membership.html">Membership</a></li>
       <li><a href="/specs/post.html">Post</a></li>
-      <li><a href="/specs/contact-detail.html">Contact Detail</a></li>
+      <li><a href="/specs/contact-detail.html">Contact detail</a></li>
     </ul>
 
     <h2>Motions and voting</h2>
     <ul>
       <li><a href="/specs/motion.html">Motion</a></li>
-      <li><a href="/specs/vote-event.html">Vote Event</a></li>
+      <li><a href="/specs/vote-event.html">Vote event</a></li>
       <li><a href="/specs/count.html">Count</a></li>
       <li><a href="/specs/vote.html">Vote</a></li>
     </ul>

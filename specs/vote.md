@@ -14,6 +14,8 @@ A vote is one voter's vote in a vote event.
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
+The Vote class should have properties for:
+
 1. [vote event](/specs/vote-event.html)
 
     >Vote No. 42

@@ -14,6 +14,8 @@ An area is a geographic area whose geometry may change over time.
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
+The Area class should have properties for:
+
 1. name
 
     >Boston Ward 1
