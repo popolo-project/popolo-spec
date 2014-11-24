@@ -1,6 +1,8 @@
 Prefix,Namespace
 ad,http://schemas.talis.com/2005/address/schema#
+bf,http://bibframe.org/vocab/
 con,http://www.w3.org/2000/10/swap/pim/contact#
+cwork,http://www.bbc.co.uk/ontologies/creativework/
 dcterms,http://purl.org/dc/terms/
 foaf,http://xmlns.com/foaf/0.1/
 gadm,http://gadm.geovocab.org/ontology#

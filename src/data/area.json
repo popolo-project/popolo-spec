@@ -81,8 +81,8 @@
       "url": "http://www.geonames.org/ontology#geonamesID"
     },
     "classification": {
-      "term": "featureClass",
-      "url": "http://www.geonames.org/ontology#featureClass"
+      "term": "featureCode",
+      "url": "http://www.geonames.org/ontology#featureCode"
     },
     "parent area": {
       "term": "parentFeature",

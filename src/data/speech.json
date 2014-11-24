@@ -13,8 +13,8 @@
       "url": "http://purl.org/dc/terms/audience"
     },
     "start time": {
-      "term": "created",
-      "url": "http://purl.org/dc/terms/created"
+      "term": "date",
+      "url": "http://purl.org/dc/terms/date"
     },
     "title": {
       "term": "title",
@@ -63,8 +63,8 @@
       "url": "http://schema.org/audio"
     },
     "start time": {
-      "term": "dateCreated",
-      "url": "http://schema.org/dateCreated"
+      "term": "datePublished",
+      "url": "http://schema.org/datePublished"
     },
     "title": {
       "term": "title",
@@ -99,6 +99,78 @@
     "speaker": {
       "term": "rif_deputato",
       "url": "http://dati.camera.it/ocd/rif_deputato"
+    }
+  },
+  "bf": {
+    "Speech": {
+      "term": "Text",
+      "url": "http://bibframe.org/vocab/Text"
+    },
+    "speaker": {
+      "term": "creator",
+      "url": "http://bibframe.org/vocab/creator"
+    },
+    "addressee": {
+      "term": "intendedAudience",
+      "url": "http://bibframe.org/vocab/intendedAudience"
+    },
+    "start time": {
+      "term": "creationDate",
+      "url": "http://bibframe.org/vocab/creationDate"
+    },
+    "title": {
+      "term": "title",
+      "url": "http://bibframe.org/vocab/title"
+    },
+    "classification": {
+      "term": "classification",
+      "url": "http://bibframe.org/vocab/classification"
+    },
+    "keywords": {
+      "term": "category",
+      "url": "http://bibframe.org/vocab/category"
+    },
+    "language": {
+      "term": "language",
+      "url": "http://bibframe.org/vocab/language"
+    },
+    "position": {
+      "term": "precededBy",
+      "url": "http://bibframe.org/vocab/precededBy"
+    },
+    "event": {
+      "term": "event",
+      "url": "http://bibframe.org/vocab/event"
+    },
+    "group": {
+      "term": "isPartOf",
+      "url": "http://bibframe.org/vocab/isPartOf"
+    }
+  },
+  "cwork": {
+    "Speech": {
+      "term": "CreativeWork",
+      "url": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "addressee": {
+      "term": "audience",
+      "url": "http://www.bbc.co.uk/ontologies/creativework/audience"
+    },
+    "start time": {
+      "term": "dateCreated",
+      "url": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "title": {
+      "term": "title",
+      "url": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "classification": {
+      "term": "category",
+      "url": "http://www.bbc.co.uk/ontologies/creativework/category"
+    },
+    "keywords": {
+      "term": "tag",
+      "url": "http://www.bbc.co.uk/ontologies/creativework/tag"
     }
   },
   "PML": {

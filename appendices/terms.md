@@ -31,10 +31,26 @@ id: data
     </tr>
     <tr>
       <td>
+        <code>bf</code>
+      </td>
+      <td>
+        <a href='http://bibframe.org/vocab/'>http://bibframe.org/vocab/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <code>con</code>
       </td>
       <td>
         <a href='http://www.w3.org/2000/10/swap/pim/contact#'>http://www.w3.org/2000/10/swap/pim/contact#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>cwork</code>
+      </td>
+      <td>
+        <a href='http://www.bbc.co.uk/ontologies/creativework/'>http://www.bbc.co.uk/ontologies/creativework/</a>
       </td>
     </tr>
     <tr>
@@ -4893,8 +4909,8 @@ id: data
           </a>
         </td>
         <td>
-          <a href='http://www.geonames.org/ontology#featureClass'>
-            featureClass
+          <a href='http://www.geonames.org/ontology#featureCode'>
+            featureCode
           </a>
         </td>
         <td>
@@ -5065,8 +5081,8 @@ id: data
         <td>
         </td>
         <td>
-          <a href='http://purl.org/dc/terms/created'>
-            created
+          <a href='http://purl.org/dc/terms/date'>
+            date
           </a>
         </td>
         <td>
@@ -5138,8 +5154,8 @@ id: data
           </a>
         </td>
         <td>
-          <a href='http://schema.org/dateCreated'>
-            dateCreated
+          <a href='http://schema.org/datePublished'>
+            datePublished
           </a>
         </td>
         <td>
@@ -5210,6 +5226,131 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>bf</code>
+        </th>
+        <td>
+          <a href='http://bibframe.org/vocab/Text'>
+            Text
+          </a>
+        </td>
+        <td>
+          <a href='http://bibframe.org/vocab/creator'>
+            creator
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://bibframe.org/vocab/intendedAudience'>
+            <abbr title='intendedAudience'>intendedAudienc…</abbr>
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://bibframe.org/vocab/creationDate'>
+            creationDate
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://bibframe.org/vocab/title'>
+            title
+          </a>
+        </td>
+        <td>
+          <a href='http://bibframe.org/vocab/classification'>
+            classification
+          </a>
+        </td>
+        <td>
+          <a href='http://bibframe.org/vocab/category'>
+            category
+          </a>
+        </td>
+        <td>
+          <a href='http://bibframe.org/vocab/language'>
+            language
+          </a>
+        </td>
+        <td>
+          <a href='http://bibframe.org/vocab/precededBy'>
+            precededBy
+          </a>
+        </td>
+        <td>
+          <a href='http://bibframe.org/vocab/event'>
+            event
+          </a>
+        </td>
+        <td>
+          <a href='http://bibframe.org/vocab/isPartOf'>
+            isPartOf
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>cwork</code>
+        </th>
+        <td>
+          <a href='http://www.bbc.co.uk/ontologies/creativework/CreativeWork'>
+            CreativeWork
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.bbc.co.uk/ontologies/creativework/audience'>
+            audience
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.bbc.co.uk/ontologies/creativework/dateCreated'>
+            dateCreated
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://www.bbc.co.uk/ontologies/creativework/title'>
+            title
+          </a>
+        </td>
+        <td>
+          <a href='http://www.bbc.co.uk/ontologies/creativework/category'>
+            category
+          </a>
+        </td>
+        <td>
+          <a href='http://www.bbc.co.uk/ontologies/creativework/tag'>
+            tag
+          </a>
         </td>
         <td>
         </td>
