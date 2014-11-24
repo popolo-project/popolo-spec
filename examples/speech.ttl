@@ -12,6 +12,5 @@
   schema:audio <http://example.com/audio/2014-03-25-ruling.ogg>;
   dcterms:date "2014-03-25T17:00:00Z"^^dcterms:W3CDTF;
   schema:title "Speaker's Ruling - Motion 55";
-  schema:additionalType [a skos:Concept; skos:prefLabel "Speaker's Ruling"@en];
   schema:position 42;
   bf:event <http://example.com/events/P41-S2-S43.ttl> .

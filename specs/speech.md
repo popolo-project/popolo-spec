@@ -14,6 +14,8 @@ A speech, a scene (e.g. applause), a narrative (e.g. "The House rose at 3:20pm")
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
+The Speech class should have properties for:
+
 1. speaker
 
     >Alice checks what her representative said in favor of Bill No. 1.
@@ -46,9 +48,9 @@ A speech, a scene (e.g. applause), a narrative (e.g. "The House rose at 3:20pm")
 
     >Gettysburg Address
 
-1. classification
+1. type
 
-    >e.g. a question, answer or narrative.
+    >e.g. a speech, scene or narrative.
 
 1. position
 
@@ -79,9 +81,9 @@ In Dublin Core, an audience is an [AgentClass](http://dublincore.org/documents/d
     </tr>
   </thead>
   <tbody>
-    <tr id="opengov:Speech">
+    <tr>
       <td>Speech</td>
-      <td><code title="http://www.w3.org/ns/opengov#Speech">opengov:Speech</code></td>
+      <td>No <code>rdf:type</code></td>
       <td>A speech, a scene, a narrative, or another part of a transcript</td>
     </tr>
     <tr id="schema:creator">
@@ -124,10 +126,10 @@ In Dublin Core, an audience is an [AgentClass](http://dublincore.org/documents/d
       <td><code><a href="http://schema.org/title" title="http://schema.org/title">schema:title</a></code></td>
       <td>A name given to the speech</td>
     </tr>
-    <tr id="schema:additionalType">
-      <td>classification</td>
-      <td><code><a href="http://schema.org/additionalType" title="http://schema.org/additionalType">schema:additionalType</a></code></td>
-      <td>The category of a part of a transcript</td>
+    <tr id="rdf:type">
+      <td>type</td>
+      <td><code><a href="http://www.w3.org/TR/rdf-schema/#ch_type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></code></td>
+      <td>The type of the part of the transcript</td>
     </tr>
     <tr id="schema:position">
       <td>position</td>
@@ -146,8 +148,6 @@ In Dublin Core, an audience is an [AgentClass](http://dublincore.org/documents/d
 
 * The term `creator` is used instead of `speaker` (which would be clearer), to be consistent with the [Motion](/specs/motion.html) class.
 * The value of the `role` property is a string, instead of an `org:Role`.
-* The term `classification` is used instead of `additionalType`, to be consistent with the Organization class.
-* The value of the `classification` property is a string, instead of a `skos:Concept`.
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#speech-schema">JSON Schema</a></li>
@@ -176,6 +176,7 @@ Implementations <em class="rfc2119">may</em> use values from outside the followi
 
 The following is a copy of [Akoma Ntoso](http://examples.akomantoso.org/categorical.html#ANcontainersEG) containers.
 
+* `speech`
 * `question`
 * `answer`
 * `scene`: a scene description of events, e.g. applause.

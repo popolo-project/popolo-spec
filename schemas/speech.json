@@ -51,8 +51,8 @@
       "description": "A name given to the speech",
       "type": ["string", "null"]
     },
-    "classification": {
-      "description": "The category of a part of a transcript",
+    "type": {
+      "description": "The type of the part of the transcript",
       "type": ["string", "null"]
     },
     "position": {

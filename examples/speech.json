@@ -6,7 +6,7 @@
   "audio": "http://example.com/audio/2014-03-25-ruling.ogg",
   "date": "2014-03-25T17:00:00Z",
   "title": "Speaker's Ruling - Motion 55",
-  "classification": "ruling",
+  "type": "speech",
   "position": 42,
   "event_id": "P41-S2-S43"
 }
