@@ -234,6 +234,7 @@ The following diagram succinctly describes the relationships among the classes. 
 
 <img src="/img/diagram.png" width="687" height="84" alt="UML diagram">
 {% comment %}http://yuml.me/edit/730bfbbb{% endcomment %}
+{% comment %}http://yuml.me/edit/f5d13e21{% endcomment %}
 
 <h2 id="metadata-properties">5.1. Metadata properties</h2>
 
