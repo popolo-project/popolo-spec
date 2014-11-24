@@ -18,7 +18,7 @@
   org:subOrganizationOf <http://example.com/organizations/holding-company-corp.ttl>;
   schema:foundingDate "1950-01-01"^^dcterms:W3CDTF;
   opengov:dissolutionDate "2000-01-01"^^dcterms:W3CDTF;
-  schema:image <http://www.example.com/pub/photos/logo.gif>;
+  schema:image <http://example.com/pub/photos/logo.gif>;
   opengov:contactDetail [
     a vcard:Voice;
     rdfs:label "Toll-free number";

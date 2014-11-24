@@ -3,7 +3,7 @@
   "creator_id": "john-doe",
   "text": "That the Bill is to be read a second time.",
   "classification": "Second reading",
-  "date": "2013-01-01",
+  "date": "2013-01-01T12:00:00Z",
   "requirement": "two-thirds majority",
   "result": "pass",
   "vote_events": ["vote-42"],

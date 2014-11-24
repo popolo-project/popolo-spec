@@ -23,7 +23,7 @@
   "gender": "male",
   "birth_date": "1920-01",
   "death_date": "2010-01-01",
-  "image": "http://www.example.com/pub/photos/jqpublic.gif",
+  "image": "http://example.com/pub/photos/jqpublic.gif",
   "summary": "A hypothetical member of society deemed a 'common man'",
   "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
   "national_identity": "Scottish",

@@ -16,7 +16,7 @@
   foaf:gender "male";
   schema:birthDate "1920-01"^^dcterms:W3CDTF;
   schema:deathDate "2010-01-01"^^dcterms:W3CDTF;
-  schema:image <http://www.example.com/pub/photos/jqpublic.gif>;
+  schema:image <http://example.com/pub/photos/jqpublic.gif>;
   bio:olb "A hypothetical member of society deemed a 'common man'";
   bio:biography "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...";
   opengov:nationalIdentity "Scottish";
