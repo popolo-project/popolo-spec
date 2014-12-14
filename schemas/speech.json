@@ -42,6 +42,11 @@
       "type": ["string", "null"],
       "format": "uri"
     },
+    "video": {
+      "description": "The video recording of the speech",
+      "type": ["string", "null"],
+      "format": "uri"
+    },
     "date": {
       "description": "The time at which the speech is spoken",
       "type": ["string", "null"],

@@ -5149,8 +5149,8 @@ id: data
           </a>
         </td>
         <td>
-          <a href='http://schema.org/audio'>
-            audio
+          <a href='http://schema.org/video'>
+            video
           </a>
         </td>
         <td>

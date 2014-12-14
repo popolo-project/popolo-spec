@@ -62,6 +62,10 @@
       "term": "audio",
       "url": "http://schema.org/audio"
     },
+    "audio": {
+      "term": "video",
+      "url": "http://schema.org/video"
+    },
     "start time": {
       "term": "datePublished",
       "url": "http://schema.org/datePublished"

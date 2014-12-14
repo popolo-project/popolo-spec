@@ -24,6 +24,10 @@
     "@id": "http://schema.org/audio",
     "@type": "@id"
   },
+  "video": {
+    "@id": "http://schema.org/video",
+    "@type": "@id"
+  },
   "date": {
     "@id": "http://purl.org/dc/terms/date",
     "@type": "http://purl.org/dc/terms/W3CDTF"

@@ -40,6 +40,10 @@ The Speech class should have properties for:
 
     >e.g. to capture the tone of the speech.
 
+1. video
+
+    >e.g. to capture the context of the speech.
+
 1. the time at which the speech is spoken
 
     >January 1, 2013 at 12:30pm
@@ -115,6 +119,11 @@ In Dublin Core, an audience is an [AgentClass](http://dublincore.org/documents/d
       <td>audio</td>
       <td><code><a href="http://schema.org/audio" title="http://schema.org/audio">schema:audio</a></code></td>
       <td>The audio recording of the speech</td>
+    </tr>
+    <tr id="schema:video">
+      <td>video</td>
+      <td><code><a href="http://schema.org/video" title="http://schema.org/video">schema:video</a></code></td>
+      <td>The video recording of the speech</td>
     </tr>
     <tr id="dcterms:date">
       <td>date</td>
