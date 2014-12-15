@@ -149,6 +149,7 @@ task :default do
       'addressee',
       'text',
       'audio',
+      'video',
       'start time',
       'end time',
       'title',

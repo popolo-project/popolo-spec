@@ -62,7 +62,7 @@
       "term": "audio",
       "url": "http://schema.org/audio"
     },
-    "audio": {
+    "video": {
       "term": "video",
       "url": "http://schema.org/video"
     },

@@ -5041,6 +5041,7 @@ id: data
         <td>addressee</td>
         <td>text</td>
         <td>audio</td>
+        <td>video</td>
         <td>start time</td>
         <td>end time</td>
         <td>title</td>
@@ -5075,6 +5076,8 @@ id: data
           <a href='http://purl.org/dc/terms/audience'>
             audience
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -5146,6 +5149,11 @@ id: data
         <td>
           <a href='http://schema.org/text'>
             text
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/audio'>
+            audio
           </a>
         </td>
         <td>
@@ -5235,6 +5243,8 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -5258,6 +5268,8 @@ id: data
           <a href='http://bibframe.org/vocab/intendedAudience'>
             <abbr title='intendedAudience'>intendedAudienc…</abbr>
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -5331,6 +5343,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://www.bbc.co.uk/ontologies/creativework/dateCreated'>
             dateCreated
           </a>
@@ -5383,6 +5397,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='startDate, startTime'>startDate, star…</abbr>
         </td>
         <td>
@@ -5424,6 +5440,8 @@ id: data
         </td>
         <td>
           to
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -5476,6 +5494,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           Timestamp
         </td>
         <td>
@@ -5519,6 +5539,8 @@ id: data
         </td>
         <td>
           audio
+        </td>
+        <td>
         </td>
         <td>
           <abbr title='start_date, start_time'>start_date, sta…</abbr>
