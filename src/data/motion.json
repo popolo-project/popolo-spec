@@ -8,6 +8,18 @@
       "term": "creator",
       "url": "http://purl.org/dc/terms/creator"
     },
+    "identifier": {
+      "term": "identifier",
+      "url": "http://purl.org/dc/terms/identifier"
+    },
+    "title": {
+      "term": "title",
+      "url": "http://purl.org/dc/terms/title"
+    },
+    "description": {
+      "term": "description",
+      "url": "http://purl.org/dc/terms/description"
+    },
     "object": {
       "term": "references",
       "url": "http://purl.org/dc/terms/references"
@@ -33,6 +45,14 @@
     "creator": {
       "term": "creator",
       "url": "http://schema.org/creator"
+    },
+    "title": {
+      "term": "name",
+      "url": "http://schema.org/name"
+    },
+    "description": {
+      "term": "description",
+      "url": "http://schema.org/description"
     },
     "text": {
       "term": "text",
@@ -64,6 +84,9 @@
     "legislative session": {
       "term": "session"
     },
+    "identifier": {
+      "term": "id"
+    },
     "text": {
       "term": "refersTo"
     },
@@ -80,6 +103,9 @@
   "Cornell": {
     "organization": {
       "term": "hasChamber, hasCommittee"
+    },
+    "identifier": {
+      "term": "hasIdentifier"
     },
     "text": {
       "term": "hasDocument"
@@ -255,6 +281,9 @@
     },
     "creator": {
       "term": "author"
+    },
+    "identifier": {
+      "term": "id"
     },
     "title": {
       "term": "title"

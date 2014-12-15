@@ -15,6 +15,7 @@
     "@type": "@id"
   },
   "text": "http://schema.org/text",
+  "identifier": "http://purl.org/dc/terms/identifier",
   "classification": {
     "@id": "http://schema.org/additionalType",
     "@type": "@id"

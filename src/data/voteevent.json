@@ -8,13 +8,9 @@
       "term": "superEvent",
       "url": "http://schema.org/superEvent"
     },
-    "identifier": {
+    "title": {
       "term": "name",
       "url": "http://schema.org/name"
-    },
-    "title": {
-      "term": "description",
-      "url": "http://schema.org/description"
     },
     "start time": {
       "term": "startDate",

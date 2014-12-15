@@ -90,6 +90,7 @@ task :default do
       'organization',
       'legislative session',
       'creator',
+      'identifier',
       'title',
       'description',
       'text',

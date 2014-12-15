@@ -2489,6 +2489,7 @@ id: data
         <td>organization</td>
         <td>legislative session</td>
         <td>creator</td>
+        <td>identifier</td>
         <td>title</td>
         <td>description</td>
         <td>text</td>
@@ -2522,8 +2523,19 @@ id: data
           </a>
         </td>
         <td>
+          <a href='http://purl.org/dc/terms/identifier'>
+            identifier
+          </a>
         </td>
         <td>
+          <a href='http://purl.org/dc/terms/title'>
+            title
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/dc/terms/description'>
+            description
+          </a>
         </td>
         <td>
         </td>
@@ -2577,6 +2589,14 @@ id: data
         <td>
         </td>
         <td>
+          <a href='http://schema.org/name'>
+            name
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/description'>
+            description
+          </a>
         </td>
         <td>
           <a href='http://schema.org/text'>
@@ -2622,6 +2642,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           label
         </td>
         <td>
@@ -2655,6 +2677,9 @@ id: data
           session
         </td>
         <td>
+        </td>
+        <td>
+          id
         </td>
         <td>
         </td>
@@ -2695,6 +2720,9 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
+          hasIdentifier
         </td>
         <td>
         </td>
@@ -2740,6 +2768,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <i>nome</i>
         </td>
         <td>
@@ -2781,6 +2811,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           Description
         </td>
         <td>
@@ -2814,6 +2846,8 @@ id: data
         </td>
         <td>
           Sponsor
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -2864,6 +2898,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           bod
         </td>
         <td>
@@ -2885,6 +2921,8 @@ id: data
         <th scope='row'>
           Georgia
         </th>
+        <td>
+        </td>
         <td>
         </td>
         <td>
@@ -2952,6 +2990,8 @@ id: data
         </td>
         <td>
         </td>
+        <td>
+        </td>
       </tr>
       <tr>
         <th scope='row'>
@@ -2965,6 +3005,8 @@ id: data
         </td>
         <td>
           mover
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3003,6 +3045,8 @@ id: data
         </td>
         <td>
           dailnumber
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3067,6 +3111,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <a href='http://dati.camera.it/ocd/reference_document/#approvato'>
             approvato
           </a>
@@ -3078,6 +3124,8 @@ id: data
         <th scope='row'>
           Norway (XML)
         </th>
+        <td>
+        </td>
         <td>
         </td>
         <td>
@@ -3129,6 +3177,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           TextoExpediente
         </td>
         <td>
@@ -3171,6 +3221,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           avser
         </td>
         <td>
@@ -3203,6 +3255,9 @@ id: data
         </td>
         <td>
           author
+        </td>
+        <td>
+          id
         </td>
         <td>
           title
@@ -3255,6 +3310,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           Motion Type
         </td>
         <td>
@@ -3286,6 +3343,8 @@ id: data
         </td>
         <td>
           <abbr title='congress, session'>congress, sessi…</abbr>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3331,6 +3390,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           question
         </td>
         <td>
@@ -3367,6 +3428,8 @@ id: data
         </td>
         <td>
           <abbr title='congress, session'>congress, sessi…</abbr>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -3446,13 +3509,10 @@ id: data
           </a>
         </td>
         <td>
-          <a href='http://schema.org/name'>
-            name
-          </a>
         </td>
         <td>
-          <a href='http://schema.org/description'>
-            description
+          <a href='http://schema.org/name'>
+            name
           </a>
         </td>
         <td>

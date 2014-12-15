@@ -34,6 +34,10 @@ The Motion class should have properties for:
 
     >That the House do now proceed to the Orders of the Day.
 
+1. identifier
+
+    >2014/556
+
 1. classification
 
     >e.g. [adjournment](http://www.parliament.uk/site-information/glossary/adjournment-motion/), [allocation of time](http://www.parliament.uk/site-information/glossary/allocation-of-time-motion/), [business](http://www.parliament.uk/site-information/glossary/business-motion/), [carry-over](http://www.parliament.uk/site-information/glossary/carry-over-motions-bills/),  [closure](http://www.parliament.uk/site-information/glossary/closure-motion/), [dilatory](http://www.parliament.uk/site-information/glossary/dilatory-motion/), [programme](http://www.parliament.uk/site-information/glossary/programme-motion/), etc.
@@ -95,6 +99,11 @@ Either a person or an organization can create a [CreativeWork](http://schema.org
       <td>text</td>
       <td><code><a href="http://schema.org/text" title="http://schema.org/text">schema:text</a></code></td>
       <td>The transcript or text of the motion</td>
+    </tr>
+    <tr id="dcterms:identifier">
+      <td>identifier</td>
+      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-identifier" title="http://purl.org/dc/terms/identifier">dcterms:identifier</a></code></td>
+      <td>An issued identifier</td>
     </tr>
     <tr id="schema:additionalType">
       <td>classification</td>
