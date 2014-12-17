@@ -17,7 +17,6 @@ A post should not be confused with a *role*, which describes a function that a p
 According to this data specification, a [person](/specs/person.html) holds a post in an [organization](/specs/organization.html) through their [membership](/specs/membership.html) in that organization, as illustrated by the class diagram below.
 
 <img src="/img/diagram.png" width="687" height="84" alt="UML diagram">
-{% comment %}http://yuml.me/edit/730bfbbb{% endcomment %}
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 

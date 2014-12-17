@@ -4,7 +4,7 @@ title: The Popolo Project
 ---
 <h1>Popolo <small>International open government data specifications</small></h1>
 
-<div class="row well" id="contents">
+<div class="row" id="contents">
   <div class="col-sm-6">
     <h2>People and organizations</h2>
 

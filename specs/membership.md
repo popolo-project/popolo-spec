@@ -17,7 +17,6 @@ In some cases, a simple binary relation is enough, e.g. a `memberOf` property li
 According to this data specification, a [person](/specs/person.html) is a member of an [organization](/specs/organization.html), and may optionally hold a [post](/specs/post.html) in that organization through their membership, as illustrated by the class diagram below.
 
 <img src="/img/diagram.png" width="687" height="84" alt="UML diagram">
-{% comment %}http://yuml.me/edit/730bfbbb{% endcomment %}
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 

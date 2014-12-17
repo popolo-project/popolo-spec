@@ -230,7 +230,7 @@ The structure of each subdocument is:
   <dd>Lists any standardized nomenclatures used as property values</dd>
 </dl>
 
-The following diagram succinctly describes the relationships among the classes. All arrows are one-to-many relationships.
+The following diagram succinctly describes the relationships among the people and organizations classes. All arrows are one-to-many relationships.
 
 <img src="/img/diagram.png" width="687" height="84" alt="UML diagram">
 {% comment %}http://yuml.me/edit/730bfbbb{% endcomment %}
