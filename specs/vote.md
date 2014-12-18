@@ -120,6 +120,8 @@ Few specifications exist for individual votes, and few legislatures publish vote
 
 <h1 id="serialization">4. Serialization</h1>
 
+A vote cannot exist outside a vote event. All votes <em class="rfc2119">must</em> assign a value to either `vote_event_id` or `vote_event`.
+
 **JSON differences from other RDF serializations:**
 
 * The term `voter` is used instead of `agent`, for clarity.
