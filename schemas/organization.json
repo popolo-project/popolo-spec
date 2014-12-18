@@ -90,6 +90,34 @@
         "$ref": "http://www.popoloproject.com/schemas/post.json#"
       }
     },
+    "motions": {
+      "description": "Motions within the organization",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/motion.json#"
+      }
+    },
+    "vote_events": {
+      "description": "Vote events in which members of the organization are voting",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/vote_event.json#"
+      }
+    },
+    "votes": {
+      "description": "Votes cast by the organization",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/vote.json#"
+      }
+    },
+    "children": {
+      "description": "The sub-organizations of the organization",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/organization.json#"
+      }
+    },
     "created_at": {
       "description": "The time at which the resource was created",
       "type": ["string", "null"],

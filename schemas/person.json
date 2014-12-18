@@ -112,6 +112,27 @@
         "$ref": "http://www.popoloproject.com/schemas/membership.json#"
       }
     },
+    "motions": {
+      "description": "The person's motions",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/motion.json#"
+      }
+    },
+    "speeches": {
+      "description": "The person's speeches",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/speech.json#"
+      }
+    },
+    "votes": {
+      "description": "Votes cast by the person",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/vote.json#"
+      }
+    },
     "created_at": {
       "description": "The time at which the resource was created",
       "type": ["string", "null"],

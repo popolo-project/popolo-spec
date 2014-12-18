@@ -33,6 +33,34 @@
       "description": "A geometry",
       "type": ["object", "null"]
     },
+    "memberships": {
+      "description": "The memberships to which this area is related",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/membership.json#"
+      }
+    },
+    "organizations": {
+      "description": "The organizations to which this area is related",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/organization.json#"
+      }
+    },
+    "posts": {
+      "description": "The posts to which this area is related",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/post.json#"
+      }
+    },
+    "children": {
+      "description": "The sub-areas of the area",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/area.json#"
+      }
+    },
     "created_at": {
       "description": "The time at which the resource was created",
       "type": ["string", "null"],

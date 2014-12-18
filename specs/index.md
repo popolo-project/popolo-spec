@@ -234,7 +234,7 @@ The following diagram succinctly describes the relationships among the people an
 
 <img src="/img/diagram.png" width="687" height="84" alt="UML diagram">
 {% comment %}http://yuml.me/edit/730bfbbb{% endcomment %}
-{% comment %}http://yuml.me/edit/f5d13e21{% endcomment %}
+{% comment %}http://yuml.me/edit/0ab4e952{% endcomment %}
 
 <h2 id="metadata-properties">5.1. Metadata properties</h2>
 
@@ -477,115 +477,93 @@ When serializing to JSON, you may relate entities by linking and/or embedding re
     <tr>
       <th>Linking</th>
       <th>Embedding</th>
+      <th>Inverse</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><code>area_id</code></td>
       <td><code>area</code></td>
+      <td><code>memberships</code>, <code>organizations</code>, <code>posts</code></td>
     </tr>
     <tr>
       <td><code>audience_id</code></td>
       <td><code>audience</code></td>
-    </tr>
-    <tr>
       <td></td>
-      <td><code>contact_details</code></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><code>counts</code></td>
     </tr>
     <tr>
       <td><code>creator_id</code></td>
       <td><code>creator</code></td>
+      <td><code>motions</code>, <code>speeches</code></td>
     </tr>
     <tr>
       <td><code>event_id</code></td>
       <td><code>event</code></td>
+      <td><code>speeches</code></td>
     </tr>
     <tr>
       <td><code>group_id</code></td>
       <td><code>group</code></td>
-    </tr>
-    <tr>
       <td></td>
-      <td><code>group_results</code></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><code>identifiers</code></td>
     </tr>
     <tr>
       <td><code>legislative_session_id</code></td>
       <td><code>legislative_session</code></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><code>links</code></td>
+      <td><code>motions</code>, <code>vote_events</code></td>
     </tr>
     <tr>
       <td></td>
       <td><code>member</code></td>
-    </tr>
-    <tr>
-      <td></td>
       <td><code>memberships</code></td>
     </tr>
     <tr>
+      <td><code>motion_id</code></td>
+      <td><code>motion</code></td>
+      <td><code>vote_events</code></td>
+    <tr>
       <td><code>on_behalf_of_id</code></td>
       <td><code>on_behalf_of</code></td>
+      <td></td>
     </tr>
     <tr>
       <td><code>organization_id</code></td>
       <td><code>organization</code></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><code>other_names</code></td>
+      <td><code>memberships</code>, <code>motions</code>, <code>posts</code>, <code>vote_events</code></td>
     </tr>
     <tr>
       <td><code>pair_id</code></td>
       <td><code>pair</code></td>
+      <td></td>
     </tr>
     <tr>
       <td><code>parent_id</code></td>
       <td><code>parent</code></td>
+      <td><code>children</code></td>
     </tr>
     <tr>
       <td><code>person_id</code></td>
       <td><code>person</code></td>
+      <td><code>memberships</code></td>
     </tr>
     <tr>
       <td><code>post_id</code></td>
       <td><code>post</code></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><code>posts</code></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><code>sources</code></td>
+      <td><code>memberships</code></td>
     </tr>
     <tr>
       <td><code>vote_event_id</code></td>
       <td><code>vote_event</code></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><code>vote_events</code></td>
-    </tr>
-    <tr>
-      <td></td>
       <td><code>votes</code></td>
     </tr>
     <tr>
       <td><code>voter_id</code></td>
       <td><code>voter</code></td>
+      <td><code>votes</code></td>
     </tr>
   </tbody>
 </table>
+
+`contact_details`, `counts`, `group_results`, `identifiers`, `links`, `other_names` and `sources` are embedded only.
 
 The first option is straight-forward and is used in the examples in the subdocuments above.
 
@@ -670,6 +648,7 @@ For political groups, the range of the `group` property will be an [organization
 
 <h1 id="history">7. Change history</h1>
 
+* 2014-12-18: Add missing inverse embedding properties to JSON Schema.
 * 2014-12-15: Add an identifier property to the Motion class.
 * 2014-12-14: Add a video property to the Speech class.
 * 2014-11-23: Add a Speech class.
