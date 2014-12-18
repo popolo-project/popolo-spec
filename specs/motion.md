@@ -92,7 +92,7 @@ Either a person or an organization can create a [CreativeWork](http://schema.org
     </tr>
     <tr id="schema:creator">
       <td>creator</td>
-      <td><code><a href="http://schema.org/text" title="http://schema.org/creator">schema:creator</a></code></td>
+      <td><code><a href="http://schema.org/creator" title="http://schema.org/creator">schema:creator</a></code></td>
       <td>The person who proposed the motion</td>
     </tr>
     <tr id="schema:text">
