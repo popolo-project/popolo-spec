@@ -48,6 +48,10 @@
     "@id": "http://www.w3.org/ns/org#hasPost",
     "@type": "@id"
   },
+  "children": {
+    "@id": "http://www.w3.org/ns/org#hasSubOrganization",
+    "@type": "@id"
+  },
   "created_at": {
     "@id": "http://purl.org/dc/terms/created",
     "@type": "http://purl.org/dc/terms/W3CDTF"
