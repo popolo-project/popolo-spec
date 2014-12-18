@@ -47,6 +47,18 @@
     "@id": "http://www.w3.org/ns/org#memberOf",
     "@type": "@id"
   },
+  "motions": {
+    "@reverse": "http://schema.org/creator",
+    "@type": "@id"
+  },
+  "speeches": {
+    "@reverse": "http://schema.org/creator",
+    "@type": "@id"
+  },
+  "votes": {
+    "@reverse": "http://schema.org/agent",
+    "@type": "@id"
+  },
   "created_at": {
     "@id": "http://purl.org/dc/terms/created",
     "@type": "http://purl.org/dc/terms/W3CDTF"

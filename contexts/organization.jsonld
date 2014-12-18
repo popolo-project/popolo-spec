@@ -48,6 +48,18 @@
     "@id": "http://www.w3.org/ns/org#hasPost",
     "@type": "@id"
   },
+  "motions": {
+    "@reverse": "http://schema.org/publisher",
+    "@type": "@id"
+  },
+  "vote_events": {
+    "@reverse": "http://schema.org/organizer",
+    "@type": "@id"
+  },
+  "votes": {
+    "@reverse": "http://schema.org/agent",
+    "@type": "@id"
+  },
   "children": {
     "@id": "http://www.w3.org/ns/org#hasSubOrganization",
     "@type": "@id"

@@ -14,6 +14,22 @@
     "@id": "http://www.w3.org/ns/locn#geometry",
     "@type": "@id"
   },
+  "memberships": {
+    "@reverse": "http://www.w3.org/ns/opengov#area",
+    "@type": "@id"
+  },
+  "organizations": {
+    "@reverse": "http://www.w3.org/ns/opengov#area",
+    "@type": "@id"
+  },
+  "posts": {
+    "@reverse": "http://www.w3.org/ns/opengov#area",
+    "@type": "@id"
+  },
+  "children": {
+    "@reverse": "http://www.geonames.org/ontology#parentFeature",
+    "@type": "@id"
+  },
   "created_at": {
     "@id": "http://purl.org/dc/terms/created",
     "@type": "http://purl.org/dc/terms/W3CDTF"
