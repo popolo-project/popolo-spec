@@ -328,8 +328,8 @@ Bob's candidacy can be expressed as a membership with a post but without an orga
   },
   "memberships": [
     {
-      person_id: "bob-loblaw",
-      role: "Candidate"
+      "person_id": "bob-loblaw",
+      "role": "Candidate"
     }
   ]
 }
