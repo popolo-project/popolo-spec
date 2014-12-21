@@ -1332,6 +1332,7 @@ id: data
         <td>classification</td>
         <td>parent organization</td>
         <td>child organization</td>
+        <td>description</td>
         <td>founding date</td>
         <td>dissolution date</td>
         <td>image</td>
@@ -1367,6 +1368,8 @@ id: data
           <a href='http://xmlns.com/foaf/spec/#term_member'>
             member
           </a>
+        </td>
+        <td>
         </td>
         <td>
           <a href='http://xmlns.com/foaf/spec/#term_'>
@@ -1415,6 +1418,11 @@ id: data
         <td>
           <a href='http://schema.org/member'>
             member
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/description'>
+            description
           </a>
         </td>
         <td>
@@ -1470,6 +1478,8 @@ id: data
           </a>
         </td>
         <td>
+        </td>
+        <td>
           see <code>foaf</code>
         </td>
         <td>
@@ -1500,6 +1510,8 @@ id: data
           <a href='http://www.w3.org/TR/vcard-rdf/#d4e516'>
             hasUID
           </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -1543,7 +1555,7 @@ id: data
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/nie/#identifier'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/01/19/nie/#identifier'>
             nie:identifier
           </a>
         </td>
@@ -1552,6 +1564,11 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/01/19/nie/#description'>
+            nie:description
+          </a>
         </td>
         <td>
           <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#birthDate'>
@@ -1603,6 +1620,11 @@ id: data
         <td>
         </td>
         <td>
+          <a href='http://www.w3.org/2000/01/rdf-schema#comment'>
+            rdfs:comment
+          </a>
+        </td>
+        <td>
           <a href='http://dev.poderopedia.com/documentation/index#bio:birth'>
             bio:birth
           </a>
@@ -1634,6 +1656,8 @@ id: data
         </td>
         <td>
           id
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -1682,6 +1706,11 @@ id: data
           </a>
         </td>
         <td>
+          <a href='http://tools.ietf.org/html/rfc4519#section-2.5'>
+            description
+          </a>
+        </td>
+        <td>
         </td>
         <td>
         </td>
@@ -1726,6 +1755,11 @@ id: data
         </td>
         <td>
           <a href='http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd'>
+            FreeTextLines
+          </a>
+        </td>
+        <td>
+          <a href='http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd'>
             Date
           </a>
         </td>
@@ -1762,6 +1796,9 @@ id: data
         <td>
         </td>
         <td>
+          <abbr title='OrganizationDescriptionText'>DescriptionText</abbr>
+        </td>
+        <td>
           <abbr title='OrganizationEstablishedDate'>EstablishedDate</abbr>
         </td>
         <td>
@@ -1794,6 +1831,8 @@ id: data
         <td>
         </td>
         <td>
+        </td>
+        <td>
           <abbr title='hasGroupStartDate'>hasGroupStartDa…</abbr>
         </td>
         <td>
@@ -1819,6 +1858,8 @@ id: data
         </td>
         <td>
           type
+        </td>
+        <td>
         </td>
         <td>
         </td>

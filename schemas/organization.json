@@ -47,6 +47,14 @@
       "description": "The geographic area to which this organization is related",
       "$ref": "http://www.popoloproject.com/schemas/area.json#"
     },
+    "abstract": {
+      "description": "A one-line description of an organization",
+      "type": ["string", "null"]
+    },
+    "description": {
+      "description": "An extended description of an organization",
+      "type": ["string", "null"]
+    },
     "founding_date": {
       "description": "A date of founding",
       "type": ["string", "null"],

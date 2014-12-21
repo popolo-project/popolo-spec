@@ -52,6 +52,8 @@ task :default do
       'parent organization',
       'child organization',
       # 'geographic area',
+      # 'abstract',
+      'description',
       'founding date',
       'dissolution date',
       'image',

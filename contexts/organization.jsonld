@@ -20,6 +20,8 @@
     "@id": "http://www.w3.org/ns/opengov#area",
     "@type": "@id"
   },
+  "abstract": "http://purl.org/dc/terms/abstract",
+  "description": "http://purl.org/dc/terms/description",
   "founding_date": {
     "@id": "http://schema.org/foundingDate",
     "@type": "http://purl.org/dc/terms/W3CDTF"

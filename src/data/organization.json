@@ -54,6 +54,10 @@
       "term": "foundingDate",
       "url": "http://schema.org/foundingDate"
     },
+    "description": {
+      "term": "description",
+      "url": "http://schema.org/description"
+    },
     "image": {
       "term": "image",
       "url": "http://schema.org/image"
@@ -137,11 +141,15 @@
     },
     "identifier": {
       "term": "nie:identifier",
-      "url": "http://www.semanticdesktop.org/ontologies/nie/#identifier"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/01/19/nie/#identifier"
     },
     "founding date": {
       "term": "birthDate",
       "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#birthDate"
+    },
+    "description": {
+      "term": "nie:description",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/01/19/nie/#description"
     },
     "image": {
       "term": "photo",
@@ -181,6 +189,10 @@
       "term": "bio:death",
       "url": "http://dev.poderopedia.com/documentation/index#bio:death"
     },
+    "description": {
+      "term": "rdfs:comment",
+      "url": "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
     "image": {
       "term": "hasLogo",
       "url": "http://dev.poderopedia.com/documentation/index#poder:hasLogo"
@@ -218,6 +230,10 @@
     "child organization": {
       "term": "member",
       "url": "http://tools.ietf.org/html/rfc4519#section-2.17"
+    },
+    "description": {
+      "term": "description",
+      "url": "http://tools.ietf.org/html/rfc4519#section-2.5"
     }
   },
   "CIQ": {
@@ -252,6 +268,10 @@
     "dissolution date": {
       "term": "Date",
       "url": "http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd"
+    },
+    "description": {
+      "term": "FreeTextLines",
+      "url": "http://docs.oasis-open.org/emergency/edxl-have/cs01/xPIL.xsd"
     }
   },
   "NIEM": {
@@ -284,6 +304,10 @@
     "dissolution date": {
       "term": "OrganizationTerminationDate",
       "label": "TerminationDate"
+    },
+    "description": {
+      "term": "OrganizationDescriptionText",
+      "label": "DescriptionText"
     }
   },
   "Cornell": {

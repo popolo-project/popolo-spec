@@ -648,6 +648,7 @@ For political groups, the range of the `group` property will be an [organization
 
 <h1 id="history">7. Change history</h1>
 
+* 2014-12-21: Add one-line description and extended description properties to the Organization class.
 * 2014-12-18: A Vote must have a vote event.
 * 2014-12-18: Add missing inverse embedding properties.
 * 2014-12-15: Add an identifier property to the Motion class.

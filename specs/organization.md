@@ -42,6 +42,14 @@ The Organization class should have properties for:
 
     >Parliament of the United Kingdom
 
+1. one-line description
+
+    >The Subang Jaya Municipal Council is established in accordance with the Local Government Act 1976. 
+
+1. description
+
+    >The Selangor State Government Gazette No. 62, Subang Jaya Municipal Council was gazetted on 2 January 1997…
+
 1. date of founding
 
     >To provide historical detail.
@@ -130,6 +138,16 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
       <td>geographic area</td>
       <td><code title="http://www.w3.org/ns/opengov#area">opengov:area</code></td>
       <td>The geographic area to which the organization is related</td>
+    </tr>
+    <tr id="dcterms:abstract">
+      <td>one-line description</td>
+      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-abstract" title="http://purl.org/dc/terms/abstract">dcterms:abstract</a></code></td>
+      <td>A one-line description of an organization</td>
+    </tr>
+    <tr id="dcterms:description">
+      <td>description</td>
+      <td><code><a href="http://dublincore.org/documents/dcmi-terms/#terms-description" title="http://purl.org/dc/terms/description">dcterms:description</a></code></td>
+      <td>An extended description of an organization</td>
     </tr>
     <tr id="schema:foundingDate">
       <td>date of founding</td>
