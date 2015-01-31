@@ -89,7 +89,7 @@ title: The Popolo Project
     </ul>
 
     <div class="hidden-xs">
-      <p>Popolo is used by:</p>
+      <p>Popolo is used by, among others:</p>
 
       <p id="adoption">
         <a class="hidden-sm" href="http://g0v.tw/" data-toggle="tooltip" title="g0v"><img src="/img/adoption/g0v.png" height="33" alt="g0v"></a>
