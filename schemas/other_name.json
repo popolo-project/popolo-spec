@@ -7,8 +7,7 @@
   "properties": {
     "name": {
       "description": "An alternate or former name",
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "family_name": {
       "description": "One or more family names",
