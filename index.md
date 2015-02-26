@@ -83,7 +83,7 @@ title: The Popolo Project
     <h2>Contribute</h2>
 
     <ul>
-      <li>Discuss <a href="https://github.com/opennorth/popolo-spec/issues">open issues</a> on <a href="https://github.com/opennorth/popolo-spec">GitHub</a></li>
+      <li>Discuss <a href="https://github.com/popolo-project/popolo-spec/issues">open issues</a> on <a href="https://github.com/popolo-project/popolo-spec">GitHub</a></li>
       <li><a href="http://lists.w3.org/Archives/Public/public-opengov/">Join the W3C Open Government mailing list</a></li>
       <li><a href="https://groups.google.com/forum/#!forum/poplus">Join the Poplus mailing list</a>
     </ul>
@@ -97,7 +97,7 @@ title: The Popolo Project
         <a class="hidden-sm hidden-md" href="http://kohovolit.eu/" data-toggle="tooltip" title="KohoVolit.eu"><img src="/img/adoption/kohovolit.png" height="25" alt="KohoVolit.eu"></a>
         <a href="http://mysociety.org/" data-toggle="tooltip" title="mySociety"><img src="/img/adoption/mysociety.png" height="25" alt="mySociety"></a>
         <a href="http://opencivicdata.org/" data-toggle="tooltip" title="Open Civic Data"><img src="/img/adoption/opencivicdata.png" height="50" alt="Open Civic Data"></a>
-        <a href="http://opennorth.ca/" data-toggle="tooltip" title="Open North"><img src="/img/adoption/opennorth.png" height="50" alt="Open North"></a>
+        <a href="http://www.opennorth.ca/" data-toggle="tooltip" title="Open North"><img src="/img/adoption/opennorth.png" height="50" alt="Open North"></a>
         <a class="hidden-sm hidden-md" href="http://www.openpolis.it/" data-toggle="tooltip" title="Associazione Openpolis"><img src="/img/adoption/openpolis.png" height="25" alt="Associazione Openpolis"></a>
         <a href="http://poplus.org/" data-toggle="tooltip" title="Poplus"><img src="/img/adoption/poplus.png" height="50" alt="Poplus"></a>
         <a href="http://sunlightfoundation.com/" data-toggle="tooltip" title="Sunlight Foundation"><img src="/img/adoption/sunlightfoundation.png" height="33" alt="Sunlight Foundation"></a>

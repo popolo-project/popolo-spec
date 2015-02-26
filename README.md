@@ -10,7 +10,7 @@ Popolo supports the development of [reusable open source components](http://popl
 
 To run the documentation website locally:
 
-    git clone https://github.com/opennorth/popolo-spec.git
+    git clone https://github.com/popolo-project/popolo-spec.git
     git co gh-pages
     bundle
     bundle exec jekyll serve -w

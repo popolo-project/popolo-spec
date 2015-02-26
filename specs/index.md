@@ -81,7 +81,7 @@ The data specification will define terms (classes and properties) to describe an
 
 The data specification should:
 
-1. Allow the use of imprecise dates [*[issue 7]*](https://github.com/opennorth/popolo-spec/issues/7).
+1. Allow the use of imprecise dates [*[issue 7]*](https://github.com/popolo-project/popolo-spec/issues/7).
 
     >Shakespeare was born in April 1564.
 
@@ -362,7 +362,7 @@ Dates <em class="rfc2119">must</em> be stored in <abbr title="Coordinated Univer
 
 Additional serialization details are given in the subdocuments in the [previous section](#classes-and-properties).
 
-<p class="note" id="note3">3. Consult the list of <a href="https://github.com/opennorth/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>. <a href="http://www.w3.org/XML/Schema.html">XML Schema</a> supports <a href="http://www.w3.org/TR/xmlschema-2/#truncatedformats">reduced dates</a> such as <a href="http://www.w3.org/TR/xmlschema-2/#gYear"><code>YYYY</code></a> and <a href="http://www.w3.org/TR/xmlschema-2/#gYearMonth"><code>YYYY-MM</code></a>.</p>
+<p class="note" id="note3">3. Consult the list of <a href="https://github.com/popolo-project/popolo-spec/wiki/ISO-8601%3A2004-formats">reduced date formats</a>. <a href="http://www.w3.org/XML/Schema.html">XML Schema</a> supports <a href="http://www.w3.org/TR/xmlschema-2/#truncatedformats">reduced dates</a> such as <a href="http://www.w3.org/TR/xmlschema-2/#gYear"><code>YYYY</code></a> and <a href="http://www.w3.org/TR/xmlschema-2/#gYearMonth"><code>YYYY-MM</code></a>.</p>
 
 <h2 id="schema-and-examples">6.1. JSON schema and examples</h2>
 
@@ -685,4 +685,4 @@ For political groups, the range of the `group` property will be an [organization
 * 2013-02-16: Add a label property to the Post class. Change the cardinality of the classification property of the Organization class.
 * 2013-02-01: First public working draft.
 
-[Browse all Git commits on GitHub](https://github.com/opennorth/popolo-spec/commits/gh-pages)
+[Browse all Git commits on GitHub](https://github.com/popolo-project/popolo-spec/commits/gh-pages)

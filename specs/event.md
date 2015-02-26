@@ -10,7 +10,7 @@ id: event
   <li class="active">Event</li>
 </ul>
 
-_Coming soon: [See issue #22](https://github.com/opennorth/popolo-spec/issues/22)_
+_Coming soon: [See issue #22](https://github.com/popolo-project/popolo-spec/issues/22)_
 
 <h1 id="use-cases-and-requirements">1. Use cases &amp; requirements</h1>
 
