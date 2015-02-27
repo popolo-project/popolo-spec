@@ -128,7 +128,7 @@ Like SQL, most programming languages and data models implement at most three-val
 
 <abbr title="National Aeronautics and Space Administration">NASA</abbr>'s [Planetary Data System (PDS)](http://pds.jpl.nasa.gov/tools/standards-reference.shtml) uses the strings ["N/A", "UNK" and "NULL"](http://pds.jpl.nasa.gov/documents/sr/Chapter17.pdf) as markers to stand for "not applicable", "permanently unknown" and "temporarily unknown". You may choose your own strings to indicate as many reasons as you need for an absence of value.
 
-Unfortunately, using strings as markers is problematic. Markers must receive special handling to ensure expected behavior. In SQL, for example, the marker `NULL` is not equal to `NULL`; one unknown is not equal to another unknown. Take for example <cite>Beowulf</cite>, a book by an unknown author, whose its author would be set to `NULL` in a SQL table. Querying for books by the same author would return zero results:
+Unfortunately, using strings as markers is problematic. Markers must receive special handling to ensure expected behavior. In SQL, for example, the marker `NULL` is not equal to `NULL`; one unknown is not equal to another unknown. Take for example <cite>Beowulf</cite>, a book by an unknown author, whose author would be set to `NULL` in a SQL table. Querying for books by the same author would return zero results:
 
     SELECT * FROM books WHERE author = NULL
 
@@ -152,12 +152,12 @@ In RDF, [blank nodes](http://www.w3.org/TR/rdf-mt/#unlabel) indicate the existen
 </ul>
 <div class="tab-content">
   <div class="tab-pane active" id="blank-rdf">
-    <pre><code>ex:beowulf ex:author [] .</code></pre>
+    <pre><code>ex:beowulf dcterms:creator [] .</code></pre>
   </div>
   <div class="tab-pane" id="blank-json">
     <pre><code class="highlight" data-lang="json">{
   "@id": "ex:beowulf",
-  "ex:author": {}
+  "dcterms:creator": {}
 }</code></pre>
   </div>
 </div>
@@ -172,12 +172,12 @@ Note that when using a blank node, it's possible to say something about an autho
 </ul>
 <div class="tab-content">
   <div class="tab-pane active" id="blank-data-rdf">
-    <pre><code>ex:beowulf ex:author [ a foaf:Person ] .</code></pre>
+    <pre><code>ex:beowulf dcterms:creator [ a foaf:Person ] .</code></pre>
   </div>
   <div class="tab-pane" id="blank-data-json">
     <pre><code class="highlight" data-lang="json">{
   "@id": "ex:beowulf",
-  "ex:author": { "@type": "foaf:Person" }
+  "dcterms:creator": { "@type": "foaf:Person" }
 }</code></pre>
   </div>
 </div>
