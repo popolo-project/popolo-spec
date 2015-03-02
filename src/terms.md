@@ -28,12 +28,12 @@ id: data
   * [Vote event](#VoteEvent)
   * [Count](#Count)
   * [Vote](#Vote)
-* Geography
+* Other classes
   * [Area](#Area)
-* Works
+  * [Event](#Event)
   * [Speech](#Speech)
 
-* The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `sources`, `externalLinks`, `startDate` and `endDate` across classes.
+The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `sources`, `externalLinks`, `startDate` and `endDate` across classes.
 
 <h2 id="Person">Person</h2>
 
@@ -124,6 +124,14 @@ id: data
 * FAO adds a new property for each identifier scheme, e.g. `codeDBPediaID`.
 
 &area
+
+<h2 id="Event">Event</h2>
+
+* The [NEPOMUK Calendar Ontology (NCAL)](http://www.semanticdesktop.org/ontologies/2007/04/02/ncal/#sec-introduction) has a detailed discussion of prior work.
+* The [Simple Event Model (SEM)](http://www.cs.vu.nl/~guus/papers/Hage11b.pdf) has an accompanying paper.
+* [RFC 5545](http://tools.ietf.org/html/rfc5545) specifies the iCalendar data format.
+
+&event
 
 <h2 id="Speech">Speech</h2>
 

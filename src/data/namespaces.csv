@@ -1,9 +1,11 @@
 Prefix,Namespace
 ad,http://schemas.talis.com/2005/address/schema#
 bf,http://bibframe.org/vocab/
+bio,http://vocab.org/bio/0.1/.html
 con,http://www.w3.org/2000/10/swap/pim/contact#
 cwork,http://www.bbc.co.uk/ontologies/creativework/
 dcterms,http://purl.org/dc/terms/
+event,http://purl.org/NET/c4dm/event.owl#
 foaf,http://xmlns.com/foaf/0.1/
 gadm,http://gadm.geovocab.org/ontology#
 geo,http://www.w3.org/2003/01/geo/wgs84_pos#
@@ -11,9 +13,12 @@ geom,http://geovocab.org/geometry#
 geop,http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/
 geosparql,http://www.opengis.net/ont/geosparql#
 gn,http://www.geonames.org/ontology#
+icaltzd,http://www.w3.org/2002/12/cal/icaltzd#
 locn,http://www.w3.org/ns/locn#
-nco,http://www.semanticdesktop.org/ontologies/nco/#
-nie,http://www.semanticdesktop.org/ontologies/nie/#
+lode,http://linkedevents.org/ontology/
+nco,http://www.semanticdesktop.org/ontologies/2007/03/22/nco#
+ncal,http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#
+nie,http://www.semanticdesktop.org/ontologies/2007/01/19/nie#
 ocd,http://dati.camera.it/ocd/
 oparl,http://oparl.org/schema/1.0/
 org,http://www.w3.org/ns/org#
@@ -21,6 +26,7 @@ person,http://www.w3.org/ns/person#
 poder,http://dev.poderopedia.com/vocab/
 ptop,http://www.ontotext.com/protontop#
 schema,http://schema.org/
+sem,http://semanticweb.cs.vu.nl/2009/11/sem/
 skos,http://www.w3.org/2004/02/skos/core#
 spatial,http://geovocab.org/spatial#
 vcard,http://www.w3.org/2006/vcard/ns#

@@ -38,19 +38,19 @@
   "nco": {
     "Post": {
       "term": "Affiliation",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#Affiliation"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco#Affiliation"
     },
     "label": {
       "term": "title",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#title"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco#title"
     },
     "role": {
       "term": "role",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#role"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco#role"
     },
     "organization": {
       "term": "org",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#org"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco#org"
     }
   },
   "ptop": {

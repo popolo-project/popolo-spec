@@ -1,0 +1,366 @@
+{
+  "schema": {
+    "Event": {
+      "term": "Event",
+      "url": "http://schema.org/Event"
+    },
+    "name": {
+      "term": "name",
+      "url": "http://schema.org/name"
+    },
+    "description": {
+      "term": "description",
+      "url": "http://schema.org/description"
+    },
+    "start time": {
+      "term": "startDate",
+      "url": "http://schema.org/startDate"
+    },
+    "end time": {
+      "term": "endDate",
+      "url": "http://schema.org/endDate"
+    },
+    "organization": {
+      "term": "organizer",
+      "url": "http://schema.org/organizer"
+    },
+    "location": {
+      "term": "location",
+      "url": "http://schema.org/location"
+    },
+    "attendee": {
+      "term": "attendee",
+      "url": "http://schema.org/attendee"
+    },
+    "status": {
+      "term": "eventStatus",
+      "url": "http://schema.org/eventStatus"
+    },
+    "parent event": {
+      "term": "superEvent",
+      "url": "http://schema.org/superEvent"
+    }
+  },
+  "bio": {
+    "Event": {
+      "term": "Event",
+      "url": "http://purl.org/vocab/bio/0.1/"
+    },
+    "start time": {
+      "term": "date",
+      "url": "http://purl.org/vocab/bio/0.1/date"
+    },
+    "organization": {
+      "term": "organization",
+      "url": "http://purl.org/vocab/bio/0.1/organization"
+    },
+    "location": {
+      "term": "place",
+      "url": "http://purl.org/vocab/bio/0.1/place"
+    },
+    "attendee": {
+      "term": "agent",
+      "url": "http://purl.org/vocab/bio/0.1/agent"
+    },
+    "next event": {
+      "term": "followingEvent",
+      "url": "http://purl.org/vocab/bio/0.1/followingEvent"
+    },
+    "previous event": {
+      "term": "precedingEvent",
+      "url": "http://purl.org/vocab/bio/0.1/precedingEvent"
+    }
+  },
+  "event": {
+    "Event": {
+      "term": "Event",
+      "url": "http://purl.org/NET/c4dm/event.owl#Event"
+    },
+    "start time": {
+      "term": "time",
+      "url": "http://purl.org/NET/c4dm/event.owl#time"
+    },
+    "location": {
+      "term": "place",
+      "url": "http://purl.org/NET/c4dm/event.owl#place"
+    },
+    "attendee": {
+      "term": "agent",
+      "url": "http://purl.org/NET/c4dm/event.owl#agent"
+    },
+    "parent event": {
+      "term": "sub_event",
+      "url": "http://purl.org/NET/c4dm/event.owl#sub_event"
+    }
+  },
+  "icaltzd": {
+    "Event": {
+      "term": "Vevent",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#Vevent"
+    },
+    "name": {
+      "term": "summary",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#summary"
+    },
+    "description": {
+      "term": "description",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#description"
+    },
+    "start time": {
+      "term": "dtstart",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#dtstart"
+    },
+    "end time": {
+      "term": "dtend",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#dtend"
+    },
+    "classification": {
+      "term": "categories",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#categories"
+    },
+    "identifier": {
+      "term": "uid",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#uid"
+    },
+    "organization": {
+      "term": "organizer",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#organizer"
+    },
+    "location": {
+      "term": "location",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#location"
+    },
+    "attendee": {
+      "term": "attendee",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#attendee"
+    },
+    "status": {
+      "term": "status",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#status"
+    },
+    "parent event": {
+      "term": "relatedTo",
+      "url": "http://www.w3.org/2002/12/cal/icaltzd#relatedTo"
+    }
+  },
+  "lode": {
+    "Event": {
+      "term": "Event",
+      "url": "http://linkedevents.org/ontology/Event"
+    },
+    "start time": {
+      "term": "atTime",
+      "url": "http://linkedevents.org/ontology/atTime"
+    },
+    "location": {
+      "term": "atPlace",
+      "url": "http://linkedevents.org/ontology/atPlace"
+    },
+    "attendee": {
+      "term": "involvedAgent",
+      "url": "http://linkedevents.org/ontology/involvedAgent"
+    }
+  },
+  "ncal": {
+    "Event": {
+      "term": "Event",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#Event"
+    },
+    "name": {
+      "term": "summary",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#summary"
+    },
+    "description": {
+      "term": "description",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#description"
+    },
+    "start time": {
+      "term": "dtstart",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#dtstart"
+    },
+    "end time": {
+      "term": "dtend",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#dtend"
+    },
+    "classification": {
+      "term": "categories",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#categories"
+    },
+    "identifier": {
+      "term": "uid",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#uid"
+    },
+    "organization": {
+      "term": "organizer",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#organizer"
+    },
+    "location": {
+      "term": "location",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#location"
+    },
+    "attendee": {
+      "term": "attendee",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#attendee"
+    },
+    "status": {
+      "term": "eventStatus",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#eventStatus"
+    },
+    "parent event": {
+      "term": "relatedToParent",
+      "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#relatedToParent"
+    }
+  },
+  "sem": {
+    "Event": {
+      "term": "Event",
+      "url": "http://semanticweb.cs.vu.nl/2009/11/sem/Event"
+    },
+    "start time": {
+      "term": "hasBeginTimeStamp",
+      "url": "http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp"
+    },
+    "end time": {
+      "term": "hasEndTimeStamp",
+      "url": "http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp"
+    },
+    "classification": {
+      "term": "eventType",
+      "url": "http://semanticweb.cs.vu.nl/2009/11/sem/eventType"
+    },
+    "location": {
+      "term": "hasPlace",
+      "url": "http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace"
+    },
+    "attendee": {
+      "term": "hasActor",
+      "url": "http://semanticweb.cs.vu.nl/2009/11/sem/hasActor"
+    },
+    "parent event": {
+      "term": "subEventOf",
+      "url": "http://semanticweb.cs.vu.nl/2009/11/sem/subEventOf"
+    }
+  },
+  "iCalendar": {
+    "Event": {
+      "term": "VEVENT",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.6.1"
+    },
+    "name": {
+      "term": "SUMMARY",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.8.1.12"
+    },
+    "description": {
+      "term": "DESCRIPTION",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.8.1.5"
+    },
+    "start time": {
+      "term": "DTSTART",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.8.2.4"
+    },
+    "end time": {
+      "term": "DTEND",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.8.2.2"
+    },
+    "classification": {
+      "term": "CATEGORIES",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.8.1.2"
+    },
+    "identifier": {
+      "term": "UID",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.8.4.7"
+    },
+    "organization": {
+      "term": "ORGANIZER",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.8.4.3"
+    },
+    "location": {
+      "term": "LOCATION",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.8.1.7"
+    },
+    "attendee": {
+      "term": "ATTENDEE",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.8.4.1"
+    },
+    "status": {
+      "term": "STATUS",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.8.1.11"
+    },
+    "parent event": {
+      "term": "RELATED-TO",
+      "url": "http://tools.ietf.org/html/rfc5545#section-3.8.4.5"
+    }
+  },
+  "Cornell": {
+    "Event": {
+      "term": "Event"
+    },
+    "start time": {
+      "term": "hasStartDate"
+    },
+    "end time": {
+      "term": "hasEndDate"
+    },
+    "classification": {
+      "term": "hasEventType"
+    },
+    "organization": {
+      "term": "hasSponsoringGroup"
+    },
+    "location": {
+      "term": "hasEventLocation"
+    },
+    "attendee": {
+      "term": "hasParticipant"
+    }
+  },
+  "PML": {
+    "Event": {
+      "term": "calendarObject"
+    },
+    "name": {
+      "term": "label"
+    },
+    "start time": {
+      "term": "startDate, startTime"
+    },
+    "end time": {
+      "term": "endDate, endTime"
+    },
+    "classification": {
+      "term": "type"
+    },
+    "identifier": {
+      "term": "identifier"
+    }
+  },
+  "OpenCivicData": {
+    "Event": {
+      "term": "Event"
+    },
+    "name": {
+      "term": "name"
+    },
+    "description": {
+      "term": "description"
+    },
+    "start time": {
+      "term": "start_time"
+    },
+    "end time": {
+      "term": "end_time"
+    },
+    "classification": {
+      "term": "classification"
+    },
+    "location": {
+      "term": "location"
+    },
+    "attendee": {
+      "term": "participants"
+    },
+    "status": {
+      "term": "status"
+    }
+  }
+}

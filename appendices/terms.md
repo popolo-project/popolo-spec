@@ -39,6 +39,14 @@ id: data
     </tr>
     <tr>
       <td>
+        <code>bio</code>
+      </td>
+      <td>
+        <a href='http://vocab.org/bio/0.1/.html'>http://vocab.org/bio/0.1/.html</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <code>con</code>
       </td>
       <td>
@@ -59,6 +67,14 @@ id: data
       </td>
       <td>
         <a href='http://purl.org/dc/terms/'>http://purl.org/dc/terms/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>event</code>
+      </td>
+      <td>
+        <a href='http://purl.org/NET/c4dm/event.owl#'>http://purl.org/NET/c4dm/event.owl#</a>
       </td>
     </tr>
     <tr>
@@ -119,6 +135,14 @@ id: data
     </tr>
     <tr>
       <td>
+        <code>icaltzd</code>
+      </td>
+      <td>
+        <a href='http://www.w3.org/2002/12/cal/icaltzd#'>http://www.w3.org/2002/12/cal/icaltzd#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <code>locn</code>
       </td>
       <td>
@@ -127,10 +151,26 @@ id: data
     </tr>
     <tr>
       <td>
+        <code>lode</code>
+      </td>
+      <td>
+        <a href='http://linkedevents.org/ontology/'>http://linkedevents.org/ontology/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <code>nco</code>
       </td>
       <td>
-        <a href='http://www.semanticdesktop.org/ontologies/nco/#'>http://www.semanticdesktop.org/ontologies/nco/#</a>
+        <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#'>http://www.semanticdesktop.org/ontologies/2007/03/22/nco#</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>ncal</code>
+      </td>
+      <td>
+        <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#'>http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#</a>
       </td>
     </tr>
     <tr>
@@ -138,7 +178,7 @@ id: data
         <code>nie</code>
       </td>
       <td>
-        <a href='http://www.semanticdesktop.org/ontologies/nie/#'>http://www.semanticdesktop.org/ontologies/nie/#</a>
+        <a href='http://www.semanticdesktop.org/ontologies/2007/01/19/nie#'>http://www.semanticdesktop.org/ontologies/2007/01/19/nie#</a>
       </td>
     </tr>
     <tr>
@@ -199,6 +239,14 @@ id: data
     </tr>
     <tr>
       <td>
+        <code>sem</code>
+      </td>
+      <td>
+        <a href='http://semanticweb.cs.vu.nl/2009/11/sem/'>http://semanticweb.cs.vu.nl/2009/11/sem/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <code>skos</code>
       </td>
       <td>
@@ -238,12 +286,12 @@ id: data
   * [Vote event](#VoteEvent)
   * [Count](#Count)
   * [Vote](#Vote)
-* Geography
+* Other classes
   * [Area](#Area)
-* Works
+  * [Event](#Event)
   * [Speech](#Speech)
 
-* The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `sources`, `externalLinks`, `startDate` and `endDate` across classes.
+The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `sources`, `externalLinks`, `startDate` and `endDate` across classes.
 
 <h2 id="Person">Person</h2>
 
@@ -585,34 +633,34 @@ id: data
           <code>nco</code>
         </th>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#PersonContact'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#PersonContact'>
             PersonContact
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#contactUID'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#contactUID'>
             contactUID
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#hasEmailAddress'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#hasEmailAddress'>
             hasEmailAddress
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#gender'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#gender'>
             gender
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#birthDate'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#birthDate'>
             birthDate
           </a>
         </td>
         <td>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#photo'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#photo'>
             photo
           </a>
         </td>
@@ -621,44 +669,44 @@ id: data
         <td>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#url'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#url'>
             url
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#fullname'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#fullname'>
             fullname
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nickname'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#nickname'>
             nickname
           </a>
         </td>
         <td>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameFamily'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#nameFamily'>
             nameFamily
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameGiven'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#nameGiven'>
             nameGiven
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameAdditional'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#nameAdditional'>
             nameAdditional
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameHonorificPrefix'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#nameHonorificPrefix'>
             <abbr title='nameHonorificPrefix'>nameHonorificPr…</abbr>
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nameHonorificSuffix'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#nameHonorificSuffix'>
             <abbr title='nameHonorificSuffix'>nameHonorificSu…</abbr>
           </a>
         </td>
@@ -1540,22 +1588,22 @@ id: data
           <code>nco</code>
         </th>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#OrganizationContact'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#OrganizationContact'>
             <abbr title='OrganizationContact'>OrganizationCon…</abbr>
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#fullname'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#fullname'>
             fullname
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nickname'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#nickname'>
             nickname
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/01/19/nie/#identifier'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/01/19/nie#identifier'>
             nie:identifier
           </a>
         </td>
@@ -1566,19 +1614,19 @@ id: data
         <td>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/01/19/nie/#description'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/01/19/nie#description'>
             nie:description
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#birthDate'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#birthDate'>
             birthDate
           </a>
         </td>
         <td>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#photo'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#photo'>
             photo
           </a>
         </td>
@@ -2130,24 +2178,24 @@ id: data
           <code>nco</code>
         </th>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#Affiliation'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#Affiliation'>
             Affiliation
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#title'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#title'>
             title
           </a>
         </td>
         <td>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#role'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#role'>
             role
           </a>
         </td>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#org'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#org'>
             org
           </a>
         </td>
@@ -2394,7 +2442,7 @@ id: data
           <code>nco</code>
         </th>
         <td>
-          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#PostalAddress'>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/03/22/nco#PostalAddress'>
             PostalAddress
           </a>
         </td>
@@ -5115,6 +5163,631 @@ id: data
         </td>
         <td>
           featureType
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<h2 id="Event">Event</h2>
+
+* The [NEPOMUK Calendar Ontology (NCAL)](http://www.semanticdesktop.org/ontologies/2007/04/02/ncal/#sec-introduction) has a detailed discussion of prior work.
+* The [Simple Event Model (SEM)](http://www.cs.vu.nl/~guus/papers/Hage11b.pdf) has an accompanying paper.
+* [RFC 5545](http://tools.ietf.org/html/rfc5545) specifies the iCalendar data format.
+
+<div class='table-responsive'>
+  <table class='table table-striped table-hover table-condensed'>
+    <thead>
+      <tr>
+        <th scope='row'>Term</th>
+        <td>Event</td>
+        <td>name</td>
+        <td>description</td>
+        <td>start time</td>
+        <td>end time</td>
+        <td>location</td>
+        <td>status</td>
+        <td>identifier</td>
+        <td>classification</td>
+        <td>organization</td>
+        <td>attendee</td>
+        <td>parent event</td>
+        <td>next event</td>
+        <td>previous event</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope='row'>
+          <code>schema</code>
+        </th>
+        <td>
+          <a href='http://schema.org/Event'>
+            Event
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/name'>
+            name
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/description'>
+            description
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/startDate'>
+            startDate
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/endDate'>
+            endDate
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/location'>
+            location
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/eventStatus'>
+            eventStatus
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://schema.org/organizer'>
+            organizer
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/attendee'>
+            attendee
+          </a>
+        </td>
+        <td>
+          <a href='http://schema.org/superEvent'>
+            superEvent
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>bio</code>
+        </th>
+        <td>
+          <a href='http://purl.org/vocab/bio/0.1/'>
+            Event
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://purl.org/vocab/bio/0.1/date'>
+            date
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://purl.org/vocab/bio/0.1/place'>
+            place
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://purl.org/vocab/bio/0.1/organization'>
+            organization
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/vocab/bio/0.1/agent'>
+            agent
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://purl.org/vocab/bio/0.1/followingEvent'>
+            followingEvent
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/vocab/bio/0.1/precedingEvent'>
+            precedingEvent
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>event</code>
+        </th>
+        <td>
+          <a href='http://purl.org/NET/c4dm/event.owl#Event'>
+            Event
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://purl.org/NET/c4dm/event.owl#time'>
+            time
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://purl.org/NET/c4dm/event.owl#place'>
+            place
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://purl.org/NET/c4dm/event.owl#agent'>
+            agent
+          </a>
+        </td>
+        <td>
+          <a href='http://purl.org/NET/c4dm/event.owl#sub_event'>
+            sub_event
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>icaltzd</code>
+        </th>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#Vevent'>
+            Vevent
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#summary'>
+            summary
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#description'>
+            description
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#dtstart'>
+            dtstart
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#dtend'>
+            dtend
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#location'>
+            location
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#status'>
+            status
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#uid'>
+            uid
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#categories'>
+            categories
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#organizer'>
+            organizer
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#attendee'>
+            attendee
+          </a>
+        </td>
+        <td>
+          <a href='http://www.w3.org/2002/12/cal/icaltzd#relatedTo'>
+            relatedTo
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>lode</code>
+        </th>
+        <td>
+          <a href='http://linkedevents.org/ontology/Event'>
+            Event
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://linkedevents.org/ontology/atTime'>
+            atTime
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://linkedevents.org/ontology/atPlace'>
+            atPlace
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://linkedevents.org/ontology/involvedAgent'>
+            involvedAgent
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>ncal</code>
+        </th>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#Event'>
+            Event
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#summary'>
+            summary
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#description'>
+            description
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#dtstart'>
+            dtstart
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#dtend'>
+            dtend
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#location'>
+            location
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#eventStatus'>
+            eventStatus
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#uid'>
+            uid
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#categories'>
+            categories
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#organizer'>
+            organizer
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#attendee'>
+            attendee
+          </a>
+        </td>
+        <td>
+          <a href='http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#relatedToParent'>
+            relatedToParent
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          <code>sem</code>
+        </th>
+        <td>
+          <a href='http://semanticweb.cs.vu.nl/2009/11/sem/Event'>
+            Event
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp'>
+            <abbr title='hasBeginTimeStamp'>hasBeginTimeSta…</abbr>
+          </a>
+        </td>
+        <td>
+          <a href='http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp'>
+            hasEndTimeStamp
+          </a>
+        </td>
+        <td>
+          <a href='http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace'>
+            hasPlace
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://semanticweb.cs.vu.nl/2009/11/sem/eventType'>
+            eventType
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://semanticweb.cs.vu.nl/2009/11/sem/hasActor'>
+            hasActor
+          </a>
+        </td>
+        <td>
+          <a href='http://semanticweb.cs.vu.nl/2009/11/sem/subEventOf'>
+            subEventOf
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          iCalendar
+        </th>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.6.1'>
+            VEVENT
+          </a>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.8.1.12'>
+            SUMMARY
+          </a>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.8.1.5'>
+            DESCRIPTION
+          </a>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.8.2.4'>
+            DTSTART
+          </a>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.8.2.2'>
+            DTEND
+          </a>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.8.1.7'>
+            LOCATION
+          </a>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.8.1.11'>
+            STATUS
+          </a>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.8.4.7'>
+            UID
+          </a>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.8.1.2'>
+            CATEGORIES
+          </a>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.8.4.3'>
+            ORGANIZER
+          </a>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.8.4.1'>
+            ATTENDEE
+          </a>
+        </td>
+        <td>
+          <a href='http://tools.ietf.org/html/rfc5545#section-3.8.4.5'>
+            RELATED-TO
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Cornell
+        </th>
+        <td>
+          Event
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          hasStartDate
+        </td>
+        <td>
+          hasEndDate
+        </td>
+        <td>
+          <abbr title='hasEventLocation'>hasEventLocatio…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          hasEventType
+        </td>
+        <td>
+          <abbr title='hasSponsoringGroup'>hasSponsoringGr…</abbr>
+        </td>
+        <td>
+          hasParticipant
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          PML
+        </th>
+        <td>
+          calendarObject
+        </td>
+        <td>
+          label
+        </td>
+        <td>
+        </td>
+        <td>
+          <abbr title='startDate, startTime'>startDate, star…</abbr>
+        </td>
+        <td>
+          <abbr title='endDate, endTime'>endDate, endTim…</abbr>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          identifier
+        </td>
+        <td>
+          type
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          OpenCivicData
+        </th>
+        <td>
+          Event
+        </td>
+        <td>
+          name
+        </td>
+        <td>
+          description
+        </td>
+        <td>
+          start_time
+        </td>
+        <td>
+          end_time
+        </td>
+        <td>
+          location
+        </td>
+        <td>
+          status
+        </td>
+        <td>
+        </td>
+        <td>
+          classification
+        </td>
+        <td>
+        </td>
+        <td>
+          participants
+        </td>
+        <td>
         </td>
         <td>
         </td>

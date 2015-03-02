@@ -1,0 +1,72 @@
+  "": {
+    "Event": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "name": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "description": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "start time": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "end time": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "classification": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "identifier": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "organization": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "location": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "attendee": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "status": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "parent event": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "next event": {
+      "term": "",
+      "url": "",
+      "label": ""
+    },
+    "previous event": {
+      "term": "",
+      "url": "",
+      "label": ""
+    }
+  },

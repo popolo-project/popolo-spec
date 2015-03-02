@@ -144,6 +144,22 @@ task :default do
       'parent area',
       'geometry',
     ],
+    event: [
+      'Event',
+      'name',
+      'description',
+      'start time',
+      'end time',
+      'location',
+      'status',
+      'identifier',
+      'classification',
+      'organization',
+      'attendee',
+      'parent event',
+      'next event',
+      'previous event'
+    ],
     speech: [
       'Speech',
       'speaker',

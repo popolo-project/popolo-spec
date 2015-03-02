@@ -40,7 +40,7 @@
   "nco": {
     "Address": {
       "term": "PostalAddress",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#PostalAddress"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco#PostalAddress"
     }
   },
   "ad": {

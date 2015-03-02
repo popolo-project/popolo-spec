@@ -129,31 +129,31 @@
   "nco": {
     "Organization": {
       "term": "OrganizationContact",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#OrganizationContact"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco#OrganizationContact"
     },
     "name": {
       "term": "fullname",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#fullname"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco#fullname"
     },
     "alternate name": {
       "term": "nickname",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#nickname"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco#nickname"
     },
     "identifier": {
       "term": "nie:identifier",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/01/19/nie/#identifier"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/01/19/nie#identifier"
     },
     "founding date": {
       "term": "birthDate",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#birthDate"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco#birthDate"
     },
     "description": {
       "term": "nie:description",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/01/19/nie/#description"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/01/19/nie#description"
     },
     "image": {
       "term": "photo",
-      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco/#photo"
+      "url": "http://www.semanticdesktop.org/ontologies/2007/03/22/nco#photo"
     }
   },
   "poder": {
