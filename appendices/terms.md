@@ -5552,6 +5552,45 @@ The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `so
       </tr>
       <tr>
         <th scope='row'>
+          <code>ocd</code>
+        </th>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href='http://dati.camera.it/ocd/startDate'>
+            startDate
+          </a>
+        </td>
+        <td>
+          <a href='http://dati.camera.it/ocd/endDate'>
+            endDate
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
           <code>sem</code>
         </th>
         <td>

@@ -211,6 +211,16 @@
       "url": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#relatedToParent"
     }
   },
+  "ocd": {
+    "start time": {
+      "term": "startDate",
+      "url": "http://dati.camera.it/ocd/startDate"
+    },
+    "end time": {
+      "term": "endDate",
+      "url": "http://dati.camera.it/ocd/endDate"
+    }
+  },
   "sem": {
     "Event": {
       "term": "Event",
