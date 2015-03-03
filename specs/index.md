@@ -276,13 +276,13 @@ Given that the same RDF resource can be serialized in many different ways using 
 
 * A JSON-LD serialization <em class="rfc2119">should</em> use the [`@context`](http://json-ld.org/spec/latest/json-ld/#the-context), [`@type`](http://json-ld.org/spec/latest/json-ld/#dfn-node-type) and [`@id`](http://json-ld.org/spec/latest/json-ld/#node-identifiers) [keywords](http://json-ld.org/spec/latest/json-ld/#dfn-keyword).
 * The value of the `email` property of a `Person` <em class="rfc2119">must</em> be a ['mailto' URI](http://tools.ietf.org/html/rfc6068).
-* The value of the `role` property of a `Membership`, `Post`, `Vote`, or `Speech` <em class="rfc2119">must</em> be a URI or blank node for a `org:Role`.
-* The value of the `classification` property of an `Organization`, `Motion` or `Speech` <em class="rfc2119">must</em> be a URI or blank node for a `skos:Concept`.
+* The value of the `role` property of a `Membership`, `Post`, `Vote` or `Speech` <em class="rfc2119">must</em> be a URI or blank node for a `org:Role`.
+* The value of the `classification` property of an `Organization` or `Motion` <em class="rfc2119">must</em> be a URI or blank node for a `skos:Concept`.
 * The value of the `classification` property of an `Area` <em class="rfc2119">must</em> be a URI or blank node for a `gn:Code`, which is a subclass of `skos:Concept`.
 * The value of the `type` property of a `ContactDetail` <em class="rfc2119">must</em> be a [node type](http://json-ld.org/spec/latest/json-ld/#dfn-node-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
 * The value of the `scheme` property of an `Identifier` <em class="rfc2119">must</em> be a [value type](http://json-ld.org/spec/latest/json-ld/#dfn-value-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
 * The value of the `requirement` property of a `Motion` <em class="rfc2119">must</em> be a URI or blank node for a `opengov:Requirement`.
-* The value of the `result` property of a `Motion` <em class="rfc2119">must</em> be a URI or blank node for a `opengov:Result`.
+* The value of the `result` property of a `Motion`, `VoteEvent` or `GroupResult` <em class="rfc2119">must</em> be a URI or blank node for a `opengov:Result`.
 * The value of the `audio` property of a `Speech` <em class="rfc2119">must</em> be a URI or blank node for a [`schema:AudioObject`](http://schema.org/AudioObject).
 * The value of the `video` property of a `Speech` <em class="rfc2119">must</em> be a URI or blank node for a [`schema:VideoObject`](http://schema.org/VideoObject).
 * The value of the `links` and `sources` properties <em class="rfc2119">must</em> be an array of URIs, not an array of [link objects](/specs/#link).

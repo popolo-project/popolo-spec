@@ -157,6 +157,8 @@ In Dublin Core, an audience is an [AgentClass](http://dublincore.org/documents/d
 
 * The term `creator` is used instead of `speaker` (which would be clearer), to be consistent with the [Motion](/specs/motion.html) class.
 * The value of the `role` property is a string, instead of an `org:Role`.
+* The value of the `audio` property is a URI, instead of a `schema:AudioObject`.
+* The value of the `video` property is a URI, instead of a `schema:VideoObject`.
 
 <ul class="nav nav-tabs no-js">
   <li><a href="#speech-schema">JSON Schema</a></li>
