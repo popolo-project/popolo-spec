@@ -9,7 +9,7 @@
   opengov:role [a org:Role; skos:prefLabel "Speaker"@en];
   odrs:attributionText "Mr. Speaker";
   schema:text "On Tuesday, March 4, Senator ...";
-  schema:audio <http://example.com/audio/2014-03-25-ruling.ogg>;
+  schema:audio [a schema:AudioObject; schema:contentUrl <http://example.com/audio/2014-03-25-ruling.ogg>];
   dcterms:date "2014-03-25T17:00:00Z"^^dcterms:W3CDTF;
   schema:title "Speaker's Ruling - Motion 55";
   schema:position 42;

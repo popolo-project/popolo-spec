@@ -210,9 +210,8 @@ Each of the following subdocuments describes a class and its properties:
   * [Vote event](/specs/vote-event.html)
   * [Count](/specs/count.html)
   * [Vote](/specs/vote.html)
-* Geography
-  * [Area](/specs/contact-detail.html)
-* Works
+* Other classes
+  * [Area](/specs/area.html)
   * [Speech](/specs/speech.html)
 
 The structure of each subdocument is:
@@ -276,15 +275,17 @@ The data specification defines two serializations: <abbr title="Resource Descrip
 Given that the same RDF resource can be serialized in many different ways using [JSON-LD](http://json-ld.org/), [JSON Schema](http://json-schema.org/) are provided [below](#schema-and-examples) to ensure all JSON serializations look alike, to maximize interoperability. A JSON-LD serialization will nonetheless differ from a plain JSON serialization in a few ways:
 
 * A JSON-LD serialization <em class="rfc2119">should</em> use the [`@context`](http://json-ld.org/spec/latest/json-ld/#the-context), [`@type`](http://json-ld.org/spec/latest/json-ld/#dfn-node-type) and [`@id`](http://json-ld.org/spec/latest/json-ld/#node-identifiers) [keywords](http://json-ld.org/spec/latest/json-ld/#dfn-keyword).
-* The value of the `email` property of a `Person` <em class="rfc2119">should</em> be a ['mailto' URI](http://tools.ietf.org/html/rfc6068).
-* The value of the `role` property of a `Membership`, `Post`, `Vote`, or `Speech` <em class="rfc2119">should</em> be a URI or blank node for a `org:Role`.
-* The value of the `classification` property of an `Organization`, `Motion` or `Speech` <em class="rfc2119">should</em> be a URI or blank node for a `skos:Concept`.
-* The value of the `classification` property of an `Area` <em class="rfc2119">should</em> be a URI or blank node for a `gn:Code`, which is a subclass of `skos:Concept`.
-* The value of the `type` property of a `ContactDetail` <em class="rfc2119">should</em> be a [node type](http://json-ld.org/spec/latest/json-ld/#dfn-node-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
-* The value of the `scheme` property of an `Identifier` <em class="rfc2119">should</em> be a [value type](http://json-ld.org/spec/latest/json-ld/#dfn-value-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
-* The value of the `requirement` property of a `Motion` <em class="rfc2119">should</em> be a URI or blank node for a `opengov:Requirement`.
-* The value of the `result` property of a `Motion` <em class="rfc2119">should</em> be a URI or blank node for a `opengov:Result`.
-* The value of the `links` and `sources` properties <em class="rfc2119">should</em> be an array of URIs, not an array of [link objects](/specs/#link).
+* The value of the `email` property of a `Person` <em class="rfc2119">must</em> be a ['mailto' URI](http://tools.ietf.org/html/rfc6068).
+* The value of the `role` property of a `Membership`, `Post`, `Vote`, or `Speech` <em class="rfc2119">must</em> be a URI or blank node for a `org:Role`.
+* The value of the `classification` property of an `Organization`, `Motion` or `Speech` <em class="rfc2119">must</em> be a URI or blank node for a `skos:Concept`.
+* The value of the `classification` property of an `Area` <em class="rfc2119">must</em> be a URI or blank node for a `gn:Code`, which is a subclass of `skos:Concept`.
+* The value of the `type` property of a `ContactDetail` <em class="rfc2119">must</em> be a [node type](http://json-ld.org/spec/latest/json-ld/#dfn-node-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
+* The value of the `scheme` property of an `Identifier` <em class="rfc2119">must</em> be a [value type](http://json-ld.org/spec/latest/json-ld/#dfn-value-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
+* The value of the `requirement` property of a `Motion` <em class="rfc2119">must</em> be a URI or blank node for a `opengov:Requirement`.
+* The value of the `result` property of a `Motion` <em class="rfc2119">must</em> be a URI or blank node for a `opengov:Result`.
+* The value of the `audio` property of a `Speech` <em class="rfc2119">must</em> be a URI or blank node for a [`schema:AudioObject`](http://schema.org/AudioObject).
+* The value of the `video` property of a `Speech` <em class="rfc2119">must</em> be a URI or blank node for a [`schema:VideoObject`](http://schema.org/VideoObject).
+* The value of the `links` and `sources` properties <em class="rfc2119">must</em> be an array of URIs, not an array of [link objects](/specs/#link).
 * A JSON-LD serialization <em class="rfc2119">should not</em> use the `*_id` properties:
 
 <table>
