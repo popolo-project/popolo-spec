@@ -3571,7 +3571,7 @@ The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `so
         <td>organization</td>
         <td>legislative session</td>
         <td>identifier</td>
-        <td>title</td>
+        <td>name</td>
         <td>motion</td>
         <td>start time</td>
         <td>end time</td>

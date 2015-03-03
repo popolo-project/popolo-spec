@@ -8,7 +8,7 @@
       "term": "superEvent",
       "url": "http://schema.org/superEvent"
     },
-    "title": {
+    "name": {
       "term": "name",
       "url": "http://schema.org/name"
     },
@@ -28,7 +28,7 @@
     "identifier": {
       "term": "identifier"
     },
-    "title": {
+    "name": {
       "term": "label"
     },
     "start time": {
@@ -97,7 +97,7 @@
     "identifier": {
       "term": "NUMVOT"
     },
-    "title": {
+    "name": {
       "term": "TEXORDIA"
     },
     "motion": {
@@ -137,7 +137,7 @@
     "identifier": {
       "term": "number"
     },
-    "title": {
+    "name": {
       "term": "description"
     },
     "start time": {
@@ -151,7 +151,7 @@
     "Vote event": {
       "term": "Vote"
     },
-    "title": {
+    "name": {
       "term": "Context"
     },
     "result": {
@@ -168,7 +168,7 @@
     "identifier": {
       "term": "cislo"
     },
-    "title": {
+    "name": {
       "term": "nazev_dlouhy"
     },
     "start time": {
@@ -318,7 +318,7 @@
     "identifier": {
       "term": "registrationNumber"
     },
-    "title": {
+    "name": {
       "term": "divisionText"
     },
     "motion": {
@@ -361,7 +361,7 @@
     "identifier": {
       "term": "rollcall-num"
     },
-    "title": {
+    "name": {
       "term": "vote-desc"
     },
     "start time": {
@@ -387,7 +387,7 @@
     "identifier": {
       "term": "vote_number"
     },
-    "title": {
+    "name": {
       "term": "title"
     },
     "start time": {
@@ -410,7 +410,7 @@
     "identifier": {
       "term": "vote_number"
     },
-    "title": {
+    "name": {
       "term": "vote_title"
     },
     "start time": {

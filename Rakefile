@@ -110,7 +110,7 @@ task :default do
       'organization',
       'legislative session',
       'identifier',
-      'title',
+      'name',
       'motion',
       'start time',
       'end time',
