@@ -24,13 +24,10 @@ title: The Popolo Project
       <li><a href="/specs/vote.html">Vote</a></li>
     </ul>
 
-    <h2>Geography</h2>
+    <h2>Other classes</h2>
     <ul>
       <li><a href="/specs/area.html">Area</a></li>
-    </ul>
-
-    <h2>Works</h2>
-    <ul>
+      <li><a href="/specs/event.html">Event</a></li>
       <li><a href="/specs/speech.html">Speech</a></li>
     </ul>
   </div>

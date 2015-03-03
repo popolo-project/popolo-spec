@@ -60,6 +60,11 @@ The data specification will define terms (classes and properties) to describe an
     <div>A geographic area whose geometry may change over time</div>
     <p class="note">e.g. a country, city, ward, etc.</p>
   </dd>
+  <dt>Event</dt>
+  <dd>
+    <div>An occurrence that people may attend</div>
+    <p class="note">e.g. a legislative session, a meeting, a hearing, etc.</p>
+  </dd>
   <dt>Speech</dt>
   <dd>
     <div>A speech by a person, a scene (e.g. applause), a narrative (e.g. "The House rose at 3:20pm"), or another non-speech part of a discussion (e.g. a list of bills).</div>
@@ -154,6 +159,11 @@ Following a [survey of existing specifications](/appendices/survey.html), the da
       <td><code>locn</code></td>
     </tr>
     <tr>
+      <td><abbr title="Open Semantic Collaboration Architecture">OSCA</abbr> Foundation</td>
+      <td><a href="http://www.semanticdesktop.org/ontologies/2007/04/02/ncal">NEPOMUK Calendar Ontology</a></td>
+      <td><code>ncal</code></td>
+    </tr>
+    <tr>
       <td>Open Data Institute</td>
       <td><a href="http://schema.theodi.org/odrs/">Open Data Rights Statement Vocabulary</a></td>
       <td><code>odrs</code></td>
@@ -212,6 +222,7 @@ Each of the following subdocuments describes a class and its properties:
   * [Vote](/specs/vote.html)
 * Other classes
   * [Area](/specs/area.html)
+  * [Event](/specs/event.html)
   * [Speech](/specs/speech.html)
 
 The structure of each subdocument is:
@@ -283,6 +294,8 @@ Given that the same RDF resource can be serialized in many different ways using 
 * The value of the `scheme` property of an `Identifier` <em class="rfc2119">must</em> be a [value type](http://json-ld.org/spec/latest/json-ld/#dfn-value-type), i.e. an <abbr title="Internationalized Resource Identifiers">IRI</abbr>.
 * The value of the `requirement` property of a `Motion` <em class="rfc2119">must</em> be a URI or blank node for a `opengov:Requirement`.
 * The value of the `result` property of a `Motion`, `VoteEvent` or `GroupResult` <em class="rfc2119">must</em> be a URI or blank node for a `opengov:Result`.
+* The value of the `location` property of an `Event` <em class="rfc2119">must</em> be a URI or blank node for a [`schema:Place`](http://schema.org/Place) or [`schema:PostalAddress`](http://schema.org/PostalAddress).
+* The value of the `status` property of an `Event` <em class="rfc2119">must</em> be a URI or blank node for a [`schema:EventStatusType`](http://schema.org/EventStatusType).
 * The value of the `audio` property of a `Speech` <em class="rfc2119">must</em> be a URI or blank node for a [`schema:AudioObject`](http://schema.org/AudioObject).
 * The value of the `video` property of a `Speech` <em class="rfc2119">must</em> be a URI or blank node for a [`schema:VideoObject`](http://schema.org/VideoObject).
 * The value of the `links` and `sources` properties <em class="rfc2119">must</em> be an array of URIs, not an array of [link objects](/specs/#link).
@@ -438,6 +451,12 @@ As described in the [conformance](#conformance) section, JSON serializations <em
       <td><a href="/contexts/area.jsonld">area.jsonld</a></td>
       <td><a href="/examples/area.json">area.json</a></td>
       <td><a href="/examples/area.ttl">area.ttl</a></td>
+    </tr>
+    <tr>
+      <td><a href="/schemas/event.json">Event</a></td>
+      <td><a href="/contexts/event.jsonld">event.jsonld</a></td>
+      <td><a href="/examples/event.json">event.json</a></td>
+      <td><a href="/examples/event.ttl">event.ttl</a></td>
     </tr>
     <tr>
       <td><a href="/schemas/speech.json">Speech</a></td>
@@ -649,6 +668,7 @@ For political groups, the range of the `group` property will be an [organization
 
 <h1 id="history">7. Change history</h1>
 
+* 2015-03-02: Add an Event class.
 * 2015-02-26: `name` is no longer a required property in `other_name.json`.
 * 2014-12-21: Add one-line description and extended description properties to the Organization class.
 * 2014-12-18: A Vote must have a vote event.

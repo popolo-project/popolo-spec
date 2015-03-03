@@ -1,0 +1,16 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ncal: <http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#> .
+@prefix schema: <http://schema.org/> .
+<http://example.com/events/parliament-41-session-1.ttl>
+  a schema:Event;
+  schema:name "1st Session of the 41st Parliament";
+  schema:description "Parliament convened on June 2, 2011, with the election of Andrew Scheer as Speaker";
+  schema:startDate "2011-06-02"^^dcterms:W3CDTF;
+  schema:endDate "2013-09-13"^^dcterms:W3CDTF;
+  schema:location [a schema:Place; schema:name "House of Commons"];
+  schema:eventStatus ncal:confirmedStatus;
+  dcterms:identifier "1";
+  ncal:categories "Legislative session";
+  schema:organizer <http://example.com/organizations/house-of-commons.ttl>;
+  schema:attendee <http://example.com/people/andrew-scheer.ttl>;
+  schema:superEvent <http://example.com/events/parliament-41.ttl> .

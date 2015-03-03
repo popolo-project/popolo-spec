@@ -53,6 +53,7 @@ If two software components are to interoperate by allowing direct access to each
 * `areas`
 * `contact_details`
 * `counts`
+* `events`
 * `group_results`
 * `identifiers`
 * `links`

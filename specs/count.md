@@ -96,7 +96,7 @@ For political groups, the range of the `group` property will be an [organization
 
 ## Option
 
-Implementations <em class="rfc2119">may</em> use values from outside this list to reflect the diversity of voting options.
+Implementations <em class="rfc2119">may</em> use values from outside this list.
 
 * `yes`
 * `no`

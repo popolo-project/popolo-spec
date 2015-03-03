@@ -146,7 +146,7 @@ A vote cannot exist outside a vote event. All votes <em class="rfc2119">must</em
 
 ## Option
 
-Implementations <em class="rfc2119">may</em> use values from outside this list to reflect the diversity of voting options.
+Implementations <em class="rfc2119">may</em> use values from outside this list.
 
 * `yes`
 * `no`

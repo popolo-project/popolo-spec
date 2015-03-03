@@ -1,0 +1,22 @@
+{
+  "id": "parliament-41-session-1",
+  "name": "1st Session of the 41st Parliament",
+  "description": "Parliament convened on June 2, 2011, with the election of Andrew Scheer as Speaker",
+  "start_date": "2011-06-02",
+  "end_date": "2013-09-13",
+  "location": "House of Commons",
+  "status": "confirmed",
+  "identifiers": [
+    {
+      "identifier": "1"
+    }
+  ],
+  "classification": "Legislative session",
+  "organization_id": "parliament-of-canada",
+  "attendees": [
+    {
+      "id": "andrew-scheer"
+    }
+  ],
+  "parent_id": "parliament-41"
+}

@@ -44,7 +44,7 @@
   "bio": {
     "Event": {
       "term": "Event",
-      "url": "http://purl.org/vocab/bio/0.1/"
+      "url": "http://purl.org/vocab/bio/0.1/Event"
     },
     "start time": {
       "term": "date",

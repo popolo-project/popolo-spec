@@ -70,7 +70,7 @@
     },
     "event": {
       "description": "The event at which the speech is spoken",
-      "type": ["object", "null"]
+      "$ref": "http://www.popoloproject.com/schemas/event.json#"
     },
     "created_at": {
       "description": "The time at which the resource was created",

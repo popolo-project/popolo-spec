@@ -23,7 +23,7 @@
     },
     "legislative_session": {
       "description": "The legislative session in which the motion is proposed",
-      "type": ["object", "null"]
+      "$ref": "http://www.popoloproject.com/schemas/event.json#"
     },
     "creator_id": {
       "description": "The ID of the person who proposed the motion",

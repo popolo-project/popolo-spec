@@ -23,7 +23,7 @@
     },
     "legislative_session": {
       "description": "The legislative session in which the vote occurs",
-      "type": ["object", "null"]
+      "$ref": "http://www.popoloproject.com/schemas/event.json#"
     },
     "identifier": {
       "description": "An issued identifier",

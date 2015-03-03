@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "id": "http://www.popoloproject.com/schemas/event.json#",
+  "title": "Event",
+  "description": "An occurrence that people may attend",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The event's name",
+      "type": ["string", "null"]
+    },
+    "description": {
+      "description": "The event's description",
+      "type": ["string", "null"]
+    },
+    "start_date": {
+      "description": "The time at which the event starts",
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}((-[0-9]{2}){0,2}|(-[0-9]{2}){2}(T[0-9]{2}(:[0-9]{2}(:[0-9]{2})?)?Z)?)$"
+    },
+    "end_date": {
+      "description": "The time at which the event ends",
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}((-[0-9]{2}){0,2}|(-[0-9]{2}){2}(T[0-9]{2}(:[0-9]{2}(:[0-9]{2})?)?Z)?)$"
+    },
+    "location": {
+      "description": "The event's location",
+      "type": ["string", "null"]
+    },
+    "status": {
+      "description": "The event's status",
+      "type": ["string", "null"]
+    },
+    "identifiers": {
+      "description": "Issued identifiers",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/identifier.json#"
+      }
+    },
+    "classification": {
+      "description": "The event's category",
+      "type": ["string", "null"]
+    },
+    "organization_id": {
+      "description": "The ID of the organization organizing the event",
+      "type": ["string", "null"]
+    },
+    "organization": {
+      "description": "The organization organizing the event",
+      "$ref": "http://www.popoloproject.com/schemas/organization.json#"
+    },
+    "attendees": {
+      "description": "People attending the event",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/person.json#"
+      }
+    },
+    "parent_id": {
+      "description": "The ID of an event that this event is a part of",
+      "type": ["string", "null"]
+    },
+    "parent": {
+      "description": "An event that this event is a part of",
+      "$ref": "http://www.popoloproject.com/schemas/event.json#"
+    },
+    "created_at": {
+      "description": "The time at which the resource was created",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "description": "The time at which the resource was last modified",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "sources": {
+      "description": "URLs to documents from which the resource is derived",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/link.json#"
+      }
+    }
+  }
+}

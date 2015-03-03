@@ -160,7 +160,7 @@ Either a person or an organization can create a [CreativeWork](http://schema.org
 
 ## Result
 
-Implementations <em class="rfc2119">may</em> use values from outside this list to reflect the diversity of results.
+Implementations <em class="rfc2119">may</em> use values from outside this list.
 
 * `pass`
 * `fail`

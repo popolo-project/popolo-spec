@@ -129,6 +129,8 @@ Few specifications exist for vote events, and few legislatures publish vote data
   </tbody>
 </table>
 
+The `VoteEvent` class is a subclass of the [`Event`](/specs/event.html) class.
+
 The vote totals <em class="rfc2119">should</em> agree with the individual votes. The [vote totals](/specs/count.html) <em class="rfc2119">may</em> not include all options from individual votes, and the [individual votes](/specs/vote.html) <em class="rfc2119">may</em> not include all present voters, in particular if the options chosen that have no effect on the result, e.g. abstentions.
 
 <p class="note" id="note1">1. If an implementation uses the <a href="/specs/motion.html">Motion</a> class, it is not necessary to repeat the <code>organization</code> and <code>legislative_session</code> properties on the motion's vote events, unless they differ; for example, a committee may consider a legislature's motion, such as in the <a href="http://en.wikipedia.org/wiki/Riksdag">Riksdag</a>.</p>
@@ -159,7 +161,7 @@ The vote totals <em class="rfc2119">should</em> agree with the individual votes.
 
 ## Result
 
-Implementations <em class="rfc2119">may</em> use values from outside this list to reflect the diversity of results.
+Implementations <em class="rfc2119">may</em> use values from outside this list.
 
 * `pass`
 * `fail`
