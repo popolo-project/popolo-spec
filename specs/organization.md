@@ -154,9 +154,9 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
       <td><code><a href="http://schema.org/foundingDate" title="http://schema.org/foundingDate">schema:foundingDate</a></code></td>
       <td>A date of founding</td>
     </tr>
-    <tr id="opengov:dissolutionDate">
+    <tr id="schema:dissolutionDate">
       <td>date of dissolution</td>
-      <td><code title="http://www.w3.org/ns/opengov#dissolutionDate">opengov:dissolutionDate</code><a href="#note3"><sup>3</sup></a></td>
+      <td><code><a href="http://schema.org/dissolutionDate" title="http://schema.org/dissolutionDate">schema:dissolutionDate</a></code></td>
       <td>A date of dissolution, termination, expiry, etc.</td>
     </tr>
     <tr id="schema:image">
@@ -179,7 +179,6 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
 
 <p class="note" id="note1">1. According to <a href="http://www.epimorphics.com/web/wiki/organization-ontology-first-draft">a developer blog</a>, the United Kingdom <a href="http://www.w3.org/TR/vocab-org/#acknowledgements">chose</a> the spelling "organization", despite the common usage of the "s" spelling in British English, because the spelling is acceptable to all versions of English. American English uses a "z", whereas both "z" and "s" spellings are correct in British English. The "z" spelling is preferred by the <abbr title="Oxford English Dictionary">OED</abbr>.</p>
 <p class="note" id="note2">2. The Organization ontology defines the inverse property <code>org:hasSubOrganization</code>.</p>
-<p class="note" id="note3">3. <code>vcard:deathDate</code> could have been used for date of dissolution, but <code>deathDate</code> is an unusual term for an organization.</p>
 
 <h2 id="classification">3.1. Classification</h2>
 

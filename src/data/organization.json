@@ -54,6 +54,10 @@
       "term": "foundingDate",
       "url": "http://schema.org/foundingDate"
     },
+    "dissolution date": {
+      "term": "dissolutionDate",
+      "url": "http://schema.org/dissolutionDate"
+    },
     "description": {
       "term": "description",
       "url": "http://schema.org/description"

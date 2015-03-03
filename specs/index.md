@@ -668,6 +668,7 @@ For political groups, the range of the `group` property will be an [organization
 
 <h1 id="history">7. Change history</h1>
 
+* 2015-03-03: Use `schema:dissolutionDate` instead of `opengov:dissolutionDate`.
 * 2015-03-02: Add an Event class.
 * 2015-02-26: `name` is no longer a required property in `other_name.json`.
 * 2014-12-21: Add one-line description and extended description properties to the Organization class.

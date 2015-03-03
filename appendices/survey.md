@@ -59,7 +59,6 @@ Existing specifications can be found through:
 ## Review
 
 * [`schema:Person`](http://schema.org/Person) has no properties for alternate names or external links.
-* [`schema:Organization`](http://schema.org/Organization) has no property for dissolution dates.
 * `schema:legalName` is only one type of alternate name for a `schema:Organization`.
 * `schema:duns`, `schema:globalLocationNumber`, `schema:taxID` and `schema:vatID` may be used to identify a `schema:Organization`.
 * `schema:isicV4` and `schema:naics` may be used to classify a `schema:Organization`.

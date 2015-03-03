@@ -27,7 +27,7 @@
     "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "dissolution_date": {
-    "@id": "http://www.w3.org/ns/opengov#dissolutionDate",
+    "@id": "http://schema.org/dissolutionDate",
     "@type": "http://purl.org/dc/terms/W3CDTF"
   },
   "image": {

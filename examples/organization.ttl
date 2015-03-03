@@ -17,7 +17,7 @@
   org:classification [a skos:Concept; skos:prefLabel "Corporation"@en];
   org:subOrganizationOf <http://example.com/organizations/holding-company-corp.ttl>;
   schema:foundingDate "1950-01-01"^^dcterms:W3CDTF;
-  opengov:dissolutionDate "2000-01-01"^^dcterms:W3CDTF;
+  schema:dissolutionDate "2000-01-01"^^dcterms:W3CDTF;
   schema:image <http://example.com/pub/photos/logo.gif>;
   opengov:contactDetail [
     a vcard:Voice;
