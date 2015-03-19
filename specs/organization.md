@@ -182,7 +182,7 @@ Unlike the [Organization ontology](http://www.w3.org/TR/vocab-org/), an organiza
 
 <h2 id="classification">3.1. Classification</h2>
 
-The Organization ontology has a section on [organizational classification](organizational-classification). It proposes two strategies for classification: either create subclasses of [Organization](http://www.w3.org/TR/vocab-org/#org:Organization), or use the [`classification`](http://www.w3.org/TR/vocab-org/#org:classification) property. It provides guidance on when to use one or the other strategy:
+The Organization ontology has a section on [organizational classification](http://www.w3.org/TR/vocab-org/#organizational-classification). It proposes two strategies for classification: either create subclasses of [Organization](http://www.w3.org/TR/vocab-org/#org:Organization), or use the [`classification`](http://www.w3.org/TR/vocab-org/#org:classification) property. It provides guidance on when to use one or the other strategy:
 
 >If the classification is not intrinsic to the organization but simply some way to group organizations, for example as part of a directory, then `org:classification` should be used. If the classification is a reflection of the intrinsic nature of the organization and affects other properties then the sub-class approach should be used. For example, only charities have charity numbers so it would be better to represent a charity as a sub-class of `org:FormalOrganization` rather than via a taxonomic labelling.
 
