@@ -97,6 +97,7 @@ title: The Popolo Project
         <a href="http://www.opennorth.ca/" data-toggle="tooltip" title="Open North"><img src="/img/adoption/opennorth.png" height="50" alt="Open North"></a>
         <a class="hidden-sm hidden-md" href="http://www.openpolis.it/" data-toggle="tooltip" title="Associazione Openpolis"><img src="/img/adoption/openpolis.png" height="25" alt="Associazione Openpolis"></a>
         <a href="http://poplus.org/" data-toggle="tooltip" title="Poplus"><img src="/img/adoption/poplus.png" height="50" alt="Poplus"></a>
+        <a class="hidden-sm hidden-md" href="http://sinarproject.org/" data-toggle="tooltip" title="Sinar Project"><img src="/img/adoption/sinar.png" height="50" alt="Sinar Project"></a>
         <a href="http://sunlightfoundation.com/" data-toggle="tooltip" title="Sunlight Foundation"><img src="/img/adoption/sunlightfoundation.png" height="33" alt="Sunlight Foundation"></a>
         <a class="hidden-sm" href="https://www.texastribune.org/" data-toggle="tooltip" title="The Texas Tribune"><img src="/img/adoption/texastribune.png" height="50" alt="The Texas Tribune"></a>
       </p>
