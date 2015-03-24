@@ -672,7 +672,7 @@ For political groups, the range of the `group` property will be an [organization
 * 2015-03-02: Add an Event class.
 * 2015-02-26: `name` is no longer a required property in `other_name.json`.
 * 2014-12-21: Add one-line description and extended description properties to the Organization class.
-* 2014-12-18: A Vote must have a vote event.
+* 2014-12-18: A Vote must have a VoteEvent.
 * 2014-12-18: Add missing inverse embedding properties.
 * 2014-12-15: Add an identifier property to the Motion class.
 * 2014-12-14: Add a video property to the Speech class.
