@@ -973,7 +973,7 @@ The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `so
           </a>
         </td>
         <td>
-          <a href='http://tools.ietf.org/html/rfc4519#section-2.21'>
+          <a href='http://tools.ietf.org/html/rfc4524#section-2.21'>
             personalTitle
           </a>
         </td>
@@ -1479,6 +1479,9 @@ The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `so
           </a>
         </td>
         <td>
+          <a href='http://schema.org/dissolutionDate'>
+            dissolutionDate
+          </a>
         </td>
         <td>
           <a href='http://schema.org/image'>
@@ -5270,7 +5273,7 @@ The [PML Schema](http://www.liparm.ac.uk/?page_id=103) reuses the properties `so
           <code>bio</code>
         </th>
         <td>
-          <a href='http://purl.org/vocab/bio/0.1/'>
+          <a href='http://purl.org/vocab/bio/0.1/Event'>
             Event
           </a>
         </td>

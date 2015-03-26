@@ -428,7 +428,7 @@
     },
     "honorific prefix": {
       "term": "personalTitle",
-      "url": "http://tools.ietf.org/html/rfc4519#section-2.21"
+      "url": "http://tools.ietf.org/html/rfc4524#section-2.21"
     },
     "honorific suffix": {
       "term": "generationQuantifier",
