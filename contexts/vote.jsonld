@@ -1,25 +1,27 @@
 {
-  "Vote": "http://www.w3.org/ns/opengov#Vote",
-  "vote_event": {
-    "@id": "http://www.w3.org/ns/opengov#voteEvent",
-    "@type": "@id"
-  },
-  "voter": {
-    "@id": "http://schema.org/agent",
-    "@type": "@id"
-  },
-  "option": "http://schema.org/option",
-  "group": {
-    "@id": "http://www.w3.org/ns/opengov#politicalGroup",
-    "@type": "@id"
-  },
-  "role": {
-    "@id": "http://www.w3.org/ns/opengov#role",
-    "@type": "@id"
-  },
-  "weight": "http://www.w3.org/ns/opengov#weight",
-  "pair": {
-    "@id": "http://www.w3.org/ns/opengov#pair",
-    "@type": "@id"
+  "@context": {
+    "Vote": "http://www.w3.org/ns/opengov#Vote",
+    "vote_event": {
+      "@id": "http://www.w3.org/ns/opengov#voteEvent",
+      "@type": "@id"
+    },
+    "voter": {
+      "@id": "http://schema.org/agent",
+      "@type": "@id"
+    },
+    "option": "http://schema.org/option",
+    "group": {
+      "@id": "http://www.w3.org/ns/opengov#politicalGroup",
+      "@type": "@id"
+    },
+    "role": {
+      "@id": "http://www.w3.org/ns/opengov#role",
+      "@type": "@id"
+    },
+    "weight": "http://www.w3.org/ns/opengov#weight",
+    "pair": {
+      "@id": "http://www.w3.org/ns/opengov#pair",
+      "@type": "@id"
+    }
   }
 }

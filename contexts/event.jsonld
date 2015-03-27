@@ -1,55 +1,57 @@
 {
-  "Event": "http://schema.org/Event",
-  "cancelled": "http://schema.org/EventCancelled",
-  "confirmed": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#confirmedStatus",
-  "postponed": "http://schema.org/EventPostponed",
-  "rescheduled": "http://schema.org/EventRescheduled",
-  "scheduled": "http://schema.org/EventScheduled",
-  "tentative": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#tentativeStatus",
-  "name": "http://schema.org/name",
-  "description": "http://schema.org/description",
-  "start_date": {
-    "@id": "http://schema.org/startDate",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "end_date": {
-    "@id": "http://schema.org/endDate",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "location": {
-    "@id": "http://schema.org/location",
-    "@type": "@id"
-  },
-  "status": {
-    "@id": "http://schema.org/eventStatus",
-    "@type": "@id"
-  },
-  "identifiers": "http://www.w3.org/ns/org#identifier",
-  "identifier": "@value",
-  "scheme": "@type",
-  "classification": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#categories",
-  "organization": {
-    "@id": "http://schema.org/organizer",
-    "@type": "@id"
-  },
-  "attendee": {
-    "@id": "http://schema.org/attendee",
-    "@type": "@id"
-  },
-  "parent": {
-    "@id": "http://schema.org/superEvent",
-    "@type": "@id"
-  },
-  "created_at": {
-    "@id": "http://purl.org/dc/terms/created",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "updated_at": {
-    "@id": "http://purl.org/dc/terms/modified",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "sources": {
-    "@id": "http://purl.org/dc/terms/source",
-    "@type": "@id"
+  "@context": {
+    "Event": "http://schema.org/Event",
+    "cancelled": "http://schema.org/EventCancelled",
+    "confirmed": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#confirmedStatus",
+    "postponed": "http://schema.org/EventPostponed",
+    "rescheduled": "http://schema.org/EventRescheduled",
+    "scheduled": "http://schema.org/EventScheduled",
+    "tentative": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#tentativeStatus",
+    "name": "http://schema.org/name",
+    "description": "http://schema.org/description",
+    "start_date": {
+      "@id": "http://schema.org/startDate",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "end_date": {
+      "@id": "http://schema.org/endDate",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "location": {
+      "@id": "http://schema.org/location",
+      "@type": "@id"
+    },
+    "status": {
+      "@id": "http://schema.org/eventStatus",
+      "@type": "@id"
+    },
+    "identifiers": "http://www.w3.org/ns/org#identifier",
+    "identifier": "@value",
+    "scheme": "@type",
+    "classification": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#categories",
+    "organization": {
+      "@id": "http://schema.org/organizer",
+      "@type": "@id"
+    },
+    "attendee": {
+      "@id": "http://schema.org/attendee",
+      "@type": "@id"
+    },
+    "parent": {
+      "@id": "http://schema.org/superEvent",
+      "@type": "@id"
+    },
+    "created_at": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "updated_at": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "sources": {
+      "@id": "http://purl.org/dc/terms/source",
+      "@type": "@id"
+    }
   }
 }

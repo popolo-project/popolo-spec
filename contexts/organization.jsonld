@@ -1,81 +1,83 @@
 {
-  "Organization": "http://www.w3.org/ns/org#Organization",
-  "name": "http://www.w3.org/2004/02/skos/core#prefLabel",
-  "other_names": {
-    "@id": "http://www.w3.org/ns/opengov#otherName",
-    "@type": "@id"
-  },
-  "identifiers": "http://www.w3.org/ns/org#identifier",
-  "identifier": "@value",
-  "scheme": "@type",
-  "classification": {
-    "@id": "http://www.w3.org/ns/org#classification",
-    "@type": "@id"
-  },
-  "parent": {
-    "@id": "http://www.w3.org/ns/org#subOrganizationOf",
-    "@type": "@id"
-  },
-  "area": {
-    "@id": "http://www.w3.org/ns/opengov#area",
-    "@type": "@id"
-  },
-  "abstract": "http://purl.org/dc/terms/abstract",
-  "description": "http://purl.org/dc/terms/description",
-  "founding_date": {
-    "@id": "http://schema.org/foundingDate",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "dissolution_date": {
-    "@id": "http://schema.org/dissolutionDate",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "image": {
-    "@id": "http://schema.org/image",
-    "@type": "@id"
-  },
-  "contact_details": {
-    "@id": "http://www.w3.org/ns/opengov#contactDetail",
-    "@type": "@id"
-  },
-  "links": {
-    "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-    "@type": "@id"
-  },
-  "memberships": {
-    "@id": "http://www.w3.org/ns/org#hasMember",
-    "@type": "@id"
-  },
-  "posts": {
-    "@id": "http://www.w3.org/ns/org#hasPost",
-    "@type": "@id"
-  },
-  "motions": {
-    "@reverse": "http://schema.org/publisher",
-    "@type": "@id"
-  },
-  "vote_events": {
-    "@reverse": "http://schema.org/organizer",
-    "@type": "@id"
-  },
-  "votes": {
-    "@reverse": "http://schema.org/agent",
-    "@type": "@id"
-  },
-  "children": {
-    "@id": "http://www.w3.org/ns/org#hasSubOrganization",
-    "@type": "@id"
-  },
-  "created_at": {
-    "@id": "http://purl.org/dc/terms/created",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "updated_at": {
-    "@id": "http://purl.org/dc/terms/modified",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "sources": {
-    "@id": "http://purl.org/dc/terms/source",
-    "@type": "@id"
+  "@context": {
+    "Organization": "http://www.w3.org/ns/org#Organization",
+    "name": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "other_names": {
+      "@id": "http://www.w3.org/ns/opengov#otherName",
+      "@type": "@id"
+    },
+    "identifiers": "http://www.w3.org/ns/org#identifier",
+    "identifier": "@value",
+    "scheme": "@type",
+    "classification": {
+      "@id": "http://www.w3.org/ns/org#classification",
+      "@type": "@id"
+    },
+    "parent": {
+      "@id": "http://www.w3.org/ns/org#subOrganizationOf",
+      "@type": "@id"
+    },
+    "area": {
+      "@id": "http://www.w3.org/ns/opengov#area",
+      "@type": "@id"
+    },
+    "abstract": "http://purl.org/dc/terms/abstract",
+    "description": "http://purl.org/dc/terms/description",
+    "founding_date": {
+      "@id": "http://schema.org/foundingDate",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "dissolution_date": {
+      "@id": "http://schema.org/dissolutionDate",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "image": {
+      "@id": "http://schema.org/image",
+      "@type": "@id"
+    },
+    "contact_details": {
+      "@id": "http://www.w3.org/ns/opengov#contactDetail",
+      "@type": "@id"
+    },
+    "links": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type": "@id"
+    },
+    "memberships": {
+      "@id": "http://www.w3.org/ns/org#hasMember",
+      "@type": "@id"
+    },
+    "posts": {
+      "@id": "http://www.w3.org/ns/org#hasPost",
+      "@type": "@id"
+    },
+    "motions": {
+      "@reverse": "http://schema.org/publisher",
+      "@type": "@id"
+    },
+    "vote_events": {
+      "@reverse": "http://schema.org/organizer",
+      "@type": "@id"
+    },
+    "votes": {
+      "@reverse": "http://schema.org/agent",
+      "@type": "@id"
+    },
+    "children": {
+      "@id": "http://www.w3.org/ns/org#hasSubOrganization",
+      "@type": "@id"
+    },
+    "created_at": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "updated_at": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "sources": {
+      "@id": "http://purl.org/dc/terms/source",
+      "@type": "@id"
+    }
   }
 }

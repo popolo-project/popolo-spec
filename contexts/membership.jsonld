@@ -1,60 +1,62 @@
 {
-  "Membership": "http://www.w3.org/ns/org#Membership",
-  "label": "http://www.w3.org/2004/02/skos/core#prefLabel",
-  "role": {
-    "@id": "http://www.w3.org/ns/org#role",
-    "@type": "@id"
-  },
-  "member": {
-    "@id": "http://www.w3.org/ns/org#member",
-    "@type": "@id"
-  },
-  "person": {
-    "@id": "http://www.w3.org/ns/org#member",
-    "@type": "@id"
-  },
-  "organization": {
-    "@id": "http://www.w3.org/ns/org#organization",
-    "@type": "@id"
-  },
-  "post": {
-    "@id": "http://www.w3.org/ns/opengov#post",
-    "@type": "@id"
-  },
-  "on_behalf_of": {
-    "@id": "http://www.w3.org/ns/opengov#onBehalfOf",
-    "@type": "@id"
-  },
-  "area": {
-    "@id": "http://www.w3.org/ns/opengov#area",
-    "@type": "@id"
-  },
-  "start_date": {
-    "@id": "http://schema.org/validFrom",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "end_date": {
-    "@id": "http://schema.org/validUntil",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "contact_details": {
-    "@id": "http://www.w3.org/ns/opengov#contactDetail",
-    "@type": "@id"
-  },
-  "links": {
-    "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-    "@type": "@id"
-  },
-  "created_at": {
-    "@id": "http://purl.org/dc/terms/created",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "updated_at": {
-    "@id": "http://purl.org/dc/terms/modified",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "sources": {
-    "@id": "http://purl.org/dc/terms/source",
-    "@type": "@id"
+  "@context": {
+    "Membership": "http://www.w3.org/ns/org#Membership",
+    "label": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "role": {
+      "@id": "http://www.w3.org/ns/org#role",
+      "@type": "@id"
+    },
+    "member": {
+      "@id": "http://www.w3.org/ns/org#member",
+      "@type": "@id"
+    },
+    "person": {
+      "@id": "http://www.w3.org/ns/org#member",
+      "@type": "@id"
+    },
+    "organization": {
+      "@id": "http://www.w3.org/ns/org#organization",
+      "@type": "@id"
+    },
+    "post": {
+      "@id": "http://www.w3.org/ns/opengov#post",
+      "@type": "@id"
+    },
+    "on_behalf_of": {
+      "@id": "http://www.w3.org/ns/opengov#onBehalfOf",
+      "@type": "@id"
+    },
+    "area": {
+      "@id": "http://www.w3.org/ns/opengov#area",
+      "@type": "@id"
+    },
+    "start_date": {
+      "@id": "http://schema.org/validFrom",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "end_date": {
+      "@id": "http://schema.org/validUntil",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "contact_details": {
+      "@id": "http://www.w3.org/ns/opengov#contactDetail",
+      "@type": "@id"
+    },
+    "links": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type": "@id"
+    },
+    "created_at": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "updated_at": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "sources": {
+      "@id": "http://purl.org/dc/terms/source",
+      "@type": "@id"
+    }
   }
 }

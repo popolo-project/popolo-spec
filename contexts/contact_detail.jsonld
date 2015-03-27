@@ -1,33 +1,35 @@
 {
-  "text": "http://www.w3.org/2006/vcard/ns#Text",
-  "voice": "http://www.w3.org/2006/vcard/ns#Voice",
-  "fax": "http://www.w3.org/2006/vcard/ns#Fax",
-  "cell": "http://www.w3.org/2006/vcard/ns#Cell",
-  "video": "http://www.w3.org/2006/vcard/ns#Video",
-  "pager": "http://www.w3.org/2006/vcard/ns#Pager",
-  "textphone": "http://www.w3.org/2006/vcard/ns#TextPhone",
-  "label": "http://www.w3.org/2000/01/rdf-schema#label",
-  "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-  "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-  "note": "http://www.w3.org/2004/02/skos/core#note",
-  "valid_from": {
-    "@id": "http://schema.org/validFrom",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "valid_until": {
-    "@id": "http://schema.org/validUntil",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "created_at": {
-    "@id": "http://purl.org/dc/terms/created",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "updated_at": {
-    "@id": "http://purl.org/dc/terms/modified",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "sources": {
-    "@id": "http://purl.org/dc/terms/source",
-    "@type": "@id"
+  "@context": {
+    "text": "http://www.w3.org/2006/vcard/ns#Text",
+    "voice": "http://www.w3.org/2006/vcard/ns#Voice",
+    "fax": "http://www.w3.org/2006/vcard/ns#Fax",
+    "cell": "http://www.w3.org/2006/vcard/ns#Cell",
+    "video": "http://www.w3.org/2006/vcard/ns#Video",
+    "pager": "http://www.w3.org/2006/vcard/ns#Pager",
+    "textphone": "http://www.w3.org/2006/vcard/ns#TextPhone",
+    "label": "http://www.w3.org/2000/01/rdf-schema#label",
+    "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+    "note": "http://www.w3.org/2004/02/skos/core#note",
+    "valid_from": {
+      "@id": "http://schema.org/validFrom",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "valid_until": {
+      "@id": "http://schema.org/validUntil",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "created_at": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "updated_at": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "sources": {
+      "@id": "http://purl.org/dc/terms/source",
+      "@type": "@id"
+    }
   }
 }

@@ -1,54 +1,56 @@
 {
-  "speech": "http://www.w3.org/ns/opengov#Speech",
-  "question": "http://www.w3.org/ns/opengov#Question",
-  "answer": "http://www.w3.org/ns/opengov#Answer",
-  "scene": "http://www.w3.org/ns/opengov#Scene",
-  "narrative": "http://www.w3.org/ns/opengov#Narrative",
-  "summary": "http://www.w3.org/ns/opengov#Summary",
-  "other": "http://www.w3.org/ns/opengov#Other",
-  "creator": {
-    "@id": "http://schema.org/creator",
-    "@type": "@id"
-  },
-  "role": {
-    "@id": "http://www.w3.org/ns/opengov#role",
-    "@type": "@id"
-  },
-  "attribution_text": "http://schema.theodi.org/odrs#attributionText",
-  "audience": {
-    "@id": "http://purl.org/dc/terms/audience",
-    "@type": "@id"
-  },
-  "text": "http://schema.org/text",
-  "audio": {
-    "@id": "http://schema.org/audio",
-    "@type": "@id"
-  },
-  "video": {
-    "@id": "http://schema.org/video",
-    "@type": "@id"
-  },
-  "date": {
-    "@id": "http://purl.org/dc/terms/date",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "title": "http://schema.org/title",
-  "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-  "position": "http://schema.org/position",
-  "event": {
-    "@id": "http://bibframe.org/vocab/event",
-    "@type": "@id"
-  },
-  "created_at": {
-    "@id": "http://purl.org/dc/terms/created",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "updated_at": {
-    "@id": "http://purl.org/dc/terms/modified",
-    "@type": "http://purl.org/dc/terms/W3CDTF"
-  },
-  "sources": {
-    "@id": "http://purl.org/dc/terms/source",
-    "@type": "@id"
+  "@context": {
+    "speech": "http://www.w3.org/ns/opengov#Speech",
+    "question": "http://www.w3.org/ns/opengov#Question",
+    "answer": "http://www.w3.org/ns/opengov#Answer",
+    "scene": "http://www.w3.org/ns/opengov#Scene",
+    "narrative": "http://www.w3.org/ns/opengov#Narrative",
+    "summary": "http://www.w3.org/ns/opengov#Summary",
+    "other": "http://www.w3.org/ns/opengov#Other",
+    "creator": {
+      "@id": "http://schema.org/creator",
+      "@type": "@id"
+    },
+    "role": {
+      "@id": "http://www.w3.org/ns/opengov#role",
+      "@type": "@id"
+    },
+    "attribution_text": "http://schema.theodi.org/odrs#attributionText",
+    "audience": {
+      "@id": "http://purl.org/dc/terms/audience",
+      "@type": "@id"
+    },
+    "text": "http://schema.org/text",
+    "audio": {
+      "@id": "http://schema.org/audio",
+      "@type": "@id"
+    },
+    "video": {
+      "@id": "http://schema.org/video",
+      "@type": "@id"
+    },
+    "date": {
+      "@id": "http://purl.org/dc/terms/date",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "title": "http://schema.org/title",
+    "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "position": "http://schema.org/position",
+    "event": {
+      "@id": "http://bibframe.org/vocab/event",
+      "@type": "@id"
+    },
+    "created_at": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "updated_at": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://purl.org/dc/terms/W3CDTF"
+    },
+    "sources": {
+      "@id": "http://purl.org/dc/terms/source",
+      "@type": "@id"
+    }
   }
 }

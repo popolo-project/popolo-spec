@@ -1,12 +1,14 @@
 {
-  "yes": "http://www.w3.org/ns/opengov#YesCount",
-  "no": "http://www.w3.org/ns/opengov#NoCount",
-  "abstain": "http://www.w3.org/ns/opengov#AbstainCount",
-  "paired": "http://www.w3.org/ns/opengov#PairedCount",
-  "option": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-  "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-  "group": {
-    "@id": "http://www.w3.org/ns/opengov#group",
-    "@type": "@id"
+  "@context": {
+    "yes": "http://www.w3.org/ns/opengov#YesCount",
+    "no": "http://www.w3.org/ns/opengov#NoCount",
+    "abstain": "http://www.w3.org/ns/opengov#AbstainCount",
+    "paired": "http://www.w3.org/ns/opengov#PairedCount",
+    "option": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+    "group": {
+      "@id": "http://www.w3.org/ns/opengov#group",
+      "@type": "@id"
+    }
   }
 }
