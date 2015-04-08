@@ -7,6 +7,8 @@
     "narrative": "http://www.w3.org/ns/opengov#Narrative",
     "summary": "http://www.w3.org/ns/opengov#Summary",
     "other": "http://www.w3.org/ns/opengov#Other",
+    "chair": "http://www.w3.org/ns/opengov#Chair",
+    "speaker": "http://www.w3.org/ns/opengov#Speaker",
     "creator": {
       "@id": "http://schema.org/creator",
       "@type": "@id"
