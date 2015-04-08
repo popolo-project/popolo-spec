@@ -1,6 +1,8 @@
 {
   "@context": {
     "VoteEvent": "http://www.w3.org/ns/opengov#VoteEvent",
+    "pass": "http://www.w3.org/ns/opengov#Pass",
+    "fail": "http://www.w3.org/ns/opengov#Fail",
     "organization": {
       "@id": "http://schema.org/organizer",
       "@type": "@id"

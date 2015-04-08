@@ -1,6 +1,8 @@
 {
   "@context": {
     "GroupResult": "http://www.w3.org/ns/opengov#GroupResult",
+    "pass": "http://www.w3.org/ns/opengov#Pass",
+    "fail": "http://www.w3.org/ns/opengov#Fail",
     "group": {
       "@id": "http://www.w3.org/ns/opengov#group",
       "@type": "@id"
