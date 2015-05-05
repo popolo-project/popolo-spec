@@ -64,12 +64,12 @@
     "start_date": {
       "description": "The date on which the relationship began",
       "type": ["string", "null"],
-      "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+      "pattern": "^[0-9]{4}((-[0-9]{2}){0,2}|(-[0-9]{2}){2}(T[0-9]{2}(:[0-9]{2}(:[0-9]{2})?)?Z)?)$"
     },
     "end_date": {
       "description": "The date on which the relationship ended",
       "type": ["string", "null"],
-      "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+      "pattern": "^[0-9]{4}((-[0-9]{2}){0,2}|(-[0-9]{2}){2}(T[0-9]{2}(:[0-9]{2}(:[0-9]{2})?)?Z)?)$"
     },
     "contact_details": {
       "description": "Means of contacting the member of the organization",
