@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Popolo Project
+title: Popolo
 ---
 <h1>Popolo <small>International open government data specifications</small></h1>
 
