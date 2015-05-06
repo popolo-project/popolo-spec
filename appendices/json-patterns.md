@@ -1,6 +1,6 @@
 ---
 layout: default
-title: JSON Serialization Patterns | The Popolo Project
+title: JSON Serialization Patterns | Popolo
 id: appendix
 ---
 {% include navigation.html %}

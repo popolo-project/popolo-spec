@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Membership | The Popolo Project
+title: Membership | Popolo
 id: membership
 ---
 

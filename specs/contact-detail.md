@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Contact detail | The Popolo Project
+title: Contact detail | Popolo
 id: contact-detail
 ---
 

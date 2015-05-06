@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Person name components | The Popolo Project
+title: Person name components | Popolo
 id: name-component
 ---
 

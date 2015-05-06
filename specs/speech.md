@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Speech | The Popolo Project
+title: Speech | Popolo
 id: speech
 ---
 

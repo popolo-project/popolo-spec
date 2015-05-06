@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Adding Metadata | The Popolo Project
+title: Adding Metadata | Popolo
 id: appendix
 ---
 {% include navigation.html %}

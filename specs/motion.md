@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Motion | The Popolo Project
+title: Motion | Popolo
 id: motion
 ---
 

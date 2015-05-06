@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Examples | The Popolo Project
+title: Examples | Popolo
 id: appendix
 ---
 {% include navigation.html %}

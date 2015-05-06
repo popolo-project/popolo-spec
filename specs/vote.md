@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Vote | The Popolo Project
+title: Vote | Popolo
 id: vote
 ---
 

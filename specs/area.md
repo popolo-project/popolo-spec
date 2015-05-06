@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Area | The Popolo Project
+title: Area | Popolo
 id: area
 ---
 

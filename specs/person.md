@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Person | The Popolo Project
+title: Person | Popolo
 id: person
 ---
 

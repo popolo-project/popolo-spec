@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Post | The Popolo Project
+title: Post | Popolo
 id: post
 ---
 

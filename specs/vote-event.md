@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Vote event | The Popolo Project
+title: Vote event | Popolo
 id: vote-event
 ---
 

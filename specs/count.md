@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Vote Count | The Popolo Project
+title: Vote Count | Popolo
 id: count
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Organization | The Popolo Project
+title: Organization | Popolo
 id: organization
 ---
 

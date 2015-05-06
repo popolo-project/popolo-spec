@@ -1,6 +1,6 @@
 ---
 layout: specification
-title: Data Specification | The Popolo Project
+title: Data Specification | Popolo
 id: specification
 ---
 The key words <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>, <em class="rfc2119">should</em>, <em class="rfc2119">should not</em> and <em class="rfc2119">may</em> are to be interpreted as described in [RFC 2119](http://tools.ietf.org/html/rfc2119).

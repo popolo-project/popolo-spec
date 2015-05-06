@@ -1,6 +1,6 @@
 ---
 layout: class
-title: Event | The Popolo Project
+title: Event | Popolo
 id: event
 ---
 
