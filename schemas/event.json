@@ -5,6 +5,10 @@
   "description": "An occurrence that people may attend",
   "type": "object",
   "properties": {
+    "id": {
+      "description": "The event's unique identifier",
+      "type": ["string", "null"]
+    },
     "name": {
       "description": "The event's name",
       "type": ["string", "null"]
