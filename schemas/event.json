@@ -69,6 +69,13 @@
       "description": "An event that this event is a part of",
       "$ref": "http://www.popoloproject.com/schemas/event.json#"
     },
+    "children": {
+      "description": "The sub-events of the event",
+      "type": "array",
+      "items": {
+        "$ref": "http://www.popoloproject.com/schemas/event.json#"
+      }
+    },
     "created_at": {
       "description": "The time at which the resource was created",
       "type": ["string", "null"],

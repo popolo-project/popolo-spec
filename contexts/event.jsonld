@@ -41,6 +41,10 @@
       "@id": "http://schema.org/superEvent",
       "@type": "@id"
     },
+    "children": {
+      "@id": "http://schema.org/subEvent",
+      "@type": "@id"
+    },
     "created_at": {
       "@id": "http://purl.org/dc/terms/created",
       "@type": "http://purl.org/dc/terms/W3CDTF"
