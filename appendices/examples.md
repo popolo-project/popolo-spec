@@ -339,7 +339,7 @@ Bob's candidacy can be expressed as a membership with a post but without an orga
 
 <h2 id="motion-amendment">3.1. An amendment to a motion</h2>
 
-**Scenario:** In the Scotting Parliament, on June 12, 2002, Brian Monteith proposes an amendment to a motion by Mike Watson. The amendment goes to a vote and fails, but the original motion passes without a vote.
+**Scenario:** In the Scottish Parliament, on June 12, 2002, Brian Monteith proposes an amendment to a motion by Mike Watson. The amendment goes to a vote and fails, but the original motion passes without a vote.
 
 Note that the `identifier` and `title` properties are not defined by Popolo for the Motion class. They are terms reused from the [DCMI Metadata Terms](http://dublincore.org/documents/dcmi-terms/). See the [adding metadata](/appendices/adding-metadata.html) appendix for guidance.
 
