@@ -129,6 +129,6 @@ title: Popolo
   <div class="col-sm-12">
     <h2>Contact</h2>
 
-    <p><a href="mailto:james@opennorth.ca">james@opennorth.ca</a></p>
+    <p><a href="mailto:james@slashpoundbang.com">james@slashpoundbang.com</a></p>
   </div>
 </div>
