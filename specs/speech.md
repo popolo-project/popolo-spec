@@ -183,7 +183,7 @@ Implementations <em class="rfc2119">may</em> use values from outside the followi
 * `chair`
 * `speaker`
 
-## Classification
+## Type
 
 The following is a copy of [Akoma Ntoso](http://examples.akomantoso.org/categorical.html#ANcontainersEG) containers.
 
