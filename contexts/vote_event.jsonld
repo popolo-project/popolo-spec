@@ -16,6 +16,7 @@
       "@id": "http://www.w3.org/ns/opengov#motion",
       "@type": "@id"
     },
+    "classification": "http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#categories",
     "start_date": {
       "@id": "http://schema.org/startDate",
       "@type": "http://purl.org/dc/terms/W3CDTF"

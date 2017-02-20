@@ -96,6 +96,11 @@ Few specifications exist for vote events, and few legislatures publish vote data
       <td><code title="http://www.w3.org/ns/opengov#motion">opengov:motion</code></td>
       <td>The motion being decided</td>
     </tr>
+    <tr id="ncal:categories">
+      <td>classification</td>
+      <td><code><a href="http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#categories" title="http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#categories">ncal:categories</a></code></td>
+      <td>The vote event's category</td>
+    </tr>
     <tr id="schema:startDate">
       <td>start date</td>
       <td><code><a href="http://schema.org/startDate" title="http://schema.org/startDate">schema:startDate</a></code></td>

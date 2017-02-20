@@ -668,6 +668,7 @@ For political groups, the range of the `group` property will be an [organization
 
 <h1 id="history">7. Change history</h1>
 
+* 2017-02-20: Inherit `classification` from Event to Vote Event.
 * 2015-05-05: Add time components to the date properties of the Membership class.
 * 2015-03-03: Use `schema:dissolutionDate` instead of `opengov:dissolutionDate`.
 * 2015-03-02: Add an Event class.

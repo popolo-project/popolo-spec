@@ -37,6 +37,10 @@
       "description": "The motion being decided",
       "$ref": "http://www.popoloproject.com/schemas/motion.json#"
     },
+    "classification": {
+      "description": "The vote event's category",
+      "type": ["string", "null"]
+    },
     "start_date": {
       "description": "The time at which the event begins",
       "type": ["string", "null"],
