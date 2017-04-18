@@ -82,7 +82,7 @@ title: Popolo
     <ul>
       <li>Discuss <a href="https://github.com/popolo-project/popolo-spec/issues">open issues</a> on <a href="https://github.com/popolo-project/popolo-spec">GitHub</a></li>
       <li><a href="http://lists.w3.org/Archives/Public/public-opengov/">Join the W3C Open Government mailing list</a></li>
-      <li><a href="https://groups.google.com/forum/#!forum/poplus">Join the Poplus mailing list</a>
+      <li><a href="https://groups.google.com/forum/#!forum/poplus">Join the Poplus mailing list</a></li>
     </ul>
 
     <div class="hidden-xs">
