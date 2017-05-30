@@ -216,28 +216,28 @@ You may then publish data on independent candidates, like:
 </ul>
 <div class="tab-content">
   <div class="tab-pane active" id="member-marker-rdf">
-    <pre><code>ex:john org:memberOf ex:Independent .</code></pre>
+    <pre><code>ex:john org:memberOf ex:independent .</code></pre>
   </div>
   <div class="tab-pane" id="member-marker-json">
     <pre><code class="highlight" data-lang="json">{
   "@id": "ex:john",
-  "org:memberOf": "ex:Independent"
+  "org:memberOf": "ex:independent"
 }</code></pre>
   </div>
 </div>
 
-As with string markers, querying for all candidates belonging to the same party (`ex:Independent`) as an independent member, using [SPARQL](http://en.wikipedia.org/wiki/SPARQL) for example, would returns all independent candidates, which is incorrect:
+As with string markers, querying for all candidates belonging to the same party (`ex:independent`) as an independent member, using [SPARQL](http://en.wikipedia.org/wiki/SPARQL) for example, would returns all independent candidates, which is incorrect:
 
     SELECT ?person WHERE {
-      ?person org:memberOf ex:Independent .
+      ?person org:memberOf ex:independent .
     }
 
-To correct this problem, you may change the query template to limit the results to candidates belonging to an organization, which in this case will return zero results, because `ex:Independent` is not an organization, but a marker for "no party":
+To correct this problem, you may change the query template to limit the results to candidates belonging to an organization, which in this case will return zero results, because `ex:independent` is not an organization, but a marker for "no party":
 
     SELECT ?person WHERE {
       ?person org:MemberOf ?organization .
       ?organization a org:Organization .
-      FILTER (?organization = ex:Independent)
+      FILTER (?organization = ex:independent)
     }
 
 This approach is effective but inefficient, as it requires creating a marker for most classes, and not always feasible, as it requires changing the range of properties which may be defined by third-party ontologies.
