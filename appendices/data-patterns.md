@@ -235,7 +235,7 @@ As with string markers, querying for all candidates belonging to the same party 
 To correct this problem, you may change the query template to limit the results to candidates belonging to an organization, which in this case will return zero results, because `ex:independent` is not an organization, but a marker for "no party":
 
     SELECT ?person WHERE {
-      ?person org:MemberOf ?organization .
+      ?person org:memberOf ?organization .
       ?organization a org:Organization .
       FILTER (?organization = ex:independent)
     }
