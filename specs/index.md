@@ -540,6 +540,7 @@ When serializing to JSON, you may relate entities by linking and/or embedding re
       <td><code>motion_id</code></td>
       <td><code>motion</code></td>
       <td><code>vote_events</code></td>
+    </tr>
     <tr>
       <td><code>on_behalf_of_id</code></td>
       <td><code>on_behalf_of</code></td>
@@ -669,7 +670,7 @@ For political groups, the range of the `group` property will be an [organization
 <h1 id="history">7. Change history</h1>
 
 * 2017-05-27: Allow time zones in time values.
-* 2017-02-20: Inherit `classification` from Event to Vote Event.
+* 2017-02-20: Inherit `classification` from Event to VoteEvent.
 * 2015-05-05: Add time components to the date properties of the Membership class.
 * 2015-03-03: Use `schema:dissolutionDate` instead of `opengov:dissolutionDate`.
 * 2015-03-02: Add an Event class.
