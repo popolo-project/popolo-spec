@@ -124,11 +124,3 @@ title: Popolo
     </div>
   </div>
 </div>
-
-<div class="row">
-  <div class="col-sm-12">
-    <h2>Contact</h2>
-
-    <p><a href="mailto:james@slashpoundbang.com">james@slashpoundbang.com</a></p>
-  </div>
-</div>
