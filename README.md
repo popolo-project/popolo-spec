@@ -2,7 +2,7 @@
 
 Goal: Define data interchange formats and data models so that organizations can spend less time transforming and modeling data and more time applying it to the problems they face.
 
-Popolo supports the development of [reusable open source components](http://poplus.org/components/current/) that implement the specifications, making it easier for civic developers to create civic software.
+Popolo supports the development of reusable open source components that implement the specifications, making it easier for civic developers to create civic software.
 
 [Read the specification at popoloproject.com](http://www.popoloproject.com/)
 
