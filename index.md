@@ -60,7 +60,7 @@ title: Popolo
     <h2>Goal</h2>
 
     <p>Define data interchange formats and data models so that organizations can spend less time transforming and modeling data and more time applying it to the problems they face.</p>
-    <p>Popolo supports the development of <a href="http://poplus.org/components/current/">reusable open source components</a> that implement the specifications, making it easier for civic developers to create civic software.</p>
+    <p>Popolo supports the development of reusable open source components that implement the specifications, making it easier for civic developers to create civic software.</p>
   </div>
   <div class="col-sm-6">
     <h2>Process</h2>
