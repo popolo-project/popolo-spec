@@ -38,40 +38,44 @@ The Person class should have properties for:
 
 1. gender
 
-    >To determine personal pronouns, e.g. "John Doe will be at <u>his</u> constituency office next week."
+    >Optional for a Person to most accurately describe their own gender. Values other than 'male' and 'female' may be used, but are not enumerated here. Not intended to capture the full variety of biological, social and sexual concepts associated with the word 'gender'.
 
-1. date of birth
+2. pronouns
+
+    >Optional for a Person to determine personal pronouns to be used, e.g. "John Doe will be at <u>their</u> constituency office next week."
+
+3. date of birth
 
     >To provide biographical detail, or to report a person's age.
 
-1. date of death
+4. date of death
 
     >To determine whether a person is alive or dead, e.g. in order to disable the deceased's contact form.
 
-1. [head shot](http://en.wikipedia.org/wiki/Head_shot)
+5. [head shot](http://en.wikipedia.org/wiki/Head_shot)
 
     >To identify the person visually.
 
-1. one-line biography
+6. one-line biography
 
     >To provide a brief biography.
 
-1. biography
+7. biography
 
     >To provide a long form biography.
 
-1. national identity
+8. national identity
 
     >Nine members of the [House of Peoples](http://en.wikipedia.org/wiki/House_of_Peoples_of_Bosnia_and_Herzegovina) shall comprise a quorum, provided that at least three Bosniak, three Croat, and three Serb delegates are present.
 
-1. the means of contacting the person
+9. the means of contacting the person
 
     >1 Main Street  
     Anytown, USA  
     555-555-0100  
     john@example.com
 
-1. external links
+10. external links
 
     >A representative's Wikipedia page or official website.
 
