@@ -66,7 +66,7 @@
     },
     "pronouns": {
       "description": "Personal pronouns",
-      "type": ["string", "null"]
+      "type": ["array", "null"]
     },
     "birth_date": {
       "description": "A date of birth",
