@@ -42,7 +42,7 @@ The Person class should have properties for:
 
 1. pronouns
 
-    >Optional for a Person to determine personal pronouns to be used, e.g. "John Doe will be at <u>their</u> constituency office next week."
+    >Optional list of pronouns for a Person to determine personal pronouns to be used, e.g. "John Doe will be at <u>their</u> constituency office next week."
 
 1. date of birth
 
