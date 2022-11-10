@@ -669,6 +669,7 @@ For political groups, the range of the `group` property will be an [organization
 
 <h1 id="history">7. Change history</h1>
 
+* 2022-11-10: Add a pronouns property to the Person class.
 * 2017-05-27: Allow time zones in time values.
 * 2017-02-20: Inherit `classification` from Event to VoteEvent.
 * 2015-05-05: Add time components to the date properties of the Membership class.

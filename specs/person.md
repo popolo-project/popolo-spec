@@ -38,7 +38,11 @@ The Person class should have properties for:
 
 1. gender
 
-    >To determine personal pronouns, e.g. "John Doe will be at <u>his</u> constituency office next week."
+    >To measure the gender diversity of a group.
+
+1. personal pronouns
+
+    >To construct sentences containing personal pronouns, e.g. "John Doe will be at <u>their</u> constituency office next week."
 
 1. date of birth
 
