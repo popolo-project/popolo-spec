@@ -38,11 +38,11 @@ The Person class should have properties for:
 
 1. gender
 
-    >Optional for a Person to most accurately describe their own gender. Values other than 'male' and 'female' may be used, but are not enumerated here. Not intended to capture the full variety of biological, social and sexual concepts associated with the word 'gender'.
+    >To measure the gender diversity of a group.
 
-1. pronouns
+1. personal pronouns
 
-    >Optional list of pronouns for a Person to determine personal pronouns to be used, e.g. "John Doe will be at <u>their</u> constituency office next week."
+    >To construct sentences containing personal pronouns, e.g. "John Doe will be at <u>their</u> constituency office next week."
 
 1. date of birth
 
